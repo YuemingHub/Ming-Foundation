@@ -2,7 +2,7 @@
 id: GOV-0029
 title: RFC Requirement Registry and Conformance Infrastructure
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards and Validation
 created: 2026-07-12
@@ -111,3 +111,15 @@ External evidence remains non-canonical and non-blocking for repository governan
 A Proposed RFC does not advance because its requirements were indexed.
 
 Promotion still requires the review process in `MOS-0000`, evidence appropriate to the requested status, and a dedicated decision.
+## 8. Day 9 extension
+
+The infrastructure now includes:
+
+- source blob SHAs;
+- requirement-level fidelity review;
+- one acceptance-test specification per registered requirement;
+- open ambiguity references;
+- RFC review checklists;
+- a non-implementation baseline.
+
+The new fields increase traceability. They do not change the authority boundary defined by `ADR-0010`.

@@ -134,6 +134,40 @@
         },
         "additionalProperties": true
       }
+    },
+    "selected_requirements": {
+      "type": "array",
+      "items": {
+        "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+      }
+    },
+    "claim_boundary": {
+      "type": "object",
+      "required": [
+        "implementation_target_selected",
+        "product_conformance_claimed",
+        "charter_validation_claimed",
+        "empty_results_reason",
+        "governing_record"
+      ],
+      "properties": {
+        "implementation_target_selected": {
+          "type": "boolean"
+        },
+        "product_conformance_claimed": {
+          "type": "boolean"
+        },
+        "charter_validation_claimed": {
+          "type": "boolean"
+        },
+        "empty_results_reason": {
+          "type": "string"
+        },
+        "governing_record": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
   "title": "Ming Foundation RFC Requirement Registry",
   "status": "Accepted infrastructure index",
@@ -9,39 +9,54 @@
     "governing_decision": "ADR-0010"
   },
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "6ebe82dc11a9ea85122b97f97946dfee1d237619",
+  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.8",
+  "registry_version": "1.0.0-alpha.9",
   "source_documents": [
     {
       "id": "RFC-0001",
       "path": "standards/rfc/RFC-0001-subject-speaker-and-contestability.md",
       "status": "Proposed",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "source_blob_sha": "c32f0d966ac8772e55d5ebf15af6b7c8c7db4b1d",
+      "fidelity_review_record": "GOV-0032",
+      "review_state": "RequirementIndexReviewed"
     },
     {
       "id": "RFC-0002",
       "path": "standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md",
       "status": "Proposed",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "source_blob_sha": "43ca687ade380c344d5de7a19b5e7c038761b667",
+      "fidelity_review_record": "GOV-0032",
+      "review_state": "RequirementIndexReviewed"
     },
     {
       "id": "RFC-0003",
       "path": "standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md",
       "status": "Proposed",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "source_blob_sha": "97e4f37200a08dcd78f006d4f76928ff832cee3d",
+      "fidelity_review_record": "GOV-0032",
+      "review_state": "RequirementIndexReviewed"
     },
     {
       "id": "RFC-0004",
       "path": "standards/rfc/RFC-0004-case-and-cross-family-evidence-governance.md",
       "status": "Proposed",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "fidelity_review_record": "GOV-0032",
+      "review_state": "RequirementIndexReviewed"
     },
     {
       "id": "RFC-0005",
       "path": "standards/rfc/RFC-0005-public-claim-charter-sync-and-capability-status.md",
       "status": "Proposed",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "fidelity_review_record": "GOV-0032",
+      "review_state": "RequirementIndexReviewed"
     }
   ],
   "requirements": [
@@ -62,7 +77,19 @@
         "data_schema",
         "sample_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT001"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0001"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0001-R002",
@@ -95,7 +122,17 @@
         "unknown",
         "decision",
         "action"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT002"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R003",
@@ -114,7 +151,17 @@
         "ui_capture",
         "sample_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT003"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R004",
@@ -133,7 +180,19 @@
         "test_result",
         "decision_record",
         "safety_exception_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT004"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0002"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0001-R005",
@@ -152,7 +211,17 @@
         "data_schema",
         "ui_capture",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT005"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R006",
@@ -171,7 +240,17 @@
         "sample_record",
         "ui_capture",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT006"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R007",
@@ -189,7 +268,17 @@
       "evidence_types": [
         "sample_record",
         "ui_capture"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT007"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R008",
@@ -208,7 +297,17 @@
         "data_schema",
         "test_result",
         "revision_history"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT008"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R009",
@@ -227,7 +326,17 @@
         "sample_record",
         "revision_history",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT009"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R010",
@@ -246,7 +355,19 @@
         "policy",
         "test_result",
         "appeal_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT010"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0001-R011",
@@ -264,7 +385,17 @@
       "evidence_types": [
         "test_result",
         "decision_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT011"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0001-R012",
@@ -283,7 +414,19 @@
         "access_policy",
         "test_result",
         "audit_log"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT012"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0004"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0001-R013",
@@ -302,7 +445,19 @@
         "ui_capture",
         "test_result",
         "affected_person_review"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT013"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R001",
@@ -321,7 +476,19 @@
         "purpose_registry",
         "permission_record",
         "sample_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT001"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0005"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R002",
@@ -340,7 +507,19 @@
         "notice",
         "permission_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT002"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0005"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R003",
@@ -359,7 +538,19 @@
         "route_inventory",
         "ui_capture",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT003"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0006"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R004",
@@ -376,7 +567,19 @@
       "evidence_types": [
         "retention_registry",
         "storage_inventory"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT004"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R005",
@@ -395,7 +598,19 @@
         "exception_record",
         "access_policy",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT005"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R006",
@@ -414,7 +629,19 @@
         "architecture_diagram",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT006"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R007",
@@ -432,7 +659,19 @@
       "evidence_types": [
         "lineage_map",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT007"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R008",
@@ -451,7 +690,17 @@
         "form_capture",
         "privacy_notice",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT008"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0002-R009",
@@ -471,7 +720,17 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT009"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0002-R010",
@@ -491,7 +750,17 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT010"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0002-R011",
@@ -511,7 +780,19 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT011"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R012",
@@ -531,7 +812,19 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT012"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R013",
@@ -551,7 +844,19 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT013"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0002-R014",
@@ -571,7 +876,17 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT014"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0002-R015",
@@ -591,7 +906,17 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT015"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0002-R016",
@@ -611,7 +936,19 @@
         "policy",
         "test_result",
         "audit_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT016"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R001",
@@ -630,7 +967,19 @@
         "safety_record",
         "handoff_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT001"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0009"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R002",
@@ -648,7 +997,19 @@
       "evidence_types": [
         "responsibility_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT002"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0009"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R003",
@@ -666,7 +1027,19 @@
       "evidence_types": [
         "test_result",
         "decision_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT003"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0010"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R004",
@@ -685,7 +1058,19 @@
         "public_copy",
         "ui_capture",
         "operational_roster"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT004"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R005",
@@ -703,7 +1088,19 @@
       "evidence_types": [
         "ui_capture",
         "public_copy"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT005"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R006",
@@ -721,7 +1118,17 @@
       "evidence_types": [
         "appeal_route",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT006"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0003-R007",
@@ -740,7 +1147,17 @@
         "safety_record",
         "revision_history",
         "incident_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT007"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0003-R008",
@@ -758,7 +1175,17 @@
       "evidence_types": [
         "data_schema",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT008"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0003-R009",
@@ -776,7 +1203,19 @@
       "evidence_types": [
         "test_result",
         "independent_review_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT009"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0012"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0003-R010",
@@ -795,7 +1234,19 @@
         "policy",
         "test_result",
         "decision_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT010"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0012"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R001",
@@ -814,7 +1265,19 @@
         "data_flow",
         "access_policy",
         "deidentification_review"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT001"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0013"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R002",
@@ -830,7 +1293,17 @@
       ],
       "evidence_types": [
         "public_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT002"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0004-R003",
@@ -848,7 +1321,19 @@
       "evidence_types": [
         "scan_result",
         "privacy_review"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT003"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0013"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R004",
@@ -867,7 +1352,20 @@
         "pipeline_config",
         "review_record",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT004"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0014",
+          "AMB-0016"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R005",
@@ -885,7 +1383,19 @@
         "data_flow",
         "provider_configuration",
         "audit_log"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT005"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0015"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R006",
@@ -904,7 +1414,17 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT006"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0004-R007",
@@ -923,7 +1443,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT007"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0013"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R008",
@@ -942,7 +1474,17 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT008"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0004-R009",
@@ -961,7 +1503,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT009"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0015"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R010",
@@ -980,7 +1534,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT010"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0014"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R011",
@@ -999,7 +1565,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT011"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0015"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R012",
@@ -1018,7 +1596,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT012"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0013"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0004-R013",
@@ -1037,7 +1627,19 @@
         "scan_result",
         "access_log",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0004-AT013"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0016"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0005-R001",
@@ -1054,7 +1656,19 @@
       "evidence_types": [
         "claim_record",
         "source_link"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT001"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0017"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0005-R002",
@@ -1080,7 +1694,17 @@
         "Vision",
         "Paused",
         "Retired"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT002"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R003",
@@ -1097,7 +1721,17 @@
       "evidence_types": [
         "page_capture",
         "claim_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT003"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R004",
@@ -1114,7 +1748,19 @@
       "evidence_types": [
         "page_capture",
         "source_manifest"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT004"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0018"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0005-R005",
@@ -1133,7 +1779,19 @@
         "source_text",
         "page_capture",
         "sync_report"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT005"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0018"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0005-R006",
@@ -1150,7 +1808,17 @@
       "evidence_types": [
         "page_capture",
         "page_manifest"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT006"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R007",
@@ -1166,7 +1834,19 @@
       ],
       "evidence_types": [
         "claim_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT007"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0017"
+        ]
+      }
     },
     {
       "requirement_id": "RFC-0005-R008",
@@ -1183,7 +1863,17 @@
       "evidence_types": [
         "form_capture",
         "privacy_notice"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT008"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R009",
@@ -1201,7 +1891,17 @@
       "evidence_types": [
         "form_capture",
         "test_result"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT009"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R010",
@@ -1219,7 +1919,17 @@
       "evidence_types": [
         "page_capture",
         "ui_capture"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT010"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": []
+      }
     },
     {
       "requirement_id": "RFC-0005-R011",
@@ -1238,7 +1948,28 @@
         "workflow_config",
         "test_result",
         "release_record"
-      ]
+      ],
+      "acceptance_test_refs": [
+        "RFC-0005-AT011"
+      ],
+      "fidelity_review": {
+        "state": "Confirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+        "review_record": "GOV-0032",
+        "ambiguity_refs": [
+          "AMB-0019"
+        ]
+      }
     }
-  ]
+  ],
+  "fidelity_review": {
+    "review_record": "GOV-0032",
+    "reviewed_at": "2026-07-12",
+    "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+    "result": "ConfirmedWithOpenAmbiguities",
+    "confirmed_requirement_count": 63,
+    "open_ambiguity_count": 19,
+    "promotion_effect": "None"
+  }
 }

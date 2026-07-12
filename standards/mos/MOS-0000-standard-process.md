@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.2
+version: 1.0.0-alpha.3
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -12,6 +12,9 @@ related:
   - MF-0003
   - GOV-0029
   - ADR-0010
+  - ADR-0011
+  - GOV-0033
+  - GOV-0034
   - REF-0001
 depends_on:
   - MF-0001
@@ -167,3 +170,17 @@ The index MUST NOT:
 - treat a product module name as conformance evidence.
 
 See `ADR-0010` and `GOV-0029`.
+## 13. Review readiness and promotion
+
+A review checklist in `Prepared` state means that review can begin.
+
+It does not mean:
+
+- a qualified review was completed;
+- objections were resolved;
+- implementation evidence exists;
+- an RFC should advance.
+
+Status promotion requires a dedicated proposal and decision.
+
+Open `BlockingForCandidate` ambiguities MUST be resolved, or an Accepted decision MUST document why a bounded deferral is safe.

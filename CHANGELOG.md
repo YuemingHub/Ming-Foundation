@@ -2,6 +2,40 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.9] - 2026-07-12
+
+### Added
+
+- Day 9 RFC requirement fidelity review (`GOV-0032`).
+- Day 9 RFC review preparation record (`GOV-0033`).
+- RFC ambiguity and revision register (`GOV-0034`).
+- Canonical non-implementation conformance baseline (`GOV-0035`).
+- Accepted decision separating review readiness from status promotion (`ADR-0011`).
+- RFC review and conformance baseline guide (`REF-0003`).
+- Five human-readable RFC review checklists (`GOV-TPL-0005` through `GOV-TPL-0009`).
+- Machine-readable registry of 63 acceptance-test specifications.
+- Machine-readable five-RFC review checklist registry.
+- Machine-readable register of 19 open ambiguities.
+- Acceptance-test, review-checklist, and ambiguity JSON schemas.
+- Review-baseline repository validator.
+
+### Changed
+
+- Repository stage advanced to Day 9 — RFC Review Preparation and Conformance Baseline.
+- Repository version advanced to `1.0.0-alpha.9`.
+- All 63 requirements now identify source blob SHA, fidelity review, acceptance-test reference, and ambiguity references.
+- The conformance-matrix schema now supports selected requirements and an explicit claim boundary.
+- `MOS-0000` now separates review preparation from review execution and promotion.
+- `GOV-0029` and `GOV-0031` record the Day 9 infrastructure extension and completion.
+
+### Review result
+
+- 63 requirements were confirmed as faithful derived indexes.
+- 63 tests remain `SpecificationOnly`.
+- 19 ambiguities remain open.
+- The canonical baseline contains no conformance results.
+- RFC-0001 through RFC-0005 remain Proposed.
+- Both Charters remain Candidate.
 ## [1.0.0-alpha.8] - 2026-07-12
 
 ### Added

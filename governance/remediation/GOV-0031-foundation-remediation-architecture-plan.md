@@ -2,7 +2,7 @@
 id: GOV-0031
 title: Foundation Validation and Remediation Architecture Plan
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -91,18 +91,20 @@ Retain / revise / promote / supersede / withdraw
 - compatibility and migration;
 - dedicated ADR or governance decision.
 
-## 4. Next canonical phase
+## 4. Day 9 completion
 
-Recommended Day 9:
+Day 9 completes the planned preparation work:
 
-> **RFC Review Preparation and Conformance Baseline**
+- requirement fidelity review;
+- acceptance-test references;
+- RFC-specific review checklists;
+- canonical empty conformance baseline;
+- ambiguity and revision register.
 
-Day 9 should remain inside `Ming-Foundation` and:
+## 5. Next canonical phase
 
-1. review the 63 registered requirements for fidelity to RFC source text;
-2. add machine-readable acceptance-test references;
-3. create review checklists for RFC-0001 through RFC-0005;
-4. create an empty canonical conformance baseline without claiming product implementation;
-5. identify ambiguities that require RFC revision;
-6. prepare, but not execute, external implementation evidence scopes;
-7. retain all five RFCs at Proposed unless a dedicated review supports another status.
+Recommended Day 10:
+
+> **RFC Review Execution and Revision Planning**
+
+Day 10 should remain inside `Ming-Foundation` and execute the prepared checklists, preserve dissent, resolve blocking ambiguities, and prepare revisions without automatic status promotion.

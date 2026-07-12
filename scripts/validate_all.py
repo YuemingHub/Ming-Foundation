@@ -13,6 +13,7 @@ SCRIPTS = [
     "validate_audit_scope.py",
     "validate_requirements.py",
     "validate_release_state.py",
+    "validate_review_baseline.py",
 ]
 
 

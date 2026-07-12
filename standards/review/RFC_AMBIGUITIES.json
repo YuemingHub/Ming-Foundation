@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-AMBIGUITIES-0001",
+  "title": "Ming Foundation RFC Ambiguity and Revision Register",
+  "status": "Accepted review register",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+  "registry_version": "1.0.0-alpha.9",
+  "governing_record": "GOV-0034",
+  "summary": {
+    "total": 19,
+    "blocking_for_candidate": 15,
+    "candidate_clarification": 4,
+    "open": 19
+  },
+  "ambiguities": [
+    {
+      "ambiguity_id": "AMB-0001",
+      "source_document": "RFC-0001",
+      "source_section": "2. Core rule",
+      "title": "Material assertion threshold",
+      "question": "Which assertions are material enough to require the complete subject, speaker, evidence, purpose, and contestability record?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0001-R001"
+      ],
+      "recommended_resolution": "Define impact and persistence criteria, including a safe default when materiality is uncertain.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0002",
+      "source_document": "RFC-0001",
+      "source_section": "6. Contestability workflow",
+      "title": "High-impact use classification",
+      "question": "What decisions or uses count as high impact, and who may classify them?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0001-R004"
+      ],
+      "recommended_resolution": "Add a minimum high-impact taxonomy and escalation rule.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0003",
+      "source_document": "RFC-0001",
+      "source_section": "5. Participation ladder",
+      "title": "Age, capacity, and representative authority",
+      "question": "How should participation and representative authority vary by age, capacity, jurisdiction, safety, and service type?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0001-R010",
+        "RFC-0001-R013"
+      ],
+      "recommended_resolution": "Define a jurisdiction-qualified participation profile and an independent review trigger.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0004",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Governed basis for intra-family disclosure",
+      "question": "What minimum basis permits one family member's statement to be disclosed to another?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0001-R012"
+      ],
+      "recommended_resolution": "Define disclosure bases, minimum-necessary rules, notice, safety exceptions, and appeal.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0005",
+      "source_document": "RFC-0002",
+      "source_section": "3.2 Permission or processing basis",
+      "title": "Processing-basis taxonomy",
+      "question": "Which non-consent bases are recognized, and how are jurisdiction-specific legal bases represented without implying universal legality?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0002-R001",
+        "RFC-0002-R002"
+      ],
+      "recommended_resolution": "Separate technical basis categories from jurisdiction-specific legal qualification.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0006",
+      "source_document": "RFC-0002",
+      "source_section": "3.4 Rights request",
+      "title": "Representative authority verification",
+      "question": "What proof and conflict checks are required when a requester acts for another person?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0002-R003"
+      ],
+      "recommended_resolution": "Add representative types, authority evidence, conflict handling, expiry, and independent review.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0007",
+      "source_document": "RFC-0002",
+      "source_section": "5. Retention and deletion",
+      "title": "Minimum retention profiles",
+      "question": "Which retention periods and backup-deletion timelines are acceptable for service, safety, audit, and evidence records?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0002-R004",
+        "RFC-0002-R005",
+        "RFC-0002-R012",
+        "RFC-0002-R013",
+        "RFC-0002-R016"
+      ],
+      "recommended_resolution": "Create reference retention profiles with jurisdiction and risk qualifiers.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0008",
+      "source_document": "RFC-0002",
+      "source_section": "6. Cross-channel identity",
+      "title": "Governed identity authority",
+      "question": "Which system is authoritative when channel identities, permissions, or corrections conflict?",
+      "severity": "CandidateClarification",
+      "affected_requirements": [
+        "RFC-0002-R006",
+        "RFC-0002-R007",
+        "RFC-0002-R011"
+      ],
+      "recommended_resolution": "Define reconciliation precedence, audit continuity, and unresolved-conflict behavior.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0009",
+      "source_document": "RFC-0003",
+      "source_section": "2. Core rule",
+      "title": "High-impact safety action threshold",
+      "question": "Which actions are high impact, and what constitutes a named responsible role rather than a nominal queue?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0003-R001",
+        "RFC-0003-R002"
+      ],
+      "recommended_resolution": "Define severity-to-accountability mapping and acknowledgment authority.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0010",
+      "source_document": "RFC-0003",
+      "source_section": "5. Proportionality",
+      "title": "Least-intrusive decision standard",
+      "question": "How should competing harms, uncertainty, urgency, and affected-person preference be compared?",
+      "severity": "CandidateClarification",
+      "affected_requirements": [
+        "RFC-0003-R003"
+      ],
+      "recommended_resolution": "Add a proportionality decision record and review examples.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0011",
+      "source_document": "RFC-0003",
+      "source_section": "6. Professional and legal boundaries",
+      "title": "Service availability and resource freshness",
+      "question": "How are staffing promises, response targets, and local emergency-resource freshness verified?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0003-R004",
+        "RFC-0003-R005"
+      ],
+      "recommended_resolution": "Define availability states, expiry, ownership, and stale-resource behavior.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0012",
+      "source_document": "RFC-0003",
+      "source_section": "8. Special case: operator may be the risk source",
+      "title": "Independent review trigger",
+      "question": "Who can trigger and conduct independent review when the operator or institution may be causing harm?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0003-R009",
+        "RFC-0003-R010"
+      ],
+      "recommended_resolution": "Define conflict triggers, interim access restrictions, reviewer independence, and appeal.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0013",
+      "source_document": "RFC-0004",
+      "source_section": "4. De-identification review",
+      "title": "Reasonable informed person test",
+      "question": "What review method and risk threshold operationalize the reasonable-informed-person re-identification test?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0004-R001",
+        "RFC-0004-R003",
+        "RFC-0004-R007",
+        "RFC-0004-R012"
+      ],
+      "recommended_resolution": "Define attacker knowledge assumptions, review roles, and decision thresholds.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0014",
+      "source_document": "RFC-0004",
+      "source_section": "5. Cross-family analysis rules",
+      "title": "Minimum cohort and rare-pattern thresholds",
+      "question": "What cohort and rarity controls apply at different sensitivity and publication levels?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0004-R004",
+        "RFC-0004-R010"
+      ],
+      "recommended_resolution": "Create risk-banded minimum cohort and suppression profiles.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0015",
+      "source_document": "RFC-0004",
+      "source_section": "6. Model training and evaluation",
+      "title": "Separate approval authority",
+      "question": "Which role may authorize training, retrieval, evaluation, or prompt-example use, and what independent review is required?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0004-R005",
+        "RFC-0004-R009",
+        "RFC-0004-R011"
+      ],
+      "recommended_resolution": "Define approval authority, provider controls, withdrawal lineage, and review expiry.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0016",
+      "source_document": "RFC-0004",
+      "source_section": "9. Acceptance tests",
+      "title": "Withdrawal after aggregate publication",
+      "question": "How should withdrawal affect derived datasets, rules, and previously published aggregates?",
+      "severity": "CandidateClarification",
+      "affected_requirements": [
+        "RFC-0004-R004",
+        "RFC-0004-R013"
+      ],
+      "recommended_resolution": "Define lineage classes and when reanalysis, annotation, or withdrawal is required.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0017",
+      "source_document": "RFC-0005",
+      "source_section": "2. Core rule",
+      "title": "Material public claim threshold",
+      "question": "Which public statements are material and require a claim record or capability-status label?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0005-R001",
+        "RFC-0005-R007"
+      ],
+      "recommended_resolution": "Define materiality by audience, risk, reliance, persistence, and acquisition effect.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0018",
+      "source_document": "RFC-0005",
+      "source_section": "4. Charter publication",
+      "title": "Bilingual semantic review",
+      "question": "What evidence demonstrates that a translated Charter preserves governing meaning?",
+      "severity": "CandidateClarification",
+      "affected_requirements": [
+        "RFC-0005-R004",
+        "RFC-0005-R005"
+      ],
+      "recommended_resolution": "Add translation reviewer, source revision, semantic deviation record, and dispute route.",
+      "status": "Open"
+    },
+    {
+      "ambiguity_id": "AMB-0019",
+      "source_document": "RFC-0005",
+      "source_section": "9. Synchronization control",
+      "title": "Release-blocking synchronization failures",
+      "question": "Which pages and discrepancies must fail deployment rather than issue a warning?",
+      "severity": "BlockingForCandidate",
+      "affected_requirements": [
+        "RFC-0005-R011"
+      ],
+      "recommended_resolution": "Define normative page classes and fail, warn, or review behavior.",
+      "status": "Open"
+    }
+  ]
+}

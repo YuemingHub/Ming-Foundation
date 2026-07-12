@@ -40,6 +40,15 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0029 | [RFC Requirement Registry and Conformance Infrastructure](governance/validation/GOV-0029-rfc-requirement-and-conformance-infrastructure.md) | Accepted |
 | GOV-0030 | [External Implementation Evidence Intake Protocol](governance/evidence/GOV-0030-external-implementation-evidence-intake-protocol.md) | Accepted |
 | GOV-0031 | [Foundation Validation and Remediation Architecture Plan](governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md) | Accepted |
+| GOV-0032 | [Day 9 RFC Requirement Fidelity Review](governance/validation/GOV-0032-day9-requirement-fidelity-review.md) | Accepted |
+| GOV-0033 | [Day 9 RFC Review Preparation Record](governance/validation/GOV-0033-day9-rfc-review-preparation.md) | Accepted |
+| GOV-0034 | [RFC Ambiguity and Revision Register](governance/reviews/GOV-0034-rfc-ambiguity-and-revision-register.md) | Accepted |
+| GOV-0035 | [Canonical Non-Implementation Conformance Baseline](governance/validation/GOV-0035-canonical-conformance-baseline.md) | Accepted |
+| GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
+| GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
+| GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
+| GOV-TPL-0008 | [RFC-0004 Review Checklist](governance/templates/gov-tpl-0008-rfc-0004-review-checklist.md) | Accepted |
+| GOV-TPL-0009 | [RFC-0005 Review Checklist](governance/templates/gov-tpl-0009-rfc-0005-review-checklist.md) | Accepted |
 | GOV-TPL-0004 | [External Implementation Evidence Intake Record](governance/templates/GOV-TPL-0004-external-implementation-evidence-intake.md) | Accepted |
 
 ## Foundation
@@ -77,6 +86,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0008 | [Treat Day 7 as a Bounded Audit and Retain Current Statuses](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md) | Superseded |
 | ADR-0009 | [Separate Canonical Repository Audit from External Implementation Evidence](governance/decisions/ADR-0009-canonical-repository-audit-scope.md) | Accepted |
 | ADR-0010 | [Machine-Readable Requirements Are Derived Indexes](governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md) | Accepted |
+| ADR-0011 | [Separate Review Readiness from Status Promotion](governance/decisions/ADR-0011-separate-review-readiness-from-status-promotion.md) | Accepted |
 
 ## Projects
 
@@ -92,6 +102,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 |---|---|---|
 | REF-0001 | [RFC Requirement Registry Guide](reference/REF-0001-rfc-requirement-registry-guide.md) | Accepted |
 | REF-0002 | [Core Terms](reference/glossary/core-terms.md) | Draft |
+| REF-0003 | [RFC Review and Conformance Baseline Guide](reference/REF-0003-rfc-review-and-conformance-baseline-guide.md) | Accepted |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

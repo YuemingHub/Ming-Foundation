@@ -77,6 +77,16 @@
           },
           "version": {
             "type": "string"
+          },
+          "source_blob_sha": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "fidelity_review_record": {
+            "type": "string"
+          },
+          "review_state": {
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -97,7 +107,9 @@
           "implementation_neutral",
           "external_evidence_required",
           "verification_methods",
-          "evidence_types"
+          "evidence_types",
+          "acceptance_test_refs",
+          "fidelity_review"
         ],
         "properties": {
           "requirement_id": {
@@ -156,10 +168,56 @@
             "items": {
               "type": "string"
             }
+          },
+          "acceptance_test_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "pattern": "^RFC-[0-9]{4}-AT[0-9]{3}$"
+            }
+          },
+          "fidelity_review": {
+            "type": "object",
+            "required": [
+              "state",
+              "reviewed_at",
+              "reviewed_against_commit",
+              "review_record",
+              "ambiguity_refs"
+            ],
+            "properties": {
+              "state": {
+                "enum": [
+                  "Confirmed",
+                  "NeedsCorrection",
+                  "Unverifiable"
+                ]
+              },
+              "reviewed_at": {
+                "type": "string"
+              },
+              "reviewed_against_commit": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "review_record": {
+                "type": "string"
+              },
+              "ambiguity_refs": {
+                "type": "array",
+                "items": {
+                  "pattern": "^AMB-[0-9]{4}$"
+                }
+              }
+            },
+            "additionalProperties": false
           }
         },
         "additionalProperties": false
       }
+    },
+    "fidelity_review": {
+      "type": "object"
     }
   },
   "additionalProperties": true

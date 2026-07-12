@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-acceptance-test-registry.schema.json",
+  "title": "Ming Foundation RFC Acceptance Test Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "registry_id",
+    "canonical_repository",
+    "source_repository_commit",
+    "tests"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "registry_id": {
+      "type": "string"
+    },
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "source_repository_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "test_id",
+          "requirement_id",
+          "source_document",
+          "source_section",
+          "normative_level",
+          "test_state",
+          "automation_state",
+          "preconditions",
+          "procedure",
+          "expected_result",
+          "required_evidence",
+          "result_states"
+        ],
+        "properties": {
+          "test_id": {
+            "pattern": "^RFC-[0-9]{4}-AT[0-9]{3}$"
+          },
+          "requirement_id": {
+            "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+          },
+          "source_document": {
+            "pattern": "^RFC-[0-9]{4}$"
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "normative_level": {
+            "type": "string"
+          },
+          "test_state": {
+            "enum": [
+              "SpecificationOnly",
+              "Executable",
+              "Retired"
+            ]
+          },
+          "automation_state": {
+            "enum": [
+              "NotImplemented",
+              "Partial",
+              "Automated",
+              "ManualOnly"
+            ]
+          },
+          "external_evidence_required": {
+            "type": "boolean"
+          },
+          "preconditions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "procedure": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "expected_result": {
+            "type": "string"
+          },
+          "required_evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "result_states": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

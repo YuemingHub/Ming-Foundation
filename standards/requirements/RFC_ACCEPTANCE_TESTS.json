@@ -1,0 +1,2384 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-ACCEPTANCE-TESTS-0001",
+  "title": "Ming Foundation RFC Acceptance Test Registry",
+  "status": "Accepted test specification index",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+  "registry_version": "1.0.0-alpha.9",
+  "authority": {
+    "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
+    "registry_role": "Test specification index; does not prove execution or conformance",
+    "governing_decision": "ADR-0011"
+  },
+  "tests": [
+    {
+      "test_id": "RFC-0001-AT001",
+      "requirement_id": "RFC-0001-R001",
+      "source_document": "RFC-0001",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0001-R001",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: schema_review.",
+        "Execute verification method: record_trace.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0001-R001 is present and produces traceable evidence.",
+      "required_evidence": [
+        "data_schema",
+        "sample_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT002",
+      "requirement_id": "RFC-0001-R002",
+      "source_document": "RFC-0001",
+      "source_section": "4. Knowledge-status vocabulary",
+      "title": "Conformance test for RFC-0001-R002",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 4. Knowledge-status vocabulary.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: schema_review.",
+        "Execute verification method: enumeration_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0001-R002 is present and produces traceable evidence.",
+      "required_evidence": [
+        "data_schema",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT003",
+      "requirement_id": "RFC-0001-R003",
+      "source_document": "RFC-0001",
+      "source_section": "4. Knowledge-status vocabulary",
+      "title": "Conformance test for RFC-0001-R003",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 4. Knowledge-status vocabulary.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: ui_review.",
+        "Execute verification method: record_trace.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0001-R003 is present and produces traceable evidence.",
+      "required_evidence": [
+        "ui_capture",
+        "sample_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT004",
+      "requirement_id": "RFC-0001-R004",
+      "source_document": "RFC-0001",
+      "source_section": "6. Contestability workflow",
+      "title": "Conformance test for RFC-0001-R004",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 6. Contestability workflow.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: decision_trace.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R004 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "test_result",
+        "decision_record",
+        "safety_exception_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT005",
+      "requirement_id": "RFC-0001-R005",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R005",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: schema_review.",
+        "Execute verification method: ui_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R005 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "data_schema",
+        "ui_capture",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT006",
+      "requirement_id": "RFC-0001-R006",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R006",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: record_trace.",
+        "Execute verification method: ui_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R006 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "sample_record",
+        "ui_capture",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT007",
+      "requirement_id": "RFC-0001-R007",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R007",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: record_trace.",
+        "Execute verification method: ui_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R007 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "sample_record",
+        "ui_capture"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT008",
+      "requirement_id": "RFC-0001-R008",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R008",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: retention_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R008 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "data_schema",
+        "test_result",
+        "revision_history"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT009",
+      "requirement_id": "RFC-0001-R009",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R009",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: record_trace.",
+        "Execute verification method: migration_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R009 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "sample_record",
+        "revision_history",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT010",
+      "requirement_id": "RFC-0001-R010",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R010",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R010 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "appeal_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT011",
+      "requirement_id": "RFC-0001-R011",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R011",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: decision_trace.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R011 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "test_result",
+        "decision_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT012",
+      "requirement_id": "RFC-0001-R012",
+      "source_document": "RFC-0001",
+      "source_section": "7. Prohibited behavior",
+      "title": "Conformance test for RFC-0001-R012",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 7. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: access_control_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0001-R012 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "access_policy",
+        "test_result",
+        "audit_log"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0001-AT013",
+      "requirement_id": "RFC-0001-R013",
+      "source_document": "RFC-0001",
+      "source_section": "8. User experience requirements",
+      "title": "Conformance test for RFC-0001-R013",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0001, section 8. User experience requirements.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: ui_review.",
+        "Execute verification method: user_task_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0001-R013 is present and produces traceable evidence.",
+      "required_evidence": [
+        "ui_capture",
+        "test_result",
+        "affected_person_review"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT001",
+      "requirement_id": "RFC-0002-R001",
+      "source_document": "RFC-0002",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0002-R001",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: registry_review.",
+        "Execute verification method: record_trace.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R001 is present and produces traceable evidence.",
+      "required_evidence": [
+        "purpose_registry",
+        "permission_record",
+        "sample_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT002",
+      "requirement_id": "RFC-0002-R002",
+      "source_document": "RFC-0002",
+      "source_section": "3.2 Permission or processing basis",
+      "title": "Conformance test for RFC-0002-R002",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 3.2 Permission or processing basis.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: notice_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R002 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "notice",
+        "permission_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT003",
+      "requirement_id": "RFC-0002-R003",
+      "source_document": "RFC-0002",
+      "source_section": "3.4 Rights request",
+      "title": "Conformance test for RFC-0002-R003",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 3.4 Rights request.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: api_review.",
+        "Execute verification method: ui_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R003 is present and produces traceable evidence.",
+      "required_evidence": [
+        "route_inventory",
+        "ui_capture",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT004",
+      "requirement_id": "RFC-0002-R004",
+      "source_document": "RFC-0002",
+      "source_section": "5. Retention and deletion",
+      "title": "Conformance test for RFC-0002-R004",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 5. Retention and deletion.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: retention_registry_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R004 is present and produces traceable evidence.",
+      "required_evidence": [
+        "retention_registry",
+        "storage_inventory"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT005",
+      "requirement_id": "RFC-0002-R005",
+      "source_document": "RFC-0002",
+      "source_section": "5. Retention and deletion",
+      "title": "Conformance test for RFC-0002-R005",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 5. Retention and deletion.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: exception_record_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R005 is present and produces traceable evidence.",
+      "required_evidence": [
+        "exception_record",
+        "access_policy",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT006",
+      "requirement_id": "RFC-0002-R006",
+      "source_document": "RFC-0002",
+      "source_section": "6. Cross-channel identity",
+      "title": "Conformance test for RFC-0002-R006",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 6. Cross-channel identity.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: architecture_review.",
+        "Execute verification method: cross_channel_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R006 is present and produces traceable evidence.",
+      "required_evidence": [
+        "architecture_diagram",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT007",
+      "requirement_id": "RFC-0002-R007",
+      "source_document": "RFC-0002",
+      "source_section": "6. Cross-channel identity",
+      "title": "Conformance test for RFC-0002-R007",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 6. Cross-channel identity.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: data_lineage_review.",
+        "Execute verification method: cross_channel_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R007 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "lineage_map",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT008",
+      "requirement_id": "RFC-0002-R008",
+      "source_document": "RFC-0002",
+      "source_section": "7. Public forms",
+      "title": "Conformance test for RFC-0002-R008",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 7. Public forms.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: form_review.",
+        "Execute verification method: privacy_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0002-R008 is present and produces traceable evidence.",
+      "required_evidence": [
+        "form_capture",
+        "privacy_notice",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT009",
+      "requirement_id": "RFC-0002-R009",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R009",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R009 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT010",
+      "requirement_id": "RFC-0002-R010",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R010",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R010 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT011",
+      "requirement_id": "RFC-0002-R011",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R011",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R011 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT012",
+      "requirement_id": "RFC-0002-R012",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R012",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R012 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT013",
+      "requirement_id": "RFC-0002-R013",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R013",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R013 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT014",
+      "requirement_id": "RFC-0002-R014",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R014",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R014 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT015",
+      "requirement_id": "RFC-0002-R015",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R015",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R015 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0002-AT016",
+      "requirement_id": "RFC-0002-R016",
+      "source_document": "RFC-0002",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0002-R016",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0002, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: policy_review.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: data_lineage_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0002-R016 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "audit_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT001",
+      "requirement_id": "RFC-0003-R001",
+      "source_document": "RFC-0003",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0003-R001",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: record_trace.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R001 is present and produces traceable evidence.",
+      "required_evidence": [
+        "safety_record",
+        "handoff_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT002",
+      "requirement_id": "RFC-0003-R002",
+      "source_document": "RFC-0003",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0003-R002",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: responsibility_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0003-R002 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "responsibility_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT003",
+      "requirement_id": "RFC-0003-R003",
+      "source_document": "RFC-0003",
+      "source_section": "5. Proportionality",
+      "title": "Conformance test for RFC-0003-R003",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 5. Proportionality.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: decision_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R003 is present and produces traceable evidence.",
+      "required_evidence": [
+        "test_result",
+        "decision_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT004",
+      "requirement_id": "RFC-0003-R004",
+      "source_document": "RFC-0003",
+      "source_section": "6. Professional and legal boundaries",
+      "title": "Conformance test for RFC-0003-R004",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 6. Professional and legal boundaries.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: public_claim_review.",
+        "Execute verification method: ui_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0003-R004 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "public_copy",
+        "ui_capture",
+        "operational_roster"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT005",
+      "requirement_id": "RFC-0003-R005",
+      "source_document": "RFC-0003",
+      "source_section": "6. Professional and legal boundaries",
+      "title": "Conformance test for RFC-0003-R005",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 6. Professional and legal boundaries.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: ui_review.",
+        "Execute verification method: content_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R005 is present and produces traceable evidence.",
+      "required_evidence": [
+        "ui_capture",
+        "public_copy"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT006",
+      "requirement_id": "RFC-0003-R006",
+      "source_document": "RFC-0003",
+      "source_section": "7. Appeal and correction",
+      "title": "Conformance test for RFC-0003-R006",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 7. Appeal and correction.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: workflow_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R006 is present and produces traceable evidence.",
+      "required_evidence": [
+        "appeal_route",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT007",
+      "requirement_id": "RFC-0003-R007",
+      "source_document": "RFC-0003",
+      "source_section": "7. Appeal and correction",
+      "title": "Conformance test for RFC-0003-R007",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 7. Appeal and correction.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: record_trace.",
+        "Execute verification method: incident_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R007 is present and produces traceable evidence.",
+      "required_evidence": [
+        "safety_record",
+        "revision_history",
+        "incident_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT008",
+      "requirement_id": "RFC-0003-R008",
+      "source_document": "RFC-0003",
+      "source_section": "7. Appeal and correction",
+      "title": "Conformance test for RFC-0003-R008",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 7. Appeal and correction.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: retention_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0003-R008 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "data_schema",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT009",
+      "requirement_id": "RFC-0003-R009",
+      "source_document": "RFC-0003",
+      "source_section": "8. Special case: operator may be the risk source",
+      "title": "Conformance test for RFC-0003-R009",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 8. Special case: operator may be the risk source.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: scenario_test.",
+        "Execute verification method: conflict_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0003-R009 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "test_result",
+        "independent_review_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0003-AT010",
+      "requirement_id": "RFC-0003-R010",
+      "source_document": "RFC-0003",
+      "source_section": "8. Special case: operator may be the risk source",
+      "title": "Conformance test for RFC-0003-R010",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0003, section 8. Special case: operator may be the risk source.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: workflow_review.",
+        "Execute verification method: tabletop_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0003-R010 is present and produces traceable evidence.",
+      "required_evidence": [
+        "policy",
+        "test_result",
+        "decision_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT001",
+      "requirement_id": "RFC-0004-R001",
+      "source_document": "RFC-0004",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0004-R001",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: architecture_review.",
+        "Execute verification method: privacy_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0004-R001 is present and produces traceable evidence.",
+      "required_evidence": [
+        "data_flow",
+        "access_policy",
+        "deidentification_review"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT002",
+      "requirement_id": "RFC-0004-R002",
+      "source_document": "RFC-0004",
+      "source_section": "3. Evidence zones",
+      "title": "Conformance test for RFC-0004-R002",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": false,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 3. Evidence zones.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0004-R002 is present and produces traceable evidence.",
+      "required_evidence": [
+        "public_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT003",
+      "requirement_id": "RFC-0004-R003",
+      "source_document": "RFC-0004",
+      "source_section": "3. Evidence zones",
+      "title": "Conformance test for RFC-0004-R003",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": false,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 3. Evidence zones.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_scan.",
+        "Execute verification method: privacy_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R003 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "privacy_review"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT004",
+      "requirement_id": "RFC-0004-R004",
+      "source_document": "RFC-0004",
+      "source_section": "5. Cross-family analysis rules",
+      "title": "Conformance test for RFC-0004-R004",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 5. Cross-family analysis rules.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: analysis_pipeline_review.",
+        "Execute verification method: privacy_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0004-R004 is present and produces traceable evidence.",
+      "required_evidence": [
+        "pipeline_config",
+        "review_record",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT005",
+      "requirement_id": "RFC-0004-R005",
+      "source_document": "RFC-0004",
+      "source_section": "6. Model training and evaluation",
+      "title": "Conformance test for RFC-0004-R005",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 6. Model training and evaluation.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: provider_data_flow_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R005 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "data_flow",
+        "provider_configuration",
+        "audit_log"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT006",
+      "requirement_id": "RFC-0004-R006",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R006",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R006 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT007",
+      "requirement_id": "RFC-0004-R007",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R007",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R007 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT008",
+      "requirement_id": "RFC-0004-R008",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R008",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R008 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT009",
+      "requirement_id": "RFC-0004-R009",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R009",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R009 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT010",
+      "requirement_id": "RFC-0004-R010",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R010",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R010 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT011",
+      "requirement_id": "RFC-0004-R011",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R011",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R011 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT012",
+      "requirement_id": "RFC-0004-R012",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R012",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R012 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0004-AT013",
+      "requirement_id": "RFC-0004-R013",
+      "source_document": "RFC-0004",
+      "source_section": "8. Prohibited behavior",
+      "title": "Conformance test for RFC-0004-R013",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0004, section 8. Prohibited behavior.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: repository_or_pipeline_review.",
+        "Execute verification method: scenario_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0004-R013 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "scan_result",
+        "access_log",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT001",
+      "requirement_id": "RFC-0005-R001",
+      "source_document": "RFC-0005",
+      "source_section": "2. Core rule",
+      "title": "Conformance test for RFC-0005-R001",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 2. Core rule.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: claim_inventory_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R001 is present and produces traceable evidence.",
+      "required_evidence": [
+        "claim_record",
+        "source_link"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT002",
+      "requirement_id": "RFC-0005-R002",
+      "source_document": "RFC-0005",
+      "source_section": "3. Capability-status vocabulary",
+      "title": "Conformance test for RFC-0005-R002",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 3. Capability-status vocabulary.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: page_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R002 is present and produces traceable evidence.",
+      "required_evidence": [
+        "page_capture",
+        "claim_inventory"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT003",
+      "requirement_id": "RFC-0005-R003",
+      "source_document": "RFC-0005",
+      "source_section": "3. Capability-status vocabulary",
+      "title": "Conformance test for RFC-0005-R003",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 3. Capability-status vocabulary.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: content_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0005-R003 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "page_capture",
+        "claim_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT004",
+      "requirement_id": "RFC-0005-R004",
+      "source_document": "RFC-0005",
+      "source_section": "4. Charter publication",
+      "title": "Conformance test for RFC-0005-R004",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 4. Charter publication.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: page_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R004 is present and produces traceable evidence.",
+      "required_evidence": [
+        "page_capture",
+        "source_manifest"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT005",
+      "requirement_id": "RFC-0005-R005",
+      "source_document": "RFC-0005",
+      "source_section": "4. Charter publication",
+      "title": "Conformance test for RFC-0005-R005",
+      "origin": "requirement_derived",
+      "normative_level": "MUST_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 4. Charter publication.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: diff_review.",
+        "Execute verification method: content_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0005-R005 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "source_text",
+        "page_capture",
+        "sync_report"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT006",
+      "requirement_id": "RFC-0005-R006",
+      "source_document": "RFC-0005",
+      "source_section": "5. Page metadata",
+      "title": "Conformance test for RFC-0005-R006",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 5. Page metadata.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: page_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R006 is present and produces traceable evidence.",
+      "required_evidence": [
+        "page_capture",
+        "page_manifest"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT007",
+      "requirement_id": "RFC-0005-R007",
+      "source_document": "RFC-0005",
+      "source_section": "6. Claim review",
+      "title": "Conformance test for RFC-0005-R007",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 6. Claim review.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: claim_registry_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R007 is present and produces traceable evidence.",
+      "required_evidence": [
+        "claim_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT008",
+      "requirement_id": "RFC-0005-R008",
+      "source_document": "RFC-0005",
+      "source_section": "7. Forms and public collection",
+      "title": "Conformance test for RFC-0005-R008",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 7. Forms and public collection.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: form_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R008 is present and produces traceable evidence.",
+      "required_evidence": [
+        "form_capture",
+        "privacy_notice"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT009",
+      "requirement_id": "RFC-0005-R009",
+      "source_document": "RFC-0005",
+      "source_section": "7. Forms and public collection",
+      "title": "Conformance test for RFC-0005-R009",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD_NOT",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 7. Forms and public collection.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: form_review.",
+        "Execute verification method: input_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The prohibited behavior described by RFC-0005-R009 is prevented, rejected, or visibly constrained.",
+      "required_evidence": [
+        "form_capture",
+        "test_result"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT010",
+      "requirement_id": "RFC-0005-R010",
+      "source_document": "RFC-0005",
+      "source_section": "8. Professional and AI disclosure",
+      "title": "Conformance test for RFC-0005-R010",
+      "origin": "requirement_derived",
+      "normative_level": "MUST",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 8. Professional and AI disclosure.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: page_review.",
+        "Execute verification method: user_flow_review.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R010 is present and produces traceable evidence.",
+      "required_evidence": [
+        "page_capture",
+        "ui_capture"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    },
+    {
+      "test_id": "RFC-0005-AT011",
+      "requirement_id": "RFC-0005-R011",
+      "source_document": "RFC-0005",
+      "source_section": "9. Synchronization control",
+      "title": "Conformance test for RFC-0005-R011",
+      "origin": "requirement_derived",
+      "normative_level": "SHOULD",
+      "test_state": "SpecificationOnly",
+      "automation_state": "NotImplemented",
+      "external_evidence_required": true,
+      "preconditions": [
+        "A named target and immutable revision are selected.",
+        "The relevant data, user flow, policy, or repository surface is available under authorized scope.",
+        "Restricted evidence handling is defined where applicable."
+      ],
+      "procedure": [
+        "Read the governing text in RFC-0005, section 9. Synchronization control.",
+        "Construct or identify a representative positive, negative, and boundary case.",
+        "Execute verification method: build_pipeline_review.",
+        "Execute verification method: release_test.",
+        "Record observed behavior, evidence references, limitations, and counterexamples."
+      ],
+      "expected_result": "The behavior described by RFC-0005-R011 is present and produces traceable evidence.",
+      "required_evidence": [
+        "workflow_config",
+        "test_result",
+        "release_record"
+      ],
+      "result_states": [
+        "Pass",
+        "Fail",
+        "Partial",
+        "Blocked",
+        "NotApplicable"
+      ],
+      "review_record": "GOV-0032"
+    }
+  ]
+}

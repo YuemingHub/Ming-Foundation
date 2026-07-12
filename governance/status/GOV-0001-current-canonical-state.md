@@ -60,10 +60,16 @@ related:
 - GOV-0031
 - ADR-0010
 - REF-0001
+- GOV-0032
+- GOV-0033
+- GOV-0034
+- GOV-0035
+- ADR-0011
+- REF-0003
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.8
+version: 1.0.0-alpha.9
 ---
 
 # GOV-0001 — Current Canonical State
@@ -87,9 +93,9 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 8 — Validation Infrastructure and
-  Remediation Architecture
-- **Current repository version:** `1.0.0-alpha.8`
+- **Current repository stage:** Foundation 1.0 / Day 9 — RFC Review Preparation and
+  Conformance Baseline
+- **Current repository version:** `1.0.0-alpha.9`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -138,13 +144,18 @@ decisions, and governance records.
 - Day 8 machine-readable RFC requirement and conformance infrastructure;
 - Day 8 external implementation evidence intake protocol;
 - Day 8 enhanced repository, scope, requirement, and release validators;
-- Day 8 Foundation-only remediation architecture.
+- Day 8 Foundation-only remediation architecture;
+- Day 9 fidelity review of 63 machine-readable requirements;
+- Day 9 acceptance-test specification registry;
+- Day 9 RFC review checklists and ambiguity register;
+- Day 9 canonical non-implementation conformance baseline.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
-- review and fidelity checking of the Day 8 requirement registry;
-- RFC review preparation and canonical conformance baseline;
+- execution of structured RFC review using the Day 9 checklists;
+- resolution or explicit deferral of Candidate-blocking ambiguities;
+- design of executable conformance-test harnesses;
 - review and revision of Proposed remediation protocols;
 - external implementation evidence only when explicitly scoped;
 - recruitment and execution of affected-person and independent external
@@ -252,14 +263,15 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 8, the next canonical work is RFC Review Preparation and Conformance Baseline:
+After Day 9, the next canonical work is RFC Review Execution and Revision Planning:
 
 1. run `python scripts/validate_all.py`;
-2. review all 63 registered requirements against their RFC source sections;
-3. add machine-readable acceptance-test references;
-4. prepare architecture, ethics, privacy, safety, and implementation review checklists;
-5. create a canonical empty conformance baseline without claiming product implementation;
-6. record ambiguities requiring RFC revision;
-7. retain RFC-0001 through RFC-0005 at Proposed unless a dedicated review supports promotion;
-8. keep external implementation evidence separately scoped and non-blocking;
-9. do not enter another repository without explicit user instruction.
+2. assign accountable reviewers for RFC-0001 through RFC-0005;
+3. complete architecture, agency, privacy, safety, implementation, and affected-person checklist dispositions;
+4. resolve or explicitly defer the Candidate-blocking ambiguities in `GOV-0034`;
+5. convert selected acceptance-test specifications into executable repository tests;
+6. record objections and minority views;
+7. prepare source RFC revisions without changing status automatically;
+8. retain every RFC at Proposed until a dedicated status decision;
+9. keep external implementation evidence separately scoped and non-blocking;
+10. do not enter another repository without explicit user instruction.

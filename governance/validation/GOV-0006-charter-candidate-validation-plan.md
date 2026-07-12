@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.8
+version: 1.0.0-alpha.9
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -259,3 +259,8 @@ Repository progression and Charter validation are separate governance questions.
 Day 8 adds requirement IDs, conformance-matrix structure, external-evidence intake, and repository validation.
 
 This infrastructure supports future Charter validation but does not advance any incomplete validation stream by itself.
+## 12. Day 9 review preparation
+
+Day 9 confirms requirement-index fidelity and establishes RFC review infrastructure.
+
+No affected-person, legal, product-conformance, or Charter-validation stream is completed by this work.

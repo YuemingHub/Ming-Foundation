@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.8
+version: 1.0.0-alpha.9
 ---
 
 # GOV-0002 — Source Registry
@@ -167,3 +167,14 @@ The following structured records are repository infrastructure rather than indep
 - external implementation evidence intake records — non-canonical evidence governed by `GOV-0030`.
 
 These records must identify authority and limitations. They never silently override the source RFC or canonical repository.
+## 12. Day 9 review and baseline records
+
+The following are structured governance infrastructure:
+
+- requirement fidelity review;
+- acceptance-test specifications;
+- RFC review checklists;
+- ambiguity and revision register;
+- non-implementation conformance baseline.
+
+They describe preparation, structure, or open questions. They are not implementation evidence and do not promote an RFC.

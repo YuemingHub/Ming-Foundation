@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-REVIEW-CHECKLISTS-0001",
+  "title": "Ming Foundation RFC Review Checklists",
+  "status": "Accepted review preparation infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
+  "registry_version": "1.0.0-alpha.9",
+  "governing_record": "GOV-0033",
+  "checklists": [
+    {
+      "checklist_id": "CHECK-RFC-0001",
+      "source_document": "RFC-0001",
+      "source_blob_sha": "c32f0d966ac8772e55d5ebf15af6b7c8c7db4b1d",
+      "source_status": "Proposed",
+      "review_state": "Prepared",
+      "promotion_recommendation": "RetainProposed",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "questions": [
+            "Are subject, speaker, assertion, contestation, material, high-impact, and representative defined precisely enough?",
+            "Are relationship, age, capacity, and visibility concepts separated from identity claims?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "questions": [
+            "Can every assertion preserve source, knowledge status, validity, dispute, and revision history?",
+            "Can a decision trace every material assertion it relied on?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "questions": [
+            "Can the affected person inspect, contextualize, contest, restrict, or appeal high-impact interpretations?",
+            "Does refusal remain neutral rather than becoming evidence against the person?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "questions": [
+            "Are intra-family visibility and disclosure rules purpose-limited and reviewable?",
+            "Can representative access be constrained without erasing the subject's voice?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "questions": [
+            "Are safety exceptions narrow, documented, time-bounded, and independently reviewable?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "questions": [
+            "Do all 13 registered requirements have executable test plans and evidence types?",
+            "Can expired and disputed assertions be prevented from driving current recommendations?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "questions": [
+            "Have children, adolescents, parents, and professionals reviewed the contestability experience?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "questions": [
+            "How are legacy profiles converted without silently confirming historical labels?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "questions": [
+            "Are confidence, uncertainty, counterevidence, and unknowns preserved in reports?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "reviewer identity or role",
+        "review date and source revision",
+        "question-by-question disposition",
+        "objections and minority views",
+        "required RFC changes",
+        "evidence references",
+        "promotion recommendation"
+      ]
+    },
+    {
+      "checklist_id": "CHECK-RFC-0002",
+      "source_document": "RFC-0002",
+      "source_blob_sha": "43ca687ade380c344d5de7a19b5e7c038761b667",
+      "source_status": "Proposed",
+      "review_state": "Prepared",
+      "promotion_recommendation": "RetainProposed",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "questions": [
+            "Are purpose, permission, processing basis, asset, rights request, retention exception, and shadow profile defined?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "questions": [
+            "Can every sensitive use trace purpose, basis, storage, access, retention, and deletion dependencies?",
+            "Is there one governed identity, permission, memory, and audit layer across channels?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "questions": [
+            "Can a person understand and challenge uses that are not ordinary consent?",
+            "Are optional purposes genuinely separable and revocable?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "questions": [
+            "Are consent and non-consent bases clearly distinguished?",
+            "Do deletion, restriction, export, and appeal reach primary, derived, and backup handling?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "questions": [
+            "Are safety or legal retention exceptions specific, minimal, review-bounded, and explainable?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "questions": [
+            "Do all 16 registered requirements have test specifications?",
+            "Can purpose and revocation propagate across channels?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "questions": [
+            "Have affected people reviewed notices, rights routes, representative authority, and deletion explanations?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "questions": [
+            "How are legacy channel records reconciled without creating shadow profiles?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "questions": [
+            "Are jurisdictional legal claims excluded unless separately qualified?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "reviewer identity or role",
+        "review date and source revision",
+        "question-by-question disposition",
+        "objections and minority views",
+        "required RFC changes",
+        "evidence references",
+        "promotion recommendation"
+      ]
+    },
+    {
+      "checklist_id": "CHECK-RFC-0003",
+      "source_document": "RFC-0003",
+      "source_blob_sha": "97e4f37200a08dcd78f006d4f76928ff832cee3d",
+      "source_status": "Proposed",
+      "review_state": "Prepared",
+      "promotion_recommendation": "RetainProposed",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "questions": [
+            "Are high-impact action, P0/P1, responsible role, acknowledgment, failed handoff, incident, and near miss defined?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "questions": [
+            "Can signals, assessments, handoffs, actions, appeals, and incidents be traced without becoming permanent identity labels?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "questions": [
+            "Does the system use the least intrusive proportionate response and preserve correction routes?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "questions": [
+            "Is safety disclosure minimum-necessary and visible to appropriate roles only?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "questions": [
+            "Can a handoff close only after acknowledgment or an explicit failed state?",
+            "Can the operator be treated as a potential risk source with independent review?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "questions": [
+            "Do all 10 registered requirements have test specifications?",
+            "Do model or policy changes trigger safety regression testing?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "questions": [
+            "Have crisis, safeguarding, child-rights, and professional reviewers examined false-positive and false-negative paths?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "questions": [
+            "How are historical risk labels corrected across dependent records?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "questions": [
+            "Are staffing, response time, emergency-resource freshness, and jurisdiction limitations explicit?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "reviewer identity or role",
+        "review date and source revision",
+        "question-by-question disposition",
+        "objections and minority views",
+        "required RFC changes",
+        "evidence references",
+        "promotion recommendation"
+      ]
+    },
+    {
+      "checklist_id": "CHECK-RFC-0004",
+      "source_document": "RFC-0004",
+      "source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "source_status": "Proposed",
+      "review_state": "Prepared",
+      "promotion_recommendation": "RetainProposed",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "questions": [
+            "Are case, evidence zone, de-identification, rarity, cohort, derived rule, and onward use defined?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "questions": [
+            "Can evidence move between zones only through explicit, traceable transformations and approvals?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "questions": [
+            "Can families withdraw or object without being ranked, profiled, or penalized?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "questions": [
+            "Does de-identification consider direct, indirect, linked, rare, and reviewer-known identifiers?",
+            "Are provider, training, retrieval, evaluation, and prompt-example uses separately governed?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "questions": [
+            "Can safety evidence remain restricted without becoming routine commercial or research material?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "questions": [
+            "Do all 13 registered requirements have test specifications?",
+            "Can rare outputs, unrelated raw-case browsing, and public re-identification be prevented?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "questions": [
+            "Have affected people and privacy reviewers examined reuse, publication, and withdrawal scenarios?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "questions": [
+            "How are existing cases assigned to evidence zones and lineage records?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "questions": [
+            "Are uncertainty, counterexamples, cohort limits, validity periods, and publication limitations preserved?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "reviewer identity or role",
+        "review date and source revision",
+        "question-by-question disposition",
+        "objections and minority views",
+        "required RFC changes",
+        "evidence references",
+        "promotion recommendation"
+      ]
+    },
+    {
+      "checklist_id": "CHECK-RFC-0005",
+      "source_document": "RFC-0005",
+      "source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "source_status": "Proposed",
+      "review_state": "Prepared",
+      "promotion_recommendation": "RetainProposed",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "questions": [
+            "Are material claim, official surface, capability status, normative page, summary, and discrepancy defined?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "questions": [
+            "Can public claims trace repository source, evidence, reviewer, status, version, and expiry?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "questions": [
+            "Do public surfaces avoid anxiety, false completion, unsupported outcome promises, and hidden limitations?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "questions": [
+            "Do forms minimize data and state purpose, recipient, retention, automation, prohibited content, and rights route?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "questions": [
+            "Are AI, human review, emergency, clinical, legal, and response boundaries visible before sensitive use?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "questions": [
+            "Do all 11 registered requirements have test specifications?",
+            "Can stale normative content block release or issue a governed warning?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "questions": [
+            "Have public users, translators, accessibility reviewers, and affected people reviewed comprehension and correction routes?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "questions": [
+            "How are historical pages, translations, and claims assigned status without misleading continuity?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "questions": [
+            "Are outcome and capability claims accompanied by evidence, limitations, dates, and independent review when required?"
+          ],
+          "required_disposition": [
+            "Pass",
+            "Revise",
+            "Blocked",
+            "NotApplicableWithReason"
+          ]
+        }
+      ],
+      "required_outputs": [
+        "reviewer identity or role",
+        "review date and source revision",
+        "question-by-question disposition",
+        "objections and minority views",
+        "required RFC changes",
+        "evidence references",
+        "promotion recommendation"
+      ]
+    }
+  ]
+}

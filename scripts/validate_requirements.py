@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "standards/requirements/RFC_REQUIREMENTS.json"
 MATRIX = ROOT / "reference/examples/conformance-matrix.example.json"
 EVIDENCE = ROOT / "reference/examples/external-implementation-evidence.example.json"
+TESTS = ROOT / "standards/requirements/RFC_ACCEPTANCE_TESTS.json"
+AMBIGUITIES = ROOT / "standards/review/RFC_AMBIGUITIES.json"
 
 REQ_ID = re.compile(r"^RFC-\d{4}-R\d{3}$")
 RFC_ID = re.compile(r"^RFC-\d{4}$")
@@ -66,6 +68,8 @@ def main() -> int:
         source_docs[sid] = source
 
     seen: set[str] = set()
+    test_refs: set[str] = set()
+    ambiguity_refs: set[str] = set()
     coverage: dict[str, int] = {sid: 0 for sid in source_docs}
     for requirement in data.get("requirements", []):
         rid = requirement.get("requirement_id", "")
@@ -91,10 +95,37 @@ def main() -> int:
             errors.append(f"{rid}: missing evidence_types")
         if requirement.get("implementation_neutral") is not True:
             errors.append(f"{rid}: implementation_neutral must be true")
+        refs = requirement.get("acceptance_test_refs", [])
+        if not refs:
+            errors.append(f"{rid}: missing acceptance_test_refs")
+        test_refs.update(refs)
+        fidelity = requirement.get("fidelity_review", {})
+        if fidelity.get("state") != "Confirmed":
+            errors.append(f"{rid}: fidelity state is not Confirmed")
+        ambiguity_refs.update(fidelity.get("ambiguity_refs", []))
 
     for source, count in coverage.items():
         if count < 5:
             errors.append(f"{source}: only {count} registered requirements")
+
+    tests_data = json.loads(TESTS.read_text(encoding="utf-8"))
+    test_ids = {test.get("test_id") for test in tests_data.get("tests", [])}
+    if len(test_ids) != 63:
+        errors.append(f"expected 63 unique acceptance tests, found {len(test_ids)}")
+    for test in tests_data.get("tests", []):
+        if test.get("requirement_id") not in seen:
+            errors.append(f"{test.get('test_id')}: unknown requirement")
+        if test.get("test_state") != "SpecificationOnly":
+            errors.append(f"{test.get('test_id')}: Day 9 test must remain SpecificationOnly")
+    for ref in test_refs:
+        if ref not in test_ids:
+            errors.append(f"requirement references unknown acceptance test {ref}")
+
+    ambiguity_data = json.loads(AMBIGUITIES.read_text(encoding="utf-8"))
+    ambiguity_ids = {item.get("ambiguity_id") for item in ambiguity_data.get("ambiguities", [])}
+    for ref in ambiguity_refs:
+        if ref not in ambiguity_ids:
+            errors.append(f"requirement references unknown ambiguity {ref}")
 
     matrix = json.loads(MATRIX.read_text(encoding="utf-8"))
     if matrix.get("canonical_repository") != "YuemingHub/Ming-Foundation":
@@ -123,7 +154,8 @@ def main() -> int:
 
     print(
         "Requirement validation passed. "
-        f"Validated {len(source_docs)} RFC sources and {len(seen)} requirements."
+        f"Validated {len(source_docs)} RFC sources, {len(seen)} requirements, "
+        f"{len(test_ids)} acceptance tests, and {len(ambiguity_ids)} ambiguities."
     )
     return 0
 

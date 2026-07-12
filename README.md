@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 8 — Validation Infrastructure and Remediation Architecture**. Day 8 implements machine-readable RFC requirements, conformance schemas, external evidence intake, repository validation, release consistency checks, and a Foundation-only remediation architecture without promoting Charter or RFC status.
+This repository is at **Foundation 1.0 / Day 9 — RFC Review Preparation and Conformance Baseline**. Day 9 confirms the fidelity of 63 machine-readable requirements, adds acceptance-test specifications and five RFC review checklists, records open ambiguities, and creates an intentionally empty conformance baseline without promoting Charter or RFC status.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -76,8 +76,14 @@ Charter governance and validation:
 - [`governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md`](governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md)
 - [`governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md`](governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md)
 - [`reference/REF-0001-rfc-requirement-registry-guide.md`](reference/REF-0001-rfc-requirement-registry-guide.md)
+- [`governance/validation/GOV-0032-day9-requirement-fidelity-review.md`](governance/validation/GOV-0032-day9-requirement-fidelity-review.md)
+- [`governance/validation/GOV-0033-day9-rfc-review-preparation.md`](governance/validation/GOV-0033-day9-rfc-review-preparation.md)
+- [`governance/reviews/GOV-0034-rfc-ambiguity-and-revision-register.md`](governance/reviews/GOV-0034-rfc-ambiguity-and-revision-register.md)
+- [`governance/validation/GOV-0035-canonical-conformance-baseline.md`](governance/validation/GOV-0035-canonical-conformance-baseline.md)
+- [`governance/decisions/ADR-0011-separate-review-readiness-from-status-promotion.md`](governance/decisions/ADR-0011-separate-review-readiness-from-status-promotion.md)
+- [`reference/REF-0003-rfc-review-and-conformance-baseline-guide.md`](reference/REF-0003-rfc-review-and-conformance-baseline-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 8 adds validation infrastructure only; machine-readable requirements do not replace or promote the RFC source text.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 9 review state is `Prepared`, not `Complete`; test specifications have not been executed and the conformance baseline contains no implementation results.
 
 ## Mission
 
@@ -213,7 +219,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.8**
+Current repository foundation version: **1.0.0-alpha.9**
 
 ## License
 
