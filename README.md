@@ -10,9 +10,22 @@ Ming Foundation is an open standards initiative dedicated to one question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 1**. It establishes the repository architecture, governance rules, document standards, first principles, and initial architecture decisions.
+This repository is at **Foundation 1.0 / Day 2**. Day 1 established the repository architecture, governance rules, document standards, first principles, and initial architecture decisions. Day 2 establishes the canonical public surfaces, source registry, current-state baseline, and conversation-to-repository workflow.
 
 **Important:** “Ming Foundation” is currently the name of an open standards initiative and repository. It does not by itself claim to be a legally registered foundation.
+
+## Official project surfaces
+
+- **Official MingOS website:** [`mingos.cn`](https://mingos.cn)
+- **Canonical public repository:** [`YuemingHub/Ming-Foundation`](https://github.com/YuemingHub/Ming-Foundation)
+
+Conversation windows, coding-agent sessions, and ZIP handoff packages are working or transfer sources. Project-relevant outcomes become formal project assets through review and repository integration. Private case data, personal information, secrets, and unsafe material must not be published merely to preserve discussion history.
+
+See:
+
+- [`governance/status/GOV-0001-current-canonical-state.md`](governance/status/GOV-0001-current-canonical-state.md)
+- [`governance/sources/GOV-0002-source-registry.md`](governance/sources/GOV-0002-source-registry.md)
+- [`governance/workflows/GOV-0003-conversation-to-repository.md`](governance/workflows/GOV-0003-conversation-to-repository.md)
 
 ## Mission
 
@@ -83,6 +96,8 @@ Projects
 - [`standards/mos/MOS-0000-standard-process.md`](standards/mos/MOS-0000-standard-process.md)
 - [`governance/decisions/ADR-0001-ai-is-not-the-center.md`](governance/decisions/ADR-0001-ai-is-not-the-center.md)
 - [`governance/decisions/ADR-0002-observation-before-advice.md`](governance/decisions/ADR-0002-observation-before-advice.md)
+- [`governance/decisions/ADR-0003-mingos-cn-is-the-official-website.md`](governance/decisions/ADR-0003-mingos-cn-is-the-official-website.md)
+- [`governance/decisions/ADR-0004-ming-foundation-is-the-canonical-public-repository.md`](governance/decisions/ADR-0004-ming-foundation-is-the-canonical-public-repository.md)
 
 ## Working principles
 
@@ -116,7 +131,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.1**
+Current repository foundation version: **1.0.0-alpha.2**
 
 ## License
 
