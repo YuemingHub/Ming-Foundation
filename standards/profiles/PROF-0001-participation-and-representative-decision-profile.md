@@ -2,17 +2,24 @@
 id: PROF-0001
 title: Participation and Representative Decision Profile
 status: Proposed
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Layer 1 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-07-13
 related:
   - RFC-0001
   - RFC-0002
   - GOV-0055
   - GOV-0058
   - ADR-0016
+  - GOV-0061
+  - GOV-0066
+  - GOV-0071
+  - GOV-0072
+  - GOV-0076
+  - GOV-0077
+  - ADR-0019
 depends_on:
   - RFC-0001
   - ADR-0013
@@ -113,3 +120,118 @@ reviewer
 - Which communication supports are required for disability and language
   access?
 - Which decisions must never be delegated solely to a representative?
+## 7. Non-hierarchical and purpose-specific semantics
+
+P0 through P5 are participation conditions for one named purpose and decision.
+
+They MUST NOT be used as a score of:
+
+- intelligence;
+- maturity;
+- compliance or obedience;
+- mental health;
+- trustworthiness;
+- family value;
+- general decision-making ability;
+- entitlement to dignity, care, privacy, or support.
+
+A lower participation condition for one purpose MUST NOT automatically lower
+participation for another purpose.
+
+A participation record MUST state the exact purpose, decision, scope, start,
+review or expiry time, and evidence for the selected condition.
+
+## 8. Supported decision-making, disagreement, and refusal
+
+Before reducing direct participation, the implementation MUST consider
+support that could make participation possible, including:
+
+- plain-language explanation;
+- smaller decision steps;
+- extra time;
+- a trusted support person chosen where safely possible;
+- interpretation or alternate communication;
+- visual, audio, augmentative, or assisted communication;
+- a private opportunity to respond;
+- a later review when stress or immediate conditions change.
+
+Agreement MUST NOT be inferred from:
+
+- silence;
+- distress;
+- inability to use the offered channel;
+- delayed response;
+- representative agreement;
+- compliance under pressure.
+
+Disagreement, refusal, correction, uncertainty, or a request for help MUST NOT
+create punishment, retaliation, reduced service, or an adverse identity label
+unless a separate, documented, proportionate safety or legal duty applies.
+
+## 9. P0 temporary-exclusion safeguards
+
+P0 may be used only when direct notice would create a specific and credible
+immediate safety or legal risk that cannot be sufficiently reduced through a
+less restrictive participation condition.
+
+Every P0 decision MUST include:
+
+- the specific harm being prevented;
+- evidence and uncertainty;
+- alternatives considered;
+- why P1 through P5 are insufficient;
+- minimum excluded information and action;
+- conflict-free authorizer;
+- support available to the subject;
+- the shortest reasonable duration;
+- a mandatory review time;
+- later-notice conditions;
+- correction and appeal routes;
+- the person responsible for ending or renewing the restriction.
+
+The authorizer, representative, reporter, and final reviewer SHOULD be
+different roles when conflict or high impact is present.
+
+P0 MUST expire automatically unless a new review records a continuing basis.
+
+## 10. Accessibility and communication profile
+
+The participation decision MUST record usable communication support for the
+specific person and context.
+
+The support assessment MUST consider:
+
+- language and interpretation;
+- literacy and cognitive load;
+- disability and assistive technology;
+- neurodivergence;
+- trauma-sensitive pacing;
+- sensory and environmental conditions;
+- remote, low-bandwidth, and offline access;
+- privacy when a representative or support person is present.
+
+A right that cannot be exercised through an available and usable channel is
+not operationally available.
+
+## 11. Purpose-specific scenario tests
+
+An implementation test set MUST include at least:
+
+1. the same person holding P2 for service notice and P5 for optional data use;
+2. refusal without penalty;
+3. silence that is not treated as agreement;
+4. a representative-subject conflict;
+5. P0 expiry and later notice;
+6. a communication barrier resolved through support;
+7. an accessibility failure that blocks the decision;
+8. a correction that changes the selected participation condition.
+
+These are source and implementation requirements, not evidence that affected
+people have reviewed or accepted the profile.
+
+## 12. Remaining external review
+
+The profile remains Proposed until affected-person, safeguarding,
+accessibility, domain, and jurisdiction review are executed and synthesized.
+
+Internal review readiness MUST NOT be represented as participant approval.

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/profile-source-revision-tests.schema.json",
+  "title": "Profile Source Revision Tests",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "tests"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "test_id",
+          "revision_id",
+          "source_document",
+          "source_version",
+          "required_marker",
+          "method"
+        ]
+      }
+    }
+  }
+}

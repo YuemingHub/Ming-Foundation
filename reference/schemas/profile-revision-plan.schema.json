@@ -25,7 +25,11 @@
           "source_document",
           "proposed_change",
           "priority",
-          "status"
+          "status",
+          "implementation_refs",
+          "source_test_ref",
+          "round2_review_ref",
+          "completion_boundary"
         ],
         "properties": {
           "revision_id": {
@@ -48,6 +52,19 @@
               "Complete",
               "Deferred"
             ]
+          },
+          "implementation_refs": {
+            "type": "array",
+            "minItems": 2
+          },
+          "source_test_ref": {
+            "pattern": "^PST-[0-9]{4}$"
+          },
+          "round2_review_ref": {
+            "pattern": "^PIR2-PROF-[0-9]{4}-[0-9]{8}$"
+          },
+          "completion_boundary": {
+            "type": "string"
           }
         }
       }

@@ -2,7 +2,7 @@
 id: GOV-0067
 title: Affected-Person and Domain Review Preparation Plan
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Review Governance
 created: 2026-07-13
@@ -68,3 +68,13 @@ medical, psychiatric, legal, immigration, financial, school, or third-party
 case narratives.
 
 A separate approved process is required for any sensitive evidence.
+
+## Day 15 readiness relation
+
+The revised Profile content passes the content-readiness gate.
+
+Operational scheduling remains blocked under `GOV-0077` and `GOV-0078`
+because real role assignments, approvals, evidence infrastructure, and
+jurisdiction qualification do not yet exist.
+
+Execution state remains `PreparedNotExecuted`.

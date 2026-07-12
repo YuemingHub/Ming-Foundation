@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 14 — Profile Review and Affected-Person Review Preparation**. Day 14 completes internal review of four Proposed Profiles, records 32 dimension dispositions and 16 revision items, prepares seven safeguarded affected-person and domain review tracks, and fixes cross-platform governed-text integrity without claiming any participant evidence.
+This repository is at **Foundation 1.0 / Day 15 — Profile Source Revision and Review-Readiness Gate**. Day 15 implements all 16 Profile source revisions, advances PROF-0001 through PROF-0004 to 0.2.0-draft.1, completes Profile Internal Review Round 2, and establishes a readiness gate that passes content while blocking scheduling until real accountability, approvals, evidence infrastructure, and jurisdiction qualification exist.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -126,8 +126,17 @@ Charter governance and validation:
 - [`governance/decisions/ADR-0017-canonical-text-integrity-across-platforms.md`](governance/decisions/ADR-0017-canonical-text-integrity-across-platforms.md)
 - [`governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md`](governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md)
 - [`reference/REF-0008-profile-review-and-affected-person-preparation-guide.md`](reference/REF-0008-profile-review-and-affected-person-preparation-guide.md)
+- [`governance/validation/GOV-0071-day15-profile-source-revision-record.md`](governance/validation/GOV-0071-day15-profile-source-revision-record.md)
+- [`governance/reviews/GOV-0076-profile-internal-review-round2.md`](governance/reviews/GOV-0076-profile-internal-review-round2.md)
+- [`governance/reviews/GOV-0077-affected-person-review-readiness-gate.md`](governance/reviews/GOV-0077-affected-person-review-readiness-gate.md)
+- [`governance/operations/GOV-0078-review-operational-activation-register.md`](governance/operations/GOV-0078-review-operational-activation-register.md)
+- [`governance/reviews/GOV-0079-day15-status-recommendation.md`](governance/reviews/GOV-0079-day15-status-recommendation.md)
+- [`governance/validation/GOV-0080-day15-validation-record.md`](governance/validation/GOV-0080-day15-validation-record.md)
+- [`governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md`](governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md)
+- [`governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md`](governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md)
+- [`reference/REF-0009-profile-revision-and-review-readiness-guide.md`](reference/REF-0009-profile-revision-and-review-readiness-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. Profile internal review is complete with revisions required; affected-person and domain review is `PreparedNotExecuted`; implementation conformance remains empty.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. Revised Profile content is internally ready, but affected-person review remains `PreparedNotExecuted`, operational scheduling is blocked, and implementation conformance remains empty.
 
 ## Mission
 
@@ -263,7 +272,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.14**
+Current repository foundation version: **1.0.0-alpha.15**
 
 ## License
 

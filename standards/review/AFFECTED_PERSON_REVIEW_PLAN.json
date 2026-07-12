@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-AFFECTED-PERSON-REVIEW-PLAN-0001",
   "title": "Affected-Person and Domain Review Preparation Plan",
   "status": "Accepted preparation record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
-  "registry_version": "1.0.0-alpha.14",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
   "governing_record": "GOV-0067",
   "execution_state": "PreparedNotExecuted",
   "summary": {
@@ -14,7 +14,9 @@
     "executed": 0,
     "participants_recruited": 0,
     "sessions_completed": 0,
-    "results_recorded": 0
+    "results_recorded": 0,
+    "content_ready": 7,
+    "operationally_ready": 0
   },
   "entry_gates": [
     "Named safeguarding and review owner",
@@ -44,7 +46,10 @@
         "Can they say no, disagree, ask for help, or change their mind?",
         "Do P0–P5 feel like a score about the person?",
         "Can they tell who is allowed to speak or decide for them?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-ADOLESCENT-001",
@@ -63,7 +68,10 @@
         "Could disagreement be mistaken for incapacity or risk?",
         "Can deletion, retention, and safety information be understood?",
         "Do service claims create false reassurance?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-PARENT-001",
@@ -81,7 +89,10 @@
         "What evidence feels proportionate or excessive?",
         "Can the representative understand expiry, conflict, and challenge?",
         "Are deletion and backup states practically understandable?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-PRACTITIONER-001",
@@ -100,7 +111,10 @@
         "Are conflict and safeguarding routes credible?",
         "Are retention and service defaults operationally defensible?",
         "Which failure cases are missing?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-PRIVACY-SAFETY-001",
@@ -119,7 +133,10 @@
         "Can safety exceptions become permanent control?",
         "Are false labels and representative conflicts correctable?",
         "Are service and resource claims evidence-backed?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-ACCESSIBILITY-001",
@@ -138,7 +155,10 @@
         "Are alternate communication routes provided?",
         "Could verification exclude people without documents or technology?",
         "Are resource and service details usable under stress?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "track_id": "APR-JURISDICTION-001",
@@ -157,7 +177,18 @@
         "Which age, authority, retention, disclosure, or service duties conflict?",
         "Which profile defaults must be prohibited from universal use?",
         "What evidence is necessary before a public or professional claim?"
-      ]
+      ],
+      "profile_source_version": "0.2.0-draft.1",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     }
-  ]
+  ],
+  "profile_source_version": "0.2.0-draft.1",
+  "content_readiness": "Pass",
+  "operational_activation_state": "NotActivated",
+  "readiness_gate": "GOV-0077",
+  "activation_register": "GOV-0078",
+  "scheduling_authorized": false,
+  "recruitment_authorized": false,
+  "sessions_authorized": false
 }

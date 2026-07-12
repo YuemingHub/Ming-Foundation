@@ -271,7 +271,8 @@
               "NotApplicable",
               "ReviewedNeedsRevision",
               "RevisedPendingReview",
-              "Accepted"
+              "Accepted",
+              "InternallyReadyPendingAffectedPersonReview"
             ]
           },
           "affected_person_review_state": {
@@ -280,6 +281,9 @@
               "PreparedNotExecuted",
               "Executed"
             ]
+          },
+          "profile_dependency_version": {
+            "type": "string"
           }
         },
         "additionalProperties": false

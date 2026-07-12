@@ -20,6 +20,8 @@ SCRIPTS = [
     "validate_requirement_rebaseline.py",
     "validate_text_integrity.py",
     "validate_profile_review_preparation.py",
+    "validate_profile_source_revision.py",
+    "validate_review_readiness_gate.py",
 ]
 
 

@@ -88,7 +88,7 @@ def main() -> int:
     plan = load("standards/review/RFC_REVISION_PLAN.json")
     statuses = {item["revision_id"]: item["status"] for item in plan["items"]}
     for number in range(1, 13):
-        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision"}:
+        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision", "ProfileInternallyReadyPendingAffectedPersonReview"}:
             errors.append(f"REV-{number:04d}: invalid reviewed revision status")
     for number in range(13, 20):
         if statuses.get(f"REV-{number:04d}") != "Planned":

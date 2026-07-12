@@ -45,7 +45,8 @@
               "InternallyAcceptedPendingExternalReview",
               "NeedsFurtherRevision",
               "ProfileDesignedPendingReview",
-              "ProfileReviewedNeedsRevision"
+              "ProfileReviewedNeedsRevision",
+              "ProfileInternallyReadyPendingAffectedPersonReview"
             ]
           }
         }

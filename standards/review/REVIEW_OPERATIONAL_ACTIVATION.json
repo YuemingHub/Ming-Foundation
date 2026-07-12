@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "activation_id": "MING-REVIEW-OPERATIONAL-ACTIVATION-0001",
+  "title": "Affected-Person Review Operational Activation Register",
+  "status": "Accepted planning infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
+  "governing_record": "GOV-0078",
+  "activation_state": "NotActivated",
+  "scheduling_authorized": false,
+  "recruitment_authorized": false,
+  "sessions_authorized": false,
+  "roles": [
+    {
+      "role_id": "review_program_owner",
+      "responsibility": "Owns review scope, sequencing, records, and stop decisions.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "safeguarding_owner",
+      "responsibility": "Owns distress, disclosure, child and adolescent safeguarding, and escalation.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "evidence_custodian",
+      "responsibility": "Owns restricted evidence environment, access, retention, deletion, and audit.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "accessibility_and_language_owner",
+      "responsibility": "Owns communication access, interpretation, disability support, and accommodations.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "independent_facilitator_lead",
+      "responsibility": "Owns conflict-free facilitation for child, adolescent, and vulnerable-participant tracks.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "jurisdiction_and_professional_review_owner",
+      "responsibility": "Owns local legal, regulatory, safeguarding, and professional qualification.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "recruitment_and_compensation_owner",
+      "responsibility": "Owns non-coercive recruitment, compensation, conflicts, and participant contact.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    },
+    {
+      "role_id": "privacy_and_data_rights_reviewer",
+      "responsibility": "Independently reviews collection, notice, consent, withdrawal, deletion, and reuse.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "conflict_check": "NotCompleted",
+      "training_or_qualification_evidence": []
+    }
+  ],
+  "approvals": [
+    {
+      "approval_id": "APR-APP-001",
+      "title": "Consent and assent protocol",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-002",
+      "title": "Distress, disclosure, safeguarding, and stop protocol",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-003",
+      "title": "Restricted evidence storage, access, retention, and deletion plan",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-004",
+      "title": "Accessibility, interpretation, and communication support plan",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-005",
+      "title": "Recruitment, compensation, conflict, and non-coercion plan",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-006",
+      "title": "Child and adolescent independent-facilitation plan",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-007",
+      "title": "Jurisdiction and professional-duty qualification route",
+      "state": "NotApproved",
+      "approver_role": null,
+      "evidence_refs": []
+    }
+  ],
+  "environment": {
+    "restricted_evidence_workspace": "NotProvisioned",
+    "access_control": "NotConfigured",
+    "retention_and_deletion_automation": "NotConfigured",
+    "contact_evidence_separation": "NotConfigured",
+    "incident_and_stop_logging": "NotConfigured"
+  },
+  "summary": {
+    "roles_defined": 8,
+    "roles_assigned": 0,
+    "approvals_required": 7,
+    "approvals_completed": 0,
+    "environment_controls_required": 5,
+    "environment_controls_ready": 0
+  }
+}

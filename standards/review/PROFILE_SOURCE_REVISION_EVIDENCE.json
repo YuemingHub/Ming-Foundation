@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "evidence_id": "MING-PROFILE-SOURCE-REVISION-EVIDENCE-0001",
+  "title": "Day 15 Profile Source Revision Evidence",
+  "status": "Accepted source-revision evidence",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
+  "governing_record": "GOV-0071",
+  "summary": {
+    "profiles_revised": 4,
+    "revision_items": 16,
+    "implemented": 16,
+    "source_tests_executed": 16,
+    "source_tests_passed": 16,
+    "affected_person_review_executed": 0
+  },
+  "profiles": [
+    {
+      "profile_id": "PROF-0001",
+      "source_path": "standards/profiles/PROF-0001-participation-and-representative-decision-profile.md",
+      "previous_version": "0.1.0",
+      "current_version": "0.2.0-draft.1",
+      "previous_blob_sha": "4e37d88c1aecd04a9dd8103fab8c3e3956536054",
+      "current_blob_sha": "378f127298dc9f204c69c5b90e7631539f3852f0",
+      "archive_path": "standards/profiles/archive/prof-0001-v0.1.0.txt",
+      "revision_ids": [
+        "PRV-0001",
+        "PRV-0002",
+        "PRV-0003",
+        "PRV-0004"
+      ],
+      "status": "Proposed"
+    },
+    {
+      "profile_id": "PROF-0002",
+      "source_path": "standards/profiles/PROF-0002-representative-authority-evidence-profile.md",
+      "previous_version": "0.1.0",
+      "current_version": "0.2.0-draft.1",
+      "previous_blob_sha": "0a80f1cd23e7444825aa19b0b09b2766ffdff393",
+      "current_blob_sha": "0552bc82c16aa8a74c8040a94b1de2980da8efa1",
+      "archive_path": "standards/profiles/archive/prof-0002-v0.1.0.txt",
+      "revision_ids": [
+        "PRV-0005",
+        "PRV-0006",
+        "PRV-0007",
+        "PRV-0008"
+      ],
+      "status": "Proposed"
+    },
+    {
+      "profile_id": "PROF-0003",
+      "source_path": "standards/profiles/PROF-0003-retention-and-backup-completion-profile.md",
+      "previous_version": "0.1.0",
+      "current_version": "0.2.0-draft.1",
+      "previous_blob_sha": "dc79197de44bf03dd878d558ddb48da26cfbaf3a",
+      "current_blob_sha": "96e2e6220c79ce101d34ffac317efa9e160e4344",
+      "archive_path": "standards/profiles/archive/prof-0003-v0.1.0.txt",
+      "revision_ids": [
+        "PRV-0009",
+        "PRV-0010",
+        "PRV-0011",
+        "PRV-0012"
+      ],
+      "status": "Proposed"
+    },
+    {
+      "profile_id": "PROF-0004",
+      "source_path": "standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md",
+      "previous_version": "0.1.0",
+      "current_version": "0.2.0-draft.1",
+      "previous_blob_sha": "4195d8c0f1834eaa8d1413289e823c9496f69099",
+      "current_blob_sha": "b4a3a884ba05003e8c01f0e8b2e090dcc0e97e3b",
+      "archive_path": "standards/profiles/archive/prof-0004-v0.1.0.txt",
+      "revision_ids": [
+        "PRV-0013",
+        "PRV-0014",
+        "PRV-0015",
+        "PRV-0016"
+      ],
+      "status": "Proposed"
+    }
+  ]
+}

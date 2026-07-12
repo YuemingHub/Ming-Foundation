@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "MING-AFFECTED-PERSON-REVIEW-READINESS-GATE-0001",
+  "title": "Affected-Person Review Readiness Gate",
+  "status": "Accepted gate assessment",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
+  "governing_record": "GOV-0077",
+  "assessment_date": "2026-07-13",
+  "overall_state": "ContentReadyOperationallyBlocked",
+  "content_ready": true,
+  "operationally_ready_to_schedule": false,
+  "recruitment_authorized": false,
+  "sessions_authorized": false,
+  "participant_evidence_exists": false,
+  "summary": {
+    "gate_items": 9,
+    "pass": 5,
+    "blocked": 4,
+    "fail": 0
+  },
+  "items": [
+    {
+      "gate_item_id": "RRG-001",
+      "title": "Profile source revision",
+      "result": "Pass",
+      "finding": "All 16 PRV items are implemented in four 0.2.0-draft.1 Profile sources."
+    },
+    {
+      "gate_item_id": "RRG-002",
+      "title": "Profile source tests",
+      "result": "Pass",
+      "finding": "Sixteen source-revision tests are executed and passed."
+    },
+    {
+      "gate_item_id": "RRG-003",
+      "title": "Profile Internal Review Round 2",
+      "result": "Pass",
+      "finding": "Four Profiles and 32 dimensions are reviewed: 28 Pass, 0 Revise, 4 external-review Blocked."
+    },
+    {
+      "gate_item_id": "RRG-004",
+      "title": "Affected-person review instruments",
+      "result": "Pass",
+      "finding": "Seven track guides and one session record exist and remain unexecuted."
+    },
+    {
+      "gate_item_id": "RRG-005",
+      "title": "Safeguards and prohibited-collection boundary",
+      "result": "Pass",
+      "finding": "Voluntariness, assent, withdrawal, deletion, accessibility, stop, and restricted-evidence rules exist."
+    },
+    {
+      "gate_item_id": "RRG-006",
+      "title": "Responsible role assignment",
+      "result": "Blocked",
+      "finding": "Eight operational roles are defined but no real assignee or conflict check exists."
+    },
+    {
+      "gate_item_id": "RRG-007",
+      "title": "Protocol approvals",
+      "result": "Blocked",
+      "finding": "Seven operational protocols have not been approved by assigned accountable roles."
+    },
+    {
+      "gate_item_id": "RRG-008",
+      "title": "Restricted evidence environment",
+      "result": "Blocked",
+      "finding": "Storage, access, contact separation, retention, deletion, and incident logging are not provisioned."
+    },
+    {
+      "gate_item_id": "RRG-009",
+      "title": "Jurisdiction and professional qualification",
+      "result": "Blocked",
+      "finding": "No qualified reviewer has approved a jurisdiction and operating context."
+    }
+  ],
+  "transition_rule": {
+    "target_state": "ReadyToSchedule",
+    "requires": [
+      "All operational roles assigned to named accountable people",
+      "Conflict and qualification checks completed",
+      "All required protocols approved",
+      "Restricted evidence environment provisioned and tested",
+      "Jurisdiction and professional-duty route approved",
+      "Independent facilitator assigned for applicable tracks",
+      "A separate activation decision"
+    ]
+  }
+}

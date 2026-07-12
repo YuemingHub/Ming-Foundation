@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/review-operational-activation.schema.json",
+  "title": "Review Operational Activation Register",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "activation_state",
+    "scheduling_authorized",
+    "recruitment_authorized",
+    "sessions_authorized",
+    "roles",
+    "approvals",
+    "environment",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "activation_state": {
+      "const": "NotActivated"
+    },
+    "scheduling_authorized": {
+      "const": false
+    },
+    "recruitment_authorized": {
+      "const": false
+    },
+    "sessions_authorized": {
+      "const": false
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 8
+    },
+    "approvals": {
+      "type": "array",
+      "minItems": 7
+    },
+    "environment": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

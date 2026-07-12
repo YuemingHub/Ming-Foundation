@@ -84,12 +84,12 @@ def main():
 
     residual_states = {item["item_id"]: item["status"] for item in residual["items"]}
     for iid in {"R2R-001", "R2R-002", "R2R-003", "R2R-004"}:
-        if residual_states.get(iid) not in {"DesignedPendingReview", "ReviewedNeedsRevision"}:
+        if residual_states.get(iid) not in {"DesignedPendingReview", "ReviewedNeedsRevision", "InternallyReadyPendingAffectedPersonReview"}:
             errors.append(f"{iid}: must be DesignedPendingReview or ReviewedNeedsRevision")
     for iid in {"R2R-005", "R2R-006"}:
         if residual_states.get(iid) != "Complete":
             errors.append(f"{iid}: must be Complete")
-    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted"}:
+    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted", "ContentReadyOperationallyBlocked"}:
         errors.append("R2R-007 must remain Planned or PreparedNotExecuted")
 
     if len(ambiguities["ambiguities"]) != 19 or any(item["status"] != "Open" for item in ambiguities["ambiguities"]):

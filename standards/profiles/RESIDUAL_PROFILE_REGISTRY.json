@@ -1,20 +1,20 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-RESIDUAL-PROFILES-0001",
   "title": "Day 13 Residual Profile Registry",
   "status": "Accepted registry of Proposed profiles",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
-  "registry_version": "1.0.0-alpha.14",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
   "governing_record": "GOV-0058",
   "summary": {
     "profiles": 4,
     "proposed": 4,
-    "internal_review_complete": 4,
-    "revision_required": 4,
+    "source_revision_complete": 4,
+    "internal_round2_complete": 4,
+    "internally_ready_pending_affected_person_review": 4,
     "affected_person_review_executed": 0,
     "accepted": 0,
-    "ambiguities_addressed": 4,
     "ambiguities_closed": 0
   },
   "profiles": [
@@ -23,7 +23,7 @@
       "title": "Participation and Representative Decision Profile",
       "path": "standards/profiles/PROF-0001-participation-and-representative-decision-profile.md",
       "status": "Proposed",
-      "version": "0.1.0",
+      "version": "0.2.0-draft.1",
       "ambiguity_refs": [
         "AMB-0003"
       ],
@@ -38,20 +38,31 @@
       "residual_item_refs": [
         "R2R-001"
       ],
-      "source_blob_sha": "4e37d88c1aecd04a9dd8103fab8c3e3956536054",
-      "internal_review_state": "Complete",
-      "internal_review_ref": "PIR1-PROF-0001-20260713",
-      "internal_review_record": "GOV-0062",
-      "disposition": "ReviseAndRetainProposed",
+      "source_blob_sha": "378f127298dc9f204c69c5b90e7631539f3852f0",
+      "internal_review_state": "Round2Complete",
+      "internal_review_ref": "PIR2-PROF-0001-20260713",
+      "internal_review_record": "GOV-0072",
+      "disposition": "InternallyReadyPendingAffectedPersonReview",
       "revision_plan_ref": "GOV-0066",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "affected_person_review_state": "PreparedNotExecuted",
+      "previous_source_archive_path": "standards/profiles/archive/prof-0001-v0.1.0.txt",
+      "source_revision_state": "Complete",
+      "revision_ids": [
+        "PRV-0001",
+        "PRV-0002",
+        "PRV-0003",
+        "PRV-0004"
+      ],
+      "source_test_state": "Passed",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "id": "PROF-0002",
       "title": "Representative Authority Evidence Profile",
       "path": "standards/profiles/PROF-0002-representative-authority-evidence-profile.md",
       "status": "Proposed",
-      "version": "0.1.0",
+      "version": "0.2.0-draft.1",
       "ambiguity_refs": [
         "AMB-0003",
         "AMB-0006"
@@ -67,20 +78,31 @@
       "residual_item_refs": [
         "R2R-002"
       ],
-      "source_blob_sha": "0a80f1cd23e7444825aa19b0b09b2766ffdff393",
-      "internal_review_state": "Complete",
-      "internal_review_ref": "PIR1-PROF-0002-20260713",
-      "internal_review_record": "GOV-0063",
-      "disposition": "ReviseAndRetainProposed",
+      "source_blob_sha": "0552bc82c16aa8a74c8040a94b1de2980da8efa1",
+      "internal_review_state": "Round2Complete",
+      "internal_review_ref": "PIR2-PROF-0002-20260713",
+      "internal_review_record": "GOV-0073",
+      "disposition": "InternallyReadyPendingAffectedPersonReview",
       "revision_plan_ref": "GOV-0066",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "affected_person_review_state": "PreparedNotExecuted",
+      "previous_source_archive_path": "standards/profiles/archive/prof-0002-v0.1.0.txt",
+      "source_revision_state": "Complete",
+      "revision_ids": [
+        "PRV-0005",
+        "PRV-0006",
+        "PRV-0007",
+        "PRV-0008"
+      ],
+      "source_test_state": "Passed",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "id": "PROF-0003",
       "title": "Retention and Backup Completion Profile",
       "path": "standards/profiles/PROF-0003-retention-and-backup-completion-profile.md",
       "status": "Proposed",
-      "version": "0.1.0",
+      "version": "0.2.0-draft.1",
       "ambiguity_refs": [
         "AMB-0007"
       ],
@@ -95,20 +117,31 @@
       "residual_item_refs": [
         "R2R-003"
       ],
-      "source_blob_sha": "dc79197de44bf03dd878d558ddb48da26cfbaf3a",
-      "internal_review_state": "Complete",
-      "internal_review_ref": "PIR1-PROF-0003-20260713",
-      "internal_review_record": "GOV-0064",
-      "disposition": "ReviseAndRetainProposed",
+      "source_blob_sha": "96e2e6220c79ce101d34ffac317efa9e160e4344",
+      "internal_review_state": "Round2Complete",
+      "internal_review_ref": "PIR2-PROF-0003-20260713",
+      "internal_review_record": "GOV-0074",
+      "disposition": "InternallyReadyPendingAffectedPersonReview",
       "revision_plan_ref": "GOV-0066",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "affected_person_review_state": "PreparedNotExecuted",
+      "previous_source_archive_path": "standards/profiles/archive/prof-0003-v0.1.0.txt",
+      "source_revision_state": "Complete",
+      "revision_ids": [
+        "PRV-0009",
+        "PRV-0010",
+        "PRV-0011",
+        "PRV-0012"
+      ],
+      "source_test_state": "Passed",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     },
     {
       "id": "PROF-0004",
       "title": "Service Response and Resource Freshness Profile",
       "path": "standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md",
       "status": "Proposed",
-      "version": "0.1.0",
+      "version": "0.2.0-draft.1",
       "ambiguity_refs": [
         "AMB-0011"
       ],
@@ -123,14 +156,28 @@
       "residual_item_refs": [
         "R2R-004"
       ],
-      "source_blob_sha": "4195d8c0f1834eaa8d1413289e823c9496f69099",
-      "internal_review_state": "Complete",
-      "internal_review_ref": "PIR1-PROF-0004-20260713",
-      "internal_review_record": "GOV-0065",
-      "disposition": "ReviseAndRetainProposed",
+      "source_blob_sha": "b4a3a884ba05003e8c01f0e8b2e090dcc0e97e3b",
+      "internal_review_state": "Round2Complete",
+      "internal_review_ref": "PIR2-PROF-0004-20260713",
+      "internal_review_record": "GOV-0075",
+      "disposition": "InternallyReadyPendingAffectedPersonReview",
       "revision_plan_ref": "GOV-0066",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "affected_person_review_state": "PreparedNotExecuted",
+      "previous_source_archive_path": "standards/profiles/archive/prof-0004-v0.1.0.txt",
+      "source_revision_state": "Complete",
+      "revision_ids": [
+        "PRV-0013",
+        "PRV-0014",
+        "PRV-0015",
+        "PRV-0016"
+      ],
+      "source_test_state": "Passed",
+      "content_readiness": "Pass",
+      "operational_readiness": "Blocked"
     }
   ],
-  "day14_review_record": "GOV-0061"
+  "day14_review_record": "GOV-0061",
+  "day15_revision_record": "GOV-0071",
+  "day15_round2_record": "GOV-0076",
+  "day15_readiness_gate": "GOV-0077"
 }

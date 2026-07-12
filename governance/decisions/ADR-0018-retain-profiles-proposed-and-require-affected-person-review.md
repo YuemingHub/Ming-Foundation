@@ -2,7 +2,7 @@
 id: ADR-0018
 title: Retain Profiles as Proposed and Require Affected-Person Review
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-13
@@ -43,3 +43,11 @@ Before a profile may be considered for Candidate or Accepted status, it must:
 
 It must never be described as participant approval, consultation completed,
 or evidence gathered.
+
+## Day 15 confirmation
+
+PROF-0001 through PROF-0004 remain Proposed at `0.2.0-draft.1`.
+
+Internal content readiness does not satisfy the affected-person,
+jurisdiction, operational, or separate promotion requirements in this
+decision.

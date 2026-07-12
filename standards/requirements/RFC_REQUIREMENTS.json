@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "2.2",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
   "title": "Ming Foundation Current RFC Requirement Registry",
   "status": "Accepted infrastructure index",
@@ -9,9 +9,9 @@
     "governing_decision": "ADR-0016"
   },
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.14",
+  "registry_version": "1.0.0-alpha.15",
   "baseline": {
     "state": "CurrentCompleteDerivedIndex",
     "record": "GOV-0056",
@@ -296,8 +296,9 @@
         "PROF-0001",
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R006",
@@ -343,8 +344,9 @@
         "PROF-0001",
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R007",
@@ -750,8 +752,9 @@
       "profile_refs": [
         "PROF-0001"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R017",
@@ -794,8 +797,9 @@
       "profile_refs": [
         "PROF-0001"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R018",
@@ -839,8 +843,9 @@
         "PROF-0001",
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R019",
@@ -881,8 +886,9 @@
       "profile_refs": [
         "PROF-0001"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0001-R020",
@@ -1696,8 +1702,9 @@
       "profile_refs": [
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R011",
@@ -1742,8 +1749,9 @@
       "profile_refs": [
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R012",
@@ -1788,8 +1796,9 @@
       "profile_refs": [
         "PROF-0002"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R013",
@@ -1957,8 +1966,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R017",
@@ -2001,8 +2011,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R018",
@@ -2043,8 +2054,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R019",
@@ -2087,8 +2099,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R020",
@@ -2131,8 +2144,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R021",
@@ -2534,8 +2548,9 @@
       "profile_refs": [
         "PROF-0003"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0002-R031",
@@ -2992,8 +3007,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R008",
@@ -3038,8 +3054,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R009",
@@ -3084,8 +3101,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R010",
@@ -3130,8 +3148,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R011",
@@ -3642,8 +3661,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R024",
@@ -3686,8 +3706,9 @@
       "profile_refs": [
         "PROF-0004"
       ],
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "requirement_id": "RFC-0003-R025",
@@ -4858,9 +4879,12 @@
     "rebaseline_record": "GOV-0056"
   },
   "profile_review": {
-    "record": "GOV-0061",
-    "profile_count": 4,
-    "state": "ReviewedNeedsRevision",
-    "affected_person_review_state": "PreparedNotExecuted"
+    "source_version": "0.2.0-draft.1",
+    "source_revision_record": "GOV-0071",
+    "round2_record": "GOV-0076",
+    "readiness_gate": "GOV-0077",
+    "state": "InternallyReadyPendingAffectedPersonReview",
+    "affected_person_review_state": "PreparedNotExecuted",
+    "operational_readiness": "Blocked"
   }
 }

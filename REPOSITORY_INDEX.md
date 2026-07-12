@@ -79,6 +79,16 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0068 | [Affected-Person Review Instrument Pack](governance/reviews/GOV-0068-affected-person-review-instrument-pack.md) | Accepted |
 | GOV-0069 | [Affected-Person Review Safeguards and Evidence Boundary](governance/evidence/GOV-0069-affected-person-review-safeguards-and-evidence-boundary.md) | Accepted |
 | GOV-0070 | [Day 14 Status Recommendation](governance/reviews/GOV-0070-day14-status-recommendation.md) | Accepted |
+| GOV-0071 | [Day 15 Profile Source Revision Record](governance/validation/GOV-0071-day15-profile-source-revision-record.md) | Accepted |
+| GOV-0072 | [PROF-0001 Source Revision and Round 2 Review](governance/reviews/GOV-0072-prof-0001-source-revision-round2.md) | Accepted |
+| GOV-0073 | [PROF-0002 Source Revision and Round 2 Review](governance/reviews/GOV-0073-prof-0002-source-revision-round2.md) | Accepted |
+| GOV-0074 | [PROF-0003 Source Revision and Round 2 Review](governance/reviews/GOV-0074-prof-0003-source-revision-round2.md) | Accepted |
+| GOV-0075 | [PROF-0004 Source Revision and Round 2 Review](governance/reviews/GOV-0075-prof-0004-source-revision-round2.md) | Accepted |
+| GOV-0076 | [Profile Internal Review Round 2](governance/reviews/GOV-0076-profile-internal-review-round2.md) | Accepted |
+| GOV-0077 | [Affected-Person Review Readiness Gate](governance/reviews/GOV-0077-affected-person-review-readiness-gate.md) | Accepted |
+| GOV-0078 | [Review Operational Activation Register](governance/operations/GOV-0078-review-operational-activation-register.md) | Accepted |
+| GOV-0079 | [Day 15 Status Recommendation](governance/reviews/GOV-0079-day15-status-recommendation.md) | Accepted |
+| GOV-0080 | [Day 15 Validation Record](governance/validation/GOV-0080-day15-validation-record.md) | Accepted |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -137,6 +147,8 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0016 | [Adopt Current Requirement Baseline and Retain Profiles as Proposed](governance/decisions/ADR-0016-adopt-current-requirement-baseline-and-proposed-profiles.md) | Accepted |
 | ADR-0017 | [Canonical Text Integrity Across Platforms](governance/decisions/ADR-0017-canonical-text-integrity-across-platforms.md) | Accepted |
 | ADR-0018 | [Retain Profiles as Proposed and Require Affected-Person Review](governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md) | Accepted |
+| ADR-0019 | [Adopt Revised Profile Sources and Retain Proposed Status](governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md) | Accepted |
+| ADR-0020 | [Separate Content Readiness from Operational Authorization](governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md) | Accepted |
 
 ## Profiles
 
@@ -167,6 +179,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0006 | [Round 2 Review and Requirement Rebaseline Guide](reference/REF-0006-round2-review-and-rebaseline-guide.md) | Accepted |
 | REF-0007 | [Requirement Identity and Residual Profile Guide](reference/REF-0007-requirement-identity-and-profile-guide.md) | Accepted |
 | REF-0008 | [Profile Review and Affected-Person Preparation Guide](reference/REF-0008-profile-review-and-affected-person-preparation-guide.md) | Accepted |
+| REF-0009 | [Profile Revision and Review Readiness Guide](reference/REF-0009-profile-revision-and-review-readiness-guide.md) | Accepted |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

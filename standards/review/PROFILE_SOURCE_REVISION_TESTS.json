@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-PROFILE-SOURCE-REVISION-TESTS-0001",
+  "title": "Day 15 Profile Source Revision Tests",
+  "status": "Accepted source-test specification",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
+  "governing_record": "GOV-0071",
+  "tests": [
+    {
+      "test_id": "PST-0001",
+      "revision_id": "PRV-0001",
+      "source_document": "PROF-0001",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "P0 through P5 are participation conditions for one named purpose and decision.",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0002",
+      "revision_id": "PRV-0002",
+      "source_document": "PROF-0001",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "Disagreement, refusal, correction, uncertainty, or a request for help MUST NOT",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0003",
+      "revision_id": "PRV-0003",
+      "source_document": "PROF-0001",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "P0 MUST expire automatically unless a new review records a continuing basis.",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0004",
+      "revision_id": "PRV-0004",
+      "source_document": "PROF-0001",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 10. Accessibility and communication profile",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0005",
+      "revision_id": "PRV-0005",
+      "source_document": "PROF-0002",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "The implementation MUST use the least intrusive evidence sufficient",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0006",
+      "revision_id": "PRV-0006",
+      "source_document": "PROF-0002",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "Providing care, financial support, housing, transportation, translation,",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0007",
+      "revision_id": "PRV-0007",
+      "source_document": "PROF-0002",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 10. Subject challenge and conflict escalation",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0008",
+      "revision_id": "PRV-0008",
+      "source_document": "PROF-0002",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 11. Authority-evidence lifecycle",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0009",
+      "revision_id": "PRV-0009",
+      "source_document": "PROF-0003",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "A default maximum review interval is a latest review deadline.",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0010",
+      "revision_id": "PRV-0010",
+      "source_document": "PROF-0003",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 8. Plain-language retained-data status",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0011",
+      "revision_id": "PRV-0011",
+      "source_document": "PROF-0003",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 9. Safety evidence and competing-rights balancing",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0012",
+      "revision_id": "PRV-0012",
+      "source_document": "PROF-0003",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 10. Backup restoration controls",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0013",
+      "revision_id": "PRV-0013",
+      "source_document": "PROF-0004",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 7. Risk- and context-sensitive freshness",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0014",
+      "revision_id": "PRV-0014",
+      "source_document": "PROF-0004",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 8. Active-handoff evidence floor",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0015",
+      "revision_id": "PRV-0015",
+      "source_document": "PROF-0004",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 9. Accessible resource metadata",
+      "method": "Canonical source marker and revision-evidence verification"
+    },
+    {
+      "test_id": "PST-0016",
+      "revision_id": "PRV-0016",
+      "source_document": "PROF-0004",
+      "source_version": "0.2.0-draft.1",
+      "required_marker": "## 10. Independent and local verification",
+      "method": "Canonical source marker and revision-evidence verification"
+    }
+  ]
+}

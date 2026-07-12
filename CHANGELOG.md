@@ -2,6 +2,50 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.15] - 2026-07-13
+
+### Added
+
+- Revised PROF-0001 through PROF-0004 sources at `0.2.0-draft.1`.
+- Historical `0.1.0` Profile source snapshots.
+- Sixteen Profile source-revision tests and passed results.
+- Profile Internal Review Round 2.
+- Nine-item affected-person review-readiness gate.
+- Eight-role, seven-approval operational activation register.
+- Day 15 governance records, schemas, and validators.
+
+### Source revision result
+
+- PRV-0001 through PRV-0016 are Complete.
+- Four Profile sources are revised.
+- Sixteen source tests are executed and passed.
+- Round 2 reviews 4 Profiles and 32 dimensions:
+  28 Pass, 0 Revise, 4 Blocked.
+- All four Profiles are internally ready pending affected-person review.
+- All four Profiles remain Proposed.
+
+### Readiness result
+
+```text
+Overall:
+ContentReadyOperationallyBlocked
+
+Content gates passed:       5
+Operational gates blocked:  4
+Roles assigned:             0
+Protocols approved:         0
+Environment controls ready: 0
+Recruitment authorized:     no
+Sessions authorized:        no
+Participant evidence:       none
+```
+
+### Boundaries
+
+- affected-person review remains PreparedNotExecuted;
+- all 19 ambiguities and all 8 dissent items remain Open;
+- all 115 implementation acceptance-test specifications remain unexecuted;
+- implementation conformance results remain empty.
 ## [1.0.0-alpha.14] - 2026-07-13
 
 ### Added

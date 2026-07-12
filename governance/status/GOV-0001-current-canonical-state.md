@@ -125,10 +125,23 @@ related:
 - GOV-TPL-0015
 - GOV-TPL-0016
 - GOV-TPL-0017
+- GOV-0071
+- GOV-0072
+- GOV-0073
+- GOV-0074
+- GOV-0075
+- GOV-0076
+- GOV-0077
+- GOV-0078
+- GOV-0079
+- GOV-0080
+- ADR-0019
+- ADR-0020
+- REF-0009
 status: Accepted
 title: Current Canonical State
-updated: 2026-07-12
-version: 1.0.0-alpha.14
+updated: 2026-07-13
+version: 1.0.0-alpha.15
 ---
 
 # GOV-0001 — Current Canonical State
@@ -152,8 +165,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 14 — Profile Review and Affected-Person Review Preparation
-- **Current repository version:** `1.0.0-alpha.14`
+- **Current repository stage:** Foundation 1.0 / Day 15 — Profile Source Revision and Review-Readiness Gate
+- **Current repository version:** `1.0.0-alpha.15`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -222,6 +235,13 @@ decisions, and governance records.
 - Day 14 seven-track affected-person and domain review preparation;
 - Day 14 eight review instruments and evidence safeguards;
 - Day 14 cross-platform canonical text-integrity policy.
+- Day 15 Profile source revision for PROF-0001 through PROF-0004;
+- Day 15 completion of PRV-0001 through PRV-0016;
+- Day 15 sixteen Profile source-revision tests;
+- Day 15 Profile Internal Review Round 2;
+- Day 15 affected-person review-readiness gate;
+- Day 15 operational role, approval, and evidence-environment register;
+- Day 15 separation of content readiness from scheduling authorization.
 
 ### In progress
 
@@ -336,19 +356,22 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 14, the next canonical work is Profile Source Revision and Review-Readiness Gate:
+After Day 15, the next canonical work is Review Operations Activation and Controlled Pilot Authorization:
 
 1. run `python scripts/validate_all.py`;
-2. revise PROF-0001 through PROF-0004 against PRV-0001 through PRV-0016;
-3. preserve non-hierarchical participation, least-evidence verification,
-   purpose-limited retention, and evidence-backed service claims;
-4. run Profile Internal Review Round 2;
-5. do not recruit participants until all GOV-0067 entry gates have named
-   owners and approved procedures;
-6. retain affected-person review at `PreparedNotExecuted` until real,
-   safeguarded execution evidence exists;
-7. preserve all nineteen ambiguities and eight dissent items as Open;
-8. retain all RFCs and Profiles at Proposed;
-9. keep both Charters at Candidate;
-10. keep implementation conformance separately scoped and empty;
-11. do not enter another repository without explicit user instruction.
+2. assign named accountable people to all eight operational roles;
+3. complete conflict and qualification checks;
+4. approve all seven review protocols;
+5. provision and test restricted evidence storage, access, contact
+   separation, retention, deletion, and incident logging;
+6. approve the jurisdiction and professional-duty route for a defined
+   operating context;
+7. assign an independent facilitator for applicable child, adolescent, and
+   vulnerable-participant tracks;
+8. record a separate activation decision before any scheduling;
+9. keep recruitment, sessions, and participant evidence at zero until
+   activation passes;
+10. retain all RFCs and Profiles at Proposed;
+11. retain both Charters at Candidate;
+12. keep implementation conformance separately scoped and empty;
+13. do not enter another repository without explicit user instruction.

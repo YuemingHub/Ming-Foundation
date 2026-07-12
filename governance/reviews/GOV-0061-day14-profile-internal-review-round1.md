@@ -2,7 +2,7 @@
 id: GOV-0061
 title: Day 14 Profile Internal Review Round 1
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture and Ethics Review
 created: 2026-07-13
@@ -76,3 +76,13 @@ This review does not claim:
 - resolution of linked ambiguities;
 - closure of dissent;
 - Profile or RFC promotion.
+
+## Day 15 historical state
+
+Round 1 remains accepted historical evidence against the archived `0.1.0`
+Profile sources.
+
+Its findings were addressed through PRV-0001 through PRV-0016 and superseded
+for current-source review by `GOV-0076`.
+
+Round 1 is not deleted or rewritten as a passing review.

@@ -2,16 +2,23 @@
 id: PROF-0003
 title: Retention and Backup Completion Profile
 status: Proposed
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Layer 1 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-07-13
 related:
   - RFC-0002
   - GOV-0055
   - GOV-0058
   - ADR-0016
+  - GOV-0061
+  - GOV-0066
+  - GOV-0071
+  - GOV-0074
+  - GOV-0076
+  - GOV-0077
+  - ADR-0019
 depends_on:
   - RFC-0002
 ---
@@ -119,3 +126,98 @@ An exception MUST be:
 - Which backup systems can provide reliable completion evidence?
 - How should deletion be represented when immutable audit evidence must
   remain?
+## 7. Purpose-end deletion and review-interval boundary
+
+A default maximum review interval is a latest review deadline.
+
+It is not:
+
+- permission to retain until the deadline;
+- evidence that the purpose still exists;
+- a substitute for data minimization;
+- a legal retention period;
+- authorization to continue optional training, profiling, sharing, or
+  high-impact use.
+
+When the purpose ends, authority is withdrawn, the asset is no longer
+necessary, or a shorter applicable rule exists, deletion, restriction,
+anonymization, or justified archival MUST begin without waiting for the
+maximum review interval.
+
+Every continuation decision MUST record current necessity, basis, minimum
+scope, alternatives, next review, and responsible owner.
+
+## 8. Plain-language retained-data status
+
+An affected person SHOULD be able to see, in usable language:
+
+- what information remains;
+- whether it is active, restricted, archived, in backup, or under exception;
+- where it remains at a meaningful system level;
+- why it remains;
+- who can use it and for what;
+- which uses are prohibited;
+- expected deletion, expiry, or next review;
+- backup and restoration handling;
+- exception owner and basis;
+- correction, challenge, and appeal routes.
+
+The display MUST NOT falsely state “deleted” when an active or restorable copy
+can still be used for the prohibited purpose.
+
+## 9. Safety evidence and competing-rights balancing
+
+Retention of safety, incident, or safeguarding evidence MUST balance:
+
+- protection from serious harm;
+- reporter and source protection;
+- subject access and correction;
+- false-positive and outdated-label risk;
+- privacy and disclosure harm;
+- legal or professional duties;
+- minimum necessary detail;
+- expiry, review, and appeal;
+- independent review when the operator or representative may be involved.
+
+A safety label MUST NOT become a permanent identity marker merely because
+supporting evidence is retained.
+
+A correction or supersession MUST propagate to active recommendations,
+summaries, indexes, and future use while preserving necessary audit history.
+
+## 10. Backup restoration controls
+
+A backup plan MUST define behavior when data is restored.
+
+It MUST include:
+
+- a suppression list or equivalent control for deleted, restricted, revoked,
+  or corrected records;
+- restoration-time application of current rights and authority state;
+- a reconciliation job for derived assets and indexes;
+- completion monitoring and evidence;
+- failure escalation;
+- exception expiry;
+- a post-restoration propagation test.
+
+Restored data MUST NOT silently return to active use under an expired purpose,
+authority, safety label, or representative state.
+
+## 11. Completion evidence
+
+A deletion or restriction action may be marked complete only when:
+
+- active primary copies are addressed;
+- derived assets and indexes are addressed;
+- shared copies are addressed or a bounded exception is recorded;
+- backup handling is scheduled and enforceable;
+- restoration controls are verified;
+- exceptions are minimum necessary and review-bounded;
+- the result is visible through an appropriate rights route.
+
+## 12. Remaining external review
+
+T0 through T5 are Foundation review classes, not universal legal periods.
+
+The profile remains Proposed pending affected-person, privacy, safeguarding,
+operational, and jurisdiction review.

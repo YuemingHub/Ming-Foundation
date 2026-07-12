@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-PROFILE-INTERNAL-REVIEW-0001",
   "title": "Ming Foundation Profile Internal Review Round 1 Results",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
-  "registry_version": "1.0.0-alpha.14",
+  "registry_version": "1.0.0-alpha.15",
   "governing_record": "GOV-0061",
   "review_scope": {
     "round": "ProfileInternalReviewRound1",
@@ -87,7 +87,10 @@
       "affected_person_review_complete": false,
       "jurisdiction_review_complete": false,
       "implementation_conformance_complete": false,
-      "review_record": "GOV-0062"
+      "review_record": "GOV-0062",
+      "source_archive_path": "standards/profiles/archive/prof-0001-v0.1.0.txt",
+      "historical": true,
+      "superseded_by_review": "PIR2-PROF-0001-20260713"
     },
     {
       "review_id": "PIR1-PROF-0002-20260713",
@@ -146,7 +149,10 @@
       "affected_person_review_complete": false,
       "jurisdiction_review_complete": false,
       "implementation_conformance_complete": false,
-      "review_record": "GOV-0063"
+      "review_record": "GOV-0063",
+      "source_archive_path": "standards/profiles/archive/prof-0002-v0.1.0.txt",
+      "historical": true,
+      "superseded_by_review": "PIR2-PROF-0002-20260713"
     },
     {
       "review_id": "PIR1-PROF-0003-20260713",
@@ -205,7 +211,10 @@
       "affected_person_review_complete": false,
       "jurisdiction_review_complete": false,
       "implementation_conformance_complete": false,
-      "review_record": "GOV-0064"
+      "review_record": "GOV-0064",
+      "source_archive_path": "standards/profiles/archive/prof-0003-v0.1.0.txt",
+      "historical": true,
+      "superseded_by_review": "PIR2-PROF-0003-20260713"
     },
     {
       "review_id": "PIR1-PROF-0004-20260713",
@@ -264,7 +273,12 @@
       "affected_person_review_complete": false,
       "jurisdiction_review_complete": false,
       "implementation_conformance_complete": false,
-      "review_record": "GOV-0065"
+      "review_record": "GOV-0065",
+      "source_archive_path": "standards/profiles/archive/prof-0004-v0.1.0.txt",
+      "historical": true,
+      "superseded_by_review": "PIR2-PROF-0004-20260713"
     }
-  ]
+  ],
+  "historical_state": "SupersededByRound2",
+  "superseding_registry": "standards/review/PROFILE_INTERNAL_REVIEW_ROUND2_RESULTS.json"
 }

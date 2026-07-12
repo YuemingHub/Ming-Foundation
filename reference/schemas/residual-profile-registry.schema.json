@@ -33,7 +33,13 @@
           "internal_review_ref",
           "internal_review_record",
           "disposition",
-          "affected_person_review_state"
+          "affected_person_review_state",
+          "previous_source_archive_path",
+          "source_revision_state",
+          "revision_ids",
+          "source_test_state",
+          "content_readiness",
+          "operational_readiness"
         ],
         "properties": {
           "id": {
@@ -46,7 +52,7 @@
             "pattern": "^[0-9a-f]{40}$"
           },
           "internal_review_state": {
-            "const": "Complete"
+            "const": "Round2Complete"
           },
           "internal_review_ref": {
             "type": "string"
@@ -55,10 +61,32 @@
             "pattern": "^GOV-[0-9]{4}$"
           },
           "disposition": {
-            "const": "ReviseAndRetainProposed"
+            "const": "InternallyReadyPendingAffectedPersonReview"
           },
           "affected_person_review_state": {
             "const": "PreparedNotExecuted"
+          },
+          "previous_source_archive_path": {
+            "type": "string"
+          },
+          "source_revision_state": {
+            "const": "Complete"
+          },
+          "revision_ids": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+              "pattern": "^PRV-[0-9]{4}$"
+            }
+          },
+          "source_test_state": {
+            "const": "Passed"
+          },
+          "content_readiness": {
+            "const": "Pass"
+          },
+          "operational_readiness": {
+            "const": "Blocked"
           }
         }
       }

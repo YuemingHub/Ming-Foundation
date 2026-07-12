@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "registry_id": "MING-RFC-DISSENT-0001",
   "title": "Ming Foundation RFC Dissent and Unresolved Objection Register",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
-  "registry_version": "1.0.0-alpha.14",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
   "governing_record": "GOV-0043",
   "summary": {
     "total": 8,
@@ -43,7 +43,8 @@
       "day11_disposition": "Addressed in RFC-0001 participation and conflict rules; remains open pending affected-person and jurisdiction review.",
       "round2_disposition": "Needs further participation and authority profiles plus affected-person review.",
       "day13_disposition": "PROF-0001 and PROF-0002 provide a proposed combined architecture; dissent remains Open pending affected-person and jurisdiction review.",
-      "day14_disposition": "Profile review confirms that participation and authority levels may become control mechanisms; dissent remains Open pending affected-person evidence."
+      "day14_disposition": "Profile review confirms that participation and authority levels may become control mechanisms; dissent remains Open pending affected-person evidence.",
+      "day15_disposition": "Profile source revision and internal Round 2 address the internal architecture concern; dissent remains Open pending affected-person, domain, jurisdiction, and operational evidence."
     },
     {
       "dissent_id": "DIS-0003",
@@ -81,7 +82,8 @@
       "day11_disposition": "Addressed by explicit active-handoff, bounded-review, no-handoff, and unverified service profiles; remains open pending operational review.",
       "round2_disposition": "Combined service-profile position accepted internally; operational evidence remains required.",
       "day13_disposition": "PROF-0004 provides evidence-backed service classes without forcing false handoff promises; dissent remains Open pending operational review.",
-      "day14_disposition": "Profile review supports transparent no-handoff classes but requires stronger active-handoff evidence; dissent remains Open."
+      "day14_disposition": "Profile review supports transparent no-handoff classes but requires stronger active-handoff evidence; dissent remains Open.",
+      "day15_disposition": "Profile source revision and internal Round 2 address the internal architecture concern; dissent remains Open pending affected-person, domain, jurisdiction, and operational evidence."
     },
     {
       "dissent_id": "DIS-0006",
@@ -95,7 +97,8 @@
       "day11_disposition": "Addressed through a proportionality and precautionary-basis record; remains open pending safety review.",
       "round2_disposition": "Combined least-intrusive and precautionary temporary-action position accepted internally; safety review remains.",
       "day13_disposition": "PROF-0004 preserves transparent no-handoff behavior while RFC-0003 preserves proportionality; dissent remains Open pending safety review.",
-      "day14_disposition": "Profile review retains proportionality and least-intrusive duties while requiring clearer precautionary safeguards; dissent remains Open."
+      "day14_disposition": "Profile review retains proportionality and least-intrusive duties while requiring clearer precautionary safeguards; dissent remains Open.",
+      "day15_disposition": "Profile source revision and internal Round 2 address the internal architecture concern; dissent remains Open pending affected-person, domain, jurisdiction, and operational evidence."
     },
     {
       "dissent_id": "DIS-0007",
@@ -124,5 +127,6 @@
   ],
   "round2_record": "GOV-0053",
   "day13_profile_record": "GOV-0058",
-  "day14_profile_review_record": "GOV-0061"
+  "day14_profile_review_record": "GOV-0061",
+  "day15_profile_round2_record": "GOV-0076"
 }

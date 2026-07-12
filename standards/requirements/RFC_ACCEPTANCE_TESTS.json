@@ -1,11 +1,11 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "2.2",
   "registry_id": "MING-RFC-ACCEPTANCE-TESTS-0001",
   "title": "Ming Foundation Current RFC Acceptance Test Registry",
   "status": "Accepted test specification index",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
-  "registry_version": "1.0.0-alpha.14",
+  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+  "registry_version": "1.0.0-alpha.15",
   "authority": {
     "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
     "registry_role": "Current implementation test specification index; does not prove execution or conformance",
@@ -255,8 +255,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT006",
@@ -306,8 +307,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT007",
@@ -775,8 +777,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT017",
@@ -825,8 +828,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT018",
@@ -876,8 +880,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT019",
@@ -926,8 +931,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0001-AT020",
@@ -1867,8 +1873,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT011",
@@ -1917,8 +1924,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT012",
@@ -1967,8 +1975,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT013",
@@ -2158,8 +2167,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT017",
@@ -2208,8 +2218,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT018",
@@ -2256,8 +2267,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT019",
@@ -2306,8 +2318,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT020",
@@ -2356,8 +2369,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT021",
@@ -2829,8 +2843,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0002-AT031",
@@ -3349,8 +3364,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT008",
@@ -3399,8 +3415,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT009",
@@ -3449,8 +3466,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT010",
@@ -3499,8 +3517,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT011",
@@ -4107,8 +4126,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT024",
@@ -4157,8 +4177,9 @@
       ],
       "revision_state": "RebaselinedCurrent",
       "source_alignment_state": "CurrentRebaselined",
-      "profile_dependency_state": "ReviewedNeedsRevision",
-      "affected_person_review_state": "PreparedNotExecuted"
+      "profile_dependency_state": "InternallyReadyPendingAffectedPersonReview",
+      "affected_person_review_state": "PreparedNotExecuted",
+      "profile_dependency_version": "0.2.0-draft.1"
     },
     {
       "test_id": "RFC-0003-AT025",
@@ -5486,9 +5507,12 @@
     "rebaseline_record": "GOV-0059"
   },
   "profile_review": {
-    "record": "GOV-0061",
-    "profile_count": 4,
-    "state": "ReviewedNeedsRevision",
-    "affected_person_review_state": "PreparedNotExecuted"
+    "source_version": "0.2.0-draft.1",
+    "source_revision_record": "GOV-0071",
+    "round2_record": "GOV-0076",
+    "readiness_gate": "GOV-0077",
+    "state": "InternallyReadyPendingAffectedPersonReview",
+    "affected_person_review_state": "PreparedNotExecuted",
+    "operational_readiness": "Blocked"
   }
 }

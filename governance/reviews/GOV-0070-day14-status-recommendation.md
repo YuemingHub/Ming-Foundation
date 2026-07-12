@@ -2,7 +2,7 @@
 id: GOV-0070
 title: Day 14 Status Recommendation
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-13
@@ -44,3 +44,10 @@ MF-0004 and PROJECT-MINGOS-0002  Candidate
 - no implementation target or product conformance result exists.
 
 Internal review completion is not profile acceptance.
+
+## Day 15 relation
+
+The Day 14 recommendation to retain all Profiles at Proposed is confirmed.
+
+Profile source revision and Round 2 complete the internal content work, but
+operational and affected-person gates remain incomplete.

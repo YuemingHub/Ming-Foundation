@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/profile-source-revision-evidence.schema.json",
+  "title": "Profile Source Revision Evidence",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "profiles"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "profile_id",
+          "source_path",
+          "previous_version",
+          "current_version",
+          "previous_blob_sha",
+          "current_blob_sha",
+          "archive_path",
+          "revision_ids",
+          "status"
+        ],
+        "properties": {
+          "profile_id": {
+            "pattern": "^PROF-[0-9]{4}$"
+          },
+          "previous_blob_sha": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "current_blob_sha": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "revision_ids": {
+            "type": "array",
+            "minItems": 4
+          },
+          "status": {
+            "const": "Proposed"
+          }
+        }
+      }
+    }
+  }
+}

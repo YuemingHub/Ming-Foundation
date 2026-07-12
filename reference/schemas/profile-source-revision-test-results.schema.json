@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/profile-source-revision-test-results.schema.json",
+  "title": "Profile Source Revision Test Results",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "results"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "test_id",
+          "revision_id",
+          "source_document",
+          "source_blob_sha",
+          "result",
+          "claim_boundary"
+        ],
+        "properties": {
+          "result": {
+            "const": "Pass"
+          }
+        }
+      }
+    }
+  }
+}

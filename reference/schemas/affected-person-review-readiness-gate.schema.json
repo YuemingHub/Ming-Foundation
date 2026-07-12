@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/affected-person-review-readiness-gate.schema.json",
+  "title": "Affected-Person Review Readiness Gate",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "content_ready",
+    "operationally_ready_to_schedule",
+    "recruitment_authorized",
+    "sessions_authorized",
+    "participant_evidence_exists",
+    "summary",
+    "items",
+    "transition_rule"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "ContentReadyOperationallyBlocked"
+    },
+    "content_ready": {
+      "const": true
+    },
+    "operationally_ready_to_schedule": {
+      "const": false
+    },
+    "recruitment_authorized": {
+      "const": false
+    },
+    "sessions_authorized": {
+      "const": false
+    },
+    "participant_evidence_exists": {
+      "const": false
+    },
+    "summary": {
+      "type": "object"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 9
+    },
+    "transition_rule": {
+      "type": "object"
+    }
+  }
+}

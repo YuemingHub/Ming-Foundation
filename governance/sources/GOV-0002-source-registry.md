@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.14
+version: 1.0.0-alpha.15
 ---
 
 # GOV-0002 — Source Registry
@@ -215,3 +215,12 @@ safeguards, and preparation state are canonical governance evidence.
 
 They are not participant evidence, affected-person acceptance, legal
 qualification, or implementation conformance.
+
+## 18. Day 15 Profile revision and readiness evidence
+
+Current Profile sources, archived historical snapshots, revision evidence,
+source tests, Round 2 review, readiness gate, and operational activation
+register are canonical governance records.
+
+They are not participant evidence, legal qualification, operational
+authorization, or product conformance.

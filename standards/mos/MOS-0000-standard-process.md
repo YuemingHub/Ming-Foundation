@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.8
+version: 1.0.0-alpha.9
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -309,3 +309,43 @@ Governed UTF-8 text identity MUST use canonical LF newline semantics.
 
 Validators MUST NOT report equivalent LF and CRLF working-tree text as
 different governed content.
+## 23. Profile source revision completion
+
+A Profile revision item may be `Complete` only when:
+
+- the current Profile source implements the planned change;
+- the previous source is preserved or traceable;
+- a source marker and source-test result exist;
+- current source identity is recorded;
+- internal re-review accepts the source change;
+- unresolved affected-person, domain, jurisdiction, and implementation
+  boundaries remain visible.
+
+## 24. Review-readiness gates
+
+Review readiness MUST separate at least:
+
+```text
+ContentReady
+OperationallyReadyToSchedule
+RecruitmentAuthorized
+SessionsAuthorized
+EvidenceCollected
+ReviewComplete
+```
+
+A later state MUST NOT be inferred from an earlier state.
+
+## 25. Operational activation
+
+Affected-person review MUST NOT be scheduled until:
+
+- named accountable people accept required roles;
+- role conflicts and qualifications are checked;
+- consent, assent, safeguarding, accessibility, recruitment, compensation,
+  evidence, deletion, and jurisdiction protocols are approved;
+- restricted evidence infrastructure is provisioned and tested;
+- a separate activation decision authorizes scheduling.
+
+Role names, templates, plans, and schemas are not operational controls by
+themselves.

@@ -137,7 +137,7 @@ def main():
     revise_ids = {"REV-0003","REV-0006","REV-0007","REV-0011"}
     if any(statuses.get(rid) != "InternallyAcceptedPendingExternalReview" for rid in accepted_ids):
         errors.append("accepted revision statuses mismatch")
-    if any(statuses.get(rid) not in {"NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision"} for rid in revise_ids):
+    if any(statuses.get(rid) not in {"NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision", "ProfileInternallyReadyPendingAffectedPersonReview"} for rid in revise_ids):
         errors.append("residual revision statuses mismatch")
 
     dissent = load("standards/review/RFC_DISSENT_REGISTER.json")
@@ -155,12 +155,12 @@ def main():
     if len(residual_states) != 7:
         errors.append("residual plan item count mismatch")
     for iid in {"R2R-001", "R2R-002", "R2R-003", "R2R-004"}:
-        if residual_states.get(iid) not in {"Planned", "DesignedPendingReview", "ReviewedNeedsRevision"}:
+        if residual_states.get(iid) not in {"Planned", "DesignedPendingReview", "ReviewedNeedsRevision", "InternallyReadyPendingAffectedPersonReview"}:
             errors.append(f"{iid}: invalid residual design state")
     for iid in {"R2R-005", "R2R-006"}:
         if residual_states.get(iid) not in {"Planned", "Complete"}:
             errors.append(f"{iid}: invalid rebaseline state")
-    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted"}:
+    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted", "ContentReadyOperationallyBlocked"}:
         errors.append("R2R-007 must remain Planned or PreparedNotExecuted")
 
     if errors:
