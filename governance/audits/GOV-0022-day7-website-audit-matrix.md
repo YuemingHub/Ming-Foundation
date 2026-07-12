@@ -14,16 +14,18 @@ related:
 - RFC-0005
 - ADR-0008
 status: Accepted
-title: Day 7 MingOS Website Direct Audit Matrix
+title: Day 7 MingOS Website External Implementation Evidence Matrix
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.1
 ---
 
-# GOV-0022 — Day 7 MingOS Website Direct Audit Matrix
+# GOV-0022 — Day 7 MingOS Website External Implementation Evidence Matrix
 
-## 1. Scope
+## 1. Scope and authority
 
-Target:
+This document is a supporting external implementation-evidence record. It does not determine whether the canonical `Ming-Foundation` repository audit is complete.
+
+Targets:
 
 - official website `mingos.cn`;
 - known private source repository `YuemingHub/Mingos-life`;
@@ -108,4 +110,4 @@ Current status:
 RFC-0005 website implementation: Partial and Unverifiable
 ```
 
-A current source checkout and live-page audit remain mandatory.
+A current source checkout and live-page audit remain necessary only for a future website-conformance claim. They are not prerequisites for `Ming-Foundation` repository progress.

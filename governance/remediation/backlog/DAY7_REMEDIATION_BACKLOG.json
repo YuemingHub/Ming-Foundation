@@ -1,15 +1,103 @@
 {
-  "schema_version": "1.0",
-  "generated_for": "Ming Foundation Day 7",
-  "base_commit": "b1162a0cd856d2ce1867150df9cd144d64ea4510",
-  "status_vocabulary": [
-    "Ready",
-    "Ready after access",
-    "Planned",
-    "Blocked by access",
-    "Blocked by tests"
+  "schema_version": "1.1",
+  "generated_for": "Ming Foundation Day 7 scope correction",
+  "base_commit": "e2d62543a31822fa7b31b8f6bf4363aa49894de1",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "canonical_repository_audit": "accepted",
+  "external_implementation_evidence": "bounded and non-blocking",
+  "canonical_repository_items": [
+    {
+      "id": "D7-FND-001",
+      "priority": "P0",
+      "owner_role": "Governance",
+      "scope": "canonical_repository",
+      "summary": "Record the Day 7 audit-scope correction.",
+      "status": "Completed by correction package",
+      "acceptance": "GOV-0027 is Accepted."
+    },
+    {
+      "id": "D7-FND-002",
+      "priority": "P0",
+      "owner_role": "Architecture",
+      "scope": "canonical_repository",
+      "summary": "Supersede ADR-0008 with ADR-0009.",
+      "status": "Completed by correction package",
+      "acceptance": "ADR-0008 is Superseded and ADR-0009 is Accepted."
+    },
+    {
+      "id": "D7-FND-003",
+      "priority": "P0",
+      "owner_role": "Governance",
+      "scope": "canonical_repository",
+      "summary": "Separate canonical repository audit from external implementation evidence.",
+      "status": "Completed by correction package",
+      "acceptance": "Day 7 governed records use the corrected authority model."
+    },
+    {
+      "id": "D7-FND-004",
+      "priority": "P0",
+      "owner_role": "Validation Engineering",
+      "scope": "canonical_repository",
+      "summary": "Add scope-regression validation.",
+      "status": "Completed by correction package",
+      "acceptance": "scripts/validate_audit_scope.py passes."
+    },
+    {
+      "id": "D7-FND-005",
+      "priority": "P1",
+      "owner_role": "Standards Engineering",
+      "scope": "canonical_repository",
+      "summary": "Add machine-readable RFC requirement and conformance-matrix schema.",
+      "status": "Ready",
+      "acceptance": "Requirements are traceable without assuming a product repository."
+    },
+    {
+      "id": "D7-FND-006",
+      "priority": "P1",
+      "owner_role": "Governance Engineering",
+      "scope": "canonical_repository",
+      "summary": "Add an external evidence intake template.",
+      "status": "Ready",
+      "acceptance": "Evidence records revision, method, authority, limitation, and explicit scope."
+    },
+    {
+      "id": "D7-FND-007",
+      "priority": "P1",
+      "owner_role": "Repository Engineering",
+      "scope": "canonical_repository",
+      "summary": "Validate index links, duplicate IDs, statuses, and dependencies.",
+      "status": "Planned",
+      "acceptance": "Repository validation reports broken references and invalid dependencies."
+    },
+    {
+      "id": "D7-FND-008",
+      "priority": "P1",
+      "owner_role": "Architecture Board",
+      "scope": "canonical_repository",
+      "summary": "Produce a Foundation-only Day 8 implementation plan.",
+      "status": "Ready",
+      "acceptance": "The plan modifies only Ming-Foundation unless scope is explicitly expanded."
+    },
+    {
+      "id": "D7-FND-009",
+      "priority": "P2",
+      "owner_role": "Documentation",
+      "scope": "canonical_repository",
+      "summary": "Normalize Markdown and index formatting without broad reflow.",
+      "status": "Planned",
+      "acceptance": "No semantic changes and git diff --check passes."
+    },
+    {
+      "id": "D7-FND-010",
+      "priority": "P2",
+      "owner_role": "Release Governance",
+      "scope": "canonical_repository",
+      "summary": "Validate changelog version progression and stage consistency.",
+      "status": "Planned",
+      "acceptance": "README, GOV-0001, index, and changelog report one version and stage."
+    }
   ],
-  "items": [
+  "external_implementation_evidence_targets": [
     {
       "id": "D7-ENG-001",
       "priority": "P0",
@@ -19,7 +107,9 @@
       "summary": "Register current repositories, branches, commits, build/test commands, deployment relationship, and read access.",
       "dependencies": [],
       "acceptance": "GOV-0002 has current locators and the audit role can read required code without secrets or personal data.",
-      "status": "Ready"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-ENG-002",
@@ -32,7 +122,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Revision, environment, commands, results, failures, and artifacts are recorded.",
-      "status": "Blocked by access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-ENG-003",
@@ -45,7 +137,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Routes, headers, version, form behavior, errors, and deployment revision are recorded.",
-      "status": "Blocked by access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-ENG-004",
@@ -58,7 +152,9 @@
         "D7-ENG-002"
       ],
       "acceptance": "A provider or model change cannot release without required regression results.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-ENG-005",
@@ -71,7 +167,9 @@
         "D7-DATA-001"
       ],
       "acceptance": "Material unknowns cannot be omitted without a recorded decision.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-001",
@@ -84,7 +182,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Public Charter pages match the repository Candidate status and link to governing source.",
-      "status": "Ready after access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-002",
@@ -97,7 +197,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Future capabilities are not presented as current.",
-      "status": "Ready after access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-003",
@@ -110,7 +212,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "General forms warn or block child, medical, crisis, and case detail.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-004",
@@ -123,7 +227,9 @@
         "D7-SAFE-004"
       ],
       "acceptance": "Boundaries are visible before sensitive submission or use.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-005",
@@ -136,7 +242,9 @@
         "D7-GOV-001"
       ],
       "acceptance": "Reports receive IDs and route to governed processes.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-006",
@@ -149,7 +257,9 @@
         "D7-WEB-001"
       ],
       "acceptance": "Stale Charter metadata fails build or blocks release.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-WEB-007",
@@ -162,7 +272,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "P0 accessibility findings are resolved and evidence recorded.",
-      "status": "Blocked by access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-001",
@@ -175,7 +287,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Third-party report and AI inference cannot be stored as subject-confirmed fact.",
-      "status": "Ready after access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-002",
@@ -188,7 +302,9 @@
         "D7-DATA-001"
       ],
       "acceptance": "High-impact disputed assertions are visible, reviewable, and paused where required.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-003",
@@ -201,7 +317,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "Every sensitive use maps to an active purpose and basis.",
-      "status": "Ready after access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-004",
@@ -214,7 +332,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "A request reaches primary, indexed, derived, and backup handling.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-005",
@@ -227,7 +347,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "Every store has an approved retention and deletion record.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-006",
@@ -240,7 +362,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "Revocation and correction propagate across linked channels.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-007",
@@ -253,7 +377,9 @@
         "D7-DATA-001"
       ],
       "acceptance": "Stage is temporal, non-comparative, correctable, purpose-limited, and expiring.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-DATA-008",
@@ -266,7 +392,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "Technical admin security no longer grants broad organizational access.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-SAFE-001",
@@ -279,7 +407,9 @@
         "D7-ENG-001"
       ],
       "acceptance": "High-risk escalation cannot close without acknowledgment or explicit failure.",
-      "status": "Ready after access"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-SAFE-002",
@@ -292,7 +422,9 @@
         "D7-SAFE-001"
       ],
       "acceptance": "Material incidents can change policy, prompt, code, access, or training.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-SAFE-003",
@@ -305,7 +437,9 @@
         "D7-SAFE-001"
       ],
       "acceptance": "Wrong classifications do not become permanent labels.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-SAFE-004",
@@ -318,7 +452,9 @@
         "D7-ENG-002"
       ],
       "acceptance": "CE-019 and related cases pass across ordinary, vulnerable, and crisis contexts.",
-      "status": "Blocked by tests"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-SAFE-005",
@@ -332,7 +468,9 @@
         "D7-SAFE-001"
       ],
       "acceptance": "CE-016 tabletop and product tests pass.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-PRO-001",
@@ -345,7 +483,9 @@
         "D7-DATA-001"
       ],
       "acceptance": "A professional cannot silently convert AI hypothesis into verified fact.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-CASE-001",
@@ -358,7 +498,9 @@
         "D7-DATA-003"
       ],
       "acceptance": "Operational cases are separated from validation and aggregate evidence.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-CASE-002",
@@ -371,7 +513,9 @@
         "D7-CASE-001"
       ],
       "acceptance": "CE-005 prevents rare-family exposure.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-CASE-003",
@@ -384,7 +528,9 @@
         "D7-CASE-001"
       ],
       "acceptance": "Case data cannot reach model or reviewer without governed approval.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-COM-001",
@@ -398,7 +544,9 @@
         "D7-GOV-001"
       ],
       "acceptance": "CE-006, CE-011, and CE-012 have executable controls.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-GOV-001",
@@ -409,7 +557,9 @@
       "summary": "Implement Charter, privacy, and safety concern intake with IDs and containment triage.",
       "dependencies": [],
       "acceptance": "Reporter receives status and ongoing harm can be contained.",
-      "status": "Ready"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-GOV-002",
@@ -422,7 +572,9 @@
         "D7-GOV-001"
       ],
       "acceptance": "Founder or partner tabletop proceeds without conflicted control.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     },
     {
       "id": "D7-GOV-003",
@@ -435,7 +587,9 @@
         "D7-GOV-002"
       ],
       "acceptance": "Material violation has enforceable and appealable consequences.",
-      "status": "Planned"
+      "status": "External evidence target",
+      "scope": "external_implementation",
+      "non_blocking_for_canonical_repository": true
     }
   ]
 }

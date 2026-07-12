@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 7 — Direct Audit Attempt and Remediation Implementation Backlog**. Day 7 records what could and could not be directly accessed, audits available website and Family OS evidence against the Day 6 protocols, and creates the implementation backlog without promoting Charter or RFC status.
+This repository is at **Foundation 1.0 / Day 7 — Canonical Repository Audit and Scope Correction**. Day 7 verifies the canonical Ming-Foundation repository, separates external implementation evidence from repository authority, and corrects the remediation backlog without promoting Charter or RFC status.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -68,8 +68,10 @@ Charter governance and validation:
 - [`governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md`](governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md)
 - [`governance/reviews/GOV-0026-day7-status-recommendation.md`](governance/reviews/GOV-0026-day7-status-recommendation.md)
 - [`governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md`](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md)
+- [`governance/reviews/GOV-0027-day7-audit-scope-correction.md`](governance/reviews/GOV-0027-day7-audit-scope-correction.md)
+- [`governance/decisions/ADR-0009-canonical-repository-audit-scope.md`](governance/decisions/ADR-0009-canonical-repository-audit-scope.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 7 accepted the bounded audit and backlog, not current implementation conformance.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. The Ming-Foundation repository audit is accepted. External product evidence is separate and non-blocking.
 
 ## Mission
 
@@ -205,7 +207,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.7**
+Current repository foundation version: **1.0.0-alpha.7.1**
 
 ## License
 

@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.0-alpha.7.1
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -246,3 +246,11 @@ Day 7 produced:
 Validation streams do not advance to complete because current website and Family OS repositories, live pages, current tests, affected-person review, and legal review remain incomplete.
 
 Both Charters remain Candidate.
+
+## 10. Scope clarification
+
+External implementation and affected-person evidence may remain necessary for future Charter acceptance.
+
+That requirement must not be confused with the audit or development status of the canonical `Ming-Foundation` repository.
+
+Repository progression and Charter validation are separate governance questions.

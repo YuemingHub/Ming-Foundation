@@ -13,14 +13,17 @@ related:
 - GOV-0025
 - ADR-0008
 status: Accepted
-title: Day 7 Counterexample Execution Readiness Matrix
+title: Day 7 Counterexample External Evidence Readiness Matrix
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.1
 ---
 
-# GOV-0024 — Day 7 Counterexample Execution Readiness Matrix
+# GOV-0024 — Day 7 Counterexample External Evidence Readiness Matrix
 
-## 1. Purpose
+## 1. Purpose and authority
+
+This matrix supports future product and Charter validation. It is external evidence readiness, not a canonical repository acceptance gate.
+
 
 This matrix evaluates whether current evidence shows that the twenty Day
 5 counterexamples are implemented as tests or operational controls.

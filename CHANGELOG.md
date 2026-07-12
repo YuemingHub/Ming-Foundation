@@ -2,6 +2,27 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.7.1] - 2026-07-12
+
+### Fixed
+
+- Corrected the Day 7 audit scope: `YuemingHub/Ming-Foundation` is the canonical and only active repository for this phase.
+- Separated canonical repository audit from external implementation-conformance evidence.
+- Added `GOV-0027` as the accepted correction record.
+- Added `ADR-0009` and superseded the scope framing in `ADR-0008`.
+- Reclassified website and Family OS records as bounded, non-blocking external evidence.
+- Replaced the mixed product backlog with a canonical repository backlog plus external evidence targets.
+- Added automated scope-regression validation.
+- Updated README, canonical state, source registry, validation plan, traceability matrix, index, and status recommendation.
+
+### Decision
+
+- The Day 7 `Ming-Foundation` repository audit is accepted.
+- External repository access is not a prerequisite for canonical repository progress.
+- Both Charters remain Candidate.
+- RFC-0001 through RFC-0005 and `GOV-0015` remain Proposed.
+- Another repository enters scope only through explicit user instruction.
+
 ## [1.0.0-alpha.7] - 2026-07-12
 
 ### Added

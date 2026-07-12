@@ -52,10 +52,12 @@ related:
 - GOV-0024
 - GOV-0025
 - GOV-0026
+- GOV-0027
+- ADR-0009
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.0-alpha.7.1
 ---
 
 # GOV-0001 — Current Canonical State
@@ -79,9 +81,9 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 7 — Direct Audit Attempt and
-  Remediation Implementation Backlog
-- **Current repository version:** `1.0.0-alpha.7`
+- **Current repository stage:** Foundation 1.0 / Day 7 — Canonical Repository Audit and
+  Scope Correction
+- **Current repository version:** `1.0.0-alpha.7.1`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -122,19 +124,19 @@ decisions, and governance records.
 - Day 6 restricted evidence-handling protocol;
 - Day 6 decision requiring remediation contracts before Charter
   acceptance;
-- Day 7 direct access attempt and evidence-bound audit;
-- Day 7 website and Family OS implementation matrices;
-- Day 7 counterexample execution-readiness matrix;
-- Day 7 remediation implementation backlog;
+- Day 7 canonical repository audit;
+- Day 7 bounded external implementation-evidence matrices;
+- Day 7 remediation backlog;
+- Day 7 scope correction separating canonical audit from external evidence;
 - Day 7 decision retaining Charter and RFC statuses.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
-- registration and audit access for current website and Family OS repositories;
-- execution of Wave 0 and Wave 1 from `GOV-0025`;
-- direct current-source and live-page re-audit;
-- review and revision of Proposed remediation protocols based on implementation evidence;
+- execution of the canonical repository backlog in `GOV-0025`;
+- Foundation validation infrastructure and requirement traceability;
+- review and revision of Proposed remediation protocols;
+- external implementation evidence only when explicitly scoped;
 - recruitment and execution of affected-person and independent external
   review;
 - privacy, child-rights, safety, commercial, legal, and professional
@@ -240,13 +242,12 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 7, the next canonical work is Remediation Architecture and First Implementation Wave:
+After the Day 7 correction, the next canonical work is Foundation Validation Infrastructure and Remediation Architecture:
 
-1. register the current website and Family OS repositories and revisions;
-2. execute `D7-ENG-001` and `D7-ENG-002`;
-3. design and implement the P0 subject/assertion and purpose/permission foundations;
-4. correct public Charter status, capability status, form privacy, and role boundaries;
-5. implement accountable safety handoff and incident review;
-6. separate operational cases from validation and cross-family evidence;
-7. open the first governed Charter-violation intake path;
-8. keep both Charters at Candidate and remediation protocols at Proposed until evidence supports review.
+1. run `scripts/validate_audit_scope.py`;
+2. add machine-readable RFC requirement and conformance-matrix schemas;
+3. strengthen repository validation for links, statuses, and dependencies;
+4. produce a Foundation-only Day 8 implementation plan;
+5. keep external implementation evidence non-blocking and separately scoped;
+6. keep both Charters at Candidate and remediation protocols at Proposed until their own review gates are met;
+7. do not enter another repository without explicit user instruction.

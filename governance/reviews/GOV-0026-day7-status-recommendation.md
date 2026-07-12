@@ -1,49 +1,48 @@
 ---
-created: 2026-07-12
-depends_on:
-- GOV-0020
-- GOV-0025
 id: GOV-0026
+title: Day 7 Corrected Status Recommendation
+status: Accepted
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
-related:
-- MF-0004
-- PROJECT-MINGOS-0002
-- GOV-0020
-- GOV-0021
-- GOV-0022
-- GOV-0023
-- GOV-0024
-- GOV-0025
-- ADR-0008
-- RFC-0001
-- RFC-0002
-- RFC-0003
-- RFC-0004
-- RFC-0005
-status: Accepted
-title: Day 7 Status Recommendation
+created: 2026-07-12
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+related:
+  - MF-0004
+  - PROJECT-MINGOS-0002
+  - GOV-0020
+  - GOV-0021
+  - GOV-0025
+  - GOV-0027
+  - ADR-0009
+  - RFC-0001
+  - RFC-0002
+  - RFC-0003
+  - RFC-0004
+  - RFC-0005
+depends_on:
+  - GOV-0020
+  - GOV-0025
+  - GOV-0027
 ---
 
-# GOV-0026 — Day 7 Status Recommendation
+# GOV-0026 — Day 7 Corrected Status Recommendation
 
-## 1. Question
+## 1. Repository result
 
-Does Day 7 provide enough direct evidence to promote:
+The canonical repository audit is complete and accepted.
 
-- either Candidate Charter;
-- RFC-0001 through RFC-0005;
-- `GOV-0015`?
+```text
+Repository: YuemingHub/Ming-Foundation
+Audited commit: e2d62543a31822fa7b31b8f6bf4363aa49894de1
+Result: Accepted
+```
 
-## 2. Recommendation
-
-No.
+## 2. Charter and protocol recommendation
 
 Retain:
 
-``` text
+```text
 MF-0004                 Candidate
 PROJECT-MINGOS-0002     Candidate
 
@@ -55,64 +54,40 @@ RFC-0005                Proposed
 GOV-0015                Proposed
 ```
 
-## 3. Reasons
+## 3. Correct reasons
 
-### 3.1 Direct source access is incomplete
+The statuses remain unchanged because:
 
-The website and Family OS current source revisions were not accessible
-to the Day 7 audit mechanism.
+- Candidate Charters still require the validation defined in `GOV-0006`;
+- Proposed RFCs have not completed their standard review and promotion process;
+- `GOV-0015` is not yet an accepted operational governance procedure;
+- a repository audit confirms repository integrity, not product conformance;
+- documentation quality does not automatically promote a standard.
 
-### 3.2 Existing mechanisms are partial
+External repository access is not a reason to reject or delay the canonical repository audit.
 
-Safety, corrections, unknowns, quality, testing, and technical
-separation are meaningful foundations.
+## 4. Separate future questions
 
-They do not complete:
+### Repository progression
 
-- affected-person contestability;
-- data-rights lifecycle;
-- safety handoff accountability;
-- case reuse governance;
-- public claim synchronization;
-- Charter violation enforcement.
+May proceed immediately inside `Ming-Foundation`.
 
-### 3.3 Counterexamples are not closed
+### RFC promotion
 
-No Day 5 counterexample has sufficient current execution and closure
-evidence.
+Requires repository review, requirement precision, compatibility analysis, tests or conformance evidence appropriate to the standard, and a dedicated decision.
 
-### 3.4 Documentation cannot promote implementation status
+### Charter acceptance
 
-A high-quality RFC remains Proposed until it survives current code
-mapping, tests, review, and evidence.
+May still require affected-person, legal, safety, privacy, and implementation evidence. That is Charter validation, not repository audit.
 
-## 4. What Day 7 does accept
+### Product conformance
 
-Day 7 accepts:
+Requires an explicitly scoped implementation repository or runtime review.
 
-- the audit evidence and access record;
-- the bounded website and Family OS matrices;
-- the counterexample readiness matrix;
-- the remediation backlog;
-- the requirement for reproducible direct audit before promotion.
+## 5. Next phase
 
-## 5. Reconsideration gate
+Recommended next phase:
 
-A future status proposal must include:
+> **Day 8 — Foundation Validation Infrastructure and Remediation Architecture**
 
-1.  current repository revisions;
-2.  direct code and live-page evidence;
-3.  executed acceptance tests;
-4.  disposition of all P0 backlog tasks;
-5.  affected-person and external review;
-6.  legal and jurisdiction qualification where applicable;
-7.  a dedicated status decision.
-
-## 6. Next phase
-
-Recommended Day 8:
-
-> **Remediation Architecture and First Implementation Wave**
-
-Day 8 should begin with Wave 0 and Wave 1 from `GOV-0025`, not with
-unrelated ecosystem expansion.
+Day 8 must remain inside `YuemingHub/Ming-Foundation` unless the user explicitly selects another repository.

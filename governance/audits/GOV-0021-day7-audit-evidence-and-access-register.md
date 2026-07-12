@@ -1,87 +1,84 @@
 ---
-created: 2026-07-12
-depends_on:
-- GOV-0002
-- GOV-0018
 id: GOV-0021
+title: Day 7 Repository Audit and External Evidence Register
+status: Accepted
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
-related:
-- GOV-0002
-- GOV-0018
-- GOV-0020
-- GOV-0022
-- GOV-0023
-- GOV-0025
-- ADR-0008
-status: Accepted
-title: Day 7 Audit Evidence and Access Register
+created: 2026-07-12
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+related:
+  - GOV-0002
+  - GOV-0018
+  - GOV-0020
+  - GOV-0022
+  - GOV-0023
+  - GOV-0025
+  - GOV-0027
+  - ADR-0009
+depends_on:
+  - GOV-0002
+  - GOV-0018
 ---
 
-# GOV-0021 — Day 7 Audit Evidence and Access Register
+# GOV-0021 — Day 7 Repository Audit and External Evidence Register
 
 ## 1. Purpose
 
-This register identifies what Day 7 actually accessed and what remained
-unavailable.
+This register separates canonical repository evidence from external implementation evidence.
 
-It prevents the phrase “direct audit” from being used without a current
-revision, method, and evidence path.
+Only the canonical repository evidence determines whether the `Ming-Foundation` repository audit is complete.
 
-## 2. Evidence register
+## 2. Canonical repository evidence
 
-| Evidence ID | Target                                | Revision or date                                                   | Method                                         | Access                               | Authority for Day 7             | Limitation                                                          |
-|-------------|---------------------------------------|--------------------------------------------------------------------|------------------------------------------------|--------------------------------------|---------------------------------|---------------------------------------------------------------------|
-| D7-EV-001   | `YuemingHub/Ming-Foundation`          | `b1162a0cd856d2ce1867150df9cd144d64ea4510`                         | GitHub connector commit and file reads         | Direct                               | Repository-verified             | Does not prove website or product conformance                       |
-| D7-EV-002   | `YuemingHub/Mingos-life`              | Known historical commit `d4570975cf90e213f034f986b27600091c0bc003` | GitHub repository access attempt               | Denied / not installed for connector | Unverifiable current source     | Private repository may exist and be current, but was not accessible |
-| D7-EV-003   | `mingos.cn`                           | 2026-07-12 audit attempt                                           | Browser and direct HTTP resolution attempt     | Unavailable                          | Unverifiable live behavior      | Audit environment could not resolve or retrieve the domain          |
-| D7-EV-004   | MingOS website source/design analysis | 2026-07-10 to 2026-07-11                                           | Structured source-analysis record              | Documentary                          | Bounded evidence                | May not match current source or deployment                          |
-| D7-EV-005   | `CODE_WIKI.md` Family OS snapshot     | 2026-07-09                                                         | Full structured code inventory                 | Documentary code evidence            | Bounded implementation evidence | No direct source checkout or test execution                         |
-| D7-EV-006   | `ymai.love` runtime report            | 2026-07-11 to 2026-07-12                                           | Structured server and health inspection record | Documentary runtime evidence         | Bounded operational evidence    | Current runtime not independently rechecked                         |
-| D7-EV-007   | `ymai.love` live routes               | 2026-07-12 audit attempt                                           | Browser and direct HTTP resolution attempt     | Unavailable                          | Unverifiable current behavior   | Domain resolution failed in audit environment                       |
-| D7-EV-008   | Restricted production data and logs   | Current                                                            | Not requested or inspected                     | Not accessed                         | Outside public audit scope      | Must use restricted evidence governance                             |
-| D7-EV-009   | Affected-person outcomes              | Current                                                            | No interviews in Day 7                         | Not collected                        | No authority                    | Required through `GOV-0017`                                         |
-| D7-EV-010   | Legal review                          | Current                                                            | No qualified review                            | Not collected                        | No authority                    | Jurisdiction review remains required                                |
+| Evidence ID | Target | Revision | Method | Result | Authority |
+|---|---|---|---|---|---|
+| D7-EV-001 | `YuemingHub/Ming-Foundation` | `e2d62543a31822fa7b31b8f6bf4363aa49894de1` | GitHub commit, file, compare, index, status, and backlog inspection | Directly verified | Canonical repository authority |
 
-## 3. Audit classification rule
+The repository audit is complete and accepted.
 
-A finding is:
+## 3. External implementation evidence
 
-- **Implemented** only when the current behavior is directly evidenced;
-- **Partial** when a relevant mechanism exists but the complete
-  requirement is not evidenced;
-- **Absent** when available evidence shows no required mechanism;
-- **Conflicting** when current behavior appears to violate the
-  requirement;
-- **Unverifiable** when current evidence is unavailable or stale;
-- **Not applicable with reason** only when the requirement does not
-  apply and the reason is recorded.
+| Evidence ID | Target | Revision or date | Evidence type | State | Repository-audit effect |
+|---|---|---|---|---|---|
+| D7-EV-002 | Historical website source reference | Historical | Documentary | Bounded | None |
+| D7-EV-003 | `mingos.cn` | Day 7 attempt | Live external evidence | Unavailable | None |
+| D7-EV-004 | Website source/design analysis | 2026-07-10 to 2026-07-11 | Documentary | Bounded | None |
+| D7-EV-005 | `CODE_WIKI.md` Family OS snapshot | 2026-07-09 | Documentary code evidence | Bounded | None |
+| D7-EV-006 | `ymai.love` runtime report | 2026-07-11 to 2026-07-12 | Documentary runtime evidence | Bounded | None |
+| D7-EV-007 | `ymai.love` live routes | Day 7 attempt | Live external evidence | Unavailable | None |
+| D7-EV-008 | Restricted production data and logs | Current | Restricted evidence | Not accessed | None |
+| D7-EV-009 | Affected-person outcomes | Current | Validation evidence | Not collected | None |
+| D7-EV-010 | Legal review | Current | Expert evidence | Not collected | None |
 
-Document names, route names, table names, or module names alone do not
-establish implementation.
+These sources may affect future Charter or implementation-conformance decisions. They do not affect acceptance of the canonical repository commit.
 
-## 4. Access prerequisite
+## 4. Authority rule
 
-Before a complete Day 7 re-audit can occur, the project needs:
+Use this rule:
 
-1.  current repository locator and commit for the official website;
-2.  current repository locator, branch, and commit for Family OS;
-3.  read access for the audit mechanism;
-4.  build and test instructions;
-5.  production-versus-development boundaries;
-6.  safe access to de-identified operational evidence;
-7.  a source registration update in `GOV-0002`.
+```text
+Canonical repository evidence
+  → decides repository state and governance
 
-## 5. Security boundary
+External implementation evidence
+  → tests whether products conform to repository standards
+```
 
-The access prerequisite does not authorize:
+External evidence may reveal that a repository standard requires revision. It cannot silently become canonical authority.
+
+## 5. Scope-expansion rule
+
+Another repository may enter an active work scope only when the user explicitly identifies it.
+
+A remembered repository name, historical source, domain, or implementation snapshot is not sufficient authorization.
+
+## 6. Security boundary
+
+External evidence access never authorizes:
 
 - credentials in public repository records;
 - raw family or child data;
 - production database copies;
 - unrestricted logs;
-- direct access broader than the audit purpose.
-
-Restricted evidence remains governed by `GOV-0018`.
+- access broader than the stated evidence purpose.

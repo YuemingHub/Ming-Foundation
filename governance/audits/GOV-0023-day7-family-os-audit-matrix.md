@@ -24,14 +24,17 @@ related:
 - RFC-0004
 - ADR-0008
 status: Accepted
-title: Day 7 Family OS Implementation Audit Matrix
+title: Day 7 Family OS Documentary Implementation Evidence Matrix
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.1
 ---
 
-# GOV-0023 — Day 7 Family OS Implementation Audit Matrix
+# GOV-0023 — Day 7 Family OS Documentary Implementation Evidence Matrix
 
-## 1. Scope
+## 1. Scope and authority
+
+This document records bounded external implementation evidence. It does not audit the canonical repository and does not block `Ming-Foundation` work.
+
 
 Primary documentary code evidence:
 

@@ -25,7 +25,7 @@ related:
 status: Accepted
 title: Day 6 Remediation Traceability Matrix
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.0-alpha.7.1
 ---
 
 # GOV-0019 — Day 6 Remediation Traceability Matrix
@@ -110,3 +110,11 @@ A P0 gap closes only when:
 | Charter violation enforcement | Operational process mostly absent | `GOV-0023`, `GOV-0025` |
 
 No gap is closed by Day 7.
+
+## 7. Scope clarification
+
+This matrix defines standards and evidence requirements in the canonical repository.
+
+A standard may be designed and reviewed in `Ming-Foundation` before a particular product repository is selected for conformance testing.
+
+External implementation access is therefore an evidence dependency for a product-conformance claim, not a dependency for canonical repository work.

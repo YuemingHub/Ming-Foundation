@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.7
+version: 1.0.0-alpha.7.1
 ---
 
 # GOV-0002 — Source Registry
@@ -145,3 +145,16 @@ Day 7 directly verified the canonical Ming Foundation repository.
 The private website repository, current Family OS source repository, and live domains were not accessible to the audit environment. `SRC-0016` therefore remains incomplete and MUST NOT be described as a completed direct implementation audit.
 
 See `GOV-0021`.
+
+## 10. Canonical audit versus external evidence
+
+`YuemingHub/Ming-Foundation` is the canonical repository.
+
+Product repositories, website sources, domains, runtime reports, and code snapshots are external evidence sources. They may test implementation conformance, but they:
+
+- do not become canonical authority;
+- do not block canonical repository audit or development;
+- are not active work targets without explicit user scope;
+- must retain revision, method, authority, and limitation metadata.
+
+See `GOV-0027` and `ADR-0009`.
