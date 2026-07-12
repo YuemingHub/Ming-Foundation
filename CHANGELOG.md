@@ -2,6 +2,37 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.8] - 2026-07-12
+
+### Added
+
+- Day 8 validation infrastructure implementation record (`GOV-0028`).
+- RFC requirement registry and conformance infrastructure (`GOV-0029`).
+- External implementation evidence intake protocol (`GOV-0030`).
+- Foundation validation and remediation architecture plan (`GOV-0031`).
+- Accepted decision that machine-readable requirements are derived indexes (`ADR-0010`).
+- External implementation evidence intake template (`GOV-TPL-0004`).
+- RFC requirement registry guide (`REF-0001`).
+- Machine-readable registry containing 63 requirements from RFC-0001 through RFC-0005.
+- Requirement, conformance-matrix, and external-evidence JSON schemas.
+- Requirement and external-evidence examples.
+- Enhanced repository, requirement, release-state, and aggregate validators.
+- GitHub Actions repository-validation workflow.
+
+### Changed
+
+- Repository stage advanced to Day 8 — Validation Infrastructure and Remediation Architecture.
+- Repository version advanced to `1.0.0-alpha.8`.
+- `MOS-0000` now defines the machine-readable requirement-index boundary.
+- `GOV-0025` and the Day 7 machine backlog record completed Foundation tasks.
+- Existing scope-regression protection remains mandatory.
+
+### Status boundary
+
+- Both Charters remain Candidate.
+- RFC-0001 through RFC-0005 remain Proposed.
+- `GOV-0015` remains Proposed.
+- Requirement indexing does not establish implementation conformance or promote an RFC.
 ## [1.0.0-alpha.7.1] - 2026-07-12
 
 ### Fixed

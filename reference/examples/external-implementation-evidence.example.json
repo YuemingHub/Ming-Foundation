@@ -1,0 +1,26 @@
+{
+  "evidence_id": "EXT-EV-EXAMPLE-0001",
+  "scope_authorization": "Explicit user instruction naming the external target",
+  "target": "Example external implementation",
+  "revision": "commit-or-deployment-revision",
+  "method": [
+    "source review",
+    "test execution"
+  ],
+  "authority": "direct_external_evidence",
+  "limitations": [
+    "Example only",
+    "No personal data included"
+  ],
+  "classification": "Public",
+  "non_blocking_for_canonical_repository": true,
+  "reviewer": "Named reviewer or role",
+  "reviewed_at": "2026-07-12",
+  "related_requirements": [
+    "RFC-0001-R001"
+  ],
+  "findings": [
+    "Example finding"
+  ],
+  "disposition": "Further verification required"
+}

@@ -54,10 +54,16 @@ related:
 - GOV-0026
 - GOV-0027
 - ADR-0009
+- GOV-0028
+- GOV-0029
+- GOV-0030
+- GOV-0031
+- ADR-0010
+- REF-0001
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.7.1
+version: 1.0.0-alpha.8
 ---
 
 # GOV-0001 — Current Canonical State
@@ -81,9 +87,9 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 7 — Canonical Repository Audit and
-  Scope Correction
-- **Current repository version:** `1.0.0-alpha.7.1`
+- **Current repository stage:** Foundation 1.0 / Day 8 — Validation Infrastructure and
+  Remediation Architecture
+- **Current repository version:** `1.0.0-alpha.8`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -128,13 +134,17 @@ decisions, and governance records.
 - Day 7 bounded external implementation-evidence matrices;
 - Day 7 remediation backlog;
 - Day 7 scope correction separating canonical audit from external evidence;
-- Day 7 decision retaining Charter and RFC statuses.
+- Day 7 decision retaining Charter and RFC statuses;
+- Day 8 machine-readable RFC requirement and conformance infrastructure;
+- Day 8 external implementation evidence intake protocol;
+- Day 8 enhanced repository, scope, requirement, and release validators;
+- Day 8 Foundation-only remediation architecture.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
-- execution of the canonical repository backlog in `GOV-0025`;
-- Foundation validation infrastructure and requirement traceability;
+- review and fidelity checking of the Day 8 requirement registry;
+- RFC review preparation and canonical conformance baseline;
 - review and revision of Proposed remediation protocols;
 - external implementation evidence only when explicitly scoped;
 - recruitment and execution of affected-person and independent external
@@ -242,12 +252,14 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After the Day 7 correction, the next canonical work is Foundation Validation Infrastructure and Remediation Architecture:
+After Day 8, the next canonical work is RFC Review Preparation and Conformance Baseline:
 
-1. run `scripts/validate_audit_scope.py`;
-2. add machine-readable RFC requirement and conformance-matrix schemas;
-3. strengthen repository validation for links, statuses, and dependencies;
-4. produce a Foundation-only Day 8 implementation plan;
-5. keep external implementation evidence non-blocking and separately scoped;
-6. keep both Charters at Candidate and remediation protocols at Proposed until their own review gates are met;
-7. do not enter another repository without explicit user instruction.
+1. run `python scripts/validate_all.py`;
+2. review all 63 registered requirements against their RFC source sections;
+3. add machine-readable acceptance-test references;
+4. prepare architecture, ethics, privacy, safety, and implementation review checklists;
+5. create a canonical empty conformance baseline without claiming product implementation;
+6. record ambiguities requiring RFC revision;
+7. retain RFC-0001 through RFC-0005 at Proposed unless a dedicated review supports promotion;
+8. keep external implementation evidence separately scoped and non-blocking;
+9. do not enter another repository without explicit user instruction.

@@ -1,5 +1,5 @@
 ---
-id: REF-0001
+id: REF-0002
 title: Core Terms
 status: Draft
 version: 1.0.0-alpha.1

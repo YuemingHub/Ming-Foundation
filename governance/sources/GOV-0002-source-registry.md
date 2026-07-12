@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.7.1
+version: 1.0.0-alpha.8
 ---
 
 # GOV-0002 — Source Registry
@@ -158,3 +158,12 @@ Product repositories, website sources, domains, runtime reports, and code snapsh
 - must retain revision, method, authority, and limitation metadata.
 
 See `GOV-0027` and `ADR-0009`.
+## 11. Day 8 structured evidence sources
+
+The following structured records are repository infrastructure rather than independent truth sources:
+
+- RFC requirement registry — derived from RFC source text;
+- conformance matrices — bounded findings about a named target and revision;
+- external implementation evidence intake records — non-canonical evidence governed by `GOV-0030`.
+
+These records must identify authority and limitations. They never silently override the source RFC or canonical repository.

@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "matrix_id": "EXAMPLE-CONFORMANCE-0001",
+  "scope": "canonical_repository",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "target": {
+    "name": "Ming Foundation requirement infrastructure",
+    "revision": "1.0.0-alpha.8",
+    "kind": "repository",
+    "repository": "YuemingHub/Ming-Foundation"
+  },
+  "review": {
+    "reviewer": "Ming Foundation Validation",
+    "reviewed_at": "2026-07-12",
+    "method": [
+      "repository inspection",
+      "validator execution"
+    ],
+    "limitations": [
+      "Example matrix; not a product conformance claim"
+    ]
+  },
+  "results": [
+    {
+      "requirement_id": "RFC-0004-R003",
+      "state": "Implemented",
+      "evidence_refs": [
+        "scripts/validate_repository.py",
+        "GOV-0018"
+      ],
+      "finding": "The public repository validation architecture prohibits raw identifiable evidence through policy and review controls; operational enforcement remains separately reviewable.",
+      "owner_role": "Repository Engineering",
+      "next_action": "Maintain restricted-evidence review."
+    },
+    {
+      "requirement_id": "RFC-0005-R001",
+      "state": "NotApplicable",
+      "evidence_refs": [
+        "ADR-0009"
+      ],
+      "finding": "This matrix evaluates repository infrastructure rather than a public product claim surface.",
+      "not_applicable_reason": "No public product claim is under review in this matrix."
+    }
+  ]
+}

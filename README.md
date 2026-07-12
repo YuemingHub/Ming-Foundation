@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 7 — Canonical Repository Audit and Scope Correction**. Day 7 verifies the canonical Ming-Foundation repository, separates external implementation evidence from repository authority, and corrects the remediation backlog without promoting Charter or RFC status.
+This repository is at **Foundation 1.0 / Day 8 — Validation Infrastructure and Remediation Architecture**. Day 8 implements machine-readable RFC requirements, conformance schemas, external evidence intake, repository validation, release consistency checks, and a Foundation-only remediation architecture without promoting Charter or RFC status.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -70,8 +70,14 @@ Charter governance and validation:
 - [`governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md`](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md)
 - [`governance/reviews/GOV-0027-day7-audit-scope-correction.md`](governance/reviews/GOV-0027-day7-audit-scope-correction.md)
 - [`governance/decisions/ADR-0009-canonical-repository-audit-scope.md`](governance/decisions/ADR-0009-canonical-repository-audit-scope.md)
+- [`governance/validation/GOV-0028-day8-validation-infrastructure-record.md`](governance/validation/GOV-0028-day8-validation-infrastructure-record.md)
+- [`governance/validation/GOV-0029-rfc-requirement-and-conformance-infrastructure.md`](governance/validation/GOV-0029-rfc-requirement-and-conformance-infrastructure.md)
+- [`governance/evidence/GOV-0030-external-implementation-evidence-intake-protocol.md`](governance/evidence/GOV-0030-external-implementation-evidence-intake-protocol.md)
+- [`governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md`](governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md)
+- [`governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md`](governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md)
+- [`reference/REF-0001-rfc-requirement-registry-guide.md`](reference/REF-0001-rfc-requirement-registry-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. The Ming-Foundation repository audit is accepted. External product evidence is separate and non-blocking.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 8 adds validation infrastructure only; machine-readable requirements do not replace or promote the RFC source text.
 
 ## Mission
 
@@ -207,7 +213,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.7.1**
+Current repository foundation version: **1.0.0-alpha.8**
 
 ## License
 

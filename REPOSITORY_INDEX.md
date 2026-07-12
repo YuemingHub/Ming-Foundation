@@ -36,6 +36,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0025 | [Day 7 Canonical Repository Remediation Backlog and External Evidence Targets](governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md) | Accepted |
 | GOV-0026 | [Day 7 Corrected Status Recommendation](governance/reviews/GOV-0026-day7-status-recommendation.md) | Accepted |
 | GOV-0027 | [Day 7 Audit Scope Correction Record](governance/reviews/GOV-0027-day7-audit-scope-correction.md) | Accepted |
+| GOV-0028 | [Day 8 Foundation Validation Infrastructure Implementation Record](governance/validation/GOV-0028-day8-validation-infrastructure-record.md) | Accepted |
+| GOV-0029 | [RFC Requirement Registry and Conformance Infrastructure](governance/validation/GOV-0029-rfc-requirement-and-conformance-infrastructure.md) | Accepted |
+| GOV-0030 | [External Implementation Evidence Intake Protocol](governance/evidence/GOV-0030-external-implementation-evidence-intake-protocol.md) | Accepted |
+| GOV-0031 | [Foundation Validation and Remediation Architecture Plan](governance/remediation/GOV-0031-foundation-remediation-architecture-plan.md) | Accepted |
+| GOV-TPL-0004 | [External Implementation Evidence Intake Record](governance/templates/GOV-TPL-0004-external-implementation-evidence-intake.md) | Accepted |
 
 ## Foundation
 
@@ -71,6 +76,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0007 | [Require Minimum Remediation Contracts Before Charter Acceptance](governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md) | Accepted |
 | ADR-0008 | [Treat Day 7 as a Bounded Audit and Retain Current Statuses](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md) | Superseded |
 | ADR-0009 | [Separate Canonical Repository Audit from External Implementation Evidence](governance/decisions/ADR-0009-canonical-repository-audit-scope.md) | Accepted |
+| ADR-0010 | [Machine-Readable Requirements Are Derived Indexes](governance/decisions/ADR-0010-machine-readable-requirements-are-derived-indexes.md) | Accepted |
 
 ## Projects
 
@@ -81,6 +87,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | PROJECT-MINGOS-0002 | [MingOS Charter](projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md)                                              | Candidate |
 
 ## Reference
+
+| ID | Document | Status |
+|---|---|---|
+| REF-0001 | [RFC Requirement Registry Guide](reference/REF-0001-rfc-requirement-registry-guide.md) | Accepted |
+| REF-0002 | [Core Terms](reference/glossary/core-terms.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

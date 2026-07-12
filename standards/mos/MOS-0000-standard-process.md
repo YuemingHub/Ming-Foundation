@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.1
+version: 1.0.0-alpha.2
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -10,6 +10,9 @@ updated: 2026-07-12
 related:
   - MF-0000
   - MF-0003
+  - GOV-0029
+  - ADR-0010
+  - REF-0001
 depends_on:
   - MF-0001
   - MF-0002
@@ -143,3 +146,24 @@ A standard cannot become Stable until:
 A standard or implementation may be suspended when credible evidence indicates serious harm, hidden coercion, unsafe handling of sensitive data, or systematic violation of human agency.
 
 Suspension must be documented and reviewed; urgency does not justify secrecy beyond what is necessary to protect affected people.
+## 12. Machine-readable requirement indexes
+
+A Draft, Review, Candidate, or Stable RFC MAY have a machine-readable requirement index.
+
+The index MUST:
+
+- identify the source RFC and section;
+- preserve the normative level;
+- identify the source repository revision;
+- remain implementation-neutral;
+- identify verification methods and evidence types;
+- state that source RFC text remains authoritative.
+
+The index MUST NOT:
+
+- promote an RFC;
+- strengthen or weaken the source requirement;
+- replace architecture, ethics, privacy, safety, or affected-person review;
+- treat a product module name as conformance evidence.
+
+See `ADR-0010` and `GOV-0029`.

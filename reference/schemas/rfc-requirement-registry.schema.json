@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-requirement-registry.schema.json",
+  "title": "Ming Foundation RFC Requirement Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "registry_id",
+    "authority",
+    "canonical_repository",
+    "source_documents",
+    "requirements"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "registry_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "source_repository_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "object",
+      "required": [
+        "normative_source",
+        "registry_role",
+        "governing_decision"
+      ],
+      "properties": {
+        "normative_source": {
+          "type": "string"
+        },
+        "registry_role": {
+          "type": "string"
+        },
+        "governing_decision": {
+          "const": "ADR-0010"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_documents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "status",
+          "version"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^RFC-[0-9]{4}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "source_document",
+          "source_section",
+          "kind",
+          "normative_level",
+          "statement",
+          "implementation_neutral",
+          "external_evidence_required",
+          "verification_methods",
+          "evidence_types"
+        ],
+        "properties": {
+          "requirement_id": {
+            "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+          },
+          "source_document": {
+            "pattern": "^RFC-[0-9]{4}$"
+          },
+          "source_section": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "explicit_normative",
+              "conformance_test",
+              "design_constraint"
+            ]
+          },
+          "normative_level": {
+            "enum": [
+              "MUST",
+              "MUST_NOT",
+              "SHOULD",
+              "SHOULD_NOT",
+              "MAY",
+              "UNSPECIFIED"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "implementation_neutral": {
+            "type": "boolean"
+          },
+          "external_evidence_required": {
+            "type": "boolean"
+          },
+          "verification_methods": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_types": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Prevent canonical repository audit from being blocked by external repositories."""
+"""Prevent canonical repository governance from being blocked by external systems."""
 
 from __future__ import annotations
 
 from pathlib import Path
 import json
-import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,7 +20,8 @@ REQUIRED = {
         "explicit user scope",
     ],
     "governance/status/GOV-0001-current-canonical-state.md": [
-        "Canonical Repository Audit and",
+        "https://github.com/YuemingHub/Ming-Foundation",
+        "external implementation evidence",
         "do not enter another repository without explicit user instruction",
     ],
 }
@@ -32,13 +32,14 @@ FORBIDDEN_IN_CANONICAL_NEXT_WORK = [
     "current website and Family OS repositories",
 ]
 
+
 def main() -> int:
     errors: list[str] = []
 
     for rel, markers in REQUIRED.items():
         path = ROOT / rel
         if not path.exists():
-            errors.append(f"missing required correction file: {rel}")
+            errors.append(f"missing required scope file: {rel}")
             continue
         text = path.read_text(encoding="utf-8")
         for marker in markers:
@@ -58,11 +59,11 @@ def main() -> int:
 
     adr8 = ROOT / "governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md"
     if adr8.exists() and "status: Superseded" not in adr8.read_text(encoding="utf-8"):
-        errors.append("ADR-0008 must be Superseded")
+        errors.append("ADR-0008 must remain Superseded")
 
     adr9 = ROOT / "governance/decisions/ADR-0009-canonical-repository-audit-scope.md"
     if adr9.exists() and "status: Accepted" not in adr9.read_text(encoding="utf-8"):
-        errors.append("ADR-0009 must be Accepted")
+        errors.append("ADR-0009 must remain Accepted")
 
     backlog_path = ROOT / "governance/remediation/backlog/DAY7_REMEDIATION_BACKLOG.json"
     if not backlog_path.exists():
@@ -72,7 +73,7 @@ def main() -> int:
         if data.get("canonical_repository") != "YuemingHub/Ming-Foundation":
             errors.append("backlog canonical_repository is incorrect")
         if data.get("canonical_repository_audit") != "accepted":
-            errors.append("canonical repository audit must be accepted")
+            errors.append("canonical repository audit must remain accepted")
         for item in data.get("external_implementation_evidence_targets", []):
             if not item.get("non_blocking_for_canonical_repository"):
                 errors.append(
@@ -87,6 +88,7 @@ def main() -> int:
 
     print("Audit-scope validation passed.")
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

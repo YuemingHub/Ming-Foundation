@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/external-implementation-evidence.schema.json",
+  "title": "External Implementation Evidence Intake Record",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "scope_authorization",
+    "target",
+    "revision",
+    "method",
+    "authority",
+    "limitations",
+    "classification",
+    "non_blocking_for_canonical_repository",
+    "reviewer",
+    "disposition"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "scope_authorization": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "method": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority": {
+      "enum": [
+        "direct_external_evidence",
+        "documentary_external_evidence",
+        "restricted_external_evidence"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "classification": {
+      "enum": [
+        "Public",
+        "Restricted",
+        "Highly Restricted"
+      ]
+    },
+    "non_blocking_for_canonical_repository": {
+      "const": true
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string"
+    },
+    "related_requirements": {
+      "type": "array",
+      "items": {
+        "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disposition": {
+      "enum": [
+        "Accepted as evidence",
+        "Accepted with limitations",
+        "Rejected",
+        "Further verification required"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

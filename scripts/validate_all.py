@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Run the complete Ming Foundation repository validation suite."""
+
+from __future__ import annotations
+
+from pathlib import Path
+import subprocess
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = [
+    "validate_repository.py",
+    "validate_audit_scope.py",
+    "validate_requirements.py",
+    "validate_release_state.py",
+]
+
+
+def main() -> int:
+    for script in SCRIPTS:
+        path = ROOT / "scripts" / script
+        print(f"=== {script} ===")
+        completed = subprocess.run([sys.executable, str(path)], cwd=ROOT)
+        if completed.returncode != 0:
+            print(f"Validation suite failed at {script}.")
+            return completed.returncode
+    print("All repository validations passed.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

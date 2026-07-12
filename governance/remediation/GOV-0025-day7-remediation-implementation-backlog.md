@@ -2,7 +2,7 @@
 id: GOV-0025
 title: Day 7 Canonical Repository Remediation Backlog and External Evidence Targets
 status: Accepted
-version: 1.0.1
+version: 1.0.2
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -45,10 +45,10 @@ Product repositories and live services are not automatically in scope.
 | D7-FND-002 | P0 | Architecture | Supersede ADR-0008 with a correct scope decision | Completed by correction package | `ADR-0008` is Superseded and `ADR-0009` is Accepted |
 | D7-FND-003 | P0 | Governance | Separate canonical audit from external evidence in Day 7 records | Completed by correction package | GOV-0020 through GOV-0026 use the corrected authority model |
 | D7-FND-004 | P0 | Validation Engineering | Add automated scope-regression validation | Completed by correction package | `scripts/validate_audit_scope.py` passes |
-| D7-FND-005 | P1 | Standards Engineering | Add machine-readable RFC requirement and conformance-matrix schema | Ready | Requirements can be traced without assuming a product repository |
-| D7-FND-006 | P1 | Governance Engineering | Add an external evidence intake template | Ready | External evidence records revision, method, authority, limitation, and explicit scope |
+| D7-FND-005 | P1 | Standards Engineering | Add machine-readable RFC requirement and conformance-matrix schema | Completed by Day 8 | Requirements can be traced without assuming a product repository |
+| D7-FND-006 | P1 | Governance Engineering | Add an external evidence intake template | Completed by Day 8 | External evidence records revision, method, authority, limitation, and explicit scope |
 | D7-FND-007 | P1 | Repository Engineering | Validate index links, duplicate IDs, statuses, and dependency references | Planned | Repository validation reports broken references and invalid dependencies |
-| D7-FND-008 | P1 | Architecture Board | Produce a Foundation-only Day 8 implementation plan | Ready | Plan modifies only `Ming-Foundation` unless the user explicitly expands scope |
+| D7-FND-008 | P1 | Architecture Board | Produce a Foundation-only Day 8 implementation plan | Completed by Day 8 | Plan modifies only `Ming-Foundation` unless the user explicitly expands scope |
 | D7-FND-009 | P2 | Documentation | Normalize Markdown code-fence and index formatting without broad reflow | Planned | No semantic changes and `git diff --check` passes |
 | D7-FND-010 | P2 | Release Governance | Validate changelog version progression and canonical-stage consistency | Planned | README, GOV-0001, index, and changelog report one version and stage |
 
@@ -104,3 +104,8 @@ A canonical backlog item is complete only when:
 - authority and status are accurate;
 - no other repository was modified without explicit user scope;
 - evidence and limitations are preserved.
+## 7. Day 8 disposition
+
+Day 8 completes D7-FND-005, D7-FND-006, D7-FND-007, D7-FND-008, and D7-FND-010.
+
+D7-FND-009 remains planned. Formatting normalization must be narrow and must not create broad non-functional diffs.

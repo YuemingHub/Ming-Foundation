@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.7.1
+version: 1.0.0-alpha.8
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -254,3 +254,8 @@ External implementation and affected-person evidence may remain necessary for fu
 That requirement must not be confused with the audit or development status of the canonical `Ming-Foundation` repository.
 
 Repository progression and Charter validation are separate governance questions.
+## 11. Day 8 validation infrastructure
+
+Day 8 adds requirement IDs, conformance-matrix structure, external-evidence intake, and repository validation.
+
+This infrastructure supports future Charter validation but does not advance any incomplete validation stream by itself.

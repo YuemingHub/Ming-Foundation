@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/conformance-matrix.schema.json",
+  "title": "Ming Foundation Conformance Matrix",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "matrix_id",
+    "scope",
+    "canonical_repository",
+    "target",
+    "review",
+    "results"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "matrix_id": {
+      "type": "string"
+    },
+    "scope": {
+      "enum": [
+        "canonical_repository",
+        "external_implementation"
+      ]
+    },
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "name",
+        "revision",
+        "kind"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "repository",
+            "website",
+            "application",
+            "service",
+            "process",
+            "document_set"
+          ]
+        },
+        "repository": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "reviewed_at",
+        "method",
+        "limitations"
+      ],
+      "properties": {
+        "reviewer": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string"
+        },
+        "method": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "state",
+          "evidence_refs",
+          "finding"
+        ],
+        "properties": {
+          "requirement_id": {
+            "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+          },
+          "state": {
+            "enum": [
+              "Implemented",
+              "Partial",
+              "Absent",
+              "Conflicting",
+              "Unverifiable",
+              "NotApplicable"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "finding": {
+            "type": "string"
+          },
+          "owner_role": {
+            "type": "string"
+          },
+          "next_action": {
+            "type": "string"
+          },
+          "not_applicable_reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

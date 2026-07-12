@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "generated_for": "Ming Foundation Day 7 scope correction",
   "base_commit": "e2d62543a31822fa7b31b8f6bf4363aa49894de1",
   "canonical_repository": "YuemingHub/Ming-Foundation",
@@ -48,8 +48,15 @@
       "owner_role": "Standards Engineering",
       "scope": "canonical_repository",
       "summary": "Add machine-readable RFC requirement and conformance-matrix schema.",
-      "status": "Ready",
-      "acceptance": "Requirements are traceable without assuming a product repository."
+      "status": "Completed by Day 8",
+      "acceptance": "Requirements are traceable without assuming a product repository.",
+      "completion_evidence": [
+        "GOV-0028",
+        "GOV-0029",
+        "GOV-0030",
+        "GOV-0031",
+        "ADR-0010"
+      ]
     },
     {
       "id": "D7-FND-006",
@@ -57,8 +64,15 @@
       "owner_role": "Governance Engineering",
       "scope": "canonical_repository",
       "summary": "Add an external evidence intake template.",
-      "status": "Ready",
-      "acceptance": "Evidence records revision, method, authority, limitation, and explicit scope."
+      "status": "Completed by Day 8",
+      "acceptance": "Evidence records revision, method, authority, limitation, and explicit scope.",
+      "completion_evidence": [
+        "GOV-0028",
+        "GOV-0029",
+        "GOV-0030",
+        "GOV-0031",
+        "ADR-0010"
+      ]
     },
     {
       "id": "D7-FND-007",
@@ -66,8 +80,15 @@
       "owner_role": "Repository Engineering",
       "scope": "canonical_repository",
       "summary": "Validate index links, duplicate IDs, statuses, and dependencies.",
-      "status": "Planned",
-      "acceptance": "Repository validation reports broken references and invalid dependencies."
+      "status": "Completed by Day 8",
+      "acceptance": "Repository validation reports broken references and invalid dependencies.",
+      "completion_evidence": [
+        "GOV-0028",
+        "GOV-0029",
+        "GOV-0030",
+        "GOV-0031",
+        "ADR-0010"
+      ]
     },
     {
       "id": "D7-FND-008",
@@ -75,8 +96,15 @@
       "owner_role": "Architecture Board",
       "scope": "canonical_repository",
       "summary": "Produce a Foundation-only Day 8 implementation plan.",
-      "status": "Ready",
-      "acceptance": "The plan modifies only Ming-Foundation unless scope is explicitly expanded."
+      "status": "Completed by Day 8",
+      "acceptance": "The plan modifies only Ming-Foundation unless scope is explicitly expanded.",
+      "completion_evidence": [
+        "GOV-0028",
+        "GOV-0029",
+        "GOV-0030",
+        "GOV-0031",
+        "ADR-0010"
+      ]
     },
     {
       "id": "D7-FND-009",
@@ -93,8 +121,15 @@
       "owner_role": "Release Governance",
       "scope": "canonical_repository",
       "summary": "Validate changelog version progression and stage consistency.",
-      "status": "Planned",
-      "acceptance": "README, GOV-0001, index, and changelog report one version and stage."
+      "status": "Completed by Day 8",
+      "acceptance": "README, GOV-0001, index, and changelog report one version and stage.",
+      "completion_evidence": [
+        "GOV-0028",
+        "GOV-0029",
+        "GOV-0030",
+        "GOV-0031",
+        "ADR-0010"
+      ]
     }
   ],
   "external_implementation_evidence_targets": [
@@ -591,5 +626,7 @@
       "scope": "external_implementation",
       "non_blocking_for_canonical_repository": true
     }
-  ]
+  ],
+  "updated_by": "Ming Foundation Day 8",
+  "target_version": "1.0.0-alpha.8"
 }
