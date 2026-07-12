@@ -1,0 +1,37 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.ssh/
+
+# Runtime / build
+node_modules/
+dist/
+build/
+.next/
+coverage/
+__pycache__/
+*.pyc
+
+# Personal or case data
+data/
+private/
+cases/raw/
+*.ndjson
+*.sqlite
+*.db
+
+# Temporary
+tmp/
+.temp/
+*.log

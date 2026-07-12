@@ -1,0 +1,24 @@
+flowchart TB
+    Charter["Layer 0 · Charter<br/>Mission · Agency · Ethics · Boundaries"]
+    Science["Layer 1 · Philosophy & Science<br/>Life · Relationship · Context · Development · Meaning"]
+    Standards["Layer 2 · Standards<br/>Ontology · Protocols · Data · Governance"]
+    Infra["Layer 3 · Infrastructure<br/>Kernel · Identity · Consent · Observation · Memory · Reasoning · Audit"]
+    Projects["Layer 4 · Projects<br/>MingOS · Ming Family · Ming Education · Incubator"]
+    Community["Layer 5 · Community & Governance<br/>RFC · Review · Research · Participation"]
+
+    Charter --> Science
+    Science --> Standards
+    Standards --> Infra
+    Infra --> Projects
+    Community -. governs .-> Charter
+    Community -. reviews .-> Standards
+    Community -. validates .-> Projects
+
+    Channels["Channels<br/>WeCom · H5 · Web · Mobile"]
+    Core["MingOS Core<br/>Shared Source of Truth"]
+    AI["Replaceable Intelligence Components<br/>LLM · Rules · Human Support"]
+
+    Channels --> Core
+    Core --> AI
+    AI --> Core
+    Core --> Projects

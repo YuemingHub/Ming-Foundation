@@ -1,0 +1,31 @@
+name: RFC Proposal
+description: Propose a material change to standards, architecture, or governance.
+title: "[RFC] "
+labels: ["rfc", "proposal"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem requires a standard or architecture change?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the proposed model, protocol, or decision.
+    validations:
+      required: true
+  - type: textarea
+    id: human_agency
+    attributes:
+      label: Human agency and ethics impact
+      description: Explain correction, consent, autonomy, safety, and possible harms.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: What alternatives were considered?

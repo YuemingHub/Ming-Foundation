@@ -1,0 +1,25 @@
+name: Implementation Task
+description: Implement an accepted standard, protocol, or reference architecture.
+title: "[Implementation] "
+labels: ["implementation"]
+body:
+  - type: input
+    id: standard
+    attributes:
+      label: Governing standard or RFC
+      placeholder: MOS-0002 / RFC-0001
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What will be implemented and what is explicitly out of scope?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
