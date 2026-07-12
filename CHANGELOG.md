@@ -2,6 +2,40 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.5] - 2026-07-12
+
+### Added
+
+- Day 5 Charter validation evidence summary (`GOV-0007`).
+- MingOS website and public-claims audit (`GOV-0008`).
+- Family OS implementation-to-Charter mapping (`GOV-0009`).
+- Privacy and third-party-rights gap analysis (`GOV-0010`).
+- Safety and professional-boundary gap analysis (`GOV-0011`).
+- Charter counterexample and risk register (`GOV-0012`).
+- Day 5 Charter status recommendation (`GOV-0013`).
+- Accepted decision to retain both Charters at Candidate (`ADR-0006`).
+- Registered bounded website, Family OS, and structured deployment evidence sources.
+
+### Changed
+
+- Repository status advanced to Day 5 — Charter Validation Against Reality.
+- `GOV-0006` now records validation-stream progress.
+- README Charter section heading was corrected and expanded.
+- Current canonical state now prioritizes remediation and external review preparation.
+
+### Decision
+
+- `MF-0004` remains Candidate.
+- `PROJECT-MINGOS-0002` remains Candidate.
+- No claim of Accepted or Stable Charter status is made.
+
+### Evidence limitations
+
+- No direct affected-person or child-rights review was completed.
+- No qualified legal review was completed.
+- Live website and current implementation repositories were not independently retrieved in the Day 5 review environment.
+- Documentary implementation evidence does not equal production conformance.
+
 ## [1.0.0-alpha.4] - 2026-07-12
 
 ### Added

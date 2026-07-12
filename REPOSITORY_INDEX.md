@@ -12,6 +12,13 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0004 | [Day 3 Charter Consolidation Record](governance/reviews/GOV-0004-day3-charter-consolidation-record.md) | Accepted |
 | GOV-0005 | [Day 4 Charter Article Review and Decision Record](governance/reviews/GOV-0005-day4-charter-review-and-decision.md) | Accepted |
 | GOV-0006 | [Charter Candidate Validation Plan](governance/validation/GOV-0006-charter-candidate-validation-plan.md) | Accepted |
+| GOV-0007 | [Day 5 Charter Validation Evidence Summary](governance/validation/GOV-0007-day5-validation-evidence-summary.md) | Accepted |
+| GOV-0008 | [MingOS Website and Public Claims Audit](governance/validation/GOV-0008-website-and-public-claims-audit.md) | Accepted |
+| GOV-0009 | [Family OS Implementation-to-Charter Mapping](governance/validation/GOV-0009-family-os-implementation-mapping.md) | Accepted |
+| GOV-0010 | [Privacy and Third-Party Rights Gap Analysis](governance/validation/GOV-0010-privacy-and-third-party-rights-gap-analysis.md) | Accepted |
+| GOV-0011 | [Safety and Professional Boundary Gap Analysis](governance/validation/GOV-0011-safety-and-professional-boundary-gap-analysis.md) | Accepted |
+| GOV-0012 | [Charter Counterexample and Risk Register](governance/validation/GOV-0012-counterexample-and-risk-register.md) | Accepted |
+| GOV-0013 | [Day 5 Charter Status Recommendation](governance/reviews/GOV-0013-day5-charter-status-recommendation.md) | Accepted |
 
 ## Foundation
 
@@ -38,6 +45,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0003 | [mingos.cn is the official website](governance/decisions/ADR-0003-mingos-cn-is-the-official-website.md) | Accepted |
 | ADR-0004 | [Ming-Foundation is the canonical public repository](governance/decisions/ADR-0004-ming-foundation-is-the-canonical-public-repository.md) | Accepted |
 | ADR-0005 | [Separate the Charter of Life, MingOS Charter, and MingOS Kernel](governance/decisions/ADR-0005-three-root-texts-and-boundaries.md) | Accepted |
+| ADR-0006 | [Retain Both Charters at Candidate After Day 5](governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md) | Accepted |
 
 ## Projects
 

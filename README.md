@@ -10,7 +10,7 @@ Ming Foundation is an open standards initiative dedicated to one question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 4 — Charter Review and Candidate Decision**. Day 4 accepts the separation of the Charter of Life, MingOS Charter, and MingOS Kernel; completes an internal article-by-article review; and moves both Charters to Candidate status for structured validation.
+This repository is at **Foundation 1.0 / Day 5 — Charter Validation Against Reality**. Day 5 tests the Candidate Charters against available website and Family OS implementation evidence, records privacy and safety gaps, protects counterexamples, and retains both Charters at Candidate pending external and direct validation.
 
 **Important:** “Ming Foundation” is currently the name of an open standards initiative and repository. It does not by itself claim to be a legally registered foundation.
 
@@ -27,7 +27,7 @@ See:
 - [`governance/sources/GOV-0002-source-registry.md`](governance/sources/GOV-0002-source-registry.md)
 - [`governance/workflows/GOV-0003-conversation-to-repository.md`](governance/workflows/GOV-0003-conversation-to-repository.md)
 
-Day 3 Charter drafts:
+Charter governance and validation:
 
 - [`foundation/charter/MF-0004-life-charter.md`](foundation/charter/MF-0004-life-charter.md)
 - [`projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md`](projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md)
@@ -35,8 +35,16 @@ Day 3 Charter drafts:
 - [`governance/reviews/GOV-0004-day3-charter-consolidation-record.md`](governance/reviews/GOV-0004-day3-charter-consolidation-record.md)
 - [`governance/reviews/GOV-0005-day4-charter-review-and-decision.md`](governance/reviews/GOV-0005-day4-charter-review-and-decision.md)
 - [`governance/validation/GOV-0006-charter-candidate-validation-plan.md`](governance/validation/GOV-0006-charter-candidate-validation-plan.md)
+- [`governance/validation/GOV-0007-day5-validation-evidence-summary.md`](governance/validation/GOV-0007-day5-validation-evidence-summary.md)
+- [`governance/validation/GOV-0008-website-and-public-claims-audit.md`](governance/validation/GOV-0008-website-and-public-claims-audit.md)
+- [`governance/validation/GOV-0009-family-os-implementation-mapping.md`](governance/validation/GOV-0009-family-os-implementation-mapping.md)
+- [`governance/validation/GOV-0010-privacy-and-third-party-rights-gap-analysis.md`](governance/validation/GOV-0010-privacy-and-third-party-rights-gap-analysis.md)
+- [`governance/validation/GOV-0011-safety-and-professional-boundary-gap-analysis.md`](governance/validation/GOV-0011-safety-and-professional-boundary-gap-analysis.md)
+- [`governance/validation/GOV-0012-counterexample-and-risk-register.md`](governance/validation/GOV-0012-counterexample-and-risk-register.md)
+- [`governance/reviews/GOV-0013-day5-charter-status-recommendation.md`](governance/reviews/GOV-0013-day5-charter-status-recommendation.md)
+- [`governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md`](governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md)
 
-**Status note:** the two Charters are `Candidate`; `ADR-0005` is `Accepted`. The Charters themselves are not yet Accepted or Stable.
+**Status note:** the two Charters remain `Candidate`; `ADR-0005` and `ADR-0006` are `Accepted`. Day 5 found meaningful implementation alignment and material unresolved validation gaps.
 
 ## Mission
 
@@ -158,7 +166,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.4**
+Current repository foundation version: **1.0.0-alpha.5**
 
 ## License
 

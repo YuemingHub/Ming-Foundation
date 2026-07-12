@@ -2,7 +2,7 @@
 id: GOV-0006
 title: Charter Candidate Validation Plan
 status: Accepted
-version: 1.0.0-alpha.4
+version: 1.0.0-alpha.5
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
 created: 2026-07-12
@@ -12,6 +12,9 @@ related:
   - PROJECT-MINGOS-0002
   - ADR-0005
   - GOV-0005
+  - GOV-0007
+  - GOV-0013
+  - ADR-0006
 depends_on:
   - GOV-0005
   - ADR-0005
@@ -178,3 +181,30 @@ Recommended outputs:
 - status recommendation for each Candidate Charter.
 
 Day 5 may recommend acceptance, revision, or continued Candidate status.
+## 7. Day 5 progress record
+
+Day 5 produced the first evidence pack:
+
+- `GOV-0007` — validation evidence summary;
+- `GOV-0008` — website and public-claims audit;
+- `GOV-0009` — Family OS implementation mapping;
+- `GOV-0010` — privacy and third-party-rights gap analysis;
+- `GOV-0011` — safety and professional-boundary gap analysis;
+- `GOV-0012` — counterexample and risk register;
+- `GOV-0013` — Charter status recommendation;
+- `ADR-0006` — decision to retain Candidate status.
+
+Progress after Day 5:
+
+| Stream | State |
+|---|---|
+| V1 | Substantially complete |
+| V2 | Not complete |
+| V3 | Partial |
+| V4 | Partial |
+| V5 | Partial |
+| V6 | Partial |
+| V7 | Initial register complete; execution pending |
+| V8 | Not complete |
+
+Both Charters remain Candidate.

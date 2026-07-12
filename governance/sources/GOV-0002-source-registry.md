@@ -2,7 +2,7 @@
 id: GOV-0002
 title: Source Registry
 status: Accepted
-version: 1.0.0-alpha.2
+version: 1.0.0-alpha.5
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
 created: 2026-07-12
@@ -13,6 +13,9 @@ related:
   - ADR-0003
   - ADR-0004
   - PROJECT-MINGOS-0001
+  - GOV-0007
+  - GOV-0008
+  - GOV-0009
 depends_on:
   - ADR-0003
   - ADR-0004
@@ -49,6 +52,9 @@ This registry records the known source classes from which Ming Foundation and Mi
 | SRC-0008 | Product and implementation repositories | Runtime evidence and implementation constraints | Scope-dependent | Unregistered until explicitly recorded | Do not infer repository names, ownership, or authority without registration |
 | SRC-0009 | Research papers, books, standards, and external evidence | Scientific, philosophical, legal, and technical input | Informative unless adopted | Ongoing | Record citations, limitations, date, and applicability; research does not automatically become a standard |
 | SRC-0010 | De-identified cases and field observations | Validation evidence for standards and products | Evidence, not automatic authority | Restricted | Must follow consent, privacy, de-identification, and access rules |
+| SRC-0011 | MingOS website implementation and deployment snapshot (`YuemingHub/Mingos-life`, production `mingos.cn`) | Website implementation and operational evidence | Scope-limited implementation evidence | Active, direct repository access not verified in Day 5 | Use for bounded audit; re-verify current repository and live pages before relying on freshness |
+| SRC-0012 | `CODE_WIKI.md` Family OS snapshot dated 2026-07-09 | Structured implementation inventory | Documentary implementation evidence | Active snapshot, not a direct current code audit | Preserve date and limitations; verify against current code and tests before conformance claims |
+| SRC-0013 | Structured MingOS architecture and deployment discussion record dated 2026-07-12 | Deployment, product, website, and implementation context | Non-canonical source evidence | Active | Extract governed findings; do not publish secrets, credentials, private operations, or raw personal data |
 
 ## 4. Public repository inclusion rule
 
@@ -100,3 +106,13 @@ Historical discussion material should be imported by topic, not by chat chronolo
 7. website, white paper, and public communication.
 
 Each import MUST preserve uncertainty and identify duplicates, conflicts, rejected directions, and unresolved questions.
+## 8. Validation source rule
+
+A deployment report, code wiki, screenshot, conversation, or agent statement may support an evidence record, but it MUST NOT be described as a direct current audit unless the reviewed artifact, revision, environment, and test result are independently available.
+
+Day 5 therefore distinguishes:
+
+- repository-verified evidence;
+- documentary implementation evidence;
+- live or production evidence not independently re-verified;
+- evidence not yet collected.

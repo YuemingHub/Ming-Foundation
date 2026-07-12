@@ -2,7 +2,7 @@
 id: GOV-0001
 title: Current Canonical State
 status: Accepted
-version: 1.0.0-alpha.4
+version: 1.0.0-alpha.5
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -45,8 +45,8 @@ The following facts are accepted:
 - **Official website:** `https://mingos.cn`
 - **Canonical public repository:** `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 4 — Charter Review and Candidate Decision
-- **Current repository version:** `1.0.0-alpha.4`
+- **Current repository stage:** Foundation 1.0 / Day 5 — Charter Validation Against Reality
+- **Current repository version:** `1.0.0-alpha.5`
 
 `mingos.cn` is the official public interface of MingOS. It communicates the project to users, contributors, researchers, partners, and the wider public.
 
@@ -68,13 +68,18 @@ The following facts are accepted:
 - Day 3 proposal separating the Charter of Life, MingOS Charter, and MingOS Kernel;
 - Day 4 acceptance of the three-layer boundary;
 - Day 4 article-by-article Charter review and Candidate revisions;
-- Day 4 Charter validation plan.
+- Day 4 Charter validation plan;
+- Day 5 website and public-claims evidence audit;
+- Day 5 Family OS implementation mapping;
+- Day 5 privacy, third-party-rights, safety, professional-boundary, and counterexample analyses;
+- Day 5 decision to retain both Charters at Candidate.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
-- validation of Candidate `MF-0004` and `PROJECT-MINGOS-0002` through `GOV-0006`;
-- website, implementation, privacy, safety, commercial, affected-person, and counterexample audits;
+- remediation of Day 5 P0 Charter gaps;
+- direct live website and direct source-code validation;
+- affected-person, child-rights, privacy, safety, commercial, legal, and professional review;
 - systematic import of relevant conclusions from historical conversations;
 - consolidation of Charter-level documents;
 - consolidation of terminology, ontology, and evidence models;
@@ -161,12 +166,12 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 4, the next canonical work is Charter validation against reality:
+After Day 5, the next canonical work is Validation Remediation and External Review Preparation:
 
-1. execute the validation streams in `GOV-0006`;
-2. audit `mingos.cn` claims and Charter language;
-3. map Candidate commitments to current Ming Family / Family OS behavior;
-4. identify privacy, child-rights, safety, professional-boundary, and commercial gaps;
-5. create a counterexample and unresolved-objection register;
-6. recommend acceptance, revision, or continued Candidate status for each Charter;
-7. defer complete Kernel conformance work until validation clarifies the governing commitments.
+1. convert P0 privacy, third-party-rights, safety, public-claim, and incident gaps into reviewable designs;
+2. prepare affected-person and external-review instruments;
+3. define a restricted evidence-handling process;
+4. audit the live website and current source repositories directly;
+5. produce website Charter synchronization and public-status remediation;
+6. produce minimum data-rights, contestability, escalation, appeal, and incident requirements;
+7. keep both Charters at Candidate until evidence supports a future decision.
