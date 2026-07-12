@@ -1,8 +1,8 @@
 ---
 id: ADR-0005
 title: Separate the Charter of Life, MingOS Charter, and MingOS Kernel
-status: Proposed
-version: 1.0.0-alpha.3
+status: Accepted
+version: 1.0.0
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -13,6 +13,7 @@ related:
   - PROJECT-MINGOS-0000
   - PROJECT-MINGOS-0002
   - GOV-0004
+  - GOV-0005
 depends_on:
   - MF-0000
 ---
@@ -25,23 +26,23 @@ Historical MingOS discussions used “Life Charter,” “MingOS Charter,” “
 
 The overlap preserved important ideas but created architectural ambiguity:
 
-- universal ethical claims were mixed with MingOS-specific promises;
+- higher-order ethical claims were mixed with MingOS-specific promises;
 - project commitments were mixed with runtime protocols;
 - website language could appear more authoritative than repository records;
 - a prompt or implementation artifact could be mistaken for the Charter;
 - changing a technical mechanism could appear to change the root commitments.
 
-Day 3 requires a stable boundary before the Charter can be reviewed or implemented.
+Day 4 reviewed the proposed separation against the current architecture, governance, Charter drafts, implementation needs, and authority model.
 
-## Proposed decision
+## Decision
 
-Ming Foundation should maintain three distinct root texts.
+Ming Foundation maintains three distinct root layers.
 
 ### 1. The Charter of Life
 
 Scope:
 
-- higher ethical commitments concerning how life should be treated;
+- candidate higher-order ethical commitments concerning how life should be treated;
 - broader than MingOS;
 - not owned by a product or organization;
 - intentionally humble about scientific and universal claims.
@@ -59,7 +60,7 @@ Repository artifact:
 Scope:
 
 - MingOS-specific organizational and product self-restraints;
-- commitments concerning data, AI, business, professional roles, children, safety, governance, and correction;
+- commitments concerning data, AI, business, professional roles, children, safety, governance, correction, and enforcement;
 - conformance expectations for using the MingOS name.
 
 Primary question:
@@ -74,8 +75,8 @@ Repository artifact:
 
 Scope:
 
-- operational protocols, data models, state transitions, safety gates, tests, review loops, runtime behavior, and implementation conformance;
-- replaceable mechanisms governed by the Charters;
+- operational protocols, data models, state transitions, safety gates, tests, review loops, runtime behavior, incident handling, and implementation conformance;
+- replaceable mechanisms governed by both Charters;
 - subject to validation by real use, failure, counterexample, and evidence.
 
 Primary question:
@@ -85,7 +86,7 @@ Primary question:
 Future repository artifacts:
 
 - infrastructure, standards, RFCs, schemas, and implementation records;
-- not completed by this Day 3 package.
+- not completed by Day 4.
 
 ## Dependency direction
 
@@ -101,13 +102,25 @@ Products, agents, services, content, sales, research, and operations
 
 A lower layer may reveal that a higher layer requires revision, but it may not silently redefine it.
 
+## Authority and status
+
+Acceptance of this ADR accepts the separation of the three layers.
+
+It does not automatically accept every article in either Charter.
+
+At Day 4:
+
+- `MF-0004` is `Candidate`;
+- `PROJECT-MINGOS-0002` is `Candidate`;
+- complete Kernel conformance standards remain future work.
+
 ## Change thresholds
 
 ### The Charter of Life
 
-Changes should require:
+Changes require:
 
-- explicit public proposal;
+- explicit proposal;
 - ethical and philosophical review;
 - evidence and limitations;
 - affected-person participation;
@@ -116,7 +129,7 @@ Changes should require:
 
 ### MingOS Charter
 
-Changes should require:
+Changes require:
 
 - project governance review;
 - commercial-conflict review;
@@ -125,7 +138,7 @@ Changes should require:
 
 ### MingOS Kernel
 
-Changes should require:
+Changes require:
 
 - RFC or standard process appropriate to the affected layer;
 - implementation evidence;
@@ -141,14 +154,14 @@ Changes should require:
 - website content can map to the correct source;
 - technical evolution does not silently rewrite the Charter;
 - Charter violations become easier to identify;
-- implementation evidence can challenge a Draft without becoming automatic doctrine.
+- implementation evidence can challenge a Candidate without becoming automatic doctrine.
 
 ### Negative
 
 - the project must maintain traceability across three layers;
-- some historical files and website language will require reclassification;
+- some historical files and website language require reclassification;
 - duplicate principles must be removed or linked rather than copied indefinitely;
-- the distinction may initially feel more complex than one unified manifesto.
+- conformance and exception handling require additional governance work.
 
 ## Alternatives considered
 
@@ -156,7 +169,7 @@ Changes should require:
 
 Rejected because it mixes durable commitments with replaceable implementation.
 
-### MingOS Charter as the universal Charter
+### MingOS Charter as the higher-order Charter
 
 Rejected because MingOS should not claim ownership over the ethical treatment of life.
 
@@ -166,12 +179,12 @@ Rejected because implementation artifacts are model-, product-, and context-depe
 
 ### Website Charter as the canonical source
 
-Rejected because `mingos.cn` is the official public representation, while accepted repository records govern normative content.
+Rejected because `mingos.cn` is the official public representation, while repository records govern normative content.
 
 ## Follow-up
 
-1. Review `MF-0004` and `PROJECT-MINGOS-0002`.
-2. Audit `mingos.cn` for mixed Charter terminology after the Drafts are accepted.
-3. Inventory existing Family OS and Kernel artifacts as implementation evidence, not automatic canonical standards.
-4. Define a future Kernel conformance map only after the Charter boundary is accepted.
-5. Change this ADR from `Proposed` to `Accepted`, revise it, or reject it with reasons after review.
+1. Execute the validation plan in `GOV-0006`.
+2. Audit `mingos.cn` for mixed Charter terminology.
+3. Inventory existing Family OS and Kernel artifacts as implementation evidence.
+4. Keep both Charters at `Candidate` until review evidence supports acceptance.
+5. Define canonical Kernel conformance only after the relevant Charter commitments are sufficiently validated.

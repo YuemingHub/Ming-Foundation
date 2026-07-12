@@ -10,7 +10,7 @@ Ming Foundation is an open standards initiative dedicated to one question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 3 — Charter Consolidation Draft**. Day 1 established the repository architecture. Day 2 established the canonical public surfaces, source registry, current-state baseline, and conversation-to-repository workflow. Day 3 introduces reviewable drafts of the Charter of Life and MingOS Charter, and proposes a strict boundary between Charter and Kernel.
+This repository is at **Foundation 1.0 / Day 4 — Charter Review and Candidate Decision**. Day 4 accepts the separation of the Charter of Life, MingOS Charter, and MingOS Kernel; completes an internal article-by-article review; and moves both Charters to Candidate status for structured validation.
 
 **Important:** “Ming Foundation” is currently the name of an open standards initiative and repository. It does not by itself claim to be a legally registered foundation.
 
@@ -33,8 +33,10 @@ Day 3 Charter drafts:
 - [`projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md`](projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md)
 - [`governance/decisions/ADR-0005-three-root-texts-and-boundaries.md`](governance/decisions/ADR-0005-three-root-texts-and-boundaries.md)
 - [`governance/reviews/GOV-0004-day3-charter-consolidation-record.md`](governance/reviews/GOV-0004-day3-charter-consolidation-record.md)
+- [`governance/reviews/GOV-0005-day4-charter-review-and-decision.md`](governance/reviews/GOV-0005-day4-charter-review-and-decision.md)
+- [`governance/validation/GOV-0006-charter-candidate-validation-plan.md`](governance/validation/GOV-0006-charter-candidate-validation-plan.md)
 
-**Status note:** the two Charters are `Draft`; the boundary ADR is `Proposed`. They are not yet Accepted standards.
+**Status note:** the two Charters are `Candidate`; `ADR-0005` is `Accepted`. The Charters themselves are not yet Accepted or Stable.
 
 ## Mission
 
@@ -108,7 +110,7 @@ MingOS Kernel
 Products, agents, services, research, and operations
 ```
 
-The Charter of Life states higher ethical commitments. The MingOS Charter states project self-restraints. The Kernel operationalizes them through protocols, data models, safety gates, tests, and runtime behavior. These layers must not be collapsed into one document.
+The Charter of Life states candidate higher-order ethical commitments. The MingOS Charter states project self-restraints. The Kernel operationalizes them through protocols, data models, safety gates, tests, incident handling, and runtime behavior. `ADR-0005` accepts this separation; lower layers may reveal needed revisions but may not silently redefine higher layers.
 
 ## Initial documents
 
@@ -156,7 +158,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.3**
+Current repository foundation version: **1.0.0-alpha.4**
 
 ## License
 

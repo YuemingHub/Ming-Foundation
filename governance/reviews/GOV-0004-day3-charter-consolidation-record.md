@@ -1,8 +1,8 @@
 ---
 id: GOV-0004
 title: Day 3 Charter Consolidation Record
-status: Draft
-version: 1.0.0-alpha.3
+status: Accepted
+version: 1.0.0
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
 created: 2026-07-12
@@ -24,7 +24,7 @@ depends_on:
 
 This record documents how Day 3 consolidated historical Charter discussions into reviewable repository artifacts.
 
-It does not declare the Charter drafts accepted. It records source handling, decisions made during consolidation, unresolved tensions, exclusions, and the next review gate.
+This accepted historical record documents the Day 3 consolidation. It does not declare the Charter contents Accepted; Day 4 moved them to Candidate for validation.
 
 ## 2. Sources considered
 
@@ -134,7 +134,7 @@ Next best action
 
 ## 9. Next best action
 
-The next action after merging Day 3 is not to expand the ecosystem.
+The Day 3 next action was Charter review rather than ecosystem expansion.
 
 It is to review `MF-0004`, `PROJECT-MINGOS-0002`, and `ADR-0005` article by article, then either:
 
@@ -144,3 +144,11 @@ It is to review `MF-0004`, `PROJECT-MINGOS-0002`, and `ADR-0005` article by arti
 - reject with reasons.
 
 Only after the Charter boundary is accepted should the project begin a canonical Kernel conformance specification.
+## 10. Day 4 disposition
+
+Day 4 completed the required internal review and decided:
+
+- accept the three-layer separation through `ADR-0005`;
+- revise the Charter texts to address agency and emergency safety, deletion and retention, third-party voice, conflict handling, and enforcement;
+- move `MF-0004` and `PROJECT-MINGOS-0002` from `Draft` to `Candidate`;
+- require the validation plan in `GOV-0006` before either Charter may become Accepted.

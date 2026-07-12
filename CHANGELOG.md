@@ -2,6 +2,30 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.4] - 2026-07-12
+
+### Added
+
+- Day 4 article-by-article Charter review and decision record (`GOV-0005`).
+- Charter Candidate validation plan (`GOV-0006`).
+- New Charter of Life article protecting a person from being fully represented by another person’s account (`C13`).
+- MingOS Charter commitment requiring violation response, remediation, and traceability (`MC14`).
+
+### Changed
+
+- `ADR-0005` moved from Proposed to Accepted.
+- `MF-0004` moved from Draft to Candidate after internal review and revision.
+- `PROJECT-MINGOS-0002` moved from Draft to Candidate after internal review and revision.
+- Agency, emergency safety, deletion, retention, third-party voice, conflict handling, commercial review, and enforcement language were strengthened.
+- `GOV-0004` was accepted as the historical Day 3 consolidation record.
+- Repository status advanced to Day 4 — Charter Review and Candidate Decision.
+
+### Not completed
+
+- Neither Charter is Accepted or Stable.
+- External, affected-person, legal, privacy, safety, child-rights, and implementation validation remains required.
+- A complete MingOS Kernel conformance specification is not introduced.
+
 ## [1.0.0-alpha.3] - 2026-07-12
 
 ### Added
