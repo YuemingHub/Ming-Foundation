@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.6
+version: 1.0.0-alpha.7
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -233,3 +233,16 @@ Day 6 established the remediation and review preparation layer:
 This preparation does not advance V2, V3, V4, V5, V6, or V8 to complete.
 It defines the contracts and evidence methods required for future
 progress.
+## 9. Day 7 audit progress
+
+Day 7 produced:
+
+- an evidence and access register;
+- a bounded website audit matrix;
+- a bounded Family OS code-snapshot audit matrix;
+- a counterexample execution-readiness matrix;
+- an implementation backlog.
+
+Validation streams do not advance to complete because current website and Family OS repositories, live pages, current tests, affected-person review, and legal review remain incomplete.
+
+Both Charters remain Candidate.

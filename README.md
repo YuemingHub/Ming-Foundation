@@ -13,11 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 6 — Validation Remediation
-and External Review Preparation**. Day 6 converts Day 5 P0 gaps into
-Proposed minimum protocols, establishes external and affected-person
-review instruments, defines restricted evidence handling, and keeps both
-Charters at Candidate.
+This repository is at **Foundation 1.0 / Day 7 — Direct Audit Attempt and Remediation Implementation Backlog**. Day 7 records what could and could not be directly accessed, audits available website and Family OS evidence against the Day 6 protocols, and creates the implementation backlog without promoting Charter or RFC status.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -64,11 +60,16 @@ Charter governance and validation:
 - [`governance/evidence/GOV-0018-restricted-validation-evidence-handling.md`](governance/evidence/GOV-0018-restricted-validation-evidence-handling.md)
 - [`governance/remediation/GOV-0019-day6-remediation-traceability-matrix.md`](governance/remediation/GOV-0019-day6-remediation-traceability-matrix.md)
 - [`governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md`](governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md)
+- [`governance/audits/GOV-0020-day7-direct-audit-and-backlog-record.md`](governance/audits/GOV-0020-day7-direct-audit-and-backlog-record.md)
+- [`governance/audits/GOV-0021-day7-audit-evidence-and-access-register.md`](governance/audits/GOV-0021-day7-audit-evidence-and-access-register.md)
+- [`governance/audits/GOV-0022-day7-website-audit-matrix.md`](governance/audits/GOV-0022-day7-website-audit-matrix.md)
+- [`governance/audits/GOV-0023-day7-family-os-audit-matrix.md`](governance/audits/GOV-0023-day7-family-os-audit-matrix.md)
+- [`governance/audits/GOV-0024-day7-counterexample-readiness-matrix.md`](governance/audits/GOV-0024-day7-counterexample-readiness-matrix.md)
+- [`governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md`](governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md)
+- [`governance/reviews/GOV-0026-day7-status-recommendation.md`](governance/reviews/GOV-0026-day7-status-recommendation.md)
+- [`governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md`](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md)
 
-**Status note:** the two Charters remain `Candidate`. `ADR-0007`
-requires the Day 6 remediation contracts before Charter acceptance.
-RFC-0001 through RFC-0005 and GOV-0015 are Proposed; review and evidence
-instruments are Accepted.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 7 accepted the bounded audit and backlog, not current implementation conformance.
 
 ## Mission
 
@@ -100,7 +101,7 @@ It is building a durable foundation for:
 
 ## Repository map
 
-``` text
+```text
 foundation/       Charter, mission, vision, principles, ethics
 standards/        Ming Open Standards (MOS), protocols, RFCs
 infrastructure/   Kernel, core, runtime, SDK, APIs
@@ -115,7 +116,7 @@ scripts/          Repository validation
 
 ## Layer model
 
-``` text
+```text
 Layer 0 — Charter
 Layer 1 — Philosophy & Science
 Layer 2 — Standards
@@ -126,7 +127,7 @@ Layer 5 — Community & Governance
 
 Applications must not bypass the foundation:
 
-``` text
+```text
 Charter
   ↓
 Ontology & Standards
@@ -140,7 +141,7 @@ Projects
 
 ## Charter stack under review
 
-``` text
+```text
 The Charter of Life
   ↓
 MingOS Charter
@@ -184,7 +185,7 @@ silently redefine higher layers.
 
 ## Contribution flow
 
-``` text
+```text
 Issue / Discussion
   ↓
 RFC
@@ -204,7 +205,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.6**
+Current repository foundation version: **1.0.0-alpha.7**
 
 ## License
 

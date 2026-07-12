@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.6
+version: 1.0.0-alpha.7
 ---
 
 # GOV-0002 — Source Registry
@@ -138,3 +138,10 @@ Day 5 therefore distinguishes:
 - documentary implementation evidence;
 - live or production evidence not independently re-verified;
 - evidence not yet collected.
+## 9. Day 7 access outcome
+
+Day 7 directly verified the canonical Ming Foundation repository.
+
+The private website repository, current Family OS source repository, and live domains were not accessible to the audit environment. `SRC-0016` therefore remains incomplete and MUST NOT be described as a completed direct implementation audit.
+
+See `GOV-0021`.

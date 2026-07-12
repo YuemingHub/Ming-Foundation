@@ -25,7 +25,7 @@ related:
 status: Accepted
 title: Day 6 Remediation Traceability Matrix
 updated: 2026-07-12
-version: 1.0.0-alpha.6
+version: 1.0.0-alpha.7
 ---
 
 # GOV-0019 — Day 6 Remediation Traceability Matrix
@@ -98,3 +98,15 @@ A P0 gap closes only when:
 4.  affected-person or independent review is complete where required;
 5.  material objections are resolved or explicitly accepted;
 6.  evidence is recorded without exposing restricted material.
+## 6. Day 7 evidence state
+
+| Gap group | Day 7 evidence state | Backlog authority |
+|---|---|---|
+| Subject, speaker, and contestability | Partial; complete assertion and subject-facing workflow not evidenced | `GOV-0023`, `GOV-0025` |
+| Consent and data-rights lifecycle | Partial; complete purpose, permission, export, deletion propagation, retention, and appeal absent | `GOV-0023`, `GOV-0025` |
+| Safety accountability | Detection and escalation foundations exist; handoff, appeal, and incident lifecycle partial | `GOV-0023`, `GOV-0025` |
+| Case and cross-family evidence | Active implementation areas exist; privacy and reuse controls incomplete | `GOV-0023`, `GOV-0025` |
+| Public claim and Charter synchronization | Current source and live audit unavailable; snapshot indicates material gaps | `GOV-0022`, `GOV-0025` |
+| Charter violation enforcement | Operational process mostly absent | `GOV-0023`, `GOV-0025` |
+
+No gap is closed by Day 7.

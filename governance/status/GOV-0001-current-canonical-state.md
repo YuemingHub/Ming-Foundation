@@ -44,10 +44,18 @@ related:
 - RFC-0003
 - RFC-0004
 - RFC-0005
+- ADR-0008
+- GOV-0020
+- GOV-0021
+- GOV-0022
+- GOV-0023
+- GOV-0024
+- GOV-0025
+- GOV-0026
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.6
+version: 1.0.0-alpha.7
 ---
 
 # GOV-0001 — Current Canonical State
@@ -71,9 +79,9 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 6 — Validation
-  Remediation and External Review Preparation
-- **Current repository version:** `1.0.0-alpha.6`
+- **Current repository stage:** Foundation 1.0 / Day 7 — Direct Audit Attempt and
+  Remediation Implementation Backlog
+- **Current repository version:** `1.0.0-alpha.7`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -113,15 +121,20 @@ decisions, and governance records.
 - Day 6 external and affected-person review instruments;
 - Day 6 restricted evidence-handling protocol;
 - Day 6 decision requiring remediation contracts before Charter
-  acceptance.
+  acceptance;
+- Day 7 direct access attempt and evidence-bound audit;
+- Day 7 website and Family OS implementation matrices;
+- Day 7 counterexample execution-readiness matrix;
+- Day 7 remediation implementation backlog;
+- Day 7 decision retaining Charter and RFC statuses.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
-- direct live website and direct source-code audit against RFC-0001
-  through RFC-0005;
-- implementation backlog and acceptance-test mapping;
-- review and revision of Proposed remediation protocols;
+- registration and audit access for current website and Family OS repositories;
+- execution of Wave 0 and Wave 1 from `GOV-0025`;
+- direct current-source and live-page re-audit;
+- review and revision of Proposed remediation protocols based on implementation evidence;
 - recruitment and execution of affected-person and independent external
   review;
 - privacy, child-rights, safety, commercial, legal, and professional
@@ -227,18 +240,13 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 6, the next canonical work is Direct Audit and Remediation
-Implementation Backlog:
+After Day 7, the next canonical work is Remediation Architecture and First Implementation Wave:
 
-1.  obtain current revision identifiers for `mingos.cn` and
-    implementation repositories;
-2.  map current behavior to every MUST-level requirement in RFC-0001
-    through RFC-0005;
-3.  distinguish implemented, partial, absent, conflicting, and
-    unverifiable requirements;
-4.  produce implementation tasks with owner, dependency, risk,
-    acceptance test, and evidence;
-5.  run counterexamples from `GOV-0012` against current product paths;
-6.  prepare the first external and affected-person review cycle using
-    `GOV-0016` and `GOV-0017`;
-7.  keep both Charters at Candidate.
+1. register the current website and Family OS repositories and revisions;
+2. execute `D7-ENG-001` and `D7-ENG-002`;
+3. design and implement the P0 subject/assertion and purpose/permission foundations;
+4. correct public Charter status, capability status, form privacy, and role boundaries;
+5. implement accountable safety handoff and incident review;
+6. separate operational cases from validation and cross-family evidence;
+7. open the first governed Charter-violation intake path;
+8. keep both Charters at Candidate and remediation protocols at Proposed until evidence supports review.

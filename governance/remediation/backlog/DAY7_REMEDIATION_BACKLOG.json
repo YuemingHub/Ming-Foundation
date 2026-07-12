@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0",
+  "generated_for": "Ming Foundation Day 7",
+  "base_commit": "b1162a0cd856d2ce1867150df9cd144d64ea4510",
+  "status_vocabulary": [
+    "Ready",
+    "Ready after access",
+    "Planned",
+    "Blocked by access",
+    "Blocked by tests"
+  ],
+  "items": [
+    {
+      "id": "D7-ENG-001",
+      "priority": "P0",
+      "owner_role": "Repository Steward",
+      "area": "audit",
+      "target": "website and Family OS repositories",
+      "summary": "Register current repositories, branches, commits, build/test commands, deployment relationship, and read access.",
+      "dependencies": [],
+      "acceptance": "GOV-0002 has current locators and the audit role can read required code without secrets or personal data.",
+      "status": "Ready"
+    },
+    {
+      "id": "D7-ENG-002",
+      "priority": "P0",
+      "owner_role": "Quality Engineering",
+      "area": "audit",
+      "target": "Family OS",
+      "summary": "Run current RFC and CE-001..CE-020 audit tests in a non-production environment.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Revision, environment, commands, results, failures, and artifacts are recorded.",
+      "status": "Blocked by access"
+    },
+    {
+      "id": "D7-ENG-003",
+      "priority": "P1",
+      "owner_role": "Operations",
+      "area": "audit",
+      "target": "mingos.cn and ymai.love",
+      "summary": "Produce bounded live runtime evidence.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Routes, headers, version, form behavior, errors, and deployment revision are recorded.",
+      "status": "Blocked by access"
+    },
+    {
+      "id": "D7-ENG-004",
+      "priority": "P1",
+      "owner_role": "AI Platform",
+      "area": "AI governance",
+      "target": "model integration",
+      "summary": "Add provider/model/version conformance gate and regression trigger.",
+      "dependencies": [
+        "D7-ENG-002"
+      ],
+      "acceptance": "A provider or model change cannot release without required regression results.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-ENG-005",
+      "priority": "P1",
+      "owner_role": "Reporting Engineering",
+      "area": "evidence",
+      "target": "reports and summaries",
+      "summary": "Make unknowns and evidence coverage visible.",
+      "dependencies": [
+        "D7-DATA-001"
+      ],
+      "acceptance": "Material unknowns cannot be omitted without a recorded decision.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-WEB-001",
+      "priority": "P0",
+      "owner_role": "Website Engineering + Governance",
+      "area": "website",
+      "target": "/charter and normative pages",
+      "summary": "Add governing source ID, status, version/commit, sync date, and summary status.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Public Charter pages match the repository Candidate status and link to governing source.",
+      "status": "Ready after access"
+    },
+    {
+      "id": "D7-WEB-002",
+      "priority": "P0",
+      "owner_role": "Product + Website",
+      "area": "website",
+      "target": "home, architecture, ecosystem, product pages",
+      "summary": "Apply capability statuses Available/Pilot/Experimental/Planned/Vision/Paused/Retired.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Future capabilities are not presented as current.",
+      "status": "Ready after access"
+    },
+    {
+      "id": "D7-WEB-003",
+      "priority": "P0",
+      "owner_role": "Privacy + Website",
+      "area": "website/data",
+      "target": "early-access and contact forms",
+      "summary": "Add purpose, recipient, retention, rights route, and sensitive-data prohibition.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "General forms warn or block child, medical, crisis, and case detail.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-WEB-004",
+      "priority": "P0",
+      "owner_role": "Safety + Website",
+      "area": "website/safety",
+      "target": "sensitive-use entry points",
+      "summary": "Add AI, human-review, professional, emergency, diagnosis, legal, and response boundaries.",
+      "dependencies": [
+        "D7-SAFE-004"
+      ],
+      "acceptance": "Boundaries are visible before sensitive submission or use.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-WEB-005",
+      "priority": "P1",
+      "owner_role": "Governance + Website",
+      "area": "website/governance",
+      "target": "footer and policy pages",
+      "summary": "Add correction, privacy, Charter-concern, and stale-information routes.",
+      "dependencies": [
+        "D7-GOV-001"
+      ],
+      "acceptance": "Reports receive IDs and route to governed processes.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-WEB-006",
+      "priority": "P1",
+      "owner_role": "Website Engineering",
+      "area": "website/release",
+      "target": "build and deployment",
+      "summary": "Create normative-page manifest and stale-source release check.",
+      "dependencies": [
+        "D7-WEB-001"
+      ],
+      "acceptance": "Stale Charter metadata fails build or blocks release.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-WEB-007",
+      "priority": "P1",
+      "owner_role": "Accessibility",
+      "area": "website/accessibility",
+      "target": "entire site",
+      "summary": "Run keyboard, screen-reader, contrast, reduced-motion, mobile, and Chinese typography audit.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "P0 accessibility findings are resolved and evidence recorded.",
+      "status": "Blocked by access"
+    },
+    {
+      "id": "D7-DATA-001",
+      "priority": "P0",
+      "owner_role": "Data Architecture",
+      "area": "subject/assertion",
+      "target": "db, profile, judgment services",
+      "summary": "Implement subject, speaker, assertion, knowledge status, evidence, confidence, uncertainty, validity, confirmation, dispute, and revision.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Third-party report and AI inference cannot be stored as subject-confirmed fact.",
+      "status": "Ready after access"
+    },
+    {
+      "id": "D7-DATA-002",
+      "priority": "P0",
+      "owner_role": "Product + Data Rights",
+      "area": "contestability",
+      "target": "parent, subject, and admin workflows",
+      "summary": "Implement contest, contextualize, restrict, correct, expire, pause, and appeal.",
+      "dependencies": [
+        "D7-DATA-001"
+      ],
+      "acceptance": "High-impact disputed assertions are visible, reviewable, and paused where required.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-DATA-003",
+      "priority": "P0",
+      "owner_role": "Privacy Architecture",
+      "area": "consent/purpose",
+      "target": "all channels",
+      "summary": "Implement purpose registry and permission/processing-basis records.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "Every sensitive use maps to an active purpose and basis.",
+      "status": "Ready after access"
+    },
+    {
+      "id": "D7-DATA-004",
+      "priority": "P0",
+      "owner_role": "Data Rights",
+      "area": "data rights",
+      "target": "API, UI, primary and derived stores",
+      "summary": "Implement access, explanation, correction, export, deletion, restriction, withdrawal, and appeal.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "A request reaches primary, indexed, derived, and backup handling.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-DATA-005",
+      "priority": "P0",
+      "owner_role": "Data Governance + Operations",
+      "area": "retention",
+      "target": "SQLite, files, backups, logs",
+      "summary": "Define store-level retention, exceptions, owner, access, deletion, and review.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "Every store has an approved retention and deletion record.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-DATA-006",
+      "priority": "P0",
+      "owner_role": "Identity Architecture",
+      "area": "single source of truth",
+      "target": "Parent, H5, Life State, enterprise WeChat, professional channels",
+      "summary": "Establish one identity, permission, memory, and audit source.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "Revocation and correction propagate across linked channels.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-DATA-007",
+      "priority": "P1",
+      "owner_role": "Product Governance",
+      "area": "profiling",
+      "target": "family-stage and profile UI",
+      "summary": "Prevent ranking, shame, and permanent identity from stage models.",
+      "dependencies": [
+        "D7-DATA-001"
+      ],
+      "acceptance": "Stage is temporal, non-comparative, correctable, purpose-limited, and expiring.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-DATA-008",
+      "priority": "P1",
+      "owner_role": "Security + Data Governance",
+      "area": "access control",
+      "target": "admin and professional access",
+      "summary": "Add case-scoped least privilege, access expiry, conflict declaration, and access review.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "Technical admin security no longer grants broad organizational access.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-SAFE-001",
+      "priority": "P0",
+      "owner_role": "Safety Operations",
+      "area": "safety",
+      "target": "safety gate, escalation route, logs",
+      "summary": "Implement accountable handoff, acknowledgment, failed state, scope, duration, and review.",
+      "dependencies": [
+        "D7-ENG-001"
+      ],
+      "acceptance": "High-risk escalation cannot close without acknowledgment or explicit failure.",
+      "status": "Ready after access"
+    },
+    {
+      "id": "D7-SAFE-002",
+      "priority": "P0",
+      "owner_role": "Safety Quality",
+      "area": "safety quality",
+      "target": "tests, incidents, monitoring",
+      "summary": "Implement false-positive, false-negative, near-miss, and root-cause review.",
+      "dependencies": [
+        "D7-SAFE-001"
+      ],
+      "acceptance": "Material incidents can change policy, prompt, code, access, or training.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-SAFE-003",
+      "priority": "P0",
+      "owner_role": "Safety + Data Rights",
+      "area": "safety appeal",
+      "target": "user and admin interfaces",
+      "summary": "Implement classification correction, appeal, and downstream repair.",
+      "dependencies": [
+        "D7-SAFE-001"
+      ],
+      "acceptance": "Wrong classifications do not become permanent labels.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-SAFE-004",
+      "priority": "P0",
+      "owner_role": "Safety + AI Quality",
+      "area": "professional boundary",
+      "target": "AI output and public UI",
+      "summary": "Enforce diagnostic, clinical, emergency, and legal boundaries with tests.",
+      "dependencies": [
+        "D7-ENG-002"
+      ],
+      "acceptance": "CE-019 and related cases pass across ordinary, vulnerable, and crisis contexts.",
+      "status": "Blocked by tests"
+    },
+    {
+      "id": "D7-SAFE-005",
+      "priority": "P0",
+      "owner_role": "Safeguarding",
+      "area": "child confidentiality",
+      "target": "parent/child disclosure and access",
+      "summary": "Define age-aware confidentiality, parent-access exceptions, and independent review.",
+      "dependencies": [
+        "D7-DATA-002",
+        "D7-SAFE-001"
+      ],
+      "acceptance": "CE-016 tabletop and product tests pass.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-PRO-001",
+      "priority": "P1",
+      "owner_role": "Professional Governance",
+      "area": "professional workspace",
+      "target": "professional UI and audit",
+      "summary": "Require source/status visibility, human attestation, qualifications, conflicts, and override audit.",
+      "dependencies": [
+        "D7-DATA-001"
+      ],
+      "acceptance": "A professional cannot silently convert AI hypothesis into verified fact.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-CASE-001",
+      "priority": "P0",
+      "owner_role": "Evidence Governance",
+      "area": "case governance",
+      "target": "case records, flywheel, analyst access",
+      "summary": "Implement evidence zones and case-scoped access.",
+      "dependencies": [
+        "D7-DATA-003"
+      ],
+      "acceptance": "Operational cases are separated from validation and aggregate evidence.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-CASE-002",
+      "priority": "P0",
+      "owner_role": "Privacy Engineering",
+      "area": "cross-family privacy",
+      "target": "cross-family analyzer and exports",
+      "summary": "Add de-identification, rarity review, minimum cohort, suppression, and re-identification review.",
+      "dependencies": [
+        "D7-CASE-001"
+      ],
+      "acceptance": "CE-005 prevents rare-family exposure.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-CASE-003",
+      "priority": "P0",
+      "owner_role": "AI/Data Governance",
+      "area": "secondary use",
+      "target": "model training, evaluation, retrieval, evidence export",
+      "summary": "Add separate approval, provider controls, withdrawal lineage, export expiry, and deletion evidence.",
+      "dependencies": [
+        "D7-CASE-001"
+      ],
+      "acceptance": "Case data cannot reach model or reviewer without governed approval.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-COM-001",
+      "priority": "P1",
+      "owner_role": "Commercial Governance",
+      "area": "commercial ethics",
+      "target": "pricing, sales, retention, notifications",
+      "summary": "Add anti-anxiety and anti-dependency review and metrics.",
+      "dependencies": [
+        "D7-WEB-002",
+        "D7-GOV-001"
+      ],
+      "acceptance": "CE-006, CE-011, and CE-012 have executable controls.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-GOV-001",
+      "priority": "P0",
+      "owner_role": "Governance Operations",
+      "area": "Charter enforcement",
+      "target": "public and internal reporting",
+      "summary": "Implement Charter, privacy, and safety concern intake with IDs and containment triage.",
+      "dependencies": [],
+      "acceptance": "Reporter receives status and ongoing harm can be contained.",
+      "status": "Ready"
+    },
+    {
+      "id": "D7-GOV-002",
+      "priority": "P0",
+      "owner_role": "Independent Governance",
+      "area": "conflict handling",
+      "target": "leadership and conflict cases",
+      "summary": "Establish independent case owner, conflict rules, protection, and appeal.",
+      "dependencies": [
+        "D7-GOV-001"
+      ],
+      "acceptance": "Founder or partner tabletop proceeds without conflicted control.",
+      "status": "Planned"
+    },
+    {
+      "id": "D7-GOV-003",
+      "priority": "P1",
+      "owner_role": "Governance Board",
+      "area": "sanctions/transparency",
+      "target": "violation outcomes",
+      "summary": "Define sanctions, suspension, naming withdrawal, reinstatement, and safe transparency.",
+      "dependencies": [
+        "D7-GOV-002"
+      ],
+      "acceptance": "Material violation has enforceable and appealable consequences.",
+      "status": "Planned"
+    }
+  ]
+}

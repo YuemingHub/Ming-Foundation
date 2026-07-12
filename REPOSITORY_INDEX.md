@@ -28,6 +28,13 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-TPL-0001 | [External Charter Review Response Form](governance/templates/GOV-TPL-0001-external-charter-review-response.md)                                             | Accepted |
 | GOV-TPL-0002 | [Affected-Person Charter Review Record](governance/templates/GOV-TPL-0002-affected-person-review-record.md)                                                | Accepted |
 | GOV-TPL-0003 | [Charter Validation Finding Record](governance/templates/GOV-TPL-0003-charter-validation-finding-record.md)                                                | Accepted |
+| GOV-0020 | [Day 7 Direct Audit Attempt and Remediation Backlog Record](governance/audits/GOV-0020-day7-direct-audit-and-backlog-record.md) | Accepted |
+| GOV-0021 | [Day 7 Audit Evidence and Access Register](governance/audits/GOV-0021-day7-audit-evidence-and-access-register.md) | Accepted |
+| GOV-0022 | [Day 7 MingOS Website Direct Audit Matrix](governance/audits/GOV-0022-day7-website-audit-matrix.md) | Accepted |
+| GOV-0023 | [Day 7 Family OS Implementation Audit Matrix](governance/audits/GOV-0023-day7-family-os-audit-matrix.md) | Accepted |
+| GOV-0024 | [Day 7 Counterexample Execution Readiness Matrix](governance/audits/GOV-0024-day7-counterexample-readiness-matrix.md) | Accepted |
+| GOV-0025 | [Day 7 Remediation Implementation Backlog](governance/remediation/GOV-0025-day7-remediation-implementation-backlog.md) | Accepted |
+| GOV-0026 | [Day 7 Status Recommendation](governance/reviews/GOV-0026-day7-status-recommendation.md) | Accepted |
 
 ## Foundation
 
@@ -61,6 +68,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0005 | [Separate the Charter of Life, MingOS Charter, and MingOS Kernel](governance/decisions/ADR-0005-three-root-texts-and-boundaries.md)                         | Accepted |
 | ADR-0006 | [Retain Both Charters at Candidate After Day 5](governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md)                                   | Accepted |
 | ADR-0007 | [Require Minimum Remediation Contracts Before Charter Acceptance](governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md) | Accepted |
+| ADR-0008 | [Treat Day 7 as a Bounded Audit and Retain Current Statuses](governance/decisions/ADR-0008-treat-day7-as-bounded-audit.md) | Accepted |
 
 ## Projects
 

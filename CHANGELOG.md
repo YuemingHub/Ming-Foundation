@@ -2,7 +2,42 @@
 
 All notable repository-level changes are documented here.
 
-## \[1.0.0-alpha.6\] - 2026-07-12
+## [1.0.0-alpha.7] - 2026-07-12
+
+### Added
+
+- Day 7 direct audit attempt and remediation backlog record (`GOV-0020`).
+- Audit evidence and access register (`GOV-0021`).
+- MingOS website audit matrix (`GOV-0022`).
+- Family OS implementation audit matrix (`GOV-0023`).
+- Counterexample execution-readiness matrix (`GOV-0024`).
+- Remediation implementation backlog (`GOV-0025`).
+- Day 7 status recommendation (`GOV-0026`).
+- Accepted decision treating Day 7 as a bounded audit (`ADR-0008`).
+- Machine-readable Day 7 backlog.
+
+### Changed
+
+- Repository status advanced to Day 7 — Direct Audit Attempt and Remediation Implementation Backlog.
+- `GOV-0019` now records Day 7 evidence states and backlog authority.
+- Changelog version headings were restored to unescaped Keep a Changelog form.
+- Current work now prioritizes repository access, reproducible audit, and the first P0 implementation wave.
+
+### Decision
+
+- Both Charters remain Candidate.
+- RFC-0001 through RFC-0005 remain Proposed.
+- `GOV-0015` remains Proposed.
+- Day 7 does not claim completed current-source or production conformance.
+
+### Evidence limitations
+
+- The current private website repository was not accessible to the connected GitHub application.
+- The current Family OS source repository was not available.
+- Live `mingos.cn` and `ymai.love` retrieval failed in the audit environment.
+- Documentary code snapshots were used only as bounded evidence.
+
+## [1.0.0-alpha.6] - 2026-07-12
 
 ### Added
 
@@ -48,7 +83,7 @@ All notable repository-level changes are documented here.
 - No implementation, external review, affected-person review, or legal
   review is represented as complete.
 
-## \[1.0.0-alpha.5\] - 2026-07-12
+## [1.0.0-alpha.5] - 2026-07-12
 
 ### Added
 
@@ -87,7 +122,7 @@ All notable repository-level changes are documented here.
 - Documentary implementation evidence does not equal production
   conformance.
 
-## \[1.0.0-alpha.4\] - 2026-07-12
+## [1.0.0-alpha.4] - 2026-07-12
 
 ### Added
 
@@ -120,7 +155,7 @@ All notable repository-level changes are documented here.
   implementation validation remains required.
 - A complete MingOS Kernel conformance specification is not introduced.
 
-## \[1.0.0-alpha.3\] - 2026-07-12
+## [1.0.0-alpha.3] - 2026-07-12
 
 ### Added
 
@@ -146,7 +181,7 @@ All notable repository-level changes are documented here.
 - `ADR-0005` is not yet Accepted.
 - No complete MingOS Kernel specification is introduced by Day 3.
 
-## \[1.0.0-alpha.2\] - 2026-07-12
+## [1.0.0-alpha.2] - 2026-07-12
 
 ### Added
 
@@ -168,7 +203,7 @@ All notable repository-level changes are documented here.
 - Repository index now includes governance baseline and public-surface
   decisions.
 
-## \[1.0.0-alpha.1\] - 2026-07-12
+## [1.0.0-alpha.1] - 2026-07-12
 
 ### Added
 
