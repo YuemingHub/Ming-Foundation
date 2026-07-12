@@ -1,32 +1,34 @@
 ---
+created: 2026-07-12
+depends_on:
+- GOV-0005
+- ADR-0005
 id: GOV-0006
-title: Charter Candidate Validation Plan
-status: Accepted
-version: 1.0.0-alpha.5
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
-created: 2026-07-12
-updated: 2026-07-12
 related:
-  - MF-0004
-  - PROJECT-MINGOS-0002
-  - ADR-0005
-  - GOV-0005
-  - GOV-0007
-  - GOV-0013
-  - ADR-0006
-depends_on:
-  - GOV-0005
-  - ADR-0005
+- MF-0004
+- PROJECT-MINGOS-0002
+- ADR-0005
+- GOV-0005
+- GOV-0007
+- GOV-0013
+- ADR-0006
+status: Accepted
+title: Charter Candidate Validation Plan
+updated: 2026-07-12
+version: 1.0.0-alpha.6
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
 
 ## 1. Purpose
 
-This plan defines the evidence required before the Charter of Life or MingOS Charter may move from `Candidate` to `Accepted`.
+This plan defines the evidence required before the Charter of Life or
+MingOS Charter may move from `Candidate` to `Accepted`.
 
-The purpose is to test the Charters against reality rather than reward polished wording.
+The purpose is to test the Charters against reality rather than reward
+polished wording.
 
 ## 2. Validation streams
 
@@ -121,7 +123,8 @@ Actively search for:
 
 Identify statements requiring jurisdiction-specific qualification.
 
-The repository may state principles, but MUST NOT present unreviewed legal wording as universal legal fact.
+The repository may state principles, but MUST NOT present unreviewed
+legal wording as universal legal fact.
 
 ## 3. Evidence record
 
@@ -147,13 +150,16 @@ A Charter may become `Accepted` only when:
 - every article has been tested in all applicable streams;
 - high-severity conflicts have a documented resolution;
 - unresolved legal and safety limits are clearly qualified;
-- affected-person objections are represented rather than summarized away;
+- affected-person objections are represented rather than summarized
+  away;
 - no known material contradiction is hidden;
 - implementation gaps are acknowledged;
 - enforcement and appeal paths are sufficiently defined;
-- the acceptance decision is recorded in a dedicated governance document.
+- the acceptance decision is recorded in a dedicated governance
+  document.
 
-`Stable` requires additional long-term evidence and is not a Day 5 target.
+`Stable` requires additional long-term evidence and is not a Day 5
+target.
 
 ## 5. Failure conditions
 
@@ -165,11 +171,13 @@ Validation fails when:
 - exceptions are hidden;
 - marketing pressure changes wording without governance;
 - lack of evidence is presented as consensus;
-- open objections are omitted from the public record without a privacy or safety basis.
+- open objections are omitted from the public record without a privacy
+  or safety basis.
 
 ## 6. Day 5 target
 
-Day 5 should produce a Charter validation evidence pack, not a new theoretical layer.
+Day 5 should produce a Charter validation evidence pack, not a new
+theoretical layer.
 
 Recommended outputs:
 
@@ -181,7 +189,7 @@ Recommended outputs:
 - status recommendation for each Candidate Charter.
 
 Day 5 may recommend acceptance, revision, or continued Candidate status.
-## 7. Day 5 progress record
+\## 7. Day 5 progress record
 
 Day 5 produced the first evidence pack:
 
@@ -196,15 +204,32 @@ Day 5 produced the first evidence pack:
 
 Progress after Day 5:
 
-| Stream | State |
-|---|---|
-| V1 | Substantially complete |
-| V2 | Not complete |
-| V3 | Partial |
-| V4 | Partial |
-| V5 | Partial |
-| V6 | Partial |
-| V7 | Initial register complete; execution pending |
-| V8 | Not complete |
+| Stream | State                                        |
+|--------|----------------------------------------------|
+| V1     | Substantially complete                       |
+| V2     | Not complete                                 |
+| V3     | Partial                                      |
+| V4     | Partial                                      |
+| V5     | Partial                                      |
+| V6     | Partial                                      |
+| V7     | Initial register complete; execution pending |
+| V8     | Not complete                                 |
 
-Both Charters remain Candidate.
+Both Charters remain Candidate. \## 8. Day 6 preparation record
+
+Day 6 established the remediation and review preparation layer:
+
+- `RFC-0001` — subject, speaker, and contestability;
+- `RFC-0002` — consent and data-rights lifecycle;
+- `RFC-0003` — safety escalation, handoff, appeal, and incident;
+- `RFC-0004` — case and cross-family evidence governance;
+- `RFC-0005` — public claim and Charter synchronization;
+- `GOV-0015` — proposed Charter-violation procedure;
+- `GOV-0016` — external review protocol;
+- `GOV-0017` — affected-person review instrument;
+- `GOV-0018` — restricted evidence handling;
+- `GOV-0019` — traceability matrix.
+
+This preparation does not advance V2, V3, V4, V5, V6, or V8 to complete.
+It defines the contracts and evidence methods required for future
+progress.

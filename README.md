@@ -1,25 +1,39 @@
 # Ming Foundation
 
-> Building the standards, infrastructure, and ecosystem for Living Intelligence.  
+> Building the standards, infrastructure, and ecosystem for Living
+> Intelligence.  
 > 构建生命智能的标准、基础设施与生态。
 
-Ming Foundation is an open standards initiative dedicated to one question:
+Ming Foundation is an open standards initiative dedicated to one
+question:
 
-> **How can technology help life understand itself without replacing, controlling, or reducing life?**  
+> **How can technology help life understand itself without replacing,
+> controlling, or reducing life?**  
 > **技术如何帮助生命理解自己，而不是替代、控制或简化生命？**
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 5 — Charter Validation Against Reality**. Day 5 tests the Candidate Charters against available website and Family OS implementation evidence, records privacy and safety gaps, protects counterexamples, and retains both Charters at Candidate pending external and direct validation.
+This repository is at **Foundation 1.0 / Day 6 — Validation Remediation
+and External Review Preparation**. Day 6 converts Day 5 P0 gaps into
+Proposed minimum protocols, establishes external and affected-person
+review instruments, defines restricted evidence handling, and keeps both
+Charters at Candidate.
 
-**Important:** “Ming Foundation” is currently the name of an open standards initiative and repository. It does not by itself claim to be a legally registered foundation.
+**Important:** “Ming Foundation” is currently the name of an open
+standards initiative and repository. It does not by itself claim to be a
+legally registered foundation.
 
 ## Official project surfaces
 
 - **Official MingOS website:** [`mingos.cn`](https://mingos.cn)
-- **Canonical public repository:** [`YuemingHub/Ming-Foundation`](https://github.com/YuemingHub/Ming-Foundation)
+- **Canonical public repository:**
+  [`YuemingHub/Ming-Foundation`](https://github.com/YuemingHub/Ming-Foundation)
 
-Conversation windows, coding-agent sessions, and ZIP handoff packages are working or transfer sources. Project-relevant outcomes become formal project assets through review and repository integration. Private case data, personal information, secrets, and unsafe material must not be published merely to preserve discussion history.
+Conversation windows, coding-agent sessions, and ZIP handoff packages
+are working or transfer sources. Project-relevant outcomes become formal
+project assets through review and repository integration. Private case
+data, personal information, secrets, and unsafe material must not be
+published merely to preserve discussion history.
 
 See:
 
@@ -43,12 +57,25 @@ Charter governance and validation:
 - [`governance/validation/GOV-0012-counterexample-and-risk-register.md`](governance/validation/GOV-0012-counterexample-and-risk-register.md)
 - [`governance/reviews/GOV-0013-day5-charter-status-recommendation.md`](governance/reviews/GOV-0013-day5-charter-status-recommendation.md)
 - [`governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md`](governance/decisions/ADR-0006-retain-charters-at-candidate-after-day5.md)
+- [`governance/remediation/GOV-0014-day6-remediation-and-external-review-preparation.md`](governance/remediation/GOV-0014-day6-remediation-and-external-review-preparation.md)
+- [`governance/remediation/GOV-0015-charter-violation-reporting-and-remediation.md`](governance/remediation/GOV-0015-charter-violation-reporting-and-remediation.md)
+- [`governance/reviews/GOV-0016-external-charter-review-protocol.md`](governance/reviews/GOV-0016-external-charter-review-protocol.md)
+- [`governance/reviews/GOV-0017-affected-person-charter-review-instrument.md`](governance/reviews/GOV-0017-affected-person-charter-review-instrument.md)
+- [`governance/evidence/GOV-0018-restricted-validation-evidence-handling.md`](governance/evidence/GOV-0018-restricted-validation-evidence-handling.md)
+- [`governance/remediation/GOV-0019-day6-remediation-traceability-matrix.md`](governance/remediation/GOV-0019-day6-remediation-traceability-matrix.md)
+- [`governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md`](governance/decisions/ADR-0007-require-remediation-contracts-before-charter-acceptance.md)
 
-**Status note:** the two Charters remain `Candidate`; `ADR-0005` and `ADR-0006` are `Accepted`. Day 5 found meaningful implementation alignment and material unresolved validation gaps.
+**Status note:** the two Charters remain `Candidate`. `ADR-0007`
+requires the Day 6 remediation contracts before Charter acceptance.
+RFC-0001 through RFC-0005 and GOV-0015 are Proposed; review and evidence
+instruments are Accepted.
 
 ## Mission
 
-Build the foundational standards and infrastructure for Living Intelligence so that people, families, communities, and future applications can continuously understand life, relationships, context, change, and growth while preserving human agency.
+Build the foundational standards and infrastructure for Living
+Intelligence so that people, families, communities, and future
+applications can continuously understand life, relationships, context,
+change, and growth while preserving human agency.
 
 ## The core distinction
 
@@ -61,14 +88,19 @@ Ming Foundation is not primarily building:
 
 It is building a durable foundation for:
 
-- **Life Ontology** — a shared language for life, relationship, event, state, need, meaning, memory, and growth;
-- **Life Protocols** — how observation, understanding, reflection, choice, action, and learning should flow;
-- **Life Memory** — long-term, revisable, evidence-aware memory beyond conversation history;
-- **Living Infrastructure** — reusable core capabilities for applications such as MingOS, Ming Family, Ming Education, and future systems.
+- **Life Ontology** — a shared language for life, relationship, event,
+  state, need, meaning, memory, and growth;
+- **Life Protocols** — how observation, understanding, reflection,
+  choice, action, and learning should flow;
+- **Life Memory** — long-term, revisable, evidence-aware memory beyond
+  conversation history;
+- **Living Infrastructure** — reusable core capabilities for
+  applications such as MingOS, Ming Family, Ming Education, and future
+  systems.
 
 ## Repository map
 
-```text
+``` text
 foundation/       Charter, mission, vision, principles, ethics
 standards/        Ming Open Standards (MOS), protocols, RFCs
 infrastructure/   Kernel, core, runtime, SDK, APIs
@@ -83,7 +115,7 @@ scripts/          Repository validation
 
 ## Layer model
 
-```text
+``` text
 Layer 0 — Charter
 Layer 1 — Philosophy & Science
 Layer 2 — Standards
@@ -94,7 +126,7 @@ Layer 5 — Community & Governance
 
 Applications must not bypass the foundation:
 
-```text
+``` text
 Charter
   ↓
 Ontology & Standards
@@ -108,7 +140,7 @@ Projects
 
 ## Charter stack under review
 
-```text
+``` text
 The Charter of Life
   ↓
 MingOS Charter
@@ -118,7 +150,12 @@ MingOS Kernel
 Products, agents, services, research, and operations
 ```
 
-The Charter of Life states candidate higher-order ethical commitments. The MingOS Charter states project self-restraints. The Kernel operationalizes them through protocols, data models, safety gates, tests, incident handling, and runtime behavior. `ADR-0005` accepts this separation; lower layers may reveal needed revisions but may not silently redefine higher layers.
+The Charter of Life states candidate higher-order ethical commitments.
+The MingOS Charter states project self-restraints. The Kernel
+operationalizes them through protocols, data models, safety gates,
+tests, incident handling, and runtime behavior. `ADR-0005` accepts this
+separation; lower layers may reveal needed revisions but may not
+silently redefine higher layers.
 
 ## Initial documents
 
@@ -136,17 +173,18 @@ The Charter of Life states candidate higher-order ethical commitments. The MingO
 
 ## Working principles
 
-1. **Life before system.**
-2. **Understanding before advice.**
-3. **Relationship before method.**
-4. **Growth is not optimization.**
-5. **Every interpretation remains revisable.**
-6. **Human agency cannot be delegated away.**
-7. **Evidence, confidence, consent, and auditability are first-class concerns.**
+1.  **Life before system.**
+2.  **Understanding before advice.**
+3.  **Relationship before method.**
+4.  **Growth is not optimization.**
+5.  **Every interpretation remains revisable.**
+6.  **Human agency cannot be delegated away.**
+7.  **Evidence, confidence, consent, and auditability are first-class
+    concerns.**
 
 ## Contribution flow
 
-```text
+``` text
 Issue / Discussion
   ↓
 RFC
@@ -166,11 +204,12 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.5**
+Current repository foundation version: **1.0.0-alpha.6**
 
 ## License
 
 Documentation and standards are licensed under **CC BY 4.0**.  
-Software and executable examples are licensed under **Apache License 2.0**.
+Software and executable examples are licensed under **Apache License
+2.0**.
 
 See [`LICENSE.md`](LICENSE.md).

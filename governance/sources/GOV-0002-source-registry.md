@@ -1,64 +1,77 @@
 ---
+created: 2026-07-12
+depends_on:
+- ADR-0003
+- ADR-0004
 id: GOV-0002
-title: Source Registry
-status: Accepted
-version: 1.0.0-alpha.5
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Governance
-created: 2026-07-12
-updated: 2026-07-12
 related:
-  - GOV-0001
-  - GOV-0003
-  - ADR-0003
-  - ADR-0004
-  - PROJECT-MINGOS-0001
-  - GOV-0007
-  - GOV-0008
-  - GOV-0009
-depends_on:
-  - ADR-0003
-  - ADR-0004
+- GOV-0001
+- GOV-0003
+- ADR-0003
+- ADR-0004
+- PROJECT-MINGOS-0001
+- GOV-0007
+- GOV-0008
+- GOV-0009
+status: Accepted
+title: Source Registry
+updated: 2026-07-12
+version: 1.0.0-alpha.6
 ---
 
 # GOV-0002 — Source Registry
 
 ## 1. Purpose
 
-This registry records the known source classes from which Ming Foundation and MingOS knowledge may be derived. It prevents source confusion, accidental authority escalation, and loss of provenance across repositories, websites, conversation windows, codebases, and handoff packages.
+This registry records the known source classes from which Ming
+Foundation and MingOS knowledge may be derived. It prevents source
+confusion, accidental authority escalation, and loss of provenance
+across repositories, websites, conversation windows, codebases, and
+handoff packages.
 
 ## 2. Source status vocabulary
 
 - **Canonical:** current authoritative source for a defined scope.
-- **Official:** an approved public representation, which should derive from canonical records.
-- **Accepted:** reviewed and adopted, but not necessarily the sole source for every scope.
+- **Official:** an approved public representation, which should derive
+  from canonical records.
+- **Accepted:** reviewed and adopted, but not necessarily the sole
+  source for every scope.
 - **Draft:** under active development and not yet authoritative.
 - **Experimental:** retained to test a possible direction.
 - **Superseded:** replaced by a newer accepted source.
-- **Archived:** preserved for historical traceability and not used for current decisions.
-- **Unregistered:** known to exist but not yet reviewed or assigned authority.
+- **Archived:** preserved for historical traceability and not used for
+  current decisions.
+- **Unregistered:** known to exist but not yet reviewed or assigned
+  authority.
 
 ## 3. Registered sources
 
-| Source ID | Source | Role | Authority | Current state | Handling rule |
-|---|---|---|---|---|---|
-| SRC-0001 | `YuemingHub/Ming-Foundation` default branch | Public knowledge repository for formalized project outcomes | Canonical for published project knowledge and governance | Active | Accepted repository documents govern their stated scope |
-| SRC-0002 | `https://mingos.cn` | Official MingOS public website | Official public representation | Active | Public claims SHOULD be traceable to repository records |
-| SRC-0003 | Cross-window MingOS conversations | Exploration, synthesis, critique, and drafting | Non-canonical source | Active | Process through `GOV-0003` before repository adoption |
-| SRC-0004 | Codex, coding-agent, and developer conversations | Implementation analysis and delivery planning | Non-canonical source | Active | Preserve technical evidence; convert material decisions into ADR, RFC, standard, project, or implementation records |
-| SRC-0005 | `Ming-Foundation-Day1-v1.0` handoff package | Initial repository construction package | Superseded by imported repository state | Archived after import | Use Git history and current repository files, not the package, for current authority |
-| SRC-0006 | Day 2 and future structured handoff packages | Transfer artifacts prepared for repository application | Proposed until merged | Active | Package contents gain repository status only after merge |
-| SRC-0007 | Historical ZIP files and early architecture packs | Early exploration and delivery attempts | Non-canonical | Unregistered / Archived | Review before use; mark Superseded where appropriate |
-| SRC-0008 | Product and implementation repositories | Runtime evidence and implementation constraints | Scope-dependent | Unregistered until explicitly recorded | Do not infer repository names, ownership, or authority without registration |
-| SRC-0009 | Research papers, books, standards, and external evidence | Scientific, philosophical, legal, and technical input | Informative unless adopted | Ongoing | Record citations, limitations, date, and applicability; research does not automatically become a standard |
-| SRC-0010 | De-identified cases and field observations | Validation evidence for standards and products | Evidence, not automatic authority | Restricted | Must follow consent, privacy, de-identification, and access rules |
-| SRC-0011 | MingOS website implementation and deployment snapshot (`YuemingHub/Mingos-life`, production `mingos.cn`) | Website implementation and operational evidence | Scope-limited implementation evidence | Active, direct repository access not verified in Day 5 | Use for bounded audit; re-verify current repository and live pages before relying on freshness |
-| SRC-0012 | `CODE_WIKI.md` Family OS snapshot dated 2026-07-09 | Structured implementation inventory | Documentary implementation evidence | Active snapshot, not a direct current code audit | Preserve date and limitations; verify against current code and tests before conformance claims |
-| SRC-0013 | Structured MingOS architecture and deployment discussion record dated 2026-07-12 | Deployment, product, website, and implementation context | Non-canonical source evidence | Active | Extract governed findings; do not publish secrets, credentials, private operations, or raw personal data |
+| Source ID | Source                                                                                                   | Role                                                              | Authority                                                | Current state                                          | Handling rule                                                                                                       |
+|-----------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| SRC-0001  | `YuemingHub/Ming-Foundation` default branch                                                              | Public knowledge repository for formalized project outcomes       | Canonical for published project knowledge and governance | Active                                                 | Accepted repository documents govern their stated scope                                                             |
+| SRC-0002  | `https://mingos.cn`                                                                                      | Official MingOS public website                                    | Official public representation                           | Active                                                 | Public claims SHOULD be traceable to repository records                                                             |
+| SRC-0003  | Cross-window MingOS conversations                                                                        | Exploration, synthesis, critique, and drafting                    | Non-canonical source                                     | Active                                                 | Process through `GOV-0003` before repository adoption                                                               |
+| SRC-0004  | Codex, coding-agent, and developer conversations                                                         | Implementation analysis and delivery planning                     | Non-canonical source                                     | Active                                                 | Preserve technical evidence; convert material decisions into ADR, RFC, standard, project, or implementation records |
+| SRC-0005  | `Ming-Foundation-Day1-v1.0` handoff package                                                              | Initial repository construction package                           | Superseded by imported repository state                  | Archived after import                                  | Use Git history and current repository files, not the package, for current authority                                |
+| SRC-0006  | Day 2 and future structured handoff packages                                                             | Transfer artifacts prepared for repository application            | Proposed until merged                                    | Active                                                 | Package contents gain repository status only after merge                                                            |
+| SRC-0007  | Historical ZIP files and early architecture packs                                                        | Early exploration and delivery attempts                           | Non-canonical                                            | Unregistered / Archived                                | Review before use; mark Superseded where appropriate                                                                |
+| SRC-0008  | Product and implementation repositories                                                                  | Runtime evidence and implementation constraints                   | Scope-dependent                                          | Unregistered until explicitly recorded                 | Do not infer repository names, ownership, or authority without registration                                         |
+| SRC-0009  | Research papers, books, standards, and external evidence                                                 | Scientific, philosophical, legal, and technical input             | Informative unless adopted                               | Ongoing                                                | Record citations, limitations, date, and applicability; research does not automatically become a standard           |
+| SRC-0010  | De-identified cases and field observations                                                               | Validation evidence for standards and products                    | Evidence, not automatic authority                        | Restricted                                             | Must follow consent, privacy, de-identification, and access rules                                                   |
+| SRC-0011  | MingOS website implementation and deployment snapshot (`YuemingHub/Mingos-life`, production `mingos.cn`) | Website implementation and operational evidence                   | Scope-limited implementation evidence                    | Active, direct repository access not verified in Day 5 | Use for bounded audit; re-verify current repository and live pages before relying on freshness                      |
+| SRC-0012  | `CODE_WIKI.md` Family OS snapshot dated 2026-07-09                                                       | Structured implementation inventory                               | Documentary implementation evidence                      | Active snapshot, not a direct current code audit       | Preserve date and limitations; verify against current code and tests before conformance claims                      |
+| SRC-0013  | Structured MingOS architecture and deployment discussion record dated 2026-07-12                         | Deployment, product, website, and implementation context          | Non-canonical source evidence                            | Active                                                 | Extract governed findings; do not publish secrets, credentials, private operations, or raw personal data            |
+| SRC-0014  | Independent external Charter reviews                                                                     | Domain review, objections, and recommendations                    | Evidence, not automatic authority                        | Prepared, review not yet completed                     | Preserve conflict disclosures, conditions, dissent, and publication preference                                      |
+| SRC-0015  | Affected-person Charter review evidence                                                                  | Lived and affected experience                                     | Restricted evidence, not automatic authority             | Prepared, collection not yet completed                 | Store outside public repository under `GOV-0018`; publish only safe aggregate findings                              |
+| SRC-0016  | Day 7 direct website and implementation audit evidence                                                   | Current code, page, configuration, test, and operational evidence | Scope-limited direct evidence                            | Planned                                                | Record revision, environment, method, result, limitation, and restricted-data boundary                              |
 
 ## 4. Public repository inclusion rule
 
-Project-relevant outcomes SHOULD eventually be represented in the canonical repository, but the following MUST NOT be committed to the public repository unless an explicit, lawful, reviewed basis exists:
+Project-relevant outcomes SHOULD eventually be represented in the
+canonical repository, but the following MUST NOT be committed to the
+public repository unless an explicit, lawful, reviewed basis exists:
 
 - identifiable family or child information;
 - private counseling or consultation records;
@@ -68,7 +81,8 @@ Project-relevant outcomes SHOULD eventually be represented in the canonical repo
 - proprietary third-party material without permission;
 - content whose publication would create a foreseeable safety risk.
 
-The duty to account for discussion does not override privacy, consent, copyright, or safety.
+The duty to account for discussion does not override privacy, consent,
+copyright, or safety.
 
 ## 5. Registration requirements for new sources
 
@@ -86,29 +100,37 @@ A new material source SHOULD be added to this registry with:
 
 ## 6. Website synchronization
 
-`mingos.cn` is official but not an independent normative source. When the website and accepted repository records conflict:
+`mingos.cn` is official but not an independent normative source. When
+the website and accepted repository records conflict:
 
-1. identify whether the repository record is current;
-2. correct the website if it is stale or inaccurate;
-3. use an RFC or ADR if the website reveals a needed project-level change;
-4. do not silently modify repository doctrine merely to match published marketing copy.
+1.  identify whether the repository record is current;
+2.  correct the website if it is stale or inaccurate;
+3.  use an RFC or ADR if the website reveals a needed project-level
+    change;
+4.  do not silently modify repository doctrine merely to match published
+    marketing copy.
 
 ## 7. Historical import policy
 
-Historical discussion material should be imported by topic, not by chat chronology. Recommended import groups are:
+Historical discussion material should be imported by topic, not by chat
+chronology. Recommended import groups are:
 
-1. identity, mission, naming, and boundaries;
-2. Life Charter and MingOS Charter;
-3. life logic, theory, ontology, and terminology;
-4. MOSS and Kernel;
-5. Ming Family and real implementation evidence;
-6. memory, agents, SDK, cloud, and ecosystem proposals;
-7. website, white paper, and public communication.
+1.  identity, mission, naming, and boundaries;
+2.  Life Charter and MingOS Charter;
+3.  life logic, theory, ontology, and terminology;
+4.  MOSS and Kernel;
+5.  Ming Family and real implementation evidence;
+6.  memory, agents, SDK, cloud, and ecosystem proposals;
+7.  website, white paper, and public communication.
 
-Each import MUST preserve uncertainty and identify duplicates, conflicts, rejected directions, and unresolved questions.
-## 8. Validation source rule
+Each import MUST preserve uncertainty and identify duplicates,
+conflicts, rejected directions, and unresolved questions. \## 8.
+Validation source rule
 
-A deployment report, code wiki, screenshot, conversation, or agent statement may support an evidence record, but it MUST NOT be described as a direct current audit unless the reviewed artifact, revision, environment, and test result are independently available.
+A deployment report, code wiki, screenshot, conversation, or agent
+statement may support an evidence record, but it MUST NOT be described
+as a direct current audit unless the reviewed artifact, revision,
+environment, and test result are independently available.
 
 Day 5 therefore distinguishes:
 

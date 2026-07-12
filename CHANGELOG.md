@@ -2,7 +2,53 @@
 
 All notable repository-level changes are documented here.
 
-## [1.0.0-alpha.5] - 2026-07-12
+## \[1.0.0-alpha.6\] - 2026-07-12
+
+### Added
+
+- Day 6 remediation and external-review preparation record (`GOV-0014`).
+- Proposed subject, speaker, and contestability protocol (`RFC-0001`).
+- Proposed consent and data-rights lifecycle protocol (`RFC-0002`).
+- Proposed safety escalation, handoff, appeal, and incident protocol
+  (`RFC-0003`).
+- Proposed case and cross-family evidence-governance protocol
+  (`RFC-0004`).
+- Proposed public-claim, Charter-sync, and capability-status protocol
+  (`RFC-0005`).
+- Proposed Charter-violation reporting and remediation procedure
+  (`GOV-0015`).
+- External Charter review protocol (`GOV-0016`).
+- Affected-person Charter review instrument (`GOV-0017`).
+- Restricted validation-evidence handling protocol (`GOV-0018`).
+- Day 6 remediation traceability matrix (`GOV-0019`).
+- Reusable external-review, affected-person, and validation-finding
+  templates.
+- Accepted decision requiring minimum remediation contracts before
+  Charter acceptance (`ADR-0007`).
+- Registered external-review, affected-person, and future direct-audit
+  evidence sources.
+
+### Changed
+
+- Repository status advanced to Day 6 — Validation Remediation and
+  External Review Preparation.
+- `GOV-0001` related metadata was synchronized with Day 5 and Day 6
+  records.
+- `GOV-0006` now records Day 6 preparation without overstating
+  validation progress.
+- README and repository index now expose remediation protocols and
+  review instruments.
+
+### Status boundary
+
+- `MF-0004` remains Candidate.
+- `PROJECT-MINGOS-0002` remains Candidate.
+- RFC-0001 through RFC-0005 remain Proposed.
+- `GOV-0015` remains Proposed.
+- No implementation, external review, affected-person review, or legal
+  review is represented as complete.
+
+## \[1.0.0-alpha.5\] - 2026-07-12
 
 ### Added
 
@@ -14,14 +60,17 @@ All notable repository-level changes are documented here.
 - Charter counterexample and risk register (`GOV-0012`).
 - Day 5 Charter status recommendation (`GOV-0013`).
 - Accepted decision to retain both Charters at Candidate (`ADR-0006`).
-- Registered bounded website, Family OS, and structured deployment evidence sources.
+- Registered bounded website, Family OS, and structured deployment
+  evidence sources.
 
 ### Changed
 
-- Repository status advanced to Day 5 — Charter Validation Against Reality.
+- Repository status advanced to Day 5 — Charter Validation Against
+  Reality.
 - `GOV-0006` now records validation-stream progress.
 - README Charter section heading was corrected and expanded.
-- Current canonical state now prioritizes remediation and external review preparation.
+- Current canonical state now prioritizes remediation and external
+  review preparation.
 
 ### Decision
 
@@ -33,48 +82,63 @@ All notable repository-level changes are documented here.
 
 - No direct affected-person or child-rights review was completed.
 - No qualified legal review was completed.
-- Live website and current implementation repositories were not independently retrieved in the Day 5 review environment.
-- Documentary implementation evidence does not equal production conformance.
+- Live website and current implementation repositories were not
+  independently retrieved in the Day 5 review environment.
+- Documentary implementation evidence does not equal production
+  conformance.
 
-## [1.0.0-alpha.4] - 2026-07-12
+## \[1.0.0-alpha.4\] - 2026-07-12
 
 ### Added
 
-- Day 4 article-by-article Charter review and decision record (`GOV-0005`).
+- Day 4 article-by-article Charter review and decision record
+  (`GOV-0005`).
 - Charter Candidate validation plan (`GOV-0006`).
-- New Charter of Life article protecting a person from being fully represented by another person’s account (`C13`).
-- MingOS Charter commitment requiring violation response, remediation, and traceability (`MC14`).
+- New Charter of Life article protecting a person from being fully
+  represented by another person’s account (`C13`).
+- MingOS Charter commitment requiring violation response, remediation,
+  and traceability (`MC14`).
 
 ### Changed
 
 - `ADR-0005` moved from Proposed to Accepted.
-- `MF-0004` moved from Draft to Candidate after internal review and revision.
-- `PROJECT-MINGOS-0002` moved from Draft to Candidate after internal review and revision.
-- Agency, emergency safety, deletion, retention, third-party voice, conflict handling, commercial review, and enforcement language were strengthened.
+- `MF-0004` moved from Draft to Candidate after internal review and
+  revision.
+- `PROJECT-MINGOS-0002` moved from Draft to Candidate after internal
+  review and revision.
+- Agency, emergency safety, deletion, retention, third-party voice,
+  conflict handling, commercial review, and enforcement language were
+  strengthened.
 - `GOV-0004` was accepted as the historical Day 3 consolidation record.
-- Repository status advanced to Day 4 — Charter Review and Candidate Decision.
+- Repository status advanced to Day 4 — Charter Review and Candidate
+  Decision.
 
 ### Not completed
 
 - Neither Charter is Accepted or Stable.
-- External, affected-person, legal, privacy, safety, child-rights, and implementation validation remains required.
+- External, affected-person, legal, privacy, safety, child-rights, and
+  implementation validation remains required.
 - A complete MingOS Kernel conformance specification is not introduced.
 
-## [1.0.0-alpha.3] - 2026-07-12
+## \[1.0.0-alpha.3\] - 2026-07-12
 
 ### Added
 
 - Reviewable Draft of the Charter of Life (`MF-0004`).
 - Reviewable Draft of the MingOS Charter (`PROJECT-MINGOS-0002`).
-- Proposed decision separating the Charter of Life, MingOS Charter, and MingOS Kernel (`ADR-0005`).
+- Proposed decision separating the Charter of Life, MingOS Charter, and
+  MingOS Kernel (`ADR-0005`).
 - Day 3 Charter consolidation and source-handling record (`GOV-0004`).
 
 ### Changed
 
-- Repository status advanced from Day 2 to Day 3 — Charter Consolidation Draft.
-- Root README now distinguishes the universal ethical Charter, MingOS project commitments, and operational Kernel.
+- Repository status advanced from Day 2 to Day 3 — Charter Consolidation
+  Draft.
+- Root README now distinguishes the universal ethical Charter, MingOS
+  project commitments, and operational Kernel.
 - Repository index now records the Day 3 Draft and Proposed artifacts.
-- Current canonical state now identifies Charter review as the next gate.
+- Current canonical state now identifies Charter review as the next
+  gate.
 
 ### Not completed
 
@@ -82,24 +146,29 @@ All notable repository-level changes are documented here.
 - `ADR-0005` is not yet Accepted.
 - No complete MingOS Kernel specification is introduced by Day 3.
 
-## [1.0.0-alpha.2] - 2026-07-12
+## \[1.0.0-alpha.2\] - 2026-07-12
 
 ### Added
 
 - Current canonical state record (`GOV-0001`).
-- Source registry for repository, website, conversations, handoff packages, implementations, research, and cases (`GOV-0002`).
+- Source registry for repository, website, conversations, handoff
+  packages, implementations, research, and cases (`GOV-0002`).
 - Conversation-to-repository workflow (`GOV-0003`).
-- Accepted decision that `mingos.cn` is the official MingOS website (`ADR-0003`).
-- Accepted decision that `YuemingHub/Ming-Foundation` is the canonical public repository (`ADR-0004`).
+- Accepted decision that `mingos.cn` is the official MingOS website
+  (`ADR-0003`).
+- Accepted decision that `YuemingHub/Ming-Foundation` is the canonical
+  public repository (`ADR-0004`).
 - MingOS public surfaces and authority map (`PROJECT-MINGOS-0001`).
 
 ### Changed
 
 - Repository status advanced from Day 1 to Day 2.
-- Root README now distinguishes official website, canonical repository, discussion sources, and privacy boundaries.
-- Repository index now includes governance baseline and public-surface decisions.
+- Root README now distinguishes official website, canonical repository,
+  discussion sources, and privacy boundaries.
+- Repository index now includes governance baseline and public-surface
+  decisions.
 
-## [1.0.0-alpha.1] - 2026-07-12
+## \[1.0.0-alpha.1\] - 2026-07-12
 
 ### Added
 
