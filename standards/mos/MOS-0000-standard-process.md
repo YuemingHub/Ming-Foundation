@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.6
+version: 1.0.0-alpha.7
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -225,3 +225,32 @@ That state MUST NOT:
 When source revision materially expands normative clauses, a previously
 confirmed machine requirement index MUST be marked historical or pending
 re-baselining until it is re-derived from the current source.
+## 17. Requirement identity and re-baselining
+
+A current derived requirement baseline MUST:
+
+- identify the exact source version and blob;
+- enumerate every indexed normative obligation;
+- preserve stable IDs where obligation identity continues;
+- create new IDs for new obligations;
+- never reassign a legacy ID to unrelated meaning;
+- publish a legacy-to-current mapping;
+- preserve prior registries as archives;
+- maintain one-to-one requirement-to-test traceability;
+- distinguish test specification from test execution.
+
+A profile in `DesignedPendingReview` state MUST remain Proposed and MUST NOT
+close an ambiguity until the required review classes complete.
+
+## 18. Profile document namespace
+
+Governed residual and reference profile documents use the `PROF-*` ID
+namespace.
+
+A `PROF-*` document:
+
+- is a governed standards-layer document;
+- must carry ordinary metadata, status, version, owner, and dependency fields;
+- remains Proposed until reviewed through the applicable MOS process;
+- must not use machine-only ambiguity IDs as frontmatter document references;
+- may reference ambiguity IDs inside its governed body and machine registry.

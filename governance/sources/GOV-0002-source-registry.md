@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.12
+version: 1.0.0-alpha.13
 ---
 
 # GOV-0002 — Source Registry
@@ -199,3 +199,11 @@ canonical governance evidence.
 The 63-item requirement registry remains a historical derived baseline for
 earlier source and is explicitly pending re-baselining for RFC-0001 through
 RFC-0003 `0.2.0-draft.1`.
+
+## 16. Day 13 requirement and profile sources
+
+The current 115-requirement registry, 115-test specification registry,
+legacy archives, identity mapping, and four Proposed profiles are canonical
+repository records.
+
+They are not product implementation evidence or affected-person acceptance.

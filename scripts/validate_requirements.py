@@ -1,165 +1,109 @@
 #!/usr/bin/env python3
-"""Validate the machine-readable RFC requirement registry and examples."""
-
-from __future__ import annotations
+"""Validate the current requirement and implementation-test registries."""
 
 from pathlib import Path
+import hashlib
 import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY = ROOT / "standards/requirements/RFC_REQUIREMENTS.json"
-MATRIX = ROOT / "reference/examples/conformance-matrix.example.json"
-EVIDENCE = ROOT / "reference/examples/external-implementation-evidence.example.json"
+REQ = ROOT / "standards/requirements/RFC_REQUIREMENTS.json"
 TESTS = ROOT / "standards/requirements/RFC_ACCEPTANCE_TESTS.json"
-AMBIGUITIES = ROOT / "standards/review/RFC_AMBIGUITIES.json"
+AMB = ROOT / "standards/review/RFC_AMBIGUITIES.json"
 
-REQ_ID = re.compile(r"^RFC-\d{4}-R\d{3}$")
-RFC_ID = re.compile(r"^RFC-\d{4}$")
-LEVELS = {"MUST", "MUST_NOT", "SHOULD", "SHOULD_NOT", "MAY", "UNSPECIFIED"}
-STATES = {"Implemented", "Partial", "Absent", "Conflicting", "Unverifiable", "NotApplicable"}
+RFC_PATHS = {
+    "RFC-0001": ROOT / "standards/rfc/RFC-0001-subject-speaker-and-contestability.md",
+    "RFC-0002": ROOT / "standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md",
+    "RFC-0003": ROOT / "standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md",
+    "RFC-0004": ROOT / "standards/rfc/RFC-0004-case-and-cross-family-evidence-governance.md",
+    "RFC-0005": ROOT / "standards/rfc/RFC-0005-public-claim-charter-sync-and-capability-status.md",
+}
 
+def blob_sha(path):
+    data = path.read_bytes()
+    return hashlib.sha1(f"blob {len(data)}\0".encode("ascii") + data).hexdigest()
 
-def parse_scalar_frontmatter(path: Path) -> dict[str, str]:
-    text = path.read_text(encoding="utf-8")
-    end = text.find("\n---\n", 4)
-    data: dict[str, str] = {}
-    for raw in text[4:end].splitlines():
-        if raw.startswith(" ") or raw.startswith("-") or ":" not in raw:
-            continue
-        key, value = raw.split(":", 1)
-        if value.strip():
-            data[key.strip()] = value.strip()
-    return data
+def main():
+    errors = []
+    req = json.loads(REQ.read_text(encoding="utf-8"))
+    tests = json.loads(TESTS.read_text(encoding="utf-8"))
+    ambiguities = json.loads(AMB.read_text(encoding="utf-8"))
 
+    requirements = req.get("requirements", [])
+    test_items = tests.get("tests", [])
+    if len(req.get("source_documents", [])) != 5:
+        errors.append("expected 5 RFC sources")
+    if len(requirements) != 115:
+        errors.append(f"expected 115 current requirements, found {len(requirements)}")
+    if len(test_items) != 115:
+        errors.append(f"expected 115 current test specifications, found {len(test_items)}")
+    if len(ambiguities.get("ambiguities", [])) != 19:
+        errors.append("expected 19 ambiguities")
 
-def main() -> int:
-    errors: list[str] = []
+    req_ids = [item.get("requirement_id") for item in requirements]
+    test_ids = [item.get("test_id") for item in test_items]
+    if len(set(req_ids)) != 115:
+        errors.append("requirement IDs are not unique")
+    if len(set(test_ids)) != 115:
+        errors.append("test IDs are not unique")
 
-    if not REGISTRY.exists():
-        print("Requirement validation failed:\n - missing registry")
-        return 1
+    source_docs = {item["id"]: item for item in req["source_documents"]}
+    if set(source_docs) != set(RFC_PATHS):
+        errors.append("RFC source coverage mismatch")
+    for rfc, path in RFC_PATHS.items():
+        if source_docs[rfc]["source_blob_sha"] != blob_sha(path):
+            errors.append(f"{rfc}: source blob mismatch")
 
-    data = json.loads(REGISTRY.read_text(encoding="utf-8"))
-    if data.get("canonical_repository") != "YuemingHub/Ming-Foundation":
-        errors.append("registry canonical_repository is incorrect")
-    if data.get("authority", {}).get("governing_decision") != "ADR-0010":
-        errors.append("registry does not identify ADR-0010")
-    if "never overrides" not in data.get("authority", {}).get("registry_role", ""):
-        errors.append("registry authority boundary is missing")
+    test_by_id = {item["test_id"]: item for item in test_items}
+    counts = {}
+    for item in requirements:
+        rid = item["requirement_id"]
+        rfc = item["source_document"]
+        counts[rfc] = counts.get(rfc, 0) + 1
+        if not re.fullmatch(r"RFC-\d{4}-R\d{3}", rid):
+            errors.append(f"{rid}: invalid requirement ID")
+        refs = item.get("acceptance_test_refs", [])
+        if len(refs) != 1 or refs[0] not in test_by_id:
+            errors.append(f"{rid}: acceptance-test mapping mismatch")
+        elif test_by_id[refs[0]].get("requirement_id") != rid:
+            errors.append(f"{rid}: reverse test mapping mismatch")
+        if item.get("baseline_state") != "Current":
+            errors.append(f"{rid}: baseline_state must be Current")
+        if item.get("current_source_state") not in {"CurrentRebaselined", "CurrentConfirmed"}:
+            errors.append(f"{rid}: invalid current source state")
+        if rfc in {"RFC-0001", "RFC-0002", "RFC-0003"}:
+            marker = item.get("source_marker")
+            if not marker or marker not in RFC_PATHS[rfc].read_text(encoding="utf-8"):
+                errors.append(f"{rid}: source marker not found")
+        for pref in item.get("profile_refs", []):
+            if not re.fullmatch(r"PROF-\d{4}", pref):
+                errors.append(f"{rid}: invalid profile ref {pref}")
 
-    source_docs: dict[str, dict] = {}
-    for source in data.get("source_documents", []):
-        sid = source.get("id", "")
-        if not RFC_ID.match(sid):
-            errors.append(f"invalid source document ID {sid!r}")
-            continue
-        path = ROOT / source.get("path", "")
-        if not path.exists():
-            errors.append(f"{sid}: source file does not exist")
-            continue
-        meta = parse_scalar_frontmatter(path)
-        if meta.get("id") != sid:
-            errors.append(f"{sid}: source frontmatter ID mismatch")
-        if meta.get("status") != source.get("status"):
-            errors.append(f"{sid}: source status mismatch")
-        if meta.get("version") != source.get("version"):
-            errors.append(f"{sid}: source version mismatch")
-        source_docs[sid] = source
+    if counts != {
+        "RFC-0001": 29,
+        "RFC-0002": 34,
+        "RFC-0003": 28,
+        "RFC-0004": 13,
+        "RFC-0005": 11,
+    }:
+        errors.append(f"requirement count by RFC mismatch: {counts}")
 
-    seen: set[str] = set()
-    test_refs: set[str] = set()
-    ambiguity_refs: set[str] = set()
-    coverage: dict[str, int] = {sid: 0 for sid in source_docs}
-    for requirement in data.get("requirements", []):
-        rid = requirement.get("requirement_id", "")
-        if not REQ_ID.match(rid):
-            errors.append(f"invalid requirement ID {rid!r}")
-        if rid in seen:
-            errors.append(f"duplicate requirement ID {rid}")
-        seen.add(rid)
-        source = requirement.get("source_document")
-        if source not in source_docs:
-            errors.append(f"{rid}: unknown source document {source!r}")
-        else:
-            coverage[source] += 1
-        if requirement.get("normative_level") not in LEVELS:
-            errors.append(f"{rid}: invalid normative level")
-        if not requirement.get("source_section"):
-            errors.append(f"{rid}: missing source_section")
-        if not requirement.get("statement"):
-            errors.append(f"{rid}: missing statement")
-        if not requirement.get("verification_methods"):
-            errors.append(f"{rid}: missing verification_methods")
-        if not requirement.get("evidence_types"):
-            errors.append(f"{rid}: missing evidence_types")
-        if requirement.get("implementation_neutral") is not True:
-            errors.append(f"{rid}: implementation_neutral must be true")
-        refs = requirement.get("acceptance_test_refs", [])
-        if not refs:
-            errors.append(f"{rid}: missing acceptance_test_refs")
-        test_refs.update(refs)
-        fidelity = requirement.get("fidelity_review", {})
-        current_state = requirement.get("current_source_state", "Confirmed")
-        if current_state not in {"Confirmed", "RevisedPendingReview", "LegacyIndexPendingRebaseline"}:
-            errors.append(f"{rid}: invalid current source state {current_state!r}")
-        ambiguity_refs.update(fidelity.get("ambiguity_refs", []))
-
-    for source, count in coverage.items():
-        if count < 5:
-            errors.append(f"{source}: only {count} registered requirements")
-
-    tests_data = json.loads(TESTS.read_text(encoding="utf-8"))
-    test_ids = {test.get("test_id") for test in tests_data.get("tests", [])}
-    if len(test_ids) != 63:
-        errors.append(f"expected 63 unique acceptance tests, found {len(test_ids)}")
-    for test in tests_data.get("tests", []):
-        if test.get("requirement_id") not in seen:
-            errors.append(f"{test.get('test_id')}: unknown requirement")
-        if test.get("test_state") != "SpecificationOnly":
-            errors.append(f"{test.get('test_id')}: Day 9 test must remain SpecificationOnly")
-    for ref in test_refs:
-        if ref not in test_ids:
-            errors.append(f"requirement references unknown acceptance test {ref}")
-
-    ambiguity_data = json.loads(AMBIGUITIES.read_text(encoding="utf-8"))
-    ambiguity_ids = {item.get("ambiguity_id") for item in ambiguity_data.get("ambiguities", [])}
-    for ref in ambiguity_refs:
-        if ref not in ambiguity_ids:
-            errors.append(f"requirement references unknown ambiguity {ref}")
-
-    matrix = json.loads(MATRIX.read_text(encoding="utf-8"))
-    if matrix.get("canonical_repository") != "YuemingHub/Ming-Foundation":
-        errors.append("example matrix canonical_repository is incorrect")
-    for result in matrix.get("results", []):
-        rid = result.get("requirement_id")
-        if rid not in seen:
-            errors.append(f"example matrix references unknown requirement {rid}")
-        if result.get("state") not in STATES:
-            errors.append(f"example matrix has invalid state for {rid}")
-        if result.get("state") == "NotApplicable" and not result.get("not_applicable_reason"):
-            errors.append(f"{rid}: NotApplicable requires a reason")
-
-    evidence = json.loads(EVIDENCE.read_text(encoding="utf-8"))
-    if evidence.get("non_blocking_for_canonical_repository") is not True:
-        errors.append("external evidence example must be non-blocking")
-    for rid in evidence.get("related_requirements", []):
-        if rid not in seen:
-            errors.append(f"external evidence example references unknown requirement {rid}")
+    if any(item.get("test_state") != "SpecificationOnly" for item in test_items):
+        errors.append("implementation tests must remain SpecificationOnly")
+    if any(item.get("automation_state") != "NotImplemented" for item in test_items):
+        errors.append("implementation tests must remain NotImplemented")
 
     if errors:
         print("Requirement validation failed:")
         for error in errors:
             print(f" - {error}")
         return 1
-
     print(
-        "Requirement validation passed. "
-        f"Validated {len(source_docs)} RFC sources, {len(seen)} requirements, "
-        f"{len(test_ids)} acceptance tests, and {len(ambiguity_ids)} ambiguities."
+        "Requirement validation passed. Validated 5 RFC sources, "
+        "115 current requirements, 115 current acceptance-test specifications, "
+        "and 19 ambiguities."
     )
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

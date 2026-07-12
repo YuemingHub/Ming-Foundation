@@ -65,7 +65,7 @@ def main():
             errors.append(f"{item['source_document']}: review not complete")
         if item["promotion_recommendation"] != "RetainProposed":
             errors.append(f"{item['source_document']}: promotion mismatch")
-        if item["requirement_registry_state"] != "NeedsRebaselineForDraft0.2":
+        if item["requirement_registry_state"] != "RebaselinedForDraft0.2":
             errors.append(f"{item['source_document']}: requirement registry state mismatch")
         if len(item["dimensions"]) != 9:
             errors.append(f"{item['source_document']}: expected 9 dimensions")
@@ -117,18 +117,18 @@ def main():
             errors.append(f"{result['test_id']}: blob mismatch")
 
     requirements = load("standards/requirements/RFC_REQUIREMENTS.json")
-    if len(requirements["requirements"]) != 63:
-        errors.append("historical requirement count must remain 63")
-    if requirements["round2_review"]["current_complete_index_claimed"] is not False:
-        errors.append("current complete requirement index must not be claimed")
+    if len(requirements["requirements"]) != 115:
+        errors.append("current requirement count must be 115")
+    if requirements["round2_review"]["current_complete_index_claimed"] is not True:
+        errors.append("current complete requirement index must be claimed after rebaseline")
     for item in requirements["requirements"]:
         if item["source_document"] in RFC_PATHS:
-            if item.get("current_source_state") != "LegacyIndexPendingRebaseline":
-                errors.append(f"{item['requirement_id']}: must be pending rebaseline")
+            if item.get("current_source_state") != "CurrentRebaselined":
+                errors.append(f"{item['requirement_id']}: must be CurrentRebaselined")
 
     implementation_tests = load("standards/requirements/RFC_ACCEPTANCE_TESTS.json")
-    if len(implementation_tests["tests"]) != 63:
-        errors.append("implementation test count must remain 63")
+    if len(implementation_tests["tests"]) != 115:
+        errors.append("implementation test count must be 115")
     if implementation_tests["round2_review"]["implementation_tests_executed"] != 0:
         errors.append("implementation tests must remain unexecuted")
     if any(item["test_state"] != "SpecificationOnly" for item in implementation_tests["tests"]):
@@ -140,7 +140,7 @@ def main():
     revise_ids = {"REV-0003","REV-0006","REV-0007","REV-0011"}
     if any(statuses.get(rid) != "InternallyAcceptedPendingExternalReview" for rid in accepted_ids):
         errors.append("accepted revision statuses mismatch")
-    if any(statuses.get(rid) != "NeedsFurtherRevision" for rid in revise_ids):
+    if any(statuses.get(rid) not in {"NeedsFurtherRevision", "ProfileDesignedPendingReview"} for rid in revise_ids):
         errors.append("residual revision statuses mismatch")
 
     dissent = load("standards/review/RFC_DISSENT_REGISTER.json")
@@ -154,8 +154,17 @@ def main():
         errors.append("product tests must remain zero")
 
     residual = load("standards/review/RFC_R2_RESIDUAL_PLAN.json")
-    if len(residual["items"]) != 7 or any(item["status"] != "Planned" for item in residual["items"]):
-        errors.append("residual plan mismatch")
+    residual_states = {item["item_id"]: item["status"] for item in residual["items"]}
+    if len(residual_states) != 7:
+        errors.append("residual plan item count mismatch")
+    for iid in {"R2R-001", "R2R-002", "R2R-003", "R2R-004"}:
+        if residual_states.get(iid) not in {"Planned", "DesignedPendingReview"}:
+            errors.append(f"{iid}: invalid residual design state")
+    for iid in {"R2R-005", "R2R-006"}:
+        if residual_states.get(iid) not in {"Planned", "Complete"}:
+            errors.append(f"{iid}: invalid rebaseline state")
+    if residual_states.get("R2R-007") != "Planned":
+        errors.append("R2R-007 must remain Planned")
 
     if errors:
         print("Round 2 review validation failed:")
@@ -167,9 +176,9 @@ def main():
         "Round 2 review validation passed. "
         "Validated 3 RFC reviews, 27 dimension dispositions, "
         "12 ambiguity decisions (8 internally accepted, 4 needing revision), "
-        "12 passed repository source tests, 63 historical requirements pending rebaseline, "
-        "63 unexecuted implementation test specifications, 19 open ambiguities, "
-        "8 open dissent items, 7 planned residual items, and an empty implementation baseline."
+        "12 passed repository source tests, 115 current requirements, "
+        "115 unexecuted implementation test specifications, 19 open ambiguities, "
+        "8 open dissent items, 7 tracked residual items, and an empty implementation baseline."
     )
     return 0
 

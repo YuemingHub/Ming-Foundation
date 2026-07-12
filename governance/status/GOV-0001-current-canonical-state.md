@@ -93,10 +93,21 @@ related:
 - GOV-0055
 - ADR-0015
 - REF-0006
+- GOV-0056
+- GOV-0057
+- GOV-0058
+- GOV-0059
+- GOV-0060
+- ADR-0016
+- REF-0007
+- PROF-0001
+- PROF-0002
+- PROF-0003
+- PROF-0004
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.12
+version: 1.0.0-alpha.13
 ---
 
 # GOV-0001 — Current Canonical State
@@ -120,8 +131,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 12 — Internal Architecture Review Round 2 for RFC-0001 Through RFC-0003
-- **Current repository version:** `1.0.0-alpha.12`
+- **Current repository stage:** Foundation 1.0 / Day 13 — Requirement Re-baseline and Residual Profile Design
+- **Current repository version:** `1.0.0-alpha.13`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -293,15 +304,15 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 12, the next canonical work is Requirement Re-baseline and Residual Profile Design:
+After Day 13, the next canonical work is Profile Review and Affected-Person Review Preparation:
 
 1. run `python scripts/validate_all.py`;
-2. re-derive normative requirements from RFC-0001 through RFC-0003 `0.2.0-draft.1`;
-3. publish a legacy-to-current requirement mapping;
-4. revise implementation acceptance specifications against the new baseline;
-5. design participation, representative-authority, retention, and service-availability profiles;
-6. execute affected-person and domain review instruments;
-7. preserve all open ambiguities and dissent until their required review gates complete;
-8. keep RFC-0001 through RFC-0005 at Proposed;
-9. keep product implementation conformance separately scoped and empty;
+2. execute internal review of PROF-0001 through PROF-0004;
+3. prepare child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments;
+4. test whether profile levels, evidence classes, review intervals, service classes, and freshness intervals are comprehensible and proportionate;
+5. revise profile drafts without closing linked ambiguities prematurely;
+6. preserve the 115-requirement current baseline and 63-ID legacy mapping;
+7. keep implementation acceptance tests unexecuted until a target is explicitly selected;
+8. keep RFC-0001 through RFC-0005 and PROF-0001 through PROF-0004 at Proposed;
+9. keep both Charters at Candidate;
 10. do not enter another repository without explicit user instruction.

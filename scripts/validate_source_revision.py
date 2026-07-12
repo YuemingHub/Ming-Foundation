@@ -91,7 +91,7 @@ def main() -> int:
     plan = load("standards/review/RFC_REVISION_PLAN.json")
     statuses = {item["revision_id"]: item["status"] for item in plan["items"]}
     for number in range(1, 13):
-        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision"}:
+        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision", "ProfileDesignedPendingReview"}:
             errors.append(f"REV-{number:04d}: invalid reviewed revision status")
     for number in range(13, 20):
         if statuses.get(f"REV-{number:04d}") != "Planned":
@@ -117,19 +117,19 @@ def main() -> int:
             errors.append(f"{rfc_id}: requirement source version mismatch")
         if sources[rfc_id]["source_blob_sha"] != blob_sha(RFC_PATHS[rfc_id]):
             errors.append(f"{rfc_id}: source blob SHA mismatch")
-    if len(requirements["requirements"]) != 63:
-        errors.append("requirement count must remain 63")
+    if len(requirements["requirements"]) != 115:
+        errors.append("current requirement count must be 115")
     for item in requirements["requirements"]:
         if item["source_document"] in {"RFC-0001", "RFC-0002", "RFC-0003"}:
-            if item.get("current_source_state") not in {"RevisedPendingReview", "LegacyIndexPendingRebaseline"}:
+            if item.get("current_source_state") not in {"RevisedPendingReview", "LegacyIndexPendingRebaseline", "CurrentRebaselined"}:
                 errors.append(f"{item['requirement_id']}: current source state mismatch")
 
     tests = load("standards/requirements/RFC_ACCEPTANCE_TESTS.json")
-    if len(tests["tests"]) != 63:
-        errors.append("acceptance test count must remain 63")
+    if len(tests["tests"]) != 115:
+        errors.append("current acceptance test count must be 115")
     for test in tests["tests"]:
         if test["source_document"] in {"RFC-0001", "RFC-0002", "RFC-0003"}:
-            if test.get("revision_state") != "UpdatedPendingExecution":
+            if test.get("revision_state") not in {"UpdatedPendingExecution", "RebaselinedCurrent"}:
                 errors.append(f"{test['test_id']}: revision state mismatch")
             if test.get("test_state") != "SpecificationOnly":
                 errors.append(f"{test['test_id']}: test must remain SpecificationOnly")
@@ -162,9 +162,9 @@ def main() -> int:
 
     print(
         "Source-revision validation passed. "
-        "Validated 3 revised RFC drafts, 12 implemented-pending-review items, "
+        "Validated 3 revised RFC drafts, 12 reviewed R1 items, "
         "4 partially implemented cross-RFC items, 7 planned R2 items, "
-        "19 open ambiguities, 63 requirements, 63 unexecuted test specifications, "
+        "19 open ambiguities, 115 requirements, 115 unexecuted test specifications, "
         "8 open dissent items, and an empty implementation baseline."
     )
     return 0

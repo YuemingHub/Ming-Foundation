@@ -110,7 +110,11 @@
           "evidence_types",
           "acceptance_test_refs",
           "fidelity_review",
-          "internal_review_ref"
+          "internal_review_ref",
+          "source_marker",
+          "baseline_state",
+          "legacy_requirement_refs",
+          "profile_refs"
         ],
         "properties": {
           "requirement_id": {
@@ -238,6 +242,28 @@
           "round2_review_ref": {
             "type": "string",
             "pattern": "^IRR2-RFC-[0-9]{4}-[0-9]{8}$"
+          },
+          "source_marker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "baseline_state": {
+            "enum": [
+              "Current",
+              "ArchivedLegacy"
+            ]
+          },
+          "legacy_requirement_refs": {
+            "type": "array",
+            "items": {
+              "pattern": "^RFC-[0-9]{4}-R[0-9]{3}$"
+            }
+          },
+          "profile_refs": {
+            "type": "array",
+            "items": {
+              "pattern": "^PROF-[0-9]{4}$"
+            }
           }
         },
         "additionalProperties": false
@@ -253,6 +279,9 @@
       "type": "object"
     },
     "round2_review": {
+      "type": "object"
+    },
+    "baseline": {
       "type": "object"
     }
   },

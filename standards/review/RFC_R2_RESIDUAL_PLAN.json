@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-RFC-R2-RESIDUAL-PLAN-0001",
   "title": "Round 2 Residual Revision and Review Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
-  "registry_version": "1.0.0-alpha.12",
+  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+  "registry_version": "1.0.0-alpha.13",
   "governing_record": "GOV-0055",
   "summary": {
     "items": 7,
-    "p0": 6,
-    "p1": 1,
-    "complete": 0
+    "complete": 2,
+    "designed_pending_review": 4,
+    "planned": 1
   },
   "items": [
     {
@@ -25,7 +25,11 @@
       ],
       "priority": "P0",
       "work": "Define reference age, capacity, jurisdiction, safety, conflict, service, notice, and independent-review profiles without treating age as sole authority.",
-      "status": "Planned"
+      "status": "DesignedPendingReview",
+      "implementation_refs": [
+        "PROF-0001",
+        "GOV-0058"
+      ]
     },
     {
       "item_id": "R2R-002",
@@ -40,7 +44,11 @@
       ],
       "priority": "P0",
       "work": "Define representative types, proportionate evidence, verification strength by impact, expiry, conflict handling, and subject participation.",
-      "status": "Planned"
+      "status": "DesignedPendingReview",
+      "implementation_refs": [
+        "PROF-0002",
+        "GOV-0058"
+      ]
     },
     {
       "item_id": "R2R-003",
@@ -53,7 +61,11 @@
       ],
       "priority": "P0",
       "work": "Create non-universal reference duration profiles, backup-deletion completion evidence, exception review deadlines, and jurisdiction qualification.",
-      "status": "Planned"
+      "status": "DesignedPendingReview",
+      "implementation_refs": [
+        "PROF-0003",
+        "GOV-0058"
+      ]
     },
     {
       "item_id": "R2R-004",
@@ -66,7 +78,11 @@
       ],
       "priority": "P0",
       "work": "Define evidence requirements for response targets, staffing, availability, resource verification, expiry, independent checks, and stale-resource behavior.",
-      "status": "Planned"
+      "status": "DesignedPendingReview",
+      "implementation_refs": [
+        "PROF-0004",
+        "GOV-0058"
+      ]
     },
     {
       "item_id": "R2R-005",
@@ -79,7 +95,14 @@
       "ambiguity_refs": [],
       "priority": "P0",
       "work": "Re-derive normative requirements from 0.2.0-draft.1, preserve legacy requirement IDs through a mapping table, and stop presenting the 63-item historical index as complete for the revised drafts.",
-      "status": "Planned"
+      "status": "Complete",
+      "implementation_refs": [
+        "GOV-0056",
+        "GOV-0057",
+        "GOV-0059",
+        "standards/requirements/RFC_REQUIREMENTS.json",
+        "standards/requirements/RFC_ACCEPTANCE_TESTS.json"
+      ]
     },
     {
       "item_id": "R2R-006",
@@ -92,7 +115,14 @@
       "ambiguity_refs": [],
       "priority": "P1",
       "work": "Update implementation-level acceptance specifications after requirement re-baselining while keeping source tests separate from product conformance tests.",
-      "status": "Planned"
+      "status": "Complete",
+      "implementation_refs": [
+        "GOV-0056",
+        "GOV-0057",
+        "GOV-0059",
+        "standards/requirements/RFC_REQUIREMENTS.json",
+        "standards/requirements/RFC_ACCEPTANCE_TESTS.json"
+      ]
     },
     {
       "item_id": "R2R-007",
@@ -120,5 +150,6 @@
       "work": "Prepare and execute child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments before ambiguity closure or Candidate consideration.",
       "status": "Planned"
     }
-  ]
+  ],
+  "day13_record": "GOV-0058"
 }

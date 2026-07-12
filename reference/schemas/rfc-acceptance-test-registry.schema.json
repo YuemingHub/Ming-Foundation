@@ -47,7 +47,12 @@
           "procedure",
           "expected_result",
           "required_evidence",
-          "result_states"
+          "result_states",
+          "source_marker",
+          "baseline_state",
+          "profile_refs",
+          "revision_state",
+          "source_alignment_state"
         ],
         "properties": {
           "test_id": {
@@ -112,10 +117,46 @@
             "items": {
               "type": "string"
             }
+          },
+          "source_marker": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "baseline_state": {
+            "enum": [
+              "Current",
+              "ArchivedLegacy"
+            ]
+          },
+          "profile_refs": {
+            "type": "array",
+            "items": {
+              "pattern": "^PROF-[0-9]{4}$"
+            }
+          },
+          "revision_state": {
+            "enum": [
+              "UpdatedPendingExecution",
+              "RebaselinedCurrent"
+            ]
+          },
+          "source_alignment_state": {
+            "enum": [
+              "PendingRequirementRebaseline",
+              "CurrentRebaselined"
+            ]
           }
         },
         "additionalProperties": true
       }
+    },
+    "baseline": {
+      "type": "object"
+    },
+    "round2_review": {
+      "type": "object"
     }
   },
   "additionalProperties": true

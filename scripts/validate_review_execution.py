@@ -35,7 +35,7 @@ def main():
     d=load("standards/review/RFC_DISSENT_REGISTER.json")["items"]; dids={x["dissent_id"] for x in d}
     if len(dids)!=8 or any(x["status"]!="Open" for x in d) or not dis.issubset(dids):e.append("dissent")
     q=load("standards/requirements/RFC_REQUIREMENTS.json")["requirements"]
-    if len(q)!=63 or any(not x.get("internal_review_ref") for x in q):e.append("requirements")
+    if len(q)!=115 or any(not x.get("internal_review_ref") for x in q):e.append("requirements")
     b=load("standards/conformance/FOUNDATION_CONFORMANCE_BASELINE.json")
     if b["results"]!=[] or b["internal_review_execution"]["results_populated"] is not False:e.append("baseline")
     paths=[

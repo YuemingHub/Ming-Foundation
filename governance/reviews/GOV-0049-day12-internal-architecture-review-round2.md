@@ -2,7 +2,7 @@
 id: GOV-0049
 title: Day 12 Internal Architecture Review Round 2
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-12
@@ -94,3 +94,9 @@ Round 2 does not complete:
 - execute affected-person and domain review;
 - preserve all dissent;
 - proceed to RFC-0004 and RFC-0005 R2 only after the residual plan is recorded.
+## Day 13 relation
+
+The requirement and implementation-test indexes have now been re-baselined.
+
+The four residual profile questions have Proposed designs but remain pending
+review.

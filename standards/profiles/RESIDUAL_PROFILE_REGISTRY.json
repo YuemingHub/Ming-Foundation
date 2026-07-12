@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RESIDUAL-PROFILES-0001",
+  "title": "Day 13 Residual Profile Registry",
+  "status": "Accepted registry of Proposed profiles",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+  "registry_version": "1.0.0-alpha.13",
+  "governing_record": "GOV-0058",
+  "summary": {
+    "profiles": 4,
+    "proposed": 4,
+    "reviewed": 0,
+    "accepted": 0,
+    "ambiguities_addressed": 4,
+    "ambiguities_closed": 0
+  },
+  "profiles": [
+    {
+      "id": "PROF-0001",
+      "title": "Participation and Representative Decision Profile",
+      "path": "standards/profiles/PROF-0001-participation-and-representative-decision-profile.md",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "ambiguity_refs": [
+        "AMB-0003"
+      ],
+      "requirement_refs": [
+        "RFC-0001-R005",
+        "RFC-0001-R006",
+        "RFC-0001-R016",
+        "RFC-0001-R017",
+        "RFC-0001-R018",
+        "RFC-0001-R019"
+      ],
+      "residual_item_refs": [
+        "R2R-001"
+      ]
+    },
+    {
+      "id": "PROF-0002",
+      "title": "Representative Authority Evidence Profile",
+      "path": "standards/profiles/PROF-0002-representative-authority-evidence-profile.md",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "ambiguity_refs": [
+        "AMB-0003",
+        "AMB-0006"
+      ],
+      "requirement_refs": [
+        "RFC-0001-R005",
+        "RFC-0001-R006",
+        "RFC-0001-R018",
+        "RFC-0002-R010",
+        "RFC-0002-R011",
+        "RFC-0002-R012"
+      ],
+      "residual_item_refs": [
+        "R2R-002"
+      ]
+    },
+    {
+      "id": "PROF-0003",
+      "title": "Retention and Backup Completion Profile",
+      "path": "standards/profiles/PROF-0003-retention-and-backup-completion-profile.md",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "ambiguity_refs": [
+        "AMB-0007"
+      ],
+      "requirement_refs": [
+        "RFC-0002-R016",
+        "RFC-0002-R017",
+        "RFC-0002-R018",
+        "RFC-0002-R019",
+        "RFC-0002-R020",
+        "RFC-0002-R030"
+      ],
+      "residual_item_refs": [
+        "R2R-003"
+      ]
+    },
+    {
+      "id": "PROF-0004",
+      "title": "Service Response and Resource Freshness Profile",
+      "path": "standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "ambiguity_refs": [
+        "AMB-0011"
+      ],
+      "requirement_refs": [
+        "RFC-0003-R007",
+        "RFC-0003-R008",
+        "RFC-0003-R009",
+        "RFC-0003-R010",
+        "RFC-0003-R023",
+        "RFC-0003-R024"
+      ],
+      "residual_item_refs": [
+        "R2R-004"
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.12
+version: 1.0.0-alpha.13
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -279,3 +279,11 @@ No Charter validation stream is completed by source revision alone.
 
 Round 2 improves standards assurance but does not complete affected-person,
 legal, external, implementation, or Charter validation streams.
+
+## 16. Day 13 infrastructure boundary
+
+Requirement re-baselining and profile design improve future Charter
+validation.
+
+They do not complete affected-person, external, legal, implementation, or
+Charter validation streams.

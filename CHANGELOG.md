@@ -2,6 +2,37 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.13] - 2026-07-12
+
+### Added
+
+- Current 115-requirement baseline and 115 implementation acceptance-test specifications.
+- Archived Day 12 63-requirement and 63-test registries.
+- Complete legacy-to-current requirement identity map.
+- Four Proposed residual profiles: participation, representative authority,
+  retention and backup completion, and service response and resource freshness.
+- Day 13 governance records, schemas, and re-baseline validator.
+
+### Re-baseline result
+
+- RFC-0001: 29 requirements.
+- RFC-0002: 34 requirements.
+- RFC-0003: 28 requirements.
+- RFC-0004: 13 requirements.
+- RFC-0005: 11 requirements.
+- Total current requirements: 115.
+- Legacy IDs preserved: 63.
+- New IDs: 52.
+- Retired or unmapped legacy IDs: 0.
+
+### Residual plan result
+
+- R2R-005 and R2R-006 are Complete.
+- R2R-001 through R2R-004 are DesignedPendingReview.
+- R2R-007 remains Planned.
+- PROF-0001 through PROF-0004 remain Proposed.
+- All 19 ambiguities and all 8 dissent items remain Open.
+- No implementation test was executed and the conformance baseline remains empty.
 ## [1.0.0-alpha.12] - 2026-07-12
 
 ### Added

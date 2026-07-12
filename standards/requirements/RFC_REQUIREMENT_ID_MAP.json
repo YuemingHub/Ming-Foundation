@@ -1,0 +1,912 @@
+{
+  "schema_version": "1.0",
+  "mapping_id": "MING-RFC-REQUIREMENT-ID-MAP-0001",
+  "title": "Legacy Day 12 to Current Day 13 Requirement Identity Map",
+  "status": "Accepted infrastructure mapping",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+  "registry_version": "1.0.0-alpha.13",
+  "governing_record": "GOV-0057",
+  "summary": {
+    "legacy_requirements": 63,
+    "current_requirements": 115,
+    "retained_ids": 63,
+    "new_ids": 52,
+    "retired_ids": 0,
+    "unmapped_legacy_ids": 0
+  },
+  "legacy_mappings": [
+    {
+      "legacy_requirement_id": "RFC-0001-R001",
+      "current_requirement_ids": [
+        "RFC-0001-R001"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Every material assertion distinguishes subject, speaker, knowledge object type, supporting evidence, confirmation or contestation state, purpose, and permitted period of use.",
+      "current_statement": "An assertion is classified as material when any persistence, sharing, decision, identity, downstream-use, or difficult-reversal criterion applies.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R002",
+      "current_requirement_ids": [
+        "RFC-0001-R002"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Implementations represent the minimum knowledge-status vocabulary defined by RFC-0001.",
+      "current_statement": "Uncertain materiality defaults to material until a role-appropriate review records a narrower classification.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R003",
+      "current_requirement_ids": [
+        "RFC-0001-R003"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Stored knowledge-status distinctions remain inspectable even when the user interface uses simpler labels.",
+      "current_statement": "A use is classified as high impact when it can cause irreversible, punitive, rights-restricting, sensitive-disclosure, institutional, or durable-profile consequences.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R004",
+      "current_requirement_ids": [
+        "RFC-0001-R004"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A high-impact contested assertion should not drive irreversible or punitive action while review is pending, except under a narrowly documented safety duty.",
+      "current_statement": "Every high-impact classification records responsible actor, basis, affected people, consequence, duration, review point, and appeal or correction route.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R005",
+      "current_requirement_ids": [
+        "RFC-0001-R005"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Parent-authored data must not be labeled as the child's confirmed profile.",
+      "current_statement": "Representative authority records type, subject, evidence, allowed and prohibited actions, validity, conflicts, notice, and independent-review route.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R006",
+      "current_requirement_ids": [
+        "RFC-0001-R006"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A model inference must not be hidden or represented as fact.",
+      "current_statement": "Age alone does not establish complete representative authority.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R007",
+      "current_requirement_ids": [
+        "RFC-0001-R007"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A disputed label must not be retained without its disputed state being visible.",
+      "current_statement": "A governed disclosure basis records purpose, authority, minimum necessity, recipient, duration, onward-use limits, notice or delay reason, constraints, reviewer, and appeal.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R008",
+      "current_requirement_ids": [
+        "RFC-0001-R008"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A temporary crisis state must not become a permanent identity.",
+      "current_statement": "Every material assertion distinguishes subject, speaker, knowledge-object type, evidence, uncertainty, confirmation or contestation, purpose, impact, visibility, active period, and dependent records.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R009",
+      "current_requirement_ids": [
+        "RFC-0001-R009"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Original source and revision history must not be removed from a material assertion.",
+      "current_statement": "A third-party statement, professional hypothesis, or model inference does not silently become a subject-confirmed fact.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R010",
+      "current_requirement_ids": [
+        "RFC-0001-R010"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Contestability must not be denied solely because the speaker is a professional.",
+      "current_statement": "A subject record contains identity, type, age or capacity band where relevant, relationship, participation state, visibility policy, representative references, jurisdiction profile, and review date.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R011",
+      "current_requirement_ids": [
+        "RFC-0001-R011"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Refusal to agree must not be treated as evidence that an assertion is correct.",
+      "current_statement": "A speaker record contains identity, type, role, relationship, authority scope, conflict status, and source time.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R012",
+      "current_requirement_ids": [
+        "RFC-0001-R012"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "One family member's private statement must not be exposed to another without a governed basis.",
+      "current_statement": "An assertion record contains source, status, content, evidence, confidence, uncertainty, materiality, impact, validity, purpose, visibility, contestation, dependencies, lineage, and supersession fields.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0001-R013",
+      "current_requirement_ids": [
+        "RFC-0001-R013"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A person reviewing an interpretation should be able to inspect source, speaker, AI involvement, evidence, confidence, active period, dispute state, correction route, and dependent decisions.",
+      "current_statement": "A contestation record contains requester authority, requested action, reason, constraints, conflict check, reviewer, decision, dependent-record actions, appeal, and resolution time.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R001",
+      "current_requirement_ids": [
+        "RFC-0002-R001"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Every material collection or use has a traceable basis containing subject, operator, purpose, data scope, access scope, processing or use, retention rule, review point, objection route, and applicable exception basis.",
+      "current_statement": "Every implementation declares a jurisdiction profile covering locations, asserted bases, age and representative rules, rights, retention, safeguarding duties, conflicts, owner, and review date.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R002",
+      "current_requirement_ids": [
+        "RFC-0002-R002"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Mandatory or emergency processing must not be misrepresented as freely given consent.",
+      "current_statement": "Absent, expired, or uncertain jurisdiction qualification does not support a universal lawfulness claim.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R003",
+      "current_requirement_ids": [
+        "RFC-0002-R003"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Rights-request support should include access, source explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, review of automated or high-impact interpretation, and appeal.",
+      "current_statement": "Every material collection or use has a traceable basis covering subject, operator, purpose, category, jurisdiction, data, access, use, retention, review, rights, authority, and exceptions.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R004",
+      "current_requirement_ids": [
+        "RFC-0002-R004"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Every retention rule states purpose, retained data, storage location, access, review point, deletion or archival trigger, backup handling, and restricted exceptions.",
+      "current_statement": "Future improvement, unknown future value, or mere data existence is not a sufficient purpose.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R005",
+      "current_requirement_ids": [
+        "RFC-0002-R005"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A retention exception is specific, minimally scoped, access-restricted, time- or review-bounded, explained where safe and lawful, and appealable or independently reviewable where appropriate.",
+      "current_statement": "Implementations distinguish optional permission, requested service, safety, mandatory, security, approved research or evaluation, and unknown or disputed basis categories.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R006",
+      "current_requirement_ids": [
+        "RFC-0002-R006"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "All MingOS channels should resolve to a governed identity, permission, memory, and audit layer.",
+      "current_statement": "A jurisdiction profile states whether and how each technical category maps to a lawful or professional basis.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R007",
+      "current_requirement_ids": [
+        "RFC-0002-R007"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A channel-specific local record must not become an untraceable shadow profile.",
+      "current_statement": "Mandatory, emergency, safety, or institutional processing is not represented as freely given consent.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R008",
+      "current_requirement_ids": [
+        "RFC-0002-R008"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "General early-access or contact forms should minimize fields, state purpose and retention, identify recipients and request routes, prohibit sensitive case submission without governed intake, avoid pre-checked optional permissions, and separate distinct purposes.",
+      "current_statement": "A purpose definition contains identity, description, affected people, data, operations, recipients, basis categories, jurisdiction, retention, risk, owner, and status.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R009",
+      "current_requirement_ids": [
+        "RFC-0002-R009"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Sensitive child cases must not be collected through a general marketing field without a governed basis.",
+      "current_statement": "A permission or processing-basis record contains person or representative, authority, purpose, category, jurisdiction, scope, version, time, review, withdrawal, constraints, exceptions, notice, and conflict status.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R010",
+      "current_requirement_ids": [
+        "RFC-0002-R010"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Private case data must not be reused for model training merely because it exists.",
+      "current_statement": "Representative authority records identity, subject, type, evidence, allowed and prohibited actions, conflicts, validity, notice, and independent review.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R011",
+      "current_requirement_ids": [
+        "RFC-0002-R011"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Data must not be scattered so broadly that correction or deletion becomes impossible.",
+      "current_statement": "Age or family role alone does not create unlimited representative authority.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R012",
+      "current_requirement_ids": [
+        "RFC-0002-R012"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Data must not be retained indefinitely for unspecified improvement.",
+      "current_statement": "Conflict, disputed authority, or high-impact rights requests route to a conflict-free reviewer.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R013",
+      "current_requirement_ids": [
+        "RFC-0002-R013"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A retention exception must not be hidden inside general terms.",
+      "current_statement": "A data asset inventory contains subjects, source, category, sensitivity, locations, purposes, roles, retention, deletion dependencies, backup, derivation, export, and audit references.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R014",
+      "current_requirement_ids": [
+        "RFC-0002-R014"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "An emergency or mandatory process must not be described as voluntary consent.",
+      "current_statement": "Rights-request support includes access, explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, high-impact review, and appeal.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R015",
+      "current_requirement_ids": [
+        "RFC-0002-R015"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Staff must not receive access broader than their current purpose requires.",
+      "current_statement": "A rights-request record contains requester, represented subject, authority evidence, conflict check, scope, verification, owner, status, located data, derived and backup locations, exceptions, decision, evidence, independent review, and appeal.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0002-R016",
+      "current_requirement_ids": [
+        "RFC-0002-R016"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Visible deletion must not leave active copies silently retained elsewhere.",
+      "current_statement": "Every asset maps to a named retention profile.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R001",
+      "current_requirement_ids": [
+        "RFC-0003-R001"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Every high-impact safety action has a named responsible role, recorded basis, bounded action, handoff state, and review path.",
+      "current_statement": "A safety action is classified as high impact when it can restrict rights, disclose sensitive information, involve external authority, create durable risk labels, change service, or be difficult to reverse.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R002",
+      "current_requirement_ids": [
+        "RFC-0003-R002"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "AI must not become the final unaccountable actor in safety triage or action.",
+      "current_statement": "Every high-impact safety action records actual authority, evidence, uncertainty, severity, bounded action, proportionality, handoff or availability, review, and correction or appeal.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R003",
+      "current_requirement_ids": [
+        "RFC-0003-R003"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "The selected safety response should be the least intrusive action that reasonably addresses the identified risk.",
+      "current_statement": "A queue, model, mailbox, or unnamed team is not treated as a named responsible role.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R004",
+      "current_requirement_ids": [
+        "RFC-0003-R004"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "MingOS must not claim to provide emergency response, diagnosis, legal advice, child-protection authority, or guaranteed human response unless actually staffed and governed.",
+      "current_statement": "P0 classification means credible imminent or unfolding severe harm where delay may materially increase danger.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R005",
+      "current_requirement_ids": [
+        "RFC-0003-R005"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Public and in-product messaging states the system role, AI or human status, response limits, route to local qualified support, and availability limits.",
+      "current_statement": "P1 classification means credible serious risk requiring prompt accountable review without current evidence establishing immediate P0.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R006",
+      "current_requirement_ids": [
+        "RFC-0003-R006"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Non-immediate safety classifications should be contestable.",
+      "current_statement": "A safety classification records recency, report source, plan or means where relevant, protective factors, uncertainty, classifier, and next review.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R007",
+      "current_requirement_ids": [
+        "RFC-0003-R007"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "Safety review preserves original evidence, model and policy version, responsible reviewer, classification changes, false-positive or false-negative outcomes, and affected downstream records.",
+      "current_statement": "Each service model defines response targets and escalation ownership without creating a universal emergency-response promise.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R008",
+      "current_requirement_ids": [
+        "RFC-0003-R008"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "A disputed safety label must not become a permanent identity marker.",
+      "current_statement": "Every implementation publishes and records one current service profile: active handoff, bounded review, no handoff, or unverified.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R009",
+      "current_requirement_ids": [
+        "RFC-0003-R009"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "MingOS must not automatically side with an operator who may be causing harm.",
+      "current_statement": "A service profile records responsible role, hours, response target, locations, languages, unavailable services, failed-handoff action, verification, expiry, and owner.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0003-R010",
+      "current_requirement_ids": [
+        "RFC-0003-R010"
+      ],
+      "mapping_type": "RetainedAndRefined",
+      "legacy_statement": "The pathway should support independent review, minimum disclosure, child or third-party protection, conflict handling, and documentation of access restrictions.",
+      "current_statement": "A no-handoff or unverified service does not mark handoff complete or imply active human monitoring.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R001",
+      "current_requirement_ids": [
+        "RFC-0004-R001"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Case and cross-family evidence remains purpose-limited, access-restricted, provenance-preserving, and resistant to re-identification.",
+      "current_statement": "Case and cross-family evidence remains purpose-limited, access-restricted, provenance-preserving, and resistant to re-identification.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R002",
+      "current_requirement_ids": [
+        "RFC-0004-R002"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Public repository records should contain method, limitations, aggregate findings, objections, and decisions.",
+      "current_statement": "Public repository records should contain method, limitations, aggregate findings, objections, and decisions.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R003",
+      "current_requirement_ids": [
+        "RFC-0004-R003"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Public records must not contain raw identifiable family or child material.",
+      "current_statement": "Public records must not contain raw identifiable family or child material.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R004",
+      "current_requirement_ids": [
+        "RFC-0004-R004"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Cross-family analysis states purpose, minimizes fields, documents inclusion and exclusion, preserves uncertainty and counterexamples, avoids ranking, restricts raw-case browsing, receives privacy and bias review, and expires or revalidates derived rules.",
+      "current_statement": "Cross-family analysis states purpose, minimizes fields, documents inclusion and exclusion, preserves uncertainty and counterexamples, avoids ranking, restricts raw-case browsing, receives privacy and bias review, and expires or revalidates derived rules.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R005",
+      "current_requirement_ids": [
+        "RFC-0004-R005"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "External model providers must not receive case data merely because the application uses their API.",
+      "current_statement": "External model providers must not receive case data merely because the application uses their API.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R006",
+      "current_requirement_ids": [
+        "RFC-0004-R006"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Raw family cases must not be committed to the public repository.",
+      "current_statement": "Raw family cases must not be committed to the public repository.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R007",
+      "current_requirement_ids": [
+        "RFC-0004-R007"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Recognizable combinations must not be published as anonymous cases.",
+      "current_statement": "Recognizable combinations must not be published as anonymous cases.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R008",
+      "current_requirement_ids": [
+        "RFC-0004-R008"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Consultation data must not be reused for marketing.",
+      "current_statement": "Consultation data must not be reused for marketing.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R009",
+      "current_requirement_ids": [
+        "RFC-0004-R009"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Cross-family analysis must not create family scores or rankings.",
+      "current_statement": "Cross-family analysis must not create family scores or rankings.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R010",
+      "current_requirement_ids": [
+        "RFC-0004-R010"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Rare cases must not be used as model examples without separate review.",
+      "current_statement": "Rare cases must not be used as model examples without separate review.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R011",
+      "current_requirement_ids": [
+        "RFC-0004-R011"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Analysts must not access full cases when aggregates suffice.",
+      "current_statement": "Analysts must not access full cases when aggregates suffice.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R012",
+      "current_requirement_ids": [
+        "RFC-0004-R012"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Generated summaries must not be treated as de-identified by default.",
+      "current_statement": "Generated summaries must not be treated as de-identified by default.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0004-R013",
+      "current_requirement_ids": [
+        "RFC-0004-R013"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Data must not be preserved indefinitely because future research may be useful.",
+      "current_statement": "Data must not be preserved indefinitely because future research may be useful.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R001",
+      "current_requirement_ids": [
+        "RFC-0005-R001"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Every material public claim is traceable to a repository source, evidence source, or explicit capability-status label.",
+      "current_statement": "Every material public claim is traceable to a repository source, evidence source, or explicit capability-status label.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R002",
+      "current_requirement_ids": [
+        "RFC-0005-R002"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Official public surfaces should use the defined capability-status vocabulary.",
+      "current_statement": "Official public surfaces should use the defined capability-status vocabulary.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R003",
+      "current_requirement_ids": [
+        "RFC-0005-R003"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Vision must not be worded as a delivered capability.",
+      "current_statement": "Vision must not be worded as a delivered capability.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R004",
+      "current_requirement_ids": [
+        "RFC-0005-R004"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "A public Charter summary states that it is a summary, identifies the governing document, status, version, synchronization date, change history, and discrepancy-report route.",
+      "current_statement": "A public Charter summary states that it is a summary, identifies the governing document, status, version, synchronization date, change history, and discrepancy-report route.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R005",
+      "current_requirement_ids": [
+        "RFC-0005-R005"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "The website must not silently rewrite Candidate or Accepted commitments for marketing.",
+      "current_statement": "The website must not silently rewrite Candidate or Accepted commitments for marketing.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R006",
+      "current_requirement_ids": [
+        "RFC-0005-R006"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Material architecture, Charter, product, and governance pages should display source ID, version or commit, status, review date, capability status where relevant, owner, and correction route.",
+      "current_statement": "Material architecture, Charter, product, and governance pages should display source ID, version or commit, status, review date, capability status where relevant, owner, and correction route.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R007",
+      "current_requirement_ids": [
+        "RFC-0005-R007"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "A material claim record should preserve exact wording, audience, supporting source, limitations, reviewer, publication date, and expiry or re-review date.",
+      "current_statement": "A material claim record should preserve exact wording, audience, supporting source, limitations, reviewer, publication date, and expiry or re-review date.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R008",
+      "current_requirement_ids": [
+        "RFC-0005-R008"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Public forms state purpose, required and optional fields, recipient, retention, request route, human or automated follow-up, prohibited sensitive content, and relevant privacy notice.",
+      "current_statement": "Public forms state purpose, required and optional fields, recipient, retention, request route, human or automated follow-up, prohibited sensitive content, and relevant privacy notice.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R009",
+      "current_requirement_ids": [
+        "RFC-0005-R009"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "A general early-access form should not solicit identifiable child, crisis, medical, or consultation details.",
+      "current_statement": "A general early-access form should not solicit identifiable child, crisis, medical, or consultation details.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R010",
+      "current_requirement_ids": [
+        "RFC-0005-R010"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "Official surfaces make visible AI involvement, fallibility, human-review status, available professional role, unavailable emergency or clinical services, and response-availability limits.",
+      "current_statement": "Official surfaces make visible AI involvement, fallibility, human-review status, available professional role, unavailable emergency or clinical services, and response-availability limits.",
+      "retired": false
+    },
+    {
+      "legacy_requirement_id": "RFC-0005-R011",
+      "current_requirement_ids": [
+        "RFC-0005-R011"
+      ],
+      "mapping_type": "Unchanged",
+      "legacy_statement": "A future implementation should provide repository-to-site synchronization, a normative-page manifest, status/version checks, stale-content release controls, discrepancy reporting, and release notes.",
+      "current_statement": "A future implementation should provide repository-to-site synchronization, a normative-page manifest, status/version checks, stale-content release controls, discrepancy reporting, and release notes.",
+      "retired": false
+    }
+  ],
+  "new_requirements": [
+    {
+      "current_requirement_id": "RFC-0001-R014",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R015",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R016",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R017",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R018",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R019",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R020",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R021",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R022",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R023",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R024",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R025",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R026",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R027",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R028",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0001-R029",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R017",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R018",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R019",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R020",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R021",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R022",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R023",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R024",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R025",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R026",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R027",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R028",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R029",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R030",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R031",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R032",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R033",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0002-R034",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R011",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R012",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R013",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R014",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R015",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R016",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R017",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R018",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R019",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R020",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R021",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R022",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R023",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R024",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R025",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R026",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R027",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    },
+    {
+      "current_requirement_id": "RFC-0003-R028",
+      "legacy_requirement_refs": [],
+      "reason": "Normative obligation introduced or made explicit in RFC-0001 through RFC-0003 0.2.0-draft.1."
+    }
+  ]
+}

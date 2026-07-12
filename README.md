@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 12 — Internal Architecture Review Round 2 for RFC-0001 Through RFC-0003**. Day 12 completes Internal Architecture Review Round 2 for RFC-0001 through RFC-0003, accepts eight ambiguity answers internally, sends four to residual revision, executes twelve repository source tests, and marks the historical 63-item requirement index for re-baselining.
+This repository is at **Foundation 1.0 / Day 13 — Requirement Re-baseline and Residual Profile Design**. Day 13 establishes a current 115-requirement and 115-test specification baseline, preserves and maps all 63 legacy IDs, and designs four Proposed residual profiles for participation, representative authority, retention, and service availability.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -106,8 +106,19 @@ Charter governance and validation:
 - [`governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md`](governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md)
 - [`governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md`](governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md)
 - [`reference/REF-0006-round2-review-and-rebaseline-guide.md`](reference/REF-0006-round2-review-and-rebaseline-guide.md)
+- [`governance/validation/GOV-0056-day13-current-requirement-rebaseline.md`](governance/validation/GOV-0056-day13-current-requirement-rebaseline.md)
+- [`governance/validation/GOV-0057-legacy-to-current-requirement-mapping.md`](governance/validation/GOV-0057-legacy-to-current-requirement-mapping.md)
+- [`governance/remediation/GOV-0058-residual-profile-design-record.md`](governance/remediation/GOV-0058-residual-profile-design-record.md)
+- [`governance/validation/GOV-0059-rebaseline-and-profile-validation-record.md`](governance/validation/GOV-0059-rebaseline-and-profile-validation-record.md)
+- [`governance/reviews/GOV-0060-day13-status-recommendation.md`](governance/reviews/GOV-0060-day13-status-recommendation.md)
+- [`governance/decisions/ADR-0016-adopt-current-requirement-baseline-and-proposed-profiles.md`](governance/decisions/ADR-0016-adopt-current-requirement-baseline-and-proposed-profiles.md)
+- [`reference/REF-0007-requirement-identity-and-profile-guide.md`](reference/REF-0007-requirement-identity-and-profile-guide.md)
+- [`standards/profiles/PROF-0001-participation-and-representative-decision-profile.md`](standards/profiles/PROF-0001-participation-and-representative-decision-profile.md)
+- [`standards/profiles/PROF-0002-representative-authority-evidence-profile.md`](standards/profiles/PROF-0002-representative-authority-evidence-profile.md)
+- [`standards/profiles/PROF-0003-retention-and-backup-completion-profile.md`](standards/profiles/PROF-0003-retention-and-backup-completion-profile.md)
+- [`standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md`](standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Round 2 is complete internally, but affected-person, legal, external, and implementation review remain incomplete; the 63-item historical requirement index is pending re-baselining.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. The current requirement baseline is complete as derived infrastructure, but profile, affected-person, legal, external, and implementation review remain incomplete.
 
 ## Mission
 
@@ -243,7 +254,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.12**
+Current repository foundation version: **1.0.0-alpha.13**
 
 ## License
 

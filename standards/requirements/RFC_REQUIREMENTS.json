@@ -1,17 +1,26 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "2.0",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
-  "title": "Ming Foundation RFC Requirement Registry",
+  "title": "Ming Foundation Current RFC Requirement Registry",
   "status": "Accepted infrastructure index",
   "authority": {
     "normative_source": "The RFC Markdown documents in YuemingHub/Ming-Foundation",
-    "registry_role": "Derived machine-readable index; never overrides source text",
-    "governing_decision": "ADR-0010"
+    "registry_role": "Current derived machine-readable index; never overrides source text",
+    "governing_decision": "ADR-0016"
   },
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.12",
+  "registry_version": "1.0.0-alpha.13",
+  "baseline": {
+    "state": "CurrentCompleteDerivedIndex",
+    "record": "GOV-0056",
+    "legacy_archive": "standards/requirements/archive/RFC_REQUIREMENTS_DAY12_LEGACY.json",
+    "legacy_mapping": "standards/requirements/RFC_REQUIREMENT_ID_MAP.json",
+    "current_complete_index_claimed": true,
+    "current_requirement_count": 115,
+    "legacy_requirement_count": 63
+  },
   "source_documents": [
     {
       "id": "RFC-0001",
@@ -20,9 +29,10 @@
       "version": "0.2.0-draft.1",
       "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "Round2ReviewedWithResiduals",
+      "review_state": "Round2ReviewedAndRebaselined",
       "source_revision_record": "GOV-0045",
-      "fidelity_state": "NeedsRebaselineForDraft0.2"
+      "fidelity_state": "RebaselinedForDraft0.2",
+      "requirement_baseline_record": "GOV-0056"
     },
     {
       "id": "RFC-0002",
@@ -31,9 +41,10 @@
       "version": "0.2.0-draft.1",
       "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "Round2ReviewedWithResiduals",
+      "review_state": "Round2ReviewedAndRebaselined",
       "source_revision_record": "GOV-0046",
-      "fidelity_state": "NeedsRebaselineForDraft0.2"
+      "fidelity_state": "RebaselinedForDraft0.2",
+      "requirement_baseline_record": "GOV-0056"
     },
     {
       "id": "RFC-0003",
@@ -42,9 +53,10 @@
       "version": "0.2.0-draft.1",
       "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "Round2ReviewedWithResiduals",
+      "review_state": "Round2ReviewedAndRebaselined",
       "source_revision_record": "GOV-0047",
-      "fidelity_state": "NeedsRebaselineForDraft0.2"
+      "fidelity_state": "RebaselinedForDraft0.2",
+      "requirement_baseline_record": "GOV-0056"
     },
     {
       "id": "RFC-0004",
@@ -53,7 +65,8 @@
       "version": "0.1.0",
       "source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "RequirementIndexReviewed"
+      "review_state": "RequirementIndexReviewed",
+      "fidelity_state": "ConfirmedFor0.1"
     },
     {
       "id": "RFC-0005",
@@ -62,1431 +75,3665 @@
       "version": "0.1.0",
       "source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "RequirementIndexReviewed"
+      "review_state": "RequirementIndexReviewed",
+      "fidelity_state": "ConfirmedFor0.1"
     }
   ],
   "requirements": [
     {
       "requirement_id": "RFC-0001-R001",
       "source_document": "RFC-0001",
-      "source_section": "2. Core rule",
+      "source_section": "2.1 Material assertion",
+      "source_marker": "An assertion MUST be treated as material when at least one of these applies:",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Every material assertion distinguishes subject, speaker, knowledge object type, supporting evidence, confirmation or contestation state, purpose, and permitted period of use.",
+      "statement": "An assertion is classified as material when any persistence, sharing, decision, identity, downstream-use, or difficult-reversal criterion applies.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "schema_review",
-        "record_trace"
+        "classification_test",
+        "policy_review"
       ],
       "evidence_types": [
-        "data_schema",
-        "sample_record",
+        "classification_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT001"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0001"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R001"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R002",
       "source_document": "RFC-0001",
-      "source_section": "4. Knowledge-status vocabulary",
+      "source_section": "2.1 Material assertion",
+      "source_marker": "When materiality is uncertain, the assertion MUST be treated as material",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Implementations represent the minimum knowledge-status vocabulary defined by RFC-0001.",
+      "statement": "Uncertain materiality defaults to material until a role-appropriate review records a narrower classification.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "schema_review",
-        "enumeration_test"
+        "boundary_test",
+        "record_trace"
       ],
       "evidence_types": [
-        "data_schema",
+        "review_record",
         "test_result"
-      ],
-      "criteria": [
-        "direct self-report",
-        "third-party report",
-        "observed event",
-        "imported record",
-        "model inference",
-        "professional hypothesis",
-        "pattern candidate",
-        "confirmed fact within a stated scope",
-        "disputed",
-        "superseded",
-        "unknown",
-        "decision",
-        "action"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT002"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0001"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R002"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R003",
       "source_document": "RFC-0001",
-      "source_section": "4. Knowledge-status vocabulary",
+      "source_section": "2.2 High-impact use",
+      "source_marker": "A use is high impact when it can:",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Stored knowledge-status distinctions remain inspectable even when the user interface uses simpler labels.",
+      "statement": "A use is classified as high impact when it can cause irreversible, punitive, rights-restricting, sensitive-disclosure, institutional, or durable-profile consequences.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "ui_review",
-        "record_trace"
+        "classification_test",
+        "scenario_review"
       ],
       "evidence_types": [
-        "ui_capture",
-        "sample_record",
+        "classification_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT003"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0002"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R003"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R004",
       "source_document": "RFC-0001",
-      "source_section": "6. Contestability workflow",
+      "source_section": "2.2 High-impact use",
+      "source_marker": "A high-impact classification MUST record the responsible actor",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD_NOT",
-      "statement": "A high-impact contested assertion should not drive irreversible or punitive action while review is pending, except under a narrowly documented safety duty.",
+      "normative_level": "MUST",
+      "statement": "Every high-impact classification records responsible actor, basis, affected people, consequence, duration, review point, and appeal or correction route.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "scenario_test",
-        "decision_trace"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "test_result",
-        "decision_record",
-        "safety_exception_record"
+        "data_schema",
+        "sample_record"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT004"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0002"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R004"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R005",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "2.3 Representative",
+      "source_marker": "Representative authority MUST record:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Parent-authored data must not be labeled as the child's confirmed profile.",
+      "normative_level": "MUST",
+      "statement": "Representative authority records type, subject, evidence, allowed and prohibited actions, validity, conflicts, notice, and independent-review route.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
         "schema_review",
-        "ui_review"
+        "record_trace"
       ],
       "evidence_types": [
-        "data_schema",
-        "ui_capture",
+        "authority_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT005"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R005"
+      ],
+      "profile_refs": [
+        "PROF-0001",
+        "PROF-0002"
+      ]
     },
     {
       "requirement_id": "RFC-0001-R006",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "2.3 Representative",
+      "source_marker": "Age alone MUST NOT establish complete representative authority.",
       "kind": "explicit_normative",
       "normative_level": "MUST_NOT",
-      "statement": "A model inference must not be hidden or represented as fact.",
+      "statement": "Age alone does not establish complete representative authority.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "record_trace",
-        "ui_review"
+        "negative_test",
+        "policy_review"
       ],
       "evidence_types": [
-        "sample_record",
-        "ui_capture",
+        "decision_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT006"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R006"
+      ],
+      "profile_refs": [
+        "PROF-0001",
+        "PROF-0002"
+      ]
     },
     {
       "requirement_id": "RFC-0001-R007",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "2.4 Governed disclosure basis",
+      "source_marker": "A governed disclosure basis MUST state:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "A disputed label must not be retained without its disputed state being visible.",
+      "normative_level": "MUST",
+      "statement": "A governed disclosure basis records purpose, authority, minimum necessity, recipient, duration, onward-use limits, notice or delay reason, constraints, reviewer, and appeal.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "record_trace",
-        "ui_review"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "sample_record",
-        "ui_capture"
+        "disclosure_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT007"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0004"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R007"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R008",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "3. Core rule",
+      "source_marker": "Every material assertion MUST distinguish:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "A temporary crisis state must not become a permanent identity.",
+      "normative_level": "MUST",
+      "statement": "Every material assertion distinguishes subject, speaker, knowledge-object type, evidence, uncertainty, confirmation or contestation, purpose, impact, visibility, active period, and dependent records.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "retention_review",
-        "scenario_test"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
         "data_schema",
-        "test_result",
-        "revision_history"
+        "sample_record"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT008"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R008"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R009",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "3. Core rule",
+      "source_marker": "No third-party statement, professional hypothesis, or model inference may",
       "kind": "explicit_normative",
       "normative_level": "MUST_NOT",
-      "statement": "Original source and revision history must not be removed from a material assertion.",
+      "statement": "A third-party statement, professional hypothesis, or model inference does not silently become a subject-confirmed fact.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "record_trace",
-        "migration_test"
+        "negative_test",
+        "transition_audit"
       ],
       "evidence_types": [
-        "sample_record",
-        "revision_history",
+        "audit_log",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT009"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R009"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R010",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "4.1 Subject",
+      "source_marker": "### 4.1 Subject",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Contestability must not be denied solely because the speaker is a professional.",
+      "normative_level": "MUST",
+      "statement": "A subject record contains identity, type, age or capacity band where relevant, relationship, participation state, visibility policy, representative references, jurisdiction profile, and review date.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test"
+        "schema_review"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "appeal_record"
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT010"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0003"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R010"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R011",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "4.2 Speaker",
+      "source_marker": "### 4.2 Speaker",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Refusal to agree must not be treated as evidence that an assertion is correct.",
+      "normative_level": "MUST",
+      "statement": "A speaker record contains identity, type, role, relationship, authority scope, conflict status, and source time.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "scenario_test",
-        "decision_trace"
+        "schema_review"
       ],
       "evidence_types": [
-        "test_result",
-        "decision_record"
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT011"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R011"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R012",
       "source_document": "RFC-0001",
-      "source_section": "7. Prohibited behavior",
+      "source_section": "4.3 Assertion",
+      "source_marker": "### 4.3 Assertion",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "One family member's private statement must not be exposed to another without a governed basis.",
+      "normative_level": "MUST",
+      "statement": "An assertion record contains source, status, content, evidence, confidence, uncertainty, materiality, impact, validity, purpose, visibility, contestation, dependencies, lineage, and supersession fields.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "access_control_review",
-        "scenario_test"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "access_policy",
-        "test_result",
-        "audit_log"
+        "data_schema",
+        "sample_record"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT012"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0004"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R012"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0001-R013",
       "source_document": "RFC-0001",
-      "source_section": "8. User experience requirements",
+      "source_section": "4.4 Contestation",
+      "source_marker": "### 4.4 Contestation",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "A person reviewing an interpretation should be able to inspect source, speaker, AI involvement, evidence, confidence, active period, dispute state, correction route, and dependent decisions.",
+      "normative_level": "MUST",
+      "statement": "A contestation record contains requester authority, requested action, reason, constraints, conflict check, reviewer, decision, dependent-record actions, appeal, and resolution time.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "ui_review",
-        "user_task_test"
+        "schema_review",
+        "workflow_test"
       ],
       "evidence_types": [
-        "ui_capture",
-        "test_result",
-        "affected_person_review"
+        "data_schema",
+        "workflow_log"
       ],
       "acceptance_test_refs": [
         "RFC-0001-AT013"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0001-R013"
+      ],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R014",
+      "source_document": "RFC-0001",
+      "source_section": "5. Knowledge-status vocabulary",
+      "source_marker": "Implementations MUST represent at least:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Implementations represent the complete minimum knowledge-status vocabulary defined by RFC-0001.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "enumeration_test",
+        "schema_review"
+      ],
+      "evidence_types": [
+        "enum_schema",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT014"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R015",
+      "source_document": "RFC-0001",
+      "source_section": "5. Knowledge-status vocabulary",
+      "source_marker": "the stored distinction,",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Simplified user-interface labels preserve inspectable stored source, confidence, dispute, and revision distinctions.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "ui_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "ui_capture",
+        "sample_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT015"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R016",
+      "source_document": "RFC-0001",
+      "source_section": "6. Participation and representative authority",
+      "source_marker": "Participation MUST be determined through an age-, capacity-, context-,",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Participation is determined through an age-, capacity-, context-, safety-, impact-, and jurisdiction-aware profile.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "profile_review",
+        "decision_test"
+      ],
+      "evidence_types": [
+        "profile_config",
+        "decision_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT016"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0003"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0001-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0001"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0001-R017",
+      "source_document": "RFC-0001",
+      "source_section": "6. Participation and representative authority",
+      "source_marker": "The implementation MUST NOT infer a state solely from age.",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "Participation state is not inferred solely from age.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "policy_review"
+      ],
+      "evidence_types": [
+        "decision_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT017"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0001"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0001-R018",
+      "source_document": "RFC-0001",
+      "source_section": "6. Participation and representative authority",
+      "source_marker": "use MUST pause for independent or conflict-free review",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A representative conflict pauses high-impact use for independent or conflict-free review unless a documented immediate safety duty requires temporary action.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "conflict_scenario_test",
+        "workflow_review"
+      ],
+      "evidence_types": [
+        "review_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT018"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0003"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0001",
+        "PROF-0002"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0001-R019",
+      "source_document": "RFC-0001",
+      "source_section": "6. Participation and representative authority",
+      "source_marker": "A temporary participation restriction MUST record actor, basis, scope,",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A temporary participation restriction records actor, basis, scope, duration, minimum disclosure, review date, and appeal or later-notice route.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "restriction_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT019"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0001"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0001-R020",
+      "source_document": "RFC-0001",
+      "source_section": "7. Contestability workflow",
+      "source_marker": "A high-impact contested assertion SHOULD NOT drive an irreversible,",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD_NOT",
+      "statement": "A high-impact contested assertion should not drive irreversible, punitive, rights-restricting, or identity-shaping action while review is pending.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "workflow_test",
+        "negative_test"
+      ],
+      "evidence_types": [
+        "decision_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT020"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R021",
+      "source_document": "RFC-0001",
+      "source_section": "7. Contestability workflow",
+      "source_marker": "An exception requires an immediate safety or legal duty and MUST record:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A safety or legal exception to the contestability pause records actor, evidence, urgency, scope, alternatives, safeguards, deadline, later notice, and appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "exception_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "exception_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT021"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R022",
+      "source_document": "RFC-0001",
+      "source_section": "8. Intra-family and third-party disclosure",
+      "source_marker": "One family member's private statement MUST NOT be exposed to another without",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "A family member's private statement is not exposed to another person without a governed disclosure basis.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "access_review"
+      ],
+      "evidence_types": [
+        "access_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT022"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0004"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R023",
+      "source_document": "RFC-0001",
+      "source_section": "8. Intra-family and third-party disclosure",
+      "source_marker": "Disclosure MUST be minimum necessary",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Disclosure is minimum necessary and excludes unrelated, unnecessarily verbatim, protected-source, disputed-as-fact, and expired information.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "data_minimization_test",
+        "content_review"
+      ],
+      "evidence_types": [
+        "disclosure_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT023"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0004"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R024",
+      "source_document": "RFC-0001",
+      "source_section": "8. Intra-family and third-party disclosure",
+      "source_marker": "When notice is delayed for safety, the delay MUST be specific",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Delayed notice for safety is specific, review-bounded, and independently reviewable.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "exception_review",
+        "expiry_test"
+      ],
+      "evidence_types": [
+        "notice_delay_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT024"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R025",
+      "source_document": "RFC-0001",
+      "source_section": "9. Migration, correction propagation, and lineage",
+      "source_marker": "Imported or legacy assertions MUST retain:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Imported or legacy assertions retain original source, status, visibility or basis where known, transformation history, migration actor, uncertainty, and dependencies.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "migration_test",
+        "lineage_review"
+      ],
+      "evidence_types": [
+        "migration_log",
+        "sample_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT025"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R026",
+      "source_document": "RFC-0001",
+      "source_section": "9. Migration, correction propagation, and lineage",
+      "source_marker": "A correction or supersession MUST propagate",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Correction or supersession propagates to active dependent decisions, profiles, summaries, and retrieval indexes while preserving audit evidence.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "propagation_test",
+        "audit_review"
+      ],
+      "evidence_types": [
+        "change_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT026"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R027",
+      "source_document": "RFC-0001",
+      "source_section": "9. Migration, correction propagation, and lineage",
+      "source_marker": "Where safe rollback is not possible, the limitation and remediation plan",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "When safe rollback is impossible, the limitation and remediation plan are recorded.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "failure_path_test",
+        "record_review"
+      ],
+      "evidence_types": [
+        "remediation_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT027"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R028",
+      "source_document": "RFC-0001",
+      "source_section": "10. Prohibited behavior",
+      "source_marker": "An implementation MUST NOT:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "The implementation performs any prohibited identity, inference, dispute, source-removal, contestability, disclosure, authority, or expired-use behavior listed in RFC-0001.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test_suite",
+        "policy_review"
+      ],
+      "evidence_types": [
+        "test_result",
+        "policy_config"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT028"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0001-R029",
+      "source_document": "RFC-0001",
+      "source_section": "11. User experience requirements",
+      "source_marker": "A person reviewing an interpretation SHOULD be able to see:",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "A person reviewing an interpretation can inspect source, speaker, AI involvement, evidence, uncertainty, status, impact, active period, disputes, authority basis, correction route, and dependencies.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "ui_review",
+        "usability_test"
+      ],
+      "evidence_types": [
+        "ui_capture",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0001-AT029"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0001-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0001-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R001",
       "source_document": "RFC-0002",
-      "source_section": "2. Core rule",
+      "source_section": "2. Jurisdiction and basis boundary",
+      "source_marker": "Every implementation MUST declare a jurisdiction profile that identifies:",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Every material collection or use has a traceable basis containing subject, operator, purpose, data scope, access scope, processing or use, retention rule, review point, objection route, and applicable exception basis.",
+      "statement": "Every implementation declares a jurisdiction profile covering locations, asserted bases, age and representative rules, rights, retention, safeguarding duties, conflicts, owner, and review date.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "registry_review",
-        "record_trace"
+        "profile_review",
+        "schema_review"
       ],
       "evidence_types": [
-        "purpose_registry",
-        "permission_record",
-        "sample_record"
+        "jurisdiction_profile",
+        "review_record"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT001"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R001"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R002",
       "source_document": "RFC-0002",
-      "source_section": "3.2 Permission or processing basis",
+      "source_section": "2. Jurisdiction and basis boundary",
+      "source_marker": "implementation MUST NOT claim that processing is lawful merely because it",
       "kind": "explicit_normative",
       "normative_level": "MUST_NOT",
-      "statement": "Mandatory or emergency processing must not be misrepresented as freely given consent.",
+      "statement": "Absent, expired, or uncertain jurisdiction qualification does not support a universal lawfulness claim.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "notice_review",
-        "scenario_test"
+        "negative_claim_test",
+        "policy_review"
       ],
       "evidence_types": [
-        "notice",
-        "permission_record",
+        "claim_capture",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT002"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R002"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R003",
       "source_document": "RFC-0002",
-      "source_section": "3.4 Rights request",
+      "source_section": "3. Core rule",
+      "source_marker": "Every material collection or use MUST have a traceable basis containing:",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "Rights-request support should include access, source explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, review of automated or high-impact interpretation, and appeal.",
+      "normative_level": "MUST",
+      "statement": "Every material collection or use has a traceable basis covering subject, operator, purpose, category, jurisdiction, data, access, use, retention, review, rights, authority, and exceptions.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "api_review",
-        "ui_review"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "route_inventory",
-        "ui_capture",
+        "basis_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT003"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0006"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R003"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R004",
       "source_document": "RFC-0002",
-      "source_section": "5. Retention and deletion",
+      "source_section": "3. Core rule",
+      "source_marker": "is not a sufficient purpose.",
       "kind": "explicit_normative",
-      "normative_level": "MUST",
-      "statement": "Every retention rule states purpose, retained data, storage location, access, review point, deletion or archival trigger, backup handling, and restricted exceptions.",
+      "normative_level": "MUST_NOT",
+      "statement": "Future improvement, unknown future value, or mere data existence is not a sufficient purpose.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "retention_registry_review"
+        "negative_test",
+        "purpose_review"
       ],
       "evidence_types": [
-        "retention_registry",
-        "storage_inventory"
+        "purpose_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT004"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0007"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R004"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R005",
       "source_document": "RFC-0002",
-      "source_section": "5. Retention and deletion",
+      "source_section": "4. Processing-basis categories",
+      "source_marker": "An implementation MUST distinguish at least:",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "A retention exception is specific, minimally scoped, access-restricted, time- or review-bounded, explained where safe and lawful, and appealable or independently reviewable where appropriate.",
+      "statement": "Implementations distinguish optional permission, requested service, safety, mandatory, security, approved research or evaluation, and unknown or disputed basis categories.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "exception_record_review",
-        "scenario_test"
+        "enumeration_test",
+        "schema_review"
       ],
       "evidence_types": [
-        "exception_record",
-        "access_policy",
+        "enum_schema",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT005"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0007"
+          "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R005"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R006",
       "source_document": "RFC-0002",
-      "source_section": "6. Cross-channel identity",
+      "source_section": "4. Processing-basis categories",
+      "source_marker": "A jurisdiction profile MUST state whether and",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "All MingOS channels should resolve to a governed identity, permission, memory, and audit layer.",
+      "normative_level": "MUST",
+      "statement": "A jurisdiction profile states whether and how each technical category maps to a lawful or professional basis.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "architecture_review",
-        "cross_channel_test"
+        "profile_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "architecture_diagram",
-        "test_result",
-        "audit_record"
+        "jurisdiction_profile",
+        "review_record"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT006"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0008"
+          "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R006"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R007",
       "source_document": "RFC-0002",
-      "source_section": "6. Cross-channel identity",
+      "source_section": "4. Processing-basis categories",
+      "source_marker": "Mandatory, emergency, safety, or institutional processing MUST NOT be",
       "kind": "explicit_normative",
       "normative_level": "MUST_NOT",
-      "statement": "A channel-specific local record must not become an untraceable shadow profile.",
+      "statement": "Mandatory, emergency, safety, or institutional processing is not represented as freely given consent.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "data_lineage_review",
-        "cross_channel_test"
+        "negative_test",
+        "notice_review"
       ],
       "evidence_types": [
-        "lineage_map",
+        "notice_capture",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT007"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0008"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R007"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R008",
       "source_document": "RFC-0002",
-      "source_section": "7. Public forms",
+      "source_section": "5.1 Purpose definition",
+      "source_marker": "### 5.1 Purpose definition",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "General early-access or contact forms should minimize fields, state purpose and retention, identify recipients and request routes, prohibit sensitive case submission without governed intake, avoid pre-checked optional permissions, and separate distinct purposes.",
+      "normative_level": "MUST",
+      "statement": "A purpose definition contains identity, description, affected people, data, operations, recipients, basis categories, jurisdiction, retention, risk, owner, and status.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "form_review",
-        "privacy_review"
+        "schema_review"
       ],
       "evidence_types": [
-        "form_capture",
-        "privacy_notice",
-        "test_result"
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT008"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R008"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R009",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.2 Permission or processing basis",
+      "source_marker": "### 5.2 Permission or processing basis",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Sensitive child cases must not be collected through a general marketing field without a governed basis.",
+      "normative_level": "MUST",
+      "statement": "A permission or processing-basis record contains person or representative, authority, purpose, category, jurisdiction, scope, version, time, review, withdrawal, constraints, exceptions, notice, and conflict status.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "basis_record",
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT009"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R009"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R010",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.3 Representative authority",
+      "source_marker": "### 5.3 Representative authority",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Private case data must not be reused for model training merely because it exists.",
+      "normative_level": "MUST",
+      "statement": "Representative authority records identity, subject, type, evidence, allowed and prohibited actions, conflicts, validity, notice, and independent review.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "schema_review",
+        "authority_test"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "authority_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT010"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0006"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R010"
+      ],
+      "profile_refs": [
+        "PROF-0002"
+      ]
     },
     {
       "requirement_id": "RFC-0002-R011",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.3 Representative authority",
+      "source_marker": "Age or family role alone MUST NOT create unlimited authority.",
       "kind": "explicit_normative",
       "normative_level": "MUST_NOT",
-      "statement": "Data must not be scattered so broadly that correction or deletion becomes impossible.",
+      "statement": "Age or family role alone does not create unlimited representative authority.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "negative_test",
+        "policy_review"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "decision_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT011"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0008"
+          "AMB-0006"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R011"
+      ],
+      "profile_refs": [
+        "PROF-0002"
+      ]
     },
     {
       "requirement_id": "RFC-0002-R012",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.3 Representative authority",
+      "source_marker": "MUST route to a",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Data must not be retained indefinitely for unspecified improvement.",
+      "normative_level": "MUST",
+      "statement": "Conflict, disputed authority, or high-impact rights requests route to a conflict-free reviewer.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "conflict_scenario_test",
+        "workflow_review"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "review_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT012"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0007"
+          "AMB-0006"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R012"
+      ],
+      "profile_refs": [
+        "PROF-0002"
+      ]
     },
     {
       "requirement_id": "RFC-0002-R013",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.4 Data asset inventory",
+      "source_marker": "### 5.4 Data asset inventory",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "A retention exception must not be hidden inside general terms.",
+      "normative_level": "MUST",
+      "statement": "A data asset inventory contains subjects, source, category, sensitivity, locations, purposes, roles, retention, deletion dependencies, backup, derivation, export, and audit references.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "schema_review",
+        "inventory_audit"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "asset_inventory",
+        "audit_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT013"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": [
-          "AMB-0007"
-        ]
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R013"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R014",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.5 Rights request",
+      "source_marker": "Supported request types SHOULD include:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "An emergency or mandatory process must not be described as voluntary consent.",
+      "normative_level": "SHOULD",
+      "statement": "Rights-request support includes access, explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, high-impact review, and appeal.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "workflow_review",
+        "coverage_test"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "rights_catalog",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT014"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R014"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R015",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "5.5 Rights request",
+      "source_marker": "Minimum fields:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Staff must not receive access broader than their current purpose requires.",
+      "normative_level": "MUST",
+      "statement": "A rights-request record contains requester, represented subject, authority evidence, conflict check, scope, verification, owner, status, located data, derived and backup locations, exceptions, decision, evidence, independent review, and appeal.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "rights_record",
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT015"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R015"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0002-R016",
       "source_document": "RFC-0002",
-      "source_section": "8. Prohibited behavior",
+      "source_section": "6. Retention profiles",
+      "source_marker": "Every asset MUST map to a named retention profile.",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "Visible deletion must not leave active copies silently retained elsewhere.",
+      "normative_level": "MUST",
+      "statement": "Every asset maps to a named retention profile.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "policy_review",
-        "scenario_test",
-        "data_lineage_review"
+        "inventory_test",
+        "schema_review"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "audit_record"
+        "asset_inventory",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0002-AT016"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0002-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0002-R016"
+      ],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R017",
+      "source_document": "RFC-0002",
+      "source_section": "6. Retention profiles",
+      "source_marker": "A retention profile MUST state:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A retention profile records purpose, covered data, locations, access, start, review, disposition trigger, backup handling, exceptions, owner, maximum exception or review, evidence, and appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "profile_review",
+        "schema_review"
+      ],
+      "evidence_types": [
+        "retention_profile",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT017"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R018",
+      "source_document": "RFC-0002",
+      "source_section": "6. Retention profiles",
+      "source_marker": "implementations SHOULD distinguish:",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "Implementations distinguish transient intake, active service, safety or incident, security and audit, restricted validation, and public-record retention profiles.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "profile_coverage_test"
+      ],
+      "evidence_types": [
+        "retention_profile_registry"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT018"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R019",
+      "source_document": "RFC-0002",
+      "source_section": "6. Retention profiles",
+      "source_marker": "Each duration MUST be",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Each retention duration is defined and justified in the applicable jurisdiction and service profile.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "profile_review",
+        "justification_audit"
+      ],
+      "evidence_types": [
+        "retention_profile",
+        "review_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT019"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R020",
+      "source_document": "RFC-0002",
+      "source_section": "6. Retention profiles",
+      "source_marker": "Indefinite retention for unspecified improvement MUST NOT be permitted.",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "Data is not retained indefinitely for unspecified improvement.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "retention_audit"
+      ],
+      "evidence_types": [
+        "retention_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT020"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R021",
+      "source_document": "RFC-0002",
+      "source_section": "7. Rights lifecycle",
+      "source_marker": "## 7. Rights lifecycle",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Material data processing follows a traceable lifecycle from purpose and review through collection, use, periodic review, rights action, propagation, completion or exception, evidence, and appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "workflow_test",
+        "audit_trace"
+      ],
+      "evidence_types": [
+        "workflow_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT021"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R022",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "It MUST maintain an explicit authority map",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A centralized, federated, or hybrid implementation maintains an explicit authority map for identity, purpose, permission, correction, representative authority, retention, and audit.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "architecture_review",
+        "configuration_audit"
+      ],
+      "evidence_types": [
+        "authority_map",
+        "audit_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT022"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R023",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "a verified subject correction supersedes an inference or third-party",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A verified subject correction supersedes inference or third-party assertion as the current interpretation without deleting history.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "conflict_test",
+        "lineage_review"
+      ],
+      "evidence_types": [
+        "change_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT023"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R024",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "the most restrictive current instruction governs optional use",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "The most restrictive current instruction governs optional use while an instruction conflict is reviewed.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "conflict_test",
+        "policy_review"
+      ],
+      "evidence_types": [
+        "decision_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT024"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R025",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "an unresolved identity or authority conflict freezes expansion, sharing,",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "An unresolved identity or authority conflict freezes expansion, sharing, training, and high-impact use.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "workflow_test"
+      ],
+      "evidence_types": [
+        "access_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT025"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0008"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R026",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "safety or mandatory exceptions require a specific basis",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Safety or mandatory exceptions record a specific basis, minimum scope, named actor, and review point.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "exception_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "exception_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT026"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R027",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "correction, withdrawal, and deletion events MUST propagate",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Correction, withdrawal, and deletion propagate across linked channels and derived assets.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "propagation_test",
+        "audit_trace"
+      ],
+      "evidence_types": [
+        "change_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT027"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R028",
+      "source_document": "RFC-0002",
+      "source_section": "8. Cross-channel authority and conflict resolution",
+      "source_marker": "a channel-specific record MUST NOT become an untraceable shadow profile.",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "A channel-specific record does not become an untraceable shadow profile.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "data_lineage_review"
+      ],
+      "evidence_types": [
+        "lineage_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT028"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R029",
+      "source_document": "RFC-0002",
+      "source_section": "9. Migration, lineage, and completion",
+      "source_marker": "Imported data MUST preserve:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Imported data preserves source context, original purpose and basis where known, transformations, authority, derivations, dependencies, uncertainty, and remediation limits.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "migration_test",
+        "lineage_review"
+      ],
+      "evidence_types": [
+        "migration_log",
+        "sample_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT029"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R030",
+      "source_document": "RFC-0002",
+      "source_section": "9. Migration, lineage, and completion",
+      "source_marker": "A rights request is not complete until active primary, derived, indexed,",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A rights request is not complete until primary, derived, indexed, shared, and scheduled backup handling is addressed or narrowly excepted.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "completion_test",
+        "backup_audit"
+      ],
+      "evidence_types": [
+        "completion_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT030"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0007"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0003"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0002-R031",
+      "source_document": "RFC-0002",
+      "source_section": "10. Public forms",
+      "source_marker": "General early-access or contact forms SHOULD:",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "General forms minimize fields, state purpose and retention, identify recipients and follow-up, and provide a rights route.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "form_review",
+        "data_minimization_test"
+      ],
+      "evidence_types": [
+        "form_capture",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT031"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R032",
+      "source_document": "RFC-0002",
+      "source_section": "10. Public forms",
+      "source_marker": "prohibit identifiable child, medical, crisis, or private consultation",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "General forms prohibit identifiable child, medical, crisis, or private consultation details unless separately governed secure intake exists.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "form_negative_test",
+        "notice_review"
+      ],
+      "evidence_types": [
+        "form_capture",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT032"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R033",
+      "source_document": "RFC-0002",
+      "source_section": "10. Public forms",
+      "source_marker": "avoid pre-checked optional permissions",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "General forms avoid pre-checked optional permissions and separate newsletter, research, product-access, and consultation purposes.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "form_review",
+        "consent_test"
+      ],
+      "evidence_types": [
+        "form_capture",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT033"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0002-R034",
+      "source_document": "RFC-0002",
+      "source_section": "11. Prohibited behavior",
+      "source_marker": "An implementation MUST NOT:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "The implementation performs any prohibited collection, reuse, scattering, indefinite retention, hidden exception, false consent, excessive access, unlimited authority, permissive conflict, or incomplete-deletion behavior listed in RFC-0002.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test_suite",
+        "policy_review"
+      ],
+      "evidence_types": [
+        "test_result",
+        "policy_config"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0002-AT034"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0002-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0002-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R001",
       "source_document": "RFC-0003",
-      "source_section": "2. Core rule",
+      "source_section": "2.1 High-impact safety action",
+      "source_marker": "A safety action is high impact when it can",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Every high-impact safety action has a named responsible role, recorded basis, bounded action, handoff state, and review path.",
+      "statement": "A safety action is classified as high impact when it can restrict rights, disclose sensitive information, involve external authority, create durable risk labels, change service, or be difficult to reverse.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "record_trace",
-        "scenario_test"
+        "classification_test",
+        "scenario_review"
       ],
       "evidence_types": [
-        "safety_record",
-        "handoff_record",
+        "classification_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT001"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R001"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R002",
       "source_document": "RFC-0003",
-      "source_section": "2. Core rule",
+      "source_section": "2.1 High-impact safety action",
+      "source_marker": "Every high-impact safety action MUST have:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "AI must not become the final unaccountable actor in safety triage or action.",
+      "normative_level": "MUST",
+      "statement": "Every high-impact safety action records actual authority, evidence, uncertainty, severity, bounded action, proportionality, handoff or availability, review, and correction or appeal.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "responsibility_review",
-        "scenario_test"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "responsibility_record",
+        "safety_action_record",
         "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT002"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R002"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R003",
       "source_document": "RFC-0003",
-      "source_section": "5. Proportionality",
+      "source_section": "2.1 High-impact safety action",
+      "source_marker": "A queue, model, mailbox, or unnamed team is not a named responsible role.",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "The selected safety response should be the least intrusive action that reasonably addresses the identified risk.",
+      "normative_level": "MUST_NOT",
+      "statement": "A queue, model, mailbox, or unnamed team is not treated as a named responsible role.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "scenario_test",
-        "decision_review"
+        "negative_test",
+        "accountability_review"
       ],
       "evidence_types": [
-        "test_result",
-        "decision_record"
+        "handoff_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT003"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0010"
+          "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R003"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R004",
       "source_document": "RFC-0003",
-      "source_section": "6. Professional and legal boundaries",
+      "source_section": "2.2 P0 and P1",
+      "source_marker": "`P0` means credible evidence indicates imminent or unfolding severe harm",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "MingOS must not claim to provide emergency response, diagnosis, legal advice, child-protection authority, or guaranteed human response unless actually staffed and governed.",
+      "normative_level": "MUST",
+      "statement": "P0 classification means credible imminent or unfolding severe harm where delay may materially increase danger.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "public_claim_review",
-        "ui_review"
+        "classification_test",
+        "case_review"
       ],
       "evidence_types": [
-        "public_copy",
-        "ui_capture",
-        "operational_roster"
+        "assessment_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT004"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0011"
+          "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R004"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R005",
       "source_document": "RFC-0003",
-      "source_section": "6. Professional and legal boundaries",
+      "source_section": "2.2 P0 and P1",
+      "source_marker": "`P1` means credible serious risk requires prompt accountable review",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Public and in-product messaging states the system role, AI or human status, response limits, route to local qualified support, and availability limits.",
+      "statement": "P1 classification means credible serious risk requiring prompt accountable review without current evidence establishing immediate P0.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "ui_review",
-        "content_review"
+        "classification_test",
+        "case_review"
       ],
       "evidence_types": [
-        "ui_capture",
-        "public_copy"
+        "assessment_record",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT005"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0011"
+          "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R005"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R006",
       "source_document": "RFC-0003",
-      "source_section": "7. Appeal and correction",
+      "source_section": "2.2 P0 and P1",
+      "source_marker": "Classification MUST record:",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "Non-immediate safety classifications should be contestable.",
+      "normative_level": "MUST",
+      "statement": "A safety classification records recency, report source, plan or means where relevant, protective factors, uncertainty, classifier, and next review.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "workflow_review",
-        "scenario_test"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "appeal_route",
-        "test_result"
+        "assessment_record",
+        "data_schema"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT006"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R006"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0003-R007",
       "source_document": "RFC-0003",
-      "source_section": "7. Appeal and correction",
+      "source_section": "2.2 P0 and P1",
+      "source_marker": "A classification profile MUST define response targets and escalation",
       "kind": "explicit_normative",
       "normative_level": "MUST",
-      "statement": "Safety review preserves original evidence, model and policy version, responsible reviewer, classification changes, false-positive or false-negative outcomes, and affected downstream records.",
+      "statement": "Each service model defines response targets and escalation ownership without creating a universal emergency-response promise.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "record_trace",
-        "incident_review"
+        "profile_review",
+        "claim_review"
       ],
       "evidence_types": [
-        "safety_record",
-        "revision_history",
-        "incident_record"
+        "service_profile",
+        "public_message"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT007"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R007"
+      ],
+      "profile_refs": [
+        "PROF-0004"
+      ]
     },
     {
       "requirement_id": "RFC-0003-R008",
       "source_document": "RFC-0003",
-      "source_section": "7. Appeal and correction",
+      "source_section": "3. Service availability profiles",
+      "source_marker": "Every implementation MUST publish and record one current service profile:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "A disputed safety label must not become a permanent identity marker.",
+      "normative_level": "MUST",
+      "statement": "Every implementation publishes and records one current service profile: active handoff, bounded review, no handoff, or unverified.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "retention_review",
-        "scenario_test"
+        "profile_review",
+        "ui_review"
       ],
       "evidence_types": [
-        "data_schema",
-        "test_result"
+        "service_profile",
+        "ui_capture"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT008"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
-        "ambiguity_refs": []
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R008"
+      ],
+      "profile_refs": [
+        "PROF-0004"
+      ]
     },
     {
       "requirement_id": "RFC-0003-R009",
       "source_document": "RFC-0003",
-      "source_section": "8. Special case: operator may be the risk source",
+      "source_section": "3. Service availability profiles",
+      "source_marker": "The profile MUST state:",
       "kind": "explicit_normative",
-      "normative_level": "MUST_NOT",
-      "statement": "MingOS must not automatically side with an operator who may be causing harm.",
+      "normative_level": "MUST",
+      "statement": "A service profile records responsible role, hours, response target, locations, languages, unavailable services, failed-handoff action, verification, expiry, and owner.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "scenario_test",
-        "conflict_review"
+        "schema_review",
+        "record_trace"
       ],
       "evidence_types": [
-        "test_result",
-        "independent_review_record"
+        "service_profile",
+        "test_result"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT009"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
-          "AMB-0012"
+          "AMB-0011"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R009"
+      ],
+      "profile_refs": [
+        "PROF-0004"
+      ]
     },
     {
       "requirement_id": "RFC-0003-R010",
       "source_document": "RFC-0003",
-      "source_section": "8. Special case: operator may be the risk source",
+      "source_section": "3. Service availability profiles",
+      "source_marker": "A `no_handoff` or `unverified` system MUST NOT mark a safety handoff complete",
       "kind": "explicit_normative",
-      "normative_level": "SHOULD",
-      "statement": "The pathway should support independent review, minimum disclosure, child or third-party protection, conflict handling, and documentation of access restrictions.",
+      "normative_level": "MUST_NOT",
+      "statement": "A no-handoff or unverified service does not mark handoff complete or imply active human monitoring.",
       "implementation_neutral": true,
       "external_evidence_required": true,
       "verification_methods": [
-        "workflow_review",
-        "tabletop_test"
+        "negative_claim_test",
+        "workflow_test"
       ],
       "evidence_types": [
-        "policy",
-        "test_result",
-        "decision_record"
+        "ui_capture",
+        "handoff_log"
       ],
       "acceptance_test_refs": [
         "RFC-0003-AT010"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0003-R010"
+      ],
+      "profile_refs": [
+        "PROF-0004"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0003-R011",
+      "source_document": "RFC-0003",
+      "source_section": "4.1 Safety signal",
+      "source_marker": "### 4.1 Safety signal",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A safety-signal record contains source, subject, reporter, time, category, evidence, uncertainty, model or policy version, recency, and direct or third-party status.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review"
+      ],
+      "evidence_types": [
+        "data_schema"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT011"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R012",
+      "source_document": "RFC-0003",
+      "source_section": "4.2 Safety assessment",
+      "source_marker": "### 4.2 Safety assessment",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A safety-assessment record contains signals, risk, immediacy, potential harm, protective factors, unknowns, recommended action, least-intrusive alternative, reviewer, time, and next review.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review"
+      ],
+      "evidence_types": [
+        "data_schema"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT012"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R013",
+      "source_document": "RFC-0003",
+      "source_section": "4.3 Handoff",
+      "source_marker": "### 4.3 Handoff",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A handoff record contains service profile, responsible role, target, initiation, acknowledgment, acceptance, disclosure, basis, target time, state, failure action, closure reason, and authority.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "handoff_record",
+        "data_schema"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT013"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R014",
+      "source_document": "RFC-0003",
+      "source_section": "4.3 Handoff",
+      "source_marker": "Allowed states MUST distinguish:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Handoff states distinguish initiated, acknowledged, accepted, failed, redirected, and closed.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "enumeration_test",
+        "workflow_test"
+      ],
+      "evidence_types": [
+        "state_schema",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT014"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R015",
+      "source_document": "RFC-0003",
+      "source_section": "4.3 Handoff",
+      "source_marker": "A handoff MUST NOT be marked closed merely because a message was sent.",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "A handoff is not closed merely because a message was sent.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "workflow_review"
+      ],
+      "evidence_types": [
+        "handoff_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT015"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R016",
+      "source_document": "RFC-0003",
+      "source_section": "4.4 Safety action",
+      "source_marker": "### 4.4 Safety action",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A safety-action record contains actor, authority, action, scope, duration, affected people, notice, delay reason, proportionality, review, and appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review"
+      ],
+      "evidence_types": [
+        "data_schema"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT016"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R017",
+      "source_document": "RFC-0003",
+      "source_section": "4.5 Incident review",
+      "source_marker": "### 4.5 Incident review",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "An incident review records severity, harm or near miss, false-positive or negative status, timeline, responsibility, causes, privacy impact, remediation, recurrence controls, and closure authority.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review",
+        "incident_audit"
+      ],
+      "evidence_types": [
+        "incident_record",
+        "audit_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT017"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R018",
+      "source_document": "RFC-0003",
+      "source_section": "5. Proportionality record",
+      "source_marker": "The selected response SHOULD be the least intrusive action",
+      "kind": "explicit_normative",
+      "normative_level": "SHOULD",
+      "statement": "The selected safety response is the least intrusive action that reasonably addresses the identified risk.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "decision_review",
+        "scenario_test"
+      ],
+      "evidence_types": [
+        "proportionality_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT018"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0010"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R019",
+      "source_document": "RFC-0003",
+      "source_section": "5. Proportionality record",
+      "source_marker": "For every high-impact action, the record MUST state:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Every high-impact action records harm, evidence, uncertainty, urgency, preference, alternatives, insufficiency reason, privacy cost, scope, duration, safeguards, review, and rollback or appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "schema_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "proportionality_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT019"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0010"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R020",
+      "source_document": "RFC-0003",
+      "source_section": "5. Proportionality record",
+      "source_marker": "A more intrusive temporary action under severe uncertainty requires a",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "A more intrusive temporary action under severe uncertainty has a precautionary basis, shortest reasonable duration, and independent or conflict-free review.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "exception_review",
+        "duration_test"
+      ],
+      "evidence_types": [
+        "decision_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT020"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0010"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R021",
+      "source_document": "RFC-0003",
+      "source_section": "6. Safety path",
+      "source_marker": "## 6. Safety path",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "The safety path preserves classification, availability check, assessment, proportionality, temporary response, accountable handoff or redirection, state tracking, notice or appeal, incident review, and remediation.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "workflow_test",
+        "audit_trace"
+      ],
+      "evidence_types": [
+        "workflow_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT021"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R022",
+      "source_document": "RFC-0003",
+      "source_section": "7. Professional, legal, and resource boundaries",
+      "source_marker": "MingOS MUST NOT claim to be:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "MingOS does not claim emergency response, diagnosis, legal advice, child-protection authority, or guaranteed human response unless actually staffed and governed.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "claim_review",
+        "negative_test"
+      ],
+      "evidence_types": [
+        "public_message",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT022"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R023",
+      "source_document": "RFC-0003",
+      "source_section": "7. Professional, legal, and resource boundaries",
+      "source_marker": "Public and in-product messaging MUST state:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Public and in-product messages state service profile, AI or human status, capabilities and limits, geography, local support route, resource owner, verification, and expiry.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "ui_review",
+        "claim_audit"
+      ],
+      "evidence_types": [
+        "ui_capture",
+        "public_message"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT023"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0004"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0003-R024",
+      "source_document": "RFC-0003",
+      "source_section": "7. Professional, legal, and resource boundaries",
+      "source_marker": "Expired or unverified local resources MUST NOT be presented as current.",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "Expired or unverified local resources are not presented as current.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "freshness_test",
+        "negative_claim_test"
+      ],
+      "evidence_types": [
+        "resource_registry",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT024"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": [
+          "AMB-0011"
+        ]
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": [
+        "PROF-0004"
+      ]
+    },
+    {
+      "requirement_id": "RFC-0003-R025",
+      "source_document": "RFC-0003",
+      "source_section": "8. Appeal, correction, and lineage",
+      "source_marker": "The system MUST preserve:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Safety review preserves evidence, model and policy version, reviewer, classification changes, false outcomes, downstream effects, propagation, and appeal history.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "lineage_review",
+        "record_trace"
+      ],
+      "evidence_types": [
+        "audit_log",
+        "sample_record"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT025"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R026",
+      "source_document": "RFC-0003",
+      "source_section": "8. Appeal, correction, and lineage",
+      "source_marker": "A disputed, expired, or superseded safety label MUST NOT become a permanent",
+      "kind": "explicit_normative",
+      "normative_level": "MUST_NOT",
+      "statement": "A disputed, expired, or superseded safety label does not become a permanent identity marker or silently drive recommendations.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "negative_test",
+        "recommendation_audit"
+      ],
+      "evidence_types": [
+        "profile_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT026"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R027",
+      "source_document": "RFC-0003",
+      "source_section": "9. Operator may be the risk source",
+      "source_marker": "Independent or conflict-free review MUST be triggered when:",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Operator-as-risk, conflict, rights restriction, disputed high-impact classification, protected-information request, or self-closing authority triggers independent or conflict-free review with bounded disclosure, protection, authority, restrictions, notice, and appeal.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "conflict_scenario_test",
+        "workflow_review"
+      ],
+      "evidence_types": [
+        "review_record",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT027"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0012"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712",
-      "current_source_state": "LegacyIndexPendingRebaseline",
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
       "current_source_version": "0.2.0-draft.1",
       "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
-      "current_source_review_record": "GOV-0044",
-      "round2_review_ref": "IRR2-RFC-0003-20260712"
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
+    },
+    {
+      "requirement_id": "RFC-0003-R028",
+      "source_document": "RFC-0003",
+      "source_section": "10. Migration and correction propagation",
+      "source_marker": "Historical risk records MUST retain source, policy version, classification",
+      "kind": "explicit_normative",
+      "normative_level": "MUST",
+      "statement": "Historical risk records preserve source, policy, classification history, and downstream effects; corrections propagate, and incomplete rollback records exposure and remediation.",
+      "implementation_neutral": true,
+      "external_evidence_required": true,
+      "verification_methods": [
+        "migration_test",
+        "propagation_test"
+      ],
+      "evidence_types": [
+        "migration_log",
+        "test_result"
+      ],
+      "acceptance_test_refs": [
+        "RFC-0003-AT028"
+      ],
+      "fidelity_review": {
+        "state": "CurrentBaselineConfirmed",
+        "reviewed_at": "2026-07-12",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
+        "ambiguity_refs": []
+      },
+      "internal_review_ref": "IRR2-RFC-0003-20260712",
+      "current_source_state": "CurrentRebaselined",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0056",
+      "round2_review_ref": "IRR2-RFC-0003-20260712",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R001",
@@ -1510,16 +3757,25 @@
         "RFC-0004-AT001"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0013"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "2. Core rule",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R001"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R002",
@@ -1540,14 +3796,23 @@
         "RFC-0004-AT002"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "3. Evidence zones",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R002"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R003",
@@ -1570,16 +3835,25 @@
         "RFC-0004-AT003"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0013"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "3. Evidence zones",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R003"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R004",
@@ -1603,17 +3877,26 @@
         "RFC-0004-AT004"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0014",
           "AMB-0016"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "5. Cross-family analysis rules",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R004"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R005",
@@ -1636,16 +3919,25 @@
         "RFC-0004-AT005"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0015"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "6. Model training and evaluation",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R005"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R006",
@@ -1669,14 +3961,23 @@
         "RFC-0004-AT006"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R006"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R007",
@@ -1700,16 +4001,25 @@
         "RFC-0004-AT007"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0013"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R007"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R008",
@@ -1733,14 +4043,23 @@
         "RFC-0004-AT008"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R008"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R009",
@@ -1764,16 +4083,25 @@
         "RFC-0004-AT009"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0015"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R009"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R010",
@@ -1797,16 +4125,25 @@
         "RFC-0004-AT010"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0014"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R010"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R011",
@@ -1830,16 +4167,25 @@
         "RFC-0004-AT011"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0015"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R011"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R012",
@@ -1863,16 +4209,25 @@
         "RFC-0004-AT012"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0013"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R012"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0004-R013",
@@ -1896,16 +4251,25 @@
         "RFC-0004-AT013"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0016"
         ]
       },
       "internal_review_ref": "IRR-RFC-0004-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Prohibited behavior",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0004-R013"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R001",
@@ -1927,16 +4291,25 @@
         "RFC-0005-AT001"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0017"
         ]
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "2. Core rule",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R001"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R002",
@@ -1967,14 +4340,23 @@
         "RFC-0005-AT002"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "3. Capability-status vocabulary",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R002"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R003",
@@ -1996,14 +4378,23 @@
         "RFC-0005-AT003"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "3. Capability-status vocabulary",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R003"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R004",
@@ -2025,16 +4416,25 @@
         "RFC-0005-AT004"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0018"
         ]
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "4. Charter publication",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R004"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R005",
@@ -2058,16 +4458,25 @@
         "RFC-0005-AT005"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0018"
         ]
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "4. Charter publication",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R005"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R006",
@@ -2089,14 +4498,23 @@
         "RFC-0005-AT006"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "5. Page metadata",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R006"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R007",
@@ -2117,16 +4535,25 @@
         "RFC-0005-AT007"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0017"
         ]
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "6. Claim review",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R007"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R008",
@@ -2148,14 +4575,23 @@
         "RFC-0005-AT008"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "7. Forms and public collection",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R008"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R009",
@@ -2178,14 +4614,23 @@
         "RFC-0005-AT009"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "7. Forms and public collection",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R009"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R010",
@@ -2208,14 +4653,23 @@
         "RFC-0005-AT010"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": []
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "8. Professional and AI disclosure",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R010"
+      ],
+      "profile_refs": []
     },
     {
       "requirement_id": "RFC-0005-R011",
@@ -2239,50 +4693,32 @@
         "RFC-0005-AT011"
       ],
       "fidelity_review": {
-        "state": "Confirmed",
+        "state": "CurrentBaselineConfirmed",
         "reviewed_at": "2026-07-12",
-        "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-        "review_record": "GOV-0032",
+        "reviewed_against_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+        "review_record": "GOV-0056",
         "ambiguity_refs": [
           "AMB-0019"
         ]
       },
       "internal_review_ref": "IRR-RFC-0005-20260712",
-      "current_source_state": "Confirmed"
+      "current_source_state": "CurrentConfirmed",
+      "source_marker": "9. Synchronization control",
+      "current_source_version": "0.1.0",
+      "current_source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "current_source_review_record": "GOV-0056",
+      "baseline_state": "Current",
+      "legacy_requirement_refs": [
+        "RFC-0005-R011"
+      ],
+      "profile_refs": []
     }
   ],
-  "fidelity_review": {
-    "review_record": "GOV-0032",
-    "reviewed_at": "2026-07-12",
-    "reviewed_against_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-    "result": "ConfirmedWithOpenAmbiguities",
-    "confirmed_requirement_count": 63,
-    "open_ambiguity_count": 19,
-    "promotion_effect": "None"
-  },
-  "internal_review": {
-    "record": "GOV-0036",
-    "round": "InternalArchitectureRound1",
-    "state": "Complete",
-    "promotion_effect": "None"
-  },
-  "target_revision_state": "Day11OverlayPendingCommit",
-  "day11_source_revision": {
-    "record": "GOV-0044",
-    "r0_decision": "ADR-0013",
-    "status_decision": "ADR-0014"
-  },
-  "current_fidelity_status": {
-    "RFC-0001": "NeedsRebaselineForDraft0.2",
-    "RFC-0002": "NeedsRebaselineForDraft0.2",
-    "RFC-0003": "NeedsRebaselineForDraft0.2",
-    "RFC-0004": "ConfirmedFor0.1",
-    "RFC-0005": "ConfirmedFor0.1"
-  },
   "round2_review": {
     "record": "GOV-0049",
     "historical_requirement_count": 63,
-    "current_complete_index_claimed": false,
-    "rebaseline_plan": "R2R-005"
+    "current_requirement_count": 115,
+    "current_complete_index_claimed": true,
+    "rebaseline_record": "GOV-0056"
   }
 }

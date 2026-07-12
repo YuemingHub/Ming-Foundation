@@ -64,6 +64,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0053 | [Round 2 Ambiguity and Dissent Disposition](governance/reviews/GOV-0053-round2-ambiguity-and-dissent-disposition.md) | Accepted |
 | GOV-0054 | [Repository Source Review Test Execution](governance/validation/GOV-0054-repository-source-review-test-execution.md) | Accepted |
 | GOV-0055 | [Round 2 Residual Revision and Review Plan](governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md) | Accepted |
+| GOV-0056 | [Day 13 Current Requirement Re-baseline](governance/validation/GOV-0056-day13-current-requirement-rebaseline.md) | Accepted |
+| GOV-0057 | [Legacy to Current Requirement Identity Mapping](governance/validation/GOV-0057-legacy-to-current-requirement-mapping.md) | Accepted |
+| GOV-0058 | [Residual Profile Design Record](governance/remediation/GOV-0058-residual-profile-design-record.md) | Accepted |
+| GOV-0059 | [Requirement Re-baseline and Profile Validation Record](governance/validation/GOV-0059-rebaseline-and-profile-validation-record.md) | Accepted |
+| GOV-0060 | [Day 13 Status Recommendation](governance/reviews/GOV-0060-day13-status-recommendation.md) | Accepted |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -111,6 +116,16 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0013 | [Adopt R0 Cross-RFC Revision Foundations](governance/decisions/ADR-0013-r0-cross-rfc-revision-foundations.md) | Accepted |
 | ADR-0014 | [Retain R1 Revised RFCs at Proposed Pending Round 2 Review](governance/decisions/ADR-0014-retain-r1-revised-rfcs-proposed.md) | Accepted |
 | ADR-0015 | [Retain RFC-0001 Through RFC-0003 at Proposed After Round 2](governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md) | Accepted |
+| ADR-0016 | [Adopt Current Requirement Baseline and Retain Profiles as Proposed](governance/decisions/ADR-0016-adopt-current-requirement-baseline-and-proposed-profiles.md) | Accepted |
+
+## Profiles
+
+| ID | Title | Status |
+|---|---|---|
+| PROF-0001 | [Participation and Representative Decision Profile](standards/profiles/PROF-0001-participation-and-representative-decision-profile.md) | Proposed |
+| PROF-0002 | [Representative Authority Evidence Profile](standards/profiles/PROF-0002-representative-authority-evidence-profile.md) | Proposed |
+| PROF-0003 | [Retention and Backup Completion Profile](standards/profiles/PROF-0003-retention-and-backup-completion-profile.md) | Proposed |
+| PROF-0004 | [Service Response and Resource Freshness Profile](standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md) | Proposed |
 
 ## Projects
 
@@ -130,6 +145,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0004 | [RFC Revision Planning Guide](reference/REF-0004-rfc-revision-planning-guide.md) | Accepted |
 | REF-0005 | [R0 and R1 Revision Foundations Guide](reference/REF-0005-r0-r1-revision-foundations-guide.md) | Accepted |
 | REF-0006 | [Round 2 Review and Requirement Rebaseline Guide](reference/REF-0006-round2-review-and-rebaseline-guide.md) | Accepted |
+| REF-0007 | [Requirement Identity and Residual Profile Guide](reference/REF-0007-requirement-identity-and-profile-guide.md) | Accepted |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

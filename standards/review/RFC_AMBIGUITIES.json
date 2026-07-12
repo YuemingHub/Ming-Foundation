@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "registry_id": "MING-RFC-AMBIGUITIES-0001",
   "title": "Ming Foundation RFC Ambiguity and Revision Register",
   "status": "Accepted review register",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
-  "registry_version": "1.0.0-alpha.12",
+  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+  "registry_version": "1.0.0-alpha.13",
   "governing_record": "GOV-0034",
   "summary": {
     "total": 19,
@@ -18,7 +18,8 @@
     "round2_reviewed": 12,
     "accepted_for_internal_architecture": 8,
     "needs_further_revision": 4,
-    "rejected": 0
+    "rejected": 0,
+    "profiles_designed_pending_review": 4
   },
   "ambiguities": [
     {
@@ -98,7 +99,12 @@
       "implemented_source_version": "0.2.0-draft.1",
       "round2_disposition": "NeedsFurtherRevision",
       "round2_finding": "The RFC requires a participation profile but does not yet define reference age, capacity, jurisdiction, conflict, and service profiles.",
-      "round2_review_record": "GOV-0053"
+      "round2_review_record": "GOV-0053",
+      "profile_design_state": "DesignedPendingReview",
+      "profile_refs": [
+        "PROF-0001",
+        "PROF-0002"
+      ]
     },
     {
       "ambiguity_id": "AMB-0004",
@@ -177,7 +183,11 @@
       "implemented_source_version": "0.2.0-draft.1",
       "round2_disposition": "NeedsFurtherRevision",
       "round2_finding": "Authority fields are defined, but proportionate evidence standards and representative types still require a profile.",
-      "round2_review_record": "GOV-0053"
+      "round2_review_record": "GOV-0053",
+      "profile_design_state": "DesignedPendingReview",
+      "profile_refs": [
+        "PROF-0002"
+      ]
     },
     {
       "ambiguity_id": "AMB-0007",
@@ -207,7 +217,11 @@
       "implemented_source_version": "0.2.0-draft.1",
       "round2_disposition": "NeedsFurtherRevision",
       "round2_finding": "Retention profile structure is clear, but reference durations, backup completion, and review triggers remain unspecified.",
-      "round2_review_record": "GOV-0053"
+      "round2_review_record": "GOV-0053",
+      "profile_design_state": "DesignedPendingReview",
+      "profile_refs": [
+        "PROF-0003"
+      ]
     },
     {
       "ambiguity_id": "AMB-0008",
@@ -315,7 +329,11 @@
       "implemented_source_version": "0.2.0-draft.1",
       "round2_disposition": "NeedsFurtherRevision",
       "round2_finding": "Service profiles are explicit, but credible response targets and independent resource-freshness verification still require operational profiles.",
-      "round2_review_record": "GOV-0053"
+      "round2_review_record": "GOV-0053",
+      "profile_design_state": "DesignedPendingReview",
+      "profile_refs": [
+        "PROF-0004"
+      ]
     },
     {
       "ambiguity_id": "AMB-0012",
@@ -475,5 +493,6 @@
   ],
   "internal_review_record": "GOV-0036",
   "day11_record": "GOV-0048",
-  "round2_record": "GOV-0053"
+  "round2_record": "GOV-0053",
+  "day13_profile_record": "GOV-0058"
 }

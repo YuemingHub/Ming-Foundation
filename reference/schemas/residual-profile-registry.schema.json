@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/residual-profile-registry.schema.json",
+  "title": "Residual Profile Registry",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "profiles"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "status",
+          "version",
+          "ambiguity_refs",
+          "requirement_refs",
+          "residual_item_refs"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^PROF-[0-9]{4}$"
+          },
+          "status": {
+            "const": "Proposed"
+          }
+        }
+      }
+    }
+  }
+}

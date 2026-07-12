@@ -2,7 +2,7 @@
 id: GOV-0055
 title: Round 2 Residual Revision and Review Plan
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -45,3 +45,14 @@ standards/review/RFC_R2_RESIDUAL_PLAN.json
 ```
 
 No residual item is completed in Day 12.
+## Day 13 execution state
+
+```text
+R2R-001 through R2R-004  DesignedPendingReview
+R2R-005                  Complete
+R2R-006                  Complete
+R2R-007                  Planned
+```
+
+Profile design and requirement re-baselining do not complete affected-person
+or domain review.

@@ -27,7 +27,7 @@ ALLOWED_STATUSES = {
     "Stable", "Experimental", "Superseded", "Deprecated", "Withdrawn",
 }
 ID_PATTERN = re.compile(
-    r"^(MF|MOS|RFC|ADR|REF|GOV|PROJECT-[A-Z0-9-]+)-[A-Z0-9][A-Z0-9._-]*$"
+    r"^(MF|MOS|RFC|ADR|REF|GOV|PROF|PROJECT-[A-Z0-9-]+)-[A-Z0-9][A-Z0-9._-]*$"
 )
 DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 INDEX_ROW_PATTERN = re.compile(

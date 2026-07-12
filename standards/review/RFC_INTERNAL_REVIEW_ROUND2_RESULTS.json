@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-INTERNAL-REVIEW-ROUND2-0001",
   "title": "Ming Foundation Internal Architecture Review Round 2 Results",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
-  "registry_version": "1.0.0-alpha.12",
+  "registry_version": "1.0.0-alpha.13",
   "governing_record": "GOV-0049",
   "review_scope": {
     "round": "InternalArchitectureRound2",
@@ -120,8 +120,9 @@
       ],
       "overall_disposition": "InternallyAcceptedWithResidualRevisions",
       "promotion_recommendation": "RetainProposed",
-      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
-      "review_record": "GOV-0050"
+      "requirement_registry_state": "RebaselinedForDraft0.2",
+      "review_record": "GOV-0050",
+      "profile_design_state": "DesignedPendingReview"
     },
     {
       "review_id": "IRR2-RFC-0002-20260712",
@@ -210,8 +211,9 @@
       ],
       "overall_disposition": "InternallyAcceptedWithResidualRevisions",
       "promotion_recommendation": "RetainProposed",
-      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
-      "review_record": "GOV-0051"
+      "requirement_registry_state": "RebaselinedForDraft0.2",
+      "review_record": "GOV-0051",
+      "profile_design_state": "DesignedPendingReview"
     },
     {
       "review_id": "IRR2-RFC-0003-20260712",
@@ -300,8 +302,15 @@
       ],
       "overall_disposition": "InternallyAcceptedWithResidualRevisions",
       "promotion_recommendation": "RetainProposed",
-      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
-      "review_record": "GOV-0052"
+      "requirement_registry_state": "RebaselinedForDraft0.2",
+      "review_record": "GOV-0052",
+      "profile_design_state": "DesignedPendingReview"
     }
-  ]
+  ],
+  "day13_relation": {
+    "requirement_registry_state": "RebaselinedForDraft0.2",
+    "requirement_count": 115,
+    "profile_design_state": "FourProfilesDesignedPendingReview",
+    "profile_review_complete": false
+  }
 }

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-requirement-id-map.schema.json",
+  "title": "RFC Requirement Identity Map",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "legacy_mappings",
+    "new_requirements"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "legacy_mappings": {
+      "type": "array",
+      "minItems": 63,
+      "items": {
+        "type": "object",
+        "required": [
+          "legacy_requirement_id",
+          "current_requirement_ids",
+          "mapping_type",
+          "retired"
+        ],
+        "properties": {
+          "mapping_type": {
+            "enum": [
+              "Unchanged",
+              "RetainedAndRefined",
+              "Split",
+              "Merged",
+              "Replaced",
+              "Retired"
+            ]
+          },
+          "retired": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "new_requirements": {
+      "type": "array",
+      "minItems": 52
+    }
+  }
+}
