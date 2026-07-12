@@ -2,7 +2,7 @@
 id: GOV-0001
 title: Current Canonical State
 status: Accepted
-version: 1.0.0-alpha.2
+version: 1.0.0-alpha.3
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -12,12 +12,16 @@ related:
   - MF-0001
   - MF-0002
   - MF-0003
+  - MF-0004
   - ADR-0001
   - ADR-0002
   - ADR-0003
   - ADR-0004
+  - ADR-0005
+  - GOV-0004
   - PROJECT-MINGOS-0000
   - PROJECT-MINGOS-0001
+  - PROJECT-MINGOS-0002
 depends_on:
   - MF-0000
   - ADR-0001
@@ -41,8 +45,8 @@ The following facts are accepted:
 - **Official website:** `https://mingos.cn`
 - **Canonical public repository:** `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 2
-- **Current repository version:** `1.0.0-alpha.2`
+- **Current repository stage:** Foundation 1.0 / Day 3 — Charter Consolidation Draft
+- **Current repository version:** `1.0.0-alpha.3`
 
 `mingos.cn` is the official public interface of MingOS. It communicates the project to users, contributors, researchers, partners, and the wider public.
 
@@ -59,11 +63,15 @@ The following facts are accepted:
 - initial architecture decisions;
 - repository validation tooling;
 - Day 2 canonical public surface and source-of-truth decisions;
-- Day 2 conversation-to-repository workflow.
+- Day 2 conversation-to-repository workflow;
+- Day 3 consolidation of historical Charter material into reviewable Drafts;
+- Day 3 proposal separating the Charter of Life, MingOS Charter, and MingOS Kernel.
 
 ### In progress
 
 - review and promotion of Day 1 Draft documents;
+- article-by-article review of `MF-0004` and `PROJECT-MINGOS-0002`;
+- review and decision on proposed `ADR-0005`;
 - systematic import of relevant conclusions from historical conversations;
 - consolidation of Charter-level documents;
 - consolidation of terminology, ontology, and evidence models;
@@ -74,6 +82,8 @@ The following facts are accepted:
 The following MUST NOT be described as complete merely because they have appeared in discussion:
 
 - a stable Ming Foundation 1.0 standard set;
+- an Accepted Charter of Life or MingOS Charter;
+- an Accepted three-root-text boundary decision;
 - a complete MOSS specification;
 - a complete MingOS Kernel specification;
 - a production-ready general-purpose Life Operating System;
@@ -149,10 +159,12 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 2, the next recommended work is the Charter consolidation phase:
+After Day 3, the next canonical work is Charter review rather than ecosystem expansion:
 
-1. inventory existing Charter discussions;
-2. distinguish the universal Life Charter from the MingOS Charter;
-3. identify conflicts and duplicate formulations;
-4. produce reviewable Draft documents;
-5. avoid expanding into SDK, cloud, certification, or distant ecosystem design before the root commitments are stable.
+1. review `MF-0004` article by article;
+2. review `PROJECT-MINGOS-0002` commitment by commitment;
+3. decide whether to accept, revise, split, or reject `ADR-0005`;
+4. obtain privacy, child-rights, safety, professional-boundary, commercial-governance, and affected-person review;
+5. test Charter language against real product, website, sales, and implementation decisions;
+6. update statuses only after review evidence is recorded;
+7. begin canonical Kernel conformance work only after the Charter boundary is accepted.

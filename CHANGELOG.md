@@ -2,6 +2,28 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.3] - 2026-07-12
+
+### Added
+
+- Reviewable Draft of the Charter of Life (`MF-0004`).
+- Reviewable Draft of the MingOS Charter (`PROJECT-MINGOS-0002`).
+- Proposed decision separating the Charter of Life, MingOS Charter, and MingOS Kernel (`ADR-0005`).
+- Day 3 Charter consolidation and source-handling record (`GOV-0004`).
+
+### Changed
+
+- Repository status advanced from Day 2 to Day 3 — Charter Consolidation Draft.
+- Root README now distinguishes the universal ethical Charter, MingOS project commitments, and operational Kernel.
+- Repository index now records the Day 3 Draft and Proposed artifacts.
+- Current canonical state now identifies Charter review as the next gate.
+
+### Not completed
+
+- The Charter drafts are not yet Accepted.
+- `ADR-0005` is not yet Accepted.
+- No complete MingOS Kernel specification is introduced by Day 3.
+
 ## [1.0.0-alpha.2] - 2026-07-12
 
 ### Added

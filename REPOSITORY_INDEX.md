@@ -9,6 +9,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0001 | [Current Canonical State](governance/status/GOV-0001-current-canonical-state.md) | Accepted |
 | GOV-0002 | [Source Registry](governance/sources/GOV-0002-source-registry.md) | Accepted |
 | GOV-0003 | [Conversation-to-Repository Workflow](governance/workflows/GOV-0003-conversation-to-repository.md) | Accepted |
+| GOV-0004 | [Day 3 Charter Consolidation Record](governance/reviews/GOV-0004-day3-charter-consolidation-record.md) | Draft |
 
 ## Foundation
 
@@ -18,6 +19,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | MF-0001 | [Mission](foundation/charter/MF-0001-mission.md) | Draft |
 | MF-0002 | [Vision](foundation/charter/MF-0002-vision.md) | Draft |
 | MF-0003 | [First Principles](foundation/principles/MF-0003-first-principles.md) | Draft |
+| MF-0004 | [The Charter of Life](foundation/charter/MF-0004-life-charter.md) | Draft |
 
 ## Standards
 
@@ -33,6 +35,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0002 | [Observation before advice](governance/decisions/ADR-0002-observation-before-advice.md) | Accepted |
 | ADR-0003 | [mingos.cn is the official website](governance/decisions/ADR-0003-mingos-cn-is-the-official-website.md) | Accepted |
 | ADR-0004 | [Ming-Foundation is the canonical public repository](governance/decisions/ADR-0004-ming-foundation-is-the-canonical-public-repository.md) | Accepted |
+| ADR-0005 | [Separate the Charter of Life, MingOS Charter, and MingOS Kernel](governance/decisions/ADR-0005-three-root-texts-and-boundaries.md) | Proposed |
 
 ## Projects
 
@@ -40,6 +43,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 |---|---|---|
 | PROJECT-MINGOS-0000 | [MingOS Project Boundary](projects/mingos/README.md) | Draft |
 | PROJECT-MINGOS-0001 | [MingOS Public Surfaces and Authority Map](projects/mingos/PROJECT-MINGOS-0001-public-surfaces-and-authority-map.md) | Accepted |
+| PROJECT-MINGOS-0002 | [MingOS Charter](projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md) | Draft |
 
 ## Reference
 
