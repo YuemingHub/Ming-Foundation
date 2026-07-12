@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-INTERNAL-REVIEW-RESULTS-0001",
   "title": "Ming Foundation Internal RFC Review Results",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
-  "registry_version": "1.0.0-alpha.10",
+  "registry_version": "1.0.0-alpha.11",
   "governing_record": "GOV-0036",
   "review_scope": {
     "round": "InternalArchitectureRound1",
@@ -204,7 +204,9 @@
         "DIS-0002",
         "DIS-0003"
       ],
-      "review_record": "GOV-0037"
+      "review_record": "GOV-0037",
+      "current_source_effect": "HistoricalBaselineSupersededByDraftRevision",
+      "round2_required": true
     },
     {
       "review_id": "IRR-RFC-0002-20260712",
@@ -390,7 +392,9 @@
         "DIS-0001",
         "DIS-0004"
       ],
-      "review_record": "GOV-0038"
+      "review_record": "GOV-0038",
+      "current_source_effect": "HistoricalBaselineSupersededByDraftRevision",
+      "round2_required": true
     },
     {
       "review_id": "IRR-RFC-0003-20260712",
@@ -577,7 +581,9 @@
         "DIS-0005",
         "DIS-0006"
       ],
-      "review_record": "GOV-0039"
+      "review_record": "GOV-0039",
+      "current_source_effect": "HistoricalBaselineSupersededByDraftRevision",
+      "round2_required": true
     },
     {
       "review_id": "IRR-RFC-0004-20260712",
@@ -763,7 +769,8 @@
         "DIS-0001",
         "DIS-0007"
       ],
-      "review_record": "GOV-0040"
+      "review_record": "GOV-0040",
+      "current_source_effect": "CurrentSourceUnchanged"
     },
     {
       "review_id": "IRR-RFC-0005-20260712",
@@ -939,7 +946,13 @@
         "DIS-0001",
         "DIS-0008"
       ],
-      "review_record": "GOV-0041"
+      "review_record": "GOV-0041",
+      "current_source_effect": "CurrentSourceUnchanged"
     }
-  ]
+  ],
+  "day11_effect": {
+    "record": "GOV-0044",
+    "round1_remains_historical": true,
+    "round2_required": true
+  }
 }

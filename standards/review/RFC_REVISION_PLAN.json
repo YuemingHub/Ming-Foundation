@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-RFC-REVISION-PLAN-0001",
   "title": "Ming Foundation RFC Revision Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
-  "registry_version": "1.0.0-alpha.10",
+  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
+  "registry_version": "1.0.0-alpha.11",
   "governing_record": "GOV-0042",
   "decision": "ADR-0012",
   "target_status_after_revision": "Proposed",
@@ -15,7 +15,11 @@
     "cross_rfc_items": 4,
     "p0_items": 19,
     "p1_items": 4,
-    "ambiguities_mapped": 19
+    "ambiguities_mapped": 19,
+    "implemented_pending_review": 12,
+    "partially_implemented": 4,
+    "planned": 7,
+    "complete": 0
   },
   "waves": [
     {
@@ -86,8 +90,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0001",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0002",
@@ -108,8 +116,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0001",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0003",
@@ -130,8 +142,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0001",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0004",
@@ -152,8 +168,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0001",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0005",
@@ -174,8 +194,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0002",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0006",
@@ -196,8 +220,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0002",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0007",
@@ -218,8 +246,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0002",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0008",
@@ -240,8 +272,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0002",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0009",
@@ -262,8 +298,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0003",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0010",
@@ -284,8 +324,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0003",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0011",
@@ -306,8 +350,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0003",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0012",
@@ -328,8 +376,12 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "ImplementedPendingReview",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "RFC-0003",
+        "GOV-0044"
+      ]
     },
     {
       "revision_id": "REV-0013",
@@ -505,8 +557,14 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "PartiallyImplemented",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "ADR-0013",
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ]
     },
     {
       "revision_id": "REV-X002",
@@ -531,8 +589,14 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "PartiallyImplemented",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "ADR-0013",
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ]
     },
     {
       "revision_id": "REV-X003",
@@ -557,8 +621,14 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "PartiallyImplemented",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "ADR-0013",
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ]
     },
     {
       "revision_id": "REV-X004",
@@ -579,8 +649,15 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "Planned",
-      "target_draft": "0.2.0-draft"
+      "status": "PartiallyImplemented",
+      "target_draft": "0.2.0-draft",
+      "implementation_refs": [
+        "ADR-0013",
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ]
     }
-  ]
+  ],
+  "day11_record": "GOV-0044"
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
   "title": "Ming Foundation RFC Requirement Registry",
   "status": "Accepted infrastructure index",
@@ -9,36 +9,39 @@
     "governing_decision": "ADR-0010"
   },
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.10",
+  "registry_version": "1.0.0-alpha.11",
   "source_documents": [
     {
       "id": "RFC-0001",
       "path": "standards/rfc/RFC-0001-subject-speaker-and-contestability.md",
       "status": "Proposed",
-      "version": "0.1.0",
-      "source_blob_sha": "c32f0d966ac8772e55d5ebf15af6b7c8c7db4b1d",
+      "version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "RequirementIndexReviewed"
+      "review_state": "RevisedPendingRound2",
+      "source_revision_record": "GOV-0045"
     },
     {
       "id": "RFC-0002",
       "path": "standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md",
       "status": "Proposed",
-      "version": "0.1.0",
-      "source_blob_sha": "43ca687ade380c344d5de7a19b5e7c038761b667",
+      "version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "RequirementIndexReviewed"
+      "review_state": "RevisedPendingRound2",
+      "source_revision_record": "GOV-0046"
     },
     {
       "id": "RFC-0003",
       "path": "standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md",
       "status": "Proposed",
-      "version": "0.1.0",
-      "source_blob_sha": "97e4f37200a08dcd78f006d4f76928ff832cee3d",
+      "version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
       "fidelity_review_record": "GOV-0032",
-      "review_state": "RequirementIndexReviewed"
+      "review_state": "RevisedPendingRound2",
+      "source_revision_record": "GOV-0047"
     },
     {
       "id": "RFC-0004",
@@ -90,7 +93,11 @@
           "AMB-0001"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R002",
@@ -134,7 +141,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R003",
@@ -164,7 +175,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R004",
@@ -196,7 +211,11 @@
           "AMB-0002"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R005",
@@ -226,7 +245,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R006",
@@ -256,7 +279,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R007",
@@ -285,7 +312,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R008",
@@ -315,7 +346,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R009",
@@ -345,7 +380,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R010",
@@ -377,7 +416,11 @@
           "AMB-0003"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R011",
@@ -406,7 +449,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R012",
@@ -438,7 +485,11 @@
           "AMB-0004"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0001-R013",
@@ -470,7 +521,11 @@
           "AMB-0003"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0001-20260712"
+      "internal_review_ref": "IRR-RFC-0001-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R001",
@@ -502,7 +557,11 @@
           "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R002",
@@ -534,7 +593,11 @@
           "AMB-0005"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R003",
@@ -566,7 +629,11 @@
           "AMB-0006"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R004",
@@ -596,7 +663,11 @@
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R005",
@@ -628,7 +699,11 @@
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R006",
@@ -660,7 +735,11 @@
           "AMB-0008"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R007",
@@ -691,7 +770,11 @@
           "AMB-0008"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R008",
@@ -721,7 +804,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R009",
@@ -752,7 +839,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R010",
@@ -783,7 +874,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R011",
@@ -816,7 +911,11 @@
           "AMB-0008"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R012",
@@ -849,7 +948,11 @@
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R013",
@@ -882,7 +985,11 @@
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R014",
@@ -913,7 +1020,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R015",
@@ -944,7 +1055,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0002-R016",
@@ -977,7 +1092,11 @@
           "AMB-0007"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0002-20260712"
+      "internal_review_ref": "IRR-RFC-0002-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R001",
@@ -1009,7 +1128,11 @@
           "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R002",
@@ -1040,7 +1163,11 @@
           "AMB-0009"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R003",
@@ -1071,7 +1198,11 @@
           "AMB-0010"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R004",
@@ -1103,7 +1234,11 @@
           "AMB-0011"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R005",
@@ -1134,7 +1269,11 @@
           "AMB-0011"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R006",
@@ -1163,7 +1302,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R007",
@@ -1193,7 +1336,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R008",
@@ -1222,7 +1369,11 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R009",
@@ -1253,7 +1404,11 @@
           "AMB-0012"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0003-R010",
@@ -1285,7 +1440,11 @@
           "AMB-0012"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0003-20260712"
+      "internal_review_ref": "IRR-RFC-0003-20260712",
+      "current_source_state": "RevisedPendingReview",
+      "current_source_version": "0.2.0-draft.1",
+      "current_source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "current_source_review_record": "GOV-0044"
     },
     {
       "requirement_id": "RFC-0004-R001",
@@ -1317,7 +1476,8 @@
           "AMB-0013"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R002",
@@ -1344,7 +1504,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R003",
@@ -1375,7 +1536,8 @@
           "AMB-0013"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R004",
@@ -1408,7 +1570,8 @@
           "AMB-0016"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R005",
@@ -1439,7 +1602,8 @@
           "AMB-0015"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R006",
@@ -1469,7 +1633,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R007",
@@ -1501,7 +1666,8 @@
           "AMB-0013"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R008",
@@ -1531,7 +1697,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R009",
@@ -1563,7 +1730,8 @@
           "AMB-0015"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R010",
@@ -1595,7 +1763,8 @@
           "AMB-0014"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R011",
@@ -1627,7 +1796,8 @@
           "AMB-0015"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R012",
@@ -1659,7 +1829,8 @@
           "AMB-0013"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0004-R013",
@@ -1691,7 +1862,8 @@
           "AMB-0016"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0004-20260712"
+      "internal_review_ref": "IRR-RFC-0004-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R001",
@@ -1721,7 +1893,8 @@
           "AMB-0017"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R002",
@@ -1758,7 +1931,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R003",
@@ -1786,7 +1960,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R004",
@@ -1816,7 +1991,8 @@
           "AMB-0018"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R005",
@@ -1848,7 +2024,8 @@
           "AMB-0018"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R006",
@@ -1876,7 +2053,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R007",
@@ -1905,7 +2083,8 @@
           "AMB-0017"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R008",
@@ -1933,7 +2112,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R009",
@@ -1962,7 +2142,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R010",
@@ -1991,7 +2172,8 @@
         "review_record": "GOV-0032",
         "ambiguity_refs": []
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     },
     {
       "requirement_id": "RFC-0005-R011",
@@ -2023,7 +2205,8 @@
           "AMB-0019"
         ]
       },
-      "internal_review_ref": "IRR-RFC-0005-20260712"
+      "internal_review_ref": "IRR-RFC-0005-20260712",
+      "current_source_state": "Confirmed"
     }
   ],
   "fidelity_review": {
@@ -2040,5 +2223,11 @@
     "round": "InternalArchitectureRound1",
     "state": "Complete",
     "promotion_effect": "None"
+  },
+  "target_revision_state": "Day11OverlayPendingCommit",
+  "day11_source_revision": {
+    "record": "GOV-0044",
+    "r0_decision": "ADR-0013",
+    "status_decision": "ADR-0014"
   }
 }

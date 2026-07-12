@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 10 — RFC Review Execution and Revision Planning**. Day 10 completes Internal Architecture Review Round 1, records 45 dimension dispositions, maps 19 ambiguities into 23 revision items, preserves eight dissent items, and retains every RFC at Proposed.
+This repository is at **Foundation 1.0 / Day 11 — RFC Source Revision Wave R0 and R1**. Day 11 implements the four R0 cross-RFC foundations and revises RFC-0001 through RFC-0003 to 0.2.0-draft.1, while keeping twelve ambiguity responses pending Round 2 review and every RFC at Proposed.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -92,8 +92,13 @@ Charter governance and validation:
 - [`governance/reviews/GOV-0043-rfc-dissent-and-unresolved-objections.md`](governance/reviews/GOV-0043-rfc-dissent-and-unresolved-objections.md)
 - [`governance/decisions/ADR-0012-retain-rfcs-proposed-after-internal-review.md`](governance/decisions/ADR-0012-retain-rfcs-proposed-after-internal-review.md)
 - [`reference/REF-0004-rfc-revision-planning-guide.md`](reference/REF-0004-rfc-revision-planning-guide.md)
+- [`governance/decisions/ADR-0013-r0-cross-rfc-revision-foundations.md`](governance/decisions/ADR-0013-r0-cross-rfc-revision-foundations.md)
+- [`governance/decisions/ADR-0014-retain-r1-revised-rfcs-proposed.md`](governance/decisions/ADR-0014-retain-r1-revised-rfcs-proposed.md)
+- [`governance/remediation/GOV-0044-day11-r0-r1-source-revision-record.md`](governance/remediation/GOV-0044-day11-r0-r1-source-revision-record.md)
+- [`governance/reviews/GOV-0048-r0-r1-ambiguity-source-disposition.md`](governance/reviews/GOV-0048-r0-r1-ambiguity-source-disposition.md)
+- [`reference/REF-0005-r0-r1-revision-foundations-guide.md`](reference/REF-0005-r0-r1-revision-foundations-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Internal Architecture Review Round 1 is complete, while external, affected-person, legal, and implementation review remain incomplete.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. RFC-0001 through RFC-0003 are revised drafts pending Internal Architecture Review Round 2; implementation conformance remains empty.
 
 ## Mission
 
@@ -229,7 +234,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.10**
+Current repository foundation version: **1.0.0-alpha.11**
 
 ## License
 

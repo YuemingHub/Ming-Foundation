@@ -1,59 +1,121 @@
 ---
 created: 2026-07-12
 depends_on:
-- MF-0004
-- PROJECT-MINGOS-0002
+  - MF-0004
+  - PROJECT-MINGOS-0002
+  - RFC-0001
+  - RFC-0002
+  - ADR-0013
 id: RFC-0003
 layer: Layer 1 — Standards
 owner: Ming Foundation Standards
 related:
-- MF-0004
-- PROJECT-MINGOS-0002
-- GOV-0011
-- GOV-0012
-- GOV-0014
-- GOV-0015
-- GOV-0019
-- ADR-0007
+  - MF-0004
+  - PROJECT-MINGOS-0002
+  - GOV-0011
+  - GOV-0015
+  - GOV-0039
+  - GOV-0044
+  - GOV-0047
+  - GOV-0048
+  - ADR-0013
+  - ADR-0014
 status: Proposed
 title: Safety Escalation Human Handoff Appeal and Incident Protocol
 updated: 2026-07-12
-version: 0.1.0
+version: 0.2.0-draft.1
 ---
 
 # RFC-0003 — Safety Escalation, Human Handoff, Appeal, and Incident Protocol
 
 ## Status
 
-Proposed minimum protocol. Existing risk gates are implementation
-evidence, not proof of full conformance.
+Proposed revised draft. This revision implements `REV-0009` through
+`REV-0012` and the applicable R0 decisions from `ADR-0013`.
+
+Existing risk gates remain implementation evidence, not proof of
+conformance.
 
 ## 1. Problem
 
 Detecting risk is not the same as safely handling it.
 
-A complete safety path must answer:
+A complete safety path must identify evidence and uncertainty, accountable
+authority, service availability, proportionality, handoff state, disclosure,
+correction, appeal, and incident learning.
 
-- what was detected;
-- what evidence and uncertainty exist;
-- who is responsible;
-- what action was taken;
-- whether a human actually received the handoff;
-- what information was disclosed;
-- whether the action was proportionate;
-- how a wrong decision is corrected;
-- how the event is reviewed.
+## 2. Safety classifications
 
-## 2. Core rule
+### 2.1 High-impact safety action
 
-Every high-impact safety action MUST have a named responsible role, a
-recorded basis, a bounded action, a handoff state, and a review path.
+A safety action is high impact when it can restrict rights or access, disclose
+sensitive information, involve an external authority or professional, create
+a durable risk label, materially change service, or be difficult to reverse.
 
-AI may support triage. AI MUST NOT become the final unaccountable actor.
+Every high-impact safety action MUST have:
 
-## 3. Required records
+- a named responsible role with actual authority;
+- recorded evidence and uncertainty;
+- severity and immediacy class;
+- bounded action and duration;
+- proportionality record;
+- handoff or service-availability state;
+- review deadline;
+- correction or appeal route where possible.
 
-### 3.1 Safety signal
+A queue, model, mailbox, or unnamed team is not a named responsible role.
+
+### 2.2 P0 and P1
+
+`P0` means credible evidence indicates imminent or unfolding severe harm and
+delay may materially increase danger.
+
+`P1` means credible serious risk requires prompt accountable review or
+protective action but the available evidence does not establish an immediate
+P0 condition.
+
+Classification MUST record:
+
+- current versus historical evidence;
+- direct versus third-party report;
+- plan, means, opportunity, and immediacy where relevant;
+- protective factors;
+- uncertainty and missing information;
+- responsible classifier;
+- next review deadline.
+
+A classification profile MUST define response targets and escalation
+ownership for each service model. This RFC does not create a universal
+emergency-response promise.
+
+## 3. Service availability profiles
+
+Every implementation MUST publish and record one current service profile:
+
+- `active_handoff` — a staffed and governed human or service handoff exists;
+- `bounded_review` — accountable review exists within stated availability,
+  but no emergency response is promised;
+- `no_handoff` — the system cannot receive or manage an active handoff and
+  only provides transparent redirection;
+- `unverified` — availability or resource freshness cannot be confirmed.
+
+The profile MUST state:
+
+- responsible organization or role;
+- operating hours and response target;
+- supported locations and languages;
+- unavailable services;
+- escalation and failed-handoff action;
+- last verification date;
+- expiry date;
+- owner.
+
+A `no_handoff` or `unverified` system MUST NOT mark a safety handoff complete
+or imply that a human is monitoring the situation.
+
+## 4. Required records
+
+### 4.1 Safety signal
 
 Minimum fields:
 
@@ -69,7 +131,7 @@ Minimum fields:
 - `current_or_historical`;
 - `direct_or_third_party_report`.
 
-### 3.2 Safety assessment
+### 4.2 Safety assessment
 
 Minimum fields:
 
@@ -80,43 +142,61 @@ Minimum fields:
 - `potential_harm`;
 - `protective_factors`;
 - `unknowns`;
-- `recommended action`;
-- `least_intrusive alternative`;
-- `reviewer`;
-- `review_time`.
+- `recommended_action`;
+- `least_intrusive_alternative`;
+- `responsible_reviewer`;
+- `review_time`;
+- `next_review_at`.
 
-### 3.3 Handoff
+### 4.3 Handoff
 
 Minimum fields:
 
 - `handoff_id`;
+- `service_profile`;
 - `responsible_role`;
 - `target_person_or_service`;
 - `initiated_at`;
 - `acknowledged_at`;
+- `accepted_at`;
 - `information_disclosed`;
 - `basis`;
 - `response_target`;
 - `status`;
 - `failed_handoff_action`;
-- `closure_reason`.
+- `closure_reason`;
+- `closure_authority`.
 
-### 3.4 Safety action
+Allowed states MUST distinguish:
+
+- initiated;
+- acknowledged;
+- accepted;
+- failed;
+- redirected;
+- closed.
+
+A handoff MUST NOT be marked closed merely because a message was sent.
+
+### 4.4 Safety action
 
 Minimum fields:
 
 - `action_id`;
 - `assessment_id`;
 - `actor`;
+- `authority_scope`;
 - `action`;
 - `scope`;
 - `duration`;
 - `affected_people`;
 - `notice`;
+- `notice_delay_reason`;
+- `proportionality_record`;
 - `review_at`;
 - `appeal_or_correction_path`.
 
-### 3.5 Incident review
+### 4.5 Incident review
 
 Minimum fields:
 
@@ -132,113 +212,152 @@ Minimum fields:
 - `recurrence_controls`;
 - `closure_authority`.
 
-## 4. Safety path
+## 5. Proportionality record
 
-``` text
+The selected response SHOULD be the least intrusive action that reasonably
+addresses the identified risk.
+
+For every high-impact action, the record MUST state:
+
+- harm being prevented;
+- evidence and uncertainty;
+- urgency;
+- affected-person preference where safely available;
+- less intrusive alternatives considered;
+- reason alternatives were insufficient;
+- privacy and disclosure cost;
+- action scope and duration;
+- safeguards;
+- review deadline;
+- rollback, correction, or appeal path.
+
+A more intrusive temporary action under severe uncertainty requires a
+specific precautionary basis, shortest reasonable duration, and independent
+or conflict-free review.
+
+## 6. Safety path
+
+```text
 Signal
   ↓
-Bounded assessment
+P0 / P1 / lower classification with uncertainty
   ↓
-Immediate response if required
+Service availability checked
   ↓
-Named human or service handoff
+Bounded assessment and proportionality record
   ↓
-Acknowledgment and status tracking
+Immediate temporary response if required
   ↓
-Action and communication
+Named responsible role or transparent no-handoff redirection
   ↓
-Correction or appeal when possible
+Acknowledgment, acceptance, failure, or closure tracked
+  ↓
+Notice, correction, or appeal when possible
   ↓
 Incident / near-miss review
   ↓
-Policy, model, product, or training remediation
+Policy, model, product, access, training, or governance remediation
 ```
 
-## 5. Proportionality
-
-The selected response SHOULD be the least intrusive action that
-reasonably addresses the identified risk.
-
-The record must distinguish:
-
-- expression from plan;
-- historical event from current event;
-- direct report from third-party report;
-- distress from imminent harm;
-- conflict from abuse;
-- privacy from covert surveillance;
-- low energy from a medical or psychiatric emergency.
-
-## 6. Professional and legal boundaries
+## 7. Professional, legal, and resource boundaries
 
 MingOS MUST NOT claim to be:
 
-- emergency response;
+- an emergency-response service;
 - a medical or psychiatric diagnosis service;
 - legal advice;
 - a child-protection authority;
-- a guaranteed human-response service unless such a service is actually
-  staffed and governed.
+- a guaranteed human-response service unless staffed and governed.
 
-Public and in-product messaging must state:
+Public and in-product messaging MUST state:
 
-- the system’s role;
+- current service profile;
 - whether AI or a human is responding;
-- what response can and cannot be expected;
-- how local emergency or qualified support may be reached;
-- that availability varies unless explicitly guaranteed.
+- available and unavailable response;
+- operating and geographic limits;
+- route to local qualified or emergency support;
+- resource owner, verification date, and expiry where resources are listed.
 
-## 7. Appeal and correction
+Expired or unverified local resources MUST NOT be presented as current.
+
+## 8. Appeal, correction, and lineage
 
 Non-immediate safety classifications SHOULD be contestable.
 
-The system must preserve:
+The system MUST preserve:
 
 - original evidence;
 - model and policy version;
 - responsible reviewer;
 - classification changes;
 - false-positive and false-negative outcomes;
-- downstream records influenced by the classification.
+- downstream records influenced by the classification;
+- correction and supersession propagation;
+- review and appeal history.
 
-A disputed safety label MUST NOT become a permanent identity marker.
+A disputed, expired, or superseded safety label MUST NOT become a permanent
+identity marker or silently continue to drive recommendations.
 
-## 8. Special case: operator may be the risk source
+## 9. Operator may be the risk source
 
-When a parent, partner, professional, or institution operating the
-system may be causing harm, MingOS MUST NOT automatically side with the
-operator.
+Independent or conflict-free review MUST be triggered when:
 
-The pathway should support:
+- the operator is alleged to be causing harm;
+- the operator's interests materially conflict with the subject;
+- the requested action restricts the subject's rights, participation, or
+  access;
+- a high-impact classification is disputed;
+- the operator requests access to protected reporter or subject information;
+- the same role would report, decide, and close the action without oversight.
 
-- independent review;
+The review pathway MUST support:
+
 - minimum disclosure;
 - child or third-party protection;
-- conflict-of-interest handling;
-- documentation of why operator access is restricted, if applicable.
+- interim access restrictions;
+- independent decision authority;
+- reason, duration, and review of restrictions;
+- later notice and appeal where safe and lawful.
 
-## 9. Acceptance tests
+The system MUST NOT automatically side with the operator.
+
+## 10. Migration and correction propagation
+
+Historical risk records MUST retain source, policy version, classification
+history, and downstream effects.
+
+When a classification is corrected or superseded, active profiles,
+recommendations, restrictions, retrieval indexes, and dependent decisions
+MUST be updated.
+
+Where complete rollback is impossible, the limitation, remaining exposure,
+and remediation plan MUST be recorded.
+
+## 11. Acceptance tests
 
 A conforming implementation must demonstrate:
 
-1.  every P0/P1 escalation has a responsible role;
-2.  a handoff cannot be marked complete without acknowledgment or an
-    explicit failed-handoff state;
-3.  safety action records basis, scope, duration, and review;
-4.  false-positive and false-negative cases are reviewable;
-5.  a model update triggers regression tests for safety scenarios;
-6.  operator and subject are not assumed to be the same person;
-7.  no risk label becomes a permanent profile fact without review;
-8.  public messages do not promise unavailable emergency or professional
-    care;
-9.  incident remediation can change policy, prompt, code, access,
-    training, or governance.
+1. every P0/P1 escalation has a responsible role with actual authority;
+2. a queue or sent message cannot be treated as completed handoff;
+3. service profile, availability, owner, verification date, and expiry are
+   visible;
+4. a `no_handoff` system does not imply active monitoring;
+5. every high-impact action records proportionality, scope, duration,
+   safeguards, review, and appeal;
+6. failed handoff has a named next action and owner;
+7. false-positive and false-negative cases are reviewable;
+8. a model or policy change triggers safety regression review;
+9. operator and subject are not assumed to be the same person;
+10. operator-as-risk scenarios trigger conflict-free review;
+11. no risk label becomes permanent without review and lineage;
+12. public messages do not promise unavailable emergency or professional
+    care.
 
-## 10. Open questions
+## 12. Remaining review questions
 
-- Which response times are realistic for each service model?
-- Which events require external professional or legal review?
-- How are local emergency resources maintained without becoming stale?
-- Which safety records may be visible to which family members?
-- How is an independent review triggered when the operator is the
-  alleged source of harm?
+- Which response targets are credible for each service profile?
+- Which P0/P1 events require external professional or legal review in each
+  jurisdiction?
+- Which organizations may qualify as independent reviewers?
+- How should resource freshness be independently verified?
+- Which safety records may be visible to which affected people?

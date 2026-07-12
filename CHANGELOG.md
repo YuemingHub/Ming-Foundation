@@ -2,6 +2,35 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.11] - 2026-07-12
+
+### Added
+
+- R0 cross-RFC revision-foundation decision (`ADR-0013`).
+- Decision retaining the revised R1 RFCs at Proposed (`ADR-0014`).
+- Day 11 source-revision record and three RFC-specific revision records.
+- R0/R1 ambiguity source-disposition record.
+- Source-revision validator.
+
+### Changed
+
+- RFC-0001, RFC-0002, and RFC-0003 advanced to `0.2.0-draft.1` while
+  remaining Proposed.
+- REV-0001 through REV-0012 are `ImplementedPendingReview`.
+- REV-X001 through REV-X004 are `PartiallyImplemented`.
+- REV-0013 through REV-0019 remain Planned.
+- AMB-0001 through AMB-0012 contain draft answers but remain Open.
+- Requirements, tests, review checklists, ambiguity records, dissent records,
+  and source blob SHAs were synchronized.
+- The implementation conformance baseline remains empty.
+
+### Status boundary
+
+- No acceptance test was executed.
+- No ambiguity was closed.
+- No dissent item was closed.
+- No RFC was promoted.
+- Both Charters remain Candidate.
 ## [1.0.0-alpha.10] - 2026-07-12
 
 ### Added

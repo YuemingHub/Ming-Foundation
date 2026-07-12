@@ -216,6 +216,23 @@
           "internal_review_ref": {
             "type": "string",
             "pattern": "^IRR-RFC-[0-9]{4}-[0-9]{8}$"
+          },
+          "current_source_state": {
+            "enum": [
+              "Confirmed",
+              "RevisedPendingReview",
+              "NeedsCorrection",
+              "Unverifiable"
+            ]
+          },
+          "current_source_version": {
+            "type": "string"
+          },
+          "current_source_blob_sha": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "current_source_review_record": {
+            "type": "string"
           }
         },
         "additionalProperties": false

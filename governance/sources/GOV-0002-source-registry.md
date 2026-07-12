@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.10
+version: 1.0.0-alpha.11
 ---
 
 # GOV-0002 — Source Registry
@@ -182,3 +182,11 @@ They describe preparation, structure, or open questions. They are not implementa
 ## Day 10 internal review evidence
 
 Internal review results, revision plans, and dissent records are canonical governance evidence about RFC quality. They are not product, external, affected-person, legal, or conformance evidence.
+
+## 14. Day 11 source revision evidence
+
+RFC source text, exact Git blob SHAs, revision-plan state, and synchronized
+requirement and test registries are canonical repository evidence.
+
+They do not constitute implementation, external-review, legal, or
+affected-person evidence.

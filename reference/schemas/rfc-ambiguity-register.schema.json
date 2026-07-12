@@ -55,6 +55,20 @@
               "Resolved",
               "Superseded"
             ]
+          },
+          "source_revision_state": {
+            "enum": [
+              "Planned",
+              "ImplementedPendingReview",
+              "Reviewed",
+              "Rejected"
+            ]
+          },
+          "implementation_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "additionalProperties": true

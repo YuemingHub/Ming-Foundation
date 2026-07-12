@@ -1,73 +1,112 @@
 ---
 created: 2026-07-12
 depends_on:
-- MF-0004
-- PROJECT-MINGOS-0002
-- RFC-0001
+  - MF-0004
+  - PROJECT-MINGOS-0002
+  - RFC-0001
+  - ADR-0013
 id: RFC-0002
 layer: Layer 1 — Standards
 owner: Ming Foundation Standards
 related:
-- MF-0004
-- PROJECT-MINGOS-0002
-- GOV-0010
-- GOV-0014
-- GOV-0018
-- GOV-0019
-- ADR-0007
+  - MF-0004
+  - PROJECT-MINGOS-0002
+  - GOV-0010
+  - GOV-0018
+  - GOV-0038
+  - GOV-0044
+  - GOV-0046
+  - GOV-0048
+  - ADR-0013
+  - ADR-0014
 status: Proposed
 title: Consent and Data Rights Lifecycle Protocol
 updated: 2026-07-12
-version: 0.1.0
+version: 0.2.0-draft.1
 ---
 
 # RFC-0002 — Consent and Data Rights Lifecycle Protocol
 
 ## Status
 
-Proposed minimum protocol. It does not assert that current products
-already conform.
+Proposed revised draft. This revision implements `REV-0005` through
+`REV-0008` and the applicable R0 decisions from `ADR-0013`.
+
+It does not claim legal compliance in every jurisdiction or current product
+conformance.
 
 ## 1. Problem
 
 Consent cannot be a single permanent checkbox.
 
-Data can move through:
+Data may move through public forms, parent interfaces, human-support
+workflows, safety records, family profiles, cases, summaries, analysis
+systems, model evaluation, backups, and audit logs.
 
-- public website forms;
-- parent interfaces;
-- H5 and enterprise WeChat channels;
-- human-support workflows;
-- safety records;
-- family profiles;
-- cases and summaries;
-- analysis and model-evaluation systems;
-- backups and audit logs.
+Without a lifecycle protocol, purpose, authority, rights, retention,
+correction, and deletion become fragmented.
 
-Without a lifecycle protocol, purpose, rights, and retention become
-fragmented.
+## 2. Jurisdiction and basis boundary
 
-## 2. Core rule
+This RFC defines technical governance categories, not universal legal bases.
+
+Every implementation MUST declare a jurisdiction profile that identifies:
+
+- applicable operating locations;
+- asserted legal or professional bases and qualified reviewer;
+- age and representative rules;
+- rights and response obligations;
+- retention and deletion constraints;
+- safeguarding and mandatory-disclosure duties;
+- unresolved or conflicting requirements;
+- review date and owner.
+
+Where the jurisdiction profile is absent, expired, or uncertain, the
+implementation MUST NOT claim that processing is lawful merely because it
+matches a technical category in this RFC.
+
+## 3. Core rule
 
 Every material collection or use MUST have a traceable basis containing:
 
 - subject;
 - operator;
 - purpose;
+- technical processing-basis category;
+- jurisdiction qualification where claimed;
 - data scope;
 - access scope;
 - processing or use;
-- retention rule;
+- retention profile;
 - review point;
-- revocation or objection route;
-- exception basis where relevant.
+- revocation, objection, or rights route;
+- representative authority where applicable;
+- exception basis and review where relevant.
 
-“Future improvement” or “unknown future value” is not a sufficient
-purpose.
+“Future improvement,” “unknown future value,” or “the data already exists”
+is not a sufficient purpose.
 
-## 3. Required records
+## 4. Processing-basis categories
 
-### 3.1 Purpose definition
+An implementation MUST distinguish at least:
+
+- explicit optional permission;
+- requested service operation;
+- safety or protection operation;
+- mandatory institutional or legal operation;
+- security, fraud, or incident operation;
+- separately approved research, validation, or evaluation use;
+- unknown or disputed basis.
+
+These are technical categories. A jurisdiction profile MUST state whether and
+how a category maps to a lawful or professional basis.
+
+Mandatory, emergency, safety, or institutional processing MUST NOT be
+misrepresented as freely given consent.
+
+## 5. Required records
+
+### 5.1 Purpose definition
 
 Minimum fields:
 
@@ -78,33 +117,56 @@ Minimum fields:
 - `data_categories`;
 - `allowed_operations`;
 - `recipients`;
-- `retention_rule`;
+- `processing_basis_categories`;
+- `jurisdiction_profile`;
+- `retention_profile`;
 - `risk_class`;
 - `review_owner`;
 - `status`.
 
-### 3.2 Permission or processing basis
+### 5.2 Permission or processing basis
 
 Minimum fields:
 
-- `grant_id`;
+- `basis_id`;
 - `person_or_representative`;
+- `representative_authority_ref`;
 - `purpose_id`;
+- `basis_category`;
+- `jurisdiction_qualification`;
 - `scope`;
 - `version`;
-- `granted_at`;
+- `recorded_at`;
 - `expires_or_reviews_at`;
-- `withdrawal_method`;
+- `withdrawal_or_objection_method`;
 - `constraints`;
 - `exception_basis`;
-- `evidence_of_notice`.
+- `evidence_of_notice`;
+- `conflict_status`.
 
-The protocol uses “permission or processing basis” because not every
-lawful or safety-sensitive operation is ordinary consent.
-Implementations MUST not mislabel mandatory or emergency processing as
-freely given consent.
+### 5.3 Representative authority
 
-### 3.3 Data asset inventory
+Minimum fields:
+
+- `authority_id`;
+- `representative`;
+- `subject`;
+- `representative_type`;
+- `authority_source_or_evidence`;
+- `permitted_actions`;
+- `prohibited_actions`;
+- `conflicts_of_interest`;
+- `starts_at`;
+- `expires_or_reviews_at`;
+- `subject_notice_or_reason_for_delay`;
+- `independent_review_route`.
+
+Age or family role alone MUST NOT create unlimited authority.
+
+A conflict, disputed authority, or high-impact request MUST route to a
+conflict-free reviewer.
+
+### 5.4 Data asset inventory
 
 Minimum fields:
 
@@ -116,13 +178,14 @@ Minimum fields:
 - `storage_locations`;
 - `purposes`;
 - `authorized_roles`;
-- `retention_rule`;
+- `retention_profile`;
 - `deletion_dependencies`;
 - `backup_handling`;
+- `derived_asset_refs`;
 - `exportability`;
 - `audit_refs`.
 
-### 3.4 Rights request
+### 5.5 Rights request
 
 Supported request types SHOULD include:
 
@@ -142,132 +205,178 @@ Minimum fields:
 
 - requester;
 - represented subject if any;
+- representative authority evidence;
+- conflict check;
 - scope;
-- identity or authority verification;
+- identity verification;
 - received time;
 - responsible owner;
 - status;
 - data located;
+- derived and backup locations;
 - exceptions;
 - decision;
 - completion evidence;
+- independent or different-reviewer route;
 - appeal route.
 
-## 4. Lifecycle
+## 6. Retention profiles
 
-``` text
+Every asset MUST map to a named retention profile.
+
+A retention profile MUST state:
+
+- purpose;
+- covered data;
+- storage and backup locations;
+- access roles;
+- start event;
+- review interval;
+- deletion, archival, or anonymization trigger;
+- backup-deletion or cryptographic-erasure handling;
+- exception categories;
+- exception owner;
+- maximum exception period or mandatory review;
+- completion evidence;
+- appeal or independent-review route where appropriate.
+
+At minimum, implementations SHOULD distinguish:
+
+- transient intake;
+- active service;
+- safety or incident;
+- security and audit;
+- restricted validation evidence;
+- public or permanently published record.
+
+This RFC does not prescribe one universal duration. Each duration MUST be
+defined and justified in the jurisdiction and service profile.
+
+Indefinite retention for unspecified improvement MUST NOT be permitted.
+
+## 7. Rights lifecycle
+
+```text
 Purpose proposed
   ↓
-Risk and affected-person review
+Risk, jurisdiction, and affected-person review
   ↓
-Notice and permission/basis recorded
+Notice and permission or basis recorded
   ↓
 Minimum data collected
   ↓
-Use and access logged
+Use, sharing, derivation, and access logged
   ↓
-Periodic purpose and retention review
+Periodic purpose, authority, and retention review
   ↓
-Correction / restriction / export / deletion request
+Correction / restriction / export / deletion / objection
+  ↓
+Propagation to dependent and backup processes
   ↓
 Completion or narrowly justified exception
   ↓
-Evidence and appeal
+Evidence, different-reviewer route, and appeal
 ```
 
-## 5. Retention and deletion
+## 8. Cross-channel authority and conflict resolution
 
-A retention rule MUST state:
+An implementation MAY use a centralized, federated, or hybrid identity,
+permission, memory, and audit architecture.
 
-- why the data is kept;
-- which data is kept;
-- where it is kept;
-- who can access it;
-- when it is reviewed;
-- what causes deletion or archival;
-- how backups are handled;
-- whether a restricted exception applies.
+It MUST maintain an explicit authority map that identifies which system or
+role is authoritative for:
 
-Exceptions based on safety, legal duty, incident investigation, fraud
-prevention, or protection of others MUST be:
+- identity linkage;
+- active purpose;
+- permission and withdrawal;
+- subject correction;
+- representative authority;
+- retention profile;
+- audit and incident evidence.
 
-- specific;
-- minimally scoped;
-- access-restricted;
-- time- or review-bounded;
-- explained to the requester where safe and lawful;
-- appealable or independently reviewable where appropriate.
+When channels conflict:
 
-## 6. Cross-channel identity
+1. a verified subject correction supersedes an inference or third-party
+   assertion as the current interpretation, without deleting history;
+2. the most restrictive current instruction governs optional use while the
+   conflict is reviewed;
+3. an unresolved identity or authority conflict freezes expansion, sharing,
+   training, or high-impact use;
+4. safety or mandatory exceptions require a specific basis, minimum scope,
+   named actor, and review point;
+5. correction, withdrawal, and deletion events MUST propagate across linked
+   channels and derived assets;
+6. a channel-specific record MUST NOT become an untraceable shadow profile.
 
-All MingOS channels SHOULD resolve to a governed identity, permission,
-memory, and audit layer.
+## 9. Migration, lineage, and completion
 
-A channel-specific local record MUST NOT become an untraceable shadow
-profile.
+Imported data MUST preserve:
 
-Required controls include:
+- original source and collection context where known;
+- original purpose and basis where known;
+- transformation and migration steps;
+- current and historical authority;
+- derived assets and dependent decisions;
+- unresolved uncertainty;
+- rollback or remediation limits.
 
-- stable person and family identifiers;
-- channel linkage with authorization;
-- duplicate and conflict handling;
-- purpose propagation;
-- revocation propagation;
-- deletion propagation;
-- audit continuity;
-- separation of public lead data from service and case data.
+A rights request is not complete until active primary, derived, indexed,
+shared, and scheduled backup handling has been addressed or a narrow
+exception is recorded.
 
-## 7. Public forms
+## 10. Public forms
 
 General early-access or contact forms SHOULD:
 
 - minimize fields;
-- state purpose and retention;
+- state purpose and retention profile;
 - state who receives the information;
-- provide a request/contact route;
-- prohibit submission of identifiable child, medical, crisis, or private
-  consultation details unless a separately governed secure intake
-  exists;
+- identify automated and human follow-up;
+- provide a rights request route;
+- prohibit identifiable child, medical, crisis, or private consultation
+  details unless a separately governed secure intake exists;
 - avoid pre-checked optional permissions;
-- distinguish newsletter, research contact, product access, and
-  consultation requests.
+- separate newsletter, research, product access, and consultation purposes.
 
-## 8. Prohibited behavior
+## 11. Prohibited behavior
 
 An implementation MUST NOT:
 
-- collect sensitive child cases through a general marketing field
-  without a governed basis;
+- collect sensitive child cases through a general marketing field without a
+  governed basis;
 - reuse case data for model training merely because it exists;
-- scatter data so broadly that correction or deletion is impossible;
+- scatter data so broadly that rights cannot propagate;
 - retain data indefinitely for unspecified improvement;
 - hide a retention exception inside general terms;
 - call an emergency or mandatory process voluntary consent;
-- provide staff broader access than their current purpose requires;
-- delete only the visible record while silently retaining active copies
-  elsewhere.
+- provide staff access broader than the active purpose;
+- treat family role as unlimited representative authority;
+- resolve channel conflicts by silently choosing the most permissive record;
+- delete only the visible record while retaining active copies elsewhere.
 
-## 9. Acceptance tests
+## 12. Acceptance tests
 
 A conforming implementation must demonstrate:
 
-1.  every stored data category maps to at least one active purpose;
-2.  a revoked optional purpose stops future use across channels;
-3.  an access request returns data source, purpose, status, and storage
-    scope;
-4.  correction preserves revision history without preserving a false
-    current interpretation;
-5.  deletion reaches primary stores, derived indexes, and scheduled
-    backup handling;
-6.  a retained exception records its basis and next review;
-7.  public lead data cannot be accessed as if it were a counseling case;
-8.  staff access is purpose- and role-limited;
-9.  an appeal can be routed to a different responsible reviewer.
+1. every data category maps to an active purpose, technical basis,
+   jurisdiction profile, and retention profile;
+2. missing jurisdiction qualification prevents a universal lawfulness claim;
+3. representative authority is evidenced, scoped, conflict-checked, and
+   expiring;
+4. revoked optional use stops across channels and derived processes;
+5. a verified correction propagates without erasing history;
+6. an unresolved cross-channel conflict freezes expanded or high-impact use;
+7. deletion addresses primary, derived, indexed, shared, and backup handling;
+8. a retained exception records basis, scope, owner, review, and appeal;
+9. public lead data cannot be accessed as a counseling case;
+10. an appeal routes to a different or conflict-free responsible reviewer.
 
-## 10. Open questions
+## 13. Remaining review questions
 
-- Which permissions must be separate rather than bundled?
-- How should representative authority be verified?
-- What data should be portable in a first implementation?
-- What retention periods are justified for safety, cases, and audit?
-- Which requests can be automated and which require human review?
+- Which jurisdiction profiles are required for the first reference
+  implementations?
+- Which retention-profile durations require external legal or professional
+  review?
+- Which rights requests may be safely automated?
+- Which representative-authority evidence is proportionate for different
+  impact classes?

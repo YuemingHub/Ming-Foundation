@@ -76,10 +76,18 @@ related:
 - GOV-0043
 - ADR-0012
 - REF-0004
+- ADR-0013
+- ADR-0014
+- GOV-0044
+- GOV-0045
+- GOV-0046
+- GOV-0047
+- GOV-0048
+- REF-0005
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.10
+version: 1.0.0-alpha.11
 ---
 
 # GOV-0001 — Current Canonical State
@@ -103,9 +111,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 10 — RFC Review Execution and
-  Revision Planning
-- **Current repository version:** `1.0.0-alpha.10`
+- **Current repository stage:** Foundation 1.0 / Day 11 — RFC Source Revision Wave R0 and R1
+- **Current repository version:** `1.0.0-alpha.11`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -277,12 +284,14 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 10, the next canonical work is RFC Source Revision Wave R0 and R1:
+After Day 11, the next canonical work is Internal Architecture Review Round 2 for RFC-0001 through RFC-0003:
 
-1. decide shared impact, jurisdiction, affected-person review, and migration profiles;
-2. draft REV-0001 through REV-0012 in RFC-0001 through RFC-0003;
-3. synchronize source, requirements, tests, ambiguities, and dissent;
-4. keep RFC status at Proposed;
-5. run Internal Architecture Review Round 2;
-6. prepare external, affected-person, legal, privacy, and safety review scopes;
-7. do not enter another repository without explicit user instruction.
+1. run `python scripts/validate_all.py`;
+2. execute the prepared review dimensions against `0.2.0-draft.1`;
+3. decide whether AMB-0001 through AMB-0012 are accepted, revised, or rejected;
+4. disposition DIS-0001 through DIS-0006 without erasing minority views;
+5. execute selected repository-level acceptance tests where possible;
+6. retain product implementation conformance as an empty and separate scope;
+7. keep all RFCs at Proposed unless a separate decision is justified;
+8. prepare R2 source revision for RFC-0004 and RFC-0005;
+9. do not enter another repository without explicit user instruction.

@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.4
+version: 1.0.0-alpha.5
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -189,3 +189,23 @@ Open `BlockingForCandidate` ambiguities MUST be resolved, or an Accepted decisio
 A review record MUST identify its class and limitations. Review classes include internal architecture, agency and ethics, privacy and consent, safety, affected-person or domain, legal or jurisdiction, and implementation conformance.
 
 Completing one class MUST NOT be described as completing all review. Promotion proposals MUST identify completed, incomplete, and deferred classes. Minority views MUST remain traceable.
+## 15. Draft source implementation and ambiguity state
+
+A planned revision may be marked `ImplementedPendingReview` when:
+
+- source text has been changed;
+- derived registries and tests are synchronized;
+- repository validation passes;
+- the ambiguity remains Open;
+- the next review round is explicitly required.
+
+`ImplementedPendingReview` MUST NOT be represented as:
+
+- resolved;
+- reviewed;
+- conforming;
+- Candidate;
+- Stable.
+
+A cross-RFC item may be `PartiallyImplemented` when it has been applied to
+only part of its declared source scope.

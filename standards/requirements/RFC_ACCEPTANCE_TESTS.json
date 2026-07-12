@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-ACCEPTANCE-TESTS-0001",
   "title": "Ming Foundation RFC Acceptance Test Registry",
   "status": "Accepted test specification index",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-  "registry_version": "1.0.0-alpha.9",
+  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
+  "registry_version": "1.0.0-alpha.11",
   "authority": {
     "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
     "registry_role": "Test specification index; does not prove execution or conformance",
@@ -48,7 +48,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT002",
@@ -85,7 +88,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT003",
@@ -123,7 +129,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT004",
@@ -161,7 +170,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT005",
@@ -199,7 +211,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT006",
@@ -237,7 +252,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT007",
@@ -274,7 +292,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT008",
@@ -312,7 +333,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT009",
@@ -350,7 +374,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT010",
@@ -388,7 +415,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT011",
@@ -425,7 +455,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT012",
@@ -463,7 +496,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0001-AT013",
@@ -501,7 +537,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT001",
@@ -539,7 +578,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT002",
@@ -577,7 +619,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT003",
@@ -615,7 +660,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT004",
@@ -651,7 +699,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT005",
@@ -689,7 +740,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT006",
@@ -727,7 +781,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT007",
@@ -764,7 +821,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT008",
@@ -802,7 +862,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT009",
@@ -841,7 +904,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT010",
@@ -880,7 +946,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT011",
@@ -919,7 +988,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT012",
@@ -958,7 +1030,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT013",
@@ -997,7 +1072,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT014",
@@ -1036,7 +1114,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT015",
@@ -1075,7 +1156,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0002-AT016",
@@ -1114,7 +1198,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT001",
@@ -1152,7 +1239,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT002",
@@ -1189,7 +1279,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT003",
@@ -1226,7 +1319,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT004",
@@ -1264,7 +1360,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT005",
@@ -1301,7 +1400,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT006",
@@ -1338,7 +1440,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT007",
@@ -1376,7 +1481,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT008",
@@ -1413,7 +1521,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT009",
@@ -1450,7 +1561,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0003-AT010",
@@ -1488,7 +1602,10 @@
         "Blocked",
         "NotApplicable"
       ],
-      "review_record": "GOV-0032"
+      "review_record": "GOV-0032",
+      "source_version": "0.2.0-draft.1",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "revision_state": "UpdatedPendingExecution"
     },
     {
       "test_id": "RFC-0004-AT001",
@@ -2380,5 +2497,6 @@
       ],
       "review_record": "GOV-0032"
     }
-  ]
+  ],
+  "day11_source_revision": "GOV-0044"
 }

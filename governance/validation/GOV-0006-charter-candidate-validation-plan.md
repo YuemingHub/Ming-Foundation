@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.10
+version: 1.0.0-alpha.11
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -268,3 +268,9 @@ No affected-person, legal, product-conformance, or Charter-validation stream is 
 ## Day 10 internal review
 
 Internal RFC review improves standards quality but does not complete affected-person, external, legal, implementation, or Charter validation streams.
+
+## 14. Day 11 standards revision
+
+R0 and R1 revisions improve the standards used by future Charter validation.
+
+No Charter validation stream is completed by source revision alone.

@@ -39,7 +39,9 @@
               "Planned",
               "InProgress",
               "Complete",
-              "Deferred"
+              "Deferred",
+              "ImplementedPendingReview",
+              "PartiallyImplemented"
             ]
           }
         }

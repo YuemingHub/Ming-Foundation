@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-DISSENT-0001",
   "title": "Ming Foundation RFC Dissent and Unresolved Objection Register",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
-  "registry_version": "1.0.0-alpha.10",
+  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
+  "registry_version": "1.0.0-alpha.11",
   "governing_record": "GOV-0043",
   "summary": {
     "total": 8,
@@ -27,7 +27,8 @@
         "RFC-0004",
         "RFC-0005"
       ],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Partially addressed by ADR-0013 affected-person review gate; remains open pending actual review."
     },
     {
       "dissent_id": "DIS-0002",
@@ -37,7 +38,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Create jurisdiction- and safeguarding-qualified participation profiles.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Addressed in RFC-0001 participation and conflict rules; remains open pending affected-person and jurisdiction review."
     },
     {
       "dissent_id": "DIS-0003",
@@ -47,7 +49,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Define delay, expiry, review, and appeal.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Addressed through bounded temporary restriction and later-notice rules; remains open pending safety review."
     },
     {
       "dissent_id": "DIS-0004",
@@ -57,7 +60,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Compare centralized, federated, and hybrid models.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Addressed by permitting centralized, federated, or hybrid authority maps; remains open pending architecture review."
     },
     {
       "dissent_id": "DIS-0005",
@@ -67,7 +71,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Define service profiles including no-handoff systems.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Addressed by explicit active-handoff, bounded-review, no-handoff, and unverified service profiles; remains open pending operational review."
     },
     {
       "dissent_id": "DIS-0006",
@@ -77,7 +82,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Define proportionality factors and review.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "Addressed through a proportionality and precautionary-basis record; remains open pending safety review."
     },
     {
       "dissent_id": "DIS-0007",
@@ -87,7 +93,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Define conservative default and exception review.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "R2 item; no Day 11 source change."
     },
     {
       "dissent_id": "DIS-0008",
@@ -97,7 +104,8 @@
       "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
       "required_resolution": "Require placement and comprehension testing.",
       "affected_documents": [],
-      "status": "Open"
+      "status": "Open",
+      "day11_disposition": "R2 item; no Day 11 source change."
     }
   ]
 }

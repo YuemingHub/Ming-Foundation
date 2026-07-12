@@ -1,17 +1,20 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-RFC-AMBIGUITIES-0001",
   "title": "Ming Foundation RFC Ambiguity and Revision Register",
   "status": "Accepted review register",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
-  "registry_version": "1.0.0-alpha.10",
+  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
+  "registry_version": "1.0.0-alpha.11",
   "governing_record": "GOV-0034",
   "summary": {
     "total": 19,
     "blocking_for_candidate": 15,
     "candidate_clarification": 4,
-    "open": 19
+    "open": 19,
+    "implemented_pending_review": 12,
+    "planned": 7,
+    "resolved": 0
   },
   "ambiguities": [
     {
@@ -28,7 +31,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0001",
-      "internal_review_record": "GOV-0037"
+      "internal_review_record": "GOV-0037",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0001",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0002",
@@ -44,7 +54,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0002",
-      "internal_review_record": "GOV-0037"
+      "internal_review_record": "GOV-0037",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0001",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0003",
@@ -61,7 +78,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0003",
-      "internal_review_record": "GOV-0037"
+      "internal_review_record": "GOV-0037",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0001",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0004",
@@ -77,7 +101,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0004",
-      "internal_review_record": "GOV-0037"
+      "internal_review_record": "GOV-0037",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0001",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0005",
@@ -94,7 +125,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0005",
-      "internal_review_record": "GOV-0038"
+      "internal_review_record": "GOV-0038",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0002",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0006",
@@ -110,7 +148,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0006",
-      "internal_review_record": "GOV-0038"
+      "internal_review_record": "GOV-0038",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0002",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0007",
@@ -130,7 +175,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0007",
-      "internal_review_record": "GOV-0038"
+      "internal_review_record": "GOV-0038",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0002",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0008",
@@ -148,7 +200,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0008",
-      "internal_review_record": "GOV-0038"
+      "internal_review_record": "GOV-0038",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0002",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0009",
@@ -165,7 +224,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0009",
-      "internal_review_record": "GOV-0039"
+      "internal_review_record": "GOV-0039",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0003",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0010",
@@ -181,7 +247,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0010",
-      "internal_review_record": "GOV-0039"
+      "internal_review_record": "GOV-0039",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0003",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0011",
@@ -198,7 +271,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0011",
-      "internal_review_record": "GOV-0039"
+      "internal_review_record": "GOV-0039",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0003",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0012",
@@ -215,7 +295,14 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0012",
-      "internal_review_record": "GOV-0039"
+      "internal_review_record": "GOV-0039",
+      "source_revision_state": "ImplementedPendingReview",
+      "implementation_refs": [
+        "RFC-0003",
+        "ADR-0013",
+        "GOV-0048"
+      ],
+      "implemented_source_version": "0.2.0-draft.1"
     },
     {
       "ambiguity_id": "AMB-0013",
@@ -234,7 +321,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0013",
-      "internal_review_record": "GOV-0040"
+      "internal_review_record": "GOV-0040",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0014",
@@ -251,7 +339,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0014",
-      "internal_review_record": "GOV-0040"
+      "internal_review_record": "GOV-0040",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0015",
@@ -269,7 +358,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0015",
-      "internal_review_record": "GOV-0040"
+      "internal_review_record": "GOV-0040",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0016",
@@ -286,7 +376,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0016",
-      "internal_review_record": "GOV-0040"
+      "internal_review_record": "GOV-0040",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0017",
@@ -303,7 +394,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0017",
-      "internal_review_record": "GOV-0041"
+      "internal_review_record": "GOV-0041",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0018",
@@ -320,7 +412,8 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0018",
-      "internal_review_record": "GOV-0041"
+      "internal_review_record": "GOV-0041",
+      "source_revision_state": "Planned"
     },
     {
       "ambiguity_id": "AMB-0019",
@@ -336,8 +429,10 @@
       "status": "Open",
       "review_disposition": "RequiresRFCRevision",
       "revision_item_ref": "REV-0019",
-      "internal_review_record": "GOV-0041"
+      "internal_review_record": "GOV-0041",
+      "source_revision_state": "Planned"
     }
   ],
-  "internal_review_record": "GOV-0036"
+  "internal_review_record": "GOV-0036",
+  "day11_record": "GOV-0048"
 }

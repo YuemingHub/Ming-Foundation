@@ -100,8 +100,9 @@ def main() -> int:
             errors.append(f"{rid}: missing acceptance_test_refs")
         test_refs.update(refs)
         fidelity = requirement.get("fidelity_review", {})
-        if fidelity.get("state") != "Confirmed":
-            errors.append(f"{rid}: fidelity state is not Confirmed")
+        current_state = requirement.get("current_source_state", "Confirmed")
+        if current_state not in {"Confirmed", "RevisedPendingReview"}:
+            errors.append(f"{rid}: invalid current source state {current_state!r}")
         ambiguity_refs.update(fidelity.get("ambiguity_refs", []))
 
     for source, count in coverage.items():
