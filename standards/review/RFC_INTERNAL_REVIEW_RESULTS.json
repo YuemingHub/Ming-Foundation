@@ -1,0 +1,945 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-INTERNAL-REVIEW-RESULTS-0001",
+  "title": "Ming Foundation Internal RFC Review Results",
+  "status": "Accepted internal review record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+  "registry_version": "1.0.0-alpha.10",
+  "governing_record": "GOV-0036",
+  "review_scope": {
+    "round": "InternalArchitectureRound1",
+    "complete": true,
+    "external_review_complete": false,
+    "affected_person_review_complete": false,
+    "legal_review_complete": false,
+    "implementation_conformance_complete": false
+  },
+  "summary": {
+    "rfc_count": 5,
+    "dimension_count": 45,
+    "pass": 6,
+    "revise": 29,
+    "blocked": 10,
+    "overall_recommendation": "ReviseAndRetainProposed"
+  },
+  "results": [
+    {
+      "review_id": "IRR-RFC-0001-20260712",
+      "source_document": "RFC-0001",
+      "source_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+      "source_blob_sha": "c32f0d966ac8772e55d5ebf15af6b7c8c7db4b1d",
+      "review_round": "InternalArchitectureRound1",
+      "review_scope": "Internal standards, architecture, governance, and evidence review",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No external independent review.",
+        "No affected-person or child-rights review.",
+        "No jurisdiction-specific legal review.",
+        "No implementation target selected.",
+        "No acceptance-test specification executed."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Revise",
+          "finding": "Core structure is coherent, but Candidate-level thresholds and shared terms require normative clarification.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "The object and traceability model is coherent enough for continued revision.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Agency protections are directionally correct but need explicit authority, conflict, and participation rules.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Blocked",
+          "finding": "Privacy and rights principles are strong, but unresolved authority, disclosure, retention, or de-identification rules block Candidate.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Safety principles require clearer proportionality, accountability, availability, and independent-review rules.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Acceptance tests are specified but remain unexecuted; ambiguous decision rules must become testable.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, child-rights, external domain, or jurisdiction review was completed in this round.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Revise",
+          "finding": "Legacy data, labels, claims, and derived records need migration, lineage, and rollback rules.",
+          "ambiguity_refs": [
+            "AMB-0001",
+            "AMB-0002",
+            "AMB-0003",
+            "AMB-0004"
+          ],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Pass",
+          "finding": "Evidence boundaries are visible, but some expiry, publication, legal, or operational limitations need stronger records.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0001",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "ambiguity_refs": [
+        "AMB-0001",
+        "AMB-0002",
+        "AMB-0003",
+        "AMB-0004"
+      ],
+      "revision_item_refs": [
+        "REV-0001",
+        "REV-0002",
+        "REV-0003",
+        "REV-0004"
+      ],
+      "dissent_refs": [
+        "DIS-0001",
+        "DIS-0002",
+        "DIS-0003"
+      ],
+      "review_record": "GOV-0037"
+    },
+    {
+      "review_id": "IRR-RFC-0002-20260712",
+      "source_document": "RFC-0002",
+      "source_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+      "source_blob_sha": "43ca687ade380c344d5de7a19b5e7c038761b667",
+      "review_round": "InternalArchitectureRound1",
+      "review_scope": "Internal standards, architecture, governance, and evidence review",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No external independent review.",
+        "No affected-person or child-rights review.",
+        "No jurisdiction-specific legal review.",
+        "No implementation target selected.",
+        "No acceptance-test specification executed."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Revise",
+          "finding": "Core structure is coherent, but Candidate-level thresholds and shared terms require normative clarification.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Revise",
+          "finding": "The object and traceability model is coherent enough for continued revision.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Agency protections are directionally correct but need explicit authority, conflict, and participation rules.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Blocked",
+          "finding": "Privacy and rights principles are strong, but unresolved authority, disclosure, retention, or de-identification rules block Candidate.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Safety principles require clearer proportionality, accountability, availability, and independent-review rules.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Acceptance tests are specified but remain unexecuted; ambiguous decision rules must become testable.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, child-rights, external domain, or jurisdiction review was completed in this round.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Revise",
+          "finding": "Legacy data, labels, claims, and derived records need migration, lineage, and rollback rules.",
+          "ambiguity_refs": [
+            "AMB-0005",
+            "AMB-0006",
+            "AMB-0007",
+            "AMB-0008"
+          ],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Pass",
+          "finding": "Evidence boundaries are visible, but some expiry, publication, legal, or operational limitations need stronger records.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0002",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "ambiguity_refs": [
+        "AMB-0005",
+        "AMB-0006",
+        "AMB-0007",
+        "AMB-0008"
+      ],
+      "revision_item_refs": [
+        "REV-0005",
+        "REV-0006",
+        "REV-0007",
+        "REV-0008"
+      ],
+      "dissent_refs": [
+        "DIS-0001",
+        "DIS-0004"
+      ],
+      "review_record": "GOV-0038"
+    },
+    {
+      "review_id": "IRR-RFC-0003-20260712",
+      "source_document": "RFC-0003",
+      "source_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+      "source_blob_sha": "97e4f37200a08dcd78f006d4f76928ff832cee3d",
+      "review_round": "InternalArchitectureRound1",
+      "review_scope": "Internal standards, architecture, governance, and evidence review",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No external independent review.",
+        "No affected-person or child-rights review.",
+        "No jurisdiction-specific legal review.",
+        "No implementation target selected.",
+        "No acceptance-test specification executed."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Revise",
+          "finding": "Core structure is coherent, but Candidate-level thresholds and shared terms require normative clarification.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "The object and traceability model is coherent enough for continued revision.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Agency protections are directionally correct but need explicit authority, conflict, and participation rules.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Revise",
+          "finding": "Privacy and rights principles are strong, but unresolved authority, disclosure, retention, or de-identification rules block Candidate.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Blocked",
+          "finding": "Safety principles require clearer proportionality, accountability, availability, and independent-review rules.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Acceptance tests are specified but remain unexecuted; ambiguous decision rules must become testable.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, child-rights, external domain, or jurisdiction review was completed in this round.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Revise",
+          "finding": "Legacy data, labels, claims, and derived records need migration, lineage, and rollback rules.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Revise",
+          "finding": "Evidence boundaries are visible, but some expiry, publication, legal, or operational limitations need stronger records.",
+          "ambiguity_refs": [
+            "AMB-0009",
+            "AMB-0010",
+            "AMB-0011",
+            "AMB-0012"
+          ],
+          "evidence_refs": [
+            "RFC-0003",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "ambiguity_refs": [
+        "AMB-0009",
+        "AMB-0010",
+        "AMB-0011",
+        "AMB-0012"
+      ],
+      "revision_item_refs": [
+        "REV-0009",
+        "REV-0010",
+        "REV-0011",
+        "REV-0012"
+      ],
+      "dissent_refs": [
+        "DIS-0001",
+        "DIS-0005",
+        "DIS-0006"
+      ],
+      "review_record": "GOV-0039"
+    },
+    {
+      "review_id": "IRR-RFC-0004-20260712",
+      "source_document": "RFC-0004",
+      "source_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+      "source_blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "review_round": "InternalArchitectureRound1",
+      "review_scope": "Internal standards, architecture, governance, and evidence review",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No external independent review.",
+        "No affected-person or child-rights review.",
+        "No jurisdiction-specific legal review.",
+        "No implementation target selected.",
+        "No acceptance-test specification executed."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Revise",
+          "finding": "Core structure is coherent, but Candidate-level thresholds and shared terms require normative clarification.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "The object and traceability model is coherent enough for continued revision.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Agency protections are directionally correct but need explicit authority, conflict, and participation rules.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Blocked",
+          "finding": "Privacy and rights principles are strong, but unresolved authority, disclosure, retention, or de-identification rules block Candidate.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Safety principles require clearer proportionality, accountability, availability, and independent-review rules.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Acceptance tests are specified but remain unexecuted; ambiguous decision rules must become testable.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, child-rights, external domain, or jurisdiction review was completed in this round.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Revise",
+          "finding": "Legacy data, labels, claims, and derived records need migration, lineage, and rollback rules.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Revise",
+          "finding": "Evidence boundaries are visible, but some expiry, publication, legal, or operational limitations need stronger records.",
+          "ambiguity_refs": [
+            "AMB-0013",
+            "AMB-0014",
+            "AMB-0015",
+            "AMB-0016"
+          ],
+          "evidence_refs": [
+            "RFC-0004",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "ambiguity_refs": [
+        "AMB-0013",
+        "AMB-0014",
+        "AMB-0015",
+        "AMB-0016"
+      ],
+      "revision_item_refs": [
+        "REV-0013",
+        "REV-0014",
+        "REV-0015",
+        "REV-0016"
+      ],
+      "dissent_refs": [
+        "DIS-0001",
+        "DIS-0007"
+      ],
+      "review_record": "GOV-0040"
+    },
+    {
+      "review_id": "IRR-RFC-0005-20260712",
+      "source_document": "RFC-0005",
+      "source_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+      "source_blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "review_round": "InternalArchitectureRound1",
+      "review_scope": "Internal standards, architecture, governance, and evidence review",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No external independent review.",
+        "No affected-person or child-rights review.",
+        "No jurisdiction-specific legal review.",
+        "No implementation target selected.",
+        "No acceptance-test specification executed."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Revise",
+          "finding": "Core structure is coherent, but Candidate-level thresholds and shared terms require normative clarification.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "The object and traceability model is coherent enough for continued revision.",
+          "ambiguity_refs": [],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Agency protections are directionally correct but need explicit authority, conflict, and participation rules.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Revise",
+          "finding": "Privacy and rights principles are strong, but unresolved authority, disclosure, retention, or de-identification rules block Candidate.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Safety principles require clearer proportionality, accountability, availability, and independent-review rules.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Blocked",
+          "finding": "Acceptance tests are specified but remain unexecuted; ambiguous decision rules must become testable.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, child-rights, external domain, or jurisdiction review was completed in this round.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Revise",
+          "finding": "Legacy data, labels, claims, and derived records need migration, lineage, and rollback rules.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Revise",
+          "finding": "Evidence boundaries are visible, but some expiry, publication, legal, or operational limitations need stronger records.",
+          "ambiguity_refs": [
+            "AMB-0017",
+            "AMB-0018",
+            "AMB-0019"
+          ],
+          "evidence_refs": [
+            "RFC-0005",
+            "GOV-0032",
+            "GOV-0033",
+            "GOV-0034"
+          ]
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "ambiguity_refs": [
+        "AMB-0017",
+        "AMB-0018",
+        "AMB-0019"
+      ],
+      "revision_item_refs": [
+        "REV-0017",
+        "REV-0018",
+        "REV-0019"
+      ],
+      "dissent_refs": [
+        "DIS-0001",
+        "DIS-0008"
+      ],
+      "review_record": "GOV-0041"
+    }
+  ]
+}

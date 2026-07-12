@@ -66,10 +66,20 @@ related:
 - GOV-0035
 - ADR-0011
 - REF-0003
+- GOV-0036
+- GOV-0037
+- GOV-0038
+- GOV-0039
+- GOV-0040
+- GOV-0041
+- GOV-0042
+- GOV-0043
+- ADR-0012
+- REF-0004
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.9
+version: 1.0.0-alpha.10
 ---
 
 # GOV-0001 — Current Canonical State
@@ -93,9 +103,9 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 9 — RFC Review Preparation and
-  Conformance Baseline
-- **Current repository version:** `1.0.0-alpha.9`
+- **Current repository stage:** Foundation 1.0 / Day 10 — RFC Review Execution and
+  Revision Planning
+- **Current repository version:** `1.0.0-alpha.10`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -149,6 +159,10 @@ decisions, and governance records.
 - Day 9 acceptance-test specification registry;
 - Day 9 RFC review checklists and ambiguity register;
 - Day 9 canonical non-implementation conformance baseline.
+- Day 10 Internal Architecture Review Round 1 for RFC-0001 through RFC-0005;
+- Day 10 23-item RFC revision plan;
+- Day 10 dissent and unresolved-objection register;
+- Day 10 decision retaining all RFCs at Proposed.
 
 ### In progress
 
@@ -263,15 +277,12 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 9, the next canonical work is RFC Review Execution and Revision Planning:
+After Day 10, the next canonical work is RFC Source Revision Wave R0 and R1:
 
-1. run `python scripts/validate_all.py`;
-2. assign accountable reviewers for RFC-0001 through RFC-0005;
-3. complete architecture, agency, privacy, safety, implementation, and affected-person checklist dispositions;
-4. resolve or explicitly defer the Candidate-blocking ambiguities in `GOV-0034`;
-5. convert selected acceptance-test specifications into executable repository tests;
-6. record objections and minority views;
-7. prepare source RFC revisions without changing status automatically;
-8. retain every RFC at Proposed until a dedicated status decision;
-9. keep external implementation evidence separately scoped and non-blocking;
-10. do not enter another repository without explicit user instruction.
+1. decide shared impact, jurisdiction, affected-person review, and migration profiles;
+2. draft REV-0001 through REV-0012 in RFC-0001 through RFC-0003;
+3. synchronize source, requirements, tests, ambiguities, and dissent;
+4. keep RFC status at Proposed;
+5. run Internal Architecture Review Round 2;
+6. prepare external, affected-person, legal, privacy, and safety review scopes;
+7. do not enter another repository without explicit user instruction.

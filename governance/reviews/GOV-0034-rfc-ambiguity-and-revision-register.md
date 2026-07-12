@@ -2,7 +2,7 @@
 id: GOV-0034
 title: RFC Ambiguity and Revision Register
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -32,8 +32,8 @@ It prevents faithful indexing from being mistaken for complete specification.
 
 ```text
 Open ambiguities: 19
-Blocking for Candidate: 15
-Candidate clarifications: 4
+Blocking for Candidate:    15
+Candidate clarifications:   4
 ```
 
 ## 3. Severity
@@ -89,3 +89,7 @@ The machine register is derived from this governance record and the source RFCs.
 All five RFCs remain `Proposed`.
 
 No ambiguity is resolved merely because it has been assigned an ID.
+
+## Day 10 disposition
+
+All 19 ambiguities remain Open and now map to `REV-0001` through `REV-0019` in `RFC_REVISION_PLAN.json`.

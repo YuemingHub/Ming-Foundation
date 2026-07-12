@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$id": "https://mingos.cn/schemas/rfc-revision-plan.schema.json",
+  "title": "RFC Revision Plan",
+  "required": [
+    "canonical_repository",
+    "source_repository_commit",
+    "target_status_after_revision",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "source_repository_commit": {
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "target_status_after_revision": {
+      "const": "Proposed"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 23,
+      "items": {
+        "type": "object",
+        "required": [
+          "revision_id",
+          "ambiguity_refs",
+          "proposed_change",
+          "status"
+        ],
+        "properties": {
+          "revision_id": {
+            "pattern": "^REV-(?:[0-9]{4}|X[0-9]{3})$"
+          },
+          "status": {
+            "enum": [
+              "Planned",
+              "InProgress",
+              "Complete",
+              "Deferred"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

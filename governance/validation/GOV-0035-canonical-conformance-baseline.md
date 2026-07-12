@@ -2,7 +2,7 @@
 id: GOV-0035
 title: Canonical Non-Implementation Conformance Baseline
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Validation
 created: 2026-07-12
@@ -72,3 +72,7 @@ A future conformance matrix must:
 ## 5. Status effect
 
 The baseline does not change any RFC or Charter status.
+
+## Day 10 boundary
+
+Internal RFC review evaluates standards, not an implementation target. The baseline remains intentionally empty.

@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.9
+version: 1.0.0-alpha.10
 ---
 
 # GOV-0002 — Source Registry
@@ -178,3 +178,7 @@ The following are structured governance infrastructure:
 - non-implementation conformance baseline.
 
 They describe preparation, structure, or open questions. They are not implementation evidence and do not promote an RFC.
+
+## Day 10 internal review evidence
+
+Internal review results, revision plans, and dissent records are canonical governance evidence about RFC quality. They are not product, external, affected-person, legal, or conformance evidence.

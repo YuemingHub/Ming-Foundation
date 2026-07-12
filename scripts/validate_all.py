@@ -14,6 +14,7 @@ SCRIPTS = [
     "validate_requirements.py",
     "validate_release_state.py",
     "validate_review_baseline.py",
+    "validate_review_execution.py",
 ]
 
 

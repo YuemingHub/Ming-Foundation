@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 9 — RFC Review Preparation and Conformance Baseline**. Day 9 confirms the fidelity of 63 machine-readable requirements, adds acceptance-test specifications and five RFC review checklists, records open ambiguities, and creates an intentionally empty conformance baseline without promoting Charter or RFC status.
+This repository is at **Foundation 1.0 / Day 10 — RFC Review Execution and Revision Planning**. Day 10 completes Internal Architecture Review Round 1, records 45 dimension dispositions, maps 19 ambiguities into 23 revision items, preserves eight dissent items, and retains every RFC at Proposed.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -82,8 +82,18 @@ Charter governance and validation:
 - [`governance/validation/GOV-0035-canonical-conformance-baseline.md`](governance/validation/GOV-0035-canonical-conformance-baseline.md)
 - [`governance/decisions/ADR-0011-separate-review-readiness-from-status-promotion.md`](governance/decisions/ADR-0011-separate-review-readiness-from-status-promotion.md)
 - [`reference/REF-0003-rfc-review-and-conformance-baseline-guide.md`](reference/REF-0003-rfc-review-and-conformance-baseline-guide.md)
+- [`governance/reviews/GOV-0036-day10-internal-rfc-review-execution.md`](governance/reviews/GOV-0036-day10-internal-rfc-review-execution.md)
+- [`governance/reviews/GOV-0037-rfc-0001-internal-review.md`](governance/reviews/GOV-0037-rfc-0001-internal-review.md)
+- [`governance/reviews/GOV-0038-rfc-0002-internal-review.md`](governance/reviews/GOV-0038-rfc-0002-internal-review.md)
+- [`governance/reviews/GOV-0039-rfc-0003-internal-review.md`](governance/reviews/GOV-0039-rfc-0003-internal-review.md)
+- [`governance/reviews/GOV-0040-rfc-0004-internal-review.md`](governance/reviews/GOV-0040-rfc-0004-internal-review.md)
+- [`governance/reviews/GOV-0041-rfc-0005-internal-review.md`](governance/reviews/GOV-0041-rfc-0005-internal-review.md)
+- [`governance/remediation/GOV-0042-rfc-revision-plan.md`](governance/remediation/GOV-0042-rfc-revision-plan.md)
+- [`governance/reviews/GOV-0043-rfc-dissent-and-unresolved-objections.md`](governance/reviews/GOV-0043-rfc-dissent-and-unresolved-objections.md)
+- [`governance/decisions/ADR-0012-retain-rfcs-proposed-after-internal-review.md`](governance/decisions/ADR-0012-retain-rfcs-proposed-after-internal-review.md)
+- [`reference/REF-0004-rfc-revision-planning-guide.md`](reference/REF-0004-rfc-revision-planning-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Day 9 review state is `Prepared`, not `Complete`; test specifications have not been executed and the conformance baseline contains no implementation results.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Internal Architecture Review Round 1 is complete, while external, affected-person, legal, and implementation review remain incomplete.
 
 ## Mission
 
@@ -219,7 +229,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.9**
+Current repository foundation version: **1.0.0-alpha.10**
 
 ## License
 

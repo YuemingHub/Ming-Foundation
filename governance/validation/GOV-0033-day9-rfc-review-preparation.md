@@ -2,7 +2,7 @@
 id: GOV-0033
 title: Day 9 RFC Review Preparation Record
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards and Validation
 created: 2026-07-12
@@ -92,3 +92,7 @@ Superseded
 No RFC status changes in Day 9.
 
 The existence of checklists, tests, or schemas is preparation infrastructure only.
+
+## Day 10 use
+
+The prepared checklists were used for Internal Architecture Review Round 1. Reusable checklist definitions remain preparation infrastructure; completed results are stored separately in `RFC_INTERNAL_REVIEW_RESULTS.json`.

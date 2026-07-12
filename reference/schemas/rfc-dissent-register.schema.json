@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$id": "https://mingos.cn/schemas/rfc-dissent-register.schema.json",
+  "title": "RFC Dissent Register",
+  "required": [
+    "canonical_repository",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "dissent_id",
+          "majority_position",
+          "minority_position",
+          "status"
+        ],
+        "properties": {
+          "dissent_id": {
+            "pattern": "^DIS-[0-9]{4}$"
+          },
+          "status": {
+            "enum": [
+              "Open",
+              "Resolved",
+              "Superseded"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -109,7 +109,8 @@
           "verification_methods",
           "evidence_types",
           "acceptance_test_refs",
-          "fidelity_review"
+          "fidelity_review",
+          "internal_review_ref"
         ],
         "properties": {
           "requirement_id": {
@@ -211,12 +212,19 @@
               }
             },
             "additionalProperties": false
+          },
+          "internal_review_ref": {
+            "type": "string",
+            "pattern": "^IRR-RFC-[0-9]{4}-[0-9]{8}$"
           }
         },
         "additionalProperties": false
       }
     },
     "fidelity_review": {
+      "type": "object"
+    },
+    "internal_review": {
       "type": "object"
     }
   },

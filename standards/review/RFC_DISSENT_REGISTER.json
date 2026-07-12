@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-DISSENT-0001",
+  "title": "Ming Foundation RFC Dissent and Unresolved Objection Register",
+  "status": "Accepted internal review record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+  "registry_version": "1.0.0-alpha.10",
+  "governing_record": "GOV-0043",
+  "summary": {
+    "total": 8,
+    "open": 8,
+    "resolved": 0
+  },
+  "items": [
+    {
+      "dissent_id": "DIS-0001",
+      "topic": "Candidate gate and affected-person review",
+      "majority_position": "Affected-person or domain review is required before Candidate for standards governing people.",
+      "minority_position": "Candidate may permit bounded deferral when incompleteness is explicit.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Define review classes and safe deferral criteria.",
+      "affected_documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003",
+        "RFC-0004",
+        "RFC-0005"
+      ],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0002",
+      "topic": "Direct child participation versus representative control",
+      "majority_position": "Participation should increase with capacity and impact.",
+      "minority_position": "Direct participation can create safety and legal risks.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Create jurisdiction- and safeguarding-qualified participation profiles.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0003",
+      "topic": "Scope of contestability",
+      "majority_position": "Material high-impact interpretations should be contestable.",
+      "minority_position": "Some safety judgments require temporary non-disclosure.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Define delay, expiry, review, and appeal.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0004",
+      "topic": "Unified identity and rights layer",
+      "majority_position": "A governed shared layer prevents shadow profiles.",
+      "minority_position": "Centralization increases breach and surveillance risk.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Compare centralized, federated, and hybrid models.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0005",
+      "topic": "Named human handoff",
+      "majority_position": "High-impact safety handling requires accountable human or service ownership.",
+      "minority_position": "Non-staffed tools should limit scope rather than promise handoff.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Define service profiles including no-handoff systems.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0006",
+      "topic": "Least-intrusive action",
+      "majority_position": "Least-intrusive reasonable action should be default.",
+      "minority_position": "Severe uncertainty may justify more intrusive temporary action.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Define proportionality factors and review.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0007",
+      "topic": "Cohort thresholds",
+      "majority_position": "Risk-banded thresholds are more appropriate than one number.",
+      "minority_position": "Fixed minimums are easier to audit.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Define conservative default and exception review.",
+      "affected_documents": [],
+      "status": "Open"
+    },
+    {
+      "dissent_id": "DIS-0008",
+      "topic": "AI and professional disclosure placement",
+      "majority_position": "Material boundaries must be visible before sensitive use.",
+      "minority_position": "Repeated disclosures may reduce comprehension.",
+      "risk_if_ignored": "Either premature authority or unsafe ambiguity.",
+      "required_resolution": "Require placement and comprehension testing.",
+      "affected_documents": [],
+      "status": "Open"
+    }
+  ]
+}

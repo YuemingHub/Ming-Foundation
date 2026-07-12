@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.3
+version: 1.0.0-alpha.4
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -184,3 +184,8 @@ It does not mean:
 Status promotion requires a dedicated proposal and decision.
 
 Open `BlockingForCandidate` ambiguities MUST be resolved, or an Accepted decision MUST document why a bounded deferral is safe.
+## 14. Review-class completion
+
+A review record MUST identify its class and limitations. Review classes include internal architecture, agency and ethics, privacy and consent, safety, affected-person or domain, legal or jurisdiction, and implementation conformance.
+
+Completing one class MUST NOT be described as completing all review. Promotion proposals MUST identify completed, incomplete, and deferred classes. Minority views MUST remain traceable.

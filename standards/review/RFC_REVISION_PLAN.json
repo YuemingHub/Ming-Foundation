@@ -1,0 +1,586 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-RFC-REVISION-PLAN-0001",
+  "title": "Ming Foundation RFC Revision Plan",
+  "status": "Accepted planning record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+  "registry_version": "1.0.0-alpha.10",
+  "governing_record": "GOV-0042",
+  "decision": "ADR-0012",
+  "target_status_after_revision": "Proposed",
+  "summary": {
+    "revision_items": 23,
+    "rfc_specific_items": 19,
+    "cross_rfc_items": 4,
+    "p0_items": 19,
+    "p1_items": 4,
+    "ambiguities_mapped": 19
+  },
+  "waves": [
+    {
+      "wave": "R0",
+      "items": [
+        "REV-X001",
+        "REV-X002",
+        "REV-X003",
+        "REV-X004"
+      ]
+    },
+    {
+      "wave": "R1",
+      "items": [
+        "REV-0001",
+        "REV-0002",
+        "REV-0003",
+        "REV-0004",
+        "REV-0005",
+        "REV-0006",
+        "REV-0007",
+        "REV-0008",
+        "REV-0009",
+        "REV-0010",
+        "REV-0011",
+        "REV-0012"
+      ]
+    },
+    {
+      "wave": "R2",
+      "items": [
+        "REV-0013",
+        "REV-0014",
+        "REV-0015",
+        "REV-0016",
+        "REV-0017",
+        "REV-0018",
+        "REV-0019"
+      ]
+    },
+    {
+      "wave": "R3",
+      "items": [
+        "source patches",
+        "registry sync",
+        "internal re-review",
+        "external review preparation"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "revision_id": "REV-0001",
+      "target_document": "RFC-0001",
+      "target_section": "2. Core rule",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0001"
+      ],
+      "proposed_change": "Define material assertion using persistence, impact, reliance, sharing, and automated-decision criteria.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0002",
+      "target_document": "RFC-0001",
+      "target_section": "6. Contestability workflow",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0002"
+      ],
+      "proposed_change": "Define high-impact uses, decision owner, default treatment under uncertainty, and review escalation.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0003",
+      "target_document": "RFC-0001",
+      "target_section": "5. Participation ladder",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0003"
+      ],
+      "proposed_change": "Add age-, capacity-, safety-, and jurisdiction-qualified representative and participation profiles.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0004",
+      "target_document": "RFC-0001",
+      "target_section": "7. Prohibited behavior",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0004"
+      ],
+      "proposed_change": "Define intra-family disclosure bases, minimum necessity, notice, exceptions, restrictions, and appeal.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0005",
+      "target_document": "RFC-0002",
+      "target_section": "3.2 Permission or processing basis",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0005"
+      ],
+      "proposed_change": "Separate technical processing bases from jurisdiction-specific legal qualification.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0006",
+      "target_document": "RFC-0002",
+      "target_section": "3.4 Rights request",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0006"
+      ],
+      "proposed_change": "Define representative authority evidence, conflicts, expiry, review ownership, and appeal.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0007",
+      "target_document": "RFC-0002",
+      "target_section": "5. Retention and deletion",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0007"
+      ],
+      "proposed_change": "Create retention and backup-deletion profiles for service, safety, audit, evidence, and exceptions.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0008",
+      "target_document": "RFC-0002",
+      "target_section": "6. Cross-channel identity",
+      "change_type": "NormativeClarification",
+      "priority": "P1",
+      "ambiguity_refs": [
+        "AMB-0008"
+      ],
+      "proposed_change": "Define identity, permission, correction, and revocation precedence across channels.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0009",
+      "target_document": "RFC-0003",
+      "target_section": "2. Core rule",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0009"
+      ],
+      "proposed_change": "Define high-impact safety actions, P0/P1 mapping, acknowledgment, deadlines, and failed-handoff ownership.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0010",
+      "target_document": "RFC-0003",
+      "target_section": "5. Proportionality",
+      "change_type": "NormativeClarification",
+      "priority": "P1",
+      "ambiguity_refs": [
+        "AMB-0010"
+      ],
+      "proposed_change": "Add a proportionality record covering harms, uncertainty, urgency, alternatives, and preferences.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0011",
+      "target_document": "RFC-0003",
+      "target_section": "6. Professional and legal boundaries",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0011"
+      ],
+      "proposed_change": "Define staffing states, response promises, resource owners, expiry, and stale-resource behavior.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0012",
+      "target_document": "RFC-0003",
+      "target_section": "8. Special case: operator may be the risk source",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0012"
+      ],
+      "proposed_change": "Define independent safeguarding review triggers, authority, restrictions, disclosure, and appeal.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0013",
+      "target_document": "RFC-0004",
+      "target_section": "4. De-identification review",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0013"
+      ],
+      "proposed_change": "Define a de-identification threat model and reasonable-informed-person review threshold.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0014",
+      "target_document": "RFC-0004",
+      "target_section": "5. Cross-family analysis rules",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0014"
+      ],
+      "proposed_change": "Create risk-banded cohort minimums, rarity suppression, exceptions, and publication controls.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0015",
+      "target_document": "RFC-0004",
+      "target_section": "6. Model training and evaluation",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0015"
+      ],
+      "proposed_change": "Define model-use approval authority, provider controls, purpose separation, and withdrawal lineage.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0016",
+      "target_document": "RFC-0004",
+      "target_section": "9. Acceptance tests",
+      "change_type": "NormativeClarification",
+      "priority": "P1",
+      "ambiguity_refs": [
+        "AMB-0016"
+      ],
+      "proposed_change": "Define withdrawal effects on source records, derived datasets, rules, evaluations, and aggregates.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0017",
+      "target_document": "RFC-0005",
+      "target_section": "2. Core rule",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0017"
+      ],
+      "proposed_change": "Define material public claim by risk, reliance, audience, persistence, and acquisition effect.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0018",
+      "target_document": "RFC-0005",
+      "target_section": "4. Charter publication",
+      "change_type": "NormativeClarification",
+      "priority": "P1",
+      "ambiguity_refs": [
+        "AMB-0018"
+      ],
+      "proposed_change": "Add bilingual semantic review, source revision, deviation record, and discrepancy handling.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-0019",
+      "target_document": "RFC-0005",
+      "target_section": "9. Synchronization control",
+      "change_type": "NormativeClarification",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0019"
+      ],
+      "proposed_change": "Define normative page classes and fail, warn, quarantine, or review behavior for divergence.",
+      "acceptance_criteria": [
+        "Source text states an explicit decision rule.",
+        "Requirements and tests are synchronized.",
+        "Compatibility and review impacts are recorded.",
+        "Dissent is preserved or dispositioned.",
+        "RFC status remains Proposed until a separate decision."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-X001",
+      "target_document": "Cross-RFC",
+      "target_section": "Shared impact terms",
+      "change_type": "CrossRFCProfile",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0001",
+        "AMB-0002",
+        "AMB-0009",
+        "AMB-0017"
+      ],
+      "proposed_change": "Define material, high-impact, irreversible, punitive, and sensitive use.",
+      "acceptance_criteria": [
+        "Cross-RFC decision is explicit and source RFCs reference it.",
+        "Compatibility and dissent are recorded.",
+        "RFC status remains Proposed."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-X002",
+      "target_document": "Cross-RFC",
+      "target_section": "Jurisdiction qualification",
+      "change_type": "CrossRFCProfile",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0003",
+        "AMB-0005",
+        "AMB-0007",
+        "AMB-0011",
+        "AMB-0013",
+        "AMB-0015",
+        "AMB-0018"
+      ],
+      "proposed_change": "Qualify consent, retention, safeguarding, emergency, and translation rules without universal legal claims.",
+      "acceptance_criteria": [
+        "Cross-RFC decision is explicit and source RFCs reference it.",
+        "Compatibility and dissent are recorded.",
+        "RFC status remains Proposed."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-X003",
+      "target_document": "Cross-RFC",
+      "target_section": "Affected-person review gate",
+      "change_type": "CrossRFCProfile",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0003",
+        "AMB-0004",
+        "AMB-0006",
+        "AMB-0012",
+        "AMB-0013",
+        "AMB-0016",
+        "AMB-0017"
+      ],
+      "proposed_change": "Define required affected-person and domain review classes for Review, Candidate, and Stable.",
+      "acceptance_criteria": [
+        "Cross-RFC decision is explicit and source RFCs reference it.",
+        "Compatibility and dissent are recorded.",
+        "RFC status remains Proposed."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    },
+    {
+      "revision_id": "REV-X004",
+      "target_document": "Cross-RFC",
+      "target_section": "Migration and lineage",
+      "change_type": "CrossRFCProfile",
+      "priority": "P0",
+      "ambiguity_refs": [
+        "AMB-0007",
+        "AMB-0008",
+        "AMB-0016"
+      ],
+      "proposed_change": "Define migration, supersession, propagation, historical labeling, and rollback rules.",
+      "acceptance_criteria": [
+        "Cross-RFC decision is explicit and source RFCs reference it.",
+        "Compatibility and dissent are recorded.",
+        "RFC status remains Proposed."
+      ],
+      "owner_role": "Ming Foundation Standards",
+      "dependencies": [],
+      "status": "Planned",
+      "target_draft": "0.2.0-draft"
+    }
+  ]
+}

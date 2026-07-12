@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "matrix_id": "FOUNDATION-CONFORMANCE-BASELINE-0001",
   "scope": "canonical_repository",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "target": {
     "name": "Ming Foundation non-implementation conformance baseline",
-    "revision": "f748f5243635d0f15fa0363f46381351b633b9e3",
+    "revision": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
     "kind": "document_set",
     "repository": "YuemingHub/Ming-Foundation"
   },
@@ -94,5 +94,10 @@
     "empty_results_reason": "The baseline establishes structure and coverage only; implementation review has not been authorized or performed.",
     "governing_record": "GOV-0035"
   },
-  "results": []
+  "results": [],
+  "internal_review_execution": {
+    "record": "GOV-0036",
+    "state": "CompleteInternalRound1",
+    "results_populated": false
+  }
 }

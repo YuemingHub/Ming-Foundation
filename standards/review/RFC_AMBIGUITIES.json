@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RFC-AMBIGUITIES-0001",
   "title": "Ming Foundation RFC Ambiguity and Revision Register",
   "status": "Accepted review register",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "f748f5243635d0f15fa0363f46381351b633b9e3",
-  "registry_version": "1.0.0-alpha.9",
+  "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
+  "registry_version": "1.0.0-alpha.10",
   "governing_record": "GOV-0034",
   "summary": {
     "total": 19,
@@ -25,7 +25,10 @@
         "RFC-0001-R001"
       ],
       "recommended_resolution": "Define impact and persistence criteria, including a safe default when materiality is uncertain.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0001",
+      "internal_review_record": "GOV-0037"
     },
     {
       "ambiguity_id": "AMB-0002",
@@ -38,7 +41,10 @@
         "RFC-0001-R004"
       ],
       "recommended_resolution": "Add a minimum high-impact taxonomy and escalation rule.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0002",
+      "internal_review_record": "GOV-0037"
     },
     {
       "ambiguity_id": "AMB-0003",
@@ -52,7 +58,10 @@
         "RFC-0001-R013"
       ],
       "recommended_resolution": "Define a jurisdiction-qualified participation profile and an independent review trigger.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0003",
+      "internal_review_record": "GOV-0037"
     },
     {
       "ambiguity_id": "AMB-0004",
@@ -65,7 +74,10 @@
         "RFC-0001-R012"
       ],
       "recommended_resolution": "Define disclosure bases, minimum-necessary rules, notice, safety exceptions, and appeal.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0004",
+      "internal_review_record": "GOV-0037"
     },
     {
       "ambiguity_id": "AMB-0005",
@@ -79,7 +91,10 @@
         "RFC-0002-R002"
       ],
       "recommended_resolution": "Separate technical basis categories from jurisdiction-specific legal qualification.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0005",
+      "internal_review_record": "GOV-0038"
     },
     {
       "ambiguity_id": "AMB-0006",
@@ -92,7 +107,10 @@
         "RFC-0002-R003"
       ],
       "recommended_resolution": "Add representative types, authority evidence, conflict handling, expiry, and independent review.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0006",
+      "internal_review_record": "GOV-0038"
     },
     {
       "ambiguity_id": "AMB-0007",
@@ -109,7 +127,10 @@
         "RFC-0002-R016"
       ],
       "recommended_resolution": "Create reference retention profiles with jurisdiction and risk qualifiers.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0007",
+      "internal_review_record": "GOV-0038"
     },
     {
       "ambiguity_id": "AMB-0008",
@@ -124,7 +145,10 @@
         "RFC-0002-R011"
       ],
       "recommended_resolution": "Define reconciliation precedence, audit continuity, and unresolved-conflict behavior.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0008",
+      "internal_review_record": "GOV-0038"
     },
     {
       "ambiguity_id": "AMB-0009",
@@ -138,7 +162,10 @@
         "RFC-0003-R002"
       ],
       "recommended_resolution": "Define severity-to-accountability mapping and acknowledgment authority.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0009",
+      "internal_review_record": "GOV-0039"
     },
     {
       "ambiguity_id": "AMB-0010",
@@ -151,7 +178,10 @@
         "RFC-0003-R003"
       ],
       "recommended_resolution": "Add a proportionality decision record and review examples.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0010",
+      "internal_review_record": "GOV-0039"
     },
     {
       "ambiguity_id": "AMB-0011",
@@ -165,7 +195,10 @@
         "RFC-0003-R005"
       ],
       "recommended_resolution": "Define availability states, expiry, ownership, and stale-resource behavior.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0011",
+      "internal_review_record": "GOV-0039"
     },
     {
       "ambiguity_id": "AMB-0012",
@@ -179,7 +212,10 @@
         "RFC-0003-R010"
       ],
       "recommended_resolution": "Define conflict triggers, interim access restrictions, reviewer independence, and appeal.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0012",
+      "internal_review_record": "GOV-0039"
     },
     {
       "ambiguity_id": "AMB-0013",
@@ -195,7 +231,10 @@
         "RFC-0004-R012"
       ],
       "recommended_resolution": "Define attacker knowledge assumptions, review roles, and decision thresholds.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0013",
+      "internal_review_record": "GOV-0040"
     },
     {
       "ambiguity_id": "AMB-0014",
@@ -209,7 +248,10 @@
         "RFC-0004-R010"
       ],
       "recommended_resolution": "Create risk-banded minimum cohort and suppression profiles.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0014",
+      "internal_review_record": "GOV-0040"
     },
     {
       "ambiguity_id": "AMB-0015",
@@ -224,7 +266,10 @@
         "RFC-0004-R011"
       ],
       "recommended_resolution": "Define approval authority, provider controls, withdrawal lineage, and review expiry.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0015",
+      "internal_review_record": "GOV-0040"
     },
     {
       "ambiguity_id": "AMB-0016",
@@ -238,7 +283,10 @@
         "RFC-0004-R013"
       ],
       "recommended_resolution": "Define lineage classes and when reanalysis, annotation, or withdrawal is required.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0016",
+      "internal_review_record": "GOV-0040"
     },
     {
       "ambiguity_id": "AMB-0017",
@@ -252,7 +300,10 @@
         "RFC-0005-R007"
       ],
       "recommended_resolution": "Define materiality by audience, risk, reliance, persistence, and acquisition effect.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0017",
+      "internal_review_record": "GOV-0041"
     },
     {
       "ambiguity_id": "AMB-0018",
@@ -266,7 +317,10 @@
         "RFC-0005-R005"
       ],
       "recommended_resolution": "Add translation reviewer, source revision, semantic deviation record, and dispute route.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0018",
+      "internal_review_record": "GOV-0041"
     },
     {
       "ambiguity_id": "AMB-0019",
@@ -279,7 +333,11 @@
         "RFC-0005-R011"
       ],
       "recommended_resolution": "Define normative page classes and fail, warn, or review behavior.",
-      "status": "Open"
+      "status": "Open",
+      "review_disposition": "RequiresRFCRevision",
+      "revision_item_ref": "REV-0019",
+      "internal_review_record": "GOV-0041"
     }
-  ]
+  ],
+  "internal_review_record": "GOV-0036"
 }

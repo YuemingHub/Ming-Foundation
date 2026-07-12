@@ -2,6 +2,24 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.10] - 2026-07-12
+
+### Added
+
+- Internal RFC review execution record and five RFC-specific review records.
+- 23-item revision plan and eight-item dissent register.
+- ADR-0012 retaining all RFCs at Proposed.
+- Review execution validator and machine-readable review results.
+
+### Review result
+
+- 5 RFC reviews; 45 dimensions: 6 Pass, 29 Revise, 10 Blocked.
+- 19 ambiguities remain Open: 15 Candidate blockers and 4 clarifications.
+- 23 revision items remain Planned.
+- 8 dissent items remain Open.
+- RFC-0001 through RFC-0005 remain Proposed.
+- Both Charters remain Candidate.
+
 ## [1.0.0-alpha.9] - 2026-07-12
 
 ### Added
