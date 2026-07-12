@@ -114,7 +114,8 @@
           "source_marker",
           "baseline_state",
           "legacy_requirement_refs",
-          "profile_refs"
+          "profile_refs",
+          "profile_dependency_state"
         ],
         "properties": {
           "requirement_id": {
@@ -264,6 +265,21 @@
             "items": {
               "pattern": "^PROF-[0-9]{4}$"
             }
+          },
+          "profile_dependency_state": {
+            "enum": [
+              "NotApplicable",
+              "ReviewedNeedsRevision",
+              "RevisedPendingReview",
+              "Accepted"
+            ]
+          },
+          "affected_person_review_state": {
+            "enum": [
+              "NotApplicable",
+              "PreparedNotExecuted",
+              "Executed"
+            ]
           }
         },
         "additionalProperties": false
@@ -282,6 +298,9 @@
       "type": "object"
     },
     "baseline": {
+      "type": "object"
+    },
+    "profile_review": {
       "type": "object"
     }
   },

@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 from pathlib import Path
-import hashlib
+from validation_utils import canonical_text_blob_sha
 import json
 import re
 
@@ -59,9 +59,6 @@ def frontmatter(path: Path) -> dict[str, str]:
     return data
 
 
-def blob_sha(path: Path) -> str:
-    data = path.read_bytes()
-    return hashlib.sha1(f"blob {len(data)}\0".encode("ascii") + data).hexdigest()
 
 
 def load(rel: str):
@@ -91,7 +88,7 @@ def main() -> int:
     plan = load("standards/review/RFC_REVISION_PLAN.json")
     statuses = {item["revision_id"]: item["status"] for item in plan["items"]}
     for number in range(1, 13):
-        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision", "ProfileDesignedPendingReview"}:
+        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision"}:
             errors.append(f"REV-{number:04d}: invalid reviewed revision status")
     for number in range(13, 20):
         if statuses.get(f"REV-{number:04d}") != "Planned":
@@ -115,7 +112,7 @@ def main() -> int:
     for rfc_id in ("RFC-0001", "RFC-0002", "RFC-0003"):
         if sources[rfc_id]["version"] != DRAFT:
             errors.append(f"{rfc_id}: requirement source version mismatch")
-        if sources[rfc_id]["source_blob_sha"] != blob_sha(RFC_PATHS[rfc_id]):
+        if sources[rfc_id]["source_blob_sha"] != canonical_text_blob_sha(RFC_PATHS[rfc_id]):
             errors.append(f"{rfc_id}: source blob SHA mismatch")
     if len(requirements["requirements"]) != 115:
         errors.append("current requirement count must be 115")

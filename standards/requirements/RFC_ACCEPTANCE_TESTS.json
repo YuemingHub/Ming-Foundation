@@ -1,11 +1,11 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "registry_id": "MING-RFC-ACCEPTANCE-TESTS-0001",
   "title": "Ming Foundation Current RFC Acceptance Test Registry",
   "status": "Accepted test specification index",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
-  "registry_version": "1.0.0-alpha.13",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
   "authority": {
     "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
     "registry_role": "Current implementation test specification index; does not prove execution or conformance",
@@ -63,7 +63,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT002",
@@ -109,7 +110,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT003",
@@ -155,7 +157,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT004",
@@ -201,7 +204,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT005",
@@ -250,7 +254,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT006",
@@ -299,7 +305,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT007",
@@ -345,7 +353,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT008",
@@ -391,7 +400,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT009",
@@ -437,7 +447,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT010",
@@ -481,7 +492,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT011",
@@ -525,7 +537,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT012",
@@ -571,7 +584,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT013",
@@ -617,7 +631,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT014",
@@ -663,7 +678,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT015",
@@ -709,7 +725,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT016",
@@ -757,7 +774,9 @@
         "PROF-0001"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT017",
@@ -805,7 +824,9 @@
         "PROF-0001"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT018",
@@ -854,7 +875,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT019",
@@ -902,7 +925,9 @@
         "PROF-0001"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0001-AT020",
@@ -948,7 +973,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT021",
@@ -994,7 +1020,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT022",
@@ -1040,7 +1067,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT023",
@@ -1086,7 +1114,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT024",
@@ -1132,7 +1161,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT025",
@@ -1178,7 +1208,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT026",
@@ -1224,7 +1255,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT027",
@@ -1270,7 +1302,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT028",
@@ -1316,7 +1349,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0001-AT029",
@@ -1362,7 +1396,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT001",
@@ -1408,7 +1443,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT002",
@@ -1454,7 +1490,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT003",
@@ -1500,7 +1537,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT004",
@@ -1546,7 +1584,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT005",
@@ -1592,7 +1631,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT006",
@@ -1638,7 +1678,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT007",
@@ -1684,7 +1725,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT008",
@@ -1728,7 +1770,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT009",
@@ -1774,7 +1817,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT010",
@@ -1822,7 +1866,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT011",
@@ -1870,7 +1916,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT012",
@@ -1918,7 +1966,9 @@
         "PROF-0002"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT013",
@@ -1964,7 +2014,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT014",
@@ -2010,7 +2061,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT015",
@@ -2056,7 +2108,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT016",
@@ -2104,7 +2157,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT017",
@@ -2152,7 +2207,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT018",
@@ -2198,7 +2255,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT019",
@@ -2246,7 +2305,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT020",
@@ -2294,7 +2355,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT021",
@@ -2340,7 +2403,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT022",
@@ -2386,7 +2450,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT023",
@@ -2432,7 +2497,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT024",
@@ -2478,7 +2544,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT025",
@@ -2524,7 +2591,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT026",
@@ -2570,7 +2638,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT027",
@@ -2616,7 +2685,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT028",
@@ -2662,7 +2732,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT029",
@@ -2708,7 +2779,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT030",
@@ -2756,7 +2828,9 @@
         "PROF-0003"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0002-AT031",
@@ -2802,7 +2876,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT032",
@@ -2848,7 +2923,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT033",
@@ -2894,7 +2970,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0002-AT034",
@@ -2940,7 +3017,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT001",
@@ -2986,7 +3064,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT002",
@@ -3032,7 +3111,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT003",
@@ -3078,7 +3158,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT004",
@@ -3124,7 +3205,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT005",
@@ -3170,7 +3252,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT006",
@@ -3216,7 +3299,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT007",
@@ -3264,7 +3348,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT008",
@@ -3312,7 +3398,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT009",
@@ -3360,7 +3448,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT010",
@@ -3408,7 +3498,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT011",
@@ -3452,7 +3544,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT012",
@@ -3496,7 +3589,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT013",
@@ -3542,7 +3636,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT014",
@@ -3588,7 +3683,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT015",
@@ -3634,7 +3730,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT016",
@@ -3678,7 +3775,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT017",
@@ -3724,7 +3822,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT018",
@@ -3770,7 +3869,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT019",
@@ -3816,7 +3916,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT020",
@@ -3862,7 +3963,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT021",
@@ -3908,7 +4010,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT022",
@@ -3954,7 +4057,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT023",
@@ -4002,7 +4106,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT024",
@@ -4050,7 +4156,9 @@
         "PROF-0004"
       ],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "test_id": "RFC-0003-AT025",
@@ -4096,7 +4204,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT026",
@@ -4142,7 +4251,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT027",
@@ -4188,7 +4298,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0003-AT028",
@@ -4234,7 +4345,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT001",
@@ -4281,7 +4393,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT002",
@@ -4325,7 +4438,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT003",
@@ -4371,7 +4485,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT004",
@@ -4418,7 +4533,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT005",
@@ -4464,7 +4580,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT006",
@@ -4511,7 +4628,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT007",
@@ -4558,7 +4676,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT008",
@@ -4605,7 +4724,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT009",
@@ -4652,7 +4772,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT010",
@@ -4699,7 +4820,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT011",
@@ -4746,7 +4868,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT012",
@@ -4793,7 +4916,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0004-AT013",
@@ -4840,7 +4964,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT001",
@@ -4885,7 +5010,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT002",
@@ -4930,7 +5056,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT003",
@@ -4975,7 +5102,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT004",
@@ -5020,7 +5148,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT005",
@@ -5067,7 +5196,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT006",
@@ -5112,7 +5242,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT007",
@@ -5156,7 +5287,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT008",
@@ -5201,7 +5333,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT009",
@@ -5247,7 +5380,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT010",
@@ -5293,7 +5427,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "test_id": "RFC-0005-AT011",
@@ -5340,7 +5475,8 @@
       "baseline_state": "Current",
       "profile_refs": [],
       "revision_state": "RebaselinedCurrent",
-      "source_alignment_state": "CurrentRebaselined"
+      "source_alignment_state": "CurrentRebaselined",
+      "profile_dependency_state": "NotApplicable"
     }
   ],
   "round2_review": {
@@ -5348,5 +5484,11 @@
     "repository_source_tests_executed": 12,
     "implementation_tests_executed": 0,
     "rebaseline_record": "GOV-0059"
+  },
+  "profile_review": {
+    "record": "GOV-0061",
+    "profile_count": 4,
+    "state": "ReviewedNeedsRevision",
+    "affected_person_review_state": "PreparedNotExecuted"
   }
 }

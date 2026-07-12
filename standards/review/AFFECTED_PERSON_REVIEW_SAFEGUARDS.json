@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "safeguard_id": "MING-AFFECTED-PERSON-REVIEW-SAFEGUARDS-0001",
+  "title": "Affected-Person Review Safeguards and Evidence Boundary",
+  "status": "Accepted preparation infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
+  "governing_record": "GOV-0069",
+  "execution_state": "PreparedNotExecuted",
+  "prohibited_collection": [
+    "Identifiable child case narratives",
+    "Current crisis disclosures through a general review form",
+    "Medical, psychiatric, legal, immigration, financial, or school records not required for the review",
+    "Passwords, account credentials, device contents, or private messages",
+    "Evidence about a third party who has not been informed or authorized"
+  ],
+  "required_safeguards": [
+    "Plain-language information and voluntary participation",
+    "Consent and assent appropriate to participant and jurisdiction",
+    "Right to skip questions, stop, withdraw, and request deletion",
+    "No service, benefit, grade, treatment, or access consequence for refusal",
+    "Minimum necessary demographic data",
+    "Pseudonymous evidence by default",
+    "Separate key for contact and review evidence when contact data is necessary",
+    "Role-based access and restricted evidence handling",
+    "Distress and safeguarding response that does not promise emergency care",
+    "Minority, disagreement, and counterexample preservation",
+    "No automated model training or product personalization from review evidence"
+  ],
+  "result_states": [
+    "SupportsCurrentDraft",
+    "NeedsRevision",
+    "RejectsAssumption",
+    "MinorityView",
+    "InsufficientEvidence",
+    "SafeguardingStop"
+  ]
+}

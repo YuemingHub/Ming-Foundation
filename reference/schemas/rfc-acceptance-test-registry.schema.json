@@ -52,7 +52,8 @@
           "baseline_state",
           "profile_refs",
           "revision_state",
-          "source_alignment_state"
+          "source_alignment_state",
+          "profile_dependency_state"
         ],
         "properties": {
           "test_id": {
@@ -147,6 +148,21 @@
               "PendingRequirementRebaseline",
               "CurrentRebaselined"
             ]
+          },
+          "profile_dependency_state": {
+            "enum": [
+              "NotApplicable",
+              "ReviewedNeedsRevision",
+              "RevisedPendingReview",
+              "Accepted"
+            ]
+          },
+          "affected_person_review_state": {
+            "enum": [
+              "NotApplicable",
+              "PreparedNotExecuted",
+              "Executed"
+            ]
           }
         },
         "additionalProperties": true
@@ -156,6 +172,9 @@
       "type": "object"
     },
     "round2_review": {
+      "type": "object"
+    },
+    "profile_review": {
       "type": "object"
     }
   },

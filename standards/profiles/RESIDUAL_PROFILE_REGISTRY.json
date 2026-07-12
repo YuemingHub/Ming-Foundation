@@ -1,16 +1,18 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-RESIDUAL-PROFILES-0001",
   "title": "Day 13 Residual Profile Registry",
   "status": "Accepted registry of Proposed profiles",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
-  "registry_version": "1.0.0-alpha.13",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
   "governing_record": "GOV-0058",
   "summary": {
     "profiles": 4,
     "proposed": 4,
-    "reviewed": 0,
+    "internal_review_complete": 4,
+    "revision_required": 4,
+    "affected_person_review_executed": 0,
     "accepted": 0,
     "ambiguities_addressed": 4,
     "ambiguities_closed": 0
@@ -35,7 +37,14 @@
       ],
       "residual_item_refs": [
         "R2R-001"
-      ]
+      ],
+      "source_blob_sha": "4e37d88c1aecd04a9dd8103fab8c3e3956536054",
+      "internal_review_state": "Complete",
+      "internal_review_ref": "PIR1-PROF-0001-20260713",
+      "internal_review_record": "GOV-0062",
+      "disposition": "ReviseAndRetainProposed",
+      "revision_plan_ref": "GOV-0066",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "id": "PROF-0002",
@@ -57,7 +66,14 @@
       ],
       "residual_item_refs": [
         "R2R-002"
-      ]
+      ],
+      "source_blob_sha": "0a80f1cd23e7444825aa19b0b09b2766ffdff393",
+      "internal_review_state": "Complete",
+      "internal_review_ref": "PIR1-PROF-0002-20260713",
+      "internal_review_record": "GOV-0063",
+      "disposition": "ReviseAndRetainProposed",
+      "revision_plan_ref": "GOV-0066",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "id": "PROF-0003",
@@ -78,7 +94,14 @@
       ],
       "residual_item_refs": [
         "R2R-003"
-      ]
+      ],
+      "source_blob_sha": "dc79197de44bf03dd878d558ddb48da26cfbaf3a",
+      "internal_review_state": "Complete",
+      "internal_review_ref": "PIR1-PROF-0003-20260713",
+      "internal_review_record": "GOV-0064",
+      "disposition": "ReviseAndRetainProposed",
+      "revision_plan_ref": "GOV-0066",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "id": "PROF-0004",
@@ -99,7 +122,15 @@
       ],
       "residual_item_refs": [
         "R2R-004"
-      ]
+      ],
+      "source_blob_sha": "4195d8c0f1834eaa8d1413289e823c9496f69099",
+      "internal_review_state": "Complete",
+      "internal_review_ref": "PIR1-PROF-0004-20260713",
+      "internal_review_record": "GOV-0065",
+      "disposition": "ReviseAndRetainProposed",
+      "revision_plan_ref": "GOV-0066",
+      "affected_person_review_state": "PreparedNotExecuted"
     }
-  ]
+  ],
+  "day14_review_record": "GOV-0061"
 }

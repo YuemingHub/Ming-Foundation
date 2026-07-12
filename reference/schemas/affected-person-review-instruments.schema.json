@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/affected-person-review-instruments.schema.json",
+  "title": "Affected-Person Review Instruments",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "instruments"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "instruments": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "instrument_id",
+          "title",
+          "status",
+          "execution_state"
+        ],
+        "properties": {
+          "instrument_id": {
+            "pattern": "^GOV-TPL-[0-9]{4}$"
+          },
+          "status": {
+            "const": "AcceptedTemplate"
+          },
+          "execution_state": {
+            "const": "NotExecuted"
+          }
+        }
+      }
+    }
+  }
+}

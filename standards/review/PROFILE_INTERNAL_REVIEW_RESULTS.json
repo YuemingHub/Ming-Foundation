@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-PROFILE-INTERNAL-REVIEW-0001",
+  "title": "Ming Foundation Profile Internal Review Round 1 Results",
+  "status": "Accepted internal review record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
+  "governing_record": "GOV-0061",
+  "review_scope": {
+    "round": "ProfileInternalReviewRound1",
+    "profile_scope": [
+      "PROF-0001",
+      "PROF-0002",
+      "PROF-0003",
+      "PROF-0004"
+    ],
+    "complete": true,
+    "affected_person_review_complete": false,
+    "domain_review_complete": false,
+    "jurisdiction_review_complete": false,
+    "implementation_conformance_complete": false
+  },
+  "summary": {
+    "profile_count": 4,
+    "dimension_count": 32,
+    "pass": 13,
+    "revise": 15,
+    "blocked": 4,
+    "promotion_recommendation": "RetainProposed"
+  },
+  "results": [
+    {
+      "review_id": "PIR1-PROF-0001-20260713",
+      "source_document": "PROF-0001",
+      "source_path": "standards/profiles/PROF-0001-participation-and-representative-decision-profile.md",
+      "source_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+      "source_blob_sha": "4e37d88c1aecd04a9dd8103fab8c3e3956536054",
+      "source_version": "0.1.0",
+      "review_round": "ProfileInternalReviewRound1",
+      "review_state": "Complete",
+      "reviewer_role": "Ming Foundation Architecture and Ethics Review",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Participation levels, decision inputs, impact minimums, conflict rules, and required records are clearly separated."
+        },
+        {
+          "dimension": "agency_and_noncoercion",
+          "disposition": "Revise",
+          "finding": "P0–P5 may be misread as a maturity ladder; the profile needs explicit purpose-specific, non-hierarchical, supported-decision, refusal, and non-retaliation rules."
+        },
+        {
+          "dimension": "proportionality_and_minimization",
+          "disposition": "Pass",
+          "finding": "Impact minimums and temporary-exclusion limits support bounded, reversible decisions."
+        },
+        {
+          "dimension": "privacy_and_data_rights",
+          "disposition": "Pass",
+          "finding": "Notice, correction, revocation, conflict, and appeal routes are structurally visible."
+        },
+        {
+          "dimension": "safety_and_safeguarding",
+          "disposition": "Revise",
+          "finding": "P0 requires stronger independent authorization, shortest-duration, support, and later-notice safeguards."
+        },
+        {
+          "dimension": "accessibility_and_development",
+          "disposition": "Revise",
+          "finding": "Communication support is named but not operationalized for literacy, disability, language, neurodivergence, or trauma-sensitive participation."
+        },
+        {
+          "dimension": "operational_evidence",
+          "disposition": "Revise",
+          "finding": "The profile lacks a scenario set demonstrating how the same person may hold different levels for different purposes and how disagreement changes a decision."
+        },
+        {
+          "dimension": "jurisdiction_and_limitations",
+          "disposition": "Blocked",
+          "finding": "Age, capacity, representation, and safeguarding implications require affected-person, domain, and jurisdiction review."
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "affected_person_review_complete": false,
+      "jurisdiction_review_complete": false,
+      "implementation_conformance_complete": false,
+      "review_record": "GOV-0062"
+    },
+    {
+      "review_id": "PIR1-PROF-0002-20260713",
+      "source_document": "PROF-0002",
+      "source_path": "standards/profiles/PROF-0002-representative-authority-evidence-profile.md",
+      "source_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+      "source_blob_sha": "0a80f1cd23e7444825aa19b0b09b2766ffdff393",
+      "source_version": "0.1.0",
+      "review_round": "ProfileInternalReviewRound1",
+      "review_state": "Complete",
+      "reviewer_role": "Ming Foundation Architecture and Ethics Review",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Representative types, evidence levels, impact mapping, authority fields, failure states, and review questions are explicit."
+        },
+        {
+          "dimension": "agency_and_noncoercion",
+          "disposition": "Revise",
+          "finding": "The profile needs a subject-accessible challenge route, supported decision-making preference, and treatment of informal caregivers without converting care into authority."
+        },
+        {
+          "dimension": "proportionality_and_minimization",
+          "disposition": "Revise",
+          "finding": "E1–E4 may incentivize overcollection; a least-evidence and no-document-when-not-necessary rule is required."
+        },
+        {
+          "dimension": "privacy_and_data_rights",
+          "disposition": "Revise",
+          "finding": "Authority evidence needs purpose separation, deletion or expiry propagation, and restrictions against reuse as identity, immigration, financial, or behavior evidence."
+        },
+        {
+          "dimension": "safety_and_safeguarding",
+          "disposition": "Revise",
+          "finding": "Conflict handling needs stronger operator-as-risk, coercion, family violence, and protected-source scenarios."
+        },
+        {
+          "dimension": "accessibility_and_development",
+          "disposition": "Revise",
+          "finding": "Verification and challenge routes need language, disability, low-literacy, and remote-access alternatives."
+        },
+        {
+          "dimension": "operational_evidence",
+          "disposition": "Pass",
+          "finding": "The evidence levels and failure-state vocabulary are implementable and machine-testable."
+        },
+        {
+          "dimension": "jurisdiction_and_limitations",
+          "disposition": "Blocked",
+          "finding": "The meaning and sufficiency of authority evidence require jurisdiction-specific legal and institutional review."
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "affected_person_review_complete": false,
+      "jurisdiction_review_complete": false,
+      "implementation_conformance_complete": false,
+      "review_record": "GOV-0063"
+    },
+    {
+      "review_id": "PIR1-PROF-0003-20260713",
+      "source_document": "PROF-0003",
+      "source_path": "standards/profiles/PROF-0003-retention-and-backup-completion-profile.md",
+      "source_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+      "source_blob_sha": "dc79197de44bf03dd878d558ddb48da26cfbaf3a",
+      "source_version": "0.1.0",
+      "review_round": "ProfileInternalReviewRound1",
+      "review_state": "Complete",
+      "reviewer_role": "Ming Foundation Architecture and Ethics Review",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Profile classes, completion states, backup handling, exception controls, and review questions are distinct."
+        },
+        {
+          "dimension": "agency_and_noncoercion",
+          "disposition": "Revise",
+          "finding": "Affected people need a plain-language view of what remains, why it remains, who can use it, and how to challenge an exception."
+        },
+        {
+          "dimension": "proportionality_and_minimization",
+          "disposition": "Revise",
+          "finding": "The default review intervals must be more visibly separated from permission to retain and must require earlier deletion when purpose ends."
+        },
+        {
+          "dimension": "privacy_and_data_rights",
+          "disposition": "Pass",
+          "finding": "Primary, derived, indexed, shared, backup, and exception states provide strong rights traceability."
+        },
+        {
+          "dimension": "safety_and_safeguarding",
+          "disposition": "Revise",
+          "finding": "The profile needs explicit balancing for safety evidence, reporter protection, false labels, and restoration from backup."
+        },
+        {
+          "dimension": "accessibility_and_development",
+          "disposition": "Pass",
+          "finding": "The state model can support a comprehensible status display once translated into plain language."
+        },
+        {
+          "dimension": "operational_evidence",
+          "disposition": "Pass",
+          "finding": "Completion and backup states are sufficiently concrete for implementation testing."
+        },
+        {
+          "dimension": "jurisdiction_and_limitations",
+          "disposition": "Blocked",
+          "finding": "Retention periods, legal holds, safeguarding duties, and deletion exceptions require jurisdiction and domain review."
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "affected_person_review_complete": false,
+      "jurisdiction_review_complete": false,
+      "implementation_conformance_complete": false,
+      "review_record": "GOV-0064"
+    },
+    {
+      "review_id": "PIR1-PROF-0004-20260713",
+      "source_document": "PROF-0004",
+      "source_path": "standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md",
+      "source_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+      "source_blob_sha": "4195d8c0f1834eaa8d1413289e823c9496f69099",
+      "source_version": "0.1.0",
+      "review_round": "ProfileInternalReviewRound1",
+      "review_state": "Complete",
+      "reviewer_role": "Ming Foundation Architecture and Ethics Review",
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Service classes, target evidence, freshness classes, resource records, and stale behavior are coherently separated."
+        },
+        {
+          "dimension": "agency_and_noncoercion",
+          "disposition": "Pass",
+          "finding": "S0 and S3 prevent false monitoring or handoff claims and preserve informed user choice."
+        },
+        {
+          "dimension": "proportionality_and_minimization",
+          "disposition": "Revise",
+          "finding": "F0–F3 intervals should become risk- and context-sensitive maximum review defaults rather than appear universally sufficient."
+        },
+        {
+          "dimension": "privacy_and_data_rights",
+          "disposition": "Pass",
+          "finding": "The profile does not require unnecessary personal case disclosure to verify public resources."
+        },
+        {
+          "dimension": "safety_and_safeguarding",
+          "disposition": "Revise",
+          "finding": "S2 needs minimum staffing, failed-handoff, overload, outage, cross-region, and after-hours evidence before an active-handoff claim."
+        },
+        {
+          "dimension": "accessibility_and_development",
+          "disposition": "Revise",
+          "finding": "Resource and service verification needs disability access, language, age appropriateness, cost, eligibility, and safe-contact fields."
+        },
+        {
+          "dimension": "operational_evidence",
+          "disposition": "Pass",
+          "finding": "Service classes, verification dates, expiry, owner, and failure states are testable."
+        },
+        {
+          "dimension": "jurisdiction_and_limitations",
+          "disposition": "Blocked",
+          "finding": "Emergency, safeguarding, professional, and local-resource claims require jurisdiction and local-domain review."
+        }
+      ],
+      "overall_disposition": "ReviseAndRetainProposed",
+      "promotion_recommendation": "RetainProposed",
+      "affected_person_review_complete": false,
+      "jurisdiction_review_complete": false,
+      "implementation_conformance_complete": false,
+      "review_record": "GOV-0065"
+    }
+  ]
+}

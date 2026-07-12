@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-AFFECTED-PERSON-REVIEW-PLAN-0001",
+  "title": "Affected-Person and Domain Review Preparation Plan",
+  "status": "Accepted preparation record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
+  "governing_record": "GOV-0067",
+  "execution_state": "PreparedNotExecuted",
+  "summary": {
+    "tracks": 7,
+    "prepared": 7,
+    "executed": 0,
+    "participants_recruited": 0,
+    "sessions_completed": 0,
+    "results_recorded": 0
+  },
+  "entry_gates": [
+    "Named safeguarding and review owner",
+    "Approved consent and assent process",
+    "Participant compensation and non-coercion rule",
+    "Data-minimized session and evidence plan",
+    "Withdrawal and deletion route",
+    "Accessibility and language support",
+    "Distress, disclosure, and stop protocol",
+    "Restricted evidence storage",
+    "Independent facilitator for child and adolescent tracks",
+    "No collection of identifiable case, crisis, medical, or legal narratives unless separately approved"
+  ],
+  "tracks": [
+    {
+      "track_id": "APR-CHILD-001",
+      "title": "Child-friendly comprehension and agency review",
+      "participant_group": "Children approximately 8–12, only through an approved safeguarding and assent process",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002"
+      ],
+      "instrument": "GOV-TPL-0010",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Can the person tell what is being decided?",
+        "Can they say no, disagree, ask for help, or change their mind?",
+        "Do P0–P5 feel like a score about the person?",
+        "Can they tell who is allowed to speak or decide for them?"
+      ]
+    },
+    {
+      "track_id": "APR-ADOLESCENT-001",
+      "title": "Adolescent autonomy, privacy, and contestability review",
+      "participant_group": "Adolescents approximately 13–17 under an approved consent, assent, confidentiality, and safeguarding process",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003",
+        "PROF-0004"
+      ],
+      "instrument": "GOV-TPL-0011",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Does the system explain what a parent or representative may and may not do?",
+        "Could disagreement be mistaken for incapacity or risk?",
+        "Can deletion, retention, and safety information be understood?",
+        "Do service claims create false reassurance?"
+      ]
+    },
+    {
+      "track_id": "APR-PARENT-001",
+      "title": "Parent, caregiver, and representative review",
+      "participant_group": "Parents, caregivers, informal supporters, and formal representatives",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003"
+      ],
+      "instrument": "GOV-TPL-0012",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Are care, support, and authority clearly distinguished?",
+        "What evidence feels proportionate or excessive?",
+        "Can the representative understand expiry, conflict, and challenge?",
+        "Are deletion and backup states practically understandable?"
+      ]
+    },
+    {
+      "track_id": "APR-PRACTITIONER-001",
+      "title": "Family, education, mental-health, and safeguarding practitioner review",
+      "participant_group": "Qualified practitioners with relevant family, child, education, psychological, safeguarding, or service-delivery experience",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003",
+        "PROF-0004"
+      ],
+      "instrument": "GOV-TPL-0013",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Are categories usable without encouraging diagnosis or authority overreach?",
+        "Are conflict and safeguarding routes credible?",
+        "Are retention and service defaults operationally defensible?",
+        "Which failure cases are missing?"
+      ]
+    },
+    {
+      "track_id": "APR-PRIVACY-SAFETY-001",
+      "title": "Privacy, data-rights, and safety review",
+      "participant_group": "Privacy, data governance, safety, safeguarding, incident, and human-rights reviewers",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003",
+        "PROF-0004"
+      ],
+      "instrument": "GOV-TPL-0014",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Do the profiles minimize collection, retention, and disclosure?",
+        "Can safety exceptions become permanent control?",
+        "Are false labels and representative conflicts correctable?",
+        "Are service and resource claims evidence-backed?"
+      ]
+    },
+    {
+      "track_id": "APR-ACCESSIBILITY-001",
+      "title": "Accessibility, language, and communication review",
+      "participant_group": "People with disability, neurodivergence, low literacy, language access needs, and accessibility expertise",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003",
+        "PROF-0004"
+      ],
+      "instrument": "GOV-TPL-0015",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Can decisions and rights be understood without specialist language?",
+        "Are alternate communication routes provided?",
+        "Could verification exclude people without documents or technology?",
+        "Are resource and service details usable under stress?"
+      ]
+    },
+    {
+      "track_id": "APR-JURISDICTION-001",
+      "title": "Jurisdiction and professional-duty review",
+      "participant_group": "Qualified legal, regulatory, safeguarding, professional-ethics, and jurisdiction reviewers",
+      "profile_scope": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003",
+        "PROF-0004"
+      ],
+      "instrument": "GOV-TPL-0016",
+      "status": "PreparedNotExecuted",
+      "minimum_questions": [
+        "Which provisions require local qualification?",
+        "Which age, authority, retention, disclosure, or service duties conflict?",
+        "Which profile defaults must be prohibited from universal use?",
+        "What evidence is necessary before a public or professional claim?"
+      ]
+    }
+  ]
+}

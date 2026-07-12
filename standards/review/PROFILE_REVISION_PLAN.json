@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-PROFILE-REVISION-PLAN-0001",
+  "title": "Profile Revision Plan After Internal Review Round 1",
+  "status": "Accepted planning record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
+  "governing_record": "GOV-0066",
+  "target_status_after_revision": "Proposed",
+  "summary": {
+    "items": 16,
+    "p0": 10,
+    "p1": 6,
+    "planned": 16,
+    "complete": 0
+  },
+  "items": [
+    {
+      "revision_id": "PRV-0001",
+      "source_document": "PROF-0001",
+      "title": "Non-hierarchical participation semantics",
+      "proposed_change": "State that P0–P5 are purpose-specific participation conditions, not intelligence, maturity, compliance, or worth scores.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0002",
+      "source_document": "PROF-0001",
+      "title": "Supported decision and refusal protection",
+      "proposed_change": "Add support, disagreement, refusal, non-retaliation, and no-inference-from-silence rules.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0003",
+      "source_document": "PROF-0001",
+      "title": "Temporary exclusion safeguards",
+      "proposed_change": "Require shortest duration, conflict-free authorization, support plan, later notice, and independent review for P0.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0004",
+      "source_document": "PROF-0001",
+      "title": "Accessible participation scenarios",
+      "proposed_change": "Add literacy, disability, language, neurodivergence, trauma-sensitive, and purpose-specific scenario tests.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0005",
+      "source_document": "PROF-0002",
+      "title": "Least-evidence verification",
+      "proposed_change": "Require the minimum evidence level and prohibit document collection when lower-intrusion verification is sufficient.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0006",
+      "source_document": "PROF-0002",
+      "title": "Informal care without automatic authority",
+      "proposed_change": "Distinguish care, support, emergency contact, and legal or delegated authority.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0007",
+      "source_document": "PROF-0002",
+      "title": "Subject challenge and conflict escalation",
+      "proposed_change": "Add accessible challenge, operator-as-risk, coercion, violence, protected-source, and different-reviewer paths.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0008",
+      "source_document": "PROF-0002",
+      "title": "Authority-evidence lifecycle",
+      "proposed_change": "Add purpose separation, access restriction, expiry propagation, deletion handling, and prohibition on unrelated reuse.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0009",
+      "source_document": "PROF-0003",
+      "title": "Review interval is not retention permission",
+      "proposed_change": "Require deletion at purpose end even before the maximum review interval and prohibit default-period justification by itself.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0010",
+      "source_document": "PROF-0003",
+      "title": "Plain-language retained-data status",
+      "proposed_change": "Show what remains, where, why, who can use it, expected removal, exception basis, and challenge route.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0011",
+      "source_document": "PROF-0003",
+      "title": "Safety-evidence balancing",
+      "proposed_change": "Add reporter protection, false-label correction, incident evidence, legal hold, and least-retention balancing.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0012",
+      "source_document": "PROF-0003",
+      "title": "Backup restoration controls",
+      "proposed_change": "Require suppression on restore, completion checks, exception expiry, and post-restore propagation tests.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0013",
+      "source_document": "PROF-0004",
+      "title": "Risk- and context-sensitive freshness",
+      "proposed_change": "Make F0–F3 maximum review defaults subject to higher-risk, local, operational, and affected-person evidence.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0014",
+      "source_document": "PROF-0004",
+      "title": "Active-handoff evidence floor",
+      "proposed_change": "Define staffing, acknowledgment, acceptance, overload, outage, after-hours, and failed-handoff evidence before S2 claims.",
+      "priority": "P0",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0015",
+      "source_document": "PROF-0004",
+      "title": "Accessible resource metadata",
+      "proposed_change": "Add disability access, language, age range, eligibility, cost, safe-contact, and privacy fields.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    },
+    {
+      "revision_id": "PRV-0016",
+      "source_document": "PROF-0004",
+      "title": "Independent local verification",
+      "proposed_change": "Require a second source or local reviewer for high-risk resources and preserve disagreement or stale-status history.",
+      "priority": "P1",
+      "status": "Planned",
+      "review_requirements": [
+        "Internal profile re-review",
+        "Affected-person or relevant domain review",
+        "Preserve minority views and limitations"
+      ]
+    }
+  ]
+}

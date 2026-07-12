@@ -2,7 +2,7 @@
 id: GOV-0060
 title: Day 13 Status Recommendation
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-12
@@ -49,3 +49,10 @@ MF-0004 and PROJECT-MINGOS-0002  Candidate
 - no product implementation target has been tested.
 
 Infrastructure completeness is not normative maturity.
+
+## Day 14 relation
+
+The Day 13 recommendation is confirmed.
+
+Profile internal review found revisions necessary, and affected-person review
+remains prepared but unexecuted.

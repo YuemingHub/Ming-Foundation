@@ -104,10 +104,31 @@ related:
 - PROF-0002
 - PROF-0003
 - PROF-0004
+- GOV-0061
+- GOV-0062
+- GOV-0063
+- GOV-0064
+- GOV-0065
+- GOV-0066
+- GOV-0067
+- GOV-0068
+- GOV-0069
+- GOV-0070
+- ADR-0017
+- ADR-0018
+- REF-0008
+- GOV-TPL-0010
+- GOV-TPL-0011
+- GOV-TPL-0012
+- GOV-TPL-0013
+- GOV-TPL-0014
+- GOV-TPL-0015
+- GOV-TPL-0016
+- GOV-TPL-0017
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.13
+version: 1.0.0-alpha.14
 ---
 
 # GOV-0001 — Current Canonical State
@@ -131,8 +152,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 13 — Requirement Re-baseline and Residual Profile Design
-- **Current repository version:** `1.0.0-alpha.13`
+- **Current repository stage:** Foundation 1.0 / Day 14 — Profile Review and Affected-Person Review Preparation
+- **Current repository version:** `1.0.0-alpha.14`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -190,6 +211,17 @@ decisions, and governance records.
 - Day 10 23-item RFC revision plan;
 - Day 10 dissent and unresolved-objection register;
 - Day 10 decision retaining all RFCs at Proposed.
+- Day 11 RFC-0001 through RFC-0003 source revision wave R0 and R1;
+- Day 12 Internal Architecture Review Round 2;
+- Day 12 repository source-review tests and residual plan;
+- Day 13 current 115-requirement and 115-test specification baseline;
+- Day 13 preservation and mapping of all 63 legacy requirement IDs;
+- Day 13 design of PROF-0001 through PROF-0004;
+- Day 14 Profile Internal Review Round 1;
+- Day 14 16-item Profile revision plan;
+- Day 14 seven-track affected-person and domain review preparation;
+- Day 14 eight review instruments and evidence safeguards;
+- Day 14 cross-platform canonical text-integrity policy.
 
 ### In progress
 
@@ -304,15 +336,19 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 13, the next canonical work is Profile Review and Affected-Person Review Preparation:
+After Day 14, the next canonical work is Profile Source Revision and Review-Readiness Gate:
 
 1. run `python scripts/validate_all.py`;
-2. execute internal review of PROF-0001 through PROF-0004;
-3. prepare child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments;
-4. test whether profile levels, evidence classes, review intervals, service classes, and freshness intervals are comprehensible and proportionate;
-5. revise profile drafts without closing linked ambiguities prematurely;
-6. preserve the 115-requirement current baseline and 63-ID legacy mapping;
-7. keep implementation acceptance tests unexecuted until a target is explicitly selected;
-8. keep RFC-0001 through RFC-0005 and PROF-0001 through PROF-0004 at Proposed;
+2. revise PROF-0001 through PROF-0004 against PRV-0001 through PRV-0016;
+3. preserve non-hierarchical participation, least-evidence verification,
+   purpose-limited retention, and evidence-backed service claims;
+4. run Profile Internal Review Round 2;
+5. do not recruit participants until all GOV-0067 entry gates have named
+   owners and approved procedures;
+6. retain affected-person review at `PreparedNotExecuted` until real,
+   safeguarded execution evidence exists;
+7. preserve all nineteen ambiguities and eight dissent items as Open;
+8. retain all RFCs and Profiles at Proposed;
 9. keep both Charters at Candidate;
-10. do not enter another repository without explicit user instruction.
+10. keep implementation conformance separately scoped and empty;
+11. do not enter another repository without explicit user instruction.

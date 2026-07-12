@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.7
+version: 1.0.0-alpha.8
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -254,3 +254,58 @@ A `PROF-*` document:
 - remains Proposed until reviewed through the applicable MOS process;
 - must not use machine-only ambiguity IDs as frontmatter document references;
 - may reference ambiguity IDs inside its governed body and machine registry.
+## 19. Profile review
+
+A `PROF-*` document MUST complete a Profile review before promotion.
+
+The review MUST address:
+
+- scope and definitions;
+- agency and non-coercion;
+- proportionality and minimization;
+- privacy and data rights;
+- safety and safeguarding;
+- accessibility and development;
+- operational evidence;
+- jurisdiction and limitations.
+
+Internal review completion MUST NOT replace affected-person, domain,
+jurisdiction, or implementation review.
+
+## 20. Affected-person review states
+
+Affected-person and domain review states include:
+
+```text
+NotPrepared
+PreparedNotExecuted
+InExecution
+EvidenceCollected
+Synthesized
+Complete
+StoppedForSafeguarding
+```
+
+`PreparedNotExecuted` means instruments and safeguards exist, but no
+participant recruitment, session, result, or approval may be claimed.
+
+## 21. Review evidence protection
+
+Affected-person review MUST:
+
+- be voluntary and non-coercive;
+- use appropriate consent and assent;
+- support skip, stop, withdrawal, and deletion;
+- collect minimum necessary evidence;
+- prohibit general collection of identifiable sensitive cases;
+- preserve minority views and counterexamples;
+- avoid model training or personalization from review evidence;
+- use independent facilitation where conflicts or vulnerable participants
+  require it.
+
+## 22. Canonical text integrity
+
+Governed UTF-8 text identity MUST use canonical LF newline semantics.
+
+Validators MUST NOT report equivalent LF and CRLF working-tree text as
+different governed content.

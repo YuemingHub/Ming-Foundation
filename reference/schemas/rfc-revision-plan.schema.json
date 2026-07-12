@@ -44,7 +44,8 @@
               "PartiallyImplemented",
               "InternallyAcceptedPendingExternalReview",
               "NeedsFurtherRevision",
-              "ProfileDesignedPendingReview"
+              "ProfileDesignedPendingReview",
+              "ProfileReviewedNeedsRevision"
             ]
           }
         }

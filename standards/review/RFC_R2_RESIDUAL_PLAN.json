@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "plan_id": "MING-RFC-R2-RESIDUAL-PLAN-0001",
   "title": "Round 2 Residual Revision and Review Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
-  "registry_version": "1.0.0-alpha.13",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
   "governing_record": "GOV-0055",
   "summary": {
     "items": 7,
+    "reviewed_needs_revision": 4,
     "complete": 2,
-    "designed_pending_review": 4,
-    "planned": 1
+    "prepared_not_executed": 1
   },
   "items": [
     {
@@ -25,10 +25,14 @@
       ],
       "priority": "P0",
       "work": "Define reference age, capacity, jurisdiction, safety, conflict, service, notice, and independent-review profiles without treating age as sole authority.",
-      "status": "DesignedPendingReview",
+      "status": "ReviewedNeedsRevision",
       "implementation_refs": [
         "PROF-0001",
         "GOV-0058"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -44,10 +48,14 @@
       ],
       "priority": "P0",
       "work": "Define representative types, proportionate evidence, verification strength by impact, expiry, conflict handling, and subject participation.",
-      "status": "DesignedPendingReview",
+      "status": "ReviewedNeedsRevision",
       "implementation_refs": [
         "PROF-0002",
         "GOV-0058"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -61,10 +69,14 @@
       ],
       "priority": "P0",
       "work": "Create non-universal reference duration profiles, backup-deletion completion evidence, exception review deadlines, and jurisdiction qualification.",
-      "status": "DesignedPendingReview",
+      "status": "ReviewedNeedsRevision",
       "implementation_refs": [
         "PROF-0003",
         "GOV-0058"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -78,10 +90,14 @@
       ],
       "priority": "P0",
       "work": "Define evidence requirements for response targets, staffing, availability, resource verification, expiry, independent checks, and stale-resource behavior.",
-      "status": "DesignedPendingReview",
+      "status": "ReviewedNeedsRevision",
       "implementation_refs": [
         "PROF-0004",
         "GOV-0058"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -148,8 +164,15 @@
       ],
       "priority": "P0",
       "work": "Prepare and execute child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments before ambiguity closure or Candidate consideration.",
-      "status": "Planned"
+      "status": "PreparedNotExecuted",
+      "implementation_refs": [
+        "GOV-0067",
+        "GOV-0068",
+        "GOV-0069"
+      ]
     }
   ],
-  "day13_record": "GOV-0058"
+  "day13_record": "GOV-0058",
+  "day14_review_record": "GOV-0061",
+  "affected_person_review_record": "GOV-0067"
 }

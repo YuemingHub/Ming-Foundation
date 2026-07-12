@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 from pathlib import Path
-import hashlib
+from validation_utils import canonical_text_blob_sha
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,9 +17,6 @@ RFC_PATHS = {
 def load(rel):
     return json.loads((ROOT / rel).read_text(encoding="utf-8"))
 
-def blob_sha(path):
-    data = path.read_bytes()
-    return hashlib.sha1(f"blob {len(data)}\0".encode("ascii") + data).hexdigest()
 
 def frontmatter_value(path, key):
     text = path.read_text(encoding="utf-8")
@@ -72,7 +69,7 @@ def main():
         for dimension in item["dimensions"]:
             counts[dimension["disposition"]] += 1
         path = RFC_PATHS[item["source_document"]]
-        if item["source_blob_sha"] != blob_sha(path):
+        if item["source_blob_sha"] != canonical_text_blob_sha(path):
             errors.append(f"{item['source_document']}: blob mismatch")
         if frontmatter_value(path, "status") != "Proposed":
             errors.append(f"{item['source_document']}: must remain Proposed")
@@ -113,7 +110,7 @@ def main():
         missing = [marker for marker in spec["required_markers"] if marker not in text]
         if missing or result["result"] != "Pass":
             errors.append(f"{result['test_id']}: source test failed")
-        if result["source_blob_sha"] != blob_sha(RFC_PATHS[spec["source_document"]]):
+        if result["source_blob_sha"] != canonical_text_blob_sha(RFC_PATHS[spec["source_document"]]):
             errors.append(f"{result['test_id']}: blob mismatch")
 
     requirements = load("standards/requirements/RFC_REQUIREMENTS.json")
@@ -140,7 +137,7 @@ def main():
     revise_ids = {"REV-0003","REV-0006","REV-0007","REV-0011"}
     if any(statuses.get(rid) != "InternallyAcceptedPendingExternalReview" for rid in accepted_ids):
         errors.append("accepted revision statuses mismatch")
-    if any(statuses.get(rid) not in {"NeedsFurtherRevision", "ProfileDesignedPendingReview"} for rid in revise_ids):
+    if any(statuses.get(rid) not in {"NeedsFurtherRevision", "ProfileDesignedPendingReview", "ProfileReviewedNeedsRevision"} for rid in revise_ids):
         errors.append("residual revision statuses mismatch")
 
     dissent = load("standards/review/RFC_DISSENT_REGISTER.json")
@@ -158,13 +155,13 @@ def main():
     if len(residual_states) != 7:
         errors.append("residual plan item count mismatch")
     for iid in {"R2R-001", "R2R-002", "R2R-003", "R2R-004"}:
-        if residual_states.get(iid) not in {"Planned", "DesignedPendingReview"}:
+        if residual_states.get(iid) not in {"Planned", "DesignedPendingReview", "ReviewedNeedsRevision"}:
             errors.append(f"{iid}: invalid residual design state")
     for iid in {"R2R-005", "R2R-006"}:
         if residual_states.get(iid) not in {"Planned", "Complete"}:
             errors.append(f"{iid}: invalid rebaseline state")
-    if residual_states.get("R2R-007") != "Planned":
-        errors.append("R2R-007 must remain Planned")
+    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted"}:
+        errors.append("R2R-007 must remain Planned or PreparedNotExecuted")
 
     if errors:
         print("Round 2 review validation failed:")

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/affected-person-review-safeguards.schema.json",
+  "title": "Affected-Person Review Safeguards",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "execution_state",
+    "prohibited_collection",
+    "required_safeguards",
+    "result_states"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "execution_state": {
+      "const": "PreparedNotExecuted"
+    },
+    "prohibited_collection": {
+      "type": "array",
+      "minItems": 5
+    },
+    "required_safeguards": {
+      "type": "array",
+      "minItems": 10
+    },
+    "result_states": {
+      "type": "array",
+      "minItems": 6
+    }
+  }
+}

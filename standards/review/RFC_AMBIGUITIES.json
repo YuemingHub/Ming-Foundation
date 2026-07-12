@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "registry_id": "MING-RFC-AMBIGUITIES-0001",
   "title": "Ming Foundation RFC Ambiguity and Revision Register",
   "status": "Accepted review register",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
-  "registry_version": "1.0.0-alpha.13",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
   "governing_record": "GOV-0034",
   "summary": {
     "total": 19,
@@ -19,7 +19,9 @@
     "accepted_for_internal_architecture": 8,
     "needs_further_revision": 4,
     "rejected": 0,
-    "profiles_designed_pending_review": 4
+    "profiles_designed_pending_review": 4,
+    "profile_reviewed_needs_revision": 4,
+    "affected_person_review_prepared": 4
   },
   "ambiguities": [
     {
@@ -104,7 +106,13 @@
       "profile_refs": [
         "PROF-0001",
         "PROF-0002"
-      ]
+      ],
+      "profile_review_state": "ReviewedNeedsRevision",
+      "profile_review_refs": [
+        "GOV-0061",
+        "GOV-0066"
+      ],
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "ambiguity_id": "AMB-0004",
@@ -187,7 +195,13 @@
       "profile_design_state": "DesignedPendingReview",
       "profile_refs": [
         "PROF-0002"
-      ]
+      ],
+      "profile_review_state": "ReviewedNeedsRevision",
+      "profile_review_refs": [
+        "GOV-0061",
+        "GOV-0066"
+      ],
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "ambiguity_id": "AMB-0007",
@@ -221,7 +235,13 @@
       "profile_design_state": "DesignedPendingReview",
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_review_state": "ReviewedNeedsRevision",
+      "profile_review_refs": [
+        "GOV-0061",
+        "GOV-0066"
+      ],
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "ambiguity_id": "AMB-0008",
@@ -333,7 +353,13 @@
       "profile_design_state": "DesignedPendingReview",
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_review_state": "ReviewedNeedsRevision",
+      "profile_review_refs": [
+        "GOV-0061",
+        "GOV-0066"
+      ],
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "ambiguity_id": "AMB-0012",
@@ -494,5 +520,7 @@
   "internal_review_record": "GOV-0036",
   "day11_record": "GOV-0048",
   "round2_record": "GOV-0053",
-  "day13_profile_record": "GOV-0058"
+  "day13_profile_record": "GOV-0058",
+  "day14_profile_review_record": "GOV-0061",
+  "affected_person_review_state": "PreparedNotExecuted"
 }

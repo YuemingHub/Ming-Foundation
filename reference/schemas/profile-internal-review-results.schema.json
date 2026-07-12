@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/profile-internal-review-results.schema.json",
+  "title": "Profile Internal Review Results",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "source_repository_commit",
+    "review_scope",
+    "summary",
+    "results"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "source_repository_commit": {
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "review_scope": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "review_id",
+          "source_document",
+          "source_blob_sha",
+          "review_state",
+          "dimensions",
+          "overall_disposition",
+          "promotion_recommendation"
+        ],
+        "properties": {
+          "source_document": {
+            "pattern": "^PROF-[0-9]{4}$"
+          },
+          "review_state": {
+            "const": "Complete"
+          },
+          "overall_disposition": {
+            "const": "ReviseAndRetainProposed"
+          },
+          "promotion_recommendation": {
+            "const": "RetainProposed"
+          },
+          "dimensions": {
+            "type": "array",
+            "minItems": 8
+          }
+        }
+      }
+    }
+  }
+}

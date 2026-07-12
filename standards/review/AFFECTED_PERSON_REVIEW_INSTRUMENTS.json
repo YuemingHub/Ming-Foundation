@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-AFFECTED-PERSON-REVIEW-INSTRUMENTS-0001",
+  "title": "Affected-Person and Domain Review Instrument Registry",
+  "status": "Accepted preparation infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
+  "governing_record": "GOV-0068",
+  "summary": {
+    "instruments": 8,
+    "participant_or_domain_guides": 7,
+    "session_record_templates": 1,
+    "executed": 0
+  },
+  "instruments": [
+    {
+      "instrument_id": "GOV-TPL-0010",
+      "track_id": "APR-CHILD-001",
+      "title": "Child-friendly comprehension and agency review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0011",
+      "track_id": "APR-ADOLESCENT-001",
+      "title": "Adolescent autonomy, privacy, and contestability review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0012",
+      "track_id": "APR-PARENT-001",
+      "title": "Parent, caregiver, and representative review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0013",
+      "track_id": "APR-PRACTITIONER-001",
+      "title": "Family, education, mental-health, and safeguarding practitioner review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0014",
+      "track_id": "APR-PRIVACY-SAFETY-001",
+      "title": "Privacy, data-rights, and safety review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0015",
+      "track_id": "APR-ACCESSIBILITY-001",
+      "title": "Accessibility, language, and communication review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0016",
+      "track_id": "APR-JURISDICTION-001",
+      "title": "Jurisdiction and professional-duty review",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    },
+    {
+      "instrument_id": "GOV-TPL-0017",
+      "track_id": "ALL",
+      "title": "Affected-Person Review Session Record",
+      "status": "AcceptedTemplate",
+      "execution_state": "NotExecuted"
+    }
+  ]
+}

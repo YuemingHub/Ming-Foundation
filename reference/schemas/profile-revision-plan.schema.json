@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/profile-revision-plan.schema.json",
+  "title": "Profile Revision Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "revision_id",
+          "source_document",
+          "proposed_change",
+          "priority",
+          "status"
+        ],
+        "properties": {
+          "revision_id": {
+            "pattern": "^PRV-[0-9]{4}$"
+          },
+          "source_document": {
+            "pattern": "^PROF-[0-9]{4}$"
+          },
+          "priority": {
+            "enum": [
+              "P0",
+              "P1",
+              "P2"
+            ]
+          },
+          "status": {
+            "enum": [
+              "Planned",
+              "ImplementedPendingReview",
+              "Complete",
+              "Deferred"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

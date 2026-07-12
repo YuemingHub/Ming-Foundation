@@ -2,6 +2,38 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.14] - 2026-07-13
+
+### Added
+
+- Profile Internal Review Round 1 for PROF-0001 through PROF-0004.
+- 32 profile review dimension dispositions: 13 Pass, 15 Revise, 4 Blocked.
+- Sixteen-item Profile revision plan.
+- Seven-track affected-person and domain review preparation plan.
+- Eight accepted but unexecuted review instruments.
+- Affected-person evidence safeguards and prohibited-collection boundary.
+- Cross-platform canonical text-integrity policy, `.gitattributes`, and
+  validation helpers.
+- Day 14 schemas and validators.
+
+### Review result
+
+- All four Profiles remain Proposed.
+- All four Profiles require revision.
+- R2R-001 through R2R-004 are ReviewedNeedsRevision.
+- R2R-005 and R2R-006 remain Complete.
+- R2R-007 is PreparedNotExecuted.
+- All 19 ambiguities and all 8 dissent items remain Open.
+- No participants were recruited and no review sessions were conducted.
+- No implementation tests were executed and the conformance baseline remains
+  empty.
+
+### Validation correction
+
+- Governed text blob validation now canonicalizes LF and CRLF working-tree
+  representations.
+- Windows `core.autocrlf=true` no longer creates a false source mismatch for
+  equivalent governed UTF-8 text.
 ## [1.0.0-alpha.13] - 2026-07-12
 
 ### Added

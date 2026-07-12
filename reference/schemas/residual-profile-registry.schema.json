@@ -27,7 +27,13 @@
           "version",
           "ambiguity_refs",
           "requirement_refs",
-          "residual_item_refs"
+          "residual_item_refs",
+          "source_blob_sha",
+          "internal_review_state",
+          "internal_review_ref",
+          "internal_review_record",
+          "disposition",
+          "affected_person_review_state"
         ],
         "properties": {
           "id": {
@@ -35,6 +41,24 @@
           },
           "status": {
             "const": "Proposed"
+          },
+          "source_blob_sha": {
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "internal_review_state": {
+            "const": "Complete"
+          },
+          "internal_review_ref": {
+            "type": "string"
+          },
+          "internal_review_record": {
+            "pattern": "^GOV-[0-9]{4}$"
+          },
+          "disposition": {
+            "const": "ReviseAndRetainProposed"
+          },
+          "affected_person_review_state": {
+            "const": "PreparedNotExecuted"
           }
         }
       }

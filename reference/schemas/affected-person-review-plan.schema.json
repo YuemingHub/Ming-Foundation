@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/affected-person-review-plan.schema.json",
+  "title": "Affected-Person Review Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "execution_state",
+    "summary",
+    "entry_gates",
+    "tracks"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "execution_state": {
+      "const": "PreparedNotExecuted"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "entry_gates": {
+      "type": "array",
+      "minItems": 8
+    },
+    "tracks": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "track_id",
+          "participant_group",
+          "profile_scope",
+          "instrument",
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "PreparedNotExecuted"
+          }
+        }
+      }
+    }
+  }
+}

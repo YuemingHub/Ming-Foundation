@@ -2,7 +2,7 @@
 id: ADR-0016
 title: Adopt Current Requirement Baseline and Retain Profiles as Proposed
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-12
@@ -70,3 +70,10 @@ Day 13 closes the machine re-baseline work items R2R-005 and R2R-006.
 
 It does not close profile ambiguities, execute affected-person review, or
 establish implementation conformance.
+
+## Day 14 confirmation
+
+The 115-requirement baseline remains adopted.
+
+PROF-0001 through PROF-0004 remain Proposed after internal review and are
+governed by ADR-0018 for further review and promotion.

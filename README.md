@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 13 — Requirement Re-baseline and Residual Profile Design**. Day 13 establishes a current 115-requirement and 115-test specification baseline, preserves and maps all 63 legacy IDs, and designs four Proposed residual profiles for participation, representative authority, retention, and service availability.
+This repository is at **Foundation 1.0 / Day 14 — Profile Review and Affected-Person Review Preparation**. Day 14 completes internal review of four Proposed Profiles, records 32 dimension dispositions and 16 revision items, prepares seven safeguarded affected-person and domain review tracks, and fixes cross-platform governed-text integrity without claiming any participant evidence.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -117,8 +117,17 @@ Charter governance and validation:
 - [`standards/profiles/PROF-0002-representative-authority-evidence-profile.md`](standards/profiles/PROF-0002-representative-authority-evidence-profile.md)
 - [`standards/profiles/PROF-0003-retention-and-backup-completion-profile.md`](standards/profiles/PROF-0003-retention-and-backup-completion-profile.md)
 - [`standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md`](standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md)
+- [`governance/reviews/GOV-0061-day14-profile-internal-review-round1.md`](governance/reviews/GOV-0061-day14-profile-internal-review-round1.md)
+- [`governance/remediation/GOV-0066-profile-revision-plan.md`](governance/remediation/GOV-0066-profile-revision-plan.md)
+- [`governance/reviews/GOV-0067-affected-person-review-preparation-plan.md`](governance/reviews/GOV-0067-affected-person-review-preparation-plan.md)
+- [`governance/reviews/GOV-0068-affected-person-review-instrument-pack.md`](governance/reviews/GOV-0068-affected-person-review-instrument-pack.md)
+- [`governance/evidence/GOV-0069-affected-person-review-safeguards-and-evidence-boundary.md`](governance/evidence/GOV-0069-affected-person-review-safeguards-and-evidence-boundary.md)
+- [`governance/reviews/GOV-0070-day14-status-recommendation.md`](governance/reviews/GOV-0070-day14-status-recommendation.md)
+- [`governance/decisions/ADR-0017-canonical-text-integrity-across-platforms.md`](governance/decisions/ADR-0017-canonical-text-integrity-across-platforms.md)
+- [`governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md`](governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md)
+- [`reference/REF-0008-profile-review-and-affected-person-preparation-guide.md`](reference/REF-0008-profile-review-and-affected-person-preparation-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. The current requirement baseline is complete as derived infrastructure, but profile, affected-person, legal, external, and implementation review remain incomplete.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. Profile internal review is complete with revisions required; affected-person and domain review is `PreparedNotExecuted`; implementation conformance remains empty.
 
 ## Mission
 
@@ -254,7 +263,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.13**
+Current repository foundation version: **1.0.0-alpha.14**
 
 ## License
 

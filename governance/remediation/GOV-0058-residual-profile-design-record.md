@@ -2,7 +2,7 @@
 id: GOV-0058
 title: Residual Profile Design Record
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -65,3 +65,14 @@ Profile design does not:
 - promote an RFC.
 
 AMB-0003, AMB-0006, AMB-0007, and AMB-0011 remain Open.
+
+## Day 14 internal review state
+
+All four Profiles completed internal review and require revision.
+
+```text
+Internal review: Complete
+Disposition: ReviseAndRetainProposed
+Affected-person review: PreparedNotExecuted
+Profile status: Proposed
+```

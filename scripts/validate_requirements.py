@@ -2,7 +2,7 @@
 """Validate the current requirement and implementation-test registries."""
 
 from pathlib import Path
-import hashlib
+from validation_utils import canonical_text_blob_sha
 import json
 import re
 
@@ -19,9 +19,6 @@ RFC_PATHS = {
     "RFC-0005": ROOT / "standards/rfc/RFC-0005-public-claim-charter-sync-and-capability-status.md",
 }
 
-def blob_sha(path):
-    data = path.read_bytes()
-    return hashlib.sha1(f"blob {len(data)}\0".encode("ascii") + data).hexdigest()
 
 def main():
     errors = []
@@ -51,7 +48,7 @@ def main():
     if set(source_docs) != set(RFC_PATHS):
         errors.append("RFC source coverage mismatch")
     for rfc, path in RFC_PATHS.items():
-        if source_docs[rfc]["source_blob_sha"] != blob_sha(path):
+        if source_docs[rfc]["source_blob_sha"] != canonical_text_blob_sha(path):
             errors.append(f"{rfc}: source blob mismatch")
 
     test_by_id = {item["test_id"]: item for item in test_items}

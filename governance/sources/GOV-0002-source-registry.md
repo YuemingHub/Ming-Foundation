@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.13
+version: 1.0.0-alpha.14
 ---
 
 # GOV-0002 — Source Registry
@@ -207,3 +207,11 @@ legacy archives, identity mapping, and four Proposed profiles are canonical
 repository records.
 
 They are not product implementation evidence or affected-person acceptance.
+
+## 17. Day 14 review and preparation evidence
+
+Profile internal-review results, revision plans, review instruments,
+safeguards, and preparation state are canonical governance evidence.
+
+They are not participant evidence, affected-person acceptance, legal
+qualification, or implementation conformance.

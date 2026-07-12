@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
   "title": "Ming Foundation Current RFC Requirement Registry",
   "status": "Accepted infrastructure index",
@@ -9,9 +9,9 @@
     "governing_decision": "ADR-0016"
   },
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.13",
+  "registry_version": "1.0.0-alpha.14",
   "baseline": {
     "state": "CurrentCompleteDerivedIndex",
     "record": "GOV-0056",
@@ -120,7 +120,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R001"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R002",
@@ -162,7 +163,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R002"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R003",
@@ -204,7 +206,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R003"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R004",
@@ -246,7 +249,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R004"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R005",
@@ -291,7 +295,9 @@
       "profile_refs": [
         "PROF-0001",
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R006",
@@ -336,7 +342,9 @@
       "profile_refs": [
         "PROF-0001",
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R007",
@@ -378,7 +386,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R007"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R008",
@@ -418,7 +427,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R008"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R009",
@@ -458,7 +468,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R009"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R010",
@@ -496,7 +507,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R010"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R011",
@@ -534,7 +546,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R011"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R012",
@@ -574,7 +587,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R012"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R013",
@@ -614,7 +628,8 @@
       "legacy_requirement_refs": [
         "RFC-0001-R013"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R014",
@@ -652,7 +667,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R015",
@@ -690,7 +706,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R016",
@@ -732,7 +749,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0001"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R017",
@@ -774,7 +793,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0001"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R018",
@@ -817,7 +838,9 @@
       "profile_refs": [
         "PROF-0001",
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R019",
@@ -857,7 +880,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0001"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0001-R020",
@@ -895,7 +920,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R021",
@@ -933,7 +959,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R022",
@@ -973,7 +1000,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R023",
@@ -1013,7 +1041,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R024",
@@ -1051,7 +1080,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R025",
@@ -1089,7 +1119,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R026",
@@ -1127,7 +1158,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R027",
@@ -1165,7 +1197,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R028",
@@ -1203,7 +1236,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0001-R029",
@@ -1241,7 +1275,8 @@
       "round2_review_ref": "IRR2-RFC-0001-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R001",
@@ -1283,7 +1318,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R001"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R002",
@@ -1325,7 +1361,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R002"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R003",
@@ -1365,7 +1402,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R003"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R004",
@@ -1405,7 +1443,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R004"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R005",
@@ -1447,7 +1486,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R005"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R006",
@@ -1489,7 +1529,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R006"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R007",
@@ -1529,7 +1570,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R007"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R008",
@@ -1567,7 +1609,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R008"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R009",
@@ -1607,7 +1650,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R009"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R010",
@@ -1651,7 +1695,9 @@
       ],
       "profile_refs": [
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R011",
@@ -1695,7 +1741,9 @@
       ],
       "profile_refs": [
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R012",
@@ -1739,7 +1787,9 @@
       ],
       "profile_refs": [
         "PROF-0002"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R013",
@@ -1779,7 +1829,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R013"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R014",
@@ -1819,7 +1870,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R014"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R015",
@@ -1859,7 +1911,8 @@
       "legacy_requirement_refs": [
         "RFC-0002-R015"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R016",
@@ -1903,7 +1956,9 @@
       ],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R017",
@@ -1945,7 +2000,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R018",
@@ -1985,7 +2042,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R019",
@@ -2027,7 +2086,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R020",
@@ -2069,7 +2130,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R021",
@@ -2107,7 +2170,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R022",
@@ -2147,7 +2211,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R023",
@@ -2187,7 +2252,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R024",
@@ -2227,7 +2293,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R025",
@@ -2267,7 +2334,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R026",
@@ -2305,7 +2373,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R027",
@@ -2343,7 +2412,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R028",
@@ -2381,7 +2451,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R029",
@@ -2419,7 +2490,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R030",
@@ -2461,7 +2533,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0003"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0002-R031",
@@ -2499,7 +2573,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R032",
@@ -2537,7 +2612,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R033",
@@ -2575,7 +2651,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0002-R034",
@@ -2613,7 +2690,8 @@
       "round2_review_ref": "IRR2-RFC-0002-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R001",
@@ -2655,7 +2733,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R001"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R002",
@@ -2697,7 +2776,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R002"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R003",
@@ -2739,7 +2819,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R003"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R004",
@@ -2781,7 +2862,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R004"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R005",
@@ -2823,7 +2905,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R005"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R006",
@@ -2863,7 +2946,8 @@
       "legacy_requirement_refs": [
         "RFC-0003-R006"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R007",
@@ -2907,7 +2991,9 @@
       ],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R008",
@@ -2951,7 +3037,9 @@
       ],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R009",
@@ -2995,7 +3083,9 @@
       ],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R010",
@@ -3039,7 +3129,9 @@
       ],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R011",
@@ -3075,7 +3167,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R012",
@@ -3111,7 +3204,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R013",
@@ -3149,7 +3243,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R014",
@@ -3187,7 +3282,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R015",
@@ -3225,7 +3321,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R016",
@@ -3261,7 +3358,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R017",
@@ -3299,7 +3397,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R018",
@@ -3339,7 +3438,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R019",
@@ -3379,7 +3479,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R020",
@@ -3419,7 +3520,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R021",
@@ -3457,7 +3559,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R022",
@@ -3495,7 +3598,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R023",
@@ -3537,7 +3641,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R024",
@@ -3579,7 +3685,9 @@
       "legacy_requirement_refs": [],
       "profile_refs": [
         "PROF-0004"
-      ]
+      ],
+      "profile_dependency_state": "ReviewedNeedsRevision",
+      "affected_person_review_state": "PreparedNotExecuted"
     },
     {
       "requirement_id": "RFC-0003-R025",
@@ -3617,7 +3725,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R026",
@@ -3655,7 +3764,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R027",
@@ -3695,7 +3805,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0003-R028",
@@ -3733,7 +3844,8 @@
       "round2_review_ref": "IRR2-RFC-0003-20260712",
       "baseline_state": "Current",
       "legacy_requirement_refs": [],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R001",
@@ -3775,7 +3887,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R001"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R002",
@@ -3812,7 +3925,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R002"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R003",
@@ -3853,7 +3967,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R003"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R004",
@@ -3896,7 +4011,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R004"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R005",
@@ -3937,7 +4053,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R005"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R006",
@@ -3977,7 +4094,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R006"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R007",
@@ -4019,7 +4137,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R007"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R008",
@@ -4059,7 +4178,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R008"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R009",
@@ -4101,7 +4221,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R009"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R010",
@@ -4143,7 +4264,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R010"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R011",
@@ -4185,7 +4307,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R011"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R012",
@@ -4227,7 +4350,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R012"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0004-R013",
@@ -4269,7 +4393,8 @@
       "legacy_requirement_refs": [
         "RFC-0004-R013"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R001",
@@ -4309,7 +4434,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R001"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R002",
@@ -4356,7 +4482,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R002"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R003",
@@ -4394,7 +4521,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R003"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R004",
@@ -4434,7 +4562,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R004"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R005",
@@ -4476,7 +4605,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R005"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R006",
@@ -4514,7 +4644,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R006"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R007",
@@ -4553,7 +4684,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R007"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R008",
@@ -4591,7 +4723,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R008"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R009",
@@ -4630,7 +4763,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R009"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R010",
@@ -4669,7 +4803,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R010"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     },
     {
       "requirement_id": "RFC-0005-R011",
@@ -4711,7 +4846,8 @@
       "legacy_requirement_refs": [
         "RFC-0005-R011"
       ],
-      "profile_refs": []
+      "profile_refs": [],
+      "profile_dependency_state": "NotApplicable"
     }
   ],
   "round2_review": {
@@ -4720,5 +4856,11 @@
     "current_requirement_count": 115,
     "current_complete_index_claimed": true,
     "rebaseline_record": "GOV-0056"
+  },
+  "profile_review": {
+    "record": "GOV-0061",
+    "profile_count": 4,
+    "state": "ReviewedNeedsRevision",
+    "affected_person_review_state": "PreparedNotExecuted"
   }
 }

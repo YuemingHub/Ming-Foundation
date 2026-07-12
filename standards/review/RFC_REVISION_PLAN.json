@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "plan_id": "MING-RFC-REVISION-PLAN-0001",
   "title": "Ming Foundation RFC Revision Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "bb8ca9ca06b56d65d68e91c46301638f393978eb",
-  "registry_version": "1.0.0-alpha.13",
+  "source_repository_commit": "e2276bcbef2a8ebef5e84824683412eb4d233439",
+  "registry_version": "1.0.0-alpha.14",
   "governing_record": "GOV-0042",
   "decision": "ADR-0012",
   "target_status_after_revision": "Proposed",
@@ -22,7 +22,8 @@
     "complete": 0,
     "internally_accepted_pending_external_review": 8,
     "needs_further_revision": 4,
-    "profile_designed_pending_review": 4
+    "profile_designed_pending_review": 4,
+    "profile_reviewed_needs_revision": 4
   },
   "waves": [
     {
@@ -147,7 +148,7 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ProfileDesignedPendingReview",
+      "status": "ProfileReviewedNeedsRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0001",
@@ -157,6 +158,10 @@
       "profile_refs": [
         "PROF-0001",
         "PROF-0002"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -232,7 +237,7 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ProfileDesignedPendingReview",
+      "status": "ProfileReviewedNeedsRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
@@ -241,6 +246,10 @@
       "round2_disposition": "NeedsFurtherRevision",
       "profile_refs": [
         "PROF-0002"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -262,7 +271,7 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ProfileDesignedPendingReview",
+      "status": "ProfileReviewedNeedsRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
@@ -271,6 +280,10 @@
       "round2_disposition": "NeedsFurtherRevision",
       "profile_refs": [
         "PROF-0003"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -373,7 +386,7 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ProfileDesignedPendingReview",
+      "status": "ProfileReviewedNeedsRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0003",
@@ -382,6 +395,10 @@
       "round2_disposition": "NeedsFurtherRevision",
       "profile_refs": [
         "PROF-0004"
+      ],
+      "review_refs": [
+        "GOV-0061",
+        "GOV-0066"
       ]
     },
     {
@@ -689,5 +706,6 @@
   ],
   "day11_record": "GOV-0044",
   "round2_record": "GOV-0049",
-  "day13_record": "GOV-0058"
+  "day13_record": "GOV-0058",
+  "day14_profile_review_record": "GOV-0061"
 }
