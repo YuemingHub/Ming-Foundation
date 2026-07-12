@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.11
+version: 1.0.0-alpha.12
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -274,3 +274,8 @@ Internal RFC review improves standards quality but does not complete affected-pe
 R0 and R1 revisions improve the standards used by future Charter validation.
 
 No Charter validation stream is completed by source revision alone.
+
+## 15. Day 12 Round 2 boundary
+
+Round 2 improves standards assurance but does not complete affected-person,
+legal, external, implementation, or Charter validation streams.

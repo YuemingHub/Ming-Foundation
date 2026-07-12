@@ -222,7 +222,8 @@
               "Confirmed",
               "RevisedPendingReview",
               "NeedsCorrection",
-              "Unverifiable"
+              "Unverifiable",
+              "LegacyIndexPendingRebaseline"
             ]
           },
           "current_source_version": {
@@ -233,6 +234,10 @@
           },
           "current_source_review_record": {
             "type": "string"
+          },
+          "round2_review_ref": {
+            "type": "string",
+            "pattern": "^IRR2-RFC-[0-9]{4}-[0-9]{8}$"
           }
         },
         "additionalProperties": false
@@ -242,6 +247,12 @@
       "type": "object"
     },
     "internal_review": {
+      "type": "object"
+    },
+    "current_fidelity_status": {
+      "type": "object"
+    },
+    "round2_review": {
       "type": "object"
     }
   },

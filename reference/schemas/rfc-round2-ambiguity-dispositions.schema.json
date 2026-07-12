@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-round2-ambiguity-dispositions.schema.json",
+  "title": "RFC Round 2 Ambiguity Dispositions",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "summary",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "ambiguity_id",
+          "round2_disposition",
+          "status_after_round2"
+        ],
+        "properties": {
+          "round2_disposition": {
+            "enum": [
+              "AcceptedForInternalArchitecture",
+              "NeedsFurtherRevision",
+              "Rejected"
+            ]
+          },
+          "status_after_round2": {
+            "const": "Open"
+          }
+        }
+      }
+    }
+  }
+}

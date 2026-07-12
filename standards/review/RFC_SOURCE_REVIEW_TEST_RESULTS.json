@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-SOURCE-REVIEW-TEST-RESULTS-0001",
+  "title": "Repository Source Review Test Results",
+  "status": "Accepted executed repository test evidence",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
+  "governing_record": "GOV-0054",
+  "summary": {
+    "executed": 12,
+    "passed": 12,
+    "failed": 0,
+    "product_implementation_tests_executed": 0
+  },
+  "results": [
+    {
+      "test_id": "SRT-RFC-0001-001",
+      "source_document": "RFC-0001",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0001-002",
+      "source_document": "RFC-0001",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0001-003",
+      "source_document": "RFC-0001",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0001-004",
+      "source_document": "RFC-0001",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0002-001",
+      "source_document": "RFC-0002",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0002-002",
+      "source_document": "RFC-0002",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0002-003",
+      "source_document": "RFC-0002",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0002-004",
+      "source_document": "RFC-0002",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0003-001",
+      "source_document": "RFC-0003",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0003-002",
+      "source_document": "RFC-0003",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0003-003",
+      "source_document": "RFC-0003",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    },
+    {
+      "test_id": "SRT-RFC-0003-004",
+      "source_document": "RFC-0003",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "executed_at": "2026-07-12",
+      "method": "Exact normative source marker verification",
+      "result": "Pass",
+      "missing_markers": [],
+      "claim_boundary": "Repository source structure only; no product conformance claim."
+    }
+  ]
+}

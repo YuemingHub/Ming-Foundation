@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-INTERNAL-REVIEW-ROUND2-0001",
+  "title": "Ming Foundation Internal Architecture Review Round 2 Results",
+  "status": "Accepted internal review record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
+  "governing_record": "GOV-0049",
+  "review_scope": {
+    "round": "InternalArchitectureRound2",
+    "rfc_scope": [
+      "RFC-0001",
+      "RFC-0002",
+      "RFC-0003"
+    ],
+    "complete": true,
+    "external_review_complete": false,
+    "affected_person_review_complete": false,
+    "legal_review_complete": false,
+    "implementation_conformance_complete": false
+  },
+  "summary": {
+    "rfc_count": 3,
+    "dimension_count": 27,
+    "pass": 14,
+    "revise": 10,
+    "blocked": 3,
+    "ambiguities_reviewed": 12,
+    "accepted_for_internal_architecture": 8,
+    "needs_further_revision": 4,
+    "rejected": 0,
+    "promotion_recommendation": "RetainProposed"
+  },
+  "results": [
+    {
+      "review_id": "IRR2-RFC-0001-20260712",
+      "source_document": "RFC-0001",
+      "source_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+      "source_blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "source_version": "0.2.0-draft.1",
+      "review_round": "InternalArchitectureRound2",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No affected-person or child-rights review was completed.",
+        "No external independent expert review was completed.",
+        "No jurisdiction-specific legal review was completed.",
+        "No product implementation target was selected.",
+        "The existing 63-item requirement registry has not yet been re-derived from the expanded source."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Material assertion, high-impact use, representative, and governed disclosure basis are operationally defined."
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "Source, uncertainty, materiality, impact, contestation, dependency, supersession, and lineage are coherently modeled."
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "The agency model is materially stronger, but a reference participation and representative-conflict profile remains necessary."
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Pass",
+          "finding": "Intra-family and third-party disclosure is purpose-limited, minimum-necessary, review-bounded, and appealable."
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Temporary restrictions are bounded, but practical age, safeguarding, and independent-review profiles remain external to the draft."
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Source clauses are structurally testable, but the 63-item machine registry must be re-derived from the expanded draft."
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No child, adolescent, parent, representative, or practitioner review has been executed."
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Pass",
+          "finding": "Legacy source, transformation, dependency, correction propagation, and rollback limits are explicit."
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Pass",
+          "finding": "Evidence, uncertainty, dispute, expiry, and downstream dependency remain visible."
+        }
+      ],
+      "ambiguity_dispositions": [
+        {
+          "ambiguity_id": "AMB-0001",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "The materiality criteria are explicit, conservative under uncertainty, and operationally testable."
+        },
+        {
+          "ambiguity_id": "AMB-0002",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "High-impact use now has explicit consequence classes and required accountability fields."
+        },
+        {
+          "ambiguity_id": "AMB-0003",
+          "disposition": "NeedsFurtherRevision",
+          "finding": "The RFC requires a participation profile but does not yet define reference age, capacity, jurisdiction, conflict, and service profiles."
+        },
+        {
+          "ambiguity_id": "AMB-0004",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "The governed disclosure basis defines purpose, authority, minimum necessity, recipient, limits, notice, review, and appeal."
+        }
+      ],
+      "overall_disposition": "InternallyAcceptedWithResidualRevisions",
+      "promotion_recommendation": "RetainProposed",
+      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
+      "review_record": "GOV-0050"
+    },
+    {
+      "review_id": "IRR2-RFC-0002-20260712",
+      "source_document": "RFC-0002",
+      "source_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+      "source_blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "source_version": "0.2.0-draft.1",
+      "review_round": "InternalArchitectureRound2",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No affected-person or child-rights review was completed.",
+        "No external independent expert review was completed.",
+        "No jurisdiction-specific legal review was completed.",
+        "No product implementation target was selected.",
+        "The existing 63-item requirement registry has not yet been re-derived from the expanded source."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "Technical basis, jurisdiction qualification, representative authority, retention profile, and authority map are separated."
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "Purpose, basis, assets, rights, authority, cross-channel conflict, derived assets, and lineage form a coherent model."
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Revise",
+          "finding": "Representative rights are constrained, but proportionate authority-evidence and subject-participation profiles remain undefined."
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Revise",
+          "finding": "The lifecycle is strong, but reference retention and backup-completion profiles remain necessary."
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Revise",
+          "finding": "Safety and mandatory exceptions are bounded but require jurisdiction-qualified operational profiles."
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Source clauses are testable, but the machine requirement and test registries are not yet a complete re-baseline of the expanded draft."
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No affected-person, privacy-practitioner, representative, or jurisdiction review has been executed."
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Pass",
+          "finding": "Authority conflict, restrictive default, propagation, shadow-profile prevention, and migration lineage are explicit."
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Pass",
+          "finding": "The RFC clearly separates technical governance from universal legal conclusions."
+        }
+      ],
+      "ambiguity_dispositions": [
+        {
+          "ambiguity_id": "AMB-0005",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "Technical processing categories are separated from jurisdiction-specific legal qualification."
+        },
+        {
+          "ambiguity_id": "AMB-0006",
+          "disposition": "NeedsFurtherRevision",
+          "finding": "Authority fields are defined, but proportionate evidence standards and representative types still require a profile."
+        },
+        {
+          "ambiguity_id": "AMB-0007",
+          "disposition": "NeedsFurtherRevision",
+          "finding": "Retention profile structure is clear, but reference durations, backup completion, and review triggers remain unspecified."
+        },
+        {
+          "ambiguity_id": "AMB-0008",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "The authority map and restrictive conflict precedence resolve the architectural authority question."
+        }
+      ],
+      "overall_disposition": "InternallyAcceptedWithResidualRevisions",
+      "promotion_recommendation": "RetainProposed",
+      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
+      "review_record": "GOV-0051"
+    },
+    {
+      "review_id": "IRR2-RFC-0003-20260712",
+      "source_document": "RFC-0003",
+      "source_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+      "source_blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "source_version": "0.2.0-draft.1",
+      "review_round": "InternalArchitectureRound2",
+      "reviewer_role": "Ming Foundation Architecture Board",
+      "review_state": "Complete",
+      "limitations": [
+        "No affected-person or child-rights review was completed.",
+        "No external independent expert review was completed.",
+        "No jurisdiction-specific legal review was completed.",
+        "No product implementation target was selected.",
+        "The existing 63-item requirement registry has not yet been re-derived from the expanded source."
+      ],
+      "dimensions": [
+        {
+          "dimension": "scope_and_definitions",
+          "disposition": "Pass",
+          "finding": "High-impact action, P0/P1, actual authority, service profiles, and handoff states are operationally defined."
+        },
+        {
+          "dimension": "architecture_and_data_model",
+          "disposition": "Pass",
+          "finding": "Signal, assessment, service profile, handoff, action, incident, lineage, and correction are coherent."
+        },
+        {
+          "dimension": "human_agency_and_ethics",
+          "disposition": "Pass",
+          "finding": "Least-intrusive action and precautionary temporary action are reconciled through a reviewable proportionality record."
+        },
+        {
+          "dimension": "privacy_and_consent",
+          "disposition": "Revise",
+          "finding": "Minimum disclosure and protected-party handling are present, but visibility profiles for affected people remain unresolved."
+        },
+        {
+          "dimension": "safety_and_escalation",
+          "disposition": "Pass",
+          "finding": "Accountability, failed handoff, no-handoff honesty, proportionality, and operator-as-risk triggers are structurally strong."
+        },
+        {
+          "dimension": "implementation_and_conformance",
+          "disposition": "Revise",
+          "finding": "Repository source checks pass, but service-target evidence and the expanded machine requirement baseline are incomplete."
+        },
+        {
+          "dimension": "affected_person_or_domain_review",
+          "disposition": "Blocked",
+          "finding": "No crisis, safeguarding, child-rights, professional-boundary, or operator-as-risk review has been executed."
+        },
+        {
+          "dimension": "compatibility_and_migration",
+          "disposition": "Pass",
+          "finding": "Historical classifications, downstream effects, correction propagation, and remediation limits are explicit."
+        },
+        {
+          "dimension": "evidence_and_limitations",
+          "disposition": "Revise",
+          "finding": "Availability and expiry fields are explicit, but credible target-setting and independent freshness verification remain external."
+        }
+      ],
+      "ambiguity_dispositions": [
+        {
+          "ambiguity_id": "AMB-0009",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "High-impact safety action, P0/P1, actual authority, handoff states, and closure authority are explicit."
+        },
+        {
+          "ambiguity_id": "AMB-0010",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "The proportionality record now covers competing harms, uncertainty, alternatives, privacy cost, duration, rollback, and review."
+        },
+        {
+          "ambiguity_id": "AMB-0011",
+          "disposition": "NeedsFurtherRevision",
+          "finding": "Service profiles are explicit, but credible response targets and independent resource-freshness verification still require operational profiles."
+        },
+        {
+          "ambiguity_id": "AMB-0012",
+          "disposition": "AcceptedForInternalArchitecture",
+          "finding": "Conflict triggers, interim restrictions, independent authority, minimum disclosure, later notice, and appeal are explicit."
+        }
+      ],
+      "overall_disposition": "InternallyAcceptedWithResidualRevisions",
+      "promotion_recommendation": "RetainProposed",
+      "requirement_registry_state": "NeedsRebaselineForDraft0.2",
+      "review_record": "GOV-0052"
+    }
+  ]
+}

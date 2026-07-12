@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-RFC-INTERNAL-REVIEW-RESULTS-0001",
   "title": "Ming Foundation Internal RFC Review Results",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "9df0f9fb79897094d73ab3528d92471f1bb3479b",
-  "registry_version": "1.0.0-alpha.11",
+  "registry_version": "1.0.0-alpha.12",
   "governing_record": "GOV-0036",
   "review_scope": {
     "round": "InternalArchitectureRound1",
@@ -954,5 +954,9 @@
     "record": "GOV-0044",
     "round1_remains_historical": true,
     "round2_required": true
+  },
+  "round2_relation": {
+    "round2_registry": "RFC_INTERNAL_REVIEW_ROUND2_RESULTS.json",
+    "round1_is_historical": true
   }
 }

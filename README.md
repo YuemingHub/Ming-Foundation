@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 11 — RFC Source Revision Wave R0 and R1**. Day 11 implements the four R0 cross-RFC foundations and revises RFC-0001 through RFC-0003 to 0.2.0-draft.1, while keeping twelve ambiguity responses pending Round 2 review and every RFC at Proposed.
+This repository is at **Foundation 1.0 / Day 12 — Internal Architecture Review Round 2 for RFC-0001 Through RFC-0003**. Day 12 completes Internal Architecture Review Round 2 for RFC-0001 through RFC-0003, accepts eight ambiguity answers internally, sends four to residual revision, executes twelve repository source tests, and marks the historical 63-item requirement index for re-baselining.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -97,8 +97,17 @@ Charter governance and validation:
 - [`governance/remediation/GOV-0044-day11-r0-r1-source-revision-record.md`](governance/remediation/GOV-0044-day11-r0-r1-source-revision-record.md)
 - [`governance/reviews/GOV-0048-r0-r1-ambiguity-source-disposition.md`](governance/reviews/GOV-0048-r0-r1-ambiguity-source-disposition.md)
 - [`reference/REF-0005-r0-r1-revision-foundations-guide.md`](reference/REF-0005-r0-r1-revision-foundations-guide.md)
+- [`governance/reviews/GOV-0049-day12-internal-architecture-review-round2.md`](governance/reviews/GOV-0049-day12-internal-architecture-review-round2.md)
+- [`governance/reviews/GOV-0050-rfc-0001-round2.md`](governance/reviews/GOV-0050-rfc-0001-round2.md)
+- [`governance/reviews/GOV-0051-rfc-0002-round2.md`](governance/reviews/GOV-0051-rfc-0002-round2.md)
+- [`governance/reviews/GOV-0052-rfc-0003-round2.md`](governance/reviews/GOV-0052-rfc-0003-round2.md)
+- [`governance/reviews/GOV-0053-round2-ambiguity-and-dissent-disposition.md`](governance/reviews/GOV-0053-round2-ambiguity-and-dissent-disposition.md)
+- [`governance/validation/GOV-0054-repository-source-review-test-execution.md`](governance/validation/GOV-0054-repository-source-review-test-execution.md)
+- [`governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md`](governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md)
+- [`governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md`](governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md)
+- [`reference/REF-0006-round2-review-and-rebaseline-guide.md`](reference/REF-0006-round2-review-and-rebaseline-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. RFC-0001 through RFC-0003 are revised drafts pending Internal Architecture Review Round 2; implementation conformance remains empty.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005 and GOV-0015 remain `Proposed`. Round 2 is complete internally, but affected-person, legal, external, and implementation review remain incomplete; the 63-item historical requirement index is pending re-baselining.
 
 ## Mission
 
@@ -234,7 +243,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.11**
+Current repository foundation version: **1.0.0-alpha.12**
 
 ## License
 

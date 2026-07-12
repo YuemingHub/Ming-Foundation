@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-SOURCE-REVIEW-TESTS-0001",
+  "title": "Repository Source Review Tests for RFC-0001 Through RFC-0003",
+  "status": "Accepted repository test specification",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
+  "governing_record": "GOV-0054",
+  "scope_boundary": "These tests verify repository source structure and normative markers. They do not test product implementation behavior.",
+  "tests": [
+    {
+      "test_id": "SRT-RFC-0001-001",
+      "source_document": "RFC-0001",
+      "purpose": "Materiality threshold and safer default are normative.",
+      "required_markers": [
+        "An assertion MUST be treated as material when at least one of these applies:",
+        "When materiality is uncertain, the assertion MUST be treated as material"
+      ],
+      "ambiguity_refs": [
+        "AMB-0001"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0001-002",
+      "source_document": "RFC-0001",
+      "purpose": "High-impact use and accountability fields are explicit.",
+      "required_markers": [
+        "A use is high impact when it can:",
+        "A high-impact classification MUST record the responsible actor"
+      ],
+      "ambiguity_refs": [
+        "AMB-0002"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0001-003",
+      "source_document": "RFC-0001",
+      "purpose": "Governed intra-family disclosure is minimum-necessary and reviewable.",
+      "required_markers": [
+        "A governed disclosure basis MUST state:",
+        "One family member's private statement MUST NOT be exposed to another without",
+        "Disclosure MUST be minimum necessary"
+      ],
+      "ambiguity_refs": [
+        "AMB-0004"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0001-004",
+      "source_document": "RFC-0001",
+      "purpose": "Representative authority is scoped and conflict-aware.",
+      "required_markers": [
+        "Representative authority MUST record:",
+        "Age alone MUST NOT establish complete representative authority.",
+        "use MUST pause for independent or conflict-free review"
+      ],
+      "ambiguity_refs": [
+        "AMB-0003"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0002-001",
+      "source_document": "RFC-0002",
+      "purpose": "Technical categories do not imply universal legal conclusions.",
+      "required_markers": [
+        "This RFC defines technical governance categories, not universal legal bases.",
+        "implementation MUST NOT claim that processing is lawful merely because it"
+      ],
+      "ambiguity_refs": [
+        "AMB-0005"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0002-002",
+      "source_document": "RFC-0002",
+      "purpose": "Representative authority records and conflict review are explicit.",
+      "required_markers": [
+        "### 5.3 Representative authority",
+        "A conflict, disputed authority, or high-impact request MUST route to a"
+      ],
+      "ambiguity_refs": [
+        "AMB-0006"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0002-003",
+      "source_document": "RFC-0002",
+      "purpose": "Retention profiles cover backup and exception handling.",
+      "required_markers": [
+        "Every asset MUST map to a named retention profile.",
+        "backup-deletion or cryptographic-erasure handling",
+        "maximum exception period or mandatory review"
+      ],
+      "ambiguity_refs": [
+        "AMB-0007"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0002-004",
+      "source_document": "RFC-0002",
+      "purpose": "Cross-channel authority conflict uses restrictive safe behavior.",
+      "required_markers": [
+        "It MUST maintain an explicit authority map",
+        "the most restrictive current instruction governs optional use",
+        "an unresolved identity or authority conflict freezes expansion, sharing,"
+      ],
+      "ambiguity_refs": [
+        "AMB-0008"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0003-001",
+      "source_document": "RFC-0003",
+      "purpose": "High-impact safety actions require actual authority.",
+      "required_markers": [
+        "Every high-impact safety action MUST have:",
+        "A queue, model, mailbox, or unnamed team is not a named responsible role."
+      ],
+      "ambiguity_refs": [
+        "AMB-0009"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0003-002",
+      "source_document": "RFC-0003",
+      "purpose": "Service profiles prevent false active-monitoring claims.",
+      "required_markers": [
+        "Every implementation MUST publish and record one current service profile:",
+        "A `no_handoff` or `unverified` system MUST NOT mark a safety handoff complete"
+      ],
+      "ambiguity_refs": [
+        "AMB-0011"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0003-003",
+      "source_document": "RFC-0003",
+      "purpose": "Proportionality and precautionary temporary action are reviewable.",
+      "required_markers": [
+        "For every high-impact action, the record MUST state:",
+        "A more intrusive temporary action under severe uncertainty requires a"
+      ],
+      "ambiguity_refs": [
+        "AMB-0010"
+      ]
+    },
+    {
+      "test_id": "SRT-RFC-0003-004",
+      "source_document": "RFC-0003",
+      "purpose": "Operator-as-risk conflicts trigger independent review.",
+      "required_markers": [
+        "Independent or conflict-free review MUST be triggered when:",
+        "The system MUST NOT automatically side with the operator."
+      ],
+      "ambiguity_refs": [
+        "AMB-0012"
+      ]
+    }
+  ]
+}

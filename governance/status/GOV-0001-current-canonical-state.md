@@ -84,10 +84,19 @@ related:
 - GOV-0047
 - GOV-0048
 - REF-0005
+- GOV-0049
+- GOV-0050
+- GOV-0051
+- GOV-0052
+- GOV-0053
+- GOV-0054
+- GOV-0055
+- ADR-0015
+- REF-0006
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-12
-version: 1.0.0-alpha.11
+version: 1.0.0-alpha.12
 ---
 
 # GOV-0001 — Current Canonical State
@@ -111,8 +120,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 11 — RFC Source Revision Wave R0 and R1
-- **Current repository version:** `1.0.0-alpha.11`
+- **Current repository stage:** Foundation 1.0 / Day 12 — Internal Architecture Review Round 2 for RFC-0001 Through RFC-0003
+- **Current repository version:** `1.0.0-alpha.12`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -284,14 +293,15 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 11, the next canonical work is Internal Architecture Review Round 2 for RFC-0001 through RFC-0003:
+After Day 12, the next canonical work is Requirement Re-baseline and Residual Profile Design:
 
 1. run `python scripts/validate_all.py`;
-2. execute the prepared review dimensions against `0.2.0-draft.1`;
-3. decide whether AMB-0001 through AMB-0012 are accepted, revised, or rejected;
-4. disposition DIS-0001 through DIS-0006 without erasing minority views;
-5. execute selected repository-level acceptance tests where possible;
-6. retain product implementation conformance as an empty and separate scope;
-7. keep all RFCs at Proposed unless a separate decision is justified;
-8. prepare R2 source revision for RFC-0004 and RFC-0005;
-9. do not enter another repository without explicit user instruction.
+2. re-derive normative requirements from RFC-0001 through RFC-0003 `0.2.0-draft.1`;
+3. publish a legacy-to-current requirement mapping;
+4. revise implementation acceptance specifications against the new baseline;
+5. design participation, representative-authority, retention, and service-availability profiles;
+6. execute affected-person and domain review instruments;
+7. preserve all open ambiguities and dissent until their required review gates complete;
+8. keep RFC-0001 through RFC-0005 at Proposed;
+9. keep product implementation conformance separately scoped and empty;
+10. do not enter another repository without explicit user instruction.

@@ -2,7 +2,7 @@
 id: GOV-0048
 title: R0 and R1 Ambiguity Source Disposition
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-12
@@ -52,3 +52,9 @@ This means:
 - the answer has not passed Round 2;
 - dissent and affected-person review remain relevant;
 - a later review may accept, revise, or reject the draft answer.
+## Day 12 Round 2 result
+
+- eight source answers are accepted for internal architecture;
+- four require further revision;
+- no ambiguity is closed;
+- detailed dispositions are in `GOV-0053`.

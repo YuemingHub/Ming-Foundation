@@ -2,6 +2,35 @@
 
 All notable repository-level changes are documented here.
 
+## [1.0.0-alpha.12] - 2026-07-12
+
+### Added
+
+- Day 12 Internal Architecture Review Round 2 and three RFC-specific records.
+- Round 2 ambiguity and dissent disposition record.
+- Twelve executable repository source tests and passed results.
+- Seven-item residual revision and review plan.
+- ADR-0015 retaining RFC-0001 through RFC-0003 at Proposed.
+- Round 2 validation script and schemas.
+
+### Review result
+
+- 3 RFCs and 27 dimensions reviewed: 14 Pass, 10 Revise, 3 Blocked.
+- 12 ambiguity answers reviewed: 8 internally accepted, 4 needing further revision, 0 rejected.
+- All 19 ambiguities remain Open.
+- All 8 dissent items remain Open.
+- 12 repository source tests executed and passed.
+- 63 product implementation acceptance specifications remain unexecuted.
+- Product implementation conformance results remain empty.
+
+### Fidelity correction
+
+- The existing 63-item requirement registry is retained as a historical
+  derived baseline.
+- It is no longer presented as a complete current index for RFC-0001 through
+  RFC-0003 `0.2.0-draft.1`.
+- Requirement and implementation-test re-baselining is required before
+  Candidate consideration.
 ## [1.0.0-alpha.11] - 2026-07-12
 
 ### Added

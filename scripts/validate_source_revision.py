@@ -91,8 +91,8 @@ def main() -> int:
     plan = load("standards/review/RFC_REVISION_PLAN.json")
     statuses = {item["revision_id"]: item["status"] for item in plan["items"]}
     for number in range(1, 13):
-        if statuses.get(f"REV-{number:04d}") != "ImplementedPendingReview":
-            errors.append(f"REV-{number:04d}: not ImplementedPendingReview")
+        if statuses.get(f"REV-{number:04d}") not in {"ImplementedPendingReview", "InternallyAcceptedPendingExternalReview", "NeedsFurtherRevision"}:
+            errors.append(f"REV-{number:04d}: invalid reviewed revision status")
     for number in range(13, 20):
         if statuses.get(f"REV-{number:04d}") != "Planned":
             errors.append(f"REV-{number:04d}: R2 item must remain Planned")
@@ -121,7 +121,7 @@ def main() -> int:
         errors.append("requirement count must remain 63")
     for item in requirements["requirements"]:
         if item["source_document"] in {"RFC-0001", "RFC-0002", "RFC-0003"}:
-            if item.get("current_source_state") != "RevisedPendingReview":
+            if item.get("current_source_state") not in {"RevisedPendingReview", "LegacyIndexPendingRebaseline"}:
                 errors.append(f"{item['requirement_id']}: current source state mismatch")
 
     tests = load("standards/requirements/RFC_ACCEPTANCE_TESTS.json")

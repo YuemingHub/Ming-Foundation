@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.11
+version: 1.0.0-alpha.12
 ---
 
 # GOV-0002 — Source Registry
@@ -190,3 +190,12 @@ requirement and test registries are canonical repository evidence.
 
 They do not constitute implementation, external-review, legal, or
 affected-person evidence.
+
+## 15. Day 12 review and test evidence
+
+Round 2 internal review records and repository source-test results are
+canonical governance evidence.
+
+The 63-item requirement registry remains a historical derived baseline for
+earlier source and is explicitly pending re-baselining for RFC-0001 through
+RFC-0003 `0.2.0-draft.1`.

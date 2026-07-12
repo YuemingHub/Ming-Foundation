@@ -41,7 +41,9 @@
               "Complete",
               "Deferred",
               "ImplementedPendingReview",
-              "PartiallyImplemented"
+              "PartiallyImplemented",
+              "InternallyAcceptedPendingExternalReview",
+              "NeedsFurtherRevision"
             ]
           }
         }

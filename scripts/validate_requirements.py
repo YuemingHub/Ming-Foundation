@@ -101,7 +101,7 @@ def main() -> int:
         test_refs.update(refs)
         fidelity = requirement.get("fidelity_review", {})
         current_state = requirement.get("current_source_state", "Confirmed")
-        if current_state not in {"Confirmed", "RevisedPendingReview"}:
+        if current_state not in {"Confirmed", "RevisedPendingReview", "LegacyIndexPendingRebaseline"}:
             errors.append(f"{rid}: invalid current source state {current_state!r}")
         ambiguity_refs.update(fidelity.get("ambiguity_refs", []))
 

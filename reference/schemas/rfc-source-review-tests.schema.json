@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-source-review-tests.schema.json",
+  "title": "RFC Repository Source Review Tests",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "tests"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "tests": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "test_id",
+          "source_document",
+          "required_markers"
+        ]
+      }
+    }
+  }
+}

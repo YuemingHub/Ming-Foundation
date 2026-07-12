@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-RFC-ROUND2-AMBIGUITY-DISPOSITIONS-0001",
+  "title": "Round 2 Ambiguity Dispositions for RFC-0001 Through RFC-0003",
+  "status": "Accepted internal review record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
+  "governing_record": "GOV-0053",
+  "closure_rule": "Internal acceptance does not close an ambiguity while required external, affected-person, legal, or profile review remains incomplete.",
+  "summary": {
+    "reviewed": 12,
+    "accepted_for_internal_architecture": 8,
+    "needs_further_revision": 4,
+    "rejected": 0,
+    "ambiguity_status_changed_to_resolved": 0
+  },
+  "items": [
+    {
+      "ambiguity_id": "AMB-0001",
+      "source_document": "RFC-0001",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "The materiality criteria are explicit, conservative under uncertainty, and operationally testable.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0002",
+      "source_document": "RFC-0001",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "High-impact use now has explicit consequence classes and required accountability fields.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0003",
+      "source_document": "RFC-0001",
+      "round2_disposition": "NeedsFurtherRevision",
+      "finding": "The RFC requires a participation profile but does not yet define reference age, capacity, jurisdiction, conflict, and service profiles.",
+      "status_after_round2": "Open",
+      "next_gate": "Residual source/profile revision and Round 3 review"
+    },
+    {
+      "ambiguity_id": "AMB-0004",
+      "source_document": "RFC-0001",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "The governed disclosure basis defines purpose, authority, minimum necessity, recipient, limits, notice, review, and appeal.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0005",
+      "source_document": "RFC-0002",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "Technical processing categories are separated from jurisdiction-specific legal qualification.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0006",
+      "source_document": "RFC-0002",
+      "round2_disposition": "NeedsFurtherRevision",
+      "finding": "Authority fields are defined, but proportionate evidence standards and representative types still require a profile.",
+      "status_after_round2": "Open",
+      "next_gate": "Residual source/profile revision and Round 3 review"
+    },
+    {
+      "ambiguity_id": "AMB-0007",
+      "source_document": "RFC-0002",
+      "round2_disposition": "NeedsFurtherRevision",
+      "finding": "Retention profile structure is clear, but reference durations, backup completion, and review triggers remain unspecified.",
+      "status_after_round2": "Open",
+      "next_gate": "Residual source/profile revision and Round 3 review"
+    },
+    {
+      "ambiguity_id": "AMB-0008",
+      "source_document": "RFC-0002",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "The authority map and restrictive conflict precedence resolve the architectural authority question.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0009",
+      "source_document": "RFC-0003",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "High-impact safety action, P0/P1, actual authority, handoff states, and closure authority are explicit.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0010",
+      "source_document": "RFC-0003",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "The proportionality record now covers competing harms, uncertainty, alternatives, privacy cost, duration, rollback, and review.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    },
+    {
+      "ambiguity_id": "AMB-0011",
+      "source_document": "RFC-0003",
+      "round2_disposition": "NeedsFurtherRevision",
+      "finding": "Service profiles are explicit, but credible response targets and independent resource-freshness verification still require operational profiles.",
+      "status_after_round2": "Open",
+      "next_gate": "Residual source/profile revision and Round 3 review"
+    },
+    {
+      "ambiguity_id": "AMB-0012",
+      "source_document": "RFC-0003",
+      "round2_disposition": "AcceptedForInternalArchitecture",
+      "finding": "Conflict triggers, interim restrictions, independent authority, minimum disclosure, later notice, and appeal are explicit.",
+      "status_after_round2": "Open",
+      "next_gate": "Required external, affected-person, legal, or domain review before closure"
+    }
+  ]
+}

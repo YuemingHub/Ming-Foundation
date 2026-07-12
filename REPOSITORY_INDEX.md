@@ -57,6 +57,13 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0046 | [RFC-0002 Consent and Data Rights Draft Revision](governance/remediation/gov-0046-rfc-0002-draft-revision.md) | Accepted |
 | GOV-0047 | [RFC-0003 Safety and Handoff Draft Revision](governance/remediation/gov-0047-rfc-0003-draft-revision.md) | Accepted |
 | GOV-0048 | [R0 and R1 Ambiguity Source Disposition](governance/reviews/GOV-0048-r0-r1-ambiguity-source-disposition.md) | Accepted |
+| GOV-0049 | [Day 12 Internal Architecture Review Round 2](governance/reviews/GOV-0049-day12-internal-architecture-review-round2.md) | Accepted |
+| GOV-0050 | [RFC-0001 Internal Architecture Review Round 2](governance/reviews/GOV-0050-rfc-0001-round2.md) | Accepted |
+| GOV-0051 | [RFC-0002 Internal Architecture Review Round 2](governance/reviews/GOV-0051-rfc-0002-round2.md) | Accepted |
+| GOV-0052 | [RFC-0003 Internal Architecture Review Round 2](governance/reviews/GOV-0052-rfc-0003-round2.md) | Accepted |
+| GOV-0053 | [Round 2 Ambiguity and Dissent Disposition](governance/reviews/GOV-0053-round2-ambiguity-and-dissent-disposition.md) | Accepted |
+| GOV-0054 | [Repository Source Review Test Execution](governance/validation/GOV-0054-repository-source-review-test-execution.md) | Accepted |
+| GOV-0055 | [Round 2 Residual Revision and Review Plan](governance/remediation/GOV-0055-round2-residual-revision-and-review-plan.md) | Accepted |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -103,6 +110,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0012 | [Retain RFC-0001 Through RFC-0005 at Proposed After Internal Review](governance/decisions/ADR-0012-retain-rfcs-proposed-after-internal-review.md) | Accepted |
 | ADR-0013 | [Adopt R0 Cross-RFC Revision Foundations](governance/decisions/ADR-0013-r0-cross-rfc-revision-foundations.md) | Accepted |
 | ADR-0014 | [Retain R1 Revised RFCs at Proposed Pending Round 2 Review](governance/decisions/ADR-0014-retain-r1-revised-rfcs-proposed.md) | Accepted |
+| ADR-0015 | [Retain RFC-0001 Through RFC-0003 at Proposed After Round 2](governance/decisions/ADR-0015-retain-rfcs-proposed-after-round2.md) | Accepted |
 
 ## Projects
 
@@ -121,6 +129,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0003 | [RFC Review and Conformance Baseline Guide](reference/REF-0003-rfc-review-and-conformance-baseline-guide.md) | Accepted |
 | REF-0004 | [RFC Revision Planning Guide](reference/REF-0004-rfc-revision-planning-guide.md) | Accepted |
 | REF-0005 | [R0 and R1 Revision Foundations Guide](reference/REF-0005-r0-r1-revision-foundations-guide.md) | Accepted |
+| REF-0006 | [Round 2 Review and Requirement Rebaseline Guide](reference/REF-0006-round2-review-and-rebaseline-guide.md) | Accepted |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

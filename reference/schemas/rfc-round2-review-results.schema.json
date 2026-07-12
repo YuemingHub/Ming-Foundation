@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/rfc-round2-review-results.schema.json",
+  "title": "RFC Internal Architecture Review Round 2 Results",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "source_repository_commit",
+    "review_scope",
+    "summary",
+    "results"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "source_repository_commit": {
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "review_scope": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 3
+    }
+  }
+}

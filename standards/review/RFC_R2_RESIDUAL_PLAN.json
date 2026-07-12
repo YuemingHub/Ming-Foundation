@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-RFC-R2-RESIDUAL-PLAN-0001",
+  "title": "Round 2 Residual Revision and Review Plan",
+  "status": "Accepted planning record",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
+  "governing_record": "GOV-0055",
+  "summary": {
+    "items": 7,
+    "p0": 6,
+    "p1": 1,
+    "complete": 0
+  },
+  "items": [
+    {
+      "item_id": "R2R-001",
+      "title": "Participation and representative profile",
+      "source_documents": [
+        "RFC-0001"
+      ],
+      "ambiguity_refs": [
+        "AMB-0003"
+      ],
+      "priority": "P0",
+      "work": "Define reference age, capacity, jurisdiction, safety, conflict, service, notice, and independent-review profiles without treating age as sole authority.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-002",
+      "title": "Representative authority evidence profile",
+      "source_documents": [
+        "RFC-0001",
+        "RFC-0002"
+      ],
+      "ambiguity_refs": [
+        "AMB-0003",
+        "AMB-0006"
+      ],
+      "priority": "P0",
+      "work": "Define representative types, proportionate evidence, verification strength by impact, expiry, conflict handling, and subject participation.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-003",
+      "title": "Retention and backup completion profiles",
+      "source_documents": [
+        "RFC-0002"
+      ],
+      "ambiguity_refs": [
+        "AMB-0007"
+      ],
+      "priority": "P0",
+      "work": "Create non-universal reference duration profiles, backup-deletion completion evidence, exception review deadlines, and jurisdiction qualification.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-004",
+      "title": "Service response and resource freshness profiles",
+      "source_documents": [
+        "RFC-0003"
+      ],
+      "ambiguity_refs": [
+        "AMB-0011"
+      ],
+      "priority": "P0",
+      "work": "Define evidence requirements for response targets, staffing, availability, resource verification, expiry, independent checks, and stale-resource behavior.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-005",
+      "title": "Re-baseline machine requirements",
+      "source_documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ],
+      "ambiguity_refs": [],
+      "priority": "P0",
+      "work": "Re-derive normative requirements from 0.2.0-draft.1, preserve legacy requirement IDs through a mapping table, and stop presenting the 63-item historical index as complete for the revised drafts.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-006",
+      "title": "Re-baseline implementation acceptance tests",
+      "source_documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ],
+      "ambiguity_refs": [],
+      "priority": "P1",
+      "work": "Update implementation-level acceptance specifications after requirement re-baselining while keeping source tests separate from product conformance tests.",
+      "status": "Planned"
+    },
+    {
+      "item_id": "R2R-007",
+      "title": "Affected-person and domain review execution pack",
+      "source_documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ],
+      "ambiguity_refs": [
+        "AMB-0001",
+        "AMB-0002",
+        "AMB-0004",
+        "AMB-0005",
+        "AMB-0008",
+        "AMB-0009",
+        "AMB-0010",
+        "AMB-0012",
+        "AMB-0003",
+        "AMB-0006",
+        "AMB-0007",
+        "AMB-0011"
+      ],
+      "priority": "P0",
+      "work": "Prepare and execute child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments before ambiguity closure or Candidate consideration.",
+      "status": "Planned"
+    }
+  ]
+}

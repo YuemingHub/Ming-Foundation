@@ -2,7 +2,7 @@
 id: GOV-0042
 title: RFC Revision Plan After Internal Review Round 1
 status: Accepted
-version: 1.0.1
+version: 1.0.2
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -44,3 +44,10 @@ Planning does not resolve an ambiguity or promote an RFC.
 - REV-0013 through REV-0019 remain Planned.
 - No revision item is Complete until required re-review and synchronization
   gates pass.
+## Day 12 Round 2 state
+
+- eight R1 revision items are internally accepted pending external review;
+- four R1 revision items need further revision;
+- four cross-RFC items remain partially implemented;
+- seven R2 items remain Planned;
+- machine requirement and test re-baselining moved to `GOV-0055`.

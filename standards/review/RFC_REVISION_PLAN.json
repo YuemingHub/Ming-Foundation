@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "plan_id": "MING-RFC-REVISION-PLAN-0001",
   "title": "Ming Foundation RFC Revision Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "fb5ce1181e6df3e3a4a1cea58f22d1775b2b74a0",
-  "registry_version": "1.0.0-alpha.11",
+  "source_repository_commit": "0c3b216ccda31b321b5b3eaec416936a07445c1e",
+  "registry_version": "1.0.0-alpha.12",
   "governing_record": "GOV-0042",
   "decision": "ADR-0012",
   "target_status_after_revision": "Proposed",
@@ -19,7 +19,9 @@
     "implemented_pending_review": 12,
     "partially_implemented": 4,
     "planned": 7,
-    "complete": 0
+    "complete": 0,
+    "internally_accepted_pending_external_review": 8,
+    "needs_further_revision": 4
   },
   "waves": [
     {
@@ -90,12 +92,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0001",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0002",
@@ -116,12 +119,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0001",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0003",
@@ -142,12 +146,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "NeedsFurtherRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0001",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "NeedsFurtherRevision"
     },
     {
       "revision_id": "REV-0004",
@@ -168,12 +173,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0001",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0005",
@@ -194,12 +200,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0006",
@@ -220,12 +227,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "NeedsFurtherRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "NeedsFurtherRevision"
     },
     {
       "revision_id": "REV-0007",
@@ -246,12 +254,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "NeedsFurtherRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "NeedsFurtherRevision"
     },
     {
       "revision_id": "REV-0008",
@@ -272,12 +281,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0002",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0009",
@@ -298,12 +308,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0003",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0010",
@@ -324,12 +335,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0003",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0011",
@@ -350,12 +362,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "NeedsFurtherRevision",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0003",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "NeedsFurtherRevision"
     },
     {
       "revision_id": "REV-0012",
@@ -376,12 +389,13 @@
       ],
       "owner_role": "Ming Foundation Standards",
       "dependencies": [],
-      "status": "ImplementedPendingReview",
+      "status": "InternallyAcceptedPendingExternalReview",
       "target_draft": "0.2.0-draft",
       "implementation_refs": [
         "RFC-0003",
         "GOV-0044"
-      ]
+      ],
+      "round2_disposition": "AcceptedForInternalArchitecture"
     },
     {
       "revision_id": "REV-0013",
@@ -659,5 +673,6 @@
       ]
     }
   ],
-  "day11_record": "GOV-0044"
+  "day11_record": "GOV-0044",
+  "round2_record": "GOV-0049"
 }

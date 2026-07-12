@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.5
+version: 1.0.0-alpha.6
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -209,3 +209,19 @@ A planned revision may be marked `ImplementedPendingReview` when:
 
 A cross-RFC item may be `PartiallyImplemented` when it has been applied to
 only part of its declared source scope.
+## 16. Internal acceptance and current fidelity
+
+A source answer may be `AcceptedForInternalArchitecture` when internal review
+finds the normative structure coherent and testable.
+
+That state MUST NOT:
+
+- close an ambiguity whose required external review is incomplete;
+- imply legal or jurisdiction validity;
+- imply affected-person acceptance;
+- imply implementation conformance;
+- promote an RFC.
+
+When source revision materially expands normative clauses, a previously
+confirmed machine requirement index MUST be marked historical or pending
+re-baselining until it is re-derived from the current source.
