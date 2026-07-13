@@ -2,7 +2,7 @@
 id: REF-0010
 title: MingOS 历史原则、术语与来源映射总集
 status: Draft
-version: 0.2.0-draft.1
+version: 0.2.1-draft.2
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -123,6 +123,10 @@ REF-0010  历史原则、术语与来源映射总集（主入口）
 | SecondaryOnly | 当前只有摘要、二手整理或回忆，不能作为逐条原文 |
 | NamedOnly | 只能确认集合名或概念名，无法确认完整内容 |
 | SourceMissing | 连名称、语境或来源都不足以支持历史判断 |
+
+`UnresolvedSource` 不再是允许的来源状态。来源不足时必须根据实际证据使用
+`NamedOnly`、`SecondaryOnly` 或 `SourceMissing`；是否保留等待来源恢复，
+由独立的 `disposition_status`（例如 `RetainedPendingSource`）表达。
 
 ### 5.2 历史处置状态
 
@@ -414,5 +418,6 @@ Round 03 合并后，不再继续拆分历史映射。
 
 ## 14. 变更历史
 
+- `0.2.1-draft.2` — 清理旧 `UnresolvedSource` 残留；明确来源状态与处置状态不可混用，并同步最终机器映射元数据。
 - `0.2.0-draft.1` — 将单一状态拆分为来源证据、历史处置和术语权威三轴；补齐来源定位规则、机器映射范围和 Kernel 范围边界。
 - `0.1.0` — 建立历史原则、术语、来源、隐私和 Kernel 边界的一体化映射总集。

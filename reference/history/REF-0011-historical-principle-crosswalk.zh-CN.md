@@ -2,7 +2,7 @@
 id: REF-0011
 title: MingOS 历史原则演化对照表
 status: Draft
-version: 0.2.0-draft.1
+version: 0.2.1-draft.2
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -26,13 +26,13 @@ depends_on:
 
 - `source_status` 说明历史证据强度；`disposition_status` 说明当前处置，两者不得混用；
 - “映射到”不代表逐条等价；
-- `confidence` 表示对历史作用和迁移判断的可信程度；
-- 来源缺失时必须保持 `UnresolvedSource`；
+- `mapping_confidence` 表示对历史作用与迁移判断的可信程度，不等同于来源证据等级；
+- 来源不足时必须如实使用 `NamedOnly`、`SecondaryOnly` 或 `SourceMissing`，不能用处置状态替代来源状态；
 - 任何新原始证据都可以推翻本表。
 
 ## 2. 对照表
 
-| 编号 | 历史概念 | 历史作用 | 来源证据 | 当前处置 | 当前映射 | 建议去向 | 可信度 |
+| 编号 | 历史概念 | 历史作用 | 来源证据 | 当前处置 | 当前映射 | 建议去向 | 映射判断可信度 |
 |---|---|---|---|---|---|---|---|
 | HIST-001 | 九条公理 | 早期不可变底座的原则集合，用来定义系统为何存在以及不可越过的方向。 | `NamedOnly` | `RetainedPendingSource` | MF-0003<br>MF-0004<br>MF-0005<br>PROJECT-MINGOS-0002 | 历史集合名保留；逐条原文恢复后再决定是否形成来源附录。 | medium |
 | HIST-002 | 十六条禁止 | 早期负面边界集合，用禁止项限制控制、标签、越权、操纵和不安全输出。 | `NamedOnly` | `PartiallyAbsorbed` | MF-0004<br>PROJECT-MINGOS-0002<br>RFC-0003<br>MF-0005 | 保留集合名；逐条来源恢复后映射到宪章测试、产品禁止项和安全协议。 | medium |
@@ -130,5 +130,6 @@ depends_on:
 
 ## 5. 变更历史
 
+- `0.2.1-draft.2` — 删除旧 `UnresolvedSource` 用语，并将可信度明确命名为映射判断可信度，避免与来源证据等级混淆。
 - `0.2.0-draft.1` — 将历史来源证据与当前处置拆分为两个独立轴。
 - `0.1.0` — 建立首轮历史原则、方法、身份概念和架构命名对照。

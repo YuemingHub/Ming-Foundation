@@ -1,7 +1,7 @@
 {
-  "schema": "mingos.historical-concept-map.v0.2",
+  "schema": "mingos.historical-concept-map.v0.2.1",
   "status": "Draft",
-  "version": "0.2.0-draft.1",
+  "version": "0.2.1-draft.2",
   "generated_from": [
     "REF-0010",
     "REF-0011",
@@ -11,7 +11,6 @@
   ],
   "authority_notice": "This JSON is a non-normative companion. Markdown source documents control when representations differ.",
   "repository_base": "1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
-  "reviewed_pr_head": "497705a20fed01fe822095e59d0bfdf9e7d71a3d",
   "taxonomies": {
     "source_status": {
       "CurrentRepositoryEvidence": "当前仓库可定位到该概念或边界，但不自动证明其早期原文。",
@@ -74,10 +73,10 @@
         "PROJECT-MINGOS-0002"
       ],
       "recommended_destination": "历史集合名保留；逐条原文恢复后再决定是否形成来源附录。",
-      "confidence": "medium",
       "notes": "集合名称和底座作用可确认；可靠的九条逐条原文尚未恢复，禁止按记忆重建。",
       "source_status": "NamedOnly",
-      "disposition_status": "RetainedPendingSource"
+      "disposition_status": "RetainedPendingSource",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "HIST-002",
@@ -92,10 +91,10 @@
         "MF-0005"
       ],
       "recommended_destination": "保留集合名；逐条来源恢复后映射到宪章测试、产品禁止项和安全协议。",
-      "confidence": "medium",
       "notes": "当前可确认的是功能和后续吸收方向，不能声称现有条款与原十六条一一等价。",
       "source_status": "NamedOnly",
-      "disposition_status": "PartiallyAbsorbed"
+      "disposition_status": "PartiallyAbsorbed",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "HIST-003",
@@ -109,10 +108,10 @@
         "RFC-0003"
       ],
       "recommended_destination": "上层保留安全原则；具体级别、类别和动作由 RFC 与实现 Profile 管理。",
-      "confidence": "high",
       "notes": "L1 作为历史运行标签保留，不应成为所有产品永久统一的风险枚举。",
       "source_status": "ImplementationEvidence",
-      "disposition_status": "ImplementationHistorical"
+      "disposition_status": "ImplementationHistorical",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "HIST-004",
@@ -126,10 +125,10 @@
         "MF-0005"
       ],
       "recommended_destination": "作为文化性简语保留；规范层使用“生命先于系统”“理解先于建议”。",
-      "confidence": "high",
       "notes": "不能被理解为忽略紧迫安全、他人权利或现实责任。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "HIST-005",
@@ -143,10 +142,10 @@
         "RFC-0003"
       ],
       "recommended_destination": "拆分为文化表达、输出规范和安全协议；不作为正式架构层名。",
-      "confidence": "medium",
       "notes": "“灵魂”具有感染力但不可审计，不能替代权限、风险、同意和责任。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "HistoricalMetaphor"
+      "disposition_status": "HistoricalMetaphor",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "HIST-006",
@@ -161,10 +160,10 @@
         "MF-0004"
       ],
       "recommended_destination": "未来治理规范中的跨层冲突与升级机制；恢复原始定义前不作为正式术语。",
-      "confidence": "low",
       "notes": "历史名称可确认，但原始触发条件、权限和程序尚未可靠恢复。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "RetainedPendingSource"
+      "disposition_status": "RetainedPendingSource",
+      "mapping_confidence": "low"
     },
     {
       "concept_id": "METH-001",
@@ -176,10 +175,10 @@
         "MF-0005"
       ],
       "recommended_destination": "家庭教育应用规范与证据地图，不进入 Foundation 根原则编号。",
-      "confidence": "high",
       "notes": "“规律”必须避免被写成已经掌握普遍生命规律；“投资”指时间、注意力和心力方向，不是金融投资。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-002",
@@ -191,10 +190,10 @@
         "MF-0005"
       ],
       "recommended_destination": "Family application profile；其中通用对象可被未来 Kernel 借鉴，但不能整套复制。",
-      "confidence": "high",
       "notes": "历史别名包括“三系统法”“Family Growth Tri-System”。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-003",
@@ -207,10 +206,10 @@
         "ADR-0002"
       ],
       "recommended_destination": "家庭应用模板；与 Kernel Event/Timeline 对象建立映射。",
-      "confidence": "high",
       "notes": "不能把链条中的推测写成事实。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-004",
@@ -223,10 +222,10 @@
         "REF-0002:Need"
       ],
       "recommended_destination": "家庭应用模板与训练材料。",
-      "confidence": "high",
       "notes": "深层需要只能作为假设，必须由当事人确认。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-005",
@@ -239,10 +238,10 @@
         "REF-0002:Pattern"
       ],
       "recommended_destination": "家庭应用规范与 Pattern 数据映射。",
-      "confidence": "high",
       "notes": "循环解释不能抹平暴力、胁迫和权力不对等。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-006",
@@ -255,10 +254,10 @@
         "MF-0005"
       ],
       "recommended_destination": "家庭应用规范；未来与最小行动协议关联。",
-      "confidence": "high",
       "notes": "断点不是操纵他人的技巧，优先改变自己可承担的行动。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "MethodCandidate"
+      "disposition_status": "MethodCandidate",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-007",
@@ -270,10 +269,10 @@
         "MF-0005"
       ],
       "recommended_destination": "课程、公共沟通和应用导读；不作为科学分类。",
-      "confidence": "high",
       "notes": "园丁隐喻不等于放任、无边界或拒绝必要保护。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-008",
@@ -285,10 +284,10 @@
         "MF-0005"
       ],
       "recommended_destination": "教育应用规范与儿童参与规则。",
-      "confidence": "high",
       "notes": "对话不取消成人责任，也不要求儿童承担超出发展能力的决策。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-009",
@@ -301,10 +300,10 @@
         "RFC-0003"
       ],
       "recommended_destination": "公共文本改写为“先稳定，再处理任务”；原语保留于历史映射。",
-      "confidence": "high",
       "notes": "原语具有军事和文化负担，不适合作为正式标准名称。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "HistoricalAlias"
+      "disposition_status": "HistoricalAlias",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "METH-010",
@@ -316,10 +315,10 @@
         "MF-0005"
       ],
       "recommended_destination": "保留为传播史料；正式表达改为“成绩是多因素结果”。",
-      "confidence": "high",
       "notes": "原句具有单向因果过强问题，不能作为科学结论。",
       "source_status": "SecondaryOnly",
-      "disposition_status": "NarrowedSlogan"
+      "disposition_status": "NarrowedSlogan",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "IDEN-001",
@@ -331,10 +330,10 @@
         "MF-0005"
       ],
       "recommended_destination": "Round 06/07 决定是否进入 Kernel 对象模型；当前不视为诊断类别。",
-      "confidence": "high",
       "notes": "信号不等于结论，也不合理化伤害。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "IDEN-002",
@@ -346,10 +345,10 @@
         "MF-0005"
       ],
       "recommended_destination": "未来 Kernel 运行单元和产品指标候选；当前不替代正式协议。",
-      "confidence": "high",
       "notes": "对话可合理停在不知道、拒绝或暂不行动。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "IDEN-003",
@@ -362,10 +361,10 @@
         "MF-0004"
       ],
       "recommended_destination": "参与、同意与行动协议；保留角色责任差异。",
-      "confidence": "high",
       "notes": "共同创造不等于权力和责任完全相同。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "InterpretiveCurrent"
+      "disposition_status": "InterpretiveCurrent",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "IDEN-004",
@@ -379,10 +378,10 @@
         "MF-0004"
       ],
       "recommended_destination": "公共文化表达；技术约束仍由同意、权限、审计和安全协议承担。",
-      "confidence": "high",
       "notes": "温和语言不能证明系统真正尊重主体性。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "CulturalMaxim"
+      "disposition_status": "CulturalMaxim",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "IDEN-005",
@@ -395,10 +394,10 @@
         "MF-0005"
       ],
       "recommended_destination": "公共沟通与产品语言；不能覆盖必要安全义务。",
-      "confidence": "high",
       "notes": "系统仍需说明何时建议、限制或转介。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "CulturalMaxim"
+      "disposition_status": "CulturalMaxim",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "ARCH-001",
@@ -410,10 +409,10 @@
         "MF-0005"
       ],
       "recommended_destination": "品牌与架构解释；不得声称为已接受的官方英文展开。",
-      "confidence": "high",
       "notes": "正式英文全称和品牌层级仍需独立治理。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "HistoricalExplanatoryFrame"
+      "disposition_status": "HistoricalExplanatoryFrame",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "ARCH-002",
@@ -426,10 +425,10 @@
         "MF-0005"
       ],
       "recommended_destination": "Observatory、Lab、Kernel learning loop 和治理版本机制。",
-      "confidence": "high",
       "notes": "反馈不自动等于知识，必须经过授权、证据、反例和伦理审查。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "ArchitectureDirection"
+      "disposition_status": "ArchitectureDirection",
+      "mapping_confidence": "high"
     },
     {
       "concept_id": "ARCH-003",
@@ -442,10 +441,10 @@
         "MF-0005"
       ],
       "recommended_destination": "使命和架构解释；不要作为已实现能力声明。",
-      "confidence": "medium",
       "notes": "名称比具体组件成熟度更高，必须与真实实现状态同步。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "StrategyLabel"
+      "disposition_status": "StrategyLabel",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "ARCH-004",
@@ -459,10 +458,10 @@
         "RFC-0002"
       ],
       "recommended_destination": "保留为历史愿景；正式协议由 MOS/RFC 体系承载。",
-      "confidence": "medium",
       "notes": "当前没有单一名为 Open Life Protocol 的 Accepted 标准。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "HistoricalStrategyLabel"
+      "disposition_status": "HistoricalStrategyLabel",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "ARCH-005",
@@ -475,10 +474,10 @@
         "REF-0002"
       ],
       "recommended_destination": "研究问题和数据模型探索；不作为已发现的普遍语法。",
-      "confidence": "medium",
       "notes": "必须避免把文化与产品建模误写为生命本身的客观语法。",
       "source_status": "CurrentRepositoryEvidence",
-      "disposition_status": "OpenResearchConcept"
+      "disposition_status": "OpenResearchConcept",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "IMPL-001",
@@ -488,10 +487,10 @@
       "historical_role": "产品中用于承载家庭真实时刻和连续对话的对象设想。",
       "current_mapping": [],
       "recommended_destination": "产品实现或未来 Kernel 评审；不得由旧代码反向定义 Foundation。",
-      "confidence": "medium",
       "notes": "当前不属于公共 Foundation 规范。",
       "source_status": "ImplementationEvidence",
-      "disposition_status": "ImplementationSpecific"
+      "disposition_status": "ImplementationSpecific",
+      "mapping_confidence": "medium"
     },
     {
       "concept_id": "IMPL-002",
@@ -504,10 +503,10 @@
         "RFC-0002"
       ],
       "recommended_destination": "产品实现评审；名称和字段不得成为人格画像或商业操纵工具。",
-      "confidence": "medium",
       "notes": "了解父母只能用于适配、减负和安全，不能用于转化和依赖。",
       "source_status": "ImplementationEvidence",
-      "disposition_status": "ImplementationSpecific"
+      "disposition_status": "ImplementationSpecific",
+      "mapping_confidence": "medium"
     }
   ],
   "terms": [
@@ -694,7 +693,7 @@
       "name": "Ming-Foundation 当前 main",
       "source_type": "公开仓库",
       "locator_status": "RegisteredPublic",
-      "locator": "YuemingHub/Ming-Foundation@1a609bee...",
+      "locator": "YuemingHub/Ming-Foundation@1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
       "evidence_level": "高",
       "supports": "当前规范、状态和替代关系",
       "boundary": "允许引用；以具体提交为准"
@@ -704,7 +703,12 @@
       "name": "MF-0003 / MF-0004 / MF-0005 / MingOS Charter",
       "source_type": "公开仓库",
       "locator_status": "RegisteredPublic",
-      "locator": "对应仓库路径与提交",
+      "locator": [
+        "foundation/principles/MF-0003-first-principles.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
+        "foundation/charter/MF-0004-life-charter.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
+        "foundation/philosophy/MF-0005-mingos-core-thought-culture-philosophy.zh-CN.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
+        "projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c"
+      ],
       "evidence_level": "高",
       "supports": "原则、宪章、解释和边界",
       "boundary": "不得混淆 Draft、Candidate、Accepted"
@@ -714,7 +718,10 @@
       "name": "ADR / GOV / RFC / Profile",
       "source_type": "公开仓库",
       "locator_status": "RegisteredPublic",
-      "locator": "对应仓库路径与提交",
+      "locator": {
+        "index": "REPOSITORY_INDEX.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
+        "scope": "ADR/GOV/RFC/Profile paths indexed at the same commit"
+      },
       "evidence_level": "高",
       "supports": "治理、协议和运行边界",
       "boundary": "下层不得改写上层"
@@ -901,6 +908,9 @@
     "concept_count": 28,
     "term_count": 22,
     "source_count": 10,
-    "kernel_boundary_count": 15
-  }
+    "kernel_boundary_count": 15,
+    "concept_mapping_confidence_field": "mapping_confidence",
+    "revision_base_head": "8345f932b0495630c7b4afb59a0f601b82c77d7f"
+  },
+  "revision_base_head": "8345f932b0495630c7b4afb59a0f601b82c77d7f"
 }

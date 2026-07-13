@@ -2,7 +2,7 @@
 id: REF-0013
 title: MingOS 历史来源、追溯与隐私登记
 status: Draft
-version: 0.2.0-draft.1
+version: 0.2.1-draft.2
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -63,9 +63,9 @@ depends_on:
 
 | 来源编号 | 来源 | 类型 | 定位状态 | 定位信息 | 当前证据等级 | 可支持内容 | 使用边界 |
 |---|---|---|---|---|---|---|---|
-| SRC-CANON-001 | Ming-Foundation 当前 main | 公开仓库 | `RegisteredPublic` | `YuemingHub/Ming-Foundation@1a609bee...` | 高 | 当前规范、状态和替代关系 | 允许引用；以具体提交为准 |
-| SRC-CANON-002 | MF-0003 / MF-0004 / MF-0005 / MingOS Charter | 公开仓库 | `RegisteredPublic` | 对应仓库路径与提交 | 高 | 原则、宪章、解释和边界 | 不得混淆 Draft、Candidate、Accepted |
-| SRC-CANON-003 | ADR / GOV / RFC / Profile | 公开仓库 | `RegisteredPublic` | 对应仓库路径与提交 | 高 | 治理、协议和运行边界 | 下层不得改写上层 |
+| SRC-CANON-001 | Ming-Foundation 当前 main | 公开仓库 | `RegisteredPublic` | `YuemingHub/Ming-Foundation@1a609beeac703e5b5a325ce5aec827d4cd51ea1c` | 高 | 当前规范、状态和替代关系 | 允许引用；以具体提交为准 |
+| SRC-CANON-002 | MF-0003 / MF-0004 / MF-0005 / MingOS Charter | 公开仓库 | `RegisteredPublic` | `foundation/principles/MF-0003-first-principles.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c`；`foundation/charter/MF-0004-life-charter.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c`；`foundation/philosophy/MF-0005-mingos-core-thought-culture-philosophy.zh-CN.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c`；`projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c` | 高 | 原则、宪章、解释和边界 | 不得混淆 Draft、Candidate、Accepted |
+| SRC-CANON-003 | ADR / GOV / RFC / Profile | 公开仓库 | `RegisteredPublic` | `REPOSITORY_INDEX.md@1a609beeac703e5b5a325ce5aec827d4cd51ea1c`，并以该提交中列出的 ADR/GOV/RFC/Profile 路径为范围 | 高 | 治理、协议和运行边界 | 下层不得改写上层 |
 | SRC-HIST-001 | 早期 MingOS 架构讨论与操作系统架构解析 | 私人历史文件 | `NamedUnlocated` | 尚未登记受限 locator/hash | 未评估 | 可能支持底座、九条公理、十六条禁止、学习循环和架构命名 | 定位与完整性审查前只能作为待查来源 |
 | SRC-HIST-002 | MingOS 与 Codex 的产品/架构讨论汇总 | 私人历史文件 | `NamedUnlocated` | 尚未登记受限 locator/hash | 未评估 | 可能支持 Life Signal、AI 边界、产品对象和 OS 解释 | 不能作为历史原文或仓库权威 |
 | SRC-IMPL-001 | FamilyOS / MingOS 历史代码与 CODE_WIKI | 实现资料 | `NamedUnlocated` | 仓库、分支和提交尚未登记 | 未评估 | 可能支持安全门、运行对象、旧 Kernel 与产品流程 | 实现不得反向定义 Foundation |
@@ -152,15 +152,15 @@ depends_on:
 
 ## 9. 来源缺口清单
 
-| 缺口 | 当前处理 |
-|---|---|
-| 九条公理逐条原文 | `UnresolvedSource` |
-| 十六条禁止逐条原文 | `UnresolvedSource` |
-| 超层挑战完整程序 | `UnresolvedSource` |
-| 灵魂与安全线最早完整文本 | `UnresolvedSource` |
-| L1 安全门版本演化 | `ImplementationHistorical`，等待版本对照 |
-| 历史名称首次出现时间 | 待建立时间线 |
-| 外部理论与证据基础 | 进入后续 Theory & Evidence Map |
+| 缺口 | 来源证据状态 | 当前处置 |
+|---|---|---|
+| 九条公理逐条原文 | `NamedOnly` | `RetainedPendingSource` |
+| 十六条禁止逐条原文 | `NamedOnly` | `PartiallyAbsorbed`，仍等待逐条来源 |
+| 超层挑战完整程序 | `SecondaryOnly` | `RetainedPendingSource` |
+| 灵魂与安全线最早完整文本 | `SecondaryOnly` | `HistoricalMetaphor`，等待来源补充 |
+| L1 安全门版本演化 | `ImplementationEvidence` | `ImplementationHistorical`，等待版本对照 |
+| 历史名称首次出现时间 | `SecondaryOnly` | 建立历史时间线前不作确定判断 |
+| 外部理论与证据基础 | `SourceMissing` | 进入后续 Theory & Evidence Map |
 
 ## 9.1 受限 locator 建立顺序
 
@@ -176,5 +176,6 @@ depends_on:
 
 ## 10. 变更历史
 
+- `0.2.1-draft.2` — 将来源缺口表改为来源证据与当前处置双轴；为公开高可信度来源补齐可复核的完整提交定位。
 - `0.2.0-draft.1` — 增加来源定位状态；将未登记私人和实现来源降为未评估，禁止无 locator 的中高可信度声明。
 - `0.1.0` — 建立来源分类、可信度、隐私规则和历史缺口登记。

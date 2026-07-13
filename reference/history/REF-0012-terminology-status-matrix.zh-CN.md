@@ -2,7 +2,7 @@
 id: REF-0012
 title: MingOS 核心术语状态矩阵
 status: Draft
-version: 0.2.0-draft.1
+version: 0.2.1-draft.2
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -139,5 +139,6 @@ depends_on:
 
 ## 7. 变更历史
 
+- `0.2.1-draft.2` — 与合集最终三轴状态模型和 JSON v0.2.1 同步；术语权威状态集合不变。
 - `0.2.0-draft.1` — 为术语矩阵建立独立且完整的 `term_authority_status` 词表。
 - `0.1.0` — 建立核心、方法、文化、实现和研究术语的状态矩阵。

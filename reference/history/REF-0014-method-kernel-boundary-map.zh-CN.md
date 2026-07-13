@@ -2,7 +2,7 @@
 id: REF-0014
 title: MingOS 方法体系与 Kernel 边界图
 status: Draft
-version: 0.2.0-draft.1
+version: 0.2.1-draft.2
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-13
@@ -142,5 +142,6 @@ Kernel 通用对象与运行协议
 
 ## 7. 变更历史
 
+- `0.2.1-draft.2` — 与合集最终状态与机器映射版本同步；Kernel 候选边界保持不变。
 - `0.2.0-draft.1` — 将 Kernel 对象表述收窄为 Round 06 评估候选，并允许应用 Draft 在不宣称 Kernel 符合性的前提下先行验证。
 - `0.1.0` — 建立历史方法、身份概念、实现对象与未来 Kernel 的边界。
