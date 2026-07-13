@@ -2,11 +2,16 @@
 id: MF-0004
 title: The Charter of Life
 status: Candidate
-version: 1.0.0-alpha.4
+version: 1.0.0-alpha.5
 layer: Layer 0 — Charter
 owner: Ming Foundation
 created: 2026-07-12
 updated: 2026-07-12
+language: en
+canonical_language: en
+translation_status: original
+paired_translation: MF-0006
+migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
 related:
   - MF-0000
   - MF-0001
@@ -29,6 +34,8 @@ depends_on:
 
 > **Candidate for validation. This document is not yet an Accepted or Stable Charter.**  
 > **验证候选稿：本文件尚未成为 Accepted 或 Stable 宪章。**
+>
+> **Bilingual migration notice:** During Round 04, this English Candidate remains the governed source for material language conflicts. `MF-0006` is its paired Chinese Candidate translation. Neither document is Accepted or Stable, and this temporary conflict rule does not predetermine the future canonical language.
 
 ## 1. Purpose
 

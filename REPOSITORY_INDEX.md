@@ -116,6 +116,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | MF-0003 | [First Principles](foundation/principles/MF-0003-first-principles.md) | Draft     |
 | MF-0004 | [The Charter of Life](foundation/charter/MF-0004-life-charter.md)     | Candidate |
 | MF-0005 | [MingOS 核心思想、文化与哲学总纲](foundation/philosophy/MF-0005-mingos-core-thought-culture-philosophy.zh-CN.md) | Draft |
+| MF-0006 | [生命宪章（MF-0004 中文配对候选）](foundation/charter/MF-0006-life-charter.zh-CN.md) | Candidate |
 
 ## Standards
 
@@ -189,6 +190,10 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0012 | [MingOS 核心术语状态矩阵](reference/history/REF-0012-terminology-status-matrix.zh-CN.md) | Draft |
 | REF-0013 | [MingOS 历史来源、追溯与隐私登记](reference/history/REF-0013-source-provenance-privacy-register.zh-CN.md) | Draft |
 | REF-0014 | [MingOS 方法体系与 Kernel 边界图](reference/history/REF-0014-method-kernel-boundary-map.zh-CN.md) | Draft |
+| REF-0015 | [生命宪章逐条双语迁移映射](reference/charter/REF-0015-life-charter-bilingual-article-map.md) | Draft |
+| REF-0016 | [生命宪章规范强度与关键词矩阵](reference/charter/REF-0016-life-charter-normative-force-matrix.md) | Draft |
+| REF-0017 | [生命宪章双语歧义与专业审查登记](reference/charter/REF-0017-life-charter-ambiguity-review-register.md) | Draft |
+| REF-0018 | [生命宪章受影响者与领域审查协议](reference/charter/REF-0018-life-charter-affected-person-review-protocol.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

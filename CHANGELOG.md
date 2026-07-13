@@ -10,6 +10,7 @@ All notable repository-level changes are documented here.
 - Draft core-text consolidation and iteration roadmap (`GOV-0082`).
 - Draft Chinese MingOS core thought, culture, and philosophy compendium (`MF-0005`).
 - Draft historical principles, terminology, and source mapping collection (`REF-0010` through `REF-0014`).
+- Candidate Chinese paired migration of the Charter of Life (`MF-0006`) with bilingual mapping, normative-force, ambiguity, and affected-person review artifacts (`REF-0015` through `REF-0018`).
 
 ### Status boundary
 

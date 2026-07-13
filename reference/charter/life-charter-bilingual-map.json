@@ -1,0 +1,757 @@
+{
+  "schema": "mingos.life-charter-bilingual-map.v0.1",
+  "status": "Draft",
+  "version": "0.1.0",
+  "source_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "source_document": {
+    "id": "MF-0004",
+    "language": "en",
+    "version": "1.0.0-alpha.5",
+    "status": "Candidate",
+    "translation_status": "original",
+    "conflict_authority": true
+  },
+  "paired_document": {
+    "id": "MF-0006",
+    "language": "zh-CN",
+    "version": "1.0.0-alpha.5",
+    "status": "Candidate",
+    "translation_status": "draft-translation",
+    "conflict_authority": false
+  },
+  "authority_rule": "MF-0004 English controls material language conflicts until an explicit migration decision changes document-specific authority.",
+  "articles": [
+    {
+      "id": "S01",
+      "source_title": "Purpose",
+      "target_title": "目的",
+      "source_core": "candidate higher-order ethical commitments",
+      "target_core": "候选性的高阶伦理承诺",
+      "normative_force": "scope",
+      "ambiguity": "“human life”范围与非人生命边界"
+    },
+    {
+      "id": "S02",
+      "source_title": "Candidate status and limits",
+      "target_title": "候选状态与边界",
+      "source_core": "MUST remain open to correction",
+      "target_core": "必须始终允许被修正",
+      "normative_force": "MUST",
+      "ambiguity": "修订开放性与稳定性的张力"
+    },
+    {
+      "id": "S03",
+      "source_title": "Preamble",
+      "target_title": "序言",
+      "source_core": "Life is not raw material",
+      "target_core": "生命不是等待系统优化的原材料",
+      "normative_force": "principle",
+      "ambiguity": "“生命”在中英文中的范围"
+    },
+    {
+      "id": "C01",
+      "source_title": "Truth before theory",
+      "target_title": "真实高于理论",
+      "source_core": "MUST yield; may not distort",
+      "target_core": "必须让位；不得扭曲",
+      "normative_force": "MUST / prohibition",
+      "ambiguity": "credible evidence / lived experience"
+    },
+    {
+      "id": "C02",
+      "source_title": "Life before system and efficiency",
+      "target_title": "生命高于系统与效率",
+      "source_core": "systems support life; efficiency subordinate",
+      "target_core": "系统支持生命；效率从属于生命条件",
+      "normative_force": "principle",
+      "ambiguity": "dignity 与 agency 的具体判准"
+    },
+    {
+      "id": "C03",
+      "source_title": "A person is not a problem set",
+      "target_title": "人不是问题集合",
+      "source_core": "should not be reduced; behavior may be a signal",
+      "target_core": "不应被缩减；行为可以是信号",
+      "normative_force": "ethical SHOULD / MAY",
+      "ambiguity": "“signal”不得诊断化"
+    },
+    {
+      "id": "C04",
+      "source_title": "Agency cannot be silently transferred away",
+      "target_title": "主体性不能被静默让渡",
+      "source_core": "MUST NOT final authority; intervention MUST be narrow",
+      "target_core": "不得成为最终权威；干预必须严格限定",
+      "normative_force": "MUST NOT / MUST",
+      "ambiguity": "主体性、合法选择、迫近严重伤害"
+    },
+    {
+      "id": "C05",
+      "source_title": "Ordinary, slow, uncertain, and limited lives retain full dignity",
+      "target_title": "普通、缓慢、不确定与有限的生命同样具有完整尊严",
+      "source_core": "worth does not depend; states may be legitimate",
+      "target_core": "价值不依赖表现；这些状态可能正当",
+      "normative_force": "principle / MAY",
+      "ambiguity": "“full dignity”及拒绝的边界"
+    },
+    {
+      "id": "C06",
+      "source_title": "Growth cannot be manufactured",
+      "target_title": "成长不能被制造",
+      "source_core": "cannot be forced; SHOULD support conditions",
+      "target_core": "不能被强迫；应当支持条件",
+      "normative_force": "prohibition / SHOULD",
+      "ambiguity": "growth conditions 与放任的区别"
+    },
+    {
+      "id": "C07",
+      "source_title": "Relationship and context are part of life",
+      "target_title": "关系与情境是生命的一部分",
+      "source_core": "must consider relationship, power, history...",
+      "target_core": "必须考虑关系、权力、历史等",
+      "normative_force": "MUST-equivalent",
+      "ambiguity": "适用范围与证据负担"
+    },
+    {
+      "id": "C08",
+      "source_title": "Safety before change, without domination",
+      "target_title": "安全先于改变，但安全不能成为支配",
+      "source_core": "must be proportionate; SHOULD include review path",
+      "target_core": "必须合比例；应当提供复核路径",
+      "normative_force": "MUST / SHOULD",
+      "ambiguity": "significant restriction、minimally intrusive"
+    },
+    {
+      "id": "C09",
+      "source_title": "Every interpretation remains provisional",
+      "target_title": "任何解释都必须允许被修正",
+      "source_core": "MUST distinguish; should preserve provenance",
+      "target_core": "必须区分；应当保留追溯信息",
+      "normative_force": "MUST / SHOULD",
+      "ambiguity": "meaningful interpretation 的门槛"
+    },
+    {
+      "id": "C10",
+      "source_title": "Technology must serve life",
+      "target_title": "技术必须服务生命",
+      "source_core": "MUST NOT replace living or meaning",
+      "target_core": "不得替代生活、责任与意义决定权",
+      "normative_force": "MUST NOT",
+      "ambiguity": "AI 支持与替代的边界"
+    },
+    {
+      "id": "C11",
+      "source_title": "Memory must preserve change, rights, and accountability",
+      "target_title": "记忆必须允许改变，也必须承担责任",
+      "source_core": "must have rights; exceptions MUST be limited",
+      "target_core": "必须拥有权利；例外必须受限",
+      "normative_force": "MUST / rights",
+      "ambiguity": "删除权与法律、专业、第三方义务"
+    },
+    {
+      "id": "C12",
+      "source_title": "Humility, failure, counterexample, and the unknown are protected",
+      "target_title": "谦卑、失败、反例与未知必须被保护",
+      "source_core": "MUST preserve evidence of error; must not hide",
+      "target_core": "必须保留错误证据；不得隐藏",
+      "normative_force": "MUST / MUST NOT",
+      "ambiguity": "公开程度与隐私、安全的冲突"
+    },
+    {
+      "id": "C13",
+      "source_title": "No person is fully represented by another person’s account",
+      "target_title": "任何人都不能被他人的叙述完整替代",
+      "source_core": "MUST NOT become complete identity; SHOULD seek voice",
+      "target_core": "不得成为完整身份；应当寻求本人声音",
+      "normative_force": "MUST NOT / SHOULD",
+      "ambiguity": "儿童、失能、危机与代表权限"
+    },
+    {
+      "id": "S05",
+      "source_title": "Charter tests",
+      "target_title": "宪章冲突测试",
+      "source_core": "proposal conflicts when...",
+      "target_core": "出现所列情形即构成冲突",
+      "normative_force": "test",
+      "ambiguity": "测试是否需要例外与证据阈值"
+    },
+    {
+      "id": "S06",
+      "source_title": "Conflict and exception rule",
+      "target_title": "冲突与例外规则",
+      "source_core": "responsible actor MUST record",
+      "target_core": "负责主体必须记录",
+      "normative_force": "MUST",
+      "ambiguity": "负责主体、申诉、期限和可逆性"
+    },
+    {
+      "id": "S07",
+      "source_title": "Relationship to MingOS",
+      "target_title": "与 MingOS 的关系",
+      "source_core": "no lower layer may redefine higher layer",
+      "target_core": "任何下层不得静默重定义上层",
+      "normative_force": "prohibition",
+      "ambiguity": "显式修订与解释之间的边界"
+    },
+    {
+      "id": "S08",
+      "source_title": "Validation requirements",
+      "target_title": "验证要求",
+      "source_core": "validation MUST include...",
+      "target_core": "验证必须包括……",
+      "normative_force": "MUST",
+      "ambiguity": "各类审查何时算完成"
+    }
+  ],
+  "normative_requirements": [
+    {
+      "id": "N01",
+      "location": "S02",
+      "source": "MUST remain open to correction",
+      "target": "必须始终允许被修正",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "保持强制义务"
+    },
+    {
+      "id": "N02",
+      "location": "C01",
+      "source": "MUST yield",
+      "target": "必须让位",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "现实与可信证据冲突时适用"
+    },
+    {
+      "id": "N03",
+      "location": "C01",
+      "source": "No system may distort",
+      "target": "任何系统都不得扭曲",
+      "source_force": "prohibition",
+      "target_token": "不得",
+      "note": "按禁止性义务处理"
+    },
+    {
+      "id": "N04",
+      "location": "C03",
+      "source": "No person should be reduced",
+      "target": "任何人都不应被缩减",
+      "source_force": "ethical SHOULD NOT",
+      "target_token": "不应",
+      "note": "不提升为法律绝对禁止"
+    },
+    {
+      "id": "N05",
+      "location": "C03",
+      "source": "behavior may be a signal",
+      "target": "行为可以是一种信号",
+      "source_force": "MAY",
+      "target_token": "可以",
+      "note": "表达可能性而非诊断"
+    },
+    {
+      "id": "N06",
+      "location": "C04",
+      "source": "MUST NOT become the final authority",
+      "target": "不得成为最终权威",
+      "source_force": "MUST NOT",
+      "target_token": "不得",
+      "note": "强制禁止"
+    },
+    {
+      "id": "N07",
+      "location": "C04",
+      "source": "People should be able to...",
+      "target": "人们应当能够……",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "强权利方向，仍需能力与情境审查"
+    },
+    {
+      "id": "N08",
+      "location": "C04",
+      "source": "intervention MUST be narrowly scoped...",
+      "target": "干预必须严格限定范围……",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "迫近严重伤害例外"
+    },
+    {
+      "id": "N09",
+      "location": "C04",
+      "source": "must not be misrepresented as ordinary consent",
+      "target": "不得被错误表述为普通同意",
+      "source_force": "MUST NOT",
+      "target_token": "不得",
+      "note": "安全干预不伪装成同意"
+    },
+    {
+      "id": "N10",
+      "location": "C05",
+      "source": "states may be legitimate parts of life",
+      "target": "这些状态可能是生命中正当的部分",
+      "source_force": "MAY",
+      "target_token": "可能",
+      "note": "不是自动正当化所有拒绝或停滞"
+    },
+    {
+      "id": "N11",
+      "location": "C06",
+      "source": "Growth cannot be forced",
+      "target": "成长不能被强行制造",
+      "source_force": "prohibition",
+      "target_token": "不能",
+      "note": "原则性禁止操纵式制造"
+    },
+    {
+      "id": "N12",
+      "location": "C06",
+      "source": "Systems SHOULD support conditions",
+      "target": "系统应当支持条件",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "强建议，不承诺结果"
+    },
+    {
+      "id": "N13",
+      "location": "C07",
+      "source": "support must consider...",
+      "target": "支持必须考虑……",
+      "source_force": "MUST-equivalent",
+      "target_token": "必须",
+      "note": "原文小写但语义为核心义务"
+    },
+    {
+      "id": "N14",
+      "location": "C08",
+      "source": "action may be necessary",
+      "target": "行动可能是必要的",
+      "source_force": "MAY",
+      "target_token": "可能",
+      "note": "不是自动授权"
+    },
+    {
+      "id": "N15",
+      "location": "C08",
+      "source": "It must be proportionate...",
+      "target": "行动必须合比例……",
+      "source_force": "MUST-equivalent",
+      "target_token": "必须",
+      "note": "安全行动的强制约束"
+    },
+    {
+      "id": "N16",
+      "location": "C08",
+      "source": "restrictions SHOULD include...",
+      "target": "重大限制应当说明……",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "偏离需要说明理由"
+    },
+    {
+      "id": "N17",
+      "location": "C09",
+      "source": "MUST be distinguished",
+      "target": "必须被区分",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "知识状态分离"
+    },
+    {
+      "id": "N18",
+      "location": "C09",
+      "source": "interpretation should preserve...",
+      "target": "解释应当保留……",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "追溯与修订义务候选"
+    },
+    {
+      "id": "N19",
+      "location": "C10",
+      "source": "Technology may help",
+      "target": "技术可以帮助",
+      "source_force": "MAY",
+      "target_token": "可以",
+      "note": "能力许可，不是保证"
+    },
+    {
+      "id": "N20",
+      "location": "C10",
+      "source": "MUST NOT replace...",
+      "target": "不得替代……",
+      "source_force": "MUST NOT",
+      "target_token": "不得",
+      "note": "强制禁止"
+    },
+    {
+      "id": "N21",
+      "location": "C11",
+      "source": "Memory should preserve continuity",
+      "target": "记忆应当保留连续性",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "与删除、撤回权保持张力"
+    },
+    {
+      "id": "N22",
+      "location": "C11",
+      "source": "People must have meaningful rights",
+      "target": "人们必须拥有具有实际意义的权利",
+      "source_force": "MUST-equivalent",
+      "target_token": "必须",
+      "note": "需要实现与司法辖区限定"
+    },
+    {
+      "id": "N23",
+      "location": "C11",
+      "source": "exception MUST be purpose-limited...",
+      "target": "例外必须限定目的……",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "所有留存例外的强约束"
+    },
+    {
+      "id": "N24",
+      "location": "C12",
+      "source": "MUST preserve evidence",
+      "target": "必须保留证据",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "仍受隐私与安全边界约束"
+    },
+    {
+      "id": "N25",
+      "location": "C12",
+      "source": "must not be hidden",
+      "target": "不得被隐藏",
+      "source_force": "MUST NOT-equivalent",
+      "target_token": "不得",
+      "note": "不允许为声誉或转化隐藏"
+    },
+    {
+      "id": "N26",
+      "location": "C13",
+      "source": "account MUST NOT become...",
+      "target": "叙述不得成为……",
+      "source_force": "MUST NOT",
+      "target_token": "不得",
+      "note": "代表性边界"
+    },
+    {
+      "id": "N27",
+      "location": "C13",
+      "source": "Systems SHOULD seek...",
+      "target": "系统应当寻求……",
+      "source_force": "SHOULD",
+      "target_token": "应当",
+      "note": "直接参与不可行时须记录理由"
+    },
+    {
+      "id": "N28",
+      "location": "S06",
+      "source": "responsible actor MUST record",
+      "target": "负责主体必须记录",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "冲突与例外记录"
+    },
+    {
+      "id": "N29",
+      "location": "S06",
+      "source": "No exception may silently become...",
+      "target": "任何例外都不得静默成为……",
+      "source_force": "prohibition",
+      "target_token": "不得",
+      "note": "防止例外常态化"
+    },
+    {
+      "id": "N30",
+      "location": "S07",
+      "source": "No lower layer may silently redefine",
+      "target": "任何下层都不得静默重定义",
+      "source_force": "prohibition",
+      "target_token": "不得",
+      "note": "显式治理修订仍允许"
+    },
+    {
+      "id": "N31",
+      "location": "S08",
+      "source": "validation MUST include",
+      "target": "验证必须包括",
+      "source_force": "MUST",
+      "target_token": "必须",
+      "note": "Acceptance 前置条件"
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "AMB-001",
+      "location": "全局",
+      "term": "life / 生命",
+      "issue": "可能指生物生命、人生、生活世界或伦理主体",
+      "risk": "High",
+      "required_review": "philosophy, affected-person, translation",
+      "current_treatment": "保持开放；不扩张为完整生态伦理",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-002",
+      "location": "S01",
+      "term": "human life",
+      "issue": "是否包括胎儿、严重失能者、逝者数据与群体利益",
+      "risk": "High",
+      "required_review": "legal, ethics, affected-person",
+      "current_treatment": "需要适用范围说明",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-003",
+      "location": "C01",
+      "term": "credible evidence / 可信证据",
+      "issue": "谁判断可信、证据标准是否随场景变化",
+      "risk": "High",
+      "required_review": "evidence, professional, affected-person",
+      "current_treatment": "与 Evidence/Confidence 规范映射",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-004",
+      "location": "C01",
+      "term": "lived experience / 真实生活经验",
+      "issue": "个人经验与可验证事实冲突时如何处理",
+      "risk": "High",
+      "required_review": "affected-person, evidence",
+      "current_treatment": "不得抹除经验，也不得把经验自动当作全部事实",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-005",
+      "location": "C02/C05",
+      "term": "dignity / 尊严",
+      "issue": "缺少可操作判准，容易变成修辞",
+      "risk": "High",
+      "required_review": "affected-person, child-rights, legal",
+      "current_treatment": "通过反例和产品决定测试",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-006",
+      "location": "C02/C04",
+      "term": "agency / 主体性",
+      "issue": "自主、能力、责任、依赖与关系性之间的边界",
+      "risk": "High",
+      "required_review": "affected-person, child-rights, professional",
+      "current_treatment": "与年龄、能力和代表权限一起审查",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-007",
+      "location": "S02/C04",
+      "term": "lawful choices / 合法选择",
+      "issue": "不同司法辖区差异大，合法不自动等于伦理正当",
+      "risk": "High",
+      "required_review": "legal, ethics",
+      "current_treatment": "法律是下限，不替代宪章判断",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-008",
+      "location": "C04",
+      "term": "imminent serious harm / 迫近的严重伤害",
+      "issue": "迫近性、严重性和证据阈值未定义",
+      "risk": "Critical",
+      "required_review": "safety, clinical, legal",
+      "current_treatment": "必须由安全协议与专业责任限定",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-009",
+      "location": "C04",
+      "term": "ordinary consent / 普通同意",
+      "issue": "安全干预、监护同意与本人同意的关系",
+      "risk": "Critical",
+      "required_review": "privacy, legal, child-rights",
+      "current_treatment": "明确同意类型与代表权限",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-010",
+      "location": "C05",
+      "term": "refusal / 拒绝",
+      "issue": "拒绝何时应被尊重，何时涉及他人权利或迫近风险",
+      "risk": "High",
+      "required_review": "affected-person, safety, legal",
+      "current_treatment": "不得把主体性等同无限免责",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-011",
+      "location": "C06",
+      "term": "growth / 成长",
+      "issue": "谁定义成长，是否把适应系统当作成长",
+      "risk": "High",
+      "required_review": "affected-person, philosophy",
+      "current_treatment": "目标由当事人参与形成",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-012",
+      "location": "C06",
+      "term": "conditions in which growth may occur",
+      "issue": "系统支持条件与隐性操纵之间的边界",
+      "risk": "High",
+      "required_review": "affected-person, product, ethics",
+      "current_treatment": "共同创造、可拒绝、可退出",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-013",
+      "location": "C07",
+      "term": "must consider",
+      "issue": "需要考虑到何种深度才算满足",
+      "risk": "Medium",
+      "required_review": "architecture, evidence",
+      "current_treatment": "未来形成最低证据与记录要求",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-014",
+      "location": "C08",
+      "term": "proportionate / 合比例",
+      "issue": "缺乏跨场景统一计算方式",
+      "risk": "Critical",
+      "required_review": "safety, legal, affected-person",
+      "current_treatment": "记录风险、替代方案、期限和副作用",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-015",
+      "location": "C08",
+      "term": "minimally intrusive / 尽量减少侵入",
+      "issue": "技术、关系和制度侵入如何比较",
+      "risk": "High",
+      "required_review": "privacy, safety, child-rights",
+      "current_treatment": "采用最小必要与可逆原则",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-016",
+      "location": "C08",
+      "term": "significant restrictions / 重大限制",
+      "issue": "何种限制触发完整记录和申诉",
+      "risk": "High",
+      "required_review": "legal, safety, privacy",
+      "current_treatment": "未来建立阈值与示例",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-017",
+      "location": "C09",
+      "term": "meaningful interpretation / 具有实质影响的解释",
+      "issue": "哪些解释需要完整追溯",
+      "risk": "Medium",
+      "required_review": "architecture, affected-person",
+      "current_treatment": "按影响权利、行动与画像的程度判断",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-018",
+      "location": "C10",
+      "term": "replace living / 替代生活本身",
+      "issue": "陪伴、自动化与替代之间缺少可测试边界",
+      "risk": "High",
+      "required_review": "affected-person, product, ethics",
+      "current_treatment": "以能力削弱、依赖和主体位置测试",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-019",
+      "location": "C11",
+      "term": "meaningful rights / 具有实际意义的权利",
+      "issue": "仅提供按钮但无法完成是否算权利",
+      "risk": "Critical",
+      "required_review": "privacy, legal, accessibility",
+      "current_treatment": "必须可理解、可执行、有时限和救济",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-020",
+      "location": "C11",
+      "term": "delete / 删除",
+      "issue": "备份、法定义务、事件证据与第三方权利冲突",
+      "risk": "Critical",
+      "required_review": "privacy, legal, safety",
+      "current_treatment": "依赖 retention/backup profile",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-021",
+      "location": "C12",
+      "term": "preserve failure and counterexample",
+      "issue": "公开透明与隐私、安全、商业秘密冲突",
+      "risk": "High",
+      "required_review": "privacy, evidence, governance",
+      "current_treatment": "至少保留受控、可审计记录",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-022",
+      "location": "C13",
+      "term": "affected person’s voice",
+      "issue": "儿童、失语、危机与无法直接参与者如何表达",
+      "risk": "Critical",
+      "required_review": "child-rights, accessibility, professional",
+      "current_treatment": "多种表达方式与明确不可参与理由",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-023",
+      "location": "C13",
+      "term": "currently possible or safe",
+      "issue": "谁判断不可参与，如何防止长期排除",
+      "risk": "Critical",
+      "required_review": "affected-person, safety, legal",
+      "current_treatment": "期限、复核、替代参与和申诉",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-024",
+      "location": "S05",
+      "term": "conflicts with this Charter",
+      "issue": "测试是否允许合比例例外",
+      "risk": "High",
+      "required_review": "governance, legal",
+      "current_treatment": "由 S06 记录冲突与例外，不静默豁免",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-025",
+      "location": "S08",
+      "term": "passing validation",
+      "issue": "什么证据足以完成各审查轨道",
+      "risk": "High",
+      "required_review": "governance, all reviewers",
+      "current_treatment": "建立独立完成标准，不以开会代替验证",
+      "status": "PreparedNotExecuted"
+    }
+  ],
+  "review_tracks": [
+    "affected-person",
+    "parent-caregiver",
+    "child-rights",
+    "third-party-rights",
+    "privacy-data-governance",
+    "safety-emergency-boundary",
+    "professional-clinical-boundary",
+    "legal-jurisdiction",
+    "translation-semantics",
+    "product-implementation",
+    "accessibility-communication"
+  ],
+  "integrity": {
+    "article_mapping_count": 20,
+    "normative_requirement_count": 31,
+    "ambiguity_count": 25,
+    "review_status": "PreparedNotExecuted"
+  }
+}
