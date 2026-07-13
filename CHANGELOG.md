@@ -9,6 +9,7 @@ All notable repository-level changes are documented here.
 - Proposed canonical-language and translation-governance decision (`ADR-0021`).
 - Draft core-text consolidation and iteration roadmap (`GOV-0082`).
 - Draft Chinese MingOS core thought, culture, and philosophy compendium (`MF-0005`).
+- Draft historical principles, terminology, and source mapping collection (`REF-0010` through `REF-0014`).
 
 ### Status boundary
 

@@ -1,0 +1,453 @@
+{
+  "schema": "mingos.historical-concept-map.v0.1",
+  "status": "Draft",
+  "generated_from": [
+    "REF-0010",
+    "REF-0011",
+    "REF-0012",
+    "REF-0013",
+    "REF-0014"
+  ],
+  "authority_notice": "This JSON is a non-normative companion. Markdown source documents control when representations differ.",
+  "repository_base": "1a609beeac703e5b5a325ce5aec827d4cd51ea1c",
+  "status_definitions": {
+    "CanonicalReferenced": "已由当前仓库权威文本明确规定，本合集只做引用。",
+    "InterpretiveCurrent": "已进入 MF-0005 等当前 Draft 解释文本，但仍不是独立规范。",
+    "CulturalMaxim": "保留文化和传播价值，不能替代工程、权利和治理要求。",
+    "MethodCandidate": "实践方法候选，需要应用规范、证据和边界验证。",
+    "ImplementationHistorical": "历史运行或安全标签，具体实现已迁移或需要迁移。",
+    "ImplementationSpecific": "特定产品或代码对象，不自动成为 Foundation 或 Kernel 标准。",
+    "HistoricalMetaphor": "历史隐喻，适合解释，不适合作为可审计规范。",
+    "HistoricalAlias": "保留项目记忆，但正式文本应使用更清晰的当前名称。",
+    "NarrowedSlogan": "原表达具有传播价值，但因因果过强或边界不足需要收窄。",
+    "HistoricalExplanatoryFrame": "历史解释框架，尚未成为正式命名或定义。",
+    "ArchitectureDirection": "架构方向已稳定，但具体对象和协议尚未完成。",
+    "StrategyLabel": "战略表达，不得被当作已经交付的能力。",
+    "HistoricalStrategyLabel": "历史战略名称，当前正式体系由其他文件承载。",
+    "OpenResearchConcept": "开放研究概念，不能声称已被验证。",
+    "PartiallyAbsorbed": "部分内容已进入后续权威文本，但不能假定完全一一对应。",
+    "UnresolvedSource": "概念名称或作用可确认，但原始逐条文本、定义或程序尚未可靠恢复。"
+  },
+  "concepts": [
+    {
+      "concept_id": "HIST-001",
+      "term_zh": "九条公理",
+      "term_en": "Nine Axioms",
+      "family": "根原则与安全",
+      "historical_role": "早期不可变底座的原则集合，用来定义系统为何存在以及不可越过的方向。",
+      "current_status": "UnresolvedSource",
+      "current_mapping": [
+        "MF-0003",
+        "MF-0004",
+        "MF-0005",
+        "PROJECT-MINGOS-0002"
+      ],
+      "recommended_destination": "历史集合名保留；逐条原文恢复后再决定是否形成来源附录。",
+      "confidence": "medium",
+      "notes": "集合名称和底座作用可确认；可靠的九条逐条原文尚未恢复，禁止按记忆重建。"
+    },
+    {
+      "concept_id": "HIST-002",
+      "term_zh": "十六条禁止",
+      "term_en": "Sixteen Prohibitions",
+      "family": "根原则与安全",
+      "historical_role": "早期负面边界集合，用禁止项限制控制、标签、越权、操纵和不安全输出。",
+      "current_status": "PartiallyAbsorbed",
+      "current_mapping": [
+        "MF-0004",
+        "PROJECT-MINGOS-0002",
+        "RFC-0003",
+        "MF-0005"
+      ],
+      "recommended_destination": "保留集合名；逐条来源恢复后映射到宪章测试、产品禁止项和安全协议。",
+      "confidence": "medium",
+      "notes": "当前可确认的是功能和后续吸收方向，不能声称现有条款与原十六条一一等价。"
+    },
+    {
+      "concept_id": "HIST-003",
+      "term_zh": "L1 安全门",
+      "term_en": "L1 Safety Gate",
+      "family": "根原则与安全",
+      "historical_role": "高风险场景进入常规理解和建议前的阻断、减速、人工接管或转介门。",
+      "current_status": "ImplementationHistorical",
+      "current_mapping": [
+        "MF-0003:P10",
+        "MF-0004",
+        "RFC-0003"
+      ],
+      "recommended_destination": "上层保留安全原则；具体级别、类别和动作由 RFC 与实现 Profile 管理。",
+      "confidence": "high",
+      "notes": "L1 作为历史运行标签保留，不应成为所有产品永久统一的风险枚举。"
+    },
+    {
+      "concept_id": "HIST-004",
+      "term_zh": "先人后事",
+      "term_en": "Person Before Problem",
+      "family": "根原则与安全",
+      "historical_role": "先看见人及其处境，再处理行为、任务和结果。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0003:P01",
+        "MF-0003:P02",
+        "MF-0005"
+      ],
+      "recommended_destination": "作为文化性简语保留；规范层使用“生命先于系统”“理解先于建议”。",
+      "confidence": "high",
+      "notes": "不能被理解为忽略紧迫安全、他人权利或现实责任。"
+    },
+    {
+      "concept_id": "HIST-005",
+      "term_zh": "灵魂与安全线",
+      "term_en": "Soul and Safety Line",
+      "family": "根原则与安全",
+      "historical_role": "把人文关怀、语言温度、主体性与风险边界放在同一底座中。",
+      "current_status": "HistoricalMetaphor",
+      "current_mapping": [
+        "MF-0005",
+        "MF-0003:P10",
+        "RFC-0003"
+      ],
+      "recommended_destination": "拆分为文化表达、输出规范和安全协议；不作为正式架构层名。",
+      "confidence": "medium",
+      "notes": "“灵魂”具有感染力但不可审计，不能替代权限、风险、同意和责任。"
+    },
+    {
+      "concept_id": "HIST-006",
+      "term_zh": "超层挑战",
+      "term_en": "Cross-Layer Challenge",
+      "family": "根原则与安全",
+      "historical_role": "当下层实现、方法或业务目标与更高层生命原则冲突时，允许触发跨层质疑和停止。",
+      "current_status": "UnresolvedSource",
+      "current_mapping": [
+        "ADR-0005",
+        "GOV-0003",
+        "GOV-0081",
+        "MF-0004"
+      ],
+      "recommended_destination": "未来治理规范中的跨层冲突与升级机制；恢复原始定义前不作为正式术语。",
+      "confidence": "low",
+      "notes": "历史名称可确认，但原始触发条件、权限和程序尚未可靠恢复。"
+    },
+    {
+      "concept_id": "METH-001",
+      "term_zh": "规律—关系—驱动—投资",
+      "term_en": "Reality–Relationship–Motivation–Investment",
+      "family": "家庭实践方法",
+      "historical_role": "家庭教育内容主轴：尊重发展与现实规律，理解关系环境，看见内部驱动，审查长期投入方向。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "家庭教育应用规范与证据地图，不进入 Foundation 根原则编号。",
+      "confidence": "high",
+      "notes": "“规律”必须避免被写成已经掌握普遍生命规律；“投资”指时间、注意力和心力方向，不是金融投资。"
+    },
+    {
+      "concept_id": "METH-002",
+      "term_zh": "目标系统—事件系统—因果系统",
+      "term_en": "Goal–Event–Causal Systems",
+      "family": "家庭实践方法",
+      "historical_role": "区分家庭想去哪里、实际发生了什么、哪些循环与信念维持现状。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "Family application profile；其中通用对象可被未来 Kernel 借鉴，但不能整套复制。",
+      "confidence": "high",
+      "notes": "历史别名包括“三系统法”“Family Growth Tri-System”。"
+    },
+    {
+      "concept_id": "METH-003",
+      "term_zh": "事件链",
+      "term_en": "Event Chain",
+      "family": "家庭实践工具",
+      "historical_role": "把抽象评价还原为触发、反应、行动、短期结果和后续循环。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0005",
+        "ADR-0002"
+      ],
+      "recommended_destination": "家庭应用模板；与 Kernel Event/Timeline 对象建立映射。",
+      "confidence": "high",
+      "notes": "不能把链条中的推测写成事实。"
+    },
+    {
+      "concept_id": "METH-004",
+      "term_zh": "目标树",
+      "term_en": "Goal Tree",
+      "family": "家庭实践工具",
+      "historical_role": "区分表层目标、中层保护和深层需要或生命方向。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0005",
+        "REF-0002:Need"
+      ],
+      "recommended_destination": "家庭应用模板与训练材料。",
+      "confidence": "high",
+      "notes": "深层需要只能作为假设，必须由当事人确认。"
+    },
+    {
+      "concept_id": "METH-005",
+      "term_zh": "循环图",
+      "term_en": "Interaction Loop Map",
+      "family": "家庭实践工具",
+      "historical_role": "呈现关系中相互强化的行动、解释和结果。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0005",
+        "REF-0002:Pattern"
+      ],
+      "recommended_destination": "家庭应用规范与 Pattern 数据映射。",
+      "confidence": "high",
+      "notes": "循环解释不能抹平暴力、胁迫和权力不对等。"
+    },
+    {
+      "concept_id": "METH-006",
+      "term_zh": "断点设计",
+      "term_en": "Loop Breakpoint Design",
+      "family": "家庭实践工具",
+      "historical_role": "寻找家庭当前能够承担的小、安全、可逆变化点。",
+      "current_status": "MethodCandidate",
+      "current_mapping": [
+        "MF-0003:P02",
+        "MF-0005"
+      ],
+      "recommended_destination": "家庭应用规范；未来与最小行动协议关联。",
+      "confidence": "high",
+      "notes": "断点不是操纵他人的技巧，优先改变自己可承担的行动。"
+    },
+    {
+      "concept_id": "METH-007",
+      "term_zh": "木匠与园丁",
+      "term_en": "Carpenter and Gardener",
+      "family": "教育文化隐喻",
+      "historical_role": "从按图塑造儿童转向支持生命在条件中成长。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "课程、公共沟通和应用导读；不作为科学分类。",
+      "confidence": "high",
+      "notes": "园丁隐喻不等于放任、无边界或拒绝必要保护。"
+    },
+    {
+      "concept_id": "METH-008",
+      "term_zh": "从听话到对话",
+      "term_en": "From Obedience to Dialogue",
+      "family": "教育文化隐喻",
+      "historical_role": "让儿童逐步进入规则理解、表达、协商和责任承担。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "教育应用规范与儿童参与规则。",
+      "confidence": "high",
+      "notes": "对话不取消成人责任，也不要求儿童承担超出发展能力的决策。"
+    },
+    {
+      "concept_id": "METH-009",
+      "term_zh": "安内后攘外",
+      "term_en": "Stabilize Within Before Acting Outward",
+      "family": "家庭实践简语",
+      "historical_role": "在学习、返校或行为要求之前，先处理情绪、安全和关系稳定。",
+      "current_status": "HistoricalAlias",
+      "current_mapping": [
+        "MF-0005",
+        "RFC-0003"
+      ],
+      "recommended_destination": "公共文本改写为“先稳定，再处理任务”；原语保留于历史映射。",
+      "confidence": "high",
+      "notes": "原语具有军事和文化负担，不适合作为正式标准名称。"
+    },
+    {
+      "concept_id": "METH-010",
+      "term_zh": "成绩是果，思维与关系是因",
+      "term_en": "Performance as Outcome, Thinking and Relationship as Causes",
+      "family": "家庭实践简语",
+      "historical_role": "提醒家长不要只购买结果，而要理解能力、思维、情绪和关系条件。",
+      "current_status": "NarrowedSlogan",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "保留为传播史料；正式表达改为“成绩是多因素结果”。",
+      "confidence": "high",
+      "notes": "原句具有单向因果过强问题，不能作为科学结论。"
+    },
+    {
+      "concept_id": "IDEN-001",
+      "term_zh": "Life Signal / 生命信号",
+      "term_en": "Life Signal",
+      "family": "MingOS 身份概念",
+      "historical_role": "把问题行为转为需要继续理解、核对和回应的生命表达。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "Round 06/07 决定是否进入 Kernel 对象模型；当前不视为诊断类别。",
+      "confidence": "high",
+      "notes": "信号不等于结论，也不合理化伤害。"
+    },
+    {
+      "concept_id": "IDEN-002",
+      "term_zh": "一次真实、可纠正、值得信赖的生命对话",
+      "term_en": "A Real, Correctable, Trustworthy Life Dialogue",
+      "family": "MingOS 身份概念",
+      "historical_role": "把价值单位从回答数量和使用时长转向可信理解与可修正行动。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "未来 Kernel 运行单元和产品指标候选；当前不替代正式协议。",
+      "confidence": "high",
+      "notes": "对话可合理停在不知道、拒绝或暂不行动。"
+    },
+    {
+      "concept_id": "IDEN-003",
+      "term_zh": "共同创造条件",
+      "term_en": "Co-create Conditions",
+      "family": "MingOS 身份概念",
+      "historical_role": "系统与受影响者共同形成支持条件，而非专家单方面设计成长环境。",
+      "current_status": "InterpretiveCurrent",
+      "current_mapping": [
+        "MF-0005",
+        "MF-0004"
+      ],
+      "recommended_destination": "参与、同意与行动协议；保留角色责任差异。",
+      "confidence": "high",
+      "notes": "共同创造不等于权力和责任完全相同。"
+    },
+    {
+      "concept_id": "IDEN-004",
+      "term_zh": "AI 只能照亮，不能占据",
+      "term_en": "AI May Illuminate, Not Occupy",
+      "family": "AI 文化边界",
+      "historical_role": "限制 AI 占据人的意义、关系、判断和生活主体位置。",
+      "current_status": "CulturalMaxim",
+      "current_mapping": [
+        "MF-0005",
+        "ADR-0001",
+        "MF-0004"
+      ],
+      "recommended_destination": "公共文化表达；技术约束仍由同意、权限、审计和安全协议承担。",
+      "confidence": "high",
+      "notes": "温和语言不能证明系统真正尊重主体性。"
+    },
+    {
+      "concept_id": "IDEN-005",
+      "term_zh": "不是替你决定，而是帮助你看见",
+      "term_en": "Help You See, Do Not Decide for You",
+      "family": "AI 文化边界",
+      "historical_role": "说明 AI 支持反思、澄清与选项，但不成为最终作者。",
+      "current_status": "CulturalMaxim",
+      "current_mapping": [
+        "MF-0003:P06",
+        "MF-0005"
+      ],
+      "recommended_destination": "公共沟通与产品语言；不能覆盖必要安全义务。",
+      "confidence": "high",
+      "notes": "系统仍需说明何时建议、限制或转介。"
+    },
+    {
+      "concept_id": "ARCH-001",
+      "term_zh": "OS 四重解释",
+      "term_en": "Organizing / Orientation / Open System / Support System",
+      "family": "架构与命名",
+      "historical_role": "解释 OS 不是操作生命，而是组织理解、支持方向、保持开放和提供支持。",
+      "current_status": "HistoricalExplanatoryFrame",
+      "current_mapping": [
+        "MF-0005"
+      ],
+      "recommended_destination": "品牌与架构解释；不得声称为已接受的官方英文展开。",
+      "confidence": "high",
+      "notes": "正式英文全称和品牌层级仍需独立治理。"
+    },
+    {
+      "concept_id": "ARCH-002",
+      "term_zh": "反馈驱动的持续进化",
+      "term_en": "Feedback-driven Continuous Evolution",
+      "family": "架构与学习",
+      "historical_role": "现实—观察—抽象—实践—反馈—修正—再验证的学习循环。",
+      "current_status": "ArchitectureDirection",
+      "current_mapping": [
+        "MF-0000",
+        "MF-0005"
+      ],
+      "recommended_destination": "Observatory、Lab、Kernel learning loop 和治理版本机制。",
+      "confidence": "high",
+      "notes": "反馈不自动等于知识，必须经过授权、证据、反例和伦理审查。"
+    },
+    {
+      "concept_id": "ARCH-003",
+      "term_zh": "生命信息基础设施",
+      "term_en": "Life Information Infrastructure",
+      "family": "架构与命名",
+      "historical_role": "用身份、关系、时间、状态、记忆、同意和修正支撑生命智能系统。",
+      "current_status": "StrategyLabel",
+      "current_mapping": [
+        "MF-0001",
+        "MF-0005"
+      ],
+      "recommended_destination": "使命和架构解释；不要作为已实现能力声明。",
+      "confidence": "medium",
+      "notes": "名称比具体组件成熟度更高，必须与真实实现状态同步。"
+    },
+    {
+      "concept_id": "ARCH-004",
+      "term_zh": "开放生命协议",
+      "term_en": "Open Life Protocol",
+      "family": "架构与命名",
+      "historical_role": "跨产品、跨组织表达生命、关系、同意和修正的开放协议设想。",
+      "current_status": "HistoricalStrategyLabel",
+      "current_mapping": [
+        "MOS-0000",
+        "RFC-0001",
+        "RFC-0002"
+      ],
+      "recommended_destination": "保留为历史愿景；正式协议由 MOS/RFC 体系承载。",
+      "confidence": "medium",
+      "notes": "当前没有单一名为 Open Life Protocol 的 Accepted 标准。"
+    },
+    {
+      "concept_id": "ARCH-005",
+      "term_zh": "生命语法",
+      "term_en": "Life Grammar",
+      "family": "架构与命名",
+      "historical_role": "尝试描述生命事件、关系、状态、意义和变化的基本表达结构。",
+      "current_status": "OpenResearchConcept",
+      "current_mapping": [
+        "MF-0000",
+        "REF-0002"
+      ],
+      "recommended_destination": "研究问题和数据模型探索；不作为已发现的普遍语法。",
+      "confidence": "medium",
+      "notes": "必须避免把文化与产品建模误写为生命本身的客观语法。"
+    },
+    {
+      "concept_id": "IMPL-001",
+      "term_zh": "LifeMoment",
+      "term_en": "LifeMoment",
+      "family": "实现特定概念",
+      "historical_role": "产品中用于承载家庭真实时刻和连续对话的对象设想。",
+      "current_status": "ImplementationSpecific",
+      "current_mapping": [],
+      "recommended_destination": "产品实现或未来 Kernel 评审；不得由旧代码反向定义 Foundation。",
+      "confidence": "medium",
+      "notes": "当前不属于公共 Foundation 规范。"
+    },
+    {
+      "concept_id": "IMPL-002",
+      "term_zh": "Parent Understanding",
+      "term_en": "Parent Understanding",
+      "family": "实现特定概念",
+      "historical_role": "系统对家长的可纠正、版本化和受限理解对象。",
+      "current_status": "ImplementationSpecific",
+      "current_mapping": [
+        "RFC-0001",
+        "RFC-0002"
+      ],
+      "recommended_destination": "产品实现评审；名称和字段不得成为人格画像或商业操纵工具。",
+      "confidence": "medium",
+      "notes": "了解父母只能用于适配、减负和安全，不能用于转化和依赖。"
+    }
+  ]
+}

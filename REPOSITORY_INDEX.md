@@ -184,6 +184,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0007 | [Requirement Identity and Residual Profile Guide](reference/REF-0007-requirement-identity-and-profile-guide.md) | Accepted |
 | REF-0008 | [Profile Review and Affected-Person Preparation Guide](reference/REF-0008-profile-review-and-affected-person-preparation-guide.md) | Accepted |
 | REF-0009 | [Profile Revision and Review Readiness Guide](reference/REF-0009-profile-revision-and-review-readiness-guide.md) | Accepted |
+| REF-0010 | [MingOS 历史原则、术语与来源映射总集](reference/history/REF-0010-historical-principles-terminology-source-compendium.zh-CN.md) | Draft |
+| REF-0011 | [MingOS 历史原则演化对照表](reference/history/REF-0011-historical-principle-crosswalk.zh-CN.md) | Draft |
+| REF-0012 | [MingOS 核心术语状态矩阵](reference/history/REF-0012-terminology-status-matrix.zh-CN.md) | Draft |
+| REF-0013 | [MingOS 历史来源、追溯与隐私登记](reference/history/REF-0013-source-provenance-privacy-register.zh-CN.md) | Draft |
+| REF-0014 | [MingOS 方法体系与 Kernel 边界图](reference/history/REF-0014-method-kernel-boundary-map.zh-CN.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)
