@@ -6,15 +6,17 @@ All notable repository-level changes are documented here.
 
 ### Added
 
-- Proposed core-document lifecycle and one-document-per-round iteration workflow (`GOV-0081`).
+- Proposed core-document lifecycle and one-document-per-round workflow (`GOV-0081`).
 - Proposed canonical-language and translation-governance decision (`ADR-0021`).
 - Draft core-text consolidation and iteration roadmap (`GOV-0082`).
 
 ### Status boundary
 
-- No Charter, RFC, Profile, Kernel, or implementation-conformance status is changed.
-- The repository remains at Foundation 1.0 / Day 15; this proposal does not change stage or version.
-- This change prepares review; it does not accept the proposed workflow or language decision.
+- Repository stage remains Foundation 1.0 / Day 15.
+- Repository version remains `1.0.0-alpha.15`.
+- Both Charters remain Candidate.
+- RFCs and Profiles retain their current statuses.
+- Affected-person review remains unauthorized and implementation conformance remains empty.
 
 
 ## [1.0.0-alpha.15] - 2026-07-13
