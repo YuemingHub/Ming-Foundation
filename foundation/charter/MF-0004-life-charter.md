@@ -6,12 +6,14 @@ version: 1.0.0-alpha.5
 layer: Layer 0 — Charter
 owner: Ming Foundation
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-07-14
 language: en
 canonical_language: en
 translation_status: original
+language_authority_status: original-controls-conflicts-during-migration
 paired_translation: MF-0006
 migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
+translation_source_commit: 22332a0c8d8858c9ccf652f2a40dee5821d53c6c
 related:
   - MF-0000
   - MF-0001
@@ -22,6 +24,12 @@ related:
   - ADR-0005
   - GOV-0005
   - GOV-0006
+  - ADR-0021
+  - MF-0006
+  - REF-0015
+  - REF-0016
+  - REF-0017
+  - REF-0018
   - PROJECT-MINGOS-0002
 depends_on:
   - MF-0001
@@ -35,7 +43,7 @@ depends_on:
 > **Candidate for validation. This document is not yet an Accepted or Stable Charter.**  
 > **验证候选稿：本文件尚未成为 Accepted 或 Stable 宪章。**
 >
-> **Bilingual migration notice:** During Round 04, this English Candidate remains the governed source for material language conflicts. `MF-0006` is its paired Chinese Candidate translation. Neither document is Accepted or Stable, and this temporary conflict rule does not predetermine the future canonical language.
+> **Bilingual migration notice:** During the bilingual migration, and until an explicit governance decision changes document-specific language authority, this English Candidate remains the governed source for material language conflicts. `MF-0006` is its paired Chinese Candidate translation. Neither document is Accepted or Stable, and this temporary conflict rule does not predetermine the future canonical language.
 
 ## 1. Purpose
 

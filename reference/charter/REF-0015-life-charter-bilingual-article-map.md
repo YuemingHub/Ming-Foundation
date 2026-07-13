@@ -2,7 +2,7 @@
 id: REF-0015
 title: 生命宪章逐条双语迁移映射
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Translation Review
 created: 2026-07-14
@@ -10,7 +10,8 @@ updated: 2026-07-14
 language: zh-CN
 canonical_language: zh-CN
 translation_status: original
-source_commit: c149953217e466570da3fa58157eb66616514d6b
+migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
+source_text_commit: 22332a0c8d8858c9ccf652f2a40dee5821d53c6c
 related:
   - MF-0004
   - MF-0006
@@ -31,8 +32,9 @@ depends_on:
 ## 1. 权威边界
 
 - 来源文本：`MF-0004 / 1.0.0-alpha.5`
-- 中文配对候选：`MF-0006 / 1.0.0-alpha.5`
-- 迁移基线提交：`c149953217e466570da3fa58157eb66616514d6b`
+- 中文配对候选：`MF-0006 / 1.0.0-alpha.6`
+- 迁移前基线提交：`c149953217e466570da3fa58157eb66616514d6b`
+- 英文来源快照提交：`22332a0c8d8858c9ccf652f2a40dee5821d53c6c`
 - 当前语言冲突控制文本：英文 MF-0004
 - 当前状态：两份文本均为 Candidate
 - 尚未作出的决定：未来规范语言、双语是否具有同等规范效力
@@ -52,7 +54,7 @@ depends_on:
 | C06 | Growth cannot be manufactured | 成长不能被制造 | cannot be forced; SHOULD support conditions | 不能被强迫；应当支持条件 | `prohibition / SHOULD` | growth conditions 与放任的区别 |
 | C07 | Relationship and context are part of life | 关系与情境是生命的一部分 | must consider relationship, power, history... | 必须考虑关系、权力、历史等 | `MUST-equivalent` | 适用范围与证据负担 |
 | C08 | Safety before change, without domination | 安全先于改变，但安全不能成为支配 | must be proportionate; SHOULD include review path | 必须合比例；应当提供复核路径 | `MUST / SHOULD` | significant restriction、minimally intrusive |
-| C09 | Every interpretation remains provisional | 任何解释都必须允许被修正 | MUST distinguish; should preserve provenance | 必须区分；应当保留追溯信息 | `MUST / SHOULD` | meaningful interpretation 的门槛 |
+| C09 | Every interpretation remains provisional | 任何解释都必须允许被修正 | MUST distinguish; should preserve provenance | 必须区分；重要解释应当保留追溯信息 | `MUST / SHOULD` | meaningful interpretation 的门槛 |
 | C10 | Technology must serve life | 技术必须服务生命 | MUST NOT replace living or meaning | 不得替代生活、责任与意义决定权 | `MUST NOT` | AI 支持与替代的边界 |
 | C11 | Memory must preserve change, rights, and accountability | 记忆必须允许改变，也必须承担责任 | must have rights; exceptions MUST be limited | 必须拥有权利；例外必须受限 | `MUST / rights` | 删除权与法律、专业、第三方义务 |
 | C12 | Humility, failure, counterexample, and the unknown are protected | 谦卑、失败、反例与未知必须被保护 | MUST preserve evidence of error; must not hide | 必须保留错误证据；不得隐藏 | `MUST / MUST NOT` | 公开程度与隐私、安全的冲突 |
@@ -61,6 +63,21 @@ depends_on:
 | S06 | Conflict and exception rule | 冲突与例外规则 | responsible actor MUST record | 负责主体必须记录 | `MUST` | 负责主体、申诉、期限和可逆性 |
 | S07 | Relationship to MingOS | 与 MingOS 的关系 | no lower layer may redefine higher layer | 任何下层不得静默重定义上层 | `prohibition` | 显式修订与解释之间的边界 |
 | S08 | Validation requirements | 验证要求 | validation MUST include... | 验证必须包括…… | `MUST` | 各类审查何时算完成 |
+
+
+## 2.1 现有 MF-0004 内嵌中文标题差异
+
+英文 MF-0004 中已有若干历史中文标题，但它们并不都与英文标题逐词等价：
+
+- C05：`retain full dignity` / “同样值得尊重”；
+- C07：`are part of life` / “是生命展开的环境”；
+- C12：`are protected` / “必须被保留”。
+
+MF-0006 当前按英文来源翻译。这些差异已登记到 REF-0017，不能被静默视为
+已经解决的双语等价。
+
+MF-0006 的“附录 A — 非规范性迁移与权威说明”不属于源宪章条款，因此不进入
+本逐条条款映射。
 
 ## 3. 翻译处理规则
 
@@ -109,3 +126,8 @@ depends_on:
 5. 发生的修改回写两份 Candidate；
 6. 保留未解决异议；
 7. 形成规范语言与双语效力的独立治理决定。
+
+## 5. 变更历史
+
+- `0.2.0-draft.1` — 修正来源版本与提交追溯；记录现有内嵌中文标题差异；明确非规范性迁移附录不属于条款映射。
+- `0.1.0` — 建立首版双语条款映射。

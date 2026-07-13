@@ -2,7 +2,7 @@
 id: REF-0018
 title: 生命宪章受影响者与领域审查协议
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Charter Review
 created: 2026-07-14
@@ -10,7 +10,8 @@ updated: 2026-07-14
 language: zh-CN
 canonical_language: zh-CN
 translation_status: original
-source_commit: c149953217e466570da3fa58157eb66616514d6b
+migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
+source_text_commit: 22332a0c8d8858c9ccf652f2a40dee5821d53c6c
 related:
   - MF-0004
   - MF-0006
@@ -100,7 +101,9 @@ ReviewNotExecuted
 7. 儿童与脆弱参与者保护；
 8. 困扰与风险升级路径；
 9. 记录、访问、留存和删除规则；
-10. 审查主持人与负责人的明确指派。
+10. 审查主持人与负责人的明确指派；
+11. 来源版本与来源提交可以同时解析并复核；
+12. 翻译者不能自行确认等效；如兼任审查者，必须记录角色冲突并由另一名审查者复核。
 
 ## 5. 审查问题
 
@@ -115,7 +118,8 @@ ReviewNotExecuted
 7. 在现实冲突中，谁可能拥有过大权力；
 8. 哪些例外是必要的；
 9. 例外如何被限制、记录和申诉；
-10. 哪些证据会让你改变判断。
+10. 哪些证据会让你改变判断；
+11. 哪些内容属于非规范性迁移说明，而不是宪章权利义务。
 
 ## 6. 儿童与青少年参与
 
@@ -187,6 +191,13 @@ Round 04 的 Draft PR 可以合并，当且仅当：
 - 审查协议明确区分“材料已准备”和“真实审查已执行”；
 - 所有文本继续保持 Candidate/Draft；
 - 没有状态提升或完成声明；
+- 来源版本、来源提交和配对版本可以同时复核；
+- 非规范性迁移说明没有被混入宪章条款；
 - 仓库校验通过。
 
 Round 04 合并不等于 Charter 验证完成。
+
+## 11. 变更历史
+
+- `0.2.0-draft.1` — 修正来源快照；增加来源可复核性、翻译者与审查者角色分离，以及非规范性迁移说明边界。
+- `0.1.0` — 建立首版受影响者与领域审查协议。

@@ -2,17 +2,22 @@
 id: MF-0006
 title: 生命宪章（MF-0004 中文配对候选）
 status: Candidate
-version: 1.0.0-alpha.5
+version: 1.0.0-alpha.6
 layer: Layer 0 — Charter
 owner: Ming Foundation
 created: 2026-07-14
 updated: 2026-07-14
 language: zh-CN
-canonical_language: en
+canonical_language: zh-CN
 translation_status: draft-translation
+language_authority_status: paired-draft-source-controls-conflicts
 source_document: MF-0004
+source_language: en
+source_canonical_language: en
 source_version: 1.0.0-alpha.5
-source_commit: c149953217e466570da3fa58157eb66616514d6b
+source_text_commit: 22332a0c8d8858c9ccf652f2a40dee5821d53c6c
+migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
+conflict_authority_document: MF-0004
 paired_document: MF-0004
 related:
   - MF-0000
@@ -117,9 +122,9 @@ depends_on:
 
 人们应当能够不同意、拒绝、暂停、纠正和离开。
 
-当法律允许且为了应对迫近的严重伤害而必须进行合比例干预时，该干预
+当为了应对迫近的严重伤害而有必要采取合法且合比例的干预时，该干预
 **必须**严格限定范围、形成记录、可复核、在可能情况下具有时间边界，
-并且**不得**被错误表述为普通同意。
+并且**不得**被错误表述为一般意义上的同意。
 
 ### C05 — 普通、缓慢、不确定与有限的生命同样具有完整尊严
 
@@ -152,8 +157,8 @@ depends_on:
 
 事实、观察、假设、模式、判断与决定**必须**被区分。
 
-每一项具有实质影响的解释，都应当保留来源、时间、证据、置信程度、
-不确定性、确认状态和修订历史。
+每一项重要解释，都应当保留来源、时间、证据、置信程度、不确定性、
+确认状态和修订历史。
 
 ### C10 — 技术必须服务生命
 
@@ -255,12 +260,17 @@ MingOS Kernel
 
 通过验证并不意味着本宪章从此永久定稿。
 
-## 9. 翻译与权威说明
+---
+
+## 附录 A — 非规范性迁移与权威说明
+
+> 本附录不属于《生命宪章》的规范条款，不增加、削弱或改变原文中的权利、
+> 义务、禁止、例外与验证要求。它只记录 ADR-0021 所要求的迁移治理边界。
 
 本中文文本的目的，是使中文语境中的受影响者、审查者与建设者能够逐条理解、
 质疑和修订这份 Candidate。
 
-当前规则：
+当前迁移治理规则：
 
 - 英文 `MF-0004` 暂时是语言冲突时的受治理来源；
 - 本中文文本是 Candidate 配对译文；

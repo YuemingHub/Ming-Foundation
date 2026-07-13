@@ -2,7 +2,7 @@
 id: REF-0017
 title: 生命宪章双语歧义与专业审查登记
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Charter Review
 created: 2026-07-14
@@ -10,7 +10,8 @@ updated: 2026-07-14
 language: zh-CN
 canonical_language: zh-CN
 translation_status: original
-source_commit: c149953217e466570da3fa58157eb66616514d6b
+migration_base_commit: c149953217e466570da3fa58157eb66616514d6b
+source_text_commit: 22332a0c8d8858c9ccf652f2a40dee5821d53c6c
 related:
   - MF-0004
   - MF-0006
@@ -63,6 +64,18 @@ depends_on:
 | AMB-023 | C13 | currently possible or safe | 谁判断不可参与，如何防止长期排除 | `Critical` | affected-person, safety, legal | 期限、复核、替代参与和申诉 |
 | AMB-024 | S05 | conflicts with this Charter | 测试是否允许合比例例外 | `High` | governance, legal | 由 S06 记录冲突与例外，不静默豁免 |
 | AMB-025 | S08 | passing validation | 什么证据足以完成各审查轨道 | `High` | governance, all reviewers | 建立独立完成标准，不以开会代替验证 |
+| AMB-026 | 全局 | MUST / SHOULD / MAY 大小写与强度 | MF-0004 尚未正式采用 RFC 2119/8174，当前强度矩阵只能是临时解释 | `High` | governance, translation, architecture | 标记为 provisional；不得据此自动产生技术符合性要求 |
+| AMB-027 | C05 标题 | retain full dignity / 同样值得尊重 / 具有完整尊严 | “尊严”与“值得尊重”并非完全等价，可能改变权利强度 | `High` | affected-person, philosophy, translation | MF-0006 暂按英文来源；保留历史中文标题差异 |
+| AMB-028 | C07 标题 | are part of life / 是生命展开的环境 / 是生命的一部分 | “构成生命的一部分”与“生命展开的环境”具有不同本体与关系含义 | `High` | philosophy, affected-person, translation | 不静默统一，进入语义审查 |
+| AMB-029 | C12 标题 | are protected / 必须被保留 / 必须被保护 | “保护”可能比“保留证据”范围更广 | `High` | governance, privacy, translation | MF-0006 暂按英文标题；正文义务继续限定为保留错误证据和不隐藏 |
+| AMB-030 | C04 干预条件 | lawful and proportionate intervention is required | “合法”“合比例”“必要”在中文句法中的修饰关系可能改变安全授权范围 | `Critical` | safety, legal, translation | Rev A 改为“有必要采取合法且合比例的干预”，仍待领域审查 |
+| AMB-031 | C09 | meaningful interpretation | “重要解释”“有意义的解释”“具有实质影响的解释”可能形成不同追溯门槛 | `High` | affected-person, architecture, translation | Rev A 使用“重要解释”，保留门槛问题 |
+
+
+## 2.1 内部架构审查边界
+
+AMB-026 至 AMB-031 来自本次内部架构与文本一致性审查。它们的登记只说明
+问题已经被发现，不构成翻译、法律、安全、儿童权利或受影响者审查完成证据。
 
 ## 3. 审查状态
 
@@ -103,3 +116,8 @@ PreparedNotExecuted
 - Critical 项未处置前，不得宣布双语具有同等规范效力；
 - 任何实质修改都必须回写正文并更新逐条映射；
 - 异议不能因追求发布进度而删除。
+
+## 6. 变更历史
+
+- `0.2.0-draft.1` — 修正来源快照；新增规范词语义、三处内嵌标题差异、C04 干预条件和 C09 解释门槛等内部审查发现。
+- `0.1.0` — 建立首版双语歧义登记。
