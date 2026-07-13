@@ -1,7 +1,6 @@
 # Changelog
 
 All notable repository-level changes are documented here.
-
 ## [Unreleased]
 
 ### Added
@@ -17,7 +16,6 @@ All notable repository-level changes are documented here.
 - Both Charters remain Candidate.
 - RFCs and Profiles retain their current statuses.
 - Affected-person review remains unauthorized and implementation conformance remains empty.
-
 
 ## [1.0.0-alpha.15] - 2026-07-13
 
