@@ -115,6 +115,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | MF-0002 | [Vision](foundation/charter/MF-0002-vision.md)                        | Draft     |
 | MF-0003 | [First Principles](foundation/principles/MF-0003-first-principles.md) | Draft     |
 | MF-0004 | [The Charter of Life](foundation/charter/MF-0004-life-charter.md)     | Candidate |
+| MF-0005 | [MingOS 核心思想、文化与哲学总纲](foundation/philosophy/MF-0005-mingos-core-thought-culture-philosophy.zh-CN.md) | Draft |
 
 ## Standards
 

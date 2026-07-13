@@ -8,6 +8,7 @@ All notable repository-level changes are documented here.
 - Proposed core-document lifecycle and one-document-per-round workflow (`GOV-0081`).
 - Proposed canonical-language and translation-governance decision (`ADR-0021`).
 - Draft core-text consolidation and iteration roadmap (`GOV-0082`).
+- Draft Chinese MingOS core thought, culture, and philosophy compendium (`MF-0005`).
 
 ### Status boundary
 
