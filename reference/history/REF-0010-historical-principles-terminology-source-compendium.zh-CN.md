@@ -2,7 +2,7 @@
 id: REF-0010
 title: MingOS 历史原则、术语与来源映射总集
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -96,26 +96,75 @@ REF-0010  历史原则、术语与来源映射总集（主入口）
 
 来源和隐私规则详见 REF-0013。
 
-## 5. 状态分类
+## 5. 三轴映射模型
 
-本合集使用以下状态，而不是把历史概念简单分成“保留或删除”：
+历史材料不能只用一个 `current_status` 字段描述。
+
+一个历史概念至少同时包含三个不同问题：
+
+1. **来源证据状态**：我们凭什么知道它曾经存在、内容是否完整；
+2. **历史处置状态**：当前决定保留、吸收、收窄、降级还是继续等待；
+3. **术语权威状态**：这个词目前是项目名、术语表定义、RFC 用语、解释性概念还是历史名称。
+
+如果三者混在一个“状态”字段中，就会出现：
+
+- 来源尚未恢复，却看起来已经完成处置；
+- 一个词被当前文件引用，却看起来已经成为正式术语；
+- 代码中存在一个对象，就看起来已经进入 Kernel；
+- “待验证”同时表示证据不足、定义未定和治理未决。
+
+### 5.1 来源证据状态
 
 | 状态 | 含义 |
 |---|---|
-| CanonicalReferenced | 已由当前权威文本明确规定，本合集只引用 |
-| InterpretiveCurrent | 已进入当前 Draft 解释文本，但不是独立规范 |
-| CulturalMaxim | 文化简语，不能替代工程和权利要求 |
-| MethodCandidate | 实践方法候选，需要应用验证 |
-| ImplementationHistorical | 历史运行标签，已迁移或待迁移 |
-| ImplementationSpecific | 特定产品或代码对象 |
+| CurrentRepositoryEvidence | 当前仓库可以定位到该概念或边界，但不自动证明其早期原文 |
+| LocatedHistoricalEvidence | 历史来源已有可核验定位、版本或完整性记录 |
+| ImplementationEvidence | 代码、产品文档或运行记录可以证明某种实现曾存在 |
+| SecondaryOnly | 当前只有摘要、二手整理或回忆，不能作为逐条原文 |
+| NamedOnly | 只能确认集合名或概念名，无法确认完整内容 |
+| SourceMissing | 连名称、语境或来源都不足以支持历史判断 |
+
+### 5.2 历史处置状态
+
+| 状态 | 含义 |
+|---|---|
+| CanonicalReferenced | 当前权威文本已经明确规定，本合集只做引用 |
+| InterpretiveCurrent | 已进入当前 Draft 解释层，但不是独立规范 |
+| CulturalMaxim | 保留文化和传播价值，不能替代工程、权利和治理要求 |
+| MethodCandidate | 实践方法候选，需要应用规范、证据和边界验证 |
+| ImplementationHistorical | 历史运行标签，具体实现已迁移或需要迁移 |
+| ImplementationSpecific | 特定产品或代码对象，不自动成为 Foundation 或 Kernel 标准 |
 | HistoricalMetaphor | 适合解释，不适合作为可审计规范 |
-| HistoricalAlias | 历史名称保留，正式文本使用当前名称 |
-| NarrowedSlogan | 原句需收窄后才能继续使用 |
-| ArchitectureDirection | 架构方向稳定，工程定义未完成 |
-| StrategyLabel | 战略表达，不代表已经实现 |
-| OpenResearchConcept | 开放研究概念，不得声称已验证 |
-| PartiallyAbsorbed | 部分进入后续文本，不能假定完全对应 |
-| UnresolvedSource | 名称或作用已知，原始逐条内容尚未可靠恢复 |
+| HistoricalAlias | 保留项目记忆，正式文本使用更清晰的当前名称 |
+| NarrowedSlogan | 原表达有传播价值，但因因果过强或边界不足需要收窄 |
+| HistoricalExplanatoryFrame | 历史解释框架，尚未成为正式命名或定义 |
+| ArchitectureDirection | 架构方向较稳定，具体对象和协议尚未完成 |
+| StrategyLabel | 战略表达，不得被当作已经交付的能力 |
+| HistoricalStrategyLabel | 历史战略名称，当前正式体系由其他文件承载 |
+| OpenResearchConcept | 开放研究概念，不能声称已被验证 |
+| PartiallyAbsorbed | 部分内容进入后续文本，但不能假定完全一一对应 |
+| RetainedPendingSource | 保留概念或集合名，等待原始来源恢复后再决定最终处置 |
+
+### 5.3 术语权威状态
+
+术语矩阵使用独立的 `term_authority_status`：
+
+| 状态 | 含义 |
+|---|---|
+| CurrentProjectName | 当前项目或仓库正式使用的名称 |
+| DraftGlossary | 已进入 Draft 术语表 |
+| InterpretiveCurrent | 已进入当前解释文本，但尚未成为正式术语定义 |
+| CanonicalReferenced | 已由当前原则、宪章或 Accepted 决议明确引用 |
+| NeedsGlossaryReview | 需要进入下一次术语表审查 |
+| RFCReferenced | 已被 Proposed RFC 使用，权威不高于 RFC 当前状态 |
+| MethodCandidate | 应用方法候选术语 |
+| HistoricalMetaphor | 历史隐喻，不作为正式技术术语 |
+| HistoricalStrategyLabel | 历史战略名称，当前体系由其他文件承载 |
+| OpenResearchConcept | 开放研究概念 |
+| ImplementationSpecific | 特定产品或代码对象 |
+
+三个轴必须分别记录。任何机器可读映射也必须使用三个命名空间，
+不得继续使用含义不清的通用 `current_status`。
 
 ## 6. 五个历史概念家族
 
@@ -274,7 +323,7 @@ REF-0010  历史原则、术语与来源映射总集（主入口）
 
 - 用当前条款伪造早期原文；
 - 用历史口号覆盖当前宪章；
-- 把家庭方法当作全局 Kernel（家庭方法可以验证 Kernel，但不能反向成为所有生命场景的普遍结构）；
+- 把家庭方法当作全局 Kernel；
 - 把代码中的字段当作生命本体；
 - 把私人案例作为公开来源证据；
 - 因为某个概念“很像 MingOS”就自动保留；
@@ -338,7 +387,7 @@ Agency、Consent、Confidence 和 Evidence。
 Round 03 合集只有在以下条件满足后才可作为 Draft 合并：
 
 - REF-0010 至 REF-0014 内容一致；
-- 机器可读映射与 Markdown 一致；
+- 机器可读映射完整包含概念、术语、来源与 Kernel 边界，并与 Markdown 一致；
 - 所有来源缺口保持可见；
 - 没有可识别家庭或私人信息；
 - 没有历史概念被静默升级为 Accepted；
@@ -365,4 +414,5 @@ Round 03 合并后，不再继续拆分历史映射。
 
 ## 14. 变更历史
 
+- `0.2.0-draft.1` — 将单一状态拆分为来源证据、历史处置和术语权威三轴；补齐来源定位规则、机器映射范围和 Kernel 范围边界。
 - `0.1.0` — 建立历史原则、术语、来源、隐私和 Kernel 边界的一体化映射总集。

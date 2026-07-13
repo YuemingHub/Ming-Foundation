@@ -2,7 +2,7 @@
 id: REF-0012
 title: MingOS 核心术语状态矩阵
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Reference
 created: 2026-07-13
@@ -33,9 +33,30 @@ depends_on:
 
 在这些问题审查完成前直接修改 REF-0002，会让未决历史问题看起来已经定稿。
 
-## 2. 状态矩阵
+## 2. 术语权威状态
 
-| 中文 | 英文/标识 | 类别 | 当前状态 | 当前含义 | 不应被理解为 |
+本文件的状态只回答“这个词当前以什么权威被使用”，不回答历史来源是否完整，
+也不回答概念最终应被保留还是替代。
+
+允许值：
+
+| 状态 | 含义 |
+|---|---|
+| CurrentProjectName | 当前项目或仓库正式使用的名称 |
+| DraftGlossary | 已进入 Draft 术语表 |
+| InterpretiveCurrent | 已进入当前解释文本，但不是正式术语定义 |
+| CanonicalReferenced | 当前原则、宪章或 Accepted 决议已经明确引用 |
+| NeedsGlossaryReview | 尚未进入术语表，但应优先审查 |
+| RFCReferenced | 已被 Proposed RFC 使用，权威不高于 RFC 状态 |
+| MethodCandidate | 应用方法候选术语 |
+| HistoricalMetaphor | 历史隐喻 |
+| HistoricalStrategyLabel | 历史战略名称 |
+| OpenResearchConcept | 开放研究概念 |
+| ImplementationSpecific | 特定产品或代码对象 |
+
+## 3. 状态矩阵
+
+| 中文 | 英文/标识 | 类别 | 术语权威状态 | 当前含义 | 不应被理解为 |
 |---|---|---|---|---|---|
 | MingOS | MingOS | 项目名称 | `CurrentProjectName` | 项目和系统工程名称；正式英文全称仍待品牌治理 | 不得自动等同某一个产品或 AI |
 | 生命操作系统 | Life Operating System | 中文解释/品牌方向 | `HistoricalStrategyLabel` | 解释 MingOS 的方向 | 不得理解为操作和控制生命 |
@@ -60,7 +81,7 @@ depends_on:
 | 开放生命协议 | Open Life Protocol | 历史战略名 | `HistoricalStrategyLabel` | 开放、可互操作的生命信息协议愿景 | 当前正式协议由 MOS/RFC 承担 |
 | 生命语法 | Life Grammar | 研究概念 | `OpenResearchConcept` | 探索事件、关系、状态和意义的表达结构 | 不得声称已发现生命客观语法 |
 
-## 3. 优先进入下一次 REF-0002 修订的术语
+## 4. 优先进入下一次 REF-0002 修订的术语
 
 建议优先评审：
 
@@ -83,7 +104,7 @@ depends_on:
 - 是否有法律、临床或文化歧义；
 - 中英文是否同等权威。
 
-## 4. 明确不建议成为当前正式术语的表达
+## 5. 明确不建议成为当前正式术语的表达
 
 - 灵魂层；
 - 安内后攘外；
@@ -95,7 +116,7 @@ depends_on:
 
 这些表达可以保留历史和传播语境，但不应作为当前规范标题。
 
-## 5. 翻译风险
+## 6. 翻译风险
 
 ### 生命
 
@@ -116,6 +137,7 @@ depends_on:
 
 `Meaning` 不能被系统当作可分配标签。系统可以支持探索，不能成为最终作者。
 
-## 6. 变更历史
+## 7. 变更历史
 
+- `0.2.0-draft.1` — 为术语矩阵建立独立且完整的 `term_authority_status` 词表。
 - `0.1.0` — 建立核心、方法、文化、实现和研究术语的状态矩阵。

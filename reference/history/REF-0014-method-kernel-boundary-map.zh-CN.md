@@ -2,7 +2,7 @@
 id: REF-0014
 title: MingOS 方法体系与 Kernel 边界图
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-13
@@ -25,8 +25,8 @@ depends_on:
 
 ## 1. 目的
 
-MingOS 的历史方法非常丰富。未来 Kernel 需要从中学习，但不能把所有方法
-直接写进内核。
+MingOS 的历史方法非常丰富。未来 Kernel 范围决议可以评估这些方法，但在 Round 06 完成前，任何对象都只是候选，
+不能因为本文件列出就被视为已经进入内核。
 
 本文件区分：
 
@@ -62,9 +62,9 @@ Kernel 通用对象与运行协议
 | LifeMoment | 实现对象 | 产品 / 待评审 | 可以承载事件、对话与状态 | 旧代码对象不自动进入 Kernel |
 | Parent Understanding | 实现对象 | 产品 / RFC 映射 | 支持可纠正和版本化理解 | 不得用于商业操纵和永久画像 |
 
-## 3. Kernel 只应吸收什么
+## 3. Round 06 可评估的通用能力候选
 
-Kernel 可以吸收跨场景、可审计、可测试的通用能力，例如：
+以下对象具有跨场景、可审计和可测试的潜力，可由未来 Kernel 范围决议评估：
 
 - Person、Speaker、Subject；
 - Relationship；
@@ -78,7 +78,7 @@ Kernel 可以吸收跨场景、可审计、可测试的通用能力，例如：
 - Evidence、Confidence、Unknown；
 - Audit 与 Version。
 
-Kernel 不应吸收：
+无论未来 Kernel 采用何种范围，都不应吸收：
 
 - 某个课程的章节顺序；
 - “规律—关系—驱动—投资”作为硬编码推理顺序；
@@ -87,9 +87,9 @@ Kernel 不应吸收：
 - 未经证据支持的家庭因果假设；
 - 只适用于家长场景的语言模板。
 
-## 4. 方法进入 Kernel 的门槛
+## 4. 方法被纳入 Kernel 候选范围的门槛
 
-一个历史方法进入 Kernel 前必须回答：
+一个历史方法即使要进入 Kernel 候选范围，也必须先回答：
 
 1. 是否跨场景成立；
 2. 是否可以清晰定义；
@@ -118,7 +118,15 @@ Kernel 不应吸收：
 - 跟进与反馈；
 - 失败、反例和案例边界。
 
-它应依赖 Kernel，而不是替代 Kernel。
+家庭应用合集可以在完整 Kernel 之前推进，但必须：
+
+- 明确标记为应用特定 Draft；
+- 依赖当前宪章、RFC 和数据权利边界；
+- 不声称已经符合尚未完成的 Kernel；
+- 为未来对象映射保留迁移接口；
+- Kernel 建立后再完成正式依赖和符合性映射。
+
+因此，应用层可以先验证需求，但不能替代或预先决定 Kernel。
 
 ## 6. 历史实现迁移规则
 
@@ -134,4 +142,5 @@ Kernel 不应吸收：
 
 ## 7. 变更历史
 
+- `0.2.0-draft.1` — 将 Kernel 对象表述收窄为 Round 06 评估候选，并允许应用 Draft 在不宣称 Kernel 符合性的前提下先行验证。
 - `0.1.0` — 建立历史方法、身份概念、实现对象与未来 Kernel 的边界。
