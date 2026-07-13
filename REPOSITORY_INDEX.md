@@ -89,6 +89,8 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0078 | [Review Operational Activation Register](governance/operations/GOV-0078-review-operational-activation-register.md) | Accepted |
 | GOV-0079 | [Day 15 Status Recommendation](governance/reviews/GOV-0079-day15-status-recommendation.md) | Accepted |
 | GOV-0080 | [Day 15 Validation Record](governance/validation/GOV-0080-day15-validation-record.md) | Accepted |
+| GOV-0081 | [Core Document Lifecycle and Iteration Workflow](governance/workflows/GOV-0081-core-document-lifecycle-and-iteration-workflow.md) | Proposed |
+| GOV-0082 | [Core Text Consolidation and Iteration Roadmap](governance/roadmaps/GOV-0082-core-text-consolidation-and-iteration-roadmap.md) | Draft |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -149,6 +151,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0018 | [Retain Profiles as Proposed and Require Affected-Person Review](governance/decisions/ADR-0018-retain-profiles-proposed-and-require-affected-person-review.md) | Accepted |
 | ADR-0019 | [Adopt Revised Profile Sources and Retain Proposed Status](governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md) | Accepted |
 | ADR-0020 | [Separate Content Readiness from Operational Authorization](governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md) | Accepted |
+| ADR-0021 | [Canonical Language and Translation Governance](governance/decisions/ADR-0021-canonical-language-and-translation-governance.md) | Proposed |
 
 ## Profiles
 
