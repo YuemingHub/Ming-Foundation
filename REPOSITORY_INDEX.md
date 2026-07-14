@@ -192,6 +192,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 
 | ADR-0024 | [Separate Public Accountability from Restricted Identity](governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md) | Accepted |
 | ADR-0025 | [Retain CP2 and CP3 Blocked Until Named Accountability](governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md) | Accepted |
+| ADR-0026 | [Define MingOS Kernel as a Governed Specification Family](governance/decisions/ADR-0026-define-mingos-kernel-specification-family.md) | Proposed |
 
 ## Profiles
 
@@ -240,6 +241,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0023 | [MingOS 宪章承诺—合同—实现状态映射](reference/charter/REF-0023-mingos-charter-commitment-contract-map.md) | Draft |
 | REF-0024 | [MingOS 宪章双语歧义与领域审查登记](reference/charter/REF-0024-mingos-charter-ambiguity-review-register.md) | Draft |
 | REF-0025 | [MingOS 宪章受影响者、商业、专业与实现审查协议](reference/charter/REF-0025-mingos-charter-review-protocol.md) | Draft |
+| REF-0026 | [MingOS Kernel Specification Family and Identifier Allocation Map](reference/kernel/REF-0026-kernel-family-and-id-allocation-map.md) | Draft |
+| REF-0027 | [MingOS Kernel Normative Authority and Precedence Matrix](reference/kernel/REF-0027-kernel-normative-authority-precedence-matrix.md) | Draft |
+| REF-0028 | [MingOS Kernel Conformance Replaceability and Claim Boundary](reference/kernel/REF-0028-kernel-conformance-replaceability-claim-boundary.md) | Draft |
+| REF-0029 | [MingOS Kernel AI Human and Affected-Person Role Representation Map](reference/kernel/REF-0029-kernel-role-representation-map.md) | Draft |
+| REF-0030 | [Round 06 Kernel Decision Traceability and Open Questions](reference/kernel/REF-0030-kernel-decision-traceability-open-questions.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)
