@@ -11,14 +11,15 @@ All notable repository-level changes are documented here.
 - Draft Chinese MingOS core thought, culture, and philosophy compendium (`MF-0005`).
 - Draft historical principles, terminology, and source mapping collection (`REF-0010` through `REF-0014`).
 - Candidate Chinese paired migration of the Charter of Life (`MF-0006`) with bilingual mapping, normative-force, ambiguity, and affected-person review artifacts (`REF-0015` through `REF-0018`).
+- Candidate Chinese paired migration of the MingOS Charter (`PROJECT-MINGOS-0003`) with bilingual, normative-force, commitment-contract, ambiguity, and review artifacts (`REF-0021` through `REF-0025`).
 
 ### Status boundary
 
-- Repository stage remains Foundation 1.0 / Day 15.
-- Repository version remains `1.0.0-alpha.15`.
+- Operational baseline remains Foundation 1.0 / Day 17.
+- Repository version remains `1.0.0-alpha.17`.
 - Both Charters remain Candidate.
 - RFCs and Profiles retain their current statuses.
-- Affected-person review remains unauthorized and implementation conformance remains empty.
+- Human-use affected-person review remains unauthorized; CP0/CP1 synthetic work does not establish product or Kernel conformance.
 
 
 

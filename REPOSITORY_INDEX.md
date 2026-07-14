@@ -209,6 +209,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | PROJECT-MINGOS-0000 | [MingOS Project Boundary](projects/mingos/README.md)                                                                 | Draft     |
 | PROJECT-MINGOS-0001 | [MingOS Public Surfaces and Authority Map](projects/mingos/PROJECT-MINGOS-0001-public-surfaces-and-authority-map.md) | Accepted  |
 | PROJECT-MINGOS-0002 | [MingOS Charter](projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md)                                              | Candidate |
+| PROJECT-MINGOS-0003 | [MingOS 宪章（中文配对候选）](projects/mingos/PROJECT-MINGOS-0003-mingos-charter.zh-CN.md) | Candidate |
 
 ## Reference
 
@@ -234,6 +235,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0018 | [生命宪章受影响者与领域审查协议](reference/charter/REF-0018-life-charter-affected-person-review-protocol.md) | Draft |
 | REF-0019 | [Review Operations and Controlled Pilot Guide](reference/REF-0019-review-operations-and-controlled-pilot-guide.md) | Accepted |
 | REF-0020 | [Named Accountability and Human Activation Guide](reference/REF-0020-named-accountability-and-human-activation-guide.md) | Accepted |
+| REF-0021 | [MingOS 宪章逐条双语迁移映射](reference/charter/REF-0021-mingos-charter-bilingual-article-map.md) | Draft |
+| REF-0022 | [MingOS 宪章规范强度与关键词矩阵](reference/charter/REF-0022-mingos-charter-normative-force-matrix.md) | Draft |
+| REF-0023 | [MingOS 宪章承诺—合同—实现状态映射](reference/charter/REF-0023-mingos-charter-commitment-contract-map.md) | Draft |
+| REF-0024 | [MingOS 宪章双语歧义与领域审查登记](reference/charter/REF-0024-mingos-charter-ambiguity-review-register.md) | Draft |
+| REF-0025 | [MingOS 宪章受影响者、商业、专业与实现审查协议](reference/charter/REF-0025-mingos-charter-review-protocol.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)
