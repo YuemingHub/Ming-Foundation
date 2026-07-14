@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/review-protocol-approval-registry.schema.json",
+  "title": "Review Protocol Approval Registry",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "synthetic_use_state",
+    "human_use_state",
+    "protocols",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "synthetic_use_state": {
+      "const": "ApprovedForCP0CP1"
+    },
+    "human_use_state": {
+      "const": "NotApproved"
+    },
+    "protocols": {
+      "type": "array",
+      "minItems": 7
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

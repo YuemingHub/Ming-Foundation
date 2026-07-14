@@ -138,10 +138,28 @@ related:
 - ADR-0019
 - ADR-0020
 - REF-0009
+- GOV-0083
+- GOV-0084
+- GOV-0085
+- GOV-0086
+- GOV-0087
+- GOV-0088
+- GOV-0089
+- GOV-0090
+- GOV-0091
+- GOV-0092
+- ADR-0022
+- ADR-0023
+- REF-0019
+- GOV-TPL-0018
+- GOV-TPL-0019
+- GOV-TPL-0020
+- GOV-TPL-0021
+- GOV-TPL-0022
 status: Accepted
 title: Current Canonical State
-updated: 2026-07-13
-version: 1.0.0-alpha.15
+updated: 2026-07-14
+version: 1.0.0-alpha.16
 ---
 
 # GOV-0001 — Current Canonical State
@@ -165,8 +183,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 15 — Profile Source Revision and Review-Readiness Gate
-- **Current repository version:** `1.0.0-alpha.15`
+- **Current repository stage:** Foundation 1.0 / Day 16 — Review Operations Activation and Controlled Pilot Authorization
+- **Current repository version:** `1.0.0-alpha.16`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -242,6 +260,14 @@ decisions, and governance records.
 - Day 15 affected-person review-readiness gate;
 - Day 15 operational role, approval, and evidence-environment register;
 - Day 15 separation of content readiness from scheduling authorization.
+- Day 16 concurrent-workstream integration audit against the latest main;
+- Day 16 role assignment, conflict, qualification, and independence protocol;
+- Day 16 protocol-approval and human-use authorization separation;
+- Day 16 restricted evidence-environment control specification;
+- Day 16 CP0 through CP3 controlled-pilot classification;
+- Day 16 authorization and execution of CP0 and CP1 only;
+- Day 16 twelve-scenario synthetic pilot with twelve passes;
+- Day 16 continued blocking of CP2, CP3, recruitment, human sessions, and live evidence.
 
 ### In progress
 
@@ -356,22 +382,26 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 15, the next canonical work is Review Operations Activation and Controlled Pilot Authorization:
+After Day 16, the next canonical work is Human Review Activation Readiness and Named Accountability:
 
 1. run `python scripts/validate_all.py`;
-2. assign named accountable people to all eight operational roles;
-3. complete conflict and qualification checks;
-4. approve all seven review protocols;
-5. provision and test restricted evidence storage, access, contact
-   separation, retention, deletion, and incident logging;
-6. approve the jurisdiction and professional-duty route for a defined
-   operating context;
+2. assign named accountable people to all eight operational roles through
+   GOV-TPL-0018;
+3. complete conflict, qualification, independence, and recusal checks;
+4. approve all seven protocols for a defined human-use context through
+   GOV-TPL-0019;
+5. provision and test all eight restricted evidence-environment controls;
+6. approve the jurisdiction and professional-duty route for a named operating
+   context;
 7. assign an independent facilitator for applicable child, adolescent, and
    vulnerable-participant tracks;
-8. record a separate activation decision before any scheduling;
-9. keep recruitment, sessions, and participant evidence at zero until
-   activation passes;
-10. retain all RFCs and Profiles at Proposed;
-11. retain both Charters at Candidate;
-12. keep implementation conformance separately scoped and empty;
-13. do not enter another repository without explicit user instruction.
+8. re-run CP0 and CP1 after any material protocol or Profile change;
+9. record a separate activation decision before CP2 or CP3;
+10. keep recruitment, human sessions, participant evidence, and live effects
+    at zero until the human gate passes;
+11. retain all RFCs and Profiles at Proposed;
+12. retain both Charters at Candidate;
+13. preserve MF-0005 and REF-0010 through REF-0014 at Draft and ADR-0021 at Proposed;
+14. keep product implementation conformance separately scoped and empty;
+15. stop and regenerate the package if `main` advances before application;
+16. do not enter another repository without explicit user instruction.

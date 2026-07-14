@@ -13,14 +13,17 @@
     "participant_evidence_exists",
     "summary",
     "items",
-    "transition_rule"
+    "transition_rule",
+    "synthetic_pilot_authorized",
+    "synthetic_pilot_execution_state",
+    "human_pilot_authorized"
   ],
   "properties": {
     "canonical_repository": {
       "const": "YuemingHub/Ming-Foundation"
     },
     "overall_state": {
-      "const": "ContentReadyOperationallyBlocked"
+      "const": "SyntheticPilotAuthorizedHumanPilotBlocked"
     },
     "content_ready": {
       "const": true
@@ -42,10 +45,19 @@
     },
     "items": {
       "type": "array",
-      "minItems": 9
+      "minItems": 14
     },
     "transition_rule": {
       "type": "object"
+    },
+    "synthetic_pilot_authorized": {
+      "const": true
+    },
+    "synthetic_pilot_execution_state": {
+      "const": "Complete"
+    },
+    "human_pilot_authorized": {
+      "const": false
     }
   }
 }

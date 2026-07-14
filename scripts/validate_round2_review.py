@@ -160,7 +160,7 @@ def main():
     for iid in {"R2R-005", "R2R-006"}:
         if residual_states.get(iid) not in {"Planned", "Complete"}:
             errors.append(f"{iid}: invalid rebaseline state")
-    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted", "ContentReadyOperationallyBlocked"}:
+    if residual_states.get("R2R-007") not in {"Planned", "PreparedNotExecuted", "ContentReadyOperationallyBlocked", "SyntheticPilotAuthorizedHumanPilotBlocked"}:
         errors.append("R2R-007 must remain Planned or PreparedNotExecuted")
 
     if errors:

@@ -12,14 +12,17 @@
     "roles",
     "approvals",
     "environment",
-    "summary"
+    "summary",
+    "human_review_activation_state",
+    "synthetic_pilot_authorized",
+    "synthetic_pilot_execution_state"
   ],
   "properties": {
     "canonical_repository": {
       "const": "YuemingHub/Ming-Foundation"
     },
     "activation_state": {
-      "const": "NotActivated"
+      "const": "SyntheticPilotOnly"
     },
     "scheduling_authorized": {
       "const": false
@@ -43,6 +46,15 @@
     },
     "summary": {
       "type": "object"
+    },
+    "human_review_activation_state": {
+      "const": "NotActivated"
+    },
+    "synthetic_pilot_authorized": {
+      "const": true
+    },
+    "synthetic_pilot_execution_state": {
+      "const": "Complete"
     }
   }
 }

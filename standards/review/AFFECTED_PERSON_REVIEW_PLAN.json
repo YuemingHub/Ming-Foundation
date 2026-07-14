@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "plan_id": "MING-AFFECTED-PERSON-REVIEW-PLAN-0001",
   "title": "Affected-Person and Domain Review Preparation Plan",
   "status": "Accepted preparation record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0067",
   "execution_state": "PreparedNotExecuted",
   "summary": {
@@ -16,7 +16,8 @@
     "sessions_completed": 0,
     "results_recorded": 0,
     "content_ready": 7,
-    "operationally_ready": 0
+    "operationally_ready": 0,
+    "synthetic_rehearsals_complete": 12
   },
   "entry_gates": [
     "Named safeguarding and review owner",
@@ -49,7 +50,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-ADOLESCENT-001",
@@ -71,7 +73,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-PARENT-001",
@@ -92,7 +95,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-PRACTITIONER-001",
@@ -114,7 +118,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-PRIVACY-SAFETY-001",
@@ -136,7 +141,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-ACCESSIBILITY-001",
@@ -158,7 +164,8 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     },
     {
       "track_id": "APR-JURISDICTION-001",
@@ -180,15 +187,20 @@
       ],
       "profile_source_version": "0.2.0-draft.1",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "synthetic_rehearsal_state": "CoveredByCrossProfilePilot"
     }
   ],
   "profile_source_version": "0.2.0-draft.1",
   "content_readiness": "Pass",
-  "operational_activation_state": "NotActivated",
+  "operational_activation_state": "SyntheticPilotOnly",
   "readiness_gate": "GOV-0077",
   "activation_register": "GOV-0078",
   "scheduling_authorized": false,
   "recruitment_authorized": false,
-  "sessions_authorized": false
+  "sessions_authorized": false,
+  "synthetic_rehearsal_state": "Complete",
+  "synthetic_scenarios_passed": 12,
+  "human_review_state": "PreparedNotExecuted",
+  "day16_gate": "GOV-0090"
 }

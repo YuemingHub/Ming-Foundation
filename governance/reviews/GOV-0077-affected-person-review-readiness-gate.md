@@ -2,7 +2,7 @@
 id: GOV-0077
 title: Affected-Person Review Readiness Gate
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Review Governance
 created: 2026-07-13
@@ -70,3 +70,10 @@ The state may become `ReadyToSchedule` only after:
 - a separate activation decision is recorded.
 
 No recruitment or session may begin under the Day 15 state.
+
+## Day 16 relation
+
+CP0 and CP1 synthetic-only controls are authorized and complete.
+
+Human scheduling, recruitment, sessions, participant evidence, and CP3 remain
+blocked. The current gate is `SyntheticPilotAuthorizedHumanPilotBlocked`.

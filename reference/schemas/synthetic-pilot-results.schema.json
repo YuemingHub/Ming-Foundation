@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/synthetic-pilot-results.schema.json",
+  "title": "Synthetic Pilot Results",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "execution_class",
+    "data_policy",
+    "results",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "execution_class": {
+      "const": "CP1"
+    },
+    "data_policy": {
+      "const": "SyntheticOnly"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 12
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

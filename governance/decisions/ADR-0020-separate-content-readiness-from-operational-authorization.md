@@ -2,7 +2,7 @@
 id: ADR-0020
 title: Separate Content Readiness from Operational Authorization
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Cross-layer
 owner: Ming Foundation Review Governance
 created: 2026-07-13
@@ -59,3 +59,9 @@ A separate activation decision is required after:
 
 A template, role name, or planned control is not evidence that the control is
 operational.
+
+## Day 16 extension
+
+Synthetic rehearsal authorization is now an additional state between content
+readiness and human operational authorization. It does not satisfy any human
+activation gate.

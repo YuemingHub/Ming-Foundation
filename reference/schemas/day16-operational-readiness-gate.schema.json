@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/day16-operational-readiness-gate.schema.json",
+  "title": "Day 16 Operational Readiness Gate",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "synthetic_pilot_authorized",
+    "human_pilot_authorized",
+    "items",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "SyntheticPilotAuthorizedHumanPilotBlocked"
+    },
+    "synthetic_pilot_authorized": {
+      "const": true
+    },
+    "human_pilot_authorized": {
+      "const": false
+    },
+    "items": {
+      "type": "array",
+      "minItems": 14
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

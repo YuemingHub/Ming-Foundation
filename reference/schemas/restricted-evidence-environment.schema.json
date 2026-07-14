@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/restricted-evidence-environment.schema.json",
+  "title": "Restricted Evidence Environment",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "design_state",
+    "live_environment_state",
+    "synthetic_environment_state",
+    "controls",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "design_state": {
+      "const": "Complete"
+    },
+    "live_environment_state": {
+      "const": "NotProvisioned"
+    },
+    "synthetic_environment_state": {
+      "const": "RepositoryOnly"
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 8
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.15
+version: 1.0.0-alpha.16
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -301,3 +301,9 @@ validation.
 
 They do not complete affected-person, domain, jurisdiction, operational,
 implementation, or Charter validation streams.
+
+## 19. Day 16 validation boundary
+
+Synthetic pilot evidence improves control validation but does not complete
+affected-person, external, jurisdiction, implementation, or Charter
+validation streams.

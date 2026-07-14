@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "safeguard_id": "MING-AFFECTED-PERSON-REVIEW-SAFEGUARDS-0001",
   "title": "Affected-Person Review Safeguards and Evidence Boundary",
   "status": "Accepted preparation infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0069",
   "execution_state": "PreparedNotExecuted",
   "prohibited_collection": [
@@ -39,5 +39,8 @@
   "profile_source_version": "0.2.0-draft.1",
   "content_readiness": "Pass",
   "operational_readiness": "Blocked",
-  "activation_register": "GOV-0078"
+  "activation_register": "GOV-0078",
+  "synthetic_rehearsal_state": "Complete",
+  "human_execution_state": "PreparedNotExecuted",
+  "day16_gate": "GOV-0090"
 }

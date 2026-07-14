@@ -20,6 +20,48 @@ All notable repository-level changes are documented here.
 - RFCs and Profiles retain their current statuses.
 - Affected-person review remains unauthorized and implementation conformance remains empty.
 
+
+## [1.0.0-alpha.16] - 2026-07-14
+
+### Added
+
+- concurrent-workstream integration audit against `c149953217e466570da3fa58157eb66616514d6b`;
+- eight-role assignment, conflict, qualification, and independence protocol;
+- seven-protocol approval registry separating synthetic use from human use;
+- eight-control restricted evidence-environment specification;
+- CP0 through CP3 controlled-pilot classification;
+- CP0 and CP1 bounded authorization;
+- twelve synthetic pilot scenarios and twelve passed results;
+- Day 16 operational gate, decisions, templates, schemas, and validators.
+
+### Authorization result
+
+```text
+CP0 document tabletop: Authorized and complete
+CP1 synthetic-data rehearsal: Authorized and complete
+CP2 internal staff rehearsal: Blocked
+CP3 affected-person pilot: Blocked
+```
+
+### Human-review boundary
+
+- roles assigned: 0;
+- conflict and qualification checks complete: 0;
+- human-use protocol approvals: 0;
+- live evidence controls ready: 0;
+- participants recruited: 0;
+- human sessions: 0;
+- participant evidence: 0;
+- implementation tests executed: 0;
+- product conformance results: 0.
+
+### Status boundary
+
+- both Charters remain Candidate;
+- RFC-0001 through RFC-0005 and PROF-0001 through PROF-0004 remain Proposed;
+- MF-0005 and REF-0010 through REF-0014 remain Draft;
+- GOV-0081 and ADR-0021 remain Proposed; GOV-0082 remains Draft;
+- all 19 ambiguities and all 8 dissent items remain Open.
 ## [1.0.0-alpha.15] - 2026-07-13
 
 ### Added

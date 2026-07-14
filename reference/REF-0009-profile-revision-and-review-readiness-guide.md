@@ -2,7 +2,7 @@
 id: REF-0009
 title: Profile Revision and Review Readiness Guide
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 3 — Reference
 owner: Ming Foundation Standards and Review Governance
 created: 2026-07-13
@@ -73,3 +73,12 @@ The next transition is not participant recruitment.
 
 It is operational activation through named accountability, approved
 protocols, tested evidence controls, and a separate authorization decision.
+
+## Day 16 extension
+
+```text
+Synthetic pilot complete
+≠ human pilot authorized
+≠ affected-person review complete
+≠ product conforming
+```

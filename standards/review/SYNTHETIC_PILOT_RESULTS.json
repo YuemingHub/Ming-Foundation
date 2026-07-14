@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-SYNTHETIC-PILOT-RESULTS-0001",
+  "title": "Synthetic Pilot Execution Results",
+  "status": "Accepted repository-level synthetic rehearsal evidence",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0089",
+  "execution_class": "CP1",
+  "execution_date": "2026-07-14",
+  "data_policy": "SyntheticOnly",
+  "participants_recruited": 0,
+  "participant_sessions": 0,
+  "participant_evidence_records": 0,
+  "live_system_actions": 0,
+  "implementation_conformance_results": 0,
+  "results": [
+    {
+      "scenario_id": "SP-001",
+      "scope": "PROF-0001",
+      "result": "Pass",
+      "observed_control": "refusal_recorded_no_penalty",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-002",
+      "scope": "PROF-0001",
+      "result": "Pass",
+      "observed_control": "silence_does_not_create_agreement",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-003",
+      "scope": "PROF-0001",
+      "result": "Pass",
+      "observed_control": "temporary_exclusion_expires_and_notifies",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-004",
+      "scope": "PROF-0002",
+      "result": "Pass",
+      "observed_control": "independent_review_required",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-005",
+      "scope": "PROF-0002",
+      "result": "Pass",
+      "observed_control": "least_evidence_route_available",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-006",
+      "scope": "PROF-0003",
+      "result": "Pass",
+      "observed_control": "purpose_end_triggers_action",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-007",
+      "scope": "PROF-0003",
+      "result": "Pass",
+      "observed_control": "deleted_record_not_reactivated",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-008",
+      "scope": "PROF-0003",
+      "result": "Pass",
+      "observed_control": "correction_propagates_without_erasing_audit",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-009",
+      "scope": "PROF-0004",
+      "result": "Pass",
+      "observed_control": "service_claim_downgraded",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-010",
+      "scope": "PROF-0004",
+      "result": "Pass",
+      "observed_control": "accessibility_limit_visible",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-011",
+      "scope": "CrossProfile",
+      "result": "Pass",
+      "observed_control": "pilot_stops_and_rejects_real_evidence",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    },
+    {
+      "scenario_id": "SP-012",
+      "scope": "CrossProfile",
+      "result": "Pass",
+      "observed_control": "synthetic_record_removed_and_logged",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "claim_boundary": "Repository-level synthetic rehearsal only"
+    }
+  ],
+  "summary": {
+    "executed": 12,
+    "passed": 12,
+    "failed": 0,
+    "stopped": 0,
+    "real_evidence_detected": 0
+  }
+}
