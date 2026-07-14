@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "MING-DAY17-HUMAN-ACTIVATION-READINESS-GATE-0001",
+  "title": "Day 17 Human Review Activation Readiness Gate",
+  "status": "Accepted gate assessment",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0100",
+  "overall_state": "NamedAccountabilityFrameworkCompleteHumanActivationBlocked",
+  "named_accountability_framework_complete": true,
+  "named_accountable_people": 0,
+  "human_review_activation_authorized": false,
+  "cp2_authorized": false,
+  "cp3_authorized": false,
+  "recruitment_authorized": false,
+  "sessions_authorized": false,
+  "participant_evidence_exists": false,
+  "items": [
+    {
+      "gate_item_id": "D17-G01",
+      "title": "Day16 merged baseline",
+      "result": "Pass",
+      "finding": "Day16 is merged through PR #6 and CP0/CP1 remain complete."
+    },
+    {
+      "gate_item_id": "D17-G02",
+      "title": "Public and restricted identity separation",
+      "result": "Pass",
+      "finding": "Public role codes are separated from restricted identity and contact records."
+    },
+    {
+      "gate_item_id": "D17-G03",
+      "title": "Eight-role accountability definitions",
+      "result": "Pass",
+      "finding": "Responsibility, capability, limits, and public role codes are defined."
+    },
+    {
+      "gate_item_id": "D17-G04",
+      "title": "Small-team separation-of-duties profile",
+      "result": "Pass",
+      "finding": "Conditional combinations and absolute separation rules are explicit."
+    },
+    {
+      "gate_item_id": "D17-G05",
+      "title": "Nomination and acceptance workflow",
+      "result": "Pass",
+      "finding": "Ten activation states and required checks are defined."
+    },
+    {
+      "gate_item_id": "D17-G06",
+      "title": "Human-use approval routes",
+      "result": "Pass",
+      "finding": "Seven protocols have primary and independent approval roles."
+    },
+    {
+      "gate_item_id": "D17-G07",
+      "title": "Evidence environment deployment plan",
+      "result": "Pass",
+      "finding": "Eight controls have owners, deployment states, and verification gates."
+    },
+    {
+      "gate_item_id": "D17-G08",
+      "title": "CP2 readiness plan",
+      "result": "Pass",
+      "finding": "Staff rehearsal prerequisites and scenario scope are defined."
+    },
+    {
+      "gate_item_id": "D17-G09",
+      "title": "Named-accountability tabletop execution",
+      "result": "Pass",
+      "finding": "Ten synthetic scenarios passed with no real evidence."
+    },
+    {
+      "gate_item_id": "D17-G10",
+      "title": "Real role nominations",
+      "result": "Blocked",
+      "finding": "No person has been nominated through the restricted process."
+    },
+    {
+      "gate_item_id": "D17-G11",
+      "title": "Role acceptance and checks",
+      "result": "Blocked",
+      "finding": "No acceptance, qualification, conflict, or independence checks are complete."
+    },
+    {
+      "gate_item_id": "D17-G12",
+      "title": "Minimum distinct-person topology staffed",
+      "result": "Blocked",
+      "finding": "No real person is assigned to the minimum topology."
+    },
+    {
+      "gate_item_id": "D17-G13",
+      "title": "Human-use protocol approvals",
+      "result": "Blocked",
+      "finding": "No named primary or independent approver exists."
+    },
+    {
+      "gate_item_id": "D17-G14",
+      "title": "Restricted evidence environment deployed",
+      "result": "Blocked",
+      "finding": "No live control is provisioned or verified."
+    },
+    {
+      "gate_item_id": "D17-G15",
+      "title": "Jurisdiction and professional qualification",
+      "result": "Blocked",
+      "finding": "No operating context and qualified reviewer are approved."
+    },
+    {
+      "gate_item_id": "D17-G16",
+      "title": "Independent facilitator assignment",
+      "result": "Blocked",
+      "finding": "No conflict-free facilitator has accepted the role."
+    }
+  ],
+  "summary": {
+    "gate_items": 16,
+    "pass": 9,
+    "blocked": 7,
+    "fail": 0
+  },
+  "next_transition": {
+    "target_state": "NamedAccountabilityVerifiedReadyForCP2Decision",
+    "requires": [
+      "Restricted nominations for all required roles",
+      "Voluntary acceptance, scope, expiry, and backup records",
+      "Qualification, conflict, and independence checks",
+      "Minimum three-person CP2 topology staffed",
+      "Separate qualified jurisdiction and professional review",
+      "Seven human-use protocol approvals as applicable to CP2",
+      "Evidence environment provisioned and verified for the authorized scope",
+      "Separate CP2 authorization decision"
+    ]
+  }
+}

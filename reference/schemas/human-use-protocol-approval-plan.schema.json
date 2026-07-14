@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/human-use-protocol-approval-plan.schema.json",
+  "title": "Human-Use Protocol Approval Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "protocols",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "AwaitingNamedApprovers"
+    },
+    "protocols": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "approval_id",
+          "primary_accountable_role",
+          "independent_review_role",
+          "approval_state",
+          "named_primary_approver",
+          "named_independent_reviewer"
+        ],
+        "properties": {
+          "approval_state": {
+            "const": "NotApproved"
+          },
+          "named_primary_approver": {
+            "type": "null"
+          },
+          "named_independent_reviewer": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  }
+}

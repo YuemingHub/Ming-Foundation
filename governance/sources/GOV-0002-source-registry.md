@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.16
+version: 1.0.0-alpha.17
 ---
 
 # GOV-0002 — Source Registry
@@ -232,3 +232,13 @@ synthetic result registries are canonical governance evidence.
 
 They are not participant evidence, human-use approval, legal qualification,
 live-system evidence, or product implementation conformance.
+
+## 19. Day 17 accountability evidence
+
+Public accountability state, restricted-record references, small-team
+separation rules, nomination workflow, protocol approval routes, environment
+deployment plan, tabletop evidence, and activation gate are canonical
+governance records.
+
+They are not real-person assignments, private identity records, human-use
+approvals, live control evidence, or participant evidence.

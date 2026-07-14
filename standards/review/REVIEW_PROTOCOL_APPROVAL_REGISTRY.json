@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-REVIEW-PROTOCOL-APPROVAL-0001",
   "title": "Review Protocol Approval Registry",
   "status": "Accepted approval infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "governing_record": "GOV-0085",
   "synthetic_use_state": "ApprovedForCP0CP1",
   "human_use_state": "NotApproved",
@@ -21,7 +21,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-002",
@@ -34,7 +37,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-003",
@@ -47,7 +53,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-004",
@@ -60,7 +69,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-005",
@@ -73,7 +85,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-006",
@@ -86,7 +101,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     },
     {
       "approval_id": "APR-APP-007",
@@ -99,7 +117,10 @@
       "human_use_state": "NotApproved",
       "human_approver": null,
       "approval_evidence_refs": [],
-      "material_change_requires_reapproval": true
+      "material_change_requires_reapproval": true,
+      "named_primary_approver_required": true,
+      "named_independent_reviewer_required": true,
+      "operating_context_required": true
     }
   ],
   "summary": {
@@ -107,5 +128,8 @@
     "synthetic_use_approved": 7,
     "human_use_approved": 0,
     "human_use_blocked": 7
-  }
+  },
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "day17_human_use_approval_plan": "standards/review/HUMAN_USE_PROTOCOL_APPROVAL_PLAN.json",
+  "human_use_readiness_state": "AwaitingNamedApprovers"
 }

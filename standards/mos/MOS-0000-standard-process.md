@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.10
+version: 1.0.0-alpha.11
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -377,3 +377,46 @@ CP2 or CP3 requires named roles, completed conflict and qualification checks,
 human-use protocol approvals, a provisioned and tested evidence environment,
 applicable jurisdiction qualification, independent facilitation where
 required, and a separate authorization decision.
+## 29. Public accountability and restricted identity
+
+Public governance records SHOULD use stable accountability IDs.
+
+Real names, contacts, identity evidence, signatures, certificates, and
+detailed conflict evidence MUST be stored in a restricted record unless
+lawful and necessary publication is separately approved.
+
+A public role code without a non-null restricted assignment reference is not
+a named assignment.
+
+## 30. Small-team separation of duties
+
+Small teams MAY combine compatible roles only when conditional controls are
+met.
+
+Absolute separation rules MUST NOT be overridden by convenience, staffing
+shortage, founder authority, professional title, or an exception record.
+
+## 31. Human activation states
+
+Human review activation MUST distinguish:
+
+```text
+FrameworkComplete
+NamedPeopleNominated
+RolesAccepted
+ChecksComplete
+ProtocolsApproved
+EnvironmentVerified
+ReadyForAuthorizationDecision
+Authorized
+```
+
+A later state MUST NOT be inferred from an earlier state.
+
+## 32. CP2 authorization
+
+An internal staff rehearsal requires real named staff, role acceptance,
+conflict and qualification checks, applicable protocol approvals, bounded
+evidence controls, and a separate authorization decision.
+
+A synthetic tabletop cannot authorize CP2 or CP3.

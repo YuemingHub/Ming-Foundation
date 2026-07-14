@@ -2,7 +2,7 @@
 id: GOV-0085
 title: Review Protocol Approval and Human-Use Authorization Standard
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Review Governance
 created: 2026-07-14
@@ -56,3 +56,9 @@ Synthetic-use design approved:  7
 Human-use approved:             0
 Human-use blocked:              7
 ```
+
+## Day 17 relation
+
+All seven protocols now have primary and independent approval routes.
+
+Named approvers and human-use approvals remain zero.

@@ -2,7 +2,7 @@
 id: GOV-0091
 title: Day 16 Status Recommendation
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-14
@@ -48,3 +48,9 @@ Human review activation: NotActivated
 Human controlled pilot: Blocked
 Implementation conformance: empty
 ```
+
+## Day 17 confirmation
+
+All Day 16 status recommendations are retained.
+
+No document or pilot class is promoted.

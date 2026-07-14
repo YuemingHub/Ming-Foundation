@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/named-accountability-tabletop-scenarios.schema.json",
+  "title": "Named Accountability Tabletop Scenarios",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "data_policy",
+    "scenarios"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "data_policy": {
+      "const": "SyntheticOnly"
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 10
+    }
+  }
+}

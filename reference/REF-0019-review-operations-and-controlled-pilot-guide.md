@@ -2,7 +2,7 @@
 id: REF-0019
 title: Review Operations and Controlled Pilot Guide
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 3 — Reference
 owner: Ming Foundation Review Governance
 created: 2026-07-14
@@ -41,3 +41,18 @@ Repository test passed
 
 Day 16 permits learning about the control architecture without exposing real
 people or evidence to an unactivated process.
+
+## Day 17 extension
+
+```text
+Public role code
+≠ public real identity
+
+Accountability framework complete
+≠ named accountable people
+
+CP2 readiness plan complete
+≠ CP2 authorized
+```
+
+See REF-0020.

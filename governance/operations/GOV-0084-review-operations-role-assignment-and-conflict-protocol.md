@@ -2,7 +2,7 @@
 id: GOV-0084
 title: Review Operations Role Assignment and Conflict Protocol
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Review Governance
 created: 2026-07-14
@@ -59,3 +59,10 @@ Human review authority: none
 ```
 
 The protocol is Accepted. No person is assigned by this document.
+
+## Day 17 relation
+
+Public accountability IDs, restricted identity separation, small-team
+separation of duties, and a ten-state nomination workflow are now defined.
+
+No real person is nominated or assigned.

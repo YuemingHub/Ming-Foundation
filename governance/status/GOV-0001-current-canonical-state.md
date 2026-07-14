@@ -156,10 +156,29 @@ related:
 - GOV-TPL-0020
 - GOV-TPL-0021
 - GOV-TPL-0022
+- GOV-0093
+- GOV-0094
+- GOV-0095
+- GOV-0096
+- GOV-0097
+- GOV-0098
+- GOV-0099
+- GOV-0100
+- GOV-0101
+- GOV-0102
+- ADR-0024
+- ADR-0025
+- REF-0020
+- GOV-TPL-0023
+- GOV-TPL-0024
+- GOV-TPL-0025
+- GOV-TPL-0026
+- GOV-TPL-0027
+- GOV-TPL-0028
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-14
-version: 1.0.0-alpha.16
+version: 1.0.0-alpha.17
 ---
 
 # GOV-0001 — Current Canonical State
@@ -183,8 +202,8 @@ The following facts are accepted:
 - **Canonical public repository:**
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
-- **Current repository stage:** Foundation 1.0 / Day 16 — Review Operations Activation and Controlled Pilot Authorization
-- **Current repository version:** `1.0.0-alpha.16`
+- **Current repository stage:** Foundation 1.0 / Day 17 — Human Review Activation Readiness and Named Accountability
+- **Current repository version:** `1.0.0-alpha.17`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -268,6 +287,15 @@ decisions, and governance records.
 - Day 16 authorization and execution of CP0 and CP1 only;
 - Day 16 twelve-scenario synthetic pilot with twelve passes;
 - Day 16 continued blocking of CP2, CP3, recruitment, human sessions, and live evidence.
+
+- Day 17 public and restricted identity separation;
+- Day 17 eight-role named-accountability public register;
+- Day 17 small-team separation-of-duties topology;
+- Day 17 role nomination, acceptance, qualification, and conflict workflow;
+- Day 17 human-use approval routes and evidence-environment deployment plan;
+- Day 17 CP2 readiness plan;
+- Day 17 ten passed synthetic accountability tabletop scenarios;
+- Day 17 human-activation gate retaining CP2 and CP3 at Blocked.
 
 ### In progress
 
@@ -382,26 +410,25 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 16, the next canonical work is Human Review Activation Readiness and Named Accountability:
+After Day 17, the next canonical work is Restricted Role Nomination and CP2 Pre-Authorization:
 
 1. run `python scripts/validate_all.py`;
-2. assign named accountable people to all eight operational roles through
-   GOV-TPL-0018;
-3. complete conflict, qualification, independence, and recusal checks;
-4. approve all seven protocols for a defined human-use context through
-   GOV-TPL-0019;
-5. provision and test all eight restricted evidence-environment controls;
-6. approve the jurisdiction and professional-duty route for a named operating
-   context;
-7. assign an independent facilitator for applicable child, adolescent, and
-   vulnerable-participant tracks;
-8. re-run CP0 and CP1 after any material protocol or Profile change;
-9. record a separate activation decision before CP2 or CP3;
-10. keep recruitment, human sessions, participant evidence, and live effects
-    at zero until the human gate passes;
-11. retain all RFCs and Profiles at Proposed;
-12. retain both Charters at Candidate;
-13. preserve MF-0005 and REF-0010 through REF-0014 at Draft and ADR-0021 at Proposed;
-14. keep product implementation conformance separately scoped and empty;
+2. nominate real people only through the restricted accountability process;
+3. obtain voluntary role acceptance;
+4. complete qualification, conflict, independence, scope, expiry, recusal,
+   and replacement checks;
+5. staff the minimum three-person CP2 topology;
+6. obtain separately qualified jurisdiction and professional review;
+7. approve the human-use protocols applicable to CP2;
+8. deploy and verify only the evidence controls needed for the authorized
+   staff-rehearsal scope;
+9. record a separate CP2 authorization decision;
+10. keep CP3, recruitment, affected-person sessions, participant evidence,
+    and live product effects blocked;
+11. keep real names, contacts, certificates, signatures, and detailed
+    conflict evidence outside the public repository;
+12. retain all RFCs and Profiles at Proposed;
+13. retain both Charters at Candidate;
+14. keep implementation conformance separately scoped and empty;
 15. stop and regenerate the package if `main` advances before application;
 16. do not enter another repository without explicit user instruction.

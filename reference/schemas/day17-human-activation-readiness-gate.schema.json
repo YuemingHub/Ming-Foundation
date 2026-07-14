@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/day17-human-activation-readiness-gate.schema.json",
+  "title": "Day 17 Human Activation Readiness Gate",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "named_accountability_framework_complete",
+    "named_accountable_people",
+    "human_review_activation_authorized",
+    "cp2_authorized",
+    "cp3_authorized",
+    "summary",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "NamedAccountabilityFrameworkCompleteHumanActivationBlocked"
+    },
+    "named_accountability_framework_complete": {
+      "const": true
+    },
+    "named_accountable_people": {
+      "const": 0
+    },
+    "human_review_activation_authorized": {
+      "const": false
+    },
+    "cp2_authorized": {
+      "const": false
+    },
+    "cp3_authorized": {
+      "const": false
+    },
+    "items": {
+      "type": "array",
+      "minItems": 16
+    }
+  }
+}

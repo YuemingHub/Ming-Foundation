@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-CP2-STAFF-REHEARSAL-READINESS-0001",
+  "title": "CP2 Internal Staff Process Rehearsal Readiness Plan",
+  "status": "Accepted readiness infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0099",
+  "overall_state": "FrameworkReadyNamedStaffRequired",
+  "authorization_state": "Blocked",
+  "execution_state": "NotExecuted",
+  "participants_allowed": false,
+  "participant_evidence_allowed": false,
+  "live_system_actions_allowed": false,
+  "required_before_authorization": [
+    "Minimum three distinct staff assignments active",
+    "Safeguarding owner and evidence custodian assigned",
+    "Conflict and qualification checks completed",
+    "Relevant human-use protocols approved for staff rehearsal",
+    "Synthetic or empty evidence environment verified",
+    "Stop, absence, recusal, and incident paths rehearsable",
+    "Separate CP2 authorization decision"
+  ],
+  "scenario_scope": [
+    "role handoff",
+    "conflict and recusal",
+    "safeguarding stop",
+    "privacy and access incident",
+    "withdrawal and deletion",
+    "absence and replacement",
+    "protocol expiry",
+    "jurisdiction mismatch"
+  ]
+}

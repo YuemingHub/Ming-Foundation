@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-REVIEW-ROLE-ASSIGNMENT-0001",
   "title": "Review Operations Role Assignment and Conflict Registry",
   "status": "Accepted operational-control infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "governing_record": "GOV-0084",
   "assignment_state": "Unassigned",
   "human_review_activation_state": "NotActivated",
@@ -20,7 +20,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-01",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "safeguarding_owner",
@@ -32,7 +38,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-02",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "evidence_custodian",
@@ -44,7 +56,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-03",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "accessibility_and_language_owner",
@@ -56,7 +74,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-04",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "independent_facilitator_lead",
@@ -68,7 +92,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-05",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "jurisdiction_and_professional_review_owner",
@@ -80,7 +110,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-06",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "recruitment_and_compensation_owner",
@@ -92,7 +128,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-07",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     },
     {
       "role_id": "privacy_and_data_rights_reviewer",
@@ -104,7 +146,13 @@
       "qualification_check": "NotCompleted",
       "independence_check": "NotCompleted",
       "training_or_qualification_evidence": [],
-      "may_authorize_human_review": false
+      "may_authorize_human_review": false,
+      "public_accountability_id": "RA-08",
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "acceptance_state": "NotAccepted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false
     }
   ],
   "summary": {
@@ -112,5 +160,8 @@
     "roles_assigned": 0,
     "conflict_checks_complete": 0,
     "qualification_checks_complete": 0
-  }
+  },
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "day17_named_accountability_register": "standards/review/NAMED_ACCOUNTABILITY_PUBLIC_REGISTER.json",
+  "day17_nomination_plan": "standards/review/ROLE_NOMINATION_AND_ACCEPTANCE_PLAN.json"
 }

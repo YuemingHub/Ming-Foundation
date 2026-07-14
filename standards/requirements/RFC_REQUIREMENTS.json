@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.2",
+  "schema_version": "2.3",
   "registry_id": "MING-RFC-REQUIREMENTS-0001",
   "title": "Ming Foundation Current RFC Requirement Registry",
   "status": "Accepted infrastructure index",
@@ -11,7 +11,7 @@
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
   "generated_at": "2026-07-12",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "baseline": {
     "state": "CurrentCompleteDerivedIndex",
     "record": "GOV-0056",
@@ -4891,5 +4891,13 @@
     "record": "GOV-0090",
     "synthetic_only": true,
     "human_review_authorized": false
+  },
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "human_review_activation": {
+    "gate": "GOV-0100",
+    "state": "BlockedPendingNamedAccountability",
+    "named_accountable_people": 0,
+    "cp2_authorized": false,
+    "cp3_authorized": false
   }
 }

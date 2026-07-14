@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-EVIDENCE-ENVIRONMENT-DEPLOYMENT-PLAN-0001",
+  "title": "Restricted Evidence Environment Deployment and Verification Plan",
+  "status": "Accepted activation-readiness infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0098",
+  "overall_state": "PlannedNotProvisioned",
+  "live_evidence_ingestion": "Prohibited",
+  "controls": [
+    {
+      "control_id": "ENV-001",
+      "control": "restricted_evidence_workspace",
+      "deployment_state": "NotStarted",
+      "owner_role": "evidence_custodian",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-002",
+      "control": "role_based_access_control",
+      "deployment_state": "NotStarted",
+      "owner_role": "evidence_custodian",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-003",
+      "control": "contact_evidence_separation",
+      "deployment_state": "NotStarted",
+      "owner_role": "recruitment_and_compensation_owner",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-004",
+      "control": "retention_and_deletion_enforcement",
+      "deployment_state": "NotStarted",
+      "owner_role": "evidence_custodian",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-005",
+      "control": "incident_stop_and_access_logging",
+      "deployment_state": "NotStarted",
+      "owner_role": "safeguarding_owner",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-006",
+      "control": "export_and_copy_control",
+      "deployment_state": "NotStarted",
+      "owner_role": "privacy_and_data_rights_reviewer",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-007",
+      "control": "backup_restore_suppression",
+      "deployment_state": "NotStarted",
+      "owner_role": "evidence_custodian",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "ENV-008",
+      "control": "withdrawal_and_deletion_verification",
+      "deployment_state": "NotStarted",
+      "owner_role": "privacy_and_data_rights_reviewer",
+      "verification_state": "NotVerified",
+      "verification_evidence_refs": []
+    }
+  ],
+  "deployment_gates": [
+    "Named owner accepts responsibility",
+    "Workspace and access roles exist",
+    "Test accounts and synthetic fixtures pass",
+    "Contact and evidence separation is demonstrated",
+    "Retention, deletion, restoration, export, and incident controls are tested",
+    "Independent privacy review records limitations",
+    "Human evidence ingestion remains disabled until separate activation"
+  ],
+  "summary": {
+    "controls": 8,
+    "deployment_started": 0,
+    "deployed": 0,
+    "verified": 0,
+    "live_evidence_controls_ready": 0
+  }
+}

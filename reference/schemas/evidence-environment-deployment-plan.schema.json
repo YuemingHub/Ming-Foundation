@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/evidence-environment-deployment-plan.schema.json",
+  "title": "Evidence Environment Deployment Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "live_evidence_ingestion",
+    "controls",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "PlannedNotProvisioned"
+    },
+    "live_evidence_ingestion": {
+      "const": "Prohibited"
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "control_id",
+          "owner_role",
+          "deployment_state",
+          "verification_state",
+          "verification_evidence_refs"
+        ],
+        "properties": {
+          "deployment_state": {
+            "const": "NotStarted"
+          },
+          "verification_state": {
+            "const": "NotVerified"
+          }
+        }
+      }
+    }
+  }
+}

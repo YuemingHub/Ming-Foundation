@@ -2,7 +2,7 @@
 id: GOV-0090
 title: Day 16 Operational Readiness and Pilot Authorization Gate
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-14
@@ -70,3 +70,10 @@ Recruitment: NotAuthorized
 Human sessions: NotAuthorized
 Participant evidence: none
 ```
+
+## Day 17 relation
+
+The Day 16 gate remains valid historical evidence.
+
+Day 17 adds a named-accountability framework but does not clear any Day 16
+human-activation block.

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-NAMED-ACCOUNTABILITY-TABLETOP-RESULTS-0001",
+  "title": "Named Accountability Tabletop Results",
+  "status": "Accepted CP1 synthetic execution evidence",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0099",
+  "data_policy": "SyntheticOnly",
+  "results": [
+    {
+      "scenario_id": "NA-TT-001",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Block activation and require another facilitator."
+    },
+    {
+      "scenario_id": "NA-TT-002",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Use recorded backup or stop the rehearsal."
+    },
+    {
+      "scenario_id": "NA-TT-003",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Require independent privacy review and recusal."
+    },
+    {
+      "scenario_id": "NA-TT-004",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Require an independent consent route or exclude the recruitment path."
+    },
+    {
+      "scenario_id": "NA-TT-005",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Block assignment and require conflict-free facilitation."
+    },
+    {
+      "scenario_id": "NA-TT-006",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Block approval or obtain qualified jurisdiction review."
+    },
+    {
+      "scenario_id": "NA-TT-007",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Locate both stores, restrict use, verify deletion, and record completion."
+    },
+    {
+      "scenario_id": "NA-TT-008",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Stop, protect, avoid general evidence capture, and use the safeguarding route."
+    },
+    {
+      "scenario_id": "NA-TT-009",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Reject the design and preserve payment without compelled completion."
+    },
+    {
+      "scenario_id": "NA-TT-010",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Human activation remains blocked until reassignment and reapproval."
+    }
+  ],
+  "summary": {
+    "executed": 10,
+    "passed": 10,
+    "failed": 0,
+    "stopped": 0,
+    "real_evidence_detected": 0
+  },
+  "human_staff_rehearsals": 0,
+  "participants_recruited": 0,
+  "participant_sessions": 0,
+  "participant_evidence_records": 0
+}

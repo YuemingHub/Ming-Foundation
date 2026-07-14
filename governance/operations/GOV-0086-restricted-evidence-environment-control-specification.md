@@ -2,7 +2,7 @@
 id: GOV-0086
 title: Restricted Evidence Environment Control Specification
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Evidence Governance
 created: 2026-07-14
@@ -51,3 +51,10 @@ Live evidence ingestion: Prohibited
 ```
 
 A complete design is not a provisioned evidence environment.
+
+## Day 17 relation
+
+A deployment and independent-verification plan now exists for all eight
+controls.
+
+Deployment started and live controls ready remain zero.

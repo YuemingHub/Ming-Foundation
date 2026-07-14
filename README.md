@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 16 — Review Operations Activation and Controlled Pilot Authorization**. Day 16 audits the latest concurrent workstream state, defines real assignment and approval controls, specifies the restricted evidence environment, authorizes and completes CP0 document and CP1 synthetic rehearsals, and continues to block CP2, CP3, recruitment, human sessions, live evidence, and product-conformance claims.
+This repository is at **Foundation 1.0 / Day 17 — Human Review Activation Readiness and Named Accountability**. Day 17 establishes privacy-preserving named-accountability infrastructure, a minimum small-team separation-of-duties topology, real nomination and approval workflows, an evidence-environment deployment plan, and a CP2 readiness gate while keeping all human activation blocked.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -145,8 +145,19 @@ Charter governance and validation:
 - [`governance/decisions/ADR-0022-separate-synthetic-rehearsal-from-human-review-activation.md`](governance/decisions/ADR-0022-separate-synthetic-rehearsal-from-human-review-activation.md)
 - [`governance/decisions/ADR-0023-authorize-cp0-cp1-controlled-pilot-only.md`](governance/decisions/ADR-0023-authorize-cp0-cp1-controlled-pilot-only.md)
 - [`reference/REF-0019-review-operations-and-controlled-pilot-guide.md`](reference/REF-0019-review-operations-and-controlled-pilot-guide.md)
+- [`governance/audits/GOV-0093-day17-current-main-and-numbering-audit.md`](governance/audits/GOV-0093-day17-current-main-and-numbering-audit.md)
+- [`governance/operations/GOV-0094-named-accountability-and-public-identity-boundary.md`](governance/operations/GOV-0094-named-accountability-and-public-identity-boundary.md)
+- [`governance/operations/GOV-0095-small-team-accountability-and-separation-of-duties.md`](governance/operations/GOV-0095-small-team-accountability-and-separation-of-duties.md)
+- [`governance/operations/GOV-0096-role-nomination-acceptance-and-verification-plan.md`](governance/operations/GOV-0096-role-nomination-acceptance-and-verification-plan.md)
+- [`governance/operations/GOV-0097-human-use-protocol-approval-readiness.md`](governance/operations/GOV-0097-human-use-protocol-approval-readiness.md)
+- [`governance/operations/GOV-0098-restricted-evidence-environment-deployment-plan.md`](governance/operations/GOV-0098-restricted-evidence-environment-deployment-plan.md)
+- [`governance/validation/GOV-0099-cp2-readiness-and-accountability-tabletop.md`](governance/validation/GOV-0099-cp2-readiness-and-accountability-tabletop.md)
+- [`governance/reviews/GOV-0100-day17-human-review-activation-readiness-gate.md`](governance/reviews/GOV-0100-day17-human-review-activation-readiness-gate.md)
+- [`governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md`](governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md)
+- [`governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md`](governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md)
+- [`reference/REF-0020-named-accountability-and-human-activation-guide.md`](reference/REF-0020-named-accountability-and-human-activation-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. CP0 and CP1 synthetic-only pilots are authorized and complete; affected-person review remains `PreparedNotExecuted`; CP2, CP3, recruitment, human sessions, live evidence, and implementation conformance remain blocked.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. The named-accountability framework is complete, but no real person is nominated or assigned; CP2, CP3, human-use approvals, recruitment, human sessions, live evidence, and implementation conformance remain blocked.
 
 ## Mission
 
@@ -282,7 +293,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.16**
+Current repository foundation version: **1.0.0-alpha.17**
 
 ## License
 

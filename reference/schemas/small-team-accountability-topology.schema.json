@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/small-team-accountability-topology.schema.json",
+  "title": "Small-Team Accountability Topology",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "topology_state",
+    "minimum_distinct_people",
+    "internal_role_clusters",
+    "absolute_separation_rules",
+    "public_team_assumptions"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "topology_state": {
+      "const": "DesignedNotStaffed"
+    },
+    "internal_role_clusters": {
+      "type": "array",
+      "minItems": 4
+    },
+    "absolute_separation_rules": {
+      "type": "array",
+      "minItems": 6
+    }
+  }
+}
