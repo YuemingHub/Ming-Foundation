@@ -1,22 +1,22 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "gate_id": "MING-AFFECTED-PERSON-REVIEW-READINESS-GATE-0001",
   "title": "Affected-Person Review Readiness Gate",
   "status": "Accepted gate assessment",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0077",
-  "assessment_date": "2026-07-13",
-  "overall_state": "ContentReadyOperationallyBlocked",
+  "assessment_date": "2026-07-14",
+  "overall_state": "SyntheticPilotAuthorizedHumanPilotBlocked",
   "content_ready": true,
   "operationally_ready_to_schedule": false,
   "recruitment_authorized": false,
   "sessions_authorized": false,
   "participant_evidence_exists": false,
   "summary": {
-    "gate_items": 9,
-    "pass": 5,
+    "gate_items": 14,
+    "pass": 10,
     "blocked": 4,
     "fail": 0
   },
@@ -74,10 +74,40 @@
       "title": "Jurisdiction and professional qualification",
       "result": "Blocked",
       "finding": "No qualified reviewer has approved a jurisdiction and operating context."
+    },
+    {
+      "gate_item_id": "RRG-010",
+      "title": "Role assignment and conflict protocol",
+      "result": "Pass",
+      "finding": "Accepted protocol and machine registry exist; no assignment is fabricated."
+    },
+    {
+      "gate_item_id": "RRG-011",
+      "title": "Human-use approval separation",
+      "result": "Pass",
+      "finding": "Synthetic-use design review is separated from real human-use approval."
+    },
+    {
+      "gate_item_id": "RRG-012",
+      "title": "Restricted evidence environment specification",
+      "result": "Pass",
+      "finding": "Live controls are fully specified while provisioning remains blocked."
+    },
+    {
+      "gate_item_id": "RRG-013",
+      "title": "Controlled pilot classification",
+      "result": "Pass",
+      "finding": "CP0 and CP1 are authorized; CP2 and CP3 remain blocked."
+    },
+    {
+      "gate_item_id": "RRG-014",
+      "title": "Synthetic pilot execution",
+      "result": "Pass",
+      "finding": "Twelve synthetic scenarios passed with zero real evidence and live action."
     }
   ],
   "transition_rule": {
-    "target_state": "ReadyToSchedule",
+    "target_state": "ReadyToScheduleHumanReview",
     "requires": [
       "All operational roles assigned to named accountable people",
       "Conflict and qualification checks completed",
@@ -87,5 +117,9 @@
       "Independent facilitator assigned for applicable tracks",
       "A separate activation decision"
     ]
-  }
+  },
+  "synthetic_pilot_authorized": true,
+  "synthetic_pilot_execution_state": "Complete",
+  "human_pilot_authorized": false,
+  "day16_gate": "GOV-0090"
 }

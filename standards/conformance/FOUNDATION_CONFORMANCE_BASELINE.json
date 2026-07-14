@@ -5,7 +5,7 @@
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "target": {
     "name": "Ming Foundation non-implementation conformance baseline",
-    "revision": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
+    "revision": "c149953217e466570da3fa58157eb66616514d6b",
     "kind": "document_set",
     "repository": "YuemingHub/Ming-Foundation"
   },
@@ -190,6 +190,15 @@
     "content_ready": true,
     "operationally_ready_to_schedule": false,
     "affected_person_review_executed": false,
+    "implementation_tests_executed": 0,
+    "results_populated": false
+  },
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "day16_controlled_pilot": {
+    "record": "GOV-0090",
+    "synthetic_repository_scenarios_executed": 12,
+    "human_review_authorized": false,
     "implementation_tests_executed": 0,
     "results_populated": false
   }

@@ -2,7 +2,7 @@
 id: GOV-0079
 title: Day 15 Status Recommendation
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Architecture Board
 created: 2026-07-13
@@ -65,3 +65,8 @@ NotAuthorized
 
 Content readiness must not be converted into status promotion or operational
 authorization.
+
+## Day 16 confirmation
+
+The Day 15 status boundaries remain in force. Synthetic pilot success does
+not promote a Charter, RFC, Profile, or product-conformance result.

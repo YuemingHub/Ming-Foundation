@@ -2,7 +2,7 @@
 id: GOV-0078
 title: Review Operational Activation Register
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Review Governance
 created: 2026-07-13
@@ -67,3 +67,11 @@ Machine-readable register:
 ```text
 standards/review/REVIEW_OPERATIONAL_ACTIVATION.json
 ```
+
+## Day 16 relation
+
+The activation state advances to `SyntheticPilotOnly`.
+
+Eight roles remain unassigned, seven protocols remain unapproved for human
+use, the live evidence environment remains unprovisioned, and human review
+activation remains `NotActivated`.

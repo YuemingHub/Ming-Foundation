@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": "MING-CONTROLLED-PILOT-AUTHORIZATION-0001",
+  "title": "Controlled Pilot Classification and Authorization",
+  "status": "Accepted bounded authorization",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_records": [
+    "GOV-0087",
+    "GOV-0090",
+    "ADR-0022",
+    "ADR-0023"
+  ],
+  "overall_state": "SyntheticOnlyAuthorized",
+  "authorized_classes": [
+    "CP0",
+    "CP1"
+  ],
+  "blocked_classes": [
+    "CP2",
+    "CP3"
+  ],
+  "human_review_authorized": false,
+  "recruitment_authorized": false,
+  "participant_sessions_authorized": false,
+  "live_evidence_authorized": false,
+  "product_decision_effect_authorized": false,
+  "public_conformance_claim_authorized": false,
+  "classes": [
+    {
+      "class_id": "CP0",
+      "title": "Document tabletop walkthrough",
+      "authorization_state": "Authorized",
+      "execution_state": "Complete",
+      "data_class": "NoData",
+      "participants_allowed": false,
+      "live_systems_allowed": false
+    },
+    {
+      "class_id": "CP1",
+      "title": "Synthetic-data operational rehearsal",
+      "authorization_state": "Authorized",
+      "execution_state": "Complete",
+      "data_class": "SyntheticOnly",
+      "participants_allowed": false,
+      "live_systems_allowed": false
+    },
+    {
+      "class_id": "CP2",
+      "title": "Internal staff process rehearsal",
+      "authorization_state": "Blocked",
+      "execution_state": "NotExecuted",
+      "data_class": "NoParticipantEvidence",
+      "participants_allowed": false,
+      "live_systems_allowed": false
+    },
+    {
+      "class_id": "CP3",
+      "title": "Affected-person controlled pilot",
+      "authorization_state": "Blocked",
+      "execution_state": "NotExecuted",
+      "data_class": "RestrictedParticipantEvidence",
+      "participants_allowed": false,
+      "live_systems_allowed": false
+    }
+  ],
+  "mandatory_boundaries": [
+    "No real participant, family, child, adolescent, practitioner, client, or third-party evidence",
+    "No current crisis, medical, psychiatric, legal, school, financial, immigration, or safeguarding narrative",
+    "No live product decision, service denial, escalation, representative action, or public claim",
+    "No external transmission or production system integration",
+    "Synthetic records must be visibly marked and disposable",
+    "Any suspected real evidence triggers immediate stop and deletion review"
+  ],
+  "revocation_conditions": [
+    "Material change to Profile, protocol, authorization, or evidence boundary",
+    "Discovery of real or identifiable data",
+    "Validation failure or unexplained result",
+    "Scope expansion beyond CP0 or CP1",
+    "Conflict with an Accepted governance decision"
+  ],
+  "summary": {
+    "classes": 4,
+    "authorized": 2,
+    "blocked": 2,
+    "executed": 2,
+    "human_classes_authorized": 0
+  }
+}

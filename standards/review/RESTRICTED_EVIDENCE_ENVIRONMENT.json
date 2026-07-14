@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "environment_id": "MING-RESTRICTED-EVIDENCE-ENVIRONMENT-0001",
+  "title": "Restricted Evidence Environment Control Specification",
+  "status": "Accepted design specification",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0086",
+  "design_state": "Complete",
+  "live_environment_state": "NotProvisioned",
+  "synthetic_environment_state": "RepositoryOnly",
+  "live_evidence_ingestion": "Prohibited",
+  "synthetic_data_only": true,
+  "controls": [
+    {
+      "control_id": "ENV-001",
+      "control": "restricted_evidence_workspace",
+      "design_state": "Complete",
+      "live_state": "NotProvisioned",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-002",
+      "control": "role_based_access_control",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-003",
+      "control": "contact_evidence_separation",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-004",
+      "control": "retention_and_deletion_enforcement",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-005",
+      "control": "incident_stop_and_access_logging",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-006",
+      "control": "export_and_copy_control",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-007",
+      "control": "backup_restore_suppression",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    },
+    {
+      "control_id": "ENV-008",
+      "control": "withdrawal_and_deletion_verification",
+      "design_state": "Complete",
+      "live_state": "NotConfigured",
+      "synthetic_state": "EnforcedByRepositoryValidation",
+      "verification_evidence": []
+    }
+  ],
+  "summary": {
+    "controls_required": 8,
+    "design_complete": 8,
+    "live_controls_ready": 0,
+    "synthetic_controls_enforced": 8
+  }
+}

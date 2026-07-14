@@ -13,7 +13,7 @@ question:
 
 ## Current status
 
-This repository is at **Foundation 1.0 / Day 15 — Profile Source Revision and Review-Readiness Gate**. Day 15 implements all 16 Profile source revisions, advances PROF-0001 through PROF-0004 to 0.2.0-draft.1, completes Profile Internal Review Round 2, and establishes a readiness gate that passes content while blocking scheduling until real accountability, approvals, evidence infrastructure, and jurisdiction qualification exist.
+This repository is at **Foundation 1.0 / Day 16 — Review Operations Activation and Controlled Pilot Authorization**. Day 16 audits the latest concurrent workstream state, defines real assignment and approval controls, specifies the restricted evidence environment, authorizes and completes CP0 document and CP1 synthetic rehearsals, and continues to block CP2, CP3, recruitment, human sessions, live evidence, and product-conformance claims.
 
 **Important:** “Ming Foundation” is currently the name of an open
 standards initiative and repository. It does not by itself claim to be a
@@ -135,8 +135,18 @@ Charter governance and validation:
 - [`governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md`](governance/decisions/ADR-0019-adopt-revised-profile-sources-and-retain-proposed.md)
 - [`governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md`](governance/decisions/ADR-0020-separate-content-readiness-from-operational-authorization.md)
 - [`reference/REF-0009-profile-revision-and-review-readiness-guide.md`](reference/REF-0009-profile-revision-and-review-readiness-guide.md)
+- [`governance/audits/GOV-0083-day16-concurrent-workstream-integration-audit.md`](governance/audits/GOV-0083-day16-concurrent-workstream-integration-audit.md)
+- [`governance/operations/GOV-0084-review-operations-role-assignment-and-conflict-protocol.md`](governance/operations/GOV-0084-review-operations-role-assignment-and-conflict-protocol.md)
+- [`governance/operations/GOV-0085-review-protocol-approval-and-human-use-authorization-standard.md`](governance/operations/GOV-0085-review-protocol-approval-and-human-use-authorization-standard.md)
+- [`governance/operations/GOV-0086-restricted-evidence-environment-control-specification.md`](governance/operations/GOV-0086-restricted-evidence-environment-control-specification.md)
+- [`governance/operations/GOV-0087-controlled-pilot-classification-and-authorization-matrix.md`](governance/operations/GOV-0087-controlled-pilot-classification-and-authorization-matrix.md)
+- [`governance/evidence/GOV-0089-synthetic-pilot-execution-record.md`](governance/evidence/GOV-0089-synthetic-pilot-execution-record.md)
+- [`governance/reviews/GOV-0090-day16-operational-readiness-and-pilot-authorization-gate.md`](governance/reviews/GOV-0090-day16-operational-readiness-and-pilot-authorization-gate.md)
+- [`governance/decisions/ADR-0022-separate-synthetic-rehearsal-from-human-review-activation.md`](governance/decisions/ADR-0022-separate-synthetic-rehearsal-from-human-review-activation.md)
+- [`governance/decisions/ADR-0023-authorize-cp0-cp1-controlled-pilot-only.md`](governance/decisions/ADR-0023-authorize-cp0-cp1-controlled-pilot-only.md)
+- [`reference/REF-0019-review-operations-and-controlled-pilot-guide.md`](reference/REF-0019-review-operations-and-controlled-pilot-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. Revised Profile content is internally ready, but affected-person review remains `PreparedNotExecuted`, operational scheduling is blocked, and implementation conformance remains empty.
+**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. CP0 and CP1 synthetic-only pilots are authorized and complete; affected-person review remains `PreparedNotExecuted`; CP2, CP3, recruitment, human sessions, live evidence, and implementation conformance remain blocked.
 
 ## Mission
 
@@ -272,7 +282,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.15**
+Current repository foundation version: **1.0.0-alpha.16**
 
 ## License
 

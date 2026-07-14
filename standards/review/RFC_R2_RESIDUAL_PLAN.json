@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.4",
   "plan_id": "MING-RFC-R2-RESIDUAL-PLAN-0001",
   "title": "Round 2 Residual Revision and Review Plan",
   "status": "Accepted planning record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0055",
   "summary": {
     "items": 7,
     "internally_ready_pending_affected_person_review": 4,
     "complete": 2,
-    "content_ready_operationally_blocked": 1
+    "synthetic_pilot_authorized_human_pilot_blocked": 1
   },
   "items": [
     {
@@ -164,13 +164,16 @@
       ],
       "priority": "P0",
       "work": "Prepare and execute child, adolescent, parent, privacy, safeguarding, professional-boundary, accessibility, and jurisdiction review instruments before ambiguity closure or Candidate consideration.",
-      "status": "ContentReadyOperationallyBlocked",
+      "status": "SyntheticPilotAuthorizedHumanPilotBlocked",
       "implementation_refs": [
         "GOV-0067",
         "GOV-0068",
         "GOV-0069",
         "GOV-0077",
-        "GOV-0078"
+        "GOV-0078",
+        "GOV-0087",
+        "GOV-0089",
+        "GOV-0090"
       ]
     }
   ],
@@ -179,5 +182,6 @@
   "affected_person_review_record": "GOV-0067",
   "day15_revision_record": "GOV-0071",
   "day15_round2_record": "GOV-0076",
-  "day15_readiness_gate": "GOV-0077"
+  "day15_readiness_gate": "GOV-0077",
+  "day16_gate": "GOV-0090"
 }

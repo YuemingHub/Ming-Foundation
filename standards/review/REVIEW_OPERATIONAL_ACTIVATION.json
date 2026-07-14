@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "activation_id": "MING-REVIEW-OPERATIONAL-ACTIVATION-0001",
   "title": "Affected-Person Review Operational Activation Register",
   "status": "Accepted planning infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0078",
-  "activation_state": "NotActivated",
+  "activation_state": "SyntheticPilotOnly",
   "scheduling_authorized": false,
   "recruitment_authorized": false,
   "sessions_authorized": false,
@@ -18,7 +18,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "safeguarding_owner",
@@ -26,7 +29,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "evidence_custodian",
@@ -34,7 +40,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "accessibility_and_language_owner",
@@ -42,7 +51,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "independent_facilitator_lead",
@@ -50,7 +62,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "jurisdiction_and_professional_review_owner",
@@ -58,7 +73,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "recruitment_and_compensation_owner",
@@ -66,7 +84,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     },
     {
       "role_id": "privacy_and_data_rights_reviewer",
@@ -74,7 +95,10 @@
       "assignment_state": "Unassigned",
       "assignee": null,
       "conflict_check": "NotCompleted",
-      "training_or_qualification_evidence": []
+      "training_or_qualification_evidence": [],
+      "assignment_protocol": "GOV-0084",
+      "qualification_check": "NotCompleted",
+      "human_review_authority": false
     }
   ],
   "approvals": [
@@ -83,49 +107,63 @@
       "title": "Consent and assent protocol",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-002",
       "title": "Distress, disclosure, safeguarding, and stop protocol",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-003",
       "title": "Restricted evidence storage, access, retention, and deletion plan",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-004",
       "title": "Accessibility, interpretation, and communication support plan",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-005",
       "title": "Recruitment, compensation, conflict, and non-coercion plan",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-006",
       "title": "Child and adolescent independent-facilitation plan",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     },
     {
       "approval_id": "APR-APP-007",
       "title": "Jurisdiction and professional-duty qualification route",
       "state": "NotApproved",
       "approver_role": null,
-      "evidence_refs": []
+      "evidence_refs": [],
+      "synthetic_use_state": "ApprovedForCP0CP1",
+      "human_use_state": "NotApproved"
     }
   ],
   "environment": {
@@ -133,7 +171,11 @@
     "access_control": "NotConfigured",
     "retention_and_deletion_automation": "NotConfigured",
     "contact_evidence_separation": "NotConfigured",
-    "incident_and_stop_logging": "NotConfigured"
+    "incident_and_stop_logging": "NotConfigured",
+    "design_state": "Complete",
+    "synthetic_workspace": "RepositoryOnly",
+    "synthetic_data_policy": "Enforced",
+    "live_evidence_ingestion": "Prohibited"
   },
   "summary": {
     "roles_defined": 8,
@@ -141,6 +183,13 @@
     "approvals_required": 7,
     "approvals_completed": 0,
     "environment_controls_required": 5,
-    "environment_controls_ready": 0
-  }
+    "environment_controls_ready": 0,
+    "synthetic_pilot_classes_authorized": 2,
+    "synthetic_scenarios_passed": 12
+  },
+  "human_review_activation_state": "NotActivated",
+  "synthetic_pilot_authorized": true,
+  "synthetic_pilot_execution_state": "Complete",
+  "controlled_pilot_authorization": "GOV-0087",
+  "day16_gate": "GOV-0090"
 }

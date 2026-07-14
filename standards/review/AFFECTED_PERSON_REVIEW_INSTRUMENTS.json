@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-AFFECTED-PERSON-REVIEW-INSTRUMENTS-0001",
   "title": "Affected-Person and Domain Review Instrument Registry",
   "status": "Accepted preparation infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0068",
   "summary": {
     "instruments": 8,
@@ -21,7 +21,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0011",
@@ -30,7 +31,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0012",
@@ -39,7 +41,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0013",
@@ -48,7 +51,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0014",
@@ -57,7 +61,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0015",
@@ -66,7 +71,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0016",
@@ -75,7 +81,8 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     },
     {
       "instrument_id": "GOV-TPL-0017",
@@ -84,11 +91,15 @@
       "status": "AcceptedTemplate",
       "execution_state": "NotExecuted",
       "profile_source_version": "0.2.0-draft.1",
-      "content_readiness": "Pass"
+      "content_readiness": "Pass",
+      "synthetic_rehearsal_state": "StructureReviewed"
     }
   ],
   "profile_source_version": "0.2.0-draft.1",
   "content_readiness": "Pass",
   "operational_readiness": "Blocked",
-  "readiness_gate": "GOV-0077"
+  "readiness_gate": "GOV-0077",
+  "synthetic_rehearsal_state": "Complete",
+  "human_execution_state": "NotExecuted",
+  "day16_gate": "GOV-0090"
 }

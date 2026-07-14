@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/controlled-pilot-authorization.schema.json",
+  "title": "Controlled Pilot Authorization",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "authorized_classes",
+    "blocked_classes",
+    "classes",
+    "mandatory_boundaries",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "SyntheticOnlyAuthorized"
+    },
+    "authorized_classes": {
+      "const": [
+        "CP0",
+        "CP1"
+      ]
+    },
+    "blocked_classes": {
+      "const": [
+        "CP2",
+        "CP3"
+      ]
+    },
+    "classes": {
+      "type": "array",
+      "minItems": 4
+    },
+    "mandatory_boundaries": {
+      "type": "array",
+      "minItems": 6
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

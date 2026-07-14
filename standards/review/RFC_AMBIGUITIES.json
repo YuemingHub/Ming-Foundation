@@ -4,8 +4,8 @@
   "title": "Ming Foundation RFC Ambiguity and Revision Register",
   "status": "Accepted review register",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0034",
   "summary": {
     "total": 19,
@@ -536,5 +536,6 @@
   "affected_person_review_state": "PreparedNotExecuted",
   "day15_revision_record": "GOV-0071",
   "day15_round2_record": "GOV-0076",
-  "day15_readiness_gate": "GOV-0077"
+  "day15_readiness_gate": "GOV-0077",
+  "day16_gate": "GOV-0090"
 }

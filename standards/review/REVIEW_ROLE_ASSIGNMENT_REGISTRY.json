@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-REVIEW-ROLE-ASSIGNMENT-0001",
+  "title": "Review Operations Role Assignment and Conflict Registry",
+  "status": "Accepted operational-control infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0084",
+  "assignment_state": "Unassigned",
+  "human_review_activation_state": "NotActivated",
+  "roles": [
+    {
+      "role_id": "review_program_owner",
+      "responsibility": "Own scope, sequencing, records, deviations, and stop decisions.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "safeguarding_owner",
+      "responsibility": "Own distress, disclosure, safeguarding, emergency-boundary, and stop escalation.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "evidence_custodian",
+      "responsibility": "Own restricted evidence access, retention, deletion, export, and audit.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "accessibility_and_language_owner",
+      "responsibility": "Own communication access, interpretation, disability support, and accommodations.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "independent_facilitator_lead",
+      "responsibility": "Own conflict-free facilitation for child, adolescent, and vulnerable-participant tracks.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "jurisdiction_and_professional_review_owner",
+      "responsibility": "Own operating-context, legal, regulatory, safeguarding, and professional qualification.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "recruitment_and_compensation_owner",
+      "responsibility": "Own non-coercive recruitment, compensation, contact, and conflict boundaries.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    },
+    {
+      "role_id": "privacy_and_data_rights_reviewer",
+      "responsibility": "Independently review collection, notice, consent, withdrawal, correction, deletion, and reuse.",
+      "assignment_state": "Unassigned",
+      "assignee": null,
+      "acceptance_record": null,
+      "conflict_check": "NotCompleted",
+      "qualification_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "training_or_qualification_evidence": [],
+      "may_authorize_human_review": false
+    }
+  ],
+  "summary": {
+    "roles_defined": 8,
+    "roles_assigned": 0,
+    "conflict_checks_complete": 0,
+    "qualification_checks_complete": 0
+  }
+}

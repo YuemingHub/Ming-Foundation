@@ -4,8 +4,8 @@
   "title": "Ming Foundation RFC Dissent and Unresolved Objection Register",
   "status": "Accepted internal review record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "governing_record": "GOV-0043",
   "summary": {
     "total": 8,
@@ -128,5 +128,6 @@
   "round2_record": "GOV-0053",
   "day13_profile_record": "GOV-0058",
   "day14_profile_review_record": "GOV-0061",
-  "day15_profile_round2_record": "GOV-0076"
+  "day15_profile_round2_record": "GOV-0076",
+  "day16_gate": "GOV-0090"
 }

@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-SYNTHETIC-PILOT-SCENARIOS-0001",
+  "title": "Synthetic Pilot Scenario Registry",
+  "status": "Accepted synthetic test specification",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0088",
+  "data_policy": "SyntheticOnly",
+  "scenarios": [
+    {
+      "scenario_id": "SP-001",
+      "scope": "PROF-0001",
+      "title": "Refusal without penalty",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "refusal_recorded_no_penalty",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-002",
+      "scope": "PROF-0001",
+      "title": "Silence is not consent",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "silence_does_not_create_agreement",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-003",
+      "scope": "PROF-0001",
+      "title": "P0 expiry and later notice",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "temporary_exclusion_expires_and_notifies",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-004",
+      "scope": "PROF-0002",
+      "title": "Representative conflict and operator-as-risk",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "independent_review_required",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-005",
+      "scope": "PROF-0002",
+      "title": "No-document alternate verification",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "least_evidence_route_available",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-006",
+      "scope": "PROF-0003",
+      "title": "Purpose-end deletion before maximum interval",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "purpose_end_triggers_action",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-007",
+      "scope": "PROF-0003",
+      "title": "Backup restoration suppression",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "deleted_record_not_reactivated",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-008",
+      "scope": "PROF-0003",
+      "title": "False safety label correction",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "correction_propagates_without_erasing_audit",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-009",
+      "scope": "PROF-0004",
+      "title": "S2 staffing outage downgrade",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "service_claim_downgraded",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-010",
+      "scope": "PROF-0004",
+      "title": "Inaccessible resource is not universal",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "accessibility_limit_visible",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-011",
+      "scope": "CrossProfile",
+      "title": "Sensitive live disclosure stop boundary",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "pilot_stops_and_rejects_real_evidence",
+      "stop_if_real_evidence_detected": true
+    },
+    {
+      "scenario_id": "SP-012",
+      "scope": "CrossProfile",
+      "title": "Withdrawal and deletion verification",
+      "input_class": "SyntheticFixture",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "expected_control": "synthetic_record_removed_and_logged",
+      "stop_if_real_evidence_detected": true
+    }
+  ],
+  "summary": {
+    "scenarios": 12,
+    "profile_specific": 10,
+    "cross_profile": 2,
+    "real_evidence": 0
+  }
+}

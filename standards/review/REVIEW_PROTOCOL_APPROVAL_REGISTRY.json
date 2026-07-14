@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-REVIEW-PROTOCOL-APPROVAL-0001",
+  "title": "Review Protocol Approval Registry",
+  "status": "Accepted approval infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0085",
+  "synthetic_use_state": "ApprovedForCP0CP1",
+  "human_use_state": "NotApproved",
+  "protocols": [
+    {
+      "approval_id": "APR-APP-001",
+      "title": "Consent and assent protocol",
+      "supporting_template": "GOV-TPL-0010",
+      "accountable_role": "review_program_owner",
+      "independent_reviewer_role": "safeguarding_owner",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-002",
+      "title": "Distress, disclosure, safeguarding, and stop protocol",
+      "supporting_template": "GOV-TPL-0022",
+      "accountable_role": "safeguarding_owner",
+      "independent_reviewer_role": "independent_facilitator_lead",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-003",
+      "title": "Restricted evidence storage, access, retention, and deletion plan",
+      "supporting_template": "GOV-TPL-0020",
+      "accountable_role": "evidence_custodian",
+      "independent_reviewer_role": "privacy_and_data_rights_reviewer",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-004",
+      "title": "Accessibility, interpretation, and communication support plan",
+      "supporting_template": "GOV-TPL-0015",
+      "accountable_role": "accessibility_and_language_owner",
+      "independent_reviewer_role": "independent_facilitator_lead",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-005",
+      "title": "Recruitment, compensation, conflict, and non-coercion plan",
+      "supporting_template": "GOV-TPL-0018",
+      "accountable_role": "recruitment_and_compensation_owner",
+      "independent_reviewer_role": "privacy_and_data_rights_reviewer",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-006",
+      "title": "Child and adolescent independent-facilitation plan",
+      "supporting_template": "GOV-TPL-0010",
+      "accountable_role": "independent_facilitator_lead",
+      "independent_reviewer_role": "safeguarding_owner",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    },
+    {
+      "approval_id": "APR-APP-007",
+      "title": "Jurisdiction and professional-duty qualification route",
+      "supporting_template": "GOV-TPL-0016",
+      "accountable_role": "jurisdiction_and_professional_review_owner",
+      "independent_reviewer_role": "review_program_owner",
+      "design_review_state": "AcceptedForSyntheticUse",
+      "synthetic_use_authorized": true,
+      "human_use_state": "NotApproved",
+      "human_approver": null,
+      "approval_evidence_refs": [],
+      "material_change_requires_reapproval": true
+    }
+  ],
+  "summary": {
+    "protocols_defined": 7,
+    "synthetic_use_approved": 7,
+    "human_use_approved": 0,
+    "human_use_blocked": 7
+  }
+}

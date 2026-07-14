@@ -4,8 +4,8 @@
   "title": "Ming Foundation Current RFC Acceptance Test Registry",
   "status": "Accepted test specification index",
   "canonical_repository": "YuemingHub/Ming-Foundation",
-  "source_repository_commit": "de15e4ea68c5d31dd0f3c824200a40a7ca449455",
-  "registry_version": "1.0.0-alpha.15",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
   "authority": {
     "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
     "registry_role": "Current implementation test specification index; does not prove execution or conformance",
@@ -5514,5 +5514,10 @@
     "state": "InternallyReadyPendingAffectedPersonReview",
     "affected_person_review_state": "PreparedNotExecuted",
     "operational_readiness": "Blocked"
+  },
+  "day16_pilot_boundary": {
+    "record": "GOV-0090",
+    "implementation_tests_executed": 0,
+    "synthetic_repository_tests": 12
   }
 }

@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.9
+version: 1.0.0-alpha.10
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -349,3 +349,31 @@ Affected-person review MUST NOT be scheduled until:
 
 Role names, templates, plans, and schemas are not operational controls by
 themselves.
+
+## 26. Controlled pilot classes
+
+Review operations MUST classify pilots before authorization:
+
+```text
+CP0  document tabletop
+CP1  synthetic-data rehearsal
+CP2  internal staff process rehearsal
+CP3  affected-person controlled pilot
+```
+
+Authorization of one class MUST NOT authorize a later class.
+
+## 27. Synthetic rehearsal boundary
+
+CP0 and CP1 MUST use no real participant evidence, no live-system decision
+effect, and no public conformance claim.
+
+Detection of real or identifiable evidence MUST stop the pilot and trigger
+the governed incident and deletion route.
+
+## 28. Human activation gate
+
+CP2 or CP3 requires named roles, completed conflict and qualification checks,
+human-use protocol approvals, a provisioned and tested evidence environment,
+applicable jurisdiction qualification, independent facilitation where
+required, and a separate authorization decision.

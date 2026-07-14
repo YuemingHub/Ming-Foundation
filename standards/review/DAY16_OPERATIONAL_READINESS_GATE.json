@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "MING-DAY16-OPERATIONAL-READINESS-GATE-0001",
+  "title": "Day 16 Operational Readiness and Pilot Authorization Gate",
+  "status": "Accepted gate assessment",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
+  "registry_version": "1.0.0-alpha.16",
+  "governing_record": "GOV-0090",
+  "overall_state": "SyntheticPilotAuthorizedHumanPilotBlocked",
+  "synthetic_pilot_authorized": true,
+  "synthetic_pilot_complete": true,
+  "human_pilot_authorized": false,
+  "operationally_ready_to_schedule_humans": false,
+  "recruitment_authorized": false,
+  "sessions_authorized": false,
+  "participant_evidence_exists": false,
+  "items": [
+    {
+      "gate_item_id": "D16-G01",
+      "title": "Current-main integration audit",
+      "result": "Pass",
+      "finding": "Day15 baseline plus four additive core-text/reference commits; no overlap with activation artifacts."
+    },
+    {
+      "gate_item_id": "D16-G02",
+      "title": "Profile content readiness",
+      "result": "Pass",
+      "finding": "Four Profiles remain internally ready pending affected-person review."
+    },
+    {
+      "gate_item_id": "D16-G03",
+      "title": "Role and conflict protocol",
+      "result": "Pass",
+      "finding": "Eight roles, acceptance, conflict, qualification, and independence checks are defined."
+    },
+    {
+      "gate_item_id": "D16-G04",
+      "title": "Protocol approval infrastructure",
+      "result": "Pass",
+      "finding": "Seven protocols have synthetic-use design approval and explicit human-use approval gates."
+    },
+    {
+      "gate_item_id": "D16-G05",
+      "title": "Restricted evidence environment design",
+      "result": "Pass",
+      "finding": "Eight live controls are specified with synthetic-only repository enforcement."
+    },
+    {
+      "gate_item_id": "D16-G06",
+      "title": "Controlled pilot class matrix",
+      "result": "Pass",
+      "finding": "CP0 and CP1 are separated from CP2 and CP3."
+    },
+    {
+      "gate_item_id": "D16-G07",
+      "title": "Synthetic scenario coverage",
+      "result": "Pass",
+      "finding": "Twelve synthetic scenarios cover four Profiles and cross-profile stop/deletion boundaries."
+    },
+    {
+      "gate_item_id": "D16-G08",
+      "title": "Synthetic pilot execution",
+      "result": "Pass",
+      "finding": "Twelve scenarios passed with zero real evidence and zero live actions."
+    },
+    {
+      "gate_item_id": "D16-G09",
+      "title": "Status and claim boundary",
+      "result": "Pass",
+      "finding": "Charter, RFC, Profile, human review, and implementation-conformance statuses remain unchanged."
+    },
+    {
+      "gate_item_id": "D16-G10",
+      "title": "Named accountable role assignments",
+      "result": "Blocked",
+      "finding": "Eight roles remain unassigned."
+    },
+    {
+      "gate_item_id": "D16-G11",
+      "title": "Conflict and qualification checks",
+      "result": "Blocked",
+      "finding": "No real assignee exists; checks cannot be completed."
+    },
+    {
+      "gate_item_id": "D16-G12",
+      "title": "Human-use protocol approvals",
+      "result": "Blocked",
+      "finding": "Seven protocols remain NotApproved for human use."
+    },
+    {
+      "gate_item_id": "D16-G13",
+      "title": "Provisioned restricted evidence environment",
+      "result": "Blocked",
+      "finding": "Live environment controls remain unprovisioned or unconfigured."
+    },
+    {
+      "gate_item_id": "D16-G14",
+      "title": "Jurisdiction and professional qualification",
+      "result": "Blocked",
+      "finding": "No defined operating jurisdiction and qualified approval exists."
+    }
+  ],
+  "summary": {
+    "gate_items": 14,
+    "pass": 9,
+    "blocked": 5,
+    "fail": 0
+  },
+  "next_transition": {
+    "target_state": "ReadyToScheduleHumanReview",
+    "requires": [
+      "All eight roles assigned to named accountable people",
+      "Conflict, qualification, and independence checks completed",
+      "All seven protocols approved for human use",
+      "Restricted evidence environment provisioned and tested",
+      "Defined jurisdiction and professional-duty approval",
+      "Independent facilitator assigned where applicable",
+      "Separate human-review activation decision"
+    ]
+  }
+}
