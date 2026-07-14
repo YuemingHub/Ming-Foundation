@@ -2,11 +2,17 @@
 id: PROJECT-MINGOS-0002
 title: MingOS Charter
 status: Candidate
-version: 1.0.0-alpha.4
+version: 1.0.0-alpha.5
 layer: Layer 4 — Projects
 owner: MingOS Project
 created: 2026-07-12
-updated: 2026-07-12
+updated: 2026-07-14
+language: en
+canonical_language: en
+translation_status: original
+language_authority_status: original-controls-conflicts-during-migration
+paired_translation: PROJECT-MINGOS-0003
+migration_base_commit: 2a5dab9eccc998fdd634ecb7fd57f20ee6fe4934
 related:
   - MF-0004
   - MF-0003
@@ -17,6 +23,13 @@ related:
   - ADR-0005
   - GOV-0005
   - GOV-0006
+  - ADR-0021
+  - PROJECT-MINGOS-0003
+  - REF-0021
+  - REF-0022
+  - REF-0023
+  - REF-0024
+  - REF-0025
   - PROJECT-MINGOS-0000
   - PROJECT-MINGOS-0001
 depends_on:
@@ -29,6 +42,7 @@ depends_on:
 
 > **Candidate for validation. This Charter is self-restraint, not marketing copy.**  
 > **验证候选稿：这是一份自我约束文件，不是宣传文案。**
+> **Bilingual migration notice:** During bilingual migration, and until an explicit governance decision changes document-specific language authority, this English Candidate remains the governed source for material language conflicts. `PROJECT-MINGOS-0003` is its paired Chinese Candidate translation. Neither document is Accepted or Stable.
 
 ## 1. Purpose
 

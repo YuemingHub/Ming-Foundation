@@ -1,0 +1,1306 @@
+{
+  "schema": "mingos.mingos-charter-bilingual-contract-map.v0.2",
+  "status": "Draft",
+  "version": "0.2.0-draft.1",
+  "migration_base_commit": "2a5dab9eccc998fdd634ecb7fd57f20ee6fe4934",
+  "source_text_commit": "d1f0e9c15fa59b14ec45c5be8585f415edec7018",
+  "source_document": {
+    "id": "PROJECT-MINGOS-0002",
+    "language": "en",
+    "canonical_language": "en",
+    "version": "1.0.0-alpha.5",
+    "status": "Candidate",
+    "translation_status": "original",
+    "language_authority_status": "original-controls-conflicts-during-migration",
+    "controls_material_language_conflicts": true
+  },
+  "paired_document": {
+    "id": "PROJECT-MINGOS-0003",
+    "language": "zh-CN",
+    "canonical_language": "zh-CN",
+    "source_canonical_language": "en",
+    "version": "1.0.0-alpha.5",
+    "status": "Candidate",
+    "translation_status": "draft-translation",
+    "language_authority_status": "paired-draft-source-controls-conflicts",
+    "controls_material_language_conflicts": false
+  },
+  "authority_rule": "PROJECT-MINGOS-0002 English controls material language conflicts during migration until an explicit governance decision changes document-specific language authority.",
+  "normative_semantics_status": "provisional-not-rfc2119-adopted",
+  "review_state": "PreparedNotExecuted",
+  "implementation_conformance_claim": false,
+  "articles": [
+    {
+      "id": "S01",
+      "source_title": "Purpose and Candidate status",
+      "target_title": "目的与 Candidate 状态",
+      "source_core": "how MingOS commits to practice the Charter of Life; internal review is not external validation",
+      "target_core": "MingOS 如何承诺践行《生命宪章》；内部文本准备不等于外部验证",
+      "normative_force": "scope",
+      "ambiguity": "内部逐条审查、文本准备度与外部验证的边界"
+    },
+    {
+      "id": "S02",
+      "source_title": "Preamble",
+      "target_title": "序言",
+      "source_core": "MingOS is not the center of life; change the model when evidence or affected people show error",
+      "target_core": "MingOS 不是生命中心；当证据或受影响者表明错误时修改模型",
+      "normative_force": "principle",
+      "ambiguity": "life-centered approach 是否会变成不可测试的品牌修辞"
+    },
+    {
+      "id": "MC01",
+      "source_title": "MingOS stands with life, not with a role",
+      "target_title": "MingOS 站在生命一边，而不是任何角色一边",
+      "source_core": "must not automatically side with a role; must ask what protects all affected lives",
+      "target_core": "不得自动站在任何角色一边；必须追问什么保护所有受影响生命",
+      "normative_force": "prohibition / must",
+      "ambiguity": "中立、权力不对等与保护义务"
+    },
+    {
+      "id": "MC02",
+      "source_title": "MingOS does not own any life",
+      "target_title": "MingOS 不拥有任何生命",
+      "source_core": "does not own identity, meaning, story, future, relationship, or life direction",
+      "target_core": "不拥有身份、意义、故事、未来、关系或生命方向",
+      "normative_force": "principle / prohibition",
+      "ambiguity": "记录保管、知识产权与人格/数据权利"
+    },
+    {
+      "id": "MC03",
+      "source_title": "People may refuse interpretation, pause, and leave",
+      "target_title": "人可以拒绝解释、暂停并离开",
+      "source_core": "should be able to refuse, correct, revoke, pause, leave, and understand retention; exceptions MUST be bounded",
+      "target_core": "应当能够拒绝、纠正、撤回、暂停、离开并了解留存；例外必须受限",
+      "normative_force": "SHOULD / MUST",
+      "ambiguity": "person/user、撤回边界与四类例外"
+    },
+    {
+      "id": "MC04",
+      "source_title": "Data and memory remain accountable to the person",
+      "target_title": "数据与记忆仍必须向本人负责",
+      "source_core": "meaningful controls; memory must not freeze a person; non-fulfilment must be explained",
+      "target_core": "具有实际意义的控制；记忆不得冻结一个人；无法完全实现时必须说明",
+      "normative_force": "must / prohibition",
+      "ambiguity": "person/生命、删除撤回与完成证据"
+    },
+    {
+      "id": "MC05",
+      "source_title": "Evidence is above authority",
+      "target_title": "证据高于权威",
+      "source_core": "must preserve contradiction, failure, counterexample, uncertainty, correction, and revision",
+      "target_core": "必须保留矛盾、失败、反例、不确定性、纠正和修订",
+      "normative_force": "must",
+      "ambiguity": "证据、真实经验、专业判断、隐私与安全"
+    },
+    {
+      "id": "MC06",
+      "source_title": "Knowledge statuses remain distinct",
+      "target_title": "知识状态必须保持区分",
+      "source_core": "must not convert inference into fact; knowledge objects remain traceable",
+      "target_core": "不得把推断转化为事实；知识对象必须可追溯",
+      "normative_force": "prohibition / must",
+      "ambiguity": "字段、界面、确认者与派生决定"
+    },
+    {
+      "id": "MC07",
+      "source_title": "MingOS must not use anxiety to increase conversion",
+      "target_title": "MingOS 不得利用焦虑提高转化",
+      "source_core": "must not exaggerate risk, manufacture urgency, shame, or imply failure for commercial or compliance goals",
+      "target_core": "不得为商业或服从目标夸大风险、制造紧迫、羞辱或暗示失败",
+      "normative_force": "prohibition",
+      "ambiguity": "风险告知与操纵性商业话术"
+    },
+    {
+      "id": "MC08",
+      "source_title": "MingOS must not use dependency to increase retention",
+      "target_title": "MingOS 不得利用依赖提高留存",
+      "source_core": "healthy service should strengthen capacity without the system; dependency-created retention is failure",
+      "target_core": "健康服务应增强离开系统后的能力；依赖形成的留存是失败",
+      "normative_force": "SHOULD / failure test",
+      "ambiguity": "依赖、信任、连续支持、合理辅助与健康退出"
+    },
+    {
+      "id": "MC09",
+      "source_title": "AI must remain a bounded component",
+      "target_title": "AI 必须始终是有边界的组成部分",
+      "source_core": "AI may assist but must not impersonate, dominate, hide inference, exploit vulnerability, replace responsibility, or decide alone",
+      "target_core": "AI 可以辅助但不得冒充、支配、隐藏推断、利用脆弱、替代责任或独自作高影响决定",
+      "normative_force": "MAY / prohibitions",
+      "ambiguity": "高影响门槛、人类责任与受影响者参与"
+    },
+    {
+      "id": "MC10",
+      "source_title": "Children and third parties require independent protection",
+      "target_title": "儿童与第三方需要独立保护",
+      "source_core": "parent participation does not create unlimited authority; design must protect voice, data and contestability",
+      "target_core": "父母参与不产生无限授权；设计必须保护声音、数据与异议能力",
+      "normative_force": "prohibition / must",
+      "ambiguity": "照料、同意、代表权限、监控与第三方权利"
+    },
+    {
+      "id": "MC11",
+      "source_title": "Professional and safety boundaries remain visible",
+      "target_title": "专业与安全边界必须始终可见",
+      "source_core": "does not replace qualified services; must slow down, disclose limits, and support appropriate escalation",
+      "target_core": "不替代专业服务；必须减速、披露限制并支持适当升级",
+      "normative_force": "prohibition / must",
+      "ambiguity": "系统能力、服务可用性与升级完成证据"
+    },
+    {
+      "id": "MC12",
+      "source_title": "Commercial power cannot amend the root commitments",
+      "target_title": "商业权力不能修改根本承诺",
+      "source_core": "commercial pressures cannot silently override; material conflicts need independent governance",
+      "target_core": "商业压力不得静默推翻；实质冲突需要独立治理",
+      "normative_force": "prohibition / must",
+      "ambiguity": "独立商业冲突权威、披露、制裁与恢复"
+    },
+    {
+      "id": "MC13",
+      "source_title": "MingOS must remain correctable",
+      "target_title": "MingOS 必须始终允许被真实修正",
+      "source_core": "must maintain correction, appeal, incident, versioning, criticism, audit, supersession, and unknown mechanisms",
+      "target_core": "必须维护纠正、申诉、事件、版本、批评、审计、替代和未知机制",
+      "normative_force": "must",
+      "ambiguity": "机制存在、可访问、可执行和完成的差异"
+    },
+    {
+      "id": "MC14",
+      "source_title": "Charter violations require response, remediation, and traceability",
+      "target_title": "宪章违规必须被回应、修复并留下可追溯记录",
+      "source_core": "must define reporting, containment, correction, notice, recurrence review and name withdrawal; no role exempt",
+      "target_core": "必须定义报告、止损、纠正、通知、复发审查与名称撤回；任何角色不免责",
+      "normative_force": "must / prohibition",
+      "ambiguity": "善意报告、独立调查、名称撤回与程序正义"
+    },
+    {
+      "id": "S04",
+      "source_title": "Three permanent disciplines",
+      "target_title": "三项永久纪律",
+      "source_core": "truth, no anxiety conversion, and AI not replacing conscience must be testable",
+      "target_core": "真实、不用焦虑成交、AI 不替代良知必须可检验",
+      "normative_force": "discipline / test",
+      "ambiguity": "“永久”与可修正性；纪律是否独立产生要求"
+    },
+    {
+      "id": "S05",
+      "source_title": "Decision precedence",
+      "target_title": "决策优先次序",
+      "source_core": "safety and lawful protection, rights, evidence, responsibility, then business; not an automatic formula",
+      "target_core": "安全与合法保护、权利、证据、责任，再到商业；不是自动公式",
+      "normative_force": "priority framework",
+      "ambiguity": "固定顺序与法律义务、权利冲突和情境"
+    },
+    {
+      "id": "S06",
+      "source_title": "Conformance questions",
+      "target_title": "符合性问题",
+      "source_core": "reviewers should ask twelve questions before approval",
+      "target_core": "审查者在批准前应询问十二个问题",
+      "normative_force": "SHOULD / review",
+      "ambiguity": "问题清单与正式符合性测试的差异"
+    },
+    {
+      "id": "S07",
+      "source_title": "Relationship to the Kernel",
+      "target_title": "与 Kernel 的关系",
+      "source_core": "Kernel must operationalize the Charter; it is not a prompt, script, or personality",
+      "target_core": "Kernel 必须把宪章转化为运行秩序；不是 Prompt、脚本或人格",
+      "normative_force": "future must",
+      "ambiguity": "Kernel 范围、文档家族、权威与符合性尚未决定"
+    },
+    {
+      "id": "S08",
+      "source_title": "Candidate validation requirements",
+      "target_title": "Candidate 验证要求",
+      "source_core": "validation MUST resolve nine areas before Acceptance",
+      "target_core": "Accepted 前验证必须解决九个领域",
+      "normative_force": "MUST",
+      "ambiguity": "何种证据足以提升 Candidate"
+    }
+  ],
+  "normative_requirements": [
+    {
+      "id": "N01",
+      "location": "MC01",
+      "source": "must not automatically side",
+      "target": "不得自动站在任何角色一边",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "不自动站队不取消保护义务"
+    },
+    {
+      "id": "N02",
+      "location": "MC01",
+      "source": "must ask what protects...",
+      "target": "必须追问什么能够保护……",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "需要可审计决策记录"
+    },
+    {
+      "id": "N03",
+      "location": "MC02",
+      "source": "may maintain authorized records",
+      "target": "可以维护经过授权的记录",
+      "source_form": "lowercase may",
+      "target_token": "可以",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "许可不等于授权来源已成立"
+    },
+    {
+      "id": "N04",
+      "location": "MC02",
+      "source": "does not own identity, meaning, story...",
+      "target": "不拥有身份、意义、故事等",
+      "source_form": "principle/prohibition",
+      "target_token": "不拥有",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "限制系统支配而非否定合法保管"
+    },
+    {
+      "id": "N05",
+      "location": "MC02",
+      "source": "No product language may imply...",
+      "target": "任何产品语言都不得暗示……",
+      "source_form": "No ... may",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "公共语言禁止"
+    },
+    {
+      "id": "N06",
+      "location": "MC03",
+      "source": "A person should be able to...",
+      "target": "一个人应当能够……",
+      "source_form": "lowercase should",
+      "target_token": "应当",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "权利方向，仍需可用机制"
+    },
+    {
+      "id": "N07",
+      "location": "MC03",
+      "source": "Refusal must not be treated...",
+      "target": "拒绝不得被视为……",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "拒绝不构成系统正确证据"
+    },
+    {
+      "id": "N08",
+      "location": "MC03",
+      "source": "exception ... MUST be narrowly stated...",
+      "target": "例外必须严格限定……",
+      "source_form": "MUST",
+      "target_token": "必须",
+      "mapping_status": "DirectCaseMatch",
+      "note": "四类例外需分别限定"
+    },
+    {
+      "id": "N09",
+      "location": "MC04",
+      "source": "must provide meaningful controls",
+      "target": "必须提供具有实际意义的控制",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "需要 RFC-0002 与 Profile 支撑"
+    },
+    {
+      "id": "N10",
+      "location": "MC04",
+      "source": "Memory must not freeze...",
+      "target": "记忆不得冻结……",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "防止过去状态变永久身份"
+    },
+    {
+      "id": "N11",
+      "location": "MC04",
+      "source": "vulnerability must not become a permanent profile",
+      "target": "暂时脆弱不得成为永久画像",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "状态与身份分离"
+    },
+    {
+      "id": "N12",
+      "location": "MC04",
+      "source": "MingOS must explain...",
+      "target": "MingOS 必须说明……",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "删除与撤回例外透明度"
+    },
+    {
+      "id": "N13",
+      "location": "MC05",
+      "source": "are not above evidence",
+      "target": "不能凌驾于证据之上",
+      "source_form": "principle/prohibition",
+      "target_token": "不能",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "权威必须可被证据修正"
+    },
+    {
+      "id": "N14",
+      "location": "MC05",
+      "source": "must preserve contradiction, failure...",
+      "target": "必须保留矛盾、失败、反例……",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "仍受隐私、安全和访问边界约束"
+    },
+    {
+      "id": "N15",
+      "location": "MC06",
+      "source": "must not convert inference into fact",
+      "target": "不得把推断转化为事实",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "知识状态分离"
+    },
+    {
+      "id": "N16",
+      "location": "MC06",
+      "source": "must remain traceable",
+      "target": "必须始终可追溯",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "来源、主体、版本和修订"
+    },
+    {
+      "id": "N17",
+      "location": "MC07",
+      "source": "must not exaggerate/manufacture/shame...",
+      "target": "不得夸大、制造紧迫、羞辱或暗示失败",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "商业与服从目标禁止"
+    },
+    {
+      "id": "N18",
+      "location": "MC07",
+      "source": "Business design must not intensify fear",
+      "target": "商业设计不得加剧恐惧",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "需要销售和内容证据"
+    },
+    {
+      "id": "N19",
+      "location": "MC08",
+      "source": "service should strengthen capacity",
+      "target": "服务应当增强离开系统后的能力",
+      "source_form": "lowercase should",
+      "target_token": "应当",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "不承诺完全独立或具体结果"
+    },
+    {
+      "id": "N20",
+      "location": "MC08",
+      "source": "dependency-created retention is a failure",
+      "target": "依赖形成的留存是失败",
+      "source_form": "failure test",
+      "target_token": "失败",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "需区分必要持续支持"
+    },
+    {
+      "id": "N21",
+      "location": "MC09",
+      "source": "AI may summarize...",
+      "target": "AI 可以总结并辅助……",
+      "source_form": "lowercase may",
+      "target_token": "可以",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "许可不等于当前能力"
+    },
+    {
+      "id": "N22",
+      "location": "MC09",
+      "source": "AI must not [six prohibitions]",
+      "target": "AI 不得实施六类行为",
+      "source_form": "lowercase must not",
+      "target_token": "不得",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "参与门槛待合同化"
+    },
+    {
+      "id": "N23",
+      "location": "MC10",
+      "source": "parent participation does not automatically authorize...",
+      "target": "父母参与不自动授权……",
+      "source_form": "prohibition",
+      "target_token": "不自动授权",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "代表权限需要独立证据"
+    },
+    {
+      "id": "N24",
+      "location": "MC10",
+      "source": "MingOS must design for...",
+      "target": "MingOS 必须围绕七项要求设计",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "RFC/Profile 仍为 Proposed"
+    },
+    {
+      "id": "N25",
+      "location": "MC11",
+      "source": "does not replace qualified services or duties",
+      "target": "不替代专业服务或法定义务",
+      "source_form": "prohibition",
+      "target_token": "不替代",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "公开与产品边界"
+    },
+    {
+      "id": "N26",
+      "location": "MC11",
+      "source": "must slow down, disclose limits, and support escalation",
+      "target": "必须减速、披露限制并支持升级",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "升级可用性必须真实"
+    },
+    {
+      "id": "N27",
+      "location": "MC12",
+      "source": "cannot silently override the Charter",
+      "target": "不能静默推翻本宪章",
+      "source_form": "cannot",
+      "target_token": "不能",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "商业权力边界"
+    },
+    {
+      "id": "N28",
+      "location": "MC12",
+      "source": "conflicts must be documented, reviewable, and independently governed",
+      "target": "冲突必须记录、复核并独立治理",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "独立主体尚未运营"
+    },
+    {
+      "id": "N29",
+      "location": "MC13",
+      "source": "must maintain mechanisms",
+      "target": "必须维护八类机制",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "机制存在不等于可用"
+    },
+    {
+      "id": "N30",
+      "location": "MC14",
+      "source": "A credible Charter must constrain conduct",
+      "target": "可信宪章必须约束行为",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "需要执行与制裁合同"
+    },
+    {
+      "id": "N31",
+      "location": "MC14",
+      "source": "must define a process",
+      "target": "必须定义处理过程",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "GOV-0015 仍为 Proposed"
+    },
+    {
+      "id": "N32",
+      "location": "MC14",
+      "source": "No person ... is exempt",
+      "target": "任何角色都不能免责",
+      "source_form": "No ... is",
+      "target_token": "不能",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "包括创始人、伙伴、专业人员与 AI"
+    },
+    {
+      "id": "N33",
+      "location": "S04",
+      "source": "decisions must be testable",
+      "target": "决定必须可检验",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "纪律尚未形成正式测试"
+    },
+    {
+      "id": "N34",
+      "location": "S05",
+      "source": "use this order",
+      "target": "使用这一顺序",
+      "source_form": "directive",
+      "target_token": "使用",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "不是自动公式"
+    },
+    {
+      "id": "N35",
+      "location": "S05",
+      "source": "conflicts must be documented",
+      "target": "冲突必须形成记录",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "依赖 MF-0004 冲突规则"
+    },
+    {
+      "id": "N36",
+      "location": "S06",
+      "source": "reviewers should ask",
+      "target": "审查者应当询问",
+      "source_form": "lowercase should",
+      "target_token": "应当",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "问题清单不是符合性套件"
+    },
+    {
+      "id": "N37",
+      "location": "S07",
+      "source": "Kernel must operationalize",
+      "target": "Kernel 必须转化承诺",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "Round 06 尚未定义 Kernel"
+    },
+    {
+      "id": "N38",
+      "location": "S07",
+      "source": "all implementations must satisfy",
+      "target": "所有实现都必须满足",
+      "source_form": "lowercase must",
+      "target_token": "必须",
+      "mapping_status": "ProvisionalInterpretation",
+      "note": "名称使用与符合性尚未定义"
+    },
+    {
+      "id": "N39",
+      "location": "S08",
+      "source": "validation MUST resolve",
+      "target": "验证必须解决九个领域",
+      "source_form": "MUST",
+      "target_token": "必须",
+      "mapping_status": "DirectCaseMatch",
+      "note": "Candidate 提升前置条件"
+    }
+  ],
+  "commitment_contracts": [
+    {
+      "id": "MC01",
+      "documents": [
+        "ADR-0001",
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "跨角色权力、利益冲突与保护义务仍缺统一决策记录",
+      "next_destination": "Round 06 Kernel/decision authority contract"
+    },
+    {
+      "id": "MC02",
+      "documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "PROF-0003",
+        "RFC-0005"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "产品语言、记录保管与人格/数据权利需要实际审计",
+      "next_destination": "Public claims and data-rights evidence"
+    },
+    {
+      "id": "MC03",
+      "documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "PROF-0001",
+        "PROF-0002",
+        "PROF-0003"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "退出、撤回与残留数据控制尚未证明可用",
+      "next_destination": "Rights lifecycle implementation evidence"
+    },
+    {
+      "id": "MC04",
+      "documents": [
+        "RFC-0002",
+        "PROF-0003",
+        "RFC-0001"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "备份、派生资产、共享副本与审计记录完成证据缺失",
+      "next_destination": "Retention/deletion implementation"
+    },
+    {
+      "id": "MC05",
+      "documents": [
+        "ADR-0002",
+        "RFC-0001",
+        "RFC-0004",
+        "GOV-0012"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "RepositoryEvidenceOnly",
+      "primary_gap": "组织级反例与未知存储、透明度和隐私平衡未形成完整合同",
+      "next_destination": "Evidence/counterexample/unknown repository contract"
+    },
+    {
+      "id": "MC06",
+      "documents": [
+        "ADR-0002",
+        "RFC-0001",
+        "RFC-0004"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "前端标签、存储对象和派生决定的一致性未验证",
+      "next_destination": "Knowledge-status implementation"
+    },
+    {
+      "id": "MC07",
+      "documents": [
+        "RFC-0005",
+        "GOV-0008",
+        "GOV-0012"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "销售话术、转化漏斗、紧迫感与羞耻缺少独立审计合同",
+      "next_destination": "Commercial restraint and claim audit profile"
+    },
+    {
+      "id": "MC08",
+      "documents": [
+        "RFC-0005",
+        "MF-0005"
+      ],
+      "contract_status": "Unresolved",
+      "evidence_status": "NoCurrentConformanceClaim",
+      "primary_gap": "依赖、连续支持、合理辅助、健康退出与留存指标缺少合同",
+      "next_destination": "Dependency and healthy-exit contract"
+    },
+    {
+      "id": "MC09",
+      "documents": [
+        "ADR-0001",
+        "RFC-0001",
+        "RFC-0003",
+        "RFC-0005"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "高影响决定、人类负责、受影响者参与和 AI 能力声明仍分散",
+      "next_destination": "Round 06 Kernel AI/human/affected-person role decision"
+    },
+    {
+      "id": "MC10",
+      "documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0004",
+        "PROF-0001",
+        "PROF-0002"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "儿童与第三方真实参与、无障碍和司法辖区证据未执行",
+      "next_destination": "Affected-person and domain review"
+    },
+    {
+      "id": "MC11",
+      "documents": [
+        "RFC-0003",
+        "PROF-0004",
+        "RFC-0005",
+        "GOV-0011"
+      ],
+      "contract_status": "CoveredByProposedContracts",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "服务状态、资源新鲜度、失败升级与实际接收证据缺失",
+      "next_destination": "Service profile operational activation"
+    },
+    {
+      "id": "MC12",
+      "documents": [
+        "ADR-0005",
+        "RFC-0005",
+        "GOV-0015"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "NoCurrentConformanceClaim",
+      "primary_gap": "独立商业冲突裁决主体、权限、披露、制裁与恢复未运营",
+      "next_destination": "Commercial conflict governance contract"
+    },
+    {
+      "id": "MC13",
+      "documents": [
+        "RFC-0001",
+        "RFC-0002",
+        "RFC-0003",
+        "GOV-0015",
+        "ADR-0010",
+        "ADR-0017"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "OperationalEvidenceRequired",
+      "primary_gap": "纠正、申诉、事件、版本、替代与审计未形成统一证明",
+      "next_destination": "Kernel correction/audit contract"
+    },
+    {
+      "id": "MC14",
+      "documents": [
+        "GOV-0015",
+        "RFC-0003",
+        "GOV-0018"
+      ],
+      "contract_status": "GovernanceProcedureProposed",
+      "evidence_status": "PreparedNotExecuted",
+      "primary_gap": "报告渠道、独立调查、申诉、制裁、名称撤回与恢复未运营",
+      "next_destination": "Operational activation and tabletop exercise"
+    },
+    {
+      "id": "S04",
+      "documents": [
+        "MC05",
+        "MC07",
+        "MC09",
+        "RFC-0005"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "NoCurrentConformanceClaim",
+      "primary_gap": "三项纪律尚未形成独立测试、发布门与失败处置",
+      "next_destination": "Round 09 conformance suite"
+    },
+    {
+      "id": "S05",
+      "documents": [
+        "MF-0004",
+        "RFC-0003",
+        "PROF-0001"
+      ],
+      "contract_status": "PartiallyCovered",
+      "evidence_status": "NoCurrentConformanceClaim",
+      "primary_gap": "优先次序与司法义务、冲突权利和商业可持续性缺少决策合同",
+      "next_destination": "Round 06 authority and conflict decision"
+    },
+    {
+      "id": "S06",
+      "documents": [
+        "GOV-0005",
+        "GOV-0006",
+        "GOV-0016",
+        "GOV-0017"
+      ],
+      "contract_status": "ReviewMaterialOnly",
+      "evidence_status": "PreparedNotExecuted",
+      "primary_gap": "十二问尚未转化为有证据、可失败、可申诉的测试",
+      "next_destination": "Round 09 conformance suite"
+    },
+    {
+      "id": "S07",
+      "documents": [
+        "ADR-0005",
+        "GOV-0082",
+        "REF-0014"
+      ],
+      "contract_status": "FutureKernelDecision",
+      "evidence_status": "NoCurrentConformanceClaim",
+      "primary_gap": "Kernel 范围、文档家族、权威、可替换边界和符合性未决定",
+      "next_destination": "Round 06"
+    },
+    {
+      "id": "S08",
+      "documents": [
+        "GOV-0006",
+        "GOV-0016",
+        "GOV-0017",
+        "GOV-0018",
+        "GOV-0067",
+        "GOV-0068",
+        "GOV-0069"
+      ],
+      "contract_status": "ReviewMaterialPrepared",
+      "evidence_status": "PreparedNotExecuted",
+      "primary_gap": "角色、参与者、受限环境与真实证据未激活",
+      "next_destination": "Operational authorization"
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "AMB-MC-001",
+      "location": "S01",
+      "term": "passed an internal article-by-article review",
+      "issue": "内部文本准备可能被误解为验证完成",
+      "risk": "High",
+      "required_review": "governance, affected-person",
+      "current_treatment": "保持 Candidate；区分文本准备与外部验证",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-002",
+      "location": "S02",
+      "term": "life-centered approach / 以生命为中心",
+      "issue": "可能成为不可测试的品牌修辞",
+      "risk": "High",
+      "required_review": "affected-person, philosophy, public-claims",
+      "current_treatment": "用具体决定、失败与伤害路径检验",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-003",
+      "location": "MC01",
+      "term": "stands with life, not with a role",
+      "issue": "可能被误读为角色中立，忽略权力不对等与保护义务",
+      "risk": "Critical",
+      "required_review": "child-rights, safety, legal, affected-person",
+      "current_treatment": "不自动站队不等于不承担保护责任",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-004",
+      "location": "MC01",
+      "term": "all affected lives",
+      "issue": "范围可能包括非用户、家庭成员、工作人员与群体",
+      "risk": "High",
+      "required_review": "affected-person, architecture",
+      "current_treatment": "明确受影响者识别与冲突处理",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-005",
+      "location": "MC02",
+      "term": "does not own / 不拥有",
+      "issue": "记录保管、知识产权和个人对身份意义之权利边界未明确",
+      "risk": "High",
+      "required_review": "privacy, legal, governance",
+      "current_treatment": "区分记录保管、版权与人格/数据权利",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-006",
+      "location": "MC03 标题",
+      "term": "A person / 用户 / 人",
+      "issue": "历史中文标题把 person 缩减为 user，可能排除儿童与第三方",
+      "risk": "Critical",
+      "required_review": "affected-person, child-rights, translation",
+      "current_treatment": "中文配对稿使用“人”，保留历史差异",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-007",
+      "location": "MC03",
+      "term": "should be able to",
+      "issue": "是伦理方向、最低产品能力还是可执行权利尚未决定",
+      "risk": "High",
+      "required_review": "privacy, legal, product",
+      "current_treatment": "规范强度保持 provisional",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-008",
+      "location": "MC03",
+      "term": "within defined limits",
+      "issue": "撤回限定可能被平台任意扩大",
+      "risk": "Critical",
+      "required_review": "privacy, legal, affected-person",
+      "current_treatment": "限定必须来自明确合同、目的与复核",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-009",
+      "location": "MC03",
+      "term": "law, imminent safety, incident handling, protection of others",
+      "issue": "四类例外的权威、证据、期限与通知义务不同",
+      "risk": "Critical",
+      "required_review": "safety, legal, privacy",
+      "current_treatment": "逐类合同化，不允许一般例外",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-010",
+      "location": "MC04 标题",
+      "term": "accountable to the person / 向生命负责 / 向本人负责",
+      "issue": "“生命”可能掩盖具体权利主体",
+      "risk": "High",
+      "required_review": "privacy, affected-person, translation",
+      "current_treatment": "中文配对稿使用“本人”",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-011",
+      "location": "MC04",
+      "term": "meaningful controls",
+      "issue": "仅有按钮但无法完成是否算控制",
+      "risk": "Critical",
+      "required_review": "privacy, accessibility, product",
+      "current_treatment": "必须可理解、可执行、有完成证据与救济",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-012",
+      "location": "MC04",
+      "term": "cannot be fully honored",
+      "issue": "删除、撤回、备份、审计与第三方义务的边界",
+      "risk": "Critical",
+      "required_review": "privacy, legal, safety",
+      "current_treatment": "依赖 RFC-0002/PROF-0003 与司法辖区",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-013",
+      "location": "MC05",
+      "term": "evidence is above authority",
+      "issue": "证据、真实经验、专业判断与紧急行动冲突时如何排序",
+      "risk": "High",
+      "required_review": "evidence, professional, affected-person",
+      "current_treatment": "记录证据强度、未知与可修正性",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-014",
+      "location": "MC05",
+      "term": "preserve contradiction and failure",
+      "issue": "透明度与隐私、安全、商业秘密之间存在冲突",
+      "risk": "High",
+      "required_review": "privacy, governance, evidence",
+      "current_treatment": "至少保留受控、可审计证据",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-015",
+      "location": "MC06",
+      "term": "fact / observation / hypothesis / pattern / judgment / decision",
+      "issue": "跨系统字段、界面标签和决定依赖可能不一致",
+      "risk": "High",
+      "required_review": "architecture, affected-person",
+      "current_treatment": "依赖 RFC-0001 与未来 Kernel",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-016",
+      "location": "MC07",
+      "term": "anxiety / urgency / shame",
+      "issue": "风险告知与操纵性商业话术的界限",
+      "risk": "Critical",
+      "required_review": "commercial, affected-person, safety",
+      "current_treatment": "审计内容、触发条件、受众与转化目标",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-017",
+      "location": "MC07",
+      "term": "conversion, retain, upsell, compliance",
+      "issue": "不同商业动作和非商业服从被放在同一禁止中",
+      "risk": "High",
+      "required_review": "commercial, governance",
+      "current_treatment": "建立商业行为分类与证据",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-018",
+      "location": "MC08",
+      "term": "dependency",
+      "issue": "依赖、信任、连续照护、习惯与必要辅助难以区分",
+      "risk": "Critical",
+      "required_review": "affected-person, professional, product",
+      "current_treatment": "需要独立合同与退出结果指标",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-019",
+      "location": "MC08",
+      "term": "capacity without the system",
+      "issue": "不应把完全独立作为所有人的成功标准",
+      "risk": "High",
+      "required_review": "accessibility, affected-person, professional",
+      "current_treatment": "保护可持续支持与选择性使用",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-020",
+      "location": "MC09",
+      "term": "human professional",
+      "issue": "不同司法辖区与专业角色定义不同",
+      "risk": "High",
+      "required_review": "professional, legal, public-claims",
+      "current_treatment": "角色、资质、可用性与责任必须可见",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-021",
+      "location": "MC09",
+      "term": "high-impact decisions",
+      "issue": "高影响门槛与参与最低要求尚未统一",
+      "risk": "Critical",
+      "required_review": "affected-person, safety, architecture",
+      "current_treatment": "映射 RFC-0001/3 与 Round 06",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-022",
+      "location": "MC09",
+      "term": "appropriate human and affected-person participation",
+      "issue": "何时参与充分、何时暂时不可行",
+      "risk": "Critical",
+      "required_review": "affected-person, child-rights, safety",
+      "current_treatment": "记录目的、影响、能力、代表与复核",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-023",
+      "location": "MC10",
+      "term": "parent participation",
+      "issue": "照料、同意、代表权限与数据访问经常被混淆",
+      "risk": "Critical",
+      "required_review": "child-rights, privacy, legal",
+      "current_treatment": "依赖 PROF-0001/2 与司法辖区",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-024",
+      "location": "MC10",
+      "term": "where possible",
+      "issue": "可能成为长期排除儿童或第三方的借口",
+      "risk": "Critical",
+      "required_review": "child-rights, accessibility",
+      "current_treatment": "记录期限、支持、替代参与与复核",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-025",
+      "location": "MC10",
+      "term": "performance management",
+      "issue": "家庭支持与绩效化监控边界不清",
+      "risk": "High",
+      "required_review": "affected-person, education, product",
+      "current_treatment": "禁止排名、羞辱与长期行为画像",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-026",
+      "location": "MC11",
+      "term": "appropriate escalation",
+      "issue": "没有可用服务时，升级可能只是生成链接",
+      "risk": "Critical",
+      "required_review": "safety, professional, operational",
+      "current_treatment": "使用 RFC-0003/PROF-0004 服务状态",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-027",
+      "location": "MC11",
+      "term": "system competence",
+      "issue": "能力范围由谁判断、如何更新与公开",
+      "risk": "High",
+      "required_review": "professional, architecture, public-claims",
+      "current_treatment": "记录能力状态、版本、证据与过期",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-028",
+      "location": "MC12 标题",
+      "term": "commercial power / 商业 / root commitments / 根原则",
+      "issue": "历史中文标题可能缩小权力主体并改变文档层级",
+      "risk": "High",
+      "required_review": "commercial, translation, governance",
+      "current_treatment": "中文配对稿使用“商业权力/根本承诺”",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-029",
+      "location": "MC12",
+      "term": "actor with authority independent of immediate commercial objective",
+      "issue": "独立主体尚未确定、授权或运营",
+      "risk": "Critical",
+      "required_review": "governance, commercial",
+      "current_treatment": "进入治理激活与冲突裁决合同",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-030",
+      "location": "MC13",
+      "term": "maintain mechanisms",
+      "issue": "机制存在、可访问、可执行与完成之间存在差异",
+      "risk": "Critical",
+      "required_review": "affected-person, operational, accessibility",
+      "current_treatment": "每个机制需要服务状态与完成证据",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-031",
+      "location": "MC13",
+      "term": "independent criticism",
+      "issue": "独立程度、保护和对治理的约束力不明确",
+      "risk": "High",
+      "required_review": "governance, community",
+      "current_treatment": "定义利益冲突、保护与回应义务",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-032",
+      "location": "MC14",
+      "term": "good-faith reports",
+      "issue": "谁判断善意，如何避免报复或压制异议",
+      "risk": "Critical",
+      "required_review": "governance, affected-person, legal",
+      "current_treatment": "提供保护、安全联系与独立复核",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-033",
+      "location": "MC14",
+      "term": "withdraw MingOS name",
+      "issue": "名称使用权、程序正义、恢复与公开说明未定义",
+      "risk": "Critical",
+      "required_review": "governance, legal, commercial",
+      "current_treatment": "GOV-0015 与未来符合性合同",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-034",
+      "location": "S04",
+      "term": "permanent disciplines",
+      "issue": "“永久”与宪章可修正性存在张力",
+      "risk": "High",
+      "required_review": "governance, philosophy",
+      "current_treatment": "解释为长期纪律，不取消显式修订",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-035",
+      "location": "S05",
+      "term": "decision precedence",
+      "issue": "固定顺序可能与法律义务、权利冲突与具体情境不一致",
+      "risk": "Critical",
+      "required_review": "legal, safety, affected-person",
+      "current_treatment": "不是自动公式，必须记录冲突",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-036",
+      "location": "S06",
+      "term": "conformance questions",
+      "issue": "问题清单容易被当作通过即合规",
+      "risk": "High",
+      "required_review": "architecture, governance",
+      "current_treatment": "Round 09 转为有证据且可失败的测试",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-037",
+      "location": "S07",
+      "term": "Kernel must operationalize",
+      "issue": "Kernel 尚未完成范围与权威决议",
+      "risk": "Critical",
+      "required_review": "architecture, governance",
+      "current_treatment": "保持 FutureKernelDecision",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-038",
+      "location": "S07",
+      "term": "all implementations must satisfy",
+      "issue": "MingOS 名称使用与符合性门槛尚未定义",
+      "risk": "Critical",
+      "required_review": "governance, architecture, commercial",
+      "current_treatment": "Round 06/09 决议",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-039",
+      "location": "S08",
+      "term": "current website, Family OS, communication, sales, implementation audits",
+      "issue": "审计范围、证据时效与仓库访问可能不同",
+      "risk": "High",
+      "required_review": "governance, implementation, commercial",
+      "current_treatment": "分离仓库证据与外部实现证据",
+      "status": "PreparedNotExecuted"
+    },
+    {
+      "id": "AMB-MC-040",
+      "location": "全局",
+      "term": "MUST / must / should / may",
+      "issue": "MingOS 宪章未正式采用 RFC 2119/8174",
+      "risk": "High",
+      "required_review": "governance, translation, architecture",
+      "current_treatment": "所有强度映射保持 provisional，除明确大写案例",
+      "status": "PreparedNotExecuted"
+    }
+  ],
+  "review_tracks": [
+    "affected-person",
+    "parent-caregiver",
+    "child-rights",
+    "third-party-rights",
+    "privacy-data-governance",
+    "safety-emergency-boundary",
+    "professional-clinical-boundary",
+    "legal-jurisdiction",
+    "commercial-sales-retention",
+    "translation-semantics",
+    "product-implementation",
+    "governance-independence",
+    "accessibility-communication"
+  ],
+  "current_contract_documents": {
+    "RFC-0001": "Proposed",
+    "RFC-0002": "Proposed",
+    "RFC-0003": "Proposed",
+    "RFC-0004": "Proposed",
+    "RFC-0005": "Proposed",
+    "PROF-0001": "Proposed",
+    "PROF-0002": "Proposed",
+    "PROF-0003": "Proposed",
+    "PROF-0004": "Proposed",
+    "GOV-0015": "Proposed"
+  },
+  "integrity": {
+    "article_mapping_count": 21,
+    "normative_requirement_count": 39,
+    "commitment_contract_count": 19,
+    "ambiguity_count": 40,
+    "review_status": "PreparedNotExecuted",
+    "implementation_conformance_claim": false,
+    "markdown_sources": [
+      "REF-0021",
+      "REF-0022",
+      "REF-0023",
+      "REF-0024",
+      "REF-0025"
+    ]
+  }
+}
