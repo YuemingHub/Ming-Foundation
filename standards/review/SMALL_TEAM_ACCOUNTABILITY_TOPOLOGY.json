@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "MING-SMALL-TEAM-ACCOUNTABILITY-TOPOLOGY-0001",
+  "title": "Small-Team Accountability and Separation-of-Duties Profile",
+  "status": "Accepted design infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0095",
+  "topology_state": "DesignedNotStaffed",
+  "minimum_distinct_people": {
+    "CP2_internal_staff_rehearsal": 3,
+    "CP3_affected_person_pilot": 4,
+    "reason": "CP3 requires independent facilitation or jurisdiction/professional review outside the minimum three-person operating core."
+  },
+  "internal_role_clusters": [
+    {
+      "cluster_id": "ST-CLUSTER-A",
+      "title": "Program and recruitment coordination",
+      "roles": [
+        "review_program_owner",
+        "recruitment_and_compensation_owner"
+      ],
+      "combination_state": "ConditionallyAllowed",
+      "conditions": [
+        "Consent approval must have an independent reviewer",
+        "No recruitment authority over a dependent or coerced participant"
+      ]
+    },
+    {
+      "cluster_id": "ST-CLUSTER-B",
+      "title": "Safeguarding and facilitation",
+      "roles": [
+        "safeguarding_owner",
+        "independent_facilitator_lead"
+      ],
+      "combination_state": "ConditionallyAllowed",
+      "conditions": [
+        "Person is qualified and conflict-free",
+        "Another reviewer handles complaints concerning that person's action",
+        "Not the participant's coercive supervisor, evaluator, or disputed representative"
+      ]
+    },
+    {
+      "cluster_id": "ST-CLUSTER-C",
+      "title": "Evidence, privacy, and access",
+      "roles": [
+        "evidence_custodian",
+        "privacy_and_data_rights_reviewer",
+        "accessibility_and_language_owner"
+      ],
+      "combination_state": "ConditionallyAllowed",
+      "conditions": [
+        "High-impact privacy, deletion, incident, or export decisions require a second approver",
+        "Evidence custodian cannot close an incident concerning their own access action"
+      ]
+    },
+    {
+      "cluster_id": "ST-CLUSTER-D",
+      "title": "Jurisdiction and professional qualification",
+      "roles": [
+        "jurisdiction_and_professional_review_owner"
+      ],
+      "combination_state": "SeparatelyQualifiedRequired",
+      "conditions": [
+        "May be external to the standing team",
+        "Must document jurisdiction, scope, competence, limits, and expiry"
+      ]
+    }
+  ],
+  "absolute_separation_rules": [
+    {
+      "rule_id": "SOD-001",
+      "rule": "The subject of a complaint or concern may not be the sole investigator, approver, or closer."
+    },
+    {
+      "rule_id": "SOD-002",
+      "rule": "A disputed representative or possible source of harm may not act as the sole facilitator or safeguarding reviewer."
+    },
+    {
+      "rule_id": "SOD-003",
+      "rule": "The recruiter or compensation owner may not be the sole consent approver for a dependent participant."
+    },
+    {
+      "rule_id": "SOD-004",
+      "rule": "The evidence custodian may not be the sole reviewer of a privacy, access, deletion, or export incident caused by their own action."
+    },
+    {
+      "rule_id": "SOD-005",
+      "rule": "The program owner may not be the sole independent facilitator for an affected-person pilot."
+    },
+    {
+      "rule_id": "SOD-006",
+      "rule": "Jurisdiction and professional approval may not be issued outside documented competence."
+    }
+  ],
+  "public_team_assumptions": {
+    "real_person_count_claimed": 0,
+    "candidate_identity_claimed": false,
+    "consent_to_role_claimed": false,
+    "private_team_details_publishable": false
+  }
+}

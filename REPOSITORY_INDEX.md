@@ -101,6 +101,17 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0090 | [Day 16 Operational Readiness and Pilot Authorization Gate](governance/reviews/GOV-0090-day16-operational-readiness-and-pilot-authorization-gate.md) | Accepted |
 | GOV-0091 | [Day 16 Status Recommendation](governance/reviews/GOV-0091-day16-status-recommendation.md) | Accepted |
 | GOV-0092 | [Day 16 Validation Record](governance/validation/GOV-0092-day16-validation-record.md) | Accepted |
+
+| GOV-0093 | [Day 17 Current-Main and Numbering Audit](governance/audits/GOV-0093-day17-current-main-and-numbering-audit.md) | Accepted |
+| GOV-0094 | [Named Accountability and Public Identity Boundary](governance/operations/GOV-0094-named-accountability-and-public-identity-boundary.md) | Accepted |
+| GOV-0095 | [Small-Team Accountability and Separation of Duties](governance/operations/GOV-0095-small-team-accountability-and-separation-of-duties.md) | Accepted |
+| GOV-0096 | [Role Nomination Acceptance and Verification Plan](governance/operations/GOV-0096-role-nomination-acceptance-and-verification-plan.md) | Accepted |
+| GOV-0097 | [Human-Use Protocol Approval Readiness](governance/operations/GOV-0097-human-use-protocol-approval-readiness.md) | Accepted |
+| GOV-0098 | [Restricted Evidence Environment Deployment Plan](governance/operations/GOV-0098-restricted-evidence-environment-deployment-plan.md) | Accepted |
+| GOV-0099 | [CP2 Readiness and Named Accountability Tabletop](governance/validation/GOV-0099-cp2-readiness-and-accountability-tabletop.md) | Accepted |
+| GOV-0100 | [Day 17 Human Review Activation Readiness Gate](governance/reviews/GOV-0100-day17-human-review-activation-readiness-gate.md) | Accepted |
+| GOV-0101 | [Day 17 Status Recommendation](governance/reviews/GOV-0101-day17-status-recommendation.md) | Accepted |
+| GOV-0102 | [Day 17 Validation Record](governance/validation/GOV-0102-day17-validation-record.md) | Accepted |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -119,6 +130,13 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-TPL-0020 | [Evidence Environment Control Verification Record](governance/templates/GOV-TPL-0020-evidence-environment-control-verification-record.md) | Accepted |
 | GOV-TPL-0021 | [Controlled Pilot Authorization Decision Record](governance/templates/GOV-TPL-0021-controlled-pilot-authorization-decision-record.md) | Accepted |
 | GOV-TPL-0022 | [Incident Disclosure and Stop Event Record](governance/templates/GOV-TPL-0022-incident-disclosure-and-stop-event-record.md) | Accepted |
+
+| GOV-TPL-0023 | [Restricted Role Nomination Record](governance/templates/GOV-TPL-0023-role-nomination-record.md) | Accepted |
+| GOV-TPL-0024 | [Role Acceptance Qualification and Conflict Record](governance/templates/GOV-TPL-0024-role-acceptance-qualification-conflict-record.md) | Accepted |
+| GOV-TPL-0025 | [Separation-of-Duties Exception Record](governance/templates/GOV-TPL-0025-separation-of-duties-exception-record.md) | Accepted |
+| GOV-TPL-0026 | [Human-Use Protocol Sign-Off](governance/templates/GOV-TPL-0026-human-use-protocol-signoff.md) | Accepted |
+| GOV-TPL-0027 | [Evidence Environment Deployment Verification](governance/templates/GOV-TPL-0027-evidence-environment-deployment-verification.md) | Accepted |
+| GOV-TPL-0028 | [Human Review Activation Decision](governance/templates/GOV-TPL-0028-human-review-activation-decision.md) | Accepted |
 | GOV-TPL-0004 | [External Implementation Evidence Intake Record](governance/templates/GOV-TPL-0004-external-implementation-evidence-intake.md) | Accepted |
 
 ## Foundation
@@ -172,6 +190,9 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ADR-0022 | [Separate Synthetic Rehearsal from Human Review Activation](governance/decisions/ADR-0022-separate-synthetic-rehearsal-from-human-review-activation.md) | Accepted |
 | ADR-0023 | [Authorize CP0 and CP1 Controlled Pilot Only](governance/decisions/ADR-0023-authorize-cp0-cp1-controlled-pilot-only.md) | Accepted |
 
+| ADR-0024 | [Separate Public Accountability from Restricted Identity](governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md) | Accepted |
+| ADR-0025 | [Retain CP2 and CP3 Blocked Until Named Accountability](governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md) | Accepted |
+
 ## Profiles
 
 | ID | Title | Status |
@@ -212,6 +233,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0017 | [生命宪章双语歧义与专业审查登记](reference/charter/REF-0017-life-charter-ambiguity-review-register.md) | Draft |
 | REF-0018 | [生命宪章受影响者与领域审查协议](reference/charter/REF-0018-life-charter-affected-person-review-protocol.md) | Draft |
 | REF-0019 | [Review Operations and Controlled Pilot Guide](reference/REF-0019-review-operations-and-controlled-pilot-guide.md) | Accepted |
+| REF-0020 | [Named Accountability and Human Activation Guide](reference/REF-0020-named-accountability-and-human-activation-guide.md) | Accepted |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

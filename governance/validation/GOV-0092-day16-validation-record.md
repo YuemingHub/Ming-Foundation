@@ -2,7 +2,7 @@
 id: GOV-0092
 title: Day 16 Validation Record
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Layer 5 — Community & Governance
 owner: Ming Foundation Validation
 created: 2026-07-14
@@ -44,3 +44,10 @@ Product conformance results:     0
 Open ambiguities:               19
 Open dissent items:              8
 ```
+
+## Day 17 relation
+
+The Day 16 counts remain historical.
+
+Day 17 validates an additional accountability framework and ten synthetic
+tabletop scenarios without changing the zero human-activation counts.

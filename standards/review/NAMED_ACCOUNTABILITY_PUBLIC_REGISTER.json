@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-NAMED-ACCOUNTABILITY-PUBLIC-REGISTER-0001",
+  "title": "Named Accountability Public Register",
+  "status": "Accepted accountability infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0094",
+  "identity_boundary": {
+    "public_real_names_allowed": false,
+    "public_personal_contact_allowed": false,
+    "public_identity_documents_allowed": false,
+    "restricted_identity_record_required_for_activation": true,
+    "restricted_register_location": "OutsidePublicRepository"
+  },
+  "overall_state": "FrameworkCompleteNoNamedAssignees",
+  "roles": [
+    {
+      "role_id": "review_program_owner",
+      "public_accountability_id": "RA-01",
+      "title": "Review Program Owner",
+      "responsibility": "Own scope, sequencing, deviations, records, activation requests, and stop decisions.",
+      "minimum_capability": [
+        "Understand Ming Foundation review boundaries",
+        "Maintain version, scope, decision, and deviation records",
+        "Recognize when work must stop or escalate"
+      ],
+      "prohibited_combinations": [
+        "May not be the sole independent facilitator for CP3",
+        "May not be the sole approver of a complaint concerning their own decision"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "safeguarding_owner",
+      "public_accountability_id": "RA-02",
+      "title": "Safeguarding Owner",
+      "responsibility": "Own distress, disclosure, safeguarding, emergency-boundary, and stop escalation.",
+      "minimum_capability": [
+        "Relevant child, adolescent, family, mental-health, safeguarding, or duty-of-care competence",
+        "Ability to distinguish review from clinical or emergency service",
+        "Ability to activate stop, referral, and independent review routes"
+      ],
+      "prohibited_combinations": [
+        "May not close a concern in which they may be the source of harm",
+        "May not be the sole reviewer of their own safeguarding action"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "evidence_custodian",
+      "public_accountability_id": "RA-03",
+      "title": "Evidence Custodian",
+      "responsibility": "Own restricted evidence access, retention, deletion, export, restoration, and audit.",
+      "minimum_capability": [
+        "Operate access-controlled storage",
+        "Maintain deletion, restoration, export, and access evidence",
+        "Separate participant contact data from review evidence"
+      ],
+      "prohibited_combinations": [
+        "May not be the sole privacy approver for an incident involving their own access action",
+        "May not authorize unrelated reuse of review evidence"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "accessibility_and_language_owner",
+      "public_accountability_id": "RA-04",
+      "title": "Accessibility and Language Owner",
+      "responsibility": "Own communication access, interpretation, disability support, and accommodations.",
+      "minimum_capability": [
+        "Assess whether rights are usable through the offered channel",
+        "Coordinate language and accessibility support",
+        "Record unresolved access barriers without blaming the participant"
+      ],
+      "prohibited_combinations": [
+        "May not infer consent or capacity from inability to use an inaccessible channel"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "independent_facilitator_lead",
+      "public_accountability_id": "RA-05",
+      "title": "Independent Facilitator Lead",
+      "responsibility": "Own conflict-free facilitation for child, adolescent, vulnerable-person, and contested tracks.",
+      "minimum_capability": [
+        "Facilitate without leading or coercing",
+        "Recognize distress, silence, refusal, and power imbalance",
+        "Preserve minority and dissenting views"
+      ],
+      "prohibited_combinations": [
+        "May not be the participant's coercive supervisor, evaluator, or disputed representative",
+        "May not be the sole program owner for CP3"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "jurisdiction_and_professional_review_owner",
+      "public_accountability_id": "RA-06",
+      "title": "Jurisdiction and Professional Review Owner",
+      "responsibility": "Own operating-context, legal, regulatory, safeguarding, professional, and local qualification.",
+      "minimum_capability": [
+        "Qualified for the stated jurisdiction or able to document reliance on a qualified reviewer",
+        "Identify age, consent, representation, retention, disclosure, and professional-duty limits",
+        "State uncertainty and prohibited contexts"
+      ],
+      "prohibited_combinations": [
+        "May not approve outside documented competence or jurisdiction"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "recruitment_and_compensation_owner",
+      "public_accountability_id": "RA-07",
+      "title": "Recruitment and Compensation Owner",
+      "responsibility": "Own non-coercive recruitment, compensation, contact, eligibility, and conflict boundaries.",
+      "minimum_capability": [
+        "Separate service access from research or review participation",
+        "Avoid dependency, authority, payment, and family-pressure coercion",
+        "Maintain contact-data separation"
+      ],
+      "prohibited_combinations": [
+        "May not be the sole consent approver for people they directly supervise or serve"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    },
+    {
+      "role_id": "privacy_and_data_rights_reviewer",
+      "public_accountability_id": "RA-08",
+      "title": "Privacy and Data-Rights Reviewer",
+      "responsibility": "Independently review collection, notice, consent, withdrawal, correction, deletion, and reuse.",
+      "minimum_capability": [
+        "Review minimization, purpose limitation, access, retention, deletion, and rights routes",
+        "Challenge evidence collection that is not necessary",
+        "Require correction and deletion propagation"
+      ],
+      "prohibited_combinations": [
+        "May not be the sole reviewer of a privacy incident caused by their own action",
+        "May not approve unrelated reuse of evidence they control"
+      ],
+      "nomination_state": "NotNominated",
+      "restricted_identity_ref": null,
+      "public_display_name": null,
+      "acceptance_state": "NotAccepted",
+      "qualification_check": "NotCompleted",
+      "conflict_check": "NotCompleted",
+      "independence_check": "NotCompleted",
+      "scope_and_expiry_recorded": false,
+      "backup_or_replacement_recorded": false,
+      "activation_authority": false
+    }
+  ],
+  "summary": {
+    "roles_defined": 8,
+    "roles_nominated": 0,
+    "roles_accepted": 0,
+    "qualification_checks_complete": 0,
+    "conflict_checks_complete": 0,
+    "independence_checks_complete": 0,
+    "activation_authorities": 0
+  }
+}

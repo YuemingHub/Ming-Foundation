@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "environment_id": "MING-RESTRICTED-EVIDENCE-ENVIRONMENT-0001",
   "title": "Restricted Evidence Environment Control Specification",
   "status": "Accepted design specification",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "governing_record": "GOV-0086",
   "design_state": "Complete",
   "live_environment_state": "NotProvisioned",
@@ -19,7 +19,9 @@
       "design_state": "Complete",
       "live_state": "NotProvisioned",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-002",
@@ -27,7 +29,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-003",
@@ -35,7 +39,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-004",
@@ -43,7 +49,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-005",
@@ -51,7 +59,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-006",
@@ -59,7 +69,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-007",
@@ -67,7 +79,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     },
     {
       "control_id": "ENV-008",
@@ -75,7 +89,9 @@
       "design_state": "Complete",
       "live_state": "NotConfigured",
       "synthetic_state": "EnforcedByRepositoryValidation",
-      "verification_evidence": []
+      "verification_evidence": [],
+      "named_owner_required": true,
+      "independent_verification_required": true
     }
   ],
   "summary": {
@@ -83,5 +99,8 @@
     "design_complete": 8,
     "live_controls_ready": 0,
     "synthetic_controls_enforced": 8
-  }
+  },
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "day17_deployment_plan": "standards/review/EVIDENCE_ENVIRONMENT_DEPLOYMENT_PLAN.json",
+  "deployment_readiness_state": "PlanCompleteNotProvisioned"
 }

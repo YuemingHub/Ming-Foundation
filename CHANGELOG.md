@@ -21,6 +21,43 @@ All notable repository-level changes are documented here.
 - Affected-person review remains unauthorized and implementation conformance remains empty.
 
 
+
+## [1.0.0-alpha.17] - 2026-07-14
+
+### Added
+
+- privacy-preserving public accountability IDs for eight review roles;
+- restricted identity and assignment boundary;
+- three-person CP2 and four-person CP3 small-team topology;
+- six absolute separation-of-duties rules;
+- ten-state role nomination, acceptance, qualification, and conflict workflow;
+- seven named-approver protocol routes;
+- eight-control evidence-environment deployment plan;
+- CP2 staff-rehearsal readiness plan;
+- ten passed synthetic named-accountability tabletop scenarios;
+- Day 17 gate, decisions, templates, schemas, and validators.
+
+### Readiness result
+
+```text
+Named accountability framework: complete
+Real named assignees:            0
+Human-use approvals:             0
+Live controls ready:             0
+CP2:                              blocked
+CP3:                              blocked
+Human activation:                 blocked
+```
+
+### Boundary
+
+- real names and personal contact records remain outside the public repository;
+- no role is nominated, accepted, verified, or active;
+- recruitment, human sessions, participant evidence, and live actions remain zero;
+- both Charters remain Candidate;
+- RFCs and Profiles retain their statuses;
+- implementation conformance remains empty.
+
 ## [1.0.0-alpha.16] - 2026-07-14
 
 ### Added

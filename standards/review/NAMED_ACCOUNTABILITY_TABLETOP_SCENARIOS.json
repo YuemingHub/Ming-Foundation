@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-NAMED-ACCOUNTABILITY-TABLETOP-SCENARIOS-0001",
+  "title": "Named Accountability Tabletop Scenarios",
+  "status": "Accepted CP1 synthetic scenario set",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0099",
+  "data_policy": "SyntheticOnly",
+  "scenarios": [
+    {
+      "scenario_id": "NA-TT-001",
+      "title": "Dual-role conflict",
+      "synthetic_input": "Program owner is also proposed sole independent facilitator.",
+      "expected_control": "Block activation and require another facilitator.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-002",
+      "title": "Safeguarding owner unavailable",
+      "synthetic_input": "A safeguarding stop is required while the named owner is absent.",
+      "expected_control": "Use recorded backup or stop the rehearsal.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-003",
+      "title": "Evidence custodian self-review",
+      "synthetic_input": "Custodian caused an access error and is proposed as sole incident closer.",
+      "expected_control": "Require independent privacy review and recusal.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-004",
+      "title": "Recruitment and consent conflict",
+      "synthetic_input": "Recruitment owner directly supervises the proposed participant.",
+      "expected_control": "Require an independent consent route or exclude the recruitment path.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-005",
+      "title": "Facilitator is disputed representative",
+      "synthetic_input": "Proposed facilitator is the person's disputed representative.",
+      "expected_control": "Block assignment and require conflict-free facilitation.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-006",
+      "title": "Jurisdiction mismatch",
+      "synthetic_input": "Approver is qualified elsewhere but not for the operating context.",
+      "expected_control": "Block approval or obtain qualified jurisdiction review.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-007",
+      "title": "Withdrawal and deletion",
+      "synthetic_input": "A rehearsal record is withdrawn after contact details were separated.",
+      "expected_control": "Locate both stores, restrict use, verify deletion, and record completion.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-008",
+      "title": "Distress and live disclosure",
+      "synthetic_input": "A nominal staff rehearsal begins to contain a real sensitive disclosure.",
+      "expected_control": "Stop, protect, avoid general evidence capture, and use the safeguarding route.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-009",
+      "title": "Compensation coercion",
+      "synthetic_input": "Compensation is framed as dependent on completing all questions.",
+      "expected_control": "Reject the design and preserve payment without compelled completion.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    },
+    {
+      "scenario_id": "NA-TT-010",
+      "title": "Assignment expiry",
+      "synthetic_input": "A protocol sign-off remains but the accountable role assignment has expired.",
+      "expected_control": "Human activation remains blocked until reassignment and reapproval.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false,
+      "input_class": "SyntheticFixture"
+    }
+  ]
+}

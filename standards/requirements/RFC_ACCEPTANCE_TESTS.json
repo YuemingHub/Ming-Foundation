@@ -1,11 +1,11 @@
 {
-  "schema_version": "2.2",
+  "schema_version": "2.3",
   "registry_id": "MING-RFC-ACCEPTANCE-TESTS-0001",
   "title": "Ming Foundation Current RFC Acceptance Test Registry",
   "status": "Accepted test specification index",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "authority": {
     "normative_source": "RFC Markdown and RFC_REQUIREMENTS.json",
     "registry_role": "Current implementation test specification index; does not prove execution or conformance",
@@ -5519,5 +5519,11 @@
     "record": "GOV-0090",
     "implementation_tests_executed": 0,
     "synthetic_repository_tests": 12
+  },
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "human_review_activation": {
+    "gate": "GOV-0100",
+    "state": "BlockedPendingNamedAccountability",
+    "implementation_tests_executed": 0
   }
 }

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-HUMAN-USE-PROTOCOL-APPROVAL-PLAN-0001",
+  "title": "Human-Use Protocol Approval Readiness Plan",
+  "status": "Accepted activation-readiness infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "registry_version": "1.0.0-alpha.17",
+  "governing_record": "GOV-0097",
+  "overall_state": "AwaitingNamedApprovers",
+  "protocols": [
+    {
+      "approval_id": "APR-APP-001",
+      "title": "Consent and assent protocol",
+      "primary_accountable_role": "review_program_owner",
+      "independent_review_role": "safeguarding_owner",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-002",
+      "title": "Distress, disclosure, safeguarding, and stop protocol",
+      "primary_accountable_role": "safeguarding_owner",
+      "independent_review_role": "jurisdiction_and_professional_review_owner",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-003",
+      "title": "Restricted evidence storage, access, retention, and deletion",
+      "primary_accountable_role": "evidence_custodian",
+      "independent_review_role": "privacy_and_data_rights_reviewer",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-004",
+      "title": "Accessibility, interpretation, and communication support",
+      "primary_accountable_role": "accessibility_and_language_owner",
+      "independent_review_role": "independent_facilitator_lead",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-005",
+      "title": "Recruitment, compensation, conflict, and non-coercion",
+      "primary_accountable_role": "recruitment_and_compensation_owner",
+      "independent_review_role": "privacy_and_data_rights_reviewer",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-006",
+      "title": "Child and adolescent independent facilitation",
+      "primary_accountable_role": "independent_facilitator_lead",
+      "independent_review_role": "safeguarding_owner",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    },
+    {
+      "approval_id": "APR-APP-007",
+      "title": "Jurisdiction and professional-duty qualification",
+      "primary_accountable_role": "jurisdiction_and_professional_review_owner",
+      "independent_review_role": "review_program_owner",
+      "approval_state": "NotApproved",
+      "named_primary_approver": null,
+      "named_independent_reviewer": null,
+      "operating_context": null,
+      "expiry": null,
+      "approval_evidence_refs": []
+    }
+  ],
+  "summary": {
+    "protocols": 7,
+    "approval_routes_defined": 7,
+    "named_primary_approvers": 0,
+    "named_independent_reviewers": 0,
+    "human_use_approved": 0
+  }
+}

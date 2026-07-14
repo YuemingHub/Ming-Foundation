@@ -1,11 +1,11 @@
 {
-  "schema_version": "2.2",
+  "schema_version": "2.4",
   "matrix_id": "FOUNDATION-CONFORMANCE-BASELINE-0001",
   "scope": "canonical_repository",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "target": {
     "name": "Ming Foundation non-implementation conformance baseline",
-    "revision": "c149953217e466570da3fa58157eb66616514d6b",
+    "revision": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
     "kind": "document_set",
     "repository": "YuemingHub/Ming-Foundation"
   },
@@ -199,6 +199,19 @@
     "record": "GOV-0090",
     "synthetic_repository_scenarios_executed": 12,
     "human_review_authorized": false,
+    "implementation_tests_executed": 0,
+    "results_populated": false
+  },
+  "day17_named_accountability": {
+    "gate": "GOV-0100",
+    "framework_complete": true,
+    "named_accountable_people": 0,
+    "human_review_activation_authorized": false,
+    "cp2_authorized": false,
+    "cp3_authorized": false,
+    "tabletop_scenarios_executed": 10,
+    "tabletop_scenarios_passed": 10,
+    "real_evidence_records": 0,
     "implementation_tests_executed": 0,
     "results_populated": false
   }

@@ -24,6 +24,8 @@ SCRIPTS = [
     "validate_review_readiness_gate.py",
     "validate_review_operations_activation.py",
     "validate_controlled_pilot.py",
+    "validate_named_accountability.py",
+    "validate_human_activation_readiness.py",
 ]
 
 

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/role-nomination-and-acceptance-plan.schema.json",
+  "title": "Role Nomination and Acceptance Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "execution_state",
+    "workflow",
+    "required_checks",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "execution_state": {
+      "const": "ReadyForRestrictedIntakeNotExecuted"
+    },
+    "workflow": {
+      "type": "array",
+      "minItems": 10
+    },
+    "required_checks": {
+      "type": "array",
+      "minItems": 7
+    }
+  }
+}

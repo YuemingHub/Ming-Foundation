@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "registry_id": "MING-RESIDUAL-PROFILES-0001",
   "title": "Day 13 Residual Profile Registry",
   "status": "Accepted registry of Proposed profiles",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "governing_record": "GOV-0058",
   "summary": {
     "profiles": 4,
@@ -55,7 +55,8 @@
       ],
       "source_test_state": "Passed",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "human_review_activation_state": "BlockedPendingNamedAccountability"
     },
     {
       "id": "PROF-0002",
@@ -95,7 +96,8 @@
       ],
       "source_test_state": "Passed",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "human_review_activation_state": "BlockedPendingNamedAccountability"
     },
     {
       "id": "PROF-0003",
@@ -134,7 +136,8 @@
       ],
       "source_test_state": "Passed",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "human_review_activation_state": "BlockedPendingNamedAccountability"
     },
     {
       "id": "PROF-0004",
@@ -173,12 +176,15 @@
       ],
       "source_test_state": "Passed",
       "content_readiness": "Pass",
-      "operational_readiness": "Blocked"
+      "operational_readiness": "Blocked",
+      "human_review_activation_state": "BlockedPendingNamedAccountability"
     }
   ],
   "day14_review_record": "GOV-0061",
   "day15_revision_record": "GOV-0071",
   "day15_round2_record": "GOV-0076",
   "day15_readiness_gate": "GOV-0077",
-  "day16_gate": "GOV-0090"
+  "day16_gate": "GOV-0090",
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "human_review_activation_state": "BlockedPendingNamedAccountability"
 }

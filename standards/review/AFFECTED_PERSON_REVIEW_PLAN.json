@@ -5,7 +5,7 @@
   "status": "Accepted preparation record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.16",
+  "registry_version": "1.0.0-alpha.17",
   "governing_record": "GOV-0067",
   "execution_state": "PreparedNotExecuted",
   "summary": {
@@ -202,5 +202,8 @@
   "synthetic_rehearsal_state": "Complete",
   "synthetic_scenarios_passed": 12,
   "human_review_state": "PreparedNotExecuted",
-  "day16_gate": "GOV-0090"
+  "day16_gate": "GOV-0090",
+  "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
+  "named_accountability_state": "FrameworkCompleteNoNamedAssignees",
+  "human_activation_state": "Blocked"
 }

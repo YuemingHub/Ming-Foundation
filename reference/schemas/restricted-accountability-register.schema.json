@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/restricted-accountability-register.schema.json",
+  "title": "Restricted Accountability Register",
+  "description": "Schema for a non-public identity, contact, qualification, conflict, and acceptance register.",
+  "type": "object",
+  "required": [
+    "register_id",
+    "storage_class",
+    "assignments"
+  ],
+  "properties": {
+    "storage_class": {
+      "const": "RestrictedOutsidePublicRepository"
+    },
+    "assignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "restricted_assignment_id",
+          "public_accountability_id",
+          "real_name",
+          "restricted_contact",
+          "acceptance",
+          "qualification",
+          "conflict",
+          "independence",
+          "scope",
+          "expiry"
+        ]
+      }
+    }
+  }
+}

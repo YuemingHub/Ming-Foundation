@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-staff-rehearsal-readiness.schema.json",
+  "title": "CP2 Staff Rehearsal Readiness",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "authorization_state",
+    "execution_state",
+    "participants_allowed",
+    "participant_evidence_allowed",
+    "live_system_actions_allowed"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "FrameworkReadyNamedStaffRequired"
+    },
+    "authorization_state": {
+      "const": "Blocked"
+    },
+    "execution_state": {
+      "const": "NotExecuted"
+    },
+    "participants_allowed": {
+      "const": false
+    },
+    "participant_evidence_allowed": {
+      "const": false
+    },
+    "live_system_actions_allowed": {
+      "const": false
+    }
+  }
+}

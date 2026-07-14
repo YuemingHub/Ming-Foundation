@@ -2,7 +2,7 @@
 id: ADR-0023
 title: Authorize CP0 and CP1 Controlled Pilot Only
 status: Accepted
-version: 1.0.0
+version: 1.0.1
 layer: Cross-layer
 owner: Ming Foundation Architecture Board
 created: 2026-07-14
@@ -39,3 +39,9 @@ depends_on:
 
 Authorization ends upon material scope change, validation failure, discovery
 of real evidence, or conflict with an Accepted decision.
+
+## Day 17 confirmation
+
+CP0 and CP1 remain the only authorized pilot classes.
+
+CP2 and CP3 remain blocked under ADR-0025.
