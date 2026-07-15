@@ -1,0 +1,149 @@
+{
+  "schema": "mingos.kernel-scope-authority-map.v0.2",
+  "status": "Draft",
+  "version": "0.2.0-draft.1",
+  "decision_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "primary_decision": {
+    "id": "ADR-0026",
+    "status": "Proposed",
+    "decision": "governed-specification-family",
+    "authority_status": "proposed-not-accepted"
+  },
+  "repository_location": "standards/kernel/",
+  "reserved_documents": [
+    {
+      "id": "KERNEL-0000",
+      "title": "Specification Family Index and Lifecycle",
+      "planned_round": 7,
+      "exists": false
+    },
+    {
+      "id": "KERNEL-0001",
+      "title": "Core Operational Contract",
+      "planned_round": 7,
+      "exists": false
+    },
+    {
+      "id": "KERNEL-0002",
+      "title": "Canonical Object and Data Model",
+      "planned_round": 8,
+      "exists": false
+    },
+    {
+      "id": "KERNEL-0003",
+      "title": "Lifecycle and State Machines",
+      "planned_round": 8,
+      "exists": false
+    },
+    {
+      "id": "KERNEL-0004",
+      "title": "Conformance Requirements and Evidence Classes",
+      "planned_round": 9,
+      "exists": false
+    },
+    {
+      "id": "KERNEL-0005",
+      "title": "Test Specifications and Derived Indexes",
+      "planned_round": 9,
+      "exists": false
+    }
+  ],
+  "source_classes": [
+    "CharterOfLife",
+    "MingOSCharter",
+    "ArchitectureDecision",
+    "MOSProcess",
+    "KernelFamily",
+    "RFC",
+    "Profile",
+    "Implementation",
+    "PublicCommunication",
+    "DerivedIndexOrTest"
+  ],
+  "conformance": {
+    "current_claim": "NoCurrentKernelConformanceClaim",
+    "claim_unit": "versioned-declared-implementation-boundary",
+    "requirements_document_exists": false,
+    "test_specification_exists": false,
+    "reference_implementation_exists": false,
+    "product_assessment_count": 0
+  },
+  "replaceability": {
+    "replaceable_categories": [
+      "model-provider-and-version",
+      "prompt-and-orchestration",
+      "ui-and-language",
+      "storage-engine",
+      "programming-language-framework",
+      "deployment-topology",
+      "workflow-tool-provider",
+      "domain-method-curriculum",
+      "commercial-delivery-channel"
+    ],
+    "preserved_obligation_categories": [
+      "role-and-affected-person-separation",
+      "representative-authority",
+      "consent-purpose-contestability",
+      "knowledge-status-separation",
+      "provenance-evidence-uncertainty",
+      "safety-handoff-appeal-incident",
+      "memory-rights-and-lifecycle",
+      "human-accountability-ai-limits",
+      "affected-person-participation",
+      "audit-failure-counterexample-unknown"
+    ]
+  },
+  "minimum_roles": [
+    "AffectedPerson",
+    "Subject",
+    "Speaker",
+    "Representative",
+    "Operator",
+    "Practitioner",
+    "Reviewer",
+    "AccountableHuman",
+    "AccountableOrganization",
+    "AIComponent",
+    "ServiceProvider",
+    "EvidenceCustodian"
+  ],
+  "workstream_boundary": {
+    "day16_stage": "Foundation 1.0 / Day 16",
+    "day16_version": "1.0.0-alpha.16",
+    "cp0_cp1": "authorized-and-complete",
+    "cp2_cp3": "blocked",
+    "human_review_executed": false,
+    "product_conformance_proven": false,
+    "named_role_assignments": 0,
+    "human_use_protocol_approvals": 0,
+    "live_evidence_environments": 0,
+    "human_sessions": 0,
+    "participant_evidence_records": 0
+  },
+  "round06_non_goals": [
+    "create-kernel-core-specification",
+    "define-final-object-model",
+    "define-final-state-machines",
+    "create-conformance-suite",
+    "claim-product-conformance",
+    "promote-charters-rfcs-profiles-or-mos",
+    "activate-human-review",
+    "change-day17-stage-or-version"
+  ],
+  "integrity": {
+    "reserved_document_count": 6,
+    "minimum_role_count": 12,
+    "current_kernel_document_count": 0,
+    "implementation_conformance_claim": false,
+    "primary_heading_matches_id": true,
+    "repository_kernel_prefix_supported": false
+  },
+  "decision_heading_id": "ADR-0026",
+  "round07_prerequisites": [
+    "repository-id-validator-supports-kernel-prefix",
+    "kernel-family-validator-added-to-full-suite",
+    "created-kernel-documents-indexed",
+    "reserved-uncreated-ids-remain-absent",
+    "no-current-kernel-conformance-claim-preserved"
+  ]
+}
