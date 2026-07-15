@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/restricted-nomination-workspace-manifest.schema.json",
+  "title": "Restricted Nomination Workspace Public Manifest",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "public_repository_contains_real_identity_records",
+    "workspace_path",
+    "gitignore_required",
+    "initializer",
+    "required_private_records",
+    "current_state"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "public_repository_contains_real_identity_records": {
+      "const": false
+    },
+    "gitignore_required": {
+      "const": true
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "registry_id": "MING-NAMED-ACCOUNTABILITY-PUBLIC-REGISTER-0001",
   "title": "Named Accountability Public Register",
   "status": "Accepted accountability infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0094",
   "identity_boundary": {
     "public_real_names_allowed": false,
@@ -222,5 +222,8 @@
     "conflict_checks_complete": 0,
     "independence_checks_complete": 0,
     "activation_authorities": 0
-  }
+  },
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "cp2_slot_plan": "standards/review/CP2_NOMINATION_SLOT_PLAN.json",
+  "restricted_workspace_manifest": "standards/review/RESTRICTED_NOMINATION_WORKSPACE_MANIFEST.json"
 }

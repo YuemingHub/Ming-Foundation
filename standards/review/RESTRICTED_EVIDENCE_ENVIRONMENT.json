@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "environment_id": "MING-RESTRICTED-EVIDENCE-ENVIRONMENT-0001",
   "title": "Restricted Evidence Environment Control Specification",
   "status": "Accepted design specification",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0086",
   "design_state": "Complete",
   "live_environment_state": "NotProvisioned",
@@ -102,5 +102,7 @@
   },
   "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
   "day17_deployment_plan": "standards/review/EVIDENCE_ENVIRONMENT_DEPLOYMENT_PLAN.json",
-  "deployment_readiness_state": "PlanCompleteNotProvisioned"
+  "deployment_readiness_state": "PlanCompleteNotProvisioned",
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "day18_cp2_minimum_control_set": "standards/review/CP2_MINIMUM_ENVIRONMENT_CONTROL_SET.json"
 }

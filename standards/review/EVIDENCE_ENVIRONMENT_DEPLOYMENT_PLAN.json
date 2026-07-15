@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-EVIDENCE-ENVIRONMENT-DEPLOYMENT-PLAN-0001",
   "title": "Restricted Evidence Environment Deployment and Verification Plan",
   "status": "Accepted activation-readiness infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0098",
   "overall_state": "PlannedNotProvisioned",
   "live_evidence_ingestion": "Prohibited",
@@ -90,5 +90,7 @@
     "deployed": 0,
     "verified": 0,
     "live_evidence_controls_ready": 0
-  }
+  },
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "cp2_minimum_control_set": "standards/review/CP2_MINIMUM_ENVIRONMENT_CONTROL_SET.json"
 }

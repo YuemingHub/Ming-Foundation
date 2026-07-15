@@ -44,3 +44,10 @@ Human-use approvals:         0
 Synthetic-use design approval from Day 16 remains valid only for CP0 and CP1.
 
 Human use remains blocked.
+
+## Day 18 relation
+
+The CP2 applicability matrix identifies six required or adapted approval
+routes and one protocol that is not applicable to CP2.
+
+No human-use approval is complete.

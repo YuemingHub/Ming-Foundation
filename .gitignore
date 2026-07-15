@@ -26,6 +26,9 @@ __pycache__/
 # Personal or case data
 data/
 private/
+private/accountability/
+restricted-accountability/
+.ming-private/
 cases/raw/
 *.ndjson
 *.sqlite

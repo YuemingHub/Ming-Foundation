@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "plan_id": "MING-AFFECTED-PERSON-REVIEW-PLAN-0001",
   "title": "Affected-Person and Domain Review Preparation Plan",
   "status": "Accepted preparation record",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0067",
   "execution_state": "PreparedNotExecuted",
   "summary": {
@@ -205,5 +205,8 @@
   "day16_gate": "GOV-0090",
   "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
   "named_accountability_state": "FrameworkCompleteNoNamedAssignees",
-  "human_activation_state": "Blocked"
+  "human_activation_state": "Blocked",
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "cp2_preauthorization_state": "ConditionallyApprovedNotEffective",
+  "cp3_state": "Blocked"
 }

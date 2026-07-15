@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "matrix_id": "MING-CP2-PROTOCOL-APPLICABILITY-0001",
+  "title": "CP2 Protocol Applicability Matrix",
+  "status": "Accepted pre-authorization infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0107",
+  "cp2_scope": "Internal staff process rehearsal with no affected-person participation, no participant evidence, and no live product effects.",
+  "overall_state": "ApplicabilityDefinedApprovalsOutstanding",
+  "protocols": [
+    {
+      "approval_id": "APR-APP-001",
+      "applicability": "AdaptedStaffParticipationApprovalRequired",
+      "reason": "CP2 staff must voluntarily agree to the rehearsal and may stop without employment, service, or compensation penalty.",
+      "approval_state": "NotApproved"
+    },
+    {
+      "approval_id": "APR-APP-002",
+      "applicability": "Required",
+      "reason": "A staff rehearsal may still encounter distress, sensitive disclosure, or safeguarding concerns.",
+      "approval_state": "NotApproved"
+    },
+    {
+      "approval_id": "APR-APP-003",
+      "applicability": "Required",
+      "reason": "Restricted role, contact, access, incident, and rehearsal records require controlled handling.",
+      "approval_state": "NotApproved"
+    },
+    {
+      "approval_id": "APR-APP-004",
+      "applicability": "Required",
+      "reason": "Staff rights and stop routes must be usable through accessible language and communication channels.",
+      "approval_state": "NotApproved"
+    },
+    {
+      "approval_id": "APR-APP-005",
+      "applicability": "Required",
+      "reason": "Team hierarchy, friendship, compensation, or founder authority must not coerce participation.",
+      "approval_state": "NotApproved"
+    },
+    {
+      "approval_id": "APR-APP-006",
+      "applicability": "NotApplicableToCP2",
+      "reason": "CP2 contains no child, adolescent, family, client, or affected-person participation.",
+      "approval_state": "NotApplicable"
+    },
+    {
+      "approval_id": "APR-APP-007",
+      "applicability": "Required",
+      "reason": "The operating context and professional-duty boundaries of the staff rehearsal must be qualified.",
+      "approval_state": "NotApproved"
+    }
+  ],
+  "summary": {
+    "protocols": 7,
+    "required_or_adapted": 6,
+    "not_applicable": 1,
+    "approved_for_cp2_human_use": 0
+  }
+}

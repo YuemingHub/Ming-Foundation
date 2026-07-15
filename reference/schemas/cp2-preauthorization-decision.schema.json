@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-preauthorization-decision.schema.json",
+  "title": "CP2 Conditional Pre-Authorization Decision",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "decision_state",
+    "cp2_authorization_state",
+    "cp2_execution_state",
+    "preauthorization_scope",
+    "not_authorized",
+    "conditions_precedent",
+    "automatic_revocation",
+    "effective"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "decision_state": {
+      "const": "ConditionallyApprovedNotEffective"
+    },
+    "cp2_authorization_state": {
+      "const": "Blocked"
+    },
+    "cp2_execution_state": {
+      "const": "NotExecuted"
+    },
+    "effective": {
+      "const": false
+    }
+  }
+}

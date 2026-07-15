@@ -5,7 +5,7 @@
   "status": "Accepted registry of Proposed profiles",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0058",
   "summary": {
     "profiles": 4,

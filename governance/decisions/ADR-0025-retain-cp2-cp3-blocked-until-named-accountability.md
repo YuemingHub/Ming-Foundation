@@ -43,3 +43,9 @@ safeguarding, accessibility, and independent facilitation readiness.
 A complete accountability framework is not named accountability.
 
 Tabletop success is not human-review activation.
+
+## Day 18 confirmation
+
+Conditional pre-authorization does not satisfy named accountability.
+
+CP2 and CP3 remain Blocked.

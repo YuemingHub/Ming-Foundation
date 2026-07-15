@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-nomination-slot-plan.schema.json",
+  "title": "CP2 Nomination Slot Plan",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "minimum_distinct_people",
+    "slots",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "SlotsDefinedNoRealNominations"
+    },
+    "minimum_distinct_people": {
+      "const": 3
+    },
+    "slots": {
+      "type": "array",
+      "minItems": 4
+    },
+    "summary": {
+      "type": "object"
+    }
+  }
+}

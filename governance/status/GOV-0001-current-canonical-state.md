@@ -168,6 +168,26 @@ related:
 - GOV-0102
 - ADR-0024
 - ADR-0025
+- GOV-0103
+- GOV-0104
+- GOV-0105
+- GOV-0106
+- GOV-0107
+- GOV-0108
+- GOV-0109
+- GOV-0110
+- GOV-0111
+- GOV-0112
+- ADR-0027
+- ADR-0028
+- REF-0035
+- GOV-TPL-0029
+- GOV-TPL-0030
+- GOV-TPL-0031
+- GOV-TPL-0032
+- GOV-TPL-0033
+- GOV-TPL-0034
+- GOV-TPL-0035
 - REF-0020
 - GOV-TPL-0023
 - GOV-TPL-0024
@@ -178,7 +198,7 @@ related:
 status: Accepted
 title: Current Canonical State
 updated: 2026-07-14
-version: 1.0.0-alpha.17
+version: 1.0.0-alpha.18
 ---
 
 # GOV-0001 — Current Canonical State
@@ -203,7 +223,7 @@ The following facts are accepted:
   `https://github.com/YuemingHub/Ming-Foundation`
 - **Repository visibility:** public
 - **Current repository stage:** Foundation 1.0 / Day 17 — Human Review Activation Readiness and Named Accountability
-- **Current repository version:** `1.0.0-alpha.17`
+- **Current repository version:** `1.0.0-alpha.18`
 
 `mingos.cn` is the official public interface of MingOS. It communicates
 the project to users, contributors, researchers, partners, and the wider
@@ -296,6 +316,15 @@ decisions, and governance records.
 - Day 17 CP2 readiness plan;
 - Day 17 ten passed synthetic accountability tabletop scenarios;
 - Day 17 human-activation gate retaining CP2 and CP3 at Blocked.
+- Day 18 current-main and collision-free numbering audit;
+- Day 18 restricted nomination workspace and confidentiality boundary;
+- Day 18 four-slot CP2 nomination topology;
+- Day 18 restricted intake and verification protocol;
+- Day 18 CP2 protocol applicability matrix;
+- Day 18 CP2 minimum environment control set;
+- Day 18 inactive conditional CP2 pre-authorization;
+- Day 18 twelve passed synthetic pre-authorization scenarios;
+- Day 18 gate retaining CP2 and CP3 at Blocked.
 
 ### In progress
 
@@ -410,25 +439,24 @@ Any update to this document MUST:
 
 ## 9. Next canonical work
 
-After Day 17, the next canonical work is Restricted Role Nomination and CP2 Pre-Authorization:
+After Day 18, the next canonical work is Restricted Nomination Execution and CP2 Activation Evidence:
 
 1. run `python scripts/validate_all.py`;
-2. nominate real people only through the restricted accountability process;
-3. obtain voluntary role acceptance;
-4. complete qualification, conflict, independence, scope, expiry, recusal,
-   and replacement checks;
-5. staff the minimum three-person CP2 topology;
-6. obtain separately qualified jurisdiction and professional review;
-7. approve the human-use protocols applicable to CP2;
-8. deploy and verify only the evidence controls needed for the authorized
-   staff-rehearsal scope;
-9. record a separate CP2 authorization decision;
-10. keep CP3, recruitment, affected-person sessions, participant evidence,
-    and live product effects blocked;
-11. keep real names, contacts, certificates, signatures, and detailed
-    conflict evidence outside the public repository;
-12. retain all RFCs and Profiles at Proposed;
-13. retain both Charters at Candidate;
-14. keep implementation conformance separately scoped and empty;
-15. stop and regenerate the package if `main` advances before application;
-16. do not enter another repository without explicit user instruction.
+2. initialize the Git-ignored restricted nomination workspace;
+3. nominate real people only after voluntary consent to assessment;
+4. obtain acceptance, qualification, conflict, independence, scope, expiry,
+   recusal, and replacement decisions;
+5. staff Slots A, B, and C with three distinct people;
+6. obtain valid operating-context and professional review for Slot D;
+7. approve the six CP2-applicable or adapted human-use protocols;
+8. deploy and independently verify the eight CP2 minimum controls;
+9. execute a staff-only dry run that contains no participant or case evidence;
+10. record a separate effective CP2 activation decision only when every gate passes;
+11. keep CP3, affected-person recruitment, participant sessions, participant
+    evidence, live product effects, and public conformance claims blocked;
+12. keep all real identity and verification records outside the public repository;
+13. retain all RFC and Profile statuses;
+14. retain both Charters and their paired translations at current statuses;
+15. keep implementation conformance separately scoped and empty;
+16. stop and regenerate if `main` advances before application;
+17. do not enter another repository without explicit user instruction.

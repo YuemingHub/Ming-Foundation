@@ -55,3 +55,11 @@ Product conformance results:      0
 Open ambiguities:                19
 Open dissent items:               8
 ```
+
+## Day 18 relation
+
+Day 17 remains historical evidence for the zero-assignment and
+human-activation boundary.
+
+Day 18 adds only restricted nomination and conditional pre-authorization
+infrastructure.

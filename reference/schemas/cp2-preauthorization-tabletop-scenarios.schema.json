@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-preauthorization-tabletop-scenarios.schema.json",
+  "title": "CP2 Pre-Authorization Tabletop Scenarios",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "data_policy",
+    "scenarios"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "data_policy": {
+      "const": "SyntheticOnly"
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 12
+    }
+  }
+}

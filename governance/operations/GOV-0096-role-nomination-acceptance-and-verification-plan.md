@@ -60,3 +60,10 @@ Nominations started: 0
 Acceptances complete: 0
 Active assignments: 0
 ```
+
+## Day 18 relation
+
+The restricted intake protocol, private workspace, and CP2 slot records are
+ready for real use.
+
+Execution remains zero.

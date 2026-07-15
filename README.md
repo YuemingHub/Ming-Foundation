@@ -156,8 +156,17 @@ Charter governance and validation:
 - [`governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md`](governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md)
 - [`governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md`](governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md)
 - [`reference/REF-0020-named-accountability-and-human-activation-guide.md`](reference/REF-0020-named-accountability-and-human-activation-guide.md)
+- [`governance/audits/GOV-0103-day18-current-main-and-numbering-audit.md`](governance/audits/GOV-0103-day18-current-main-and-numbering-audit.md)
+- [`governance/operations/GOV-0104-restricted-nomination-workspace-and-confidentiality-boundary.md`](governance/operations/GOV-0104-restricted-nomination-workspace-and-confidentiality-boundary.md)
+- [`governance/operations/GOV-0105-cp2-restricted-nomination-slot-plan.md`](governance/operations/GOV-0105-cp2-restricted-nomination-slot-plan.md)
+- [`governance/operations/GOV-0106-restricted-nomination-intake-and-verification-protocol.md`](governance/operations/GOV-0106-restricted-nomination-intake-and-verification-protocol.md)
+- [`governance/decisions/GOV-0109-cp2-conditional-preauthorization-decision.md`](governance/decisions/GOV-0109-cp2-conditional-preauthorization-decision.md)
+- [`governance/reviews/GOV-0110-day18-restricted-nomination-and-cp2-preauthorization-gate.md`](governance/reviews/GOV-0110-day18-restricted-nomination-and-cp2-preauthorization-gate.md)
+- [`governance/decisions/ADR-0027-keep-restricted-nomination-records-outside-public-repository.md`](governance/decisions/ADR-0027-keep-restricted-nomination-records-outside-public-repository.md)
+- [`governance/decisions/ADR-0028-record-conditional-cp2-preauthorization-without-activation.md`](governance/decisions/ADR-0028-record-conditional-cp2-preauthorization-without-activation.md)
+- [`reference/REF-0035-restricted-nomination-and-cp2-preauthorization-guide.md`](reference/REF-0035-restricted-nomination-and-cp2-preauthorization-guide.md)
 
-**Status note:** the two Charters remain `Candidate`; RFC-0001 through RFC-0005, GOV-0015, and PROF-0001 through PROF-0004 remain `Proposed`. The named-accountability framework is complete, but no real person is nominated or assigned; CP2, CP3, human-use approvals, recruitment, human sessions, live evidence, and implementation conformance remain blocked.
+**Status note:** both Charters remain `Candidate`; all RFCs and Profiles retain their existing statuses. Restricted nomination infrastructure and conditional CP2 pre-authorization are ready, but no real person is nominated, CP2 remains `Blocked / NotExecuted`, CP3 remains blocked, and implementation conformance remains empty.
 
 ## Mission
 
@@ -293,7 +302,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Version
 
-Current repository foundation version: **1.0.0-alpha.17**
+Current repository foundation version: **1.0.0-alpha.18**
 
 ## License
 

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "MING-RESTRICTED-NOMINATION-WORKSPACE-0001",
+  "title": "Restricted Nomination Workspace Public Manifest",
+  "status": "Accepted confidentiality infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0104",
+  "public_repository_contains_real_identity_records": false,
+  "workspace_path": ".ming-private/day18-role-nomination/",
+  "gitignore_required": true,
+  "initializer": "scripts/init_restricted_nomination_workspace.py",
+  "required_private_records": [
+    "restricted-accountability-register.json",
+    "nomination-intake/",
+    "role-acceptance/",
+    "qualification-and-conflict/",
+    "protocol-signoffs/",
+    "environment-verification/",
+    "cp2-activation/",
+    "incident-and-stop/"
+  ],
+  "current_state": {
+    "workspace_claimed_initialized": false,
+    "real_identity_records_claimed": 0,
+    "nominations_claimed": 0,
+    "acceptances_claimed": 0,
+    "verification_records_claimed": 0
+  }
+}
