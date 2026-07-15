@@ -158,6 +158,8 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | MOS-0000 | [Standard Process](standards/mos/MOS-0000-standard-process.md)                                                                                   | Draft    |
 | KERNEL-0000 | [MingOS Kernel Specification Family Index and Lifecycle](standards/kernel/KERNEL-0000-specification-family-index.md) | Draft |
 | KERNEL-0001 | [MingOS Kernel Core Operational Contract](standards/kernel/KERNEL-0001-core-operational-contract.md) | Draft |
+| KERNEL-0002 | [MingOS Kernel Canonical Object and Data Model](standards/kernel/KERNEL-0002-canonical-object-data-model.md) | Draft |
+| KERNEL-0003 | [MingOS Kernel Lifecycle and State Machines](standards/kernel/KERNEL-0003-lifecycle-state-machines.md) | Draft |
 | RFC-0001 | [Subject Speaker and Contestability Protocol](standards/rfc/RFC-0001-subject-speaker-and-contestability.md)                                      | Proposed |
 | RFC-0002 | [Consent and Data Rights Lifecycle Protocol](standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md)                                        | Proposed |
 | RFC-0003 | [Safety Escalation Human Handoff Appeal and Incident Protocol](standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md)          | Proposed |
@@ -252,6 +254,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0032 | [Kernel Core Ambiguity Dissent and Open-Question Register](reference/kernel/REF-0032-kernel-core-ambiguity-register.md) | Draft |
 | REF-0033 | [Kernel Core Review and Evidence Protocol](reference/kernel/REF-0033-kernel-core-review-protocol.md) | Draft |
 | REF-0034 | [Kernel Core Provisional Vocabulary and Status Map](reference/kernel/REF-0034-kernel-core-vocabulary-status-map.md) | Draft |
+| REF-0035 | [Kernel Object Catalog and Core Requirement Crosswalk](reference/kernel/REF-0035-kernel-object-catalog-crosswalk.md) | Draft |
+| REF-0036 | [Kernel Lifecycle Transition and Invariant Matrix](reference/kernel/REF-0036-kernel-lifecycle-transition-invariant-matrix.md) | Draft |
+| REF-0037 | [Kernel Access Privacy Retention and Audit Boundary Matrix](reference/kernel/REF-0037-kernel-access-privacy-retention-audit-matrix.md) | Draft |
+| REF-0038 | [Kernel Object and Lifecycle Ambiguity Review Register](reference/kernel/REF-0038-kernel-object-lifecycle-ambiguity-register.md) | Draft |
+| REF-0039 | [Round 08 Object and Lifecycle Review Protocol](reference/kernel/REF-0039-round08-object-lifecycle-review-protocol.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

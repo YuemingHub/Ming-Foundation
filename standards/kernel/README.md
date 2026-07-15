@@ -2,7 +2,7 @@
 id: MOS-KERNEL-README
 title: MingOS Kernel specification family
 status: Draft
-version: 0.3.0-draft.2
+version: 0.4.0-draft.3
 layer: Standards
 owner: Ming Foundation Kernel Architecture
 created: 2026-07-14
@@ -30,3 +30,5 @@ normative levels, source treatment, proposed verification/evidence and full
 Markdown/JSON synchronization.
 
 `NoCurrentKernelConformanceClaim`
+
+Round 08 Drafts: KERNEL-0002 / 0.1.0-draft.1 and KERNEL-0003 / 0.1.0-draft.1. KERNEL-0004/0005 remain absent.

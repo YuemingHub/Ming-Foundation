@@ -2,7 +2,7 @@
 id: KERNEL-0001
 title: MingOS Kernel Core Operational Contract
 status: Draft
-version: 0.2.0-draft.2
+version: 0.2.1-draft.3
 layer: Layer 2 — Standards
 owner: Ming Foundation Kernel Architecture
 created: 2026-07-15
@@ -174,9 +174,15 @@ services and organization-level obligations. Validation cannot resolve them.
 
 ```text
 KERNEL-0000/0001: Draft / 0.2.0-draft.2
-KERNEL-0002..0005: not created
+KERNEL-0002: Draft / 0.1.0-draft.1
+KERNEL-0003: Draft / 0.1.0-draft.1
+KERNEL-0004..0005: not created
 External review: not executed
 Implementation assessment: not executed
 Current conforming products: 0
 Overall: NoCurrentKernelConformanceClaim
 ```
+
+## 14. Round 08 integration note
+
+KERNEL-0002/0003 provide Draft objects and lifecycles without resolving KCR ambiguities or changing KCR wording.

@@ -2,7 +2,7 @@
 id: KERNEL-0000
 title: MingOS Kernel Specification Family Index and Lifecycle
 status: Draft
-version: 0.2.0-draft.2
+version: 0.3.0-draft.3
 layer: Layer 2 — Standards
 owner: Ming Foundation Kernel Architecture
 created: 2026-07-15
@@ -74,7 +74,9 @@ family_version: kernel-family/0.2.0-draft.2
 ADR-0026: Proposed / 0.2.0
 KERNEL-0000: Draft / 0.2.0-draft.2
 KERNEL-0001: Draft / 0.2.0-draft.2
-KERNEL-0002..0005: ReservedNotCreated
+KERNEL-0002: Draft / 0.1.0-draft.1
+KERNEL-0003: Draft / 0.1.0-draft.1
+KERNEL-0004..0005: ReservedNotCreated
 claim: NoCurrentKernelConformanceClaim
 ```
 
@@ -146,3 +148,7 @@ Supersession MUST be explicit and history preserved.
 |---|---|---|---|
 | 0.1.0-draft.1 | 2026-07-15 | Initial family index | Draft |
 | 0.2.0-draft.2 | 2026-07-15 | MOS completeness, exact source baseline and semantic synchronization | Draft |
+
+## 14. Round 08 family update
+
+KERNEL-0002 and KERNEL-0003 are added as Drafts. KERNEL-0004/0005 remain absent. No conformance claim is created.
