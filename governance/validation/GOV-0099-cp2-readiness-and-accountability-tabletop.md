@@ -57,3 +57,9 @@ and deletion, distress disclosure, compensation coercion, and assignment
 expiry.
 
 Tabletop success does not authorize CP2.
+
+## Day 18 relation
+
+Twelve additional CP2 pre-authorization scenarios pass using synthetic data.
+
+CP2 remains blocked and unexecuted.

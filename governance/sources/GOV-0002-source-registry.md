@@ -18,7 +18,7 @@ related:
 status: Accepted
 title: Source Registry
 updated: 2026-07-12
-version: 1.0.0-alpha.17
+version: 1.0.0-alpha.18
 ---
 
 # GOV-0002 — Source Registry
@@ -242,3 +242,12 @@ governance records.
 
 They are not real-person assignments, private identity records, human-use
 approvals, live control evidence, or participant evidence.
+
+## 20. Day 18 restricted nomination evidence
+
+Public slot states, non-identifying restricted-record references,
+pre-authorization decisions, and synthetic tabletop evidence are canonical
+governance records.
+
+Private identity, qualification, conflict, signature, and acceptance records
+remain outside the public repository.

@@ -112,6 +112,16 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-0100 | [Day 17 Human Review Activation Readiness Gate](governance/reviews/GOV-0100-day17-human-review-activation-readiness-gate.md) | Accepted |
 | GOV-0101 | [Day 17 Status Recommendation](governance/reviews/GOV-0101-day17-status-recommendation.md) | Accepted |
 | GOV-0102 | [Day 17 Validation Record](governance/validation/GOV-0102-day17-validation-record.md) | Accepted |
+| GOV-0103 | [Day 18 Current-Main and Numbering Audit](governance/audits/GOV-0103-day18-current-main-and-numbering-audit.md) | Accepted |
+| GOV-0104 | [Restricted Nomination Workspace and Confidentiality Boundary](governance/operations/GOV-0104-restricted-nomination-workspace-and-confidentiality-boundary.md) | Accepted |
+| GOV-0105 | [CP2 Restricted Nomination Slot Plan](governance/operations/GOV-0105-cp2-restricted-nomination-slot-plan.md) | Accepted |
+| GOV-0106 | [Restricted Nomination Intake and Verification Protocol](governance/operations/GOV-0106-restricted-nomination-intake-and-verification-protocol.md) | Accepted |
+| GOV-0107 | [CP2 Protocol Applicability Matrix](governance/operations/GOV-0107-cp2-protocol-applicability-matrix.md) | Accepted |
+| GOV-0108 | [CP2 Minimum Evidence Environment Control Set](governance/operations/GOV-0108-cp2-minimum-evidence-environment-control-set.md) | Accepted |
+| GOV-0109 | [CP2 Conditional Pre-Authorization Decision](governance/decisions/GOV-0109-cp2-conditional-preauthorization-decision.md) | Accepted |
+| GOV-0110 | [Day 18 Restricted Nomination and CP2 Pre-Authorization Gate](governance/reviews/GOV-0110-day18-restricted-nomination-and-cp2-preauthorization-gate.md) | Accepted |
+| GOV-0111 | [Day 18 Status Recommendation](governance/reviews/GOV-0111-day18-status-recommendation.md) | Accepted |
+| GOV-0112 | [Day 18 Validation Record](governance/validation/GOV-0112-day18-validation-record.md) | Accepted |
 | GOV-TPL-0005 | [RFC-0001 Review Checklist](governance/templates/gov-tpl-0005-rfc-0001-review-checklist.md) | Accepted |
 | GOV-TPL-0006 | [RFC-0002 Review Checklist](governance/templates/gov-tpl-0006-rfc-0002-review-checklist.md) | Accepted |
 | GOV-TPL-0007 | [RFC-0003 Review Checklist](governance/templates/gov-tpl-0007-rfc-0003-review-checklist.md) | Accepted |
@@ -137,6 +147,13 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | GOV-TPL-0026 | [Human-Use Protocol Sign-Off](governance/templates/GOV-TPL-0026-human-use-protocol-signoff.md) | Accepted |
 | GOV-TPL-0027 | [Evidence Environment Deployment Verification](governance/templates/GOV-TPL-0027-evidence-environment-deployment-verification.md) | Accepted |
 | GOV-TPL-0028 | [Human Review Activation Decision](governance/templates/GOV-TPL-0028-human-review-activation-decision.md) | Accepted |
+| GOV-TPL-0029 | [Restricted Nomination Slot Record](governance/templates/GOV-TPL-0029-restricted-nomination-slot-record.md) | Accepted |
+| GOV-TPL-0030 | [Restricted Accountability Index](governance/templates/GOV-TPL-0030-restricted-accountability-index.md) | Accepted |
+| GOV-TPL-0031 | [Qualification Conflict and Independence Decision](governance/templates/GOV-TPL-0031-qualification-conflict-and-independence-decision.md) | Accepted |
+| GOV-TPL-0032 | [CP2 Protocol Applicability Sign-Off](governance/templates/GOV-TPL-0032-cp2-protocol-applicability-signoff.md) | Accepted |
+| GOV-TPL-0033 | [CP2 Environment Control Verification](governance/templates/GOV-TPL-0033-cp2-environment-control-verification.md) | Accepted |
+| GOV-TPL-0034 | [CP2 Conditional Pre-Authorization Record](governance/templates/GOV-TPL-0034-cp2-conditional-preauthorization-record.md) | Accepted |
+| GOV-TPL-0035 | [CP2 Effective Activation Decision](governance/templates/GOV-TPL-0035-cp2-effective-activation-decision.md) | Accepted |
 | GOV-TPL-0004 | [External Implementation Evidence Intake Record](governance/templates/GOV-TPL-0004-external-implementation-evidence-intake.md) | Accepted |
 
 ## Foundation
@@ -194,6 +211,8 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 
 | ADR-0024 | [Separate Public Accountability from Restricted Identity](governance/decisions/ADR-0024-separate-public-accountability-from-restricted-identity.md) | Accepted |
 | ADR-0025 | [Retain CP2 and CP3 Blocked Until Named Accountability](governance/decisions/ADR-0025-retain-cp2-cp3-blocked-until-named-accountability.md) | Accepted |
+| ADR-0027 | [Keep Restricted Nomination Records Outside the Public Repository](governance/decisions/ADR-0027-keep-restricted-nomination-records-outside-public-repository.md) | Accepted |
+| ADR-0028 | [Record Conditional CP2 Pre-Authorization Without Activation](governance/decisions/ADR-0028-record-conditional-cp2-preauthorization-without-activation.md) | Accepted |
 | ADR-0026 | [Define MingOS Kernel as a Governed Specification Family](governance/decisions/ADR-0026-define-mingos-kernel-specification-family.md) | Proposed |
 
 ## Profiles
@@ -242,6 +261,7 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0022 | [MingOS 宪章规范强度与关键词矩阵](reference/charter/REF-0022-mingos-charter-normative-force-matrix.md) | Draft |
 | REF-0023 | [MingOS 宪章承诺—合同—实现状态映射](reference/charter/REF-0023-mingos-charter-commitment-contract-map.md) | Draft |
 | REF-0024 | [MingOS 宪章双语歧义与领域审查登记](reference/charter/REF-0024-mingos-charter-ambiguity-review-register.md) | Draft |
+| REF-0035 | [Restricted Nomination and CP2 Pre-Authorization Guide](reference/REF-0035-restricted-nomination-and-cp2-preauthorization-guide.md) | Accepted |
 | REF-0025 | [MingOS 宪章受影响者、商业、专业与实现审查协议](reference/charter/REF-0025-mingos-charter-review-protocol.md) | Draft |
 | REF-0026 | [MingOS Kernel Specification Family and Identifier Allocation Map](reference/kernel/REF-0026-kernel-family-and-id-allocation-map.md) | Draft |
 | REF-0027 | [MingOS Kernel Normative Authority and Precedence Matrix](reference/kernel/REF-0027-kernel-normative-authority-precedence-matrix.md) | Draft |

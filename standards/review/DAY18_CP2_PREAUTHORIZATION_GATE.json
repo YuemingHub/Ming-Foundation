@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "MING-DAY18-CP2-PREAUTHORIZATION-GATE-0001",
+  "title": "Day 18 Restricted Nomination and CP2 Pre-Authorization Gate",
+  "status": "Accepted gate assessment",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0110",
+  "overall_state": "RestrictedNominationInfrastructureReadyCP2PreauthorizationInactive",
+  "restricted_nomination_infrastructure_ready": true,
+  "cp2_preauthorization_recorded": true,
+  "cp2_preauthorization_effective": false,
+  "cp2_authorized": false,
+  "cp2_executed": false,
+  "cp3_authorized": false,
+  "recruitment_authorized": false,
+  "participant_evidence_exists": false,
+  "items": [
+    {
+      "gate_item_id": "D18-G01",
+      "title": "Current-main and numbering audit",
+      "result": "Pass",
+      "finding": "Day18 is based on 394f494f and starts at GOV-0103, ADR-0027, REF-0035, and GOV-TPL-0029."
+    },
+    {
+      "gate_item_id": "D18-G02",
+      "title": "Day17 execution evidence",
+      "result": "Pass",
+      "finding": "PR #7 is merged and Day17 feature validations succeeded."
+    },
+    {
+      "gate_item_id": "D18-G03",
+      "title": "Restricted workspace boundary",
+      "result": "Pass",
+      "finding": "Private paths and public-manifest boundaries are defined."
+    },
+    {
+      "gate_item_id": "D18-G04",
+      "title": "Git-ignore protection",
+      "result": "Pass",
+      "finding": "The application script requires .ming-private and restricted-accountability paths to be ignored."
+    },
+    {
+      "gate_item_id": "D18-G05",
+      "title": "CP2 nomination slots",
+      "result": "Pass",
+      "finding": "Four slots and a three-distinct-person minimum are defined."
+    },
+    {
+      "gate_item_id": "D18-G06",
+      "title": "Separation-of-duties mapping",
+      "result": "Pass",
+      "finding": "Conditional combinations and absolute separation rules remain binding."
+    },
+    {
+      "gate_item_id": "D18-G07",
+      "title": "Restricted nomination workflow",
+      "result": "Pass",
+      "finding": "Nomination, acceptance, verification, scope, expiry, and replacement records are defined."
+    },
+    {
+      "gate_item_id": "D18-G08",
+      "title": "CP2 protocol applicability",
+      "result": "Pass",
+      "finding": "Six required or adapted approvals and one not-applicable protocol are identified."
+    },
+    {
+      "gate_item_id": "D18-G09",
+      "title": "CP2 environment minimum set",
+      "result": "Pass",
+      "finding": "Eight minimum controls and prohibited data classes are defined."
+    },
+    {
+      "gate_item_id": "D18-G10",
+      "title": "Conditional pre-authorization decision",
+      "result": "Pass",
+      "finding": "Preparation is conditionally approved while actual CP2 authorization remains blocked."
+    },
+    {
+      "gate_item_id": "D18-G11",
+      "title": "Synthetic pre-authorization tabletop",
+      "result": "Pass",
+      "finding": "Twelve synthetic scenarios pass with no real evidence."
+    },
+    {
+      "gate_item_id": "D18-G12",
+      "title": "Real restricted nominations",
+      "result": "Blocked",
+      "finding": "No real person is nominated."
+    },
+    {
+      "gate_item_id": "D18-G13",
+      "title": "Role acceptance and checks",
+      "result": "Blocked",
+      "finding": "No acceptance, qualification, conflict, or independence check is complete."
+    },
+    {
+      "gate_item_id": "D18-G14",
+      "title": "Three-person topology staffed",
+      "result": "Blocked",
+      "finding": "Slots A, B, and C are not staffed."
+    },
+    {
+      "gate_item_id": "D18-G15",
+      "title": "CP2 protocol sign-offs",
+      "result": "Blocked",
+      "finding": "No CP2 human-use protocol approval is complete."
+    },
+    {
+      "gate_item_id": "D18-G16",
+      "title": "CP2 environment deployment",
+      "result": "Blocked",
+      "finding": "No control is deployed or verified."
+    },
+    {
+      "gate_item_id": "D18-G17",
+      "title": "Jurisdiction and professional approval",
+      "result": "Blocked",
+      "finding": "No operating context is approved."
+    },
+    {
+      "gate_item_id": "D18-G18",
+      "title": "Separate CP2 activation decision",
+      "result": "Blocked",
+      "finding": "No effective activation decision exists."
+    }
+  ],
+  "summary": {
+    "gate_items": 18,
+    "pass": 11,
+    "blocked": 7,
+    "fail": 0
+  }
+}

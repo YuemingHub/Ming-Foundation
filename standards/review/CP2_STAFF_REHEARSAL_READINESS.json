@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-CP2-STAFF-REHEARSAL-READINESS-0001",
   "title": "CP2 Internal Staff Process Rehearsal Readiness Plan",
   "status": "Accepted readiness infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0099",
   "overall_state": "FrameworkReadyNamedStaffRequired",
   "authorization_state": "Blocked",
@@ -31,5 +31,11 @@
     "absence and replacement",
     "protocol expiry",
     "jurisdiction mismatch"
-  ]
+  ],
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "nomination_slot_plan": "standards/review/CP2_NOMINATION_SLOT_PLAN.json",
+  "protocol_applicability_matrix": "standards/review/CP2_PROTOCOL_APPLICABILITY_MATRIX.json",
+  "minimum_environment_control_set": "standards/review/CP2_MINIMUM_ENVIRONMENT_CONTROL_SET.json",
+  "preauthorization_decision": "standards/review/CP2_PREAUTHORIZATION_DECISION.json",
+  "preauthorization_state": "ConditionallyApprovedNotEffective"
 }

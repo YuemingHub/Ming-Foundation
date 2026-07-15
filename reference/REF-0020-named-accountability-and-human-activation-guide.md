@@ -53,3 +53,15 @@ Accountability tabletop passed
 
 The correct next step after Day 17 is restricted nomination and real
 verification, not public naming or participant recruitment.
+
+## Day 18 extension
+
+```text
+Private nomination workspace ready
+≠ real nomination
+
+Conditional CP2 pre-authorization
+≠ effective CP2 activation
+```
+
+See REF-0035.

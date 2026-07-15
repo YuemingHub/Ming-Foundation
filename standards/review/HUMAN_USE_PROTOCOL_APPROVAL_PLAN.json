@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "plan_id": "MING-HUMAN-USE-PROTOCOL-APPROVAL-PLAN-0001",
   "title": "Human-Use Protocol Approval Readiness Plan",
   "status": "Accepted activation-readiness infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0097",
   "overall_state": "AwaitingNamedApprovers",
   "protocols": [
@@ -100,5 +100,7 @@
     "named_primary_approvers": 0,
     "named_independent_reviewers": 0,
     "human_use_approved": 0
-  }
+  },
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "cp2_applicability_matrix": "standards/review/CP2_PROTOCOL_APPLICABILITY_MATRIX.json"
 }

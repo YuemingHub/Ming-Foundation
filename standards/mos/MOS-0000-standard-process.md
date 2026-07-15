@@ -2,7 +2,7 @@
 id: MOS-0000
 title: Ming Open Standards Process
 status: Draft
-version: 1.0.0-alpha.11
+version: 1.0.0-alpha.12
 layer: Layer 2 — Standards
 owner: Ming Foundation Standards
 created: 2026-07-12
@@ -420,3 +420,35 @@ conflict and qualification checks, applicable protocol approvals, bounded
 evidence controls, and a separate authorization decision.
 
 A synthetic tabletop cannot authorize CP2 or CP3.
+## 33. Restricted nomination records
+
+Real identity, contact, signature, qualification, conflict, and role
+acceptance records MUST remain outside the public repository.
+
+Public state MUST be traceable to a restricted source record without
+publishing the source content.
+
+## 34. Conditional pre-authorization
+
+A conditional pre-authorization MAY approve preparation but MUST NOT be
+treated as effective authorization.
+
+It MUST state:
+
+- preparation scope;
+- prohibited actions;
+- conditions precedent;
+- automatic revocation conditions;
+- effective state;
+- required separate activation decision.
+
+## 35. CP2 activation
+
+CP2 MUST remain blocked until:
+
+- the minimum distinct-person topology is staffed;
+- role acceptance and verification are complete;
+- applicable protocols are approved;
+- minimum environment controls are deployed and verified;
+- operating-context review is valid;
+- a separate activation decision is recorded.

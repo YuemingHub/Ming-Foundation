@@ -73,3 +73,9 @@ Recruitment: NotAuthorized
 Sessions: NotAuthorized
 Participant evidence: none
 ```
+
+## Day 18 relation
+
+Day 18 records a conditional pre-authorization route, not human activation.
+
+All seven Day 17 human-activation blockers remain unresolved.

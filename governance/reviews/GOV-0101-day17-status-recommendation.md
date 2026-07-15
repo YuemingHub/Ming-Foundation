@@ -42,3 +42,9 @@ Implementation conformance:      empty
 
 No Charter, RFC, Profile, core-text, reference, or public-conformance status
 is promoted by Day 17.
+
+## Day 18 confirmation
+
+The Day 17 status recommendation remains valid.
+
+No Charter, RFC, Profile, pilot class, or conformance state is promoted.

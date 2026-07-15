@@ -17,7 +17,7 @@ related:
 status: Accepted
 title: Charter Candidate Validation Plan
 updated: 2026-07-12
-version: 1.0.0-alpha.17
+version: 1.0.0-alpha.18
 ---
 
 # GOV-0006 — Charter Candidate Validation Plan
@@ -313,3 +313,8 @@ validation streams.
 Named-accountability infrastructure improves future human review but does not
 complete affected-person, legal, professional, implementation, or Charter
 validation.
+
+## 20. Day 18 boundary
+
+Restricted role nomination and CP2 pre-authorization do not validate either
+Charter, a real implementation, or affected-person review.

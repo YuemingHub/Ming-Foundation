@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-preauthorization-tabletop-results.schema.json",
+  "title": "CP2 Pre-Authorization Tabletop Results",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "data_policy",
+    "results",
+    "summary",
+    "real_nominations",
+    "human_staff_rehearsals",
+    "participants_recruited",
+    "participant_sessions",
+    "participant_evidence_records"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "data_policy": {
+      "const": "SyntheticOnly"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 12
+    },
+    "real_nominations": {
+      "const": 0
+    },
+    "human_staff_rehearsals": {
+      "const": 0
+    },
+    "participants_recruited": {
+      "const": 0
+    },
+    "participant_sessions": {
+      "const": 0
+    },
+    "participant_evidence_records": {
+      "const": 0
+    }
+  }
+}

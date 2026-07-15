@@ -60,3 +60,10 @@ A role title, candidate category, AI-generated name, organizational title, or
 private recollection MUST NOT be recorded as a real assignment.
 
 No person is assigned by Day 17.
+
+## Day 18 relation
+
+The public/private identity boundary is now implemented through a public
+workspace manifest and a Git-ignored restricted nomination path.
+
+No identity record or real nomination is claimed.

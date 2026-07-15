@@ -67,3 +67,10 @@ Distinct people assigned: 0
 CP2 authorized: no
 CP3 authorized: no
 ```
+
+## Day 18 relation
+
+The CP2 topology is expressed as four nomination slots.
+
+Slots A, B, and C still require three distinct real people. No slot is
+staffed.

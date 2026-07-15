@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "MING-CP2-PREAUTHORIZATION-0001",
+  "title": "CP2 Conditional Pre-Authorization Decision",
+  "status": "Accepted conditional pre-authorization",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0109",
+  "decision_date": "2026-07-15",
+  "decision_state": "ConditionallyApprovedNotEffective",
+  "cp2_authorization_state": "Blocked",
+  "cp2_execution_state": "NotExecuted",
+  "preauthorization_scope": [
+    "Prepare restricted nominations",
+    "Collect voluntary role acceptance and verification evidence",
+    "Approve CP2-applicable protocols",
+    "Deploy and verify CP2 minimum environment controls",
+    "Prepare a separate CP2 activation decision"
+  ],
+  "not_authorized": [
+    "CP2 staff rehearsal execution",
+    "CP3 affected-person pilot",
+    "Recruitment of affected people",
+    "Participant or case evidence",
+    "Live product effects",
+    "Public conformance claims"
+  ],
+  "conditions_precedent": [
+    "Slots A, B, and C staffed by three distinct real people",
+    "All relevant role acceptances recorded",
+    "Qualification checks complete",
+    "Conflict and independence checks complete",
+    "Scope, expiry, recusal, and replacement recorded",
+    "Applicable protocol approvals complete",
+    "CP2 minimum environment controls deployed and verified",
+    "Operating context and jurisdiction review approved",
+    "Independent stop and incident routes tested",
+    "No real participant or case data",
+    "Main branch and document IDs re-audited",
+    "Separate CP2 activation decision recorded"
+  ],
+  "automatic_revocation": [
+    "Real affected-person evidence appears",
+    "Main advances and creates an unresolved governance conflict",
+    "Required role or approval expires",
+    "Environment verification fails",
+    "CP2 scope expands toward CP3",
+    "Validation fails"
+  ],
+  "effective": false
+}

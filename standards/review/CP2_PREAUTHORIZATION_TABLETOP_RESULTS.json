@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-CP2-PREAUTHORIZATION-TABLETOP-RESULTS-0001",
+  "title": "CP2 Pre-Authorization Tabletop Results",
+  "status": "Accepted CP1 synthetic execution evidence",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0110",
+  "data_policy": "SyntheticOnly",
+  "results": [
+    {
+      "scenario_id": "CP2-PA-001",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Block activation until three distinct people are verified."
+    },
+    {
+      "scenario_id": "CP2-PA-002",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Keep the slot open and record no adverse consequence."
+    },
+    {
+      "scenario_id": "CP2-PA-003",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Do not activate the role; obtain training or another candidate."
+    },
+    {
+      "scenario_id": "CP2-PA-004",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Require recusal and an independent reviewer."
+    },
+    {
+      "scenario_id": "CP2-PA-005",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Keep CP2 blocked."
+    },
+    {
+      "scenario_id": "CP2-PA-006",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Do not treat the environment as deployed."
+    },
+    {
+      "scenario_id": "CP2-PA-007",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Require requalification before activation."
+    },
+    {
+      "scenario_id": "CP2-PA-008",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Stop, remove from index and history as needed, and review exposure."
+    },
+    {
+      "scenario_id": "CP2-PA-009",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Stop and re-audit numbering and changed files."
+    },
+    {
+      "scenario_id": "CP2-PA-010",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Block CP2 and require CP3 governance."
+    },
+    {
+      "scenario_id": "CP2-PA-011",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Stop evidence capture and use the safeguarding route."
+    },
+    {
+      "scenario_id": "CP2-PA-012",
+      "result": "Pass",
+      "synthetic_only": true,
+      "real_evidence_detected": false,
+      "control_result": "Keep CP2 blocked and not executed."
+    }
+  ],
+  "summary": {
+    "executed": 12,
+    "passed": 12,
+    "failed": 0,
+    "stopped": 0,
+    "real_evidence_detected": 0
+  },
+  "real_nominations": 0,
+  "human_staff_rehearsals": 0,
+  "participants_recruited": 0,
+  "participant_sessions": 0,
+  "participant_evidence_records": 0
+}

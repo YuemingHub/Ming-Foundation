@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-REVIEW-PROTOCOL-APPROVAL-0001",
   "title": "Review Protocol Approval Registry",
   "status": "Accepted approval infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0085",
   "synthetic_use_state": "ApprovedForCP0CP1",
   "human_use_state": "NotApproved",
@@ -131,5 +131,7 @@
   },
   "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
   "day17_human_use_approval_plan": "standards/review/HUMAN_USE_PROTOCOL_APPROVAL_PLAN.json",
-  "human_use_readiness_state": "AwaitingNamedApprovers"
+  "human_use_readiness_state": "AwaitingNamedApprovers",
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "day18_cp2_applicability_matrix": "standards/review/CP2_PROTOCOL_APPLICABILITY_MATRIX.json"
 }

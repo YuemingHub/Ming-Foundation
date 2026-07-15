@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "authorization_id": "MING-CONTROLLED-PILOT-AUTHORIZATION-0001",
   "title": "Controlled Pilot Classification and Authorization",
   "status": "Accepted bounded authorization",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_records": [
     "GOV-0087",
     "GOV-0090",
@@ -53,7 +53,8 @@
       "execution_state": "NotExecuted",
       "data_class": "NoParticipantEvidence",
       "participants_allowed": false,
-      "live_systems_allowed": false
+      "live_systems_allowed": false,
+      "preauthorization_state": "ConditionallyApprovedNotEffective"
     },
     {
       "class_id": "CP3",
@@ -89,5 +90,8 @@
   },
   "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
   "day17_gate": "standards/review/DAY17_HUMAN_ACTIVATION_READINESS_GATE.json",
-  "day17_cp2_readiness": "standards/review/CP2_STAFF_REHEARSAL_READINESS.json"
+  "day17_cp2_readiness": "standards/review/CP2_STAFF_REHEARSAL_READINESS.json",
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "day18_preauthorization_decision": "standards/review/CP2_PREAUTHORIZATION_DECISION.json",
+  "day18_preauthorization_state": "ConditionallyApprovedNotEffective"
 }

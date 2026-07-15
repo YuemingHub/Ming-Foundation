@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "control_set_id": "MING-CP2-MINIMUM-ENVIRONMENT-CONTROLS-0001",
+  "title": "CP2 Minimum Evidence Environment Control Set",
+  "status": "Accepted pre-authorization infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0108",
+  "overall_state": "MinimumSetDefinedNotDeployed",
+  "allowed_data": [
+    "Restricted role identity and acceptance records",
+    "Staff-only rehearsal consent and stop records",
+    "Synthetic fixtures",
+    "Access, incident, deletion, and verification logs"
+  ],
+  "prohibited_data": [
+    "Affected-person, child, adolescent, family, client, or practitioner case evidence",
+    "Current crisis, medical, psychiatric, school, legal, financial, immigration, or safeguarding narratives",
+    "Production system records",
+    "Live product decisions or external transmissions"
+  ],
+  "controls": [
+    {
+      "control_id": "CP2-ENV-001",
+      "title": "Git-ignored restricted workspace",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-002",
+      "title": "Role-based local access",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-003",
+      "title": "Identity/contact separation from rehearsal evidence",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-004",
+      "title": "Retention and deletion schedule",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-005",
+      "title": "Access, stop, and incident logging",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-006",
+      "title": "Export and copy prohibition by default",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-007",
+      "title": "Backup and restore suppression",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    },
+    {
+      "control_id": "CP2-ENV-008",
+      "title": "Withdrawal and deletion verification",
+      "required_for_cp2": true,
+      "deployment_state": "NotStarted",
+      "verification_state": "NotVerified",
+      "named_owner_ref": null,
+      "verification_evidence_refs": []
+    }
+  ],
+  "summary": {
+    "controls": 8,
+    "deployment_started": 0,
+    "deployed": 0,
+    "verified": 0,
+    "live_controls_ready": 0
+  }
+}

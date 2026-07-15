@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "registry_id": "MING-REVIEW-ROLE-ASSIGNMENT-0001",
   "title": "Review Operations Role Assignment and Conflict Registry",
   "status": "Accepted operational-control infrastructure",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "c149953217e466570da3fa58157eb66616514d6b",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0084",
   "assignment_state": "Unassigned",
   "human_review_activation_state": "NotActivated",
@@ -163,5 +163,7 @@
   },
   "day17_base_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
   "day17_named_accountability_register": "standards/review/NAMED_ACCOUNTABILITY_PUBLIC_REGISTER.json",
-  "day17_nomination_plan": "standards/review/ROLE_NOMINATION_AND_ACCEPTANCE_PLAN.json"
+  "day17_nomination_plan": "standards/review/ROLE_NOMINATION_AND_ACCEPTANCE_PLAN.json",
+  "day18_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "day18_slot_plan": "standards/review/CP2_NOMINATION_SLOT_PLAN.json"
 }

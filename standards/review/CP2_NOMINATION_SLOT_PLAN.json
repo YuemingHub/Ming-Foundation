@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "MING-CP2-NOMINATION-SLOT-PLAN-0001",
+  "title": "CP2 Restricted Nomination Slot Plan",
+  "status": "Accepted pre-authorization infrastructure",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0105",
+  "overall_state": "SlotsDefinedNoRealNominations",
+  "minimum_distinct_people": 3,
+  "restricted_identity_storage": "OutsidePublicRepository",
+  "slots": [
+    {
+      "slot_id": "CP2-SLOT-A",
+      "title": "Program and recruitment coordination",
+      "role_ids": [
+        "review_program_owner",
+        "recruitment_and_compensation_owner"
+      ],
+      "nomination_state": "OpenNotNominated",
+      "restricted_assignment_refs": [],
+      "acceptance_state": "NotAccepted",
+      "qualification_state": "NotChecked",
+      "conflict_state": "NotChecked",
+      "independence_state": "NotChecked",
+      "activation_state": "Inactive",
+      "conditions": [
+        "Cannot be sole consent reviewer for a dependent staff member",
+        "Cannot be sole independent facilitator"
+      ]
+    },
+    {
+      "slot_id": "CP2-SLOT-B",
+      "title": "Safeguarding and facilitation",
+      "role_ids": [
+        "safeguarding_owner",
+        "independent_facilitator_lead"
+      ],
+      "nomination_state": "OpenNotNominated",
+      "restricted_assignment_refs": [],
+      "acceptance_state": "NotAccepted",
+      "qualification_state": "NotChecked",
+      "conflict_state": "NotChecked",
+      "independence_state": "NotChecked",
+      "activation_state": "Inactive",
+      "conditions": [
+        "Requires relevant safeguarding or duty-of-care competence",
+        "A separate reviewer must handle a complaint concerning this person's action"
+      ]
+    },
+    {
+      "slot_id": "CP2-SLOT-C",
+      "title": "Evidence privacy and accessibility",
+      "role_ids": [
+        "evidence_custodian",
+        "privacy_and_data_rights_reviewer",
+        "accessibility_and_language_owner"
+      ],
+      "nomination_state": "OpenNotNominated",
+      "restricted_assignment_refs": [],
+      "acceptance_state": "NotAccepted",
+      "qualification_state": "NotChecked",
+      "conflict_state": "NotChecked",
+      "independence_state": "NotChecked",
+      "activation_state": "Inactive",
+      "conditions": [
+        "A second reviewer is required for incidents caused by the custodian",
+        "No unrelated reuse of staff or review evidence"
+      ]
+    },
+    {
+      "slot_id": "CP2-SLOT-D",
+      "title": "Jurisdiction and professional qualification",
+      "role_ids": [
+        "jurisdiction_and_professional_review_owner"
+      ],
+      "nomination_state": "OpenNotNominated",
+      "restricted_assignment_refs": [],
+      "acceptance_state": "NotAccepted",
+      "qualification_state": "NotChecked",
+      "conflict_state": "NotChecked",
+      "independence_state": "NotChecked",
+      "activation_state": "Inactive",
+      "conditions": [
+        "May be an external reviewer",
+        "Must document operating-context competence and limits",
+        "May be combined with A, B, or C only when independently qualified"
+      ]
+    }
+  ],
+  "activation_rules": [
+    "Slots A, B, and C must be held by three distinct real people",
+    "All role acceptances must be voluntary and recorded in the restricted workspace",
+    "Qualification, conflict, independence, scope, expiry, and replacement checks must pass",
+    "Slot D must be separately qualified; it may be one of A through C only with explicit evidence",
+    "No public real names or personal contact records",
+    "A separate CP2 activation decision is required"
+  ],
+  "summary": {
+    "slots": 4,
+    "minimum_distinct_people": 3,
+    "real_people_nominated": 0,
+    "slots_accepted": 0,
+    "slots_verified": 0,
+    "active_slots": 0
+  }
+}

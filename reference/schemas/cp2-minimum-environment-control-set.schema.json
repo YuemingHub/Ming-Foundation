@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/cp2-minimum-environment-control-set.schema.json",
+  "title": "CP2 Minimum Environment Control Set",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "allowed_data",
+    "prohibited_data",
+    "controls",
+    "summary"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "MinimumSetDefinedNotDeployed"
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 8
+    }
+  }
+}

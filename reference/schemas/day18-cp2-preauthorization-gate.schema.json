@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mingos.cn/schemas/day18-cp2-preauthorization-gate.schema.json",
+  "title": "Day 18 CP2 Pre-Authorization Gate",
+  "type": "object",
+  "required": [
+    "canonical_repository",
+    "overall_state",
+    "restricted_nomination_infrastructure_ready",
+    "cp2_preauthorization_recorded",
+    "cp2_preauthorization_effective",
+    "cp2_authorized",
+    "cp2_executed",
+    "cp3_authorized",
+    "summary",
+    "items"
+  ],
+  "properties": {
+    "canonical_repository": {
+      "const": "YuemingHub/Ming-Foundation"
+    },
+    "overall_state": {
+      "const": "RestrictedNominationInfrastructureReadyCP2PreauthorizationInactive"
+    },
+    "restricted_nomination_infrastructure_ready": {
+      "const": true
+    },
+    "cp2_preauthorization_recorded": {
+      "const": true
+    },
+    "cp2_preauthorization_effective": {
+      "const": false
+    },
+    "cp2_authorized": {
+      "const": false
+    },
+    "cp2_executed": {
+      "const": false
+    },
+    "cp3_authorized": {
+      "const": false
+    },
+    "items": {
+      "type": "array",
+      "minItems": 18
+    }
+  }
+}

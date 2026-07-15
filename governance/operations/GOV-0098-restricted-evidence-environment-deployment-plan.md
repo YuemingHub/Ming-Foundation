@@ -54,3 +54,9 @@ Verified:           0
 Live controls ready: 0
 Live evidence ingestion: Prohibited
 ```
+
+## Day 18 relation
+
+Eight CP2 minimum controls and their prohibited data scope are defined.
+
+No control is deployed or verified.

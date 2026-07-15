@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "MING-CP2-PREAUTHORIZATION-TABLETOP-SCENARIOS-0001",
+  "title": "CP2 Pre-Authorization Tabletop Scenarios",
+  "status": "Accepted CP1 synthetic scenario set",
+  "canonical_repository": "YuemingHub/Ming-Foundation",
+  "source_repository_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
+  "registry_version": "1.0.0-alpha.18",
+  "governing_record": "GOV-0110",
+  "data_policy": "SyntheticOnly",
+  "scenarios": [
+    {
+      "scenario_id": "CP2-PA-001",
+      "title": "Insufficient distinct people",
+      "synthetic_input": "Slots A and B point to the same restricted assignment.",
+      "expected_control": "Block activation until three distinct people are verified.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-002",
+      "title": "Candidate declines",
+      "synthetic_input": "A nominated person declines the role.",
+      "expected_control": "Keep the slot open and record no adverse consequence.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-003",
+      "title": "Qualification gap",
+      "synthetic_input": "A candidate lacks the required safeguarding competence.",
+      "expected_control": "Do not activate the role; obtain training or another candidate.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-004",
+      "title": "Material conflict",
+      "synthetic_input": "A candidate would review their own incident.",
+      "expected_control": "Require recusal and an independent reviewer.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-005",
+      "title": "Protocol approval missing",
+      "synthetic_input": "Five of six CP2-applicable protocols are approved.",
+      "expected_control": "Keep CP2 blocked.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-006",
+      "title": "Environment not verified",
+      "synthetic_input": "A local folder exists but access and deletion controls are untested.",
+      "expected_control": "Do not treat the environment as deployed.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-007",
+      "title": "Jurisdiction review expired",
+      "synthetic_input": "The operating-context approval has expired.",
+      "expected_control": "Require requalification before activation.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-008",
+      "title": "Private identity file staged in Git",
+      "synthetic_input": "A restricted identity record appears in the Git index.",
+      "expected_control": "Stop, remove from index and history as needed, and review exposure.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-009",
+      "title": "Main advanced",
+      "synthetic_input": "origin/main changes after the pre-authorization package was prepared.",
+      "expected_control": "Stop and re-audit numbering and changed files.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-010",
+      "title": "Scope expands to affected-person evidence",
+      "synthetic_input": "The rehearsal proposes a real family case.",
+      "expected_control": "Block CP2 and require CP3 governance.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-011",
+      "title": "Real sensitive disclosure during staff rehearsal",
+      "synthetic_input": "A staff member begins disclosing a real current crisis.",
+      "expected_control": "Stop evidence capture and use the safeguarding route.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    },
+    {
+      "scenario_id": "CP2-PA-012",
+      "title": "Activation decision absent",
+      "synthetic_input": "All preparatory checks pass but no separate activation decision exists.",
+      "expected_control": "Keep CP2 blocked and not executed.",
+      "contains_real_person_data": false,
+      "contains_sensitive_case_data": false
+    }
+  ]
+}

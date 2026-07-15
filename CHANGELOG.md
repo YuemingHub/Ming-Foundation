@@ -25,6 +25,44 @@ All notable repository-level changes are documented here.
 
 
 
+## [1.0.0-alpha.18] - 2026-07-15
+
+### Added
+
+- current-main and collision-free numbering audit after the MingOS Charter
+  Chinese migration collection;
+- Git-ignored restricted nomination workspace boundary and initializer;
+- four CP2 nomination slots with a three-distinct-person minimum;
+- restricted nomination intake, acceptance, qualification, conflict,
+  independence, scope, expiry, and replacement workflow;
+- CP2 protocol applicability matrix;
+- eight-control CP2 minimum evidence environment set;
+- inactive conditional CP2 pre-authorization;
+- twelve passed synthetic pre-authorization scenarios;
+- Day 18 governance records, templates, schemas, and validators.
+
+### Gate result
+
+```text
+Restricted nomination infrastructure: ready
+Conditional CP2 pre-authorization:     recorded
+Pre-authorization effective:           no
+Real nominations:                      0
+CP2 authorized:                        no
+CP2 executed:                          no
+CP3 authorized:                        no
+```
+
+### Boundary
+
+- real identity and verification records remain outside the public repository;
+- no role is accepted, verified, or active;
+- no CP2 human-use protocol is approved;
+- no CP2 environment control is deployed;
+- both Charters remain Candidate;
+- RFC and Profile statuses remain unchanged;
+- implementation conformance remains empty.
+
 ## [1.0.0-alpha.17] - 2026-07-14
 
 ### Added

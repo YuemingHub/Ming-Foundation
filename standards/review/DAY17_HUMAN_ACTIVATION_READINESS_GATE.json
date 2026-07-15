@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "gate_id": "MING-DAY17-HUMAN-ACTIVATION-READINESS-GATE-0001",
   "title": "Day 17 Human Review Activation Readiness Gate",
   "status": "Accepted gate assessment",
   "canonical_repository": "YuemingHub/Ming-Foundation",
   "source_repository_commit": "0be7e6f3dc344385cc501bbdd06c2185d3c7f88a",
-  "registry_version": "1.0.0-alpha.17",
+  "registry_version": "1.0.0-alpha.18",
   "governing_record": "GOV-0100",
   "overall_state": "NamedAccountabilityFrameworkCompleteHumanActivationBlocked",
   "named_accountability_framework_complete": true,
@@ -132,5 +132,10 @@
       "Evidence environment provisioned and verified for the authorized scope",
       "Separate CP2 authorization decision"
     ]
+  },
+  "day18_relation": {
+    "preauthorization_gate": "standards/review/DAY18_CP2_PREAUTHORIZATION_GATE.json",
+    "day17_state_preserved": true,
+    "human_activation_authorized": false
   }
 }
