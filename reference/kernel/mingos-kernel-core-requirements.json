@@ -1,0 +1,856 @@
+{
+  "schema": "mingos.kernel-core-requirements.v0.1",
+  "status": "Draft",
+  "version": "0.1.0-draft.1",
+  "decision_base_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795",
+  "family": {
+    "id": "kernel-family/0.1.0-draft.1",
+    "decision": {
+      "id": "ADR-0026",
+      "status": "Proposed"
+    },
+    "documents": [
+      {
+        "id": "KERNEL-0000",
+        "status": "Draft",
+        "version": "0.1.0-draft.1"
+      },
+      {
+        "id": "KERNEL-0001",
+        "status": "Draft",
+        "version": "0.1.0-draft.1"
+      }
+    ],
+    "reserved_not_created": [
+      "KERNEL-0002",
+      "KERNEL-0003",
+      "KERNEL-0004",
+      "KERNEL-0005"
+    ]
+  },
+  "requirements": [
+    {
+      "id": "KCR-0001",
+      "domain": "BoundaryAndAccountability",
+      "level": "MUST",
+      "text": "An implementation boundary MUST identify its version, governed surfaces, accountable organization, and accountable human role.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC14",
+        "ADR-0026:2.5"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0004"
+    },
+    {
+      "id": "KCR-0002",
+      "domain": "VersionSet",
+      "level": "MUST",
+      "text": "A Kernel-governed operation MUST identify the applicable Kernel family version set and the status of each source.",
+      "sources": [
+        "ADR-0026:2.4",
+        "KERNEL-0000:4"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0000"
+    },
+    {
+      "id": "KCR-0003",
+      "domain": "SourceIntegrity",
+      "level": "MUST_NOT",
+      "text": "A lower-layer artifact MUST NOT silently redefine a Charter, accepted architecture boundary, or authoritative source text.",
+      "sources": [
+        "ADR-0005:Dependency direction",
+        "ADR-0026:2.3"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0000"
+    },
+    {
+      "id": "KCR-0004",
+      "domain": "AffectedPersonIdentification",
+      "level": "MUST",
+      "text": "A material operation MUST identify people who may be affected even when they are not account holders or interface operators.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC10",
+        "REF-0029:2"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0005",
+      "domain": "RoleSeparation",
+      "level": "MUST",
+      "text": "The system MUST preserve separations among affected person, subject, speaker, representative, operator, reviewer, accountable human, accountable organization, AI component, and service provider.",
+      "sources": [
+        "RFC-0001",
+        "REF-0029:2"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0006",
+      "domain": "RepresentativeAuthority",
+      "level": "MUST",
+      "text": "Representative authority MUST be scoped, evidenced, purpose-bound, time-bounded, contestable, and revocable where applicable.",
+      "sources": [
+        "PROF-0001",
+        "PROF-0002",
+        "PROJECT-MINGOS-0002:MC10"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0001/PROF-0001/PROF-0002"
+    },
+    {
+      "id": "KCR-0007",
+      "domain": "PurposeBeforeOperation",
+      "level": "MUST",
+      "text": "A personal-data or interpretive operation MUST record a legitimate declared purpose before collection, transformation, recommendation, disclosure, or reuse.",
+      "sources": [
+        "RFC-0002",
+        "PROJECT-MINGOS-0002:MC04"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002"
+    },
+    {
+      "id": "KCR-0008",
+      "domain": "ConsentStatus",
+      "level": "MUST",
+      "text": "Where consent is the applicable authority basis, its scope, state, evidence, expiry, revocation, and exceptions MUST remain inspectable.",
+      "sources": [
+        "RFC-0002",
+        "MF-0004:C04"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0009",
+      "domain": "RefusalBoundary",
+      "level": "MUST_NOT",
+      "text": "Refusal, silence, withdrawal, or disagreement MUST NOT be treated as failure, resistance, consent, or proof that an interpretation is correct.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC03",
+        "MF-0004:C04"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0001"
+    },
+    {
+      "id": "KCR-0010",
+      "domain": "ContestabilityAndCorrection",
+      "level": "MUST",
+      "text": "A materially affected person MUST have a usable path to inspect, contest, correct, contextualize, and appeal significant interpretation or decision records.",
+      "sources": [
+        "RFC-0001",
+        "PROJECT-MINGOS-0002:MC03/MC13"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0001/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0011",
+      "domain": "ThirdPartyMinimization",
+      "level": "MUST",
+      "text": "Third-party and non-user information MUST be purpose-limited, minimized, access-controlled, and protected from unlimited representative disclosure.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC10",
+        "RFC-0002",
+        "RFC-0004"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002/RFC-0004"
+    },
+    {
+      "id": "KCR-0012",
+      "domain": "KnowledgeStatusSeparation",
+      "level": "MUST",
+      "text": "Fact, observation, statement, inference, hypothesis, pattern, judgment, recommendation, and decision MUST remain distinguishable.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC06",
+        "RFC-0001"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0013",
+      "domain": "Provenance",
+      "level": "MUST",
+      "text": "A significant knowledge item MUST preserve source, speaker, subject, time, context, transformation history, and applicable authority.",
+      "sources": [
+        "RFC-0001",
+        "PROJECT-MINGOS-0002:MC05/MC06"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0014",
+      "domain": "UncertaintyAndUnknown",
+      "level": "MUST",
+      "text": "A significant inference MUST preserve uncertainty, limitations, unresolved alternatives, and unknowns; confidence MUST NOT be represented as truth.",
+      "sources": [
+        "MF-0004:C09",
+        "PROJECT-MINGOS-0002:MC05/MC06"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0015",
+      "domain": "ContradictionAndCounterexample",
+      "level": "MUST",
+      "text": "Contradictions, corrections, failures, counterexamples, dissent, and superseded interpretations MUST remain traceable subject to privacy and safety controls.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC05/MC13",
+        "RFC-0004"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0016",
+      "domain": "ObservationBeforeAdvice",
+      "level": "SHOULD",
+      "text": "The system SHOULD gather and distinguish relevant observation, context, uncertainty, and affected-person perspective before offering consequential advice.",
+      "sources": [
+        "ADR-0002",
+        "MF-0005"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0001"
+    },
+    {
+      "id": "KCR-0017",
+      "domain": "RelationshipAndTimelineContext",
+      "level": "SHOULD",
+      "text": "Consequential interpretation SHOULD preserve relevant relationship, sequence, change over time, and structural or material context without assuming that context proves causation.",
+      "sources": [
+        "MF-0005",
+        "REF-0014"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0018",
+      "domain": "UserChosenAction",
+      "level": "SHOULD",
+      "text": "A proposed action SHOULD preserve meaningful choice and identify whose goal, need, and authority the action serves.",
+      "sources": [
+        "MF-0005",
+        "PROJECT-MINGOS-0002:MC01/MC03"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0001"
+    },
+    {
+      "id": "KCR-0019",
+      "domain": "SmallSafeReversibleAction",
+      "level": "SHOULD",
+      "text": "When uncertainty or impact is material, the system SHOULD prefer the smallest reasonably safe, reversible, observable action.",
+      "sources": [
+        "MF-0005",
+        "PROJECT-MINGOS-0002:S05/S06"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0001"
+    },
+    {
+      "id": "KCR-0020",
+      "domain": "AffectedImpactReview",
+      "level": "MUST",
+      "text": "Before a high-impact operation, the system MUST identify affected people, foreseeable consequences, alternatives, reversibility, notice, correction, appeal, and review conditions.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC09/MC10",
+        "REF-0029:5"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0003"
+    },
+    {
+      "id": "KCR-0021",
+      "domain": "NoHiddenPersuasion",
+      "level": "MUST_NOT",
+      "text": "The system MUST NOT use hidden persuasion, anxiety, shame, dependency, urgency, or vulnerability to obtain consent, compliance, purchase, retention, or disclosure.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC07/MC08",
+        "RFC-0005"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0001"
+    },
+    {
+      "id": "KCR-0022",
+      "domain": "RiskRecognition",
+      "level": "MUST",
+      "text": "A system operating in a domain with foreseeable serious harm MUST define risk recognition, uncertainty, escalation, stop, and incident-recording behavior.",
+      "sources": [
+        "RFC-0003",
+        "PROJECT-MINGOS-0002:MC11"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0003/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0023",
+      "domain": "CapabilityBoundary",
+      "level": "MUST",
+      "text": "Current capability, professional status, jurisdiction, service availability, limitations, and unavailable functions MUST be represented honestly.",
+      "sources": [
+        "RFC-0003",
+        "RFC-0005",
+        "PROF-0004"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0003/RFC-0005/PROF-0004"
+    },
+    {
+      "id": "KCR-0024",
+      "domain": "HandoffAvailability",
+      "level": "MUST_NOT",
+      "text": "Generating a referral, resource, message, or link MUST NOT be represented as a completed handoff unless availability and completion evidence support that claim.",
+      "sources": [
+        "RFC-0003",
+        "PROF-0004"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0003/PROF-0004"
+    },
+    {
+      "id": "KCR-0025",
+      "domain": "AppealAndIncident",
+      "level": "MUST",
+      "text": "A material adverse decision or failure MUST have a traceable appeal, incident, containment, review, correction, and follow-up path appropriate to its scope.",
+      "sources": [
+        "RFC-0003",
+        "PROJECT-MINGOS-0002:MC13/MC14"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0003/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0026",
+      "domain": "EmergencyIntervention",
+      "level": "MUST",
+      "text": "An emergency or protective intervention MUST be lawful where applicable, necessary, proportionate, purpose-limited, time-bounded where possible, reviewable, and distinct from consent.",
+      "sources": [
+        "MF-0004:C04",
+        "PROJECT-MINGOS-0002:MC03"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0003"
+    },
+    {
+      "id": "KCR-0027",
+      "domain": "MemoryInspectionCorrection",
+      "level": "MUST",
+      "text": "A person materially represented in memory MUST have an applicable path to inspect, correct, contextualize, contest, and identify significant downstream effects.",
+      "sources": [
+        "RFC-0002",
+        "PROJECT-MINGOS-0002:MC04"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0028",
+      "domain": "MemoryRevocationRetentionDeletion",
+      "level": "MUST",
+      "text": "Memory authority, revocation, retention, deletion, backup exceptions, access, and completion evidence MUST be represented explicitly.",
+      "sources": [
+        "RFC-0002",
+        "PROF-0003"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002/PROF-0003/KERNEL-0003"
+    },
+    {
+      "id": "KCR-0029",
+      "domain": "NoPermanentVulnerabilityProfile",
+      "level": "MUST_NOT",
+      "text": "Temporary distress, vulnerability, conflict, diagnosis, risk, or limitation MUST NOT become an unreviewable permanent identity or commercial profile.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC04/MC07",
+        "MF-0005"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0030",
+      "domain": "SecondaryUseDisclosure",
+      "level": "MUST",
+      "text": "Secondary use, cross-context inference, model or system improvement, research, analytics, and training use MUST have a disclosed authority basis, purpose, data boundary, retention rule, and refusal or exception path.",
+      "sources": [
+        "RFC-0002",
+        "RFC-0004",
+        "MF-0005"
+      ],
+      "integration_type": "Delegated",
+      "delegated_or_future_detail": "RFC-0002/RFC-0004"
+    },
+    {
+      "id": "KCR-0031",
+      "domain": "AIIdentityCapabilityLimits",
+      "level": "MUST",
+      "text": "An AI component MUST expose its role, relevant provider or model version, capabilities, limitations, generated or inferred status, and significant provenance.",
+      "sources": [
+        "ADR-0001",
+        "PROJECT-MINGOS-0002:MC09",
+        "RFC-0005"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0032",
+      "domain": "HumanAccountability",
+      "level": "MUST",
+      "text": "A high-impact decision MUST identify a human and organization with sufficient information, authority, independence, stop capacity, and review responsibility.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC09/MC14",
+        "REF-0029"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0033",
+      "domain": "AffectedPersonParticipation",
+      "level": "MUST",
+      "text": "A high-impact design or decision MUST define how affected-person participation, refusal, representation, accessibility, and situations where participation is unsafe or impossible are handled.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC09/MC10",
+        "PROF-0001"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0034",
+      "domain": "FeedbackAndStateRevision",
+      "level": "MUST",
+      "text": "Observed outcome, affected-person feedback, correction, failure, and new evidence MUST be able to revise relevant state without erasing prior provenance.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC13",
+        "MF-0004:C09"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0003"
+    },
+    {
+      "id": "KCR-0035",
+      "domain": "AuditVersionFailureUnknown",
+      "level": "MUST",
+      "text": "Material operations MUST preserve audit, version, source, decision, exception, failure, counterexample, dissent, and unknown records according to applicable privacy and safety controls.",
+      "sources": [
+        "PROJECT-MINGOS-0002:MC05/MC13/MC14",
+        "RFC-0004"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0002"
+    },
+    {
+      "id": "KCR-0036",
+      "domain": "NoPrematureConformanceClaim",
+      "level": "MUST_NOT",
+      "text": "No product, organization, model, prompt, workflow, or repository MUST be described as Kernel conforming before applicable conformance requirements, tests, evidence, review, exceptions, and claim-expiry rules exist and are satisfied.",
+      "sources": [
+        "ADR-0026:2.5",
+        "REF-0028"
+      ],
+      "integration_type": "Core",
+      "delegated_or_future_detail": "KERNEL-0004/KERNEL-0005"
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "KCA-001",
+      "area": "Kernel applicability",
+      "issue": "Does the core govern software only, or also human professional and organizational operations?",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-002",
+      "area": "Affected person",
+      "issue": "How far indirect, group, relational, future, or non-user impact extends.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-003",
+      "area": "Role multiplicity",
+      "issue": "When one person may hold several roles without destroying independence.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-004",
+      "area": "Representative authority",
+      "issue": "How authority varies by age, capacity, jurisdiction, urgency, and conflict.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-005",
+      "area": "Declared purpose",
+      "issue": "Required granularity and when a changed purpose requires renewed authority.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-006",
+      "area": "Consent basis",
+      "issue": "When consent is inapplicable, invalid, coerced, or insufficient.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-007",
+      "area": "Refusal and safety",
+      "issue": "When refusal can be overridden for lawful protective action.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-008",
+      "area": "Correction propagation",
+      "issue": "Which derived records and decisions must be updated after correction.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-009",
+      "area": "Third-party rights",
+      "issue": "How a user can inspect their own record without exposing another person's protected information.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-010",
+      "area": "Knowledge statuses",
+      "issue": "Boundary among observation, statement, inference, hypothesis, pattern, judgment, and decision.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-011",
+      "area": "Observation before advice",
+      "issue": "When immediate safe guidance may precede complete observation.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-012",
+      "area": "Confidence",
+      "issue": "Whether numeric confidence is meaningful across human and AI interpretation.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-013",
+      "area": "Unknown and dissent",
+      "issue": "How unknowns and minority views affect operations rather than becoming passive notes.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-014",
+      "area": "Relationship context",
+      "issue": "How to preserve context without creating intrusive relationship surveillance.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-015",
+      "area": "Small and reversible",
+      "issue": "What small, safe, and reversible mean in different domains.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-016",
+      "area": "Hidden persuasion",
+      "issue": "Boundary between supportive communication, risk disclosure, recommendation, and manipulation.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-017",
+      "area": "High-impact operation",
+      "issue": "Thresholds for impact, likelihood, reversibility, duration, scale, and vulnerable groups.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-018",
+      "area": "Risk threshold",
+      "issue": "When uncertainty itself requires stopping, escalation, or human review.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-019",
+      "area": "Unavailable handoff",
+      "issue": "Obligations when qualified human or emergency services are unavailable.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-020",
+      "area": "Emergency intervention",
+      "issue": "Who determines necessity and proportionality, with what evidence and review.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-021",
+      "area": "Memory deletion",
+      "issue": "Conflicts among deletion, backup, audit, safety, legal, and other-person rights.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-022",
+      "area": "Secondary use",
+      "issue": "Whether and how learning from sensitive interaction can be authorized without exploitation.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-023",
+      "area": "AI disclosure",
+      "issue": "What model and provenance detail is meaningful to an affected person.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-024",
+      "area": "Accountable human",
+      "issue": "Required competence, independence, information, authority, and availability.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-025",
+      "area": "Participation impossible",
+      "issue": "How to proceed when participation is unsafe, inaccessible, declined, or impossible.",
+      "risk": "Critical",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-026",
+      "area": "Organization obligations",
+      "issue": "Which requirements apply directly to organizational policy, sales, staffing, and governance.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-027",
+      "area": "Requirement delegation",
+      "issue": "How referenced RFC/Profile requirements remain synchronized without copying.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-028",
+      "area": "Candidate Charter change",
+      "issue": "How Kernel Drafts respond when a Candidate Charter is revised.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-029",
+      "area": "Cross-language traceability",
+      "issue": "How English and Chinese sources remain semantically traceable.",
+      "risk": "High",
+      "status": "Open"
+    },
+    {
+      "id": "KCA-030",
+      "area": "Conformance future",
+      "issue": "Which Draft requirements eventually become mandatory, conditional, optional, or removed.",
+      "risk": "Critical",
+      "status": "Open"
+    }
+  ],
+  "vocabulary": [
+    {
+      "term": "Person",
+      "working_meaning": "A human being; never reducible to account, role, profile, record, or model output.",
+      "status": "Core semantic"
+    },
+    {
+      "term": "AffectedPerson",
+      "working_meaning": "A person whose rights, welfare, identity, relationship, opportunity, or safety may be materially affected.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Subject",
+      "working_meaning": "The person, group, relationship, event, or object being described.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Speaker",
+      "working_meaning": "The source of a statement, observation, correction, or claim.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Representative",
+      "working_meaning": "A person acting for or with another person under scoped authority.",
+      "status": "Profile-dependent"
+    },
+    {
+      "term": "Operator",
+      "working_meaning": "An actor initiating or controlling an operation or interface.",
+      "status": "Provisional"
+    },
+    {
+      "term": "AccountableHuman",
+      "working_meaning": "A human responsible for a bounded decision or operation.",
+      "status": "Provisional"
+    },
+    {
+      "term": "AccountableOrganization",
+      "working_meaning": "The entity responsible for governance, service, or a claim.",
+      "status": "Provisional"
+    },
+    {
+      "term": "AIComponent",
+      "working_meaning": "A model or agent performing bounded generated, inferred, or execution functions.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Purpose",
+      "working_meaning": "The declared reason and allowed scope for an operation or data use.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "AuthorityBasis",
+      "working_meaning": "The documented basis that permits an action, role, or data operation.",
+      "status": "Profile/jurisdiction-dependent"
+    },
+    {
+      "term": "Consent",
+      "working_meaning": "A scoped authority state where consent is the applicable basis; not a universal basis for all action.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "Observation",
+      "working_meaning": "A time- and source-bound record of what was perceived or measured.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Statement",
+      "working_meaning": "Content asserted by a speaker, distinct from verified fact.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Inference",
+      "working_meaning": "A derived interpretation that remains distinguishable from source records.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Hypothesis",
+      "working_meaning": "A testable or revisable possible explanation.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Pattern",
+      "working_meaning": "A proposed recurrence or relationship across records, not automatic causation.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Judgment",
+      "working_meaning": "A human or system evaluation under stated criteria and authority.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Decision",
+      "working_meaning": "A selection or authorization with consequences and accountability.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Evidence",
+      "working_meaning": "A source-linked record used to support or challenge a claim or decision.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Confidence",
+      "working_meaning": "A bounded assessment of support or uncertainty; never equivalent to truth.",
+      "status": "Open"
+    },
+    {
+      "term": "Unknown",
+      "working_meaning": "A material absence, uncertainty, conflict, or unresolved question.",
+      "status": "Core semantic"
+    },
+    {
+      "term": "Memory",
+      "working_meaning": "A retained record or derived state that can affect later operations.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "Action",
+      "working_meaning": "A proposed or executed change with actor, target, purpose, authority, and expected effects.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Feedback",
+      "working_meaning": "Observed or reported information about an action, state, interpretation, or outcome.",
+      "status": "Provisional"
+    },
+    {
+      "term": "Risk",
+      "working_meaning": "A possible harmful consequence characterized by severity, likelihood, immediacy, uncertainty, and reversibility.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "Incident",
+      "working_meaning": "A suspected or confirmed harmful, unauthorized, or materially nonconforming event.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "Appeal",
+      "working_meaning": "A request for review, correction, suspension, or reversal of a material decision or record.",
+      "status": "RFC-dependent"
+    },
+    {
+      "term": "ServiceAvailability",
+      "working_meaning": "Current evidence that a human, professional, emergency, or external resource can actually respond.",
+      "status": "Profile-dependent"
+    },
+    {
+      "term": "HighImpactOperation",
+      "working_meaning": "A provisional category for operations with material rights, safety, identity, relationship, opportunity, or lasting consequence.",
+      "status": "Open"
+    }
+  ],
+  "review": {
+    "state": "PreparedNotExecuted",
+    "real_reviewer_assignments": 0,
+    "human_use_approvals": 0,
+    "affected_person_sessions": 0,
+    "implementation_assessments": 0
+  },
+  "conformance": {
+    "current_claim": "NoCurrentKernelConformanceClaim",
+    "requirements_document_status": "Draft",
+    "conformance_requirements_document_exists": false,
+    "test_specification_exists": false,
+    "product_assessment_count": 0
+  },
+  "integrity": {
+    "requirement_count": 36,
+    "ambiguity_count": 30,
+    "vocabulary_count": 30,
+    "created_kernel_document_count": 2,
+    "reserved_not_created_count": 4,
+    "implementation_conformance_claim": false
+  }
+}

@@ -156,6 +156,8 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | ID       | Document                                                                                                                                         | Status   |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | MOS-0000 | [Standard Process](standards/mos/MOS-0000-standard-process.md)                                                                                   | Draft    |
+| KERNEL-0000 | [MingOS Kernel Specification Family Index and Lifecycle](standards/kernel/KERNEL-0000-specification-family-index.md) | Draft |
+| KERNEL-0001 | [MingOS Kernel Core Operational Contract](standards/kernel/KERNEL-0001-core-operational-contract.md) | Draft |
 | RFC-0001 | [Subject Speaker and Contestability Protocol](standards/rfc/RFC-0001-subject-speaker-and-contestability.md)                                      | Proposed |
 | RFC-0002 | [Consent and Data Rights Lifecycle Protocol](standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md)                                        | Proposed |
 | RFC-0003 | [Safety Escalation Human Handoff Appeal and Incident Protocol](standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md)          | Proposed |
@@ -246,6 +248,10 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0028 | [MingOS Kernel Conformance Replaceability and Claim Boundary](reference/kernel/REF-0028-kernel-conformance-replaceability-claim-boundary.md) | Draft |
 | REF-0029 | [MingOS Kernel AI Human and Affected-Person Role Representation Map](reference/kernel/REF-0029-kernel-role-representation-map.md) | Draft |
 | REF-0030 | [Round 06 Kernel Decision Traceability and Open Questions](reference/kernel/REF-0030-kernel-decision-traceability-open-questions.md) | Draft |
+| REF-0031 | [Kernel Core Requirement and Source Crosswalk](reference/kernel/REF-0031-kernel-core-requirement-source-crosswalk.md) | Draft |
+| REF-0032 | [Kernel Core Ambiguity Dissent and Open-Question Register](reference/kernel/REF-0032-kernel-core-ambiguity-register.md) | Draft |
+| REF-0033 | [Kernel Core Review and Evidence Protocol](reference/kernel/REF-0033-kernel-core-review-protocol.md) | Draft |
+| REF-0034 | [Kernel Core Provisional Vocabulary and Status Map](reference/kernel/REF-0034-kernel-core-vocabulary-status-map.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)
