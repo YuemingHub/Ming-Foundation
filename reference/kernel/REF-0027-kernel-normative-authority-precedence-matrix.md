@@ -2,11 +2,11 @@
 id: REF-0027
 title: MingOS Kernel Normative Authority and Precedence Matrix
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -48,9 +48,10 @@ complete implementation instruction.
 
 | Source class | Governs | May do | Must not do | Conflict route |
 |---|---|---|---|---|
-| Charter of Life | candidate higher-order ethical treatment of life | constrain all lower layers; expose ethical conflict | define product fields, code or complete runtime | Charter review and explicit revision |
-| MingOS Charter | MingOS organizational and product self-restraint | constrain Kernel, business, AI, data and name use | claim implementation compliance without contracts and evidence | Charter governance and commitment-contract mapping |
-| Accepted ADR | architecture, separation, authority and structural decisions | choose family structure, locations and precedence | replace substantive runtime standards or implementation evidence | new ADR or explicit supersession |
+| Charter of Life | Candidate higher-order ethical treatment of life | provide current ethical design-and-review constraints; expose conflict | be represented as Accepted, universally validated, or a complete runtime specification | Charter review and explicit revision |
+| MingOS Charter | Candidate MingOS organizational and product self-restraint | provide current project design-and-review constraints for Kernel, business, AI, data and name use | be represented as implementation compliance without contracts and evidence | Charter governance and commitment-contract mapping |
+| Proposed ADR | an architecture or authority proposal under review | guide bounded Draft work while its provisional status remains visible | be represented as Accepted architecture or silently bind deployed implementations | owner review, revision, or later acceptance decision |
+| Accepted ADR | architecture, separation, authority and structural decisions | choose family structure, locations and precedence within declared scope | replace substantive runtime standards or implementation evidence | new ADR or explicit supersession |
 | MOS process | status lifecycle, document classes, review and evidence process | govern how standards change and advance | create substantive runtime obligations solely by process text | MOS revision |
 | KERNEL core | integrated cross-implementation operational obligations | define common roles, invariants and delegated requirements | override either Charter or erase RFC/Profile sources | Kernel revision plus source conflict review |
 | RFC | detailed protocol, state or message contract | define specific interoperable requirements | silently redefine Kernel common semantics or Charter rights | RFC/Kernel compatibility decision |
@@ -114,3 +115,16 @@ technical file, or the already-deployed implementation.
   deletion, audit and evidence obligations remain satisfied.
 - A public page cannot claim “Kernel conforming” while KERNEL-0004 and
   KERNEL-0005 do not exist.
+
+## 6. Primary-decision boundary
+
+`ADR-0026` remains Proposed in Round 06. Merging its review collection means the
+proposal is preserved in the canonical repository; it does not convert the ADR
+to Accepted. Round 07 Drafts may depend on the proposed family structure only
+when they:
+
+- retain Draft status;
+- identify `ADR-0026` as Proposed;
+- avoid public or implementation-conformance claims;
+- remain replaceable if the scope decision changes;
+- preserve dissent and migration consequences.

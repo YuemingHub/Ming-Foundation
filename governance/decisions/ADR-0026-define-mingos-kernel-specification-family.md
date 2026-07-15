@@ -2,11 +2,11 @@
 id: ADR-0026
 title: Define MingOS Kernel as a Governed Specification Family
 status: Proposed
-version: 0.1.0
+version: 0.2.0
 layer: Cross-layer
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -18,6 +18,8 @@ related:
   - ADR-0021
   - ADR-0022
   - ADR-0023
+  - ADR-0024
+  - ADR-0025
   - MOS-0000
   - MF-0004
   - MF-0006
@@ -26,6 +28,7 @@ related:
   - GOV-0082
   - REF-0014
   - REF-0019
+  - REF-0020
   - REF-0023
   - REF-0026
   - REF-0027
@@ -38,7 +41,7 @@ depends_on:
   - PROJECT-MINGOS-0002
 ---
 
-# ADR-0024 — Define MingOS Kernel as a Governed Specification Family
+# ADR-0026 — Define MingOS Kernel as a Governed Specification Family
 
 > **Proposed scope and authority decision.**
 >
@@ -59,7 +62,8 @@ The repository now also contains:
 - Proposed RFC-0001 through RFC-0005;
 - Proposed PROF-0001 through PROF-0004;
 - a Draft standards process in `MOS-0000`;
-- Day 16 review-operation and controlled-pilot governance;
+- Day 17 human-review activation-readiness and named-accountability governance,
+  building on the Day 16 controlled-pilot controls;
 - historical methods and possible Kernel objects in `REF-0014`;
 - no complete Kernel specification;
 - no current product or implementation that may claim Kernel conformance.
@@ -72,7 +76,7 @@ It would also make replaceable implementation mechanisms appear immutable.
 
 ### 2.1 The Kernel is a specification family
 
-MingOS Kernel SHALL be governed as a versioned specification family, not as:
+MingOS Kernel MUST be governed as a versioned specification family, not as:
 
 - a single system prompt;
 - a model personality;
@@ -147,8 +151,9 @@ Authority is not determined by document type alone.
   conformance claim.
 - A lower-status detailed document cannot be presented as overriding a
   higher-layer commitment.
-- Candidate Charters remain governing constraints for design and review, while
-  their unresolved ambiguities and incomplete validation remain visible.
+- Candidate Charters remain current design-and-review constraints under
+  `ADR-0005`; this does not make them Accepted, universally validated, or
+  sufficient evidence of implementation conformance.
 - Accepted ADRs may define architecture and authority boundaries but do not
   substitute for runtime specifications.
 - Kernel requirements may only become claimable according to the lifecycle and
@@ -156,7 +161,7 @@ Authority is not determined by document type alone.
 
 ### 2.5 Kernel conformance
 
-Kernel conformance SHALL apply to a declared, versioned implementation
+Kernel conformance MUST apply to a declared, versioned implementation
 boundary, not to an entire organization, product family, brand, model, or
 repository by implication.
 
@@ -180,7 +185,7 @@ NoCurrentKernelConformanceClaim
 ```
 
 Repository validation, a synthetic pilot, or passing a future test
-specification alone SHALL NOT prove product conformance.
+specification alone MUST NOT prove product conformance.
 
 ### 2.6 Replaceability boundary
 
@@ -239,9 +244,12 @@ not the final accountable actor for high-impact decisions and cannot silently
 stand in for an affected person, representative, professional, reviewer or
 responsible organization.
 
-### 2.8 Relationship to Day 16 operations
+### 2.8 Relationship to Day 17 activation readiness
 
-Day 16 review-operation controls remain a parallel workstream.
+Day 17 named-accountability and human-activation-readiness controls remain a
+parallel workstream. They build on Day 16 synthetic and controlled-pilot
+controls but still contain no real role assignment, human-use approval, live
+evidence environment, affected-person session, or product-conformance result.
 
 ```text
 Role defined            ≠ Kernel role assigned
@@ -250,8 +258,9 @@ Synthetic pilot passed  ≠ Kernel conformance
 Repository test passed  ≠ product conformance
 ```
 
-Round 06 does not authorize CP2 or CP3, assign operational roles, approve human
-use, or create live evidence environments.
+Round 06 does not authorize CP2 or CP3, assign real operational roles, approve
+human use, create live evidence environments, recruit participants, or convert
+synthetic evidence into Kernel or product-conformance evidence.
 
 ## 3. Consequences
 

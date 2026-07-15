@@ -2,11 +2,11 @@
 id: REF-0028
 title: MingOS Kernel Conformance Replaceability and Claim Boundary
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -159,3 +159,10 @@ partial evidence
 conformance at one version
   ≠ permanent conformance
 ```
+
+## 8. Proposed-decision limitation
+
+The planned family, claim tuple, assessment-state names and replaceability
+categories are design inputs under a Proposed ADR. They are not active
+certification semantics. Future KERNEL-0004 and KERNEL-0005 must re-evaluate
+them against affected-person, implementation, legal, safety and domain evidence.

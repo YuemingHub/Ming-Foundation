@@ -2,11 +2,11 @@
 id: REF-0030
 title: Round 06 Kernel Decision Traceability and Open Questions
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -16,6 +16,7 @@ related:
   - GOV-0082
   - REF-0014
   - REF-0019
+  - REF-0020
   - REF-0023
   - REF-0026
   - REF-0027
@@ -98,7 +99,8 @@ Round 07 must not claim:
 - that ADR-0026 is Accepted unless separately decided;
 - that reserved KERNEL IDs already exist;
 - that current products conform;
-- that Day 16 synthetic pilots validate Kernel behavior;
+- that Day 16 synthetic pilots or Day 17 accountability table-tops validate
+  Kernel behavior;
 - that historical Family OS code is a reference implementation;
 - that the current RFC/Profile set is complete;
 - that affected-person or domain review has been executed.
@@ -112,5 +114,13 @@ Round 06 is ready for owner review when:
 - all roadmap questions are answered at scope level;
 - non-goals remain explicit;
 - `NoCurrentKernelConformanceClaim` is preserved;
-- Day 16 and core-text workstreams remain separate;
+- Day 17 activation-readiness and core-text workstreams remain separate;
 - unresolved Round 07 questions remain visible.
+
+## 7. Rev A corrections
+
+- aligns the primary document heading with `ADR-0026`;
+- updates the operational baseline from Day 16 to Day 17;
+- distinguishes Proposed ADR guidance from Accepted architecture authority;
+- aligns normative keywords with `MOS-0000`;
+- adds repository validator support as an explicit Round 07 prerequisite.

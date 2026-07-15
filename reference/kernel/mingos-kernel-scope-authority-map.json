@@ -1,12 +1,13 @@
 {
-  "schema": "mingos.kernel-scope-authority-map.v0.1",
+  "schema": "mingos.kernel-scope-authority-map.v0.2",
   "status": "Draft",
-  "version": "0.1.0",
+  "version": "0.2.0-draft.1",
   "decision_base_commit": "394f494f00ebfccf38572e3846cf6b6e3f699abf",
   "primary_decision": {
     "id": "ADR-0026",
     "status": "Proposed",
-    "decision": "governed-specification-family"
+    "decision": "governed-specification-family",
+    "authority_status": "proposed-not-accepted"
   },
   "repository_location": "standards/kernel/",
   "reserved_documents": [
@@ -107,12 +108,17 @@
     "EvidenceCustodian"
   ],
   "workstream_boundary": {
-    "day17_stage": "Foundation 1.0 / Day 17",
-    "day17_version": "1.0.0-alpha.17",
+    "day16_stage": "Foundation 1.0 / Day 16",
+    "day16_version": "1.0.0-alpha.16",
     "cp0_cp1": "authorized-and-complete",
     "cp2_cp3": "blocked",
     "human_review_executed": false,
-    "product_conformance_proven": false
+    "product_conformance_proven": false,
+    "named_role_assignments": 0,
+    "human_use_protocol_approvals": 0,
+    "live_evidence_environments": 0,
+    "human_sessions": 0,
+    "participant_evidence_records": 0
   },
   "round06_non_goals": [
     "create-kernel-core-specification",
@@ -122,12 +128,22 @@
     "claim-product-conformance",
     "promote-charters-rfcs-profiles-or-mos",
     "activate-human-review",
-    "change-day16-stage-or-version"
+    "change-day17-stage-or-version"
   ],
   "integrity": {
     "reserved_document_count": 6,
     "minimum_role_count": 12,
     "current_kernel_document_count": 0,
-    "implementation_conformance_claim": false
-  }
+    "implementation_conformance_claim": false,
+    "primary_heading_matches_id": true,
+    "repository_kernel_prefix_supported": false
+  },
+  "decision_heading_id": "ADR-0026",
+  "round07_prerequisites": [
+    "repository-id-validator-supports-kernel-prefix",
+    "kernel-family-validator-added-to-full-suite",
+    "created-kernel-documents-indexed",
+    "reserved-uncreated-ids-remain-absent",
+    "no-current-kernel-conformance-claim-preserved"
+  ]
 }

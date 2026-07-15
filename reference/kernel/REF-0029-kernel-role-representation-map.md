@@ -2,11 +2,11 @@
 id: REF-0029
 title: MingOS Kernel AI Human and Affected-Person Role Representation Map
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -130,8 +130,11 @@ Future Kernel documents should distinguish at least:
 
 These labels are candidates, not an adopted state machine.
 
-## 7. Day 16 boundary
+## 7. Day 17 boundary
 
-Day 16 role definitions and synthetic pilots are governance evidence for control
-architecture. They do not assign Kernel roles to real people, approve human use,
-or satisfy affected-person participation.
+Day 17 defines named-accountability and human-activation-readiness controls,
+while preserving zero real role assignments, zero human-use approvals, zero
+live evidence environments and zero human sessions. Those controls are
+governance evidence for control architecture. They do not assign Kernel roles
+to real people, approve human use, satisfy affected-person participation, or
+prove product or Kernel conformance.

@@ -2,11 +2,11 @@
 id: REF-0026
 title: MingOS Kernel Specification Family and Identifier Allocation Map
 status: Draft
-version: 0.1.0
+version: 0.2.0-draft.1
 layer: Reference
 owner: Ming Foundation Architecture
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
@@ -135,3 +135,17 @@ it cannot silently change the source.
 - Breaking changes require compatibility, migration and rollback analysis.
 - New family documents require an explicit allocation decision rather than
   informal numbering.
+
+## 6. Round 07 repository-support prerequisite
+
+Before any `KERNEL-*` governed document is added, Round 07 must:
+
+1. extend the canonical document-ID validator to recognize the `KERNEL` prefix;
+2. add a Kernel-family validator to the full validation suite;
+3. index every created KERNEL document;
+4. verify that reserved-but-not-created IDs remain absent;
+5. preserve `NoCurrentKernelConformanceClaim`;
+6. treat validation support as repository infrastructure, not as evidence that
+   a Kernel requirement is correct or implemented.
+
+Passing these checks will prove structural repository support only.
