@@ -1,24 +1,31 @@
 {
-  "schema": "mingos.kernel-core-requirements.v0.1",
+  "schema": "mingos.kernel-core-requirements.v0.2",
   "status": "Draft",
-  "version": "0.1.0-draft.1",
+  "version": "0.2.0-draft.2",
   "decision_base_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795",
+  "markdown_authority": {
+    "family_source": "standards/kernel/KERNEL-0000-specification-family-index.md",
+    "requirement_source": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+    "source_crosswalk": "reference/kernel/REF-0031-kernel-core-requirement-source-crosswalk.md",
+    "source_text_authoritative": true
+  },
   "family": {
-    "id": "kernel-family/0.1.0-draft.1",
+    "id": "kernel-family/0.2.0-draft.2",
     "decision": {
       "id": "ADR-0026",
-      "status": "Proposed"
+      "status": "Proposed",
+      "version": "0.2.0"
     },
     "documents": [
       {
         "id": "KERNEL-0000",
         "status": "Draft",
-        "version": "0.1.0-draft.1"
+        "version": "0.2.0-draft.2"
       },
       {
         "id": "KERNEL-0001",
         "status": "Draft",
-        "version": "0.1.0-draft.1"
+        "version": "0.2.0-draft.2"
       }
     ],
     "reserved_not_created": [
@@ -28,17 +35,203 @@
       "KERNEL-0005"
     ]
   },
+  "allowed_normative_levels": [
+    "MUST",
+    "MUST NOT",
+    "SHOULD",
+    "SHOULD NOT",
+    "MAY"
+  ],
+  "source_baseline": {
+    "MF-0004": {
+      "path": "foundation/charter/MF-0004-life-charter.md",
+      "authority_class": "CandidateCharterConstraint",
+      "status": "Candidate",
+      "version": "1.0.0-alpha.5",
+      "blob_sha": "e783251fc6d7815d9af97453756a99336bf0bdf8",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "MF-0005": {
+      "path": "foundation/philosophy/MF-0005-mingos-core-thought-culture-philosophy.zh-CN.md",
+      "authority_class": "DraftInterpretiveInput",
+      "status": "Draft",
+      "version": "0.3.0-draft.2",
+      "blob_sha": "638d2445073d45751a39c64a76821800c98e308a",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "PROJECT-MINGOS-0002": {
+      "path": "projects/mingos/PROJECT-MINGOS-0002-mingos-charter.md",
+      "authority_class": "CandidateProjectConstraint",
+      "status": "Candidate",
+      "version": "1.0.0-alpha.5",
+      "blob_sha": "24e377a2d7f4893966c5568e446645b741d9cdb5",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "ADR-0001": {
+      "path": "governance/decisions/ADR-0001-ai-is-not-the-center.md",
+      "authority_class": "AcceptedArchitecture",
+      "status": "Accepted",
+      "version": "1.0.0",
+      "blob_sha": "54be9fc519f39fed17f6f193a5b11b0ea0ef3ca3",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "ADR-0002": {
+      "path": "governance/decisions/ADR-0002-observation-before-advice.md",
+      "authority_class": "AcceptedArchitecture",
+      "status": "Accepted",
+      "version": "1.0.0",
+      "blob_sha": "66a02fc435213ebc1aa3fd80028dc9c69531c9ec",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "ADR-0005": {
+      "path": "governance/decisions/ADR-0005-three-root-texts-and-boundaries.md",
+      "authority_class": "AcceptedArchitecture",
+      "status": "Accepted",
+      "version": "1.0.0",
+      "blob_sha": "8b8b74d5577d765fe707339b9b699672c9c3a7e6",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "ADR-0026": {
+      "path": "governance/decisions/ADR-0026-define-mingos-kernel-specification-family.md",
+      "authority_class": "ProposedArchitecture",
+      "status": "Proposed",
+      "version": "0.2.0",
+      "blob_sha": "614eeb7b063fdf8a8d383bc5d39c10cc8936c66a",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "MOS-0000": {
+      "path": "standards/mos/MOS-0000-standard-process.md",
+      "authority_class": "DraftStandardsProcess",
+      "status": "Draft",
+      "version": "1.0.0-alpha.11",
+      "blob_sha": "dfaa3b4dfa1ad3ae4d9578614267591c6955163b",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "RFC-0001": {
+      "path": "standards/rfc/RFC-0001-subject-speaker-and-contestability.md",
+      "authority_class": "ProposedProtocol",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "d66a0977083263918ba98c31a300bda31c398de6",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "RFC-0002": {
+      "path": "standards/rfc/RFC-0002-consent-and-data-rights-lifecycle.md",
+      "authority_class": "ProposedProtocol",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "15d06b63128257ca1229631626f4ff0dfdf07291",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "RFC-0003": {
+      "path": "standards/rfc/RFC-0003-safety-escalation-handoff-appeal-and-incident.md",
+      "authority_class": "ProposedProtocol",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "4877a6b6435b959cc9857085564df542c1ec3afc",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "RFC-0004": {
+      "path": "standards/rfc/RFC-0004-case-and-cross-family-evidence-governance.md",
+      "authority_class": "ProposedProtocol",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "blob_sha": "5c9883f4a4cbb735fd4235e89ecd068e4e437582",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "RFC-0005": {
+      "path": "standards/rfc/RFC-0005-public-claim-charter-sync-and-capability-status.md",
+      "authority_class": "ProposedProtocol",
+      "status": "Proposed",
+      "version": "0.1.0",
+      "blob_sha": "61da3f762705997d397ec9d1e0c55b6b7fa8c6d4",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "PROF-0001": {
+      "path": "standards/profiles/PROF-0001-participation-and-representative-decision-profile.md",
+      "authority_class": "ProposedProfile",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "378f127298dc9f204c69c5b90e7631539f3852f0",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "PROF-0002": {
+      "path": "standards/profiles/PROF-0002-representative-authority-evidence-profile.md",
+      "authority_class": "ProposedProfile",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "0552bc82c16aa8a74c8040a94b1de2980da8efa1",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "PROF-0003": {
+      "path": "standards/profiles/PROF-0003-retention-and-backup-completion-profile.md",
+      "authority_class": "ProposedProfile",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "96e2e6220c79ce101d34ffac317efa9e160e4344",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "PROF-0004": {
+      "path": "standards/profiles/PROF-0004-service-response-and-resource-freshness-profile.md",
+      "authority_class": "ProposedProfile",
+      "status": "Proposed",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "b4a3a884ba05003e8c01f0e8b2e090dcc0e97e3b",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "REF-0014": {
+      "path": "reference/history/REF-0014-method-kernel-boundary-map.zh-CN.md",
+      "authority_class": "DraftHistoricalReference",
+      "status": "Draft",
+      "version": "0.2.1-draft.2",
+      "blob_sha": "07c7f0b506bf009b3f23e3a5a57f29a9579cd2e2",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "REF-0028": {
+      "path": "reference/kernel/REF-0028-kernel-conformance-replaceability-claim-boundary.md",
+      "authority_class": "DraftKernelReference",
+      "status": "Draft",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "57bff35b297e4be1697c91225c098d9eae6fa48e",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    },
+    "REF-0029": {
+      "path": "reference/kernel/REF-0029-kernel-role-representation-map.md",
+      "authority_class": "DraftKernelReference",
+      "status": "Draft",
+      "version": "0.2.0-draft.1",
+      "blob_sha": "8a9524adac77b043f8c3eaf2343245f5da99269b",
+      "baseline_commit": "0397834984b9d9ad0e08a142dce2a98ed5b1a795"
+    }
+  },
   "requirements": [
     {
       "id": "KCR-0001",
       "domain": "BoundaryAndAccountability",
       "level": "MUST",
       "text": "An implementation boundary MUST identify its version, governed surfaces, accountable organization, and accountable human role.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC14",
-        "ADR-0026:2.5"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC14",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "ADR-0026",
+          "locator": "§2.5",
+          "source_role": "ProposedArchitecture"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "BoundaryDeclarationInspection",
+        "AccountabilityRoleReview"
+      ],
+      "evidence_types": [
+        "BoundaryRecord",
+        "RoleAssignmentRecord"
+      ],
       "delegated_or_future_detail": "KERNEL-0004"
     },
     {
@@ -46,23 +239,57 @@
       "domain": "VersionSet",
       "level": "MUST",
       "text": "A Kernel-governed operation MUST identify the applicable Kernel family version set and the status of each source.",
-      "sources": [
-        "ADR-0026:2.4",
-        "KERNEL-0000:4"
+      "requirement_scope": "Core",
+      "source_treatment": "ArchitectureDerivedProposal",
+      "source_refs": [
+        {
+          "source_id": "ADR-0026",
+          "locator": "§2.4",
+          "source_role": "ProposedArchitecture"
+        },
+        {
+          "source_id": "KERNEL-0000",
+          "locator": "§4",
+          "source_role": "CollectionLocalDraft"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "VersionSetInspection",
+        "DependencyTrace"
+      ],
+      "evidence_types": [
+        "VersionSetDeclaration",
+        "SourceStatusSnapshot"
+      ],
       "delegated_or_future_detail": "KERNEL-0000"
     },
     {
       "id": "KCR-0003",
       "domain": "SourceIntegrity",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "A lower-layer artifact MUST NOT silently redefine a Charter, accepted architecture boundary, or authoritative source text.",
-      "sources": [
-        "ADR-0005:Dependency direction",
-        "ADR-0026:2.3"
+      "requirement_scope": "Core",
+      "source_treatment": "ArchitectureDerivedProposal",
+      "source_refs": [
+        {
+          "source_id": "ADR-0005",
+          "locator": "§Dependency direction",
+          "source_role": "AcceptedArchitecture"
+        },
+        {
+          "source_id": "ADR-0026",
+          "locator": "§2.3",
+          "source_role": "ProposedArchitecture"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "SourceDiffReview",
+        "RedefinitionNegativeScenario"
+      ],
+      "evidence_types": [
+        "SourceBaseline",
+        "ConflictRecord"
+      ],
       "delegated_or_future_detail": "KERNEL-0000"
     },
     {
@@ -70,11 +297,28 @@
       "domain": "AffectedPersonIdentification",
       "level": "MUST",
       "text": "A material operation MUST identify people who may be affected even when they are not account holders or interface operators.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC10",
-        "REF-0029:2"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC10",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "REF-0029",
+          "locator": "§2",
+          "source_role": "DraftKernelReference"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "AffectedPersonCoverageReview",
+        "NonUserImpactScenario"
+      ],
+      "evidence_types": [
+        "AffectedPersonRegister",
+        "ImpactAssessment"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -82,11 +326,28 @@
       "domain": "RoleSeparation",
       "level": "MUST",
       "text": "The system MUST preserve separations among affected person, subject, speaker, representative, operator, reviewer, accountable human, accountable organization, AI component, and service provider.",
-      "sources": [
-        "RFC-0001",
-        "REF-0029:2"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "RFC-0001",
+          "locator": "§3–6",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "REF-0029",
+          "locator": "§2",
+          "source_role": "DraftKernelReference"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "RoleGraphInspection",
+        "ConflictScenario"
+      ],
+      "evidence_types": [
+        "RoleAssignmentRecords",
+        "ConflictChecks"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -94,12 +355,38 @@
       "domain": "RepresentativeAuthority",
       "level": "MUST",
       "text": "Representative authority MUST be scoped, evidenced, purpose-bound, time-bounded, contestable, and revocable where applicable.",
-      "sources": [
-        "PROF-0001",
-        "PROF-0002",
-        "PROJECT-MINGOS-0002:MC10"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0001",
+          "locator": "§2.3 and §6",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROF-0001",
+          "locator": "§4 and §8–9",
+          "source_role": "ProposedProfile"
+        },
+        {
+          "source_id": "PROF-0002",
+          "locator": "§2–5 and §8–11",
+          "source_role": "ProposedProfile"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC10",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "AuthorityRecordInspection",
+        "RepresentativeConflictScenario"
+      ],
+      "evidence_types": [
+        "AuthorityEvidence",
+        "ScopeExpiryRecord"
+      ],
       "delegated_or_future_detail": "RFC-0001/PROF-0001/PROF-0002"
     },
     {
@@ -107,11 +394,28 @@
       "domain": "PurposeBeforeOperation",
       "level": "MUST",
       "text": "A personal-data or interpretive operation MUST record a legitimate declared purpose before collection, transformation, recommendation, disclosure, or reuse.",
-      "sources": [
-        "RFC-0002",
-        "PROJECT-MINGOS-0002:MC04"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0002",
+          "locator": "§3 and §5.1",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC04",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "PurposeTraceInspection",
+        "UnauthorizedUseScenario"
+      ],
+      "evidence_types": [
+        "PurposeRecord",
+        "OperationTrace"
+      ],
       "delegated_or_future_detail": "RFC-0002"
     },
     {
@@ -119,23 +423,62 @@
       "domain": "ConsentStatus",
       "level": "MUST",
       "text": "Where consent is the applicable authority basis, its scope, state, evidence, expiry, revocation, and exceptions MUST remain inspectable.",
-      "sources": [
-        "RFC-0002",
-        "MF-0004:C04"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0002",
+          "locator": "§4–5 and §7",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "MF-0004",
+          "locator": "§C04",
+          "source_role": "CandidateCharterConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "AuthorityLifecycleTrace",
+        "RevocationScenario"
+      ],
+      "evidence_types": [
+        "AuthorityBasisRecord",
+        "RevocationTrace"
+      ],
       "delegated_or_future_detail": "RFC-0002/KERNEL-0003"
     },
     {
       "id": "KCR-0009",
       "domain": "RefusalBoundary",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "Refusal, silence, withdrawal, or disagreement MUST NOT be treated as failure, resistance, consent, or proof that an interpretation is correct.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC03",
-        "MF-0004:C04"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC03",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "MF-0004",
+          "locator": "§C04",
+          "source_role": "CandidateCharterConstraint"
+        },
+        {
+          "source_id": "PROF-0001",
+          "locator": "§8",
+          "source_role": "ProposedProfile"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "RefusalNegativeScenario",
+        "UsabilityReview"
+      ],
+      "evidence_types": [
+        "InteractionTrace",
+        "AdverseOutcomeReview"
+      ],
       "delegated_or_future_detail": "KERNEL-0001"
     },
     {
@@ -143,11 +486,28 @@
       "domain": "ContestabilityAndCorrection",
       "level": "MUST",
       "text": "A materially affected person MUST have a usable path to inspect, contest, correct, contextualize, and appeal significant interpretation or decision records.",
-      "sources": [
-        "RFC-0001",
-        "PROJECT-MINGOS-0002:MC03/MC13"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0001",
+          "locator": "§7 and §9",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC03 and §MC13",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "RightsRouteReview",
+        "CorrectionPropagationTrace"
+      ],
+      "evidence_types": [
+        "RightsRequestRecord",
+        "UpdateTrace"
+      ],
       "delegated_or_future_detail": "RFC-0001/KERNEL-0003"
     },
     {
@@ -155,12 +515,33 @@
       "domain": "ThirdPartyMinimization",
       "level": "MUST",
       "text": "Third-party and non-user information MUST be purpose-limited, minimized, access-controlled, and protected from unlimited representative disclosure.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC10",
-        "RFC-0002",
-        "RFC-0004"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC10",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0002",
+          "locator": "§3 and §5.4",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "RFC-0004",
+          "locator": "§2–7",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "DataFlowInspection",
+        "ThirdPartyDisclosureScenario"
+      ],
+      "evidence_types": [
+        "DataInventory",
+        "AccessAudit"
+      ],
       "delegated_or_future_detail": "RFC-0002/RFC-0004"
     },
     {
@@ -168,11 +549,28 @@
       "domain": "KnowledgeStatusSeparation",
       "level": "MUST",
       "text": "Fact, observation, statement, inference, hypothesis, pattern, judgment, recommendation, and decision MUST remain distinguishable.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC06",
-        "RFC-0001"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC06",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0001",
+          "locator": "§3–5",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "SchemaInspection",
+        "KnowledgeTransitionScenario"
+      ],
+      "evidence_types": [
+        "KnowledgeItemRecords",
+        "StatusHistory"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -180,11 +578,28 @@
       "domain": "Provenance",
       "level": "MUST",
       "text": "A significant knowledge item MUST preserve source, speaker, subject, time, context, transformation history, and applicable authority.",
-      "sources": [
-        "RFC-0001",
-        "PROJECT-MINGOS-0002:MC05/MC06"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "RFC-0001",
+          "locator": "§3–4 and §9",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC05–MC06",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "LineageInspection",
+        "SourceLossScenario"
+      ],
+      "evidence_types": [
+        "ProvenanceGraph",
+        "TransformationHistory"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -192,11 +607,33 @@
       "domain": "UncertaintyAndUnknown",
       "level": "MUST",
       "text": "A significant inference MUST preserve uncertainty, limitations, unresolved alternatives, and unknowns; confidence MUST NOT be represented as truth.",
-      "sources": [
-        "MF-0004:C09",
-        "PROJECT-MINGOS-0002:MC05/MC06"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "MF-0004",
+          "locator": "§C09",
+          "source_role": "CandidateCharterConstraint"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC05–MC06",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0001",
+          "locator": "§4.3 and §5",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "UncertaintyReview",
+        "OverconfidenceScenario"
+      ],
+      "evidence_types": [
+        "InferenceRecord",
+        "UnknownRecord"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -204,11 +641,33 @@
       "domain": "ContradictionAndCounterexample",
       "level": "MUST",
       "text": "Contradictions, corrections, failures, counterexamples, dissent, and superseded interpretations MUST remain traceable subject to privacy and safety controls.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC05/MC13",
-        "RFC-0004"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC05 and §MC13",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0004",
+          "locator": "§5",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "RFC-0001",
+          "locator": "§9",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ContradictionTrace",
+        "CounterexampleRetentionReview"
+      ],
+      "evidence_types": [
+        "DissentRecord",
+        "SupersessionHistory"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -216,11 +675,28 @@
       "domain": "ObservationBeforeAdvice",
       "level": "SHOULD",
       "text": "The system SHOULD gather and distinguish relevant observation, context, uncertainty, and affected-person perspective before offering consequential advice.",
-      "sources": [
-        "ADR-0002",
-        "MF-0005"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "ADR-0002",
+          "locator": "§Decision",
+          "source_role": "AcceptedArchitecture"
+        },
+        {
+          "source_id": "MF-0005",
+          "locator": "§29–30",
+          "source_role": "DraftInterpretiveInput"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "AdviceTraceReview",
+        "ImmediateGuidanceExceptionScenario"
+      ],
+      "evidence_types": [
+        "ObservationRecord",
+        "AdviceDecisionTrace"
+      ],
       "delegated_or_future_detail": "KERNEL-0001"
     },
     {
@@ -228,11 +704,28 @@
       "domain": "RelationshipAndTimelineContext",
       "level": "SHOULD",
       "text": "Consequential interpretation SHOULD preserve relevant relationship, sequence, change over time, and structural or material context without assuming that context proves causation.",
-      "sources": [
-        "MF-0005",
-        "REF-0014"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "MF-0005",
+          "locator": "§10, §26 and §29–30",
+          "source_role": "DraftInterpretiveInput"
+        },
+        {
+          "source_id": "REF-0014",
+          "locator": "§Kernel-boundary candidates",
+          "source_role": "DraftHistoricalReference"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ContextCoverageReview",
+        "CausationOverreachScenario"
+      ],
+      "evidence_types": [
+        "RelationshipRecord",
+        "EventTimeline"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -240,11 +733,28 @@
       "domain": "UserChosenAction",
       "level": "SHOULD",
       "text": "A proposed action SHOULD preserve meaningful choice and identify whose goal, need, and authority the action serves.",
-      "sources": [
-        "MF-0005",
-        "PROJECT-MINGOS-0002:MC01/MC03"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "MF-0005",
+          "locator": "§18 and §20–21",
+          "source_role": "DraftInterpretiveInput"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC01 and §MC03",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ChoiceAuthorityReview",
+        "CoercionScenario"
+      ],
+      "evidence_types": [
+        "ActionProposal",
+        "UserChoiceRecord"
+      ],
       "delegated_or_future_detail": "KERNEL-0001"
     },
     {
@@ -252,11 +762,28 @@
       "domain": "SmallSafeReversibleAction",
       "level": "SHOULD",
       "text": "When uncertainty or impact is material, the system SHOULD prefer the smallest reasonably safe, reversible, observable action.",
-      "sources": [
-        "MF-0005",
-        "PROJECT-MINGOS-0002:S05/S06"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "MF-0005",
+          "locator": "§15 and §41–42",
+          "source_role": "DraftInterpretiveInput"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§S05–S06",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ReversibilityReview",
+        "HighUncertaintyScenario"
+      ],
+      "evidence_types": [
+        "ActionPlan",
+        "RollbackRecord"
+      ],
       "delegated_or_future_detail": "KERNEL-0001"
     },
     {
@@ -264,23 +791,67 @@
       "domain": "AffectedImpactReview",
       "level": "MUST",
       "text": "Before a high-impact operation, the system MUST identify affected people, foreseeable consequences, alternatives, reversibility, notice, correction, appeal, and review conditions.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC09/MC10",
-        "REF-0029:5"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC09–MC10",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "REF-0029",
+          "locator": "§5",
+          "source_role": "DraftKernelReference"
+        },
+        {
+          "source_id": "RFC-0001",
+          "locator": "§2.2",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "HighImpactGateInspection",
+        "AffectedPersonReview"
+      ],
+      "evidence_types": [
+        "ImpactAssessment",
+        "ReviewAppealPlan"
+      ],
       "delegated_or_future_detail": "KERNEL-0003"
     },
     {
       "id": "KCR-0021",
       "domain": "NoHiddenPersuasion",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "The system MUST NOT use hidden persuasion, anxiety, shame, dependency, urgency, or vulnerability to obtain consent, compliance, purchase, retention, or disclosure.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC07/MC08",
-        "RFC-0005"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC07–MC08",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0005",
+          "locator": "§6–8",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "MF-0005",
+          "locator": "§47–49",
+          "source_role": "DraftInterpretiveInput"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "InteractionAudit",
+        "DarkPatternScenario"
+      ],
+      "evidence_types": [
+        "MessageTrace",
+        "CommercialConflictReview"
+      ],
       "delegated_or_future_detail": "KERNEL-0001"
     },
     {
@@ -288,11 +859,28 @@
       "domain": "RiskRecognition",
       "level": "MUST",
       "text": "A system operating in a domain with foreseeable serious harm MUST define risk recognition, uncertainty, escalation, stop, and incident-recording behavior.",
-      "sources": [
-        "RFC-0003",
-        "PROJECT-MINGOS-0002:MC11"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0003",
+          "locator": "§2–6",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC11",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "RiskScenarioTrace",
+        "StopEscalationInspection"
+      ],
+      "evidence_types": [
+        "RiskSignal",
+        "RiskAssessment"
+      ],
       "delegated_or_future_detail": "RFC-0003/KERNEL-0003"
     },
     {
@@ -300,24 +888,62 @@
       "domain": "CapabilityBoundary",
       "level": "MUST",
       "text": "Current capability, professional status, jurisdiction, service availability, limitations, and unavailable functions MUST be represented honestly.",
-      "sources": [
-        "RFC-0003",
-        "RFC-0005",
-        "PROF-0004"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0003",
+          "locator": "§3 and §7",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "RFC-0005",
+          "locator": "§3 and §8",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROF-0004",
+          "locator": "§1–5 and §8",
+          "source_role": "ProposedProfile"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "CapabilityClaimAudit",
+        "UnavailableServiceScenario"
+      ],
+      "evidence_types": [
+        "CapabilityStatusRecord",
+        "AvailabilityEvidence"
+      ],
       "delegated_or_future_detail": "RFC-0003/RFC-0005/PROF-0004"
     },
     {
       "id": "KCR-0024",
       "domain": "HandoffAvailability",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "Generating a referral, resource, message, or link MUST NOT be represented as a completed handoff unless availability and completion evidence support that claim.",
-      "sources": [
-        "RFC-0003",
-        "PROF-0004"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0003",
+          "locator": "§3, §4.3 and §6",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROF-0004",
+          "locator": "§1, §8 and §11",
+          "source_role": "ProposedProfile"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "HandoffLifecycleTrace",
+        "SentMessageScenario"
+      ],
+      "evidence_types": [
+        "HandoffRecord",
+        "AcceptanceEvidence"
+      ],
       "delegated_or_future_detail": "RFC-0003/PROF-0004"
     },
     {
@@ -325,11 +951,28 @@
       "domain": "AppealAndIncident",
       "level": "MUST",
       "text": "A material adverse decision or failure MUST have a traceable appeal, incident, containment, review, correction, and follow-up path appropriate to its scope.",
-      "sources": [
-        "RFC-0003",
-        "PROJECT-MINGOS-0002:MC13/MC14"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0003",
+          "locator": "§4.5, §6 and §8",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC13–MC14",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "IncidentAppealTrace",
+        "DifferentReviewerCheck"
+      ],
+      "evidence_types": [
+        "IncidentRecord",
+        "AppealRecord"
+      ],
       "delegated_or_future_detail": "RFC-0003/KERNEL-0003"
     },
     {
@@ -337,11 +980,33 @@
       "domain": "EmergencyIntervention",
       "level": "MUST",
       "text": "An emergency or protective intervention MUST be lawful where applicable, necessary, proportionate, purpose-limited, time-bounded where possible, reviewable, and distinct from consent.",
-      "sources": [
-        "MF-0004:C04",
-        "PROJECT-MINGOS-0002:MC03"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "MF-0004",
+          "locator": "§C04",
+          "source_role": "CandidateCharterConstraint"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC03",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0003",
+          "locator": "§5 and §9",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ProportionalityReview",
+        "EmergencyExceptionScenario"
+      ],
+      "evidence_types": [
+        "ProtectiveActionRecord",
+        "IndependentReview"
+      ],
       "delegated_or_future_detail": "KERNEL-0003"
     },
     {
@@ -349,11 +1014,28 @@
       "domain": "MemoryInspectionCorrection",
       "level": "MUST",
       "text": "A person materially represented in memory MUST have an applicable path to inspect, correct, contextualize, contest, and identify significant downstream effects.",
-      "sources": [
-        "RFC-0002",
-        "PROJECT-MINGOS-0002:MC04"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0002",
+          "locator": "§5.5 and §7–9",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC04",
+          "source_role": "CandidateProjectConstraint"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "MemoryRightsReview",
+        "CorrectionImpactTrace"
+      ],
+      "evidence_types": [
+        "MemoryRecord",
+        "PropagationEvidence"
+      ],
       "delegated_or_future_detail": "RFC-0002/KERNEL-0003"
     },
     {
@@ -361,23 +1043,57 @@
       "domain": "MemoryRevocationRetentionDeletion",
       "level": "MUST",
       "text": "Memory authority, revocation, retention, deletion, backup exceptions, access, and completion evidence MUST be represented explicitly.",
-      "sources": [
-        "RFC-0002",
-        "PROF-0003"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0002",
+          "locator": "§6–9",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "PROF-0003",
+          "locator": "§1–5 and §7–11",
+          "source_role": "ProposedProfile"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "RetentionDeletionTrace",
+        "BackupRestoreScenario"
+      ],
+      "evidence_types": [
+        "RetentionProfile",
+        "CompletionEvidence"
+      ],
       "delegated_or_future_detail": "RFC-0002/PROF-0003/KERNEL-0003"
     },
     {
       "id": "KCR-0029",
       "domain": "NoPermanentVulnerabilityProfile",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "Temporary distress, vulnerability, conflict, diagnosis, risk, or limitation MUST NOT become an unreviewable permanent identity or commercial profile.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC04/MC07",
-        "MF-0005"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC04 and §MC07",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "MF-0005",
+          "locator": "§37–40 and §48",
+          "source_role": "DraftInterpretiveInput"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ProfilePersistenceAudit",
+        "CrisisExpiryScenario"
+      ],
+      "evidence_types": [
+        "ProfileHistory",
+        "ExpiryEvidence"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -385,12 +1101,33 @@
       "domain": "SecondaryUseDisclosure",
       "level": "MUST",
       "text": "Secondary use, cross-context inference, model or system improvement, research, analytics, and training use MUST have a disclosed authority basis, purpose, data boundary, retention rule, and refusal or exception path.",
-      "sources": [
-        "RFC-0002",
-        "RFC-0004",
-        "MF-0005"
+      "requirement_scope": "Delegated",
+      "source_treatment": "DelegatedProposedProtocolIntegration",
+      "source_refs": [
+        {
+          "source_id": "RFC-0002",
+          "locator": "§3–4 and §10–11",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "RFC-0004",
+          "locator": "§6",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "MF-0005",
+          "locator": "§40 and §51–54",
+          "source_role": "DraftInterpretiveInput"
+        }
       ],
-      "integration_type": "Delegated",
+      "verification_methods": [
+        "SecondaryUseReview",
+        "TrainingReuseScenario"
+      ],
+      "evidence_types": [
+        "SecondaryUseRecord",
+        "AuthorityEvidence"
+      ],
       "delegated_or_future_detail": "RFC-0002/RFC-0004"
     },
     {
@@ -398,12 +1135,33 @@
       "domain": "AIIdentityCapabilityLimits",
       "level": "MUST",
       "text": "An AI component MUST expose its role, relevant provider or model version, capabilities, limitations, generated or inferred status, and significant provenance.",
-      "sources": [
-        "ADR-0001",
-        "PROJECT-MINGOS-0002:MC09",
-        "RFC-0005"
+      "requirement_scope": "Core",
+      "source_treatment": "ArchitectureDerivedProposal",
+      "source_refs": [
+        {
+          "source_id": "ADR-0001",
+          "locator": "§Decision",
+          "source_role": "AcceptedArchitecture"
+        },
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC09",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0005",
+          "locator": "§8",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "AIProvenanceInspection",
+        "RoleImpersonationScenario"
+      ],
+      "evidence_types": [
+        "ComponentManifest",
+        "GeneratedContentTrace"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -411,11 +1169,33 @@
       "domain": "HumanAccountability",
       "level": "MUST",
       "text": "A high-impact decision MUST identify a human and organization with sufficient information, authority, independence, stop capacity, and review responsibility.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC09/MC14",
-        "REF-0029"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC09 and §MC14",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "REF-0029",
+          "locator": "§5",
+          "source_role": "DraftKernelReference"
+        },
+        {
+          "source_id": "ADR-0001",
+          "locator": "§Decision",
+          "source_role": "AcceptedArchitecture"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "AccountabilityReview",
+        "HumanInNameOnlyScenario"
+      ],
+      "evidence_types": [
+        "AccountableRoleRecord",
+        "StopAuthorityEvidence"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -423,11 +1203,28 @@
       "domain": "AffectedPersonParticipation",
       "level": "MUST",
       "text": "A high-impact design or decision MUST define how affected-person participation, refusal, representation, accessibility, and situations where participation is unsafe or impossible are handled.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC09/MC10",
-        "PROF-0001"
+      "requirement_scope": "Core",
+      "source_treatment": "CandidateConstraintOperationalization",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC09–MC10",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "PROF-0001",
+          "locator": "§1–5 and §7–10",
+          "source_role": "ProposedProfile"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "ParticipationProtocolReview",
+        "ParticipationImpossibleScenario"
+      ],
+      "evidence_types": [
+        "ParticipationRecord",
+        "AccessibilityEvidence"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
@@ -435,11 +1232,38 @@
       "domain": "FeedbackAndStateRevision",
       "level": "MUST",
       "text": "Observed outcome, affected-person feedback, correction, failure, and new evidence MUST be able to revise relevant state without erasing prior provenance.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC13",
-        "MF-0004:C09"
+      "requirement_scope": "Core",
+      "source_treatment": "CrossSourceSynthesis",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC13",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "MF-0004",
+          "locator": "§C09",
+          "source_role": "CandidateCharterConstraint"
+        },
+        {
+          "source_id": "RFC-0001",
+          "locator": "§9",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "RFC-0002",
+          "locator": "§8–9",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "FeedbackRevisionTrace",
+        "OutcomeFailureScenario"
+      ],
+      "evidence_types": [
+        "FeedbackRecord",
+        "RevisionTrace"
+      ],
       "delegated_or_future_detail": "KERNEL-0003"
     },
     {
@@ -447,23 +1271,67 @@
       "domain": "AuditVersionFailureUnknown",
       "level": "MUST",
       "text": "Material operations MUST preserve audit, version, source, decision, exception, failure, counterexample, dissent, and unknown records according to applicable privacy and safety controls.",
-      "sources": [
-        "PROJECT-MINGOS-0002:MC05/MC13/MC14",
-        "RFC-0004"
+      "requirement_scope": "Core",
+      "source_treatment": "NewProposalInformedByDraftInterpretation",
+      "source_refs": [
+        {
+          "source_id": "PROJECT-MINGOS-0002",
+          "locator": "§MC05, §MC13 and §MC14",
+          "source_role": "CandidateProjectConstraint"
+        },
+        {
+          "source_id": "RFC-0004",
+          "locator": "§2–7",
+          "source_role": "ProposedProtocol"
+        },
+        {
+          "source_id": "MF-0005",
+          "locator": "§54",
+          "source_role": "DraftInterpretiveInput"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "AuditCompletenessReview",
+        "FailureUnknownTrace"
+      ],
+      "evidence_types": [
+        "AuditEvent",
+        "UnknownRegister"
+      ],
       "delegated_or_future_detail": "KERNEL-0002"
     },
     {
       "id": "KCR-0036",
       "domain": "NoPrematureConformanceClaim",
-      "level": "MUST_NOT",
+      "level": "MUST NOT",
       "text": "No product, organization, model, prompt, workflow, or repository MUST be described as Kernel conforming before applicable conformance requirements, tests, evidence, review, exceptions, and claim-expiry rules exist and are satisfied.",
-      "sources": [
-        "ADR-0026:2.5",
-        "REF-0028"
+      "requirement_scope": "Core",
+      "source_treatment": "ArchitectureDerivedProposal",
+      "source_refs": [
+        {
+          "source_id": "ADR-0026",
+          "locator": "§2.5",
+          "source_role": "ProposedArchitecture"
+        },
+        {
+          "source_id": "REF-0028",
+          "locator": "§1–7",
+          "source_role": "DraftKernelReference"
+        },
+        {
+          "source_id": "RFC-0005",
+          "locator": "§2–6",
+          "source_role": "ProposedProtocol"
+        }
       ],
-      "integration_type": "Core",
+      "verification_methods": [
+        "PublicClaimAudit",
+        "MissingEvidenceScenario"
+      ],
+      "evidence_types": [
+        "ClaimRecord",
+        "BoundaryStatement"
+      ],
       "delegated_or_future_detail": "KERNEL-0004/KERNEL-0005"
     }
   ],
@@ -473,359 +1341,689 @@
       "area": "Kernel applicability",
       "issue": "Does the core govern software only, or also human professional and organizational operations?",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0001",
+        "KCR-0007"
+      ],
+      "required_review_classes": [
+        "Architecture",
+        "Implementation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Architecture"
     },
     {
       "id": "KCA-002",
       "area": "Affected person",
       "issue": "How far indirect, group, relational, future, or non-user impact extends.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0002",
+        "KCR-0008"
+      ],
+      "required_review_classes": [
+        "AffectedPerson",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "AffectedPerson"
     },
     {
       "id": "KCA-003",
       "area": "Role multiplicity",
       "issue": "When one person may hold several roles without destroying independence.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0003",
+        "KCR-0009"
+      ],
+      "required_review_classes": [
+        "Governance",
+        "Professional"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Governance"
     },
     {
       "id": "KCA-004",
       "area": "Representative authority",
       "issue": "How authority varies by age, capacity, jurisdiction, urgency, and conflict.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0004",
+        "KCR-0010"
+      ],
+      "required_review_classes": [
+        "Privacy",
+        "Jurisdiction"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Privacy"
     },
     {
       "id": "KCA-005",
       "area": "Declared purpose",
       "issue": "Required granularity and when a changed purpose requires renewed authority.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0005",
+        "KCR-0011"
+      ],
+      "required_review_classes": [
+        "Safety",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Safety"
     },
     {
       "id": "KCA-006",
       "area": "Consent basis",
       "issue": "When consent is inapplicable, invalid, coerced, or insufficient.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0006",
+        "KCR-0012"
+      ],
+      "required_review_classes": [
+        "Accessibility",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Accessibility"
     },
     {
       "id": "KCA-007",
       "area": "Refusal and safety",
       "issue": "When refusal can be overridden for lawful protective action.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0007",
+        "KCR-0013"
+      ],
+      "required_review_classes": [
+        "Research",
+        "Domain"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Research"
     },
     {
       "id": "KCA-008",
       "area": "Correction propagation",
       "issue": "Which derived records and decisions must be updated after correction.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0008",
+        "KCR-0014"
+      ],
+      "required_review_classes": [
+        "CommercialConflict",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "CommercialConflict"
     },
     {
       "id": "KCA-009",
       "area": "Third-party rights",
       "issue": "How a user can inspect their own record without exposing another person's protected information.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0009",
+        "KCR-0015"
+      ],
+      "required_review_classes": [
+        "Standards",
+        "Translation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Standards"
     },
     {
       "id": "KCA-010",
       "area": "Knowledge statuses",
       "issue": "Boundary among observation, statement, inference, hypothesis, pattern, judgment, and decision.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0010",
+        "KCR-0016"
+      ],
+      "required_review_classes": [
+        "Architecture",
+        "Implementation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Architecture"
     },
     {
       "id": "KCA-011",
       "area": "Observation before advice",
       "issue": "When immediate safe guidance may precede complete observation.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0011",
+        "KCR-0017"
+      ],
+      "required_review_classes": [
+        "AffectedPerson",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "AffectedPerson"
     },
     {
       "id": "KCA-012",
       "area": "Confidence",
       "issue": "Whether numeric confidence is meaningful across human and AI interpretation.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0012",
+        "KCR-0018"
+      ],
+      "required_review_classes": [
+        "Governance",
+        "Professional"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Governance"
     },
     {
       "id": "KCA-013",
       "area": "Unknown and dissent",
       "issue": "How unknowns and minority views affect operations rather than becoming passive notes.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0013",
+        "KCR-0019"
+      ],
+      "required_review_classes": [
+        "Privacy",
+        "Jurisdiction"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Privacy"
     },
     {
       "id": "KCA-014",
       "area": "Relationship context",
       "issue": "How to preserve context without creating intrusive relationship surveillance.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0014",
+        "KCR-0020"
+      ],
+      "required_review_classes": [
+        "Safety",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Safety"
     },
     {
       "id": "KCA-015",
       "area": "Small and reversible",
       "issue": "What small, safe, and reversible mean in different domains.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0015",
+        "KCR-0021"
+      ],
+      "required_review_classes": [
+        "Accessibility",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Accessibility"
     },
     {
       "id": "KCA-016",
       "area": "Hidden persuasion",
       "issue": "Boundary between supportive communication, risk disclosure, recommendation, and manipulation.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0016",
+        "KCR-0022"
+      ],
+      "required_review_classes": [
+        "Research",
+        "Domain"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Research"
     },
     {
       "id": "KCA-017",
       "area": "High-impact operation",
       "issue": "Thresholds for impact, likelihood, reversibility, duration, scale, and vulnerable groups.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0017",
+        "KCR-0023"
+      ],
+      "required_review_classes": [
+        "CommercialConflict",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "CommercialConflict"
     },
     {
       "id": "KCA-018",
       "area": "Risk threshold",
       "issue": "When uncertainty itself requires stopping, escalation, or human review.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0018",
+        "KCR-0024"
+      ],
+      "required_review_classes": [
+        "Standards",
+        "Translation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Standards"
     },
     {
       "id": "KCA-019",
       "area": "Unavailable handoff",
       "issue": "Obligations when qualified human or emergency services are unavailable.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0019",
+        "KCR-0025"
+      ],
+      "required_review_classes": [
+        "Architecture",
+        "Implementation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Architecture"
     },
     {
       "id": "KCA-020",
       "area": "Emergency intervention",
       "issue": "Who determines necessity and proportionality, with what evidence and review.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0020",
+        "KCR-0026"
+      ],
+      "required_review_classes": [
+        "AffectedPerson",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "AffectedPerson"
     },
     {
       "id": "KCA-021",
       "area": "Memory deletion",
       "issue": "Conflicts among deletion, backup, audit, safety, legal, and other-person rights.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0021",
+        "KCR-0027"
+      ],
+      "required_review_classes": [
+        "Governance",
+        "Professional"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Governance"
     },
     {
       "id": "KCA-022",
       "area": "Secondary use",
       "issue": "Whether and how learning from sensitive interaction can be authorized without exploitation.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0022",
+        "KCR-0028"
+      ],
+      "required_review_classes": [
+        "Privacy",
+        "Jurisdiction"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Privacy"
     },
     {
       "id": "KCA-023",
       "area": "AI disclosure",
       "issue": "What model and provenance detail is meaningful to an affected person.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0023",
+        "KCR-0029"
+      ],
+      "required_review_classes": [
+        "Safety",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Safety"
     },
     {
       "id": "KCA-024",
       "area": "Accountable human",
       "issue": "Required competence, independence, information, authority, and availability.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0024",
+        "KCR-0030"
+      ],
+      "required_review_classes": [
+        "Accessibility",
+        "AffectedPerson"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Accessibility"
     },
     {
       "id": "KCA-025",
       "area": "Participation impossible",
       "issue": "How to proceed when participation is unsafe, inaccessible, declined, or impossible.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0025",
+        "KCR-0031"
+      ],
+      "required_review_classes": [
+        "Research",
+        "Domain"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Research"
     },
     {
       "id": "KCA-026",
       "area": "Organization obligations",
       "issue": "Which requirements apply directly to organizational policy, sales, staffing, and governance.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0026",
+        "KCR-0032"
+      ],
+      "required_review_classes": [
+        "CommercialConflict",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "CommercialConflict"
     },
     {
       "id": "KCA-027",
       "area": "Requirement delegation",
       "issue": "How referenced RFC/Profile requirements remain synchronized without copying.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0027",
+        "KCR-0033"
+      ],
+      "required_review_classes": [
+        "Standards",
+        "Translation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Standards"
     },
     {
       "id": "KCA-028",
       "area": "Candidate Charter change",
       "issue": "How Kernel Drafts respond when a Candidate Charter is revised.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0028",
+        "KCR-0034"
+      ],
+      "required_review_classes": [
+        "Architecture",
+        "Implementation"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Architecture"
     },
     {
       "id": "KCA-029",
       "area": "Cross-language traceability",
       "issue": "How English and Chinese sources remain semantically traceable.",
       "risk": "High",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0029",
+        "KCR-0035"
+      ],
+      "required_review_classes": [
+        "AffectedPerson",
+        "Ethics"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "AffectedPerson"
     },
     {
       "id": "KCA-030",
       "area": "Conformance future",
       "issue": "Which Draft requirements eventually become mandatory, conditional, optional, or removed.",
       "risk": "Critical",
-      "status": "Open"
+      "status": "Open",
+      "requirement_refs": [
+        "KCR-0030",
+        "KCR-0036"
+      ],
+      "required_review_classes": [
+        "Governance",
+        "Professional"
+      ],
+      "target_round": "Round 08–09",
+      "owner_class": "Governance"
     }
   ],
   "vocabulary": [
     {
+      "id": "KVT-0001",
       "term": "Person",
       "working_meaning": "A human being; never reducible to account, role, profile, record, or model output.",
       "status": "Core semantic"
     },
     {
+      "id": "KVT-0002",
       "term": "AffectedPerson",
       "working_meaning": "A person whose rights, welfare, identity, relationship, opportunity, or safety may be materially affected.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0003",
       "term": "Subject",
       "working_meaning": "The person, group, relationship, event, or object being described.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0004",
       "term": "Speaker",
       "working_meaning": "The source of a statement, observation, correction, or claim.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0005",
       "term": "Representative",
       "working_meaning": "A person acting for or with another person under scoped authority.",
       "status": "Profile-dependent"
     },
     {
+      "id": "KVT-0006",
       "term": "Operator",
       "working_meaning": "An actor initiating or controlling an operation or interface.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0007",
       "term": "AccountableHuman",
       "working_meaning": "A human responsible for a bounded decision or operation.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0008",
       "term": "AccountableOrganization",
       "working_meaning": "The entity responsible for governance, service, or a claim.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0009",
       "term": "AIComponent",
       "working_meaning": "A model or agent performing bounded generated, inferred, or execution functions.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0010",
       "term": "Purpose",
       "working_meaning": "The declared reason and allowed scope for an operation or data use.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0011",
       "term": "AuthorityBasis",
       "working_meaning": "The documented basis that permits an action, role, or data operation.",
       "status": "Profile/jurisdiction-dependent"
     },
     {
+      "id": "KVT-0012",
       "term": "Consent",
       "working_meaning": "A scoped authority state where consent is the applicable basis; not a universal basis for all action.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0013",
       "term": "Observation",
       "working_meaning": "A time- and source-bound record of what was perceived or measured.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0014",
       "term": "Statement",
       "working_meaning": "Content asserted by a speaker, distinct from verified fact.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0015",
       "term": "Inference",
       "working_meaning": "A derived interpretation that remains distinguishable from source records.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0016",
       "term": "Hypothesis",
       "working_meaning": "A testable or revisable possible explanation.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0017",
       "term": "Pattern",
       "working_meaning": "A proposed recurrence or relationship across records, not automatic causation.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0018",
       "term": "Judgment",
       "working_meaning": "A human or system evaluation under stated criteria and authority.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0019",
       "term": "Decision",
       "working_meaning": "A selection or authorization with consequences and accountability.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0020",
       "term": "Evidence",
       "working_meaning": "A source-linked record used to support or challenge a claim or decision.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0021",
       "term": "Confidence",
       "working_meaning": "A bounded assessment of support or uncertainty; never equivalent to truth.",
       "status": "Open"
     },
     {
+      "id": "KVT-0022",
       "term": "Unknown",
       "working_meaning": "A material absence, uncertainty, conflict, or unresolved question.",
       "status": "Core semantic"
     },
     {
+      "id": "KVT-0023",
       "term": "Memory",
       "working_meaning": "A retained record or derived state that can affect later operations.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0024",
       "term": "Action",
       "working_meaning": "A proposed or executed change with actor, target, purpose, authority, and expected effects.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0025",
       "term": "Feedback",
       "working_meaning": "Observed or reported information about an action, state, interpretation, or outcome.",
       "status": "Provisional"
     },
     {
+      "id": "KVT-0026",
       "term": "Risk",
       "working_meaning": "A possible harmful consequence characterized by severity, likelihood, immediacy, uncertainty, and reversibility.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0027",
       "term": "Incident",
       "working_meaning": "A suspected or confirmed harmful, unauthorized, or materially nonconforming event.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0028",
       "term": "Appeal",
       "working_meaning": "A request for review, correction, suspension, or reversal of a material decision or record.",
       "status": "RFC-dependent"
     },
     {
+      "id": "KVT-0029",
       "term": "ServiceAvailability",
       "working_meaning": "Current evidence that a human, professional, emergency, or external resource can actually respond.",
       "status": "Profile-dependent"
     },
     {
+      "id": "KVT-0030",
       "term": "HighImpactOperation",
       "working_meaning": "A provisional category for operations with material rights, safety, identity, relationship, opportunity, or lasting consequence.",
       "status": "Open"
@@ -840,7 +2038,6 @@
   },
   "conformance": {
     "current_claim": "NoCurrentKernelConformanceClaim",
-    "requirements_document_status": "Draft",
     "conformance_requirements_document_exists": false,
     "test_specification_exists": false,
     "product_assessment_count": 0
@@ -849,6 +2046,7 @@
     "requirement_count": 36,
     "ambiguity_count": 30,
     "vocabulary_count": 30,
+    "external_source_count": 20,
     "created_kernel_document_count": 2,
     "reserved_not_created_count": 4,
     "implementation_conformance_claim": false
