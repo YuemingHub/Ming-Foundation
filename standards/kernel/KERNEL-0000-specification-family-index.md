@@ -2,7 +2,7 @@
 id: KERNEL-0000
 title: MingOS Kernel Specification Family Index and Lifecycle
 status: Draft
-version: 0.2.0-draft.2
+version: 0.4.0-draft.4
 layer: Layer 2 — Standards
 owner: Ming Foundation Kernel Architecture
 created: 2026-07-15
@@ -10,16 +10,23 @@ updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
-decision_base_commit: 0397834984b9d9ad0e08a142dce2a98ed5b1a795
+decision_base_commit: f3905710db2304ab926c4ab31e10264931539f98
 related:
   - ADR-0005
   - ADR-0026
   - MOS-0000
   - KERNEL-0001
+  - KERNEL-0002
+  - KERNEL-0003
   - REF-0031
   - REF-0032
   - REF-0033
   - REF-0034
+  - REF-0040
+  - REF-0041
+  - REF-0042
+  - REF-0043
+  - REF-0044
 depends_on:
   - ADR-0026
   - MOS-0000
@@ -27,122 +34,84 @@ depends_on:
 
 # KERNEL-0000 — MingOS Kernel Specification Family Index and Lifecycle
 
-> **Draft family entry point.** ADR-0026 remains Proposed. This document does
-> not establish Kernel or product conformance.
+> Draft family entry point. ADR-0026 remains Proposed. No Kernel or product conformance is established.
 
 ## 1. Purpose
 
-Define the Kernel document family, active version set, dependency direction,
-source-use rules, lifecycle, compatibility, migration, and derived-index
-synchronization.
+Define the Kernel family, version set, source-use rules, authority direction, compatibility, migration and machine-index synchronization.
 
 ## 2. Scope and non-goals
 
-This Draft coordinates governed KERNEL documents. It does not define final
-objects, state machines, conformance levels, certification, tests, reference
-implementation, human-review authorization, CP2/CP3, or a status promotion.
+This Draft does not create certification, public marks, implementation conformance, human-review authorization, CP2/CP3 or status promotion.
 
 ## 3. Definitions
 
-- **Kernel family:** the explicit versioned set of governed KERNEL documents.
 - **Source baseline:** exact ID, status, version, path, commit, Blob and locator.
+- **Collection-local source:** same-revision source identified by ID, status, version, path and exact locator.
+- **Object state machine:** transitions owned by one canonical object type.
+- **Process coordination flow:** cross-object ordering that is not one object's state.
 - **Derived index:** machine-readable companion subordinate to Markdown.
-- **Reserved ID:** planned identifier with no authority until its document exists.
-- **Collection-local source:** source revised in the same commit, still identified
-  by ID, version, status and locator.
 
-## 4. Data and process model
+## 4. Family version set
 
 ```text
-Governed source baseline
-  ↓ classified source treatment
-KERNEL-0000 family/version rules
-  ↓
-KERNEL-0001 proposed core requirements
-  ↓ future
-KERNEL-0002 object/data model
-  ↓
-KERNEL-0003 lifecycle/state machines
-  ↓
-KERNEL-0004 conformance requirements
-  ↓
-KERNEL-0005 test specifications and derived indexes
-```
-
-```text
-family_version: kernel-family/0.2.0-draft.2
+family_version: kernel-family/0.4.0-draft.4
 ADR-0026: Proposed / 0.2.0
-KERNEL-0000: Draft / 0.2.0-draft.2
-KERNEL-0001: Draft / 0.2.0-draft.2
-KERNEL-0002..0005: ReservedNotCreated
+KERNEL-0000: Draft / 0.4.0-draft.4
+KERNEL-0001: Draft / 0.2.2-draft.4
+KERNEL-0002: Draft / 0.2.0-draft.2
+KERNEL-0003: Draft / 0.2.0-draft.2
+KERNEL-0004..0005: ReservedNotCreated
 claim: NoCurrentKernelConformanceClaim
 ```
 
-## 5. Normative requirements
+## 5. Normative source and synchronization requirements
 
-A KERNEL requirement MUST identify source ID, status, version, path, baseline
-commit, Blob and exact locator. It MUST classify source role, source treatment,
-requirement scope, proposed verification methods and expected evidence types.
+Every KERNEL requirement MUST identify source ID, status, version, path, baseline type and exact locator. External sources additionally require baseline commit and Blob. Each requirement MUST classify source treatment, verification methods and expected evidence types.
 
-A lower layer MUST NOT silently redefine a higher source. Draft and Proposed
-status MUST remain visible. Machine indexes MUST match requirement identity and
-meaning, not counts alone.
+Machine indexes MUST match identity, text, level, source mapping, object fields, lifecycle ownership, states and transitions—not counts alone.
 
-## 6. Human agency and ethics
+An undefined object transition MUST be rejected. An ExceptionRecord may govern alternate valid behavior but MUST NOT legalize an undefined transition.
 
-The family MUST preserve person/role separation, affected-person participation,
-refusal, correction, appeal, meaningful choice, human accountability, failure,
-counterexample, uncertainty and the right not to become a permanent profile.
+## 6. Dependency and authority direction
 
-A schema or state machine MUST NOT silently become a theory of life.
+```text
+Candidate Charters
+  ↓ constrain
+Accepted architecture + Proposed ADR-0026
+  ↓ structure
+KERNEL-0000/0001
+  ↓ operationalize
+KERNEL-0002 object semantics
+  ↓ state-bearing objects and cross-object flows
+KERNEL-0003
+  ↓ future assessment
+KERNEL-0004/0005
+```
 
-## 7. Privacy and consent
+## 7. Human agency, privacy and safety
 
-Source baselines and indexes MUST minimize personal information and MUST NOT
-contain raw identifiable family, child, clinical, crisis or consultation records.
-Purpose, authority, consent, representative scope, access, retention, deletion,
-exception and audit remain distinguishable.
+Schemas and state machines preserve person/role separation, participation, refusal, correction, appeal, human accountability, uncertainty and no permanent profile. Process stages and object states are not theories of life.
 
-## 8. Safety and escalation
+Repository validation is structural evidence only and MUST NOT be represented as human-use or product-safety evidence.
 
-Changes affecting risk, emergency action, disclosure, handoff, incident or
-appeal require dedicated safety review. Repository validation and synthetic
-rehearsal MUST NOT be represented as human-use or product-safety evidence.
+## 8. Review and future conformance boundary
 
-## 9. Review and future conformance criteria
+Round 08 is structurally review-ready only when all KDO/KLS requirements have complete sources, methods and evidence; object catalog and machine index match; object-local states are separated from cross-object flows; ambiguities remain visible; and KERNEL-0004/0005 remain absent.
 
-Round 07 is review-ready only when all 36 requirements have complete source,
-scope, treatment, verification and evidence records; all MOS levels are exact;
-all required sections exist; Markdown and JSON are semantically synchronized;
-30 ambiguities and 30 vocabulary identities match; and KERNEL-0002..0005 remain
-absent.
+## 9. Lifecycle, compatibility and migration
 
-These are review criteria, not implementation-conformance criteria.
+Each document follows MOS-0000 independently. Merge does not promote status. Breaking changes require identity continuity, state mapping, in-flight handling, data conversion, rollback, public-claim impact and affected-person review.
 
-## 10. Non-normative examples
+## 10. Limitations and open questions
 
-- A Proposed RFC may be referenced without promotion.
-- A passing repository test proves structural consistency, not deployed behavior.
-- A model provider may change while applicable obligations remain unchanged.
+Cross-language equality, Profile applicability, emergency exceptions, concurrent transitions and affected-person usability remain open.
 
-## 11. Limitations and open questions
-
-Partial applicability, cross-language equality, emergency suspension,
-compatibility before reference implementation, and treatment of unresolved
-Candidate Charter ambiguity remain open.
-
-## 12. Lifecycle, compatibility and migration
-
-Each document follows MOS-0000:
-`Idea → Draft → Review → Candidate → Stable → Deprecated → Withdrawn`.
-
-Breaking changes require affected-person impact, migration, coexistence, data
-conversion, rollback or suspension, public-claim implications and dissent.
-Supersession MUST be explicit and history preserved.
-
-## 13. Version and change history
+## 11. Version and change history
 
 | Version | Date | Change | Status |
 |---|---|---|---|
 | 0.1.0-draft.1 | 2026-07-15 | Initial family index | Draft |
-| 0.2.0-draft.2 | 2026-07-15 | MOS completeness, exact source baseline and semantic synchronization | Draft |
+| 0.2.0-draft.2 | 2026-07-15 | MOS completeness and exact KCR traceability | Draft |
+| 0.3.0-draft.3 | 2026-07-15 | Initial Round 08 family set | Draft |
+| 0.4.0-draft.4 | 2026-07-15 | Correct family versions, KDO/KLS traceability and state/process separation | Draft |

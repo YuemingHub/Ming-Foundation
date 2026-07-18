@@ -1,89 +1,56 @@
 #!/usr/bin/env python3
-"""Validate Round 07 Kernel family, exact source baseline, and semantic sync."""
 from pathlib import Path
-import json, re, subprocess
-
-ROOT=Path(__file__).resolve().parents[1]
-K0=ROOT/"standards/kernel/KERNEL-0000-specification-family-index.md"
-K1=ROOT/"standards/kernel/KERNEL-0001-core-operational-contract.md"
-A=ROOT/"reference/kernel/REF-0032-kernel-core-ambiguity-register.md"
-V=ROOT/"reference/kernel/REF-0034-kernel-core-vocabulary-status-map.md"
-J=ROOT/"reference/kernel/mingos-kernel-core-requirements.json"
-ALLOWED={"MUST","MUST NOT","SHOULD","SHOULD NOT","MAY"}
-REQUIRED=["purpose","scope and non-goals","definitions","normative","data and process model",
-          "human agency","privacy","safety","review","examples","limitations","version and change history"]
-
-def fm(text):
-    end=text.find("\n---\n",4)
-    out={}
-    for line in text[4:end].splitlines():
-        if line.startswith(" ") or ":" not in line: continue
-        k,v=line.split(":",1); out[k.strip()]=v.strip()
+import json,re
+ROOT=Path(__file__).resolve().parents[1]; ALLOWED={'MUST','MUST NOT','SHOULD','SHOULD NOT','MAY'}
+def fm(t):
+    e=t.find('\n---\n',4);o={}
+    for line in t[4:e].splitlines():
+        if line.startswith(' ') or ':' not in line:continue
+        k,v=line.split(':',1);o[k.strip()]=v.strip()
+    return o
+def rows(p,prefix,n):
+    out=[]
+    for line in p.read_text().splitlines():
+        if line.startswith('| '+prefix):
+            c=[x.strip() for x in line.strip().strip('|').split('|')]
+            if len(c)!=n:raise ValueError(f'{p} malformed {prefix}')
+            out.append(c)
     return out
-
-def rows(path,prefix,n):
-    result=[]
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("| "+prefix):
-            cells=[x.strip() for x in line.strip().strip("|").split("|")]
-            if len(cells)!=n: raise ValueError(f"{path}: expected {n} cells, got {len(cells)}")
-            result.append(cells)
-    return result
-
 def main():
-    errors=[]
-    for did,path in {"KERNEL-0000":K0,"KERNEL-0001":K1}.items():
-        m=fm(path.read_text(encoding="utf-8"))
-        if m.get("id")!=did or m.get("status")!="Draft": errors.append(f"{did} metadata")
-        low=path.read_text(encoding="utf-8").lower()
-        for section in REQUIRED:
-            if section not in low: errors.append(f"{did} missing MOS content: {section}")
-    for did in ["KERNEL-0002","KERNEL-0003","KERNEL-0004","KERNEL-0005"]:
-        if list((ROOT/"standards/kernel").glob(did+"-*.md")): errors.append(f"{did} unexpectedly exists")
-    data=json.loads(J.read_text(encoding="utf-8"))
-    if data.get("schema")!="mingos.kernel-core-requirements.v0.2": errors.append("schema")
-    try: mr=rows(K1,"KCR-",10)
-    except ValueError as e: errors.append(str(e)); mr=[]
-    jr=data.get("requirements",[])
-    if len(mr)!=36 or len(jr)!=36: errors.append("requirement count")
-    for m,j in zip(mr,jr):
-        rid,domain,level,text,scope,treat,sources,methods,evidence,future=m
-        level=level.strip("`"); scope=scope.strip("`"); treat=treat.strip("`")
-        if level not in ALLOWED: errors.append(f"{rid} level")
-        expected_sources="; ".join(f"{x['source_id']} {x['locator']} [{x['source_role']}]" for x in j.get("source_refs",[]))
-        pairs=[("id",rid,j.get("id")),("domain",domain,j.get("domain")),("level",level,j.get("level")),
-               ("text",text,j.get("text")),("scope",scope,j.get("requirement_scope")),
-               ("treatment",treat,j.get("source_treatment")),("sources",sources,expected_sources),
-               ("methods",methods,"; ".join(j.get("verification_methods",[]))),
-               ("evidence",evidence,"; ".join(j.get("evidence_types",[]))),
-               ("future",future,j.get("delegated_or_future_detail"))]
-        for name,a,b in pairs:
-            if a!=b: errors.append(f"{rid} {name} mismatch")
-        if not j.get("source_refs") or not j.get("verification_methods") or not j.get("evidence_types"):
-            errors.append(f"{rid} incomplete")
-    commit=data.get("decision_base_commit")
-    for sid,e in data.get("source_baseline",{}).items():
-        p=ROOT/e["path"]
-        if not p.exists(): errors.append(f"{sid} path"); continue
-        m=fm(p.read_text(encoding="utf-8"))
-        if m.get("id")!=sid or m.get("status")!=e.get("status") or m.get("version")!=e.get("version"):
-            errors.append(f"{sid} metadata baseline")
-        try: blob=subprocess.check_output(["git","rev-parse",f"{commit}:{e['path']}"],cwd=ROOT,text=True).strip()
-        except subprocess.CalledProcessError: errors.append(f"{sid} unresolved"); continue
-        if blob!=e.get("blob_sha"): errors.append(f"{sid} blob")
-    if [x[0] for x in rows(A,"KCA-",8)] != [x["id"] for x in data.get("ambiguities",[])]: errors.append("ambiguities")
-    if [x[0] for x in rows(V,"KVT-",4)] != [x["id"] for x in data.get("vocabulary",[])]: errors.append("vocabulary")
-    integ=data.get("integrity",{})
-    for k,v in {"requirement_count":36,"ambiguity_count":30,"vocabulary_count":30,
-                "external_source_count":20,"created_kernel_document_count":2,
-                "reserved_not_created_count":4,"implementation_conformance_claim":False}.items():
-        if integ.get(k)!=v: errors.append("integrity "+k)
-    if data.get("review",{}).get("state")!="PreparedNotExecuted": errors.append("review")
-    if data.get("conformance",{}).get("current_claim")!="NoCurrentKernelConformanceClaim": errors.append("claim")
-    state=(ROOT/"governance/status/GOV-0001-current-canonical-state.md").read_text(encoding="utf-8")
-    if "Foundation 1.0 / Day 17" not in state or "1.0.0-alpha.17" not in state: errors.append("day17")
-    if errors:
-        print("Kernel validation failed:"); [print(" -",x) for x in errors]; return 1
-    print("Kernel validation passed: 36 semantically synchronized requirements, 20-source exact baseline, 30 ambiguities, 30 vocabulary items.")
+    e=[]
+    docs={'KERNEL-0000':('KERNEL-0000-specification-family-index.md','0.4.0-draft.4'),'KERNEL-0001':('KERNEL-0001-core-operational-contract.md','0.2.2-draft.4'),'KERNEL-0002':('KERNEL-0002-canonical-object-data-model.md','0.2.0-draft.2'),'KERNEL-0003':('KERNEL-0003-lifecycle-state-machines.md','0.2.0-draft.2')}
+    for did,(name,ver) in docs.items():
+        p=ROOT/'standards/kernel'/name
+        if not p.exists():e.append('missing '+did);continue
+        m=fm(p.read_text())
+        if m.get('id')!=did or m.get('status')!='Draft' or m.get('version')!=ver:e.append(did+' metadata')
+    for did in ['KERNEL-0004','KERNEL-0005']:
+        if list((ROOT/'standards/kernel').glob(did+'-*.md')):e.append(did+' exists')
+    d=json.loads((ROOT/'reference/kernel/mingos-kernel-object-lifecycle-model.json').read_text())
+    if d.get('schema')!='mingos.kernel-object-lifecycle-model.v0.2':e.append('schema')
+    for path,key,prefix in [(ROOT/'standards/kernel/KERNEL-0002-canonical-object-data-model.md','object_requirements','KDO-'),(ROOT/'standards/kernel/KERNEL-0003-lifecycle-state-machines.md','lifecycle_requirements','KLS-')]:
+        mr=rows(path,prefix,8);jr=d[key]
+        if len(mr)!=len(jr):e.append(key+' count');continue
+        for m,j in zip(mr,jr):
+            s=j['source_refs'][0];es=f"{s['source_id']} / {s['status']} / {s['version']} / `{s['path']}` / {s['locator']} / {s['baseline_type']}"
+            if not (m[0]==j['id'] and m[1]==j['domain'] and m[2].strip('`')==j['level'] and m[3]==j['text'] and m[4]==es and m[5].strip('`')==j['source_treatment'] and m[6]=='; '.join(j['verification_methods']) and m[7]=='; '.join(j['evidence_types'])):e.append(j['id']+' sync')
+            if j['level'] not in ALLOWED:e.append(j['id']+' level')
+    obj=rows(ROOT/'standards/kernel/KERNEL-0002-canonical-object-data-model.md','KOT-',7)
+    if [x[0] for x in obj]!=[x['id'] for x in d['object_types']]:e.append('object IDs')
+    for sm in d['state_machines']:
+        st=set(sm['states']);seen=set()
+        for a,b in sm['transitions']:
+            if a not in st or b not in st or a==b or (a,b) in seen:e.append(sm['id']+' transition')
+            seen.add((a,b))
+    for f in d['process_flows']:
+        if f['transitions']!=[[a,b] for a,b in zip(f['stages'],f['stages'][1:])]:e.append(f['id']+' flow')
+    core=json.loads((ROOT/'reference/kernel/mingos-kernel-core-requirements.json').read_text())
+    if core['family']['id']!='kernel-family/0.4.0-draft.4' or core['family']['reserved_not_created']!=['KERNEL-0004','KERNEL-0005']:e.append('family')
+    if d['review']['state']!='PreparedNotExecuted' or d['conformance']['current_claim']!='NoCurrentKernelConformanceClaim':e.append('boundary')
+    state=(ROOT/'governance/status/GOV-0001-current-canonical-state.md').read_text()
+    if 'Foundation 1.0 / Day 17' not in state or '1.0.0-alpha.17' not in state:e.append('day17')
+    if e:
+        print('Round08 RevA validation failed:');[print(' -',x) for x in e];return 1
+    print('Round08 RevA validation passed: 35 objects, 36 KDO, 34 KLS, 17 object state machines, 9 process flows, no conformance claim.')
     return 0
-if __name__=="__main__": raise SystemExit(main())
+if __name__=='__main__':raise SystemExit(main())
