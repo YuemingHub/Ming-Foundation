@@ -1,8 +1,8 @@
 ---
-id: REF-0038
+id: REF-0043
 title: Kernel Object and Lifecycle Ambiguity Review Register
 status: Draft
-version: 0.1.0-draft.1
+version: 0.2.0-draft.2
 layer: Reference
 owner: Ming Foundation Kernel Review
 created: 2026-07-15
@@ -10,20 +10,16 @@ updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
-decision_base_commit: a0b8234567c211896085f0e1259b96bcb53effd1
+decision_base_commit: f3905710db2304ab926c4ab31e10264931539f98
 related:
   - KERNEL-0002
   - KERNEL-0003
-  - REF-0035
-  - REF-0036
-  - REF-0037
-  - REF-0039
 depends_on:
   - KERNEL-0002
   - KERNEL-0003
 ---
 
-# REF-0038 — Kernel Object and Lifecycle Ambiguity Review Register
+# REF-0043 — Kernel Object and Lifecycle Ambiguity Review Register
 
 | ID | Area | Open issue | Risk | Related refs | Required review classes | Status |
 |---|---|---|---|---|---|---|
@@ -59,10 +55,9 @@ depends_on:
 | KOLA-030 | Legacy migration | How Family OS objects map without becoming authority. | `Critical` | KLS-0020 | Architecture, AffectedPerson, Implementation | `Open` |
 | KOLA-031 | Cross-language names | How object/state semantics remain traceable in Chinese and English. | `High` | KLS-0021 | Architecture, AffectedPerson, Implementation | `Open` |
 | KOLA-032 | State explosion | How implementations remain understandable without collapsing distinctions. | `High` | KLS-0022 | Architecture, AffectedPerson, Implementation | `Open` |
+| KOLA-0033 | Object state versus process stage | How user-facing process stages remain distinct from canonical object state. | `Critical` | KERNEL-0003, KSM-*, KPF-* | Architecture, AffectedPerson, Implementation | `Open` |
+| KOLA-0034 | Invalid-transition exceptions | Which invariants are non-exceptionable and how alternate valid behavior is represented. | `Critical` | KLS-0004, ExceptionRecord | Governance, Safety, Implementation | `Open` |
+| KOLA-0035 | Append-only records | Which records may be corrected by supersession rather than in-place mutation. | `High` | KDO-0029, AuditEvent, EvidenceRecord | Privacy, Security, Implementation | `Open` |
+| KOLA-0036 | Machine applicability | How domain Profiles constrain allowed states and transitions without redefining core semantics. | `High` | KERNEL-0003, PROF-* | Domain, Architecture, Jurisdiction | `Open` |
 
-```text
-Open: 32
-Resolved: 0
-Affected-person/implementation/privacy/safety review: not executed
-Overall: PreparedNotExecuted
-```
+Open: 36. Resolved: 0. Review: PreparedNotExecuted.

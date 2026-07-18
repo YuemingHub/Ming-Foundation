@@ -254,11 +254,11 @@ This index lists the canonical entry points for Ming Foundation 1.0.
 | REF-0032 | [Kernel Core Ambiguity Dissent and Open-Question Register](reference/kernel/REF-0032-kernel-core-ambiguity-register.md) | Draft |
 | REF-0033 | [Kernel Core Review and Evidence Protocol](reference/kernel/REF-0033-kernel-core-review-protocol.md) | Draft |
 | REF-0034 | [Kernel Core Provisional Vocabulary and Status Map](reference/kernel/REF-0034-kernel-core-vocabulary-status-map.md) | Draft |
-| REF-0035 | [Kernel Object Catalog and Core Requirement Crosswalk](reference/kernel/REF-0035-kernel-object-catalog-crosswalk.md) | Draft |
-| REF-0036 | [Kernel Lifecycle Transition and Invariant Matrix](reference/kernel/REF-0036-kernel-lifecycle-transition-invariant-matrix.md) | Draft |
-| REF-0037 | [Kernel Access Privacy Retention and Audit Boundary Matrix](reference/kernel/REF-0037-kernel-access-privacy-retention-audit-matrix.md) | Draft |
-| REF-0038 | [Kernel Object and Lifecycle Ambiguity Review Register](reference/kernel/REF-0038-kernel-object-lifecycle-ambiguity-register.md) | Draft |
-| REF-0039 | [Round 08 Object and Lifecycle Review Protocol](reference/kernel/REF-0039-round08-object-lifecycle-review-protocol.md) | Draft |
+| REF-0040 | [Kernel Object Catalog and Core Requirement Crosswalk](reference/kernel/REF-0040-kernel-object-catalog-crosswalk.md) | Draft |
+| REF-0041 | [Kernel Lifecycle Transition and Invariant Matrix](reference/kernel/REF-0041-kernel-lifecycle-transition-invariant-matrix.md) | Draft |
+| REF-0042 | [Kernel Access Privacy Retention and Audit Boundary Matrix](reference/kernel/REF-0042-kernel-access-privacy-retention-audit-matrix.md) | Draft |
+| REF-0043 | [Kernel Object and Lifecycle Ambiguity Review Register](reference/kernel/REF-0043-kernel-object-lifecycle-ambiguity-register.md) | Draft |
+| REF-0044 | [Round 08 Object and Lifecycle Review Protocol](reference/kernel/REF-0044-round08-object-lifecycle-review-protocol.md) | Draft |
 
 - [Core Terms](reference/glossary/core-terms.md)
 - [System Map](architecture/system-map.mmd)

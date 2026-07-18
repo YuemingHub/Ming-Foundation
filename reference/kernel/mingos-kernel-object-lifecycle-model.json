@@ -1,30 +1,30 @@
 {
-  "schema": "mingos.kernel-object-lifecycle-model.v0.1",
+  "schema": "mingos.kernel-object-lifecycle-model.v0.2",
   "status": "Draft",
-  "version": "0.1.0-draft.1",
-  "decision_base_commit": "a0b8234567c211896085f0e1259b96bcb53effd1",
+  "version": "0.2.0-draft.2",
+  "decision_base_commit": "f3905710db2304ab926c4ab31e10264931539f98",
   "family": {
-    "id": "kernel-family/0.3.0-draft.3",
+    "id": "kernel-family/0.4.0-draft.4",
     "documents": [
       {
         "id": "KERNEL-0000",
         "status": "Draft",
-        "version": "0.3.0-draft.3"
+        "version": "0.4.0-draft.4"
       },
       {
         "id": "KERNEL-0001",
         "status": "Draft",
-        "version": "0.2.1-draft.3"
+        "version": "0.2.2-draft.4"
       },
       {
         "id": "KERNEL-0002",
         "status": "Draft",
-        "version": "0.1.0-draft.1"
+        "version": "0.2.0-draft.2"
       },
       {
         "id": "KERNEL-0003",
         "status": "Draft",
-        "version": "0.1.0-draft.1"
+        "version": "0.2.0-draft.2"
       }
     ],
     "reserved_not_created": [
@@ -32,222 +32,950 @@
       "KERNEL-0005"
     ]
   },
+  "source_catalog": {
+    "KERNEL-0001": {
+      "status": "Draft",
+      "version": "0.2.2-draft.4",
+      "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+      "baseline_type": "CollectionLocalDraft"
+    }
+  },
   "object_requirements": [
     {
       "id": "KDO-0001",
       "domain": "CommonEnvelope",
       "level": "MUST",
-      "text": "Every canonical object MUST carry stable identity, type, schema version, creation provenance, purpose/authority where applicable, access class, review or expiry, revision and audit references."
+      "text": "Every canonical object MUST carry stable identity, type, schema version, creation provenance, purpose/authority where applicable, access class, review or expiry, revision and audit references.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0001, KCR-0002, KCR-0013, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0002",
       "domain": "OpaqueIdentifiers",
       "level": "MUST",
-      "text": "Canonical identifiers MUST be stable, opaque and free of unnecessary sensitive meaning."
+      "text": "Canonical identifiers MUST be stable, opaque and free of unnecessary sensitive meaning.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0013, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0003",
       "domain": "NoEmbeddedSecrets",
       "level": "MUST NOT",
-      "text": "Identifiers and public references MUST NOT embed diagnoses, crisis states, legal status, secret credentials or other sensitive attributes."
+      "text": "Identifiers and public references MUST NOT embed diagnoses, crisis states, legal status, secret credentials or other sensitive attributes.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0011, KCR-0029, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0004",
       "domain": "IdentityRoleSeparation",
       "level": "MUST",
-      "text": "Person, organization, system component, account, device, session and role assignment MUST remain distinct."
+      "text": "Person, organization, system component, account, device, session and role assignment MUST remain distinct.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0005, KCR-0031, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0005",
       "domain": "AffectedPersonReference",
       "level": "MUST",
-      "text": "A material object MUST identify affected people or record why they cannot yet be identified."
+      "text": "A material object MUST identify affected people or record why they cannot yet be identified.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0004, KCR-0020, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0006",
       "domain": "SpeakerSubjectSource",
       "level": "MUST",
-      "text": "Knowledge and event objects MUST distinguish speaker or generator, subject, source and affected people."
+      "text": "Knowledge and event objects MUST distinguish speaker or generator, subject, source and affected people.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0005, KCR-0012, KCR-0013",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0007",
       "domain": "RoleAuthorityScope",
       "level": "MUST",
-      "text": "A role assignment MUST identify scope, purpose, authority, permissions, prohibitions, conflict and review or expiry."
+      "text": "A role assignment MUST identify scope, purpose, authority, permissions, prohibitions, conflict and review or expiry.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0005, KCR-0006, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0008",
       "domain": "RepresentativeAuthority",
       "level": "MUST",
-      "text": "Representative authority MUST use a distinct evidence-linked, scoped, expiring and appealable object."
+      "text": "Representative authority MUST use a distinct evidence-linked, scoped, expiring and appealable object.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0006, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0009",
       "domain": "PurposeBinding",
       "level": "MUST",
-      "text": "Personal-data, interpretive and consequential objects MUST reference an active declared purpose or documented exception."
+      "text": "Personal-data, interpretive and consequential objects MUST reference an active declared purpose or documented exception.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0007, KCR-0030",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0010",
       "domain": "AuthorityBasisDistinction",
       "level": "MUST",
-      "text": "Consent, requested service, safety, mandatory, security, research and disputed bases MUST remain distinguishable."
+      "text": "Consent, requested service, safety, mandatory, security, research and disputed bases MUST remain distinguishable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0008, KCR-0026, KCR-0030",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0011",
       "domain": "ParticipationPurposeSpecific",
       "level": "MUST",
-      "text": "Participation MUST be represented per purpose/decision and MUST NOT become a maturity, compliance or worth score."
+      "text": "Participation MUST be represented per purpose/decision and MUST NOT become a maturity, compliance or worth score.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0009, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0012",
       "domain": "KnowledgeType",
       "level": "MUST",
-      "text": "Observation, statement, imported record, inference, hypothesis, pattern, judgment, recommendation, decision and action MUST remain distinguishable."
+      "text": "Observation, statement, imported record, inference, hypothesis, pattern, judgment, recommendation, decision and action MUST remain distinguishable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0012, KCR-0014",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0013",
       "domain": "ProvenanceGraph",
       "level": "MUST",
-      "text": "A derived object MUST preserve source and transformation lineage subject to privacy and safety controls."
+      "text": "A derived object MUST preserve source and transformation lineage subject to privacy and safety controls.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0013, KCR-0015, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0014",
       "domain": "UncertaintyObject",
       "level": "MUST",
-      "text": "Material unknowns, alternatives and dissent MUST be representable without flattening them into one confidence number."
+      "text": "Material unknowns, alternatives and dissent MUST be representable without flattening them into one confidence number.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0014, KCR-0015",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0015",
       "domain": "ContextWithoutCausation",
       "level": "MUST",
-      "text": "Event, relationship and context objects MUST preserve time and perspective without automatic causal claims."
+      "text": "Event, relationship and context objects MUST preserve time and perspective without automatic causal claims.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0017, KCR-0014",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0016",
       "domain": "DecisionAccountability",
       "level": "MUST",
-      "text": "A high-impact decision MUST reference affected people, evidence, uncertainty, authority, accountable human/organization, reason, review and appeal."
+      "text": "A high-impact decision MUST reference affected people, evidence, uncertainty, authority, accountable human/organization, reason, review and appeal.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0020, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0017",
       "domain": "ActionReversibility",
       "level": "SHOULD",
-      "text": "An action object SHOULD identify reversibility, observation plan, review condition and rollback where applicable."
+      "text": "An action object SHOULD identify reversibility, observation plan, review condition and rollback where applicable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0018, KCR-0019",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0018",
       "domain": "FeedbackRevision",
       "level": "MUST",
-      "text": "Feedback and outcome objects MUST be able to trigger revision without erasing earlier provenance."
+      "text": "Feedback and outcome objects MUST be able to trigger revision without erasing earlier provenance.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0034",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0019",
       "domain": "DataAssetInventory",
       "level": "MUST",
-      "text": "Personal and derived data MUST be inventoried with purpose, authority, location, access, retention, backup and rights routes."
+      "text": "Personal and derived data MUST be inventoried with purpose, authority, location, access, retention, backup and rights routes.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0011, KCR-0030, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0020",
       "domain": "MemoryRights",
       "level": "MUST",
-      "text": "Memory MUST reference sources, current use, visibility, retention, correction, restriction, deletion and supersession."
+      "text": "Memory MUST reference sources, current use, visibility, retention, correction, restriction, deletion and supersession.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0027, KCR-0028, KCR-0029",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0021",
       "domain": "RightsRequestCoverage",
       "level": "MUST",
-      "text": "Rights requests MUST support applicable access, explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, high-impact review and appeal."
+      "text": "Rights requests MUST support applicable access, explanation, correction, contextualization, restriction, objection, export, deletion, withdrawal, high-impact review and appeal.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0010, KCR-0027, KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0022",
       "domain": "RetentionNotPermission",
       "level": "MUST NOT",
-      "text": "A retention profile or review interval MUST NOT be represented as automatic permission to retain or use data."
+      "text": "A retention profile or review interval MUST NOT be represented as automatic permission to retain or use data.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0023",
       "domain": "RiskNotIdentity",
       "level": "MUST NOT",
-      "text": "A risk signal or assessment MUST NOT silently become a permanent identity or unrestricted profile."
+      "text": "A risk signal or assessment MUST NOT silently become a permanent identity or unrestricted profile.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0022, KCR-0029",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0024",
       "domain": "HandoffStateEvidence",
       "level": "MUST",
-      "text": "A handoff object MUST distinguish initiated, acknowledged, accepted, failed, redirected and closed states."
+      "text": "A handoff object MUST distinguish initiated, acknowledged, accepted, failed, redirected and closed states.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0024",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0025",
       "domain": "ResourceFreshness",
       "level": "MUST",
-      "text": "A resource record MUST carry verification, expiry, accessibility, scope, owner and stale behavior."
+      "text": "A resource record MUST carry verification, expiry, accessibility, scope, owner and stale behavior.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0023, KCR-0024",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0026",
       "domain": "IncidentAndAppeal",
       "level": "MUST",
-      "text": "Incident and appeal objects MUST preserve timeline, affected people, conflicts, evidence, decisions, remediation and closure authority."
+      "text": "Incident and appeal objects MUST preserve timeline, affected people, conflicts, evidence, decisions, remediation and closure authority.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0025",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0027",
       "domain": "ExceptionBoundary",
       "level": "MUST",
-      "text": "An exception MUST be narrow, purpose-bound, evidence-linked, time/review-bounded, safeguarded and appealable."
+      "text": "An exception MUST be narrow, purpose-bound, evidence-linked, time/review-bounded, safeguarded and appealable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0026",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0028",
       "domain": "AuditMinimization",
       "level": "MUST",
-      "text": "Audit events MUST preserve material accountability while minimizing sensitive content and restricting access."
+      "text": "Audit events MUST preserve material accountability while minimizing sensitive content and restricting access.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0029",
       "domain": "CurrentAndHistory",
       "level": "MUST",
-      "text": "Current and historical state MUST remain separately queryable; supersession MUST NOT silently rewrite history."
+      "text": "Current and historical state MUST remain separately queryable; supersession MUST NOT silently rewrite history.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0015, KCR-0034, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0030",
       "domain": "AccessClassification",
       "level": "MUST",
-      "text": "Canonical objects and sensitive fields MUST carry an access class and minimum-necessary disclosure rule."
+      "text": "Canonical objects and sensitive fields MUST carry an access class and minimum-necessary disclosure rule.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0011, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0031",
       "domain": "UnknownNotNull",
       "level": "SHOULD",
-      "text": "Unknown, not-applicable, unavailable, withheld and not-yet-collected states SHOULD remain distinguishable."
+      "text": "Unknown, not-applicable, unavailable, withheld and not-yet-collected states SHOULD remain distinguishable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0014",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0032",
       "domain": "ExtensionBoundary",
       "level": "MAY",
-      "text": "Implementations MAY add namespaced extensions when core semantics, provenance, access and migration remain intact."
+      "text": "Implementations MAY add namespaced extensions when core semantics, provenance, access and migration remain intact.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0003, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0033",
       "domain": "NoProductSchemaAsOntology",
       "level": "MUST NOT",
-      "text": "A product table, prompt variable or legacy object name MUST NOT become a universal Kernel object merely because it exists."
+      "text": "A product table, prompt variable or legacy object name MUST NOT become a universal Kernel object merely because it exists.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0003",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0034",
       "domain": "NoDomainMethodUniversalization",
       "level": "MUST NOT",
-      "text": "A family, education, counseling or cultural method MUST NOT become a universal object without cross-scene admission review."
+      "text": "A family, education, counseling or cultural method MUST NOT become a universal object without cross-scene admission review.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0003, KCR-0017",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0035",
       "domain": "SerializationNeutrality",
       "level": "MAY",
-      "text": "Implementations MAY use relational, graph, document, event-sourced or other storage when semantic/lifecycle obligations remain verifiable."
+      "text": "Implementations MAY use relational, graph, document, event-sourced or other storage when semantic/lifecycle obligations remain verifiable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0001, KCR-0002, KCR-0003",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KDO-0036",
       "domain": "MigrationAndCompatibility",
       "level": "MUST",
-      "text": "A breaking object change MUST define identity continuity, field migration, lineage, coexistence, rollback, affected-person impact and dependent lifecycle changes."
+      "text": "A breaking object change MUST define identity continuity, field migration, lineage, coexistence, rollback, affected-person impact and dependent lifecycle changes.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0002, KCR-0003, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     }
   ],
   "object_types": [
@@ -264,7 +992,9 @@
         "version_set_ref",
         "review_at"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "GovernedConfiguration",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0002",
@@ -278,7 +1008,9 @@
         "profile_versions",
         "supersedes_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "GovernedConfiguration",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0003",
@@ -289,7 +1021,9 @@
         "safe_label",
         "resolution_scope"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0004",
@@ -300,7 +1034,9 @@
         "access_class",
         "correction_route"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0005",
@@ -311,7 +1047,9 @@
         "contact_route",
         "jurisdiction_scope"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0006",
@@ -324,7 +1062,9 @@
         "capability_status",
         "limitations"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0007",
@@ -341,7 +1081,9 @@
         "conflict_state",
         "review_or_expiry_at"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0003"
     },
     {
       "id": "KOT-0008",
@@ -359,7 +1101,9 @@
         "review_or_expiry_at",
         "appeal_route_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0004"
     },
     {
       "id": "KOT-0009",
@@ -377,7 +1121,9 @@
         "owner_ref",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0001"
     },
     {
       "id": "KOT-0010",
@@ -394,7 +1140,9 @@
         "withdrawal_route",
         "exception_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0002"
     },
     {
       "id": "KOT-0011",
@@ -412,7 +1160,9 @@
         "review_or_expiry_at",
         "appeal_route_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0005"
     },
     {
       "id": "KOT-0012",
@@ -427,7 +1177,9 @@
         "uncertainty_refs",
         "access_class"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0013",
@@ -441,7 +1193,9 @@
         "conflict_or_asymmetry",
         "visibility_policy"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0014",
@@ -457,7 +1211,9 @@
         "knowledge_status",
         "uncertainty_refs"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0015",
@@ -472,7 +1228,9 @@
         "authority_scope",
         "integrity_metadata"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0016",
@@ -493,7 +1251,9 @@
         "review_at",
         "supersedes_refs"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0006"
     },
     {
       "id": "KOT-0017",
@@ -509,7 +1269,9 @@
         "access_class",
         "retention_profile_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0018",
@@ -524,7 +1286,9 @@
         "review_condition",
         "dissent_refs"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0019",
@@ -545,7 +1309,9 @@
         "appeal_route_ref",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0007"
     },
     {
       "id": "KOT-0020",
@@ -566,7 +1332,9 @@
         "status",
         "rollback_plan_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0008"
     },
     {
       "id": "KOT-0021",
@@ -582,7 +1350,9 @@
         "requested_change",
         "access_class"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0022",
@@ -599,7 +1369,9 @@
         "harm_or_benefit",
         "revision_required"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0023",
@@ -619,7 +1391,9 @@
         "backup_handling",
         "rights_route_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0010"
     },
     {
       "id": "KOT-0024",
@@ -639,7 +1413,9 @@
         "deletion_state",
         "review_at"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0010"
     },
     {
       "id": "KOT-0025",
@@ -659,7 +1435,9 @@
         "completion_evidence_refs",
         "appeal_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0009"
     },
     {
       "id": "KOT-0026",
@@ -676,7 +1454,9 @@
         "owner_ref",
         "jurisdiction_profile_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "GovernedConfiguration",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0027",
@@ -693,7 +1473,9 @@
         "current_or_historical",
         "model_or_policy_version"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     },
     {
       "id": "KOT-0028",
@@ -710,7 +1492,9 @@
         "responsible_reviewer_ref",
         "next_review_at"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0011"
     },
     {
       "id": "KOT-0029",
@@ -730,7 +1514,9 @@
         "appeal_route_ref",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0012"
     },
     {
       "id": "KOT-0030",
@@ -749,7 +1535,9 @@
         "failed_handoff_action_ref",
         "closure_reason"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0013"
     },
     {
       "id": "KOT-0031",
@@ -769,7 +1557,9 @@
         "owner_ref",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0017"
     },
     {
       "id": "KOT-0032",
@@ -789,7 +1579,9 @@
         "status",
         "closure_authority_ref"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0014"
     },
     {
       "id": "KOT-0033",
@@ -807,7 +1599,9 @@
         "remediation_refs",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0015"
     },
     {
       "id": "KOT-0034",
@@ -827,7 +1621,9 @@
         "appeal_route_ref",
         "status"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "ObjectStateMachine",
+      "state_machine_id": "KSM-0016"
     },
     {
       "id": "KOT-0035",
@@ -848,7 +1644,9 @@
         "access_class",
         "integrity_metadata"
       ],
-      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence."
+      "boundary": "Implementation-neutral semantic object; no status or authority inferred from existence.",
+      "lifecycle_mode": "AppendOrReferenceRecord",
+      "state_machine_id": null
     }
   ],
   "access_classes": [
@@ -900,215 +1698,934 @@
       "id": "KLS-0001",
       "domain": "TransitionEnvelope",
       "level": "MUST",
-      "text": "Every transition MUST record lifecycle/version, object, previous/new state, actor/component, role, authority, purpose, reason, evidence, uncertainty, affected people, time, review/expiry and audit."
+      "text": "Every transition MUST record lifecycle/version, object, previous/new state, actor/component, role, authority, purpose, reason, evidence, uncertainty, affected people, time, review/expiry and audit.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0002, KCR-0013, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0002",
       "domain": "NoSilentTransition",
       "level": "MUST NOT",
-      "text": "A material object MUST NOT change state without an append-oriented transition record."
+      "text": "A material object MUST NOT change state without an append-oriented transition record.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0003",
       "domain": "CurrentHistorySeparation",
       "level": "MUST",
-      "text": "Current state and transition history MUST remain separately inspectable."
+      "text": "Current state and transition history MUST remain separately inspectable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0015, KCR-0034, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0004",
       "domain": "AllowedTransitions",
       "level": "MUST",
-      "text": "An implementation MUST reject or explicitly exception-record a transition not allowed by the applicable lifecycle."
+      "text": "An implementation MUST reject an undefined or disallowed object-state transition. An ExceptionRecord may authorize alternate valid behavior but MUST NOT legalize a structurally invalid transition.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0003, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0005",
       "domain": "ActorAuthority",
       "level": "MUST",
-      "text": "A material transition MUST identify responsible actor, role and authority scope."
+      "text": "A material transition MUST identify responsible actor, role and authority scope.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0001, KCR-0005, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0006",
       "domain": "AIBoundary",
       "level": "MUST NOT",
-      "text": "An AI component MUST NOT be the final accountable authorizer of a high-impact transition."
+      "text": "An AI component MUST NOT be the final accountable authorizer of a high-impact transition.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0031, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0007",
       "domain": "ReviewExpiry",
       "level": "MUST",
-      "text": "Active authority, participation, knowledge, resource, exception and safety states MUST support review or expiry."
+      "text": "Active authority, participation, knowledge, resource, exception and safety states MUST support review or expiry.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0006, KCR-0008, KCR-0023, KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0008",
       "domain": "StateNotIdentity",
       "level": "MUST NOT",
-      "text": "A lifecycle state MUST NOT become a permanent identity, maturity score, diagnosis or worth judgment."
+      "text": "A lifecycle state MUST NOT become a permanent identity, maturity score, diagnosis or worth judgment.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0029",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0009",
       "domain": "ReasonEvidence",
       "level": "MUST",
-      "text": "Restrictive, emergency, disputed or irreversible transitions MUST preserve reason, evidence, uncertainty, alternatives and safeguards."
+      "text": "Restrictive, emergency, disputed or irreversible transitions MUST preserve reason, evidence, uncertainty, alternatives and safeguards.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0014, KCR-0020, KCR-0026",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0010",
       "domain": "AffectedPersonNotice",
       "level": "SHOULD",
-      "text": "A materially affected person SHOULD receive usable notice unless a specific temporary safety/legal reason is recorded."
+      "text": "A materially affected person SHOULD receive usable notice unless a specific temporary safety/legal reason is recorded.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0020, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0011",
       "domain": "CorrectionAppeal",
       "level": "MUST",
-      "text": "Material lifecycles MUST provide applicable correction, contestation, appeal or independent-review transitions."
+      "text": "Material lifecycles MUST provide applicable correction, contestation, appeal or independent-review transitions.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0010, KCR-0025",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0012",
       "domain": "RollbackRemediation",
       "level": "MUST",
-      "text": "Where reversal is impossible, the transition MUST record remaining exposure and remediation."
+      "text": "Where reversal is impossible, the transition MUST record remaining exposure and remediation.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0019, KCR-0025",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0013",
       "domain": "CrossLifecycleFreeze",
       "level": "MUST",
-      "text": "Expired, revoked, disputed or unsafe authority MUST freeze expansion, optional reuse and high-impact action unless narrowly excepted."
+      "text": "Expired, revoked, disputed or unsafe authority MUST freeze expansion, optional reuse and high-impact action unless narrowly excepted.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0008, KCR-0009, KCR-0020, KCR-0030",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0014",
       "domain": "ContestedKnowledgeUse",
       "level": "SHOULD NOT",
-      "text": "Contested high-impact knowledge SHOULD NOT drive irreversible, punitive, rights-restricting or identity-shaping action during review."
+      "text": "Contested high-impact knowledge SHOULD NOT drive irreversible, punitive, rights-restricting or identity-shaping action during review.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0010, KCR-0015",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0015",
       "domain": "AuthorityPropagation",
       "level": "MUST",
-      "text": "Revocation, expiry or supersession of authority MUST propagate to dependent optional permissions and actions."
+      "text": "Revocation, expiry or supersession of authority MUST propagate to dependent optional permissions and actions.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0008, KCR-0028, KCR-0030",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0016",
       "domain": "RepresentativeConflict",
       "level": "MUST",
-      "text": "Disputed or conflicted representative authority MUST route high-impact action to conflict-free review."
+      "text": "Disputed or conflicted representative authority MUST route high-impact action to conflict-free review.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0006, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0017",
       "domain": "ParticipationSupportFirst",
       "level": "MUST",
-      "text": "Before reducing direct participation, the system MUST consider communication and decision support."
+      "text": "Before reducing direct participation, the system MUST consider communication and decision support.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0018",
       "domain": "ParticipationRefusal",
       "level": "MUST NOT",
-      "text": "Declined, withdrawn, silent or inaccessible participation MUST NOT be treated as agreement or proof."
+      "text": "Declined, withdrawn, silent or inaccessible participation MUST NOT be treated as agreement or proof.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0009, KCR-0033",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0019",
       "domain": "KnowledgeContestation",
       "level": "MUST",
-      "text": "A contested knowledge item MUST expose dispute and dependent uses and support restrict, correct, contextualize or supersede."
+      "text": "A contested knowledge item MUST expose dispute and dependent uses and support restrict, correct, contextualize or supersede.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0010, KCR-0015",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0020",
       "domain": "KnowledgeSupersession",
       "level": "MUST",
-      "text": "Supersession MUST update active uses while preserving prior provenance."
+      "text": "Supersession MUST update active uses while preserving prior provenance.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0015, KCR-0034",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0021",
       "domain": "DecisionImpactGate",
       "level": "MUST",
-      "text": "A high-impact decision MUST pass impact, affected-person, authority, evidence, uncertainty, reversibility and review gates."
+      "text": "A high-impact decision MUST pass impact, affected-person, authority, evidence, uncertainty, reversibility and review gates.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0020, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0022",
       "domain": "ActionOutcomeFeedback",
       "level": "MUST",
-      "text": "Executed action MUST support outcome, feedback and revision transitions."
+      "text": "Executed action MUST support outcome, feedback and revision transitions.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0034",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0023",
       "domain": "DeletionCompletion",
       "level": "MUST NOT",
-      "text": "Deletion/restriction MUST NOT become Complete while prohibited active use remains possible."
+      "text": "Deletion/restriction MUST NOT become Complete while prohibited active use remains possible.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0024",
       "domain": "BackupRestoration",
       "level": "MUST",
-      "text": "Backup completion MUST define restoration-time suppression and reconciliation."
+      "text": "Backup completion MUST define restoration-time suppression and reconciliation.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0025",
       "domain": "ExceptionExpiry",
       "level": "MUST",
-      "text": "An open exception MUST carry owner, scope, safeguards and mandatory review or expiry."
+      "text": "An open exception MUST carry owner, scope, safeguards and mandatory review or expiry.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0026, KCR-0028",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0026",
       "domain": "RiskAssessment",
       "level": "MUST",
-      "text": "A safety signal MUST be assessed with current/historical evidence, uncertainty, immediacy and responsible reviewer."
+      "text": "A safety signal MUST be assessed with current/historical evidence, uncertainty, immediacy and responsible reviewer.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0022",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0027",
       "domain": "HandoffNotMessage",
       "level": "MUST NOT",
-      "text": "Initiated or acknowledged handoff MUST NOT be represented as accepted or closed without evidence."
+      "text": "Initiated or acknowledged handoff MUST NOT be represented as accepted or closed without evidence.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0024",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0028",
       "domain": "FailedHandoff",
       "level": "MUST",
-      "text": "Failed handoff MUST identify next action, owner and transparent limitation."
+      "text": "Failed handoff MUST identify next action, owner and transparent limitation.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0023, KCR-0024",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0029",
       "domain": "ProtectiveActionReview",
       "level": "MUST",
-      "text": "Temporary protective action MUST be minimum necessary, time-bounded where possible, independently reviewable and correctable."
+      "text": "Temporary protective action MUST be minimum necessary, time-bounded where possible, independently reviewable and correctable.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0026",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0030",
       "domain": "IncidentClosure",
       "level": "MUST",
-      "text": "An incident MUST NOT close before containment, investigation, remediation, verification, affected-person impact and closure authority are addressed or bounded."
+      "text": "An incident MUST NOT close before containment, investigation, remediation, verification, affected-person impact and closure authority are addressed or bounded.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0025, KCR-0034",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0031",
       "domain": "AppealDifferentReviewer",
       "level": "MUST",
-      "text": "A material appeal MUST use a different or conflict-free reviewer where the original role is conflicted."
+      "text": "A material appeal MUST use a different or conflict-free reviewer where the original role is conflicted.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0010, KCR-0025, KCR-0032",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0032",
       "domain": "ResourceExpiry",
       "level": "MUST",
-      "text": "A stale, disputed or expired resource MUST stop being presented as current."
+      "text": "A stale, disputed or expired resource MUST stop being presented as current.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0023",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0033",
       "domain": "StateMachineVersion",
       "level": "MUST",
-      "text": "Every transition MUST identify the state-machine version used."
+      "text": "Every transition MUST identify the state-machine version used.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0002, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     },
     {
       "id": "KLS-0034",
       "domain": "Migration",
       "level": "MUST",
-      "text": "A breaking lifecycle revision MUST define state mapping, in-flight handling, rollback, audit continuity and affected-person notice."
+      "text": "A breaking lifecycle revision MUST define state mapping, in-flight handling, rollback, audit continuity and affected-person notice.",
+      "source_treatment": "OperationalizationOfDraftCore",
+      "source_refs": [
+        {
+          "source_id": "KERNEL-0001",
+          "status": "Draft",
+          "version": "0.2.2-draft.4",
+          "path": "standards/kernel/KERNEL-0001-core-operational-contract.md",
+          "locator": "§KCR-0002, KCR-0003, KCR-0035",
+          "baseline_type": "CollectionLocalDraft"
+        }
+      ],
+      "verification_methods": [
+        "StructuralInspection",
+        "NegativeOrBoundaryScenario"
+      ],
+      "evidence_types": [
+        "GovernedRecord",
+        "ReviewFinding"
+      ],
+      "open_ambiguity_refs": []
     }
   ],
-  "lifecycles": [
+  "state_machines": [
     {
-      "id": "KLC-0001",
-      "name": "AuthorityBasisLifecycle",
-      "object_types": [
-        "AuthorityBasisRecord",
-        "PurposeRecord"
+      "id": "KSM-0001",
+      "name": "PurposeRecordLifecycle",
+      "object_type": "PurposeRecord",
+      "states": [
+        "Proposed",
+        "Active",
+        "Suspended",
+        "Superseded",
+        "Retired"
       ],
+      "transitions": [
+        [
+          "Proposed",
+          "Active"
+        ],
+        [
+          "Active",
+          "Suspended"
+        ],
+        [
+          "Suspended",
+          "Active"
+        ],
+        [
+          "Active",
+          "Superseded"
+        ],
+        [
+          "Suspended",
+          "Superseded"
+        ],
+        [
+          "Superseded",
+          "Retired"
+        ],
+        [
+          "Active",
+          "Retired"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0002",
+      "name": "AuthorityBasisLifecycle",
+      "object_type": "AuthorityBasisRecord",
       "states": [
         "Proposed",
         "NoticePending",
@@ -1184,12 +2701,73 @@
       ]
     },
     {
-      "id": "KLC-0002",
-      "name": "RepresentativeAuthorityLifecycle",
-      "object_types": [
-        "RepresentativeAuthority",
-        "RoleAssignment"
+      "id": "KSM-0003",
+      "name": "RoleAssignmentLifecycle",
+      "object_type": "RoleAssignment",
+      "states": [
+        "Proposed",
+        "Active",
+        "Restricted",
+        "Conflicted",
+        "Revoked",
+        "Expired",
+        "Closed"
       ],
+      "transitions": [
+        [
+          "Proposed",
+          "Active"
+        ],
+        [
+          "Active",
+          "Restricted"
+        ],
+        [
+          "Active",
+          "Conflicted"
+        ],
+        [
+          "Active",
+          "Revoked"
+        ],
+        [
+          "Active",
+          "Expired"
+        ],
+        [
+          "Restricted",
+          "Active"
+        ],
+        [
+          "Restricted",
+          "Revoked"
+        ],
+        [
+          "Conflicted",
+          "Restricted"
+        ],
+        [
+          "Conflicted",
+          "Revoked"
+        ],
+        [
+          "Conflicted",
+          "Active"
+        ],
+        [
+          "Revoked",
+          "Closed"
+        ],
+        [
+          "Expired",
+          "Closed"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0004",
+      "name": "RepresentativeAuthorityLifecycle",
+      "object_type": "RepresentativeAuthority",
       "states": [
         "Unverified",
         "VerificationPending",
@@ -1198,7 +2776,8 @@
         "Disputed",
         "Revoked",
         "Expired",
-        "Superseded"
+        "Superseded",
+        "Closed"
       ],
       "transitions": [
         [
@@ -1252,18 +2831,27 @@
         [
           "ActiveWithinScope",
           "Superseded"
+        ],
+        [
+          "Revoked",
+          "Closed"
+        ],
+        [
+          "Expired",
+          "Closed"
+        ],
+        [
+          "Superseded",
+          "Closed"
         ]
       ]
     },
     {
-      "id": "KLC-0003",
-      "name": "ParticipationLifecycle",
-      "object_types": [
-        "ParticipationRecord"
-      ],
+      "id": "KSM-0005",
+      "name": "ParticipationRecordLifecycle",
+      "object_type": "ParticipationRecord",
       "states": [
         "NotIdentified",
-        "Identified",
         "SupportAssessment",
         "Invited",
         "Participating",
@@ -1277,10 +2865,6 @@
       "transitions": [
         [
           "NotIdentified",
-          "Identified"
-        ],
-        [
-          "Identified",
           "SupportAssessment"
         ],
         [
@@ -1338,13 +2922,9 @@
       ]
     },
     {
-      "id": "KLC-0004",
-      "name": "KnowledgeLifecycle",
-      "object_types": [
-        "KnowledgeItem",
-        "EvidenceRecord",
-        "UncertaintyRecord"
-      ],
+      "id": "KSM-0006",
+      "name": "KnowledgeItemLifecycle",
+      "object_type": "KnowledgeItem",
       "states": [
         "Recorded",
         "SourceLinked",
@@ -1416,23 +2996,16 @@
       ]
     },
     {
-      "id": "KLC-0005",
-      "name": "DecisionActionLifecycle",
-      "object_types": [
-        "DecisionRecord",
-        "ActionRecord",
-        "FeedbackRecord",
-        "OutcomeRecord"
-      ],
+      "id": "KSM-0007",
+      "name": "DecisionRecordLifecycle",
+      "object_type": "DecisionRecord",
       "states": [
         "Proposed",
         "ImpactReview",
         "AwaitingAuthority",
         "Authorized",
         "Declined",
-        "Executing",
-        "OutcomePending",
-        "FeedbackReceived",
+        "ActionCreated",
         "RevisionRequired",
         "Reversed",
         "Closed"
@@ -1460,22 +3033,18 @@
         ],
         [
           "Authorized",
-          "Executing"
+          "ActionCreated"
         ],
         [
-          "Executing",
-          "OutcomePending"
-        ],
-        [
-          "OutcomePending",
-          "FeedbackReceived"
-        ],
-        [
-          "FeedbackReceived",
+          "Authorized",
           "RevisionRequired"
         ],
         [
-          "FeedbackReceived",
+          "ActionCreated",
+          "RevisionRequired"
+        ],
+        [
+          "ActionCreated",
           "Closed"
         ],
         [
@@ -1493,73 +3062,115 @@
       ]
     },
     {
-      "id": "KLC-0006",
-      "name": "DataMemoryRightsLifecycle",
-      "object_types": [
-        "DataAssetRecord",
-        "MemoryRecord",
-        "RightsRequest",
-        "RetentionProfile"
-      ],
+      "id": "KSM-0008",
+      "name": "ActionRecordLifecycle",
+      "object_type": "ActionRecord",
       "states": [
-        "Active",
-        "Restricted",
-        "RequestReceived",
-        "CorrectionPending",
-        "DeletionPending",
-        "PrimaryAddressed",
-        "DerivedPropagationPending",
-        "BackupPending",
+        "Planned",
+        "AwaitingAuthority",
+        "Authorized",
+        "Executing",
+        "Paused",
+        "Completed",
+        "Failed",
+        "Reversed",
+        "Closed"
+      ],
+      "transitions": [
+        [
+          "Planned",
+          "AwaitingAuthority"
+        ],
+        [
+          "AwaitingAuthority",
+          "Authorized"
+        ],
+        [
+          "Authorized",
+          "Executing"
+        ],
+        [
+          "Executing",
+          "Paused"
+        ],
+        [
+          "Paused",
+          "Executing"
+        ],
+        [
+          "Executing",
+          "Completed"
+        ],
+        [
+          "Executing",
+          "Failed"
+        ],
+        [
+          "Paused",
+          "Failed"
+        ],
+        [
+          "Completed",
+          "Reversed"
+        ],
+        [
+          "Failed",
+          "Reversed"
+        ],
+        [
+          "Completed",
+          "Closed"
+        ],
+        [
+          "Failed",
+          "Closed"
+        ],
+        [
+          "Reversed",
+          "Closed"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0009",
+      "name": "RightsRequestLifecycle",
+      "object_type": "RightsRequest",
+      "states": [
+        "Received",
+        "AuthorityReview",
+        "LocatingRecords",
+        "ActionPending",
         "ExceptionOpen",
         "CompletionReview",
         "Complete",
         "Appealed",
-        "Reopened"
+        "Reopened",
+        "Closed"
       ],
       "transitions": [
         [
-          "Active",
-          "Restricted"
+          "Received",
+          "AuthorityReview"
         ],
         [
-          "Active",
-          "RequestReceived"
+          "AuthorityReview",
+          "LocatingRecords"
         ],
         [
-          "Restricted",
-          "RequestReceived"
-        ],
-        [
-          "RequestReceived",
-          "CorrectionPending"
-        ],
-        [
-          "RequestReceived",
-          "DeletionPending"
-        ],
-        [
-          "RequestReceived",
+          "AuthorityReview",
           "ExceptionOpen"
         ],
         [
-          "CorrectionPending",
-          "DerivedPropagationPending"
+          "LocatingRecords",
+          "ActionPending"
         ],
         [
-          "DeletionPending",
-          "PrimaryAddressed"
-        ],
-        [
-          "PrimaryAddressed",
-          "DerivedPropagationPending"
-        ],
-        [
-          "DerivedPropagationPending",
-          "BackupPending"
-        ],
-        [
-          "BackupPending",
+          "ActionPending",
           "CompletionReview"
+        ],
+        [
+          "ActionPending",
+          "ExceptionOpen"
         ],
         [
           "ExceptionOpen",
@@ -1583,116 +3194,267 @@
         ],
         [
           "Reopened",
-          "RequestReceived"
+          "AuthorityReview"
+        ],
+        [
+          "Complete",
+          "Closed"
+        ],
+        [
+          "Appealed",
+          "Closed"
         ]
       ]
     },
     {
-      "id": "KLC-0007",
-      "name": "SafetyHandoffLifecycle",
-      "object_types": [
-        "RiskSignal",
-        "RiskAssessment",
-        "SafetyAction",
-        "HandoffRecord"
-      ],
+      "id": "KSM-0010",
+      "name": "DataAssetMemoryLifecycle",
+      "object_type": "DataAssetRecord|MemoryRecord",
       "states": [
-        "SignalOpen",
-        "AssessmentPending",
-        "Classified",
-        "ActionReview",
-        "TemporaryAction",
-        "HandoffInitiated",
-        "HandoffAcknowledged",
-        "HandoffAccepted",
-        "HandoffFailed",
-        "Redirected",
-        "Monitoring",
-        "Closed",
-        "Appealed"
+        "Active",
+        "Restricted",
+        "CorrectionPending",
+        "DeletionPending",
+        "PrimaryAddressed",
+        "DerivedPropagationPending",
+        "BackupPending",
+        "ExceptionOpen",
+        "CompletionReview",
+        "Complete",
+        "Superseded"
       ],
       "transitions": [
         [
-          "SignalOpen",
-          "AssessmentPending"
+          "Active",
+          "Restricted"
         ],
         [
-          "AssessmentPending",
+          "Active",
+          "CorrectionPending"
+        ],
+        [
+          "Active",
+          "DeletionPending"
+        ],
+        [
+          "Restricted",
+          "CorrectionPending"
+        ],
+        [
+          "Restricted",
+          "DeletionPending"
+        ],
+        [
+          "CorrectionPending",
+          "DerivedPropagationPending"
+        ],
+        [
+          "DeletionPending",
+          "PrimaryAddressed"
+        ],
+        [
+          "PrimaryAddressed",
+          "DerivedPropagationPending"
+        ],
+        [
+          "DerivedPropagationPending",
+          "BackupPending"
+        ],
+        [
+          "BackupPending",
+          "CompletionReview"
+        ],
+        [
+          "DeletionPending",
+          "ExceptionOpen"
+        ],
+        [
+          "ExceptionOpen",
+          "CompletionReview"
+        ],
+        [
+          "CompletionReview",
+          "Complete"
+        ],
+        [
+          "Active",
+          "Superseded"
+        ],
+        [
+          "Restricted",
+          "Superseded"
+        ],
+        [
+          "Superseded",
+          "Complete"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0011",
+      "name": "RiskAssessmentLifecycle",
+      "object_type": "RiskAssessment",
+      "states": [
+        "Pending",
+        "InReview",
+        "Classified",
+        "ReviewDue",
+        "Superseded",
+        "Closed"
+      ],
+      "transitions": [
+        [
+          "Pending",
+          "InReview"
+        ],
+        [
+          "InReview",
           "Classified"
         ],
         [
           "Classified",
-          "ActionReview"
+          "ReviewDue"
         ],
         [
-          "ActionReview",
-          "TemporaryAction"
+          "ReviewDue",
+          "InReview"
         ],
         [
-          "ActionReview",
-          "HandoffInitiated"
+          "Classified",
+          "Superseded"
         ],
         [
-          "ActionReview",
-          "Monitoring"
-        ],
-        [
-          "HandoffInitiated",
-          "HandoffAcknowledged"
-        ],
-        [
-          "HandoffAcknowledged",
-          "HandoffAccepted"
-        ],
-        [
-          "HandoffInitiated",
-          "HandoffFailed"
-        ],
-        [
-          "HandoffAcknowledged",
-          "HandoffFailed"
-        ],
-        [
-          "HandoffFailed",
-          "Redirected"
-        ],
-        [
-          "HandoffAccepted",
-          "Monitoring"
-        ],
-        [
-          "TemporaryAction",
-          "Monitoring"
-        ],
-        [
-          "Monitoring",
+          "Superseded",
           "Closed"
         ],
         [
           "Classified",
           "Closed"
-        ],
-        [
-          "Closed",
-          "Appealed"
         ]
       ]
     },
     {
-      "id": "KLC-0008",
-      "name": "IncidentAppealRemediationLifecycle",
-      "object_types": [
-        "IncidentRecord",
-        "AppealRecord",
-        "ExceptionRecord"
+      "id": "KSM-0012",
+      "name": "SafetyActionLifecycle",
+      "object_type": "SafetyAction",
+      "states": [
+        "Proposed",
+        "ReviewPending",
+        "Authorized",
+        "Active",
+        "Monitoring",
+        "Ended",
+        "Appealed",
+        "Revoked",
+        "Closed"
       ],
+      "transitions": [
+        [
+          "Proposed",
+          "ReviewPending"
+        ],
+        [
+          "ReviewPending",
+          "Authorized"
+        ],
+        [
+          "Authorized",
+          "Active"
+        ],
+        [
+          "Active",
+          "Monitoring"
+        ],
+        [
+          "Monitoring",
+          "Ended"
+        ],
+        [
+          "Active",
+          "Revoked"
+        ],
+        [
+          "Monitoring",
+          "Revoked"
+        ],
+        [
+          "Ended",
+          "Appealed"
+        ],
+        [
+          "Revoked",
+          "Appealed"
+        ],
+        [
+          "Ended",
+          "Closed"
+        ],
+        [
+          "Revoked",
+          "Closed"
+        ],
+        [
+          "Appealed",
+          "ReviewPending"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0013",
+      "name": "HandoffRecordLifecycle",
+      "object_type": "HandoffRecord",
+      "states": [
+        "Initiated",
+        "Acknowledged",
+        "Accepted",
+        "Failed",
+        "Redirected",
+        "Closed"
+      ],
+      "transitions": [
+        [
+          "Initiated",
+          "Acknowledged"
+        ],
+        [
+          "Acknowledged",
+          "Accepted"
+        ],
+        [
+          "Initiated",
+          "Failed"
+        ],
+        [
+          "Acknowledged",
+          "Failed"
+        ],
+        [
+          "Failed",
+          "Redirected"
+        ],
+        [
+          "Accepted",
+          "Closed"
+        ],
+        [
+          "Redirected",
+          "Closed"
+        ],
+        [
+          "Failed",
+          "Closed"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0014",
+      "name": "IncidentRecordLifecycle",
+      "object_type": "IncidentRecord",
       "states": [
         "Reported",
         "Triaged",
         "Contained",
         "Investigating",
-        "AppealOpen",
-        "DecisionPending",
         "RemediationPlanned",
         "RemediationInProgress",
         "VerificationPending",
@@ -1718,18 +3480,6 @@
         ],
         [
           "Investigating",
-          "AppealOpen"
-        ],
-        [
-          "Investigating",
-          "DecisionPending"
-        ],
-        [
-          "AppealOpen",
-          "DecisionPending"
-        ],
-        [
-          "DecisionPending",
           "RemediationPlanned"
         ],
         [
@@ -1755,11 +3505,121 @@
       ]
     },
     {
-      "id": "KLC-0009",
-      "name": "ResourceAvailabilityLifecycle",
-      "object_types": [
-        "ResourceAvailabilityRecord"
+      "id": "KSM-0015",
+      "name": "AppealRecordLifecycle",
+      "object_type": "AppealRecord",
+      "states": [
+        "Open",
+        "EligibilityReview",
+        "ReviewPending",
+        "DecisionIssued",
+        "RemediationPending",
+        "Closed",
+        "Reopened"
       ],
+      "transitions": [
+        [
+          "Open",
+          "EligibilityReview"
+        ],
+        [
+          "EligibilityReview",
+          "ReviewPending"
+        ],
+        [
+          "EligibilityReview",
+          "Closed"
+        ],
+        [
+          "ReviewPending",
+          "DecisionIssued"
+        ],
+        [
+          "DecisionIssued",
+          "RemediationPending"
+        ],
+        [
+          "DecisionIssued",
+          "Closed"
+        ],
+        [
+          "RemediationPending",
+          "Closed"
+        ],
+        [
+          "Closed",
+          "Reopened"
+        ],
+        [
+          "Reopened",
+          "ReviewPending"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0016",
+      "name": "ExceptionRecordLifecycle",
+      "object_type": "ExceptionRecord",
+      "states": [
+        "Proposed",
+        "ReviewPending",
+        "Active",
+        "Restricted",
+        "Revoked",
+        "Expired",
+        "Closed"
+      ],
+      "transitions": [
+        [
+          "Proposed",
+          "ReviewPending"
+        ],
+        [
+          "ReviewPending",
+          "Active"
+        ],
+        [
+          "ReviewPending",
+          "Closed"
+        ],
+        [
+          "Active",
+          "Restricted"
+        ],
+        [
+          "Restricted",
+          "Active"
+        ],
+        [
+          "Active",
+          "Revoked"
+        ],
+        [
+          "Active",
+          "Expired"
+        ],
+        [
+          "Restricted",
+          "Revoked"
+        ],
+        [
+          "Restricted",
+          "Expired"
+        ],
+        [
+          "Revoked",
+          "Closed"
+        ],
+        [
+          "Expired",
+          "Closed"
+        ]
+      ]
+    },
+    {
+      "id": "KSM-0017",
+      "name": "ResourceAvailabilityLifecycle",
+      "object_type": "ResourceAvailabilityRecord",
       "states": [
         "Unverified",
         "VerificationPending",
@@ -1822,6 +3682,339 @@
         [
           "Stale",
           "Retired"
+        ]
+      ]
+    }
+  ],
+  "process_flows": [
+    {
+      "id": "KPF-0001",
+      "name": "PurposeAndAuthorityEstablishment",
+      "stages": [
+        "PurposeProposed",
+        "ImpactReviewed",
+        "NoticePrepared",
+        "AuthorityRecorded",
+        "ActiveOrRestricted"
+      ],
+      "transitions": [
+        [
+          "PurposeProposed",
+          "ImpactReviewed"
+        ],
+        [
+          "ImpactReviewed",
+          "NoticePrepared"
+        ],
+        [
+          "NoticePrepared",
+          "AuthorityRecorded"
+        ],
+        [
+          "AuthorityRecorded",
+          "ActiveOrRestricted"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0002",
+      "name": "RepresentativeAndParticipation",
+      "stages": [
+        "RepresentativeClaimed",
+        "AuthorityVerified",
+        "ConflictChecked",
+        "ParticipationSupported",
+        "DecisionRecorded"
+      ],
+      "transitions": [
+        [
+          "RepresentativeClaimed",
+          "AuthorityVerified"
+        ],
+        [
+          "AuthorityVerified",
+          "ConflictChecked"
+        ],
+        [
+          "ConflictChecked",
+          "ParticipationSupported"
+        ],
+        [
+          "ParticipationSupported",
+          "DecisionRecorded"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0003",
+      "name": "KnowledgeFormation",
+      "stages": [
+        "SourceCaptured",
+        "KnowledgeTyped",
+        "EvidenceLinked",
+        "UncertaintyRecorded",
+        "MaterialityReviewed",
+        "ActiveOrRestricted"
+      ],
+      "transitions": [
+        [
+          "SourceCaptured",
+          "KnowledgeTyped"
+        ],
+        [
+          "KnowledgeTyped",
+          "EvidenceLinked"
+        ],
+        [
+          "EvidenceLinked",
+          "UncertaintyRecorded"
+        ],
+        [
+          "UncertaintyRecorded",
+          "MaterialityReviewed"
+        ],
+        [
+          "MaterialityReviewed",
+          "ActiveOrRestricted"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0004",
+      "name": "ConsequentialDecisionAndAction",
+      "stages": [
+        "Proposal",
+        "ImpactReview",
+        "AuthorityReview",
+        "HumanAccountability",
+        "Action",
+        "Outcome",
+        "Feedback",
+        "Revision"
+      ],
+      "transitions": [
+        [
+          "Proposal",
+          "ImpactReview"
+        ],
+        [
+          "ImpactReview",
+          "AuthorityReview"
+        ],
+        [
+          "AuthorityReview",
+          "HumanAccountability"
+        ],
+        [
+          "HumanAccountability",
+          "Action"
+        ],
+        [
+          "Action",
+          "Outcome"
+        ],
+        [
+          "Outcome",
+          "Feedback"
+        ],
+        [
+          "Feedback",
+          "Revision"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0005",
+      "name": "DataMemoryRights",
+      "stages": [
+        "Request",
+        "AuthorityReview",
+        "Locate",
+        "PrimaryAction",
+        "DerivedPropagation",
+        "BackupHandling",
+        "CompletionReview",
+        "Appeal"
+      ],
+      "transitions": [
+        [
+          "Request",
+          "AuthorityReview"
+        ],
+        [
+          "AuthorityReview",
+          "Locate"
+        ],
+        [
+          "Locate",
+          "PrimaryAction"
+        ],
+        [
+          "PrimaryAction",
+          "DerivedPropagation"
+        ],
+        [
+          "DerivedPropagation",
+          "BackupHandling"
+        ],
+        [
+          "BackupHandling",
+          "CompletionReview"
+        ],
+        [
+          "CompletionReview",
+          "Appeal"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0006",
+      "name": "SafetyAndHandoff",
+      "stages": [
+        "Signal",
+        "Assessment",
+        "Proportionality",
+        "ProtectiveActionOrHandoff",
+        "AcceptanceOrFailure",
+        "Monitoring",
+        "IncidentOrAppeal"
+      ],
+      "transitions": [
+        [
+          "Signal",
+          "Assessment"
+        ],
+        [
+          "Assessment",
+          "Proportionality"
+        ],
+        [
+          "Proportionality",
+          "ProtectiveActionOrHandoff"
+        ],
+        [
+          "ProtectiveActionOrHandoff",
+          "AcceptanceOrFailure"
+        ],
+        [
+          "AcceptanceOrFailure",
+          "Monitoring"
+        ],
+        [
+          "Monitoring",
+          "IncidentOrAppeal"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0007",
+      "name": "IncidentRemediation",
+      "stages": [
+        "Report",
+        "Triage",
+        "Contain",
+        "Investigate",
+        "Decide",
+        "Remediate",
+        "Verify",
+        "CloseOrReopen"
+      ],
+      "transitions": [
+        [
+          "Report",
+          "Triage"
+        ],
+        [
+          "Triage",
+          "Contain"
+        ],
+        [
+          "Contain",
+          "Investigate"
+        ],
+        [
+          "Investigate",
+          "Decide"
+        ],
+        [
+          "Decide",
+          "Remediate"
+        ],
+        [
+          "Remediate",
+          "Verify"
+        ],
+        [
+          "Verify",
+          "CloseOrReopen"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0008",
+      "name": "ResourceFreshness",
+      "stages": [
+        "Unverified",
+        "Verify",
+        "Current",
+        "DisputeOrStale",
+        "Reverify",
+        "Retire"
+      ],
+      "transitions": [
+        [
+          "Unverified",
+          "Verify"
+        ],
+        [
+          "Verify",
+          "Current"
+        ],
+        [
+          "Current",
+          "DisputeOrStale"
+        ],
+        [
+          "DisputeOrStale",
+          "Reverify"
+        ],
+        [
+          "Reverify",
+          "Retire"
+        ]
+      ]
+    },
+    {
+      "id": "KPF-0009",
+      "name": "CorrectionPropagation",
+      "stages": [
+        "CorrectionReceived",
+        "DependenciesLocated",
+        "CurrentStateRevised",
+        "DerivedRecordsUpdated",
+        "AffectedNotice",
+        "AuditPreserved"
+      ],
+      "transitions": [
+        [
+          "CorrectionReceived",
+          "DependenciesLocated"
+        ],
+        [
+          "DependenciesLocated",
+          "CurrentStateRevised"
+        ],
+        [
+          "CurrentStateRevised",
+          "DerivedRecordsUpdated"
+        ],
+        [
+          "DerivedRecordsUpdated",
+          "AffectedNotice"
+        ],
+        [
+          "AffectedNotice",
+          "AuditPreserved"
         ]
       ]
     }
@@ -2306,29 +4499,95 @@
         "Implementation"
       ],
       "status": "Open"
+    },
+    {
+      "id": "KOLA-0033",
+      "area": "Object state versus process stage",
+      "issue": "How user-facing process stages remain distinct from canonical object state.",
+      "risk": "Critical",
+      "related_refs": [
+        "KERNEL-0003",
+        "KSM-*",
+        "KPF-*"
+      ],
+      "required_review_classes": [
+        "Architecture",
+        "AffectedPerson",
+        "Implementation"
+      ],
+      "status": "Open"
+    },
+    {
+      "id": "KOLA-0034",
+      "area": "Invalid-transition exceptions",
+      "issue": "Which invariants are non-exceptionable and how alternate valid behavior is represented.",
+      "risk": "Critical",
+      "related_refs": [
+        "KLS-0004",
+        "ExceptionRecord"
+      ],
+      "required_review_classes": [
+        "Governance",
+        "Safety",
+        "Implementation"
+      ],
+      "status": "Open"
+    },
+    {
+      "id": "KOLA-0035",
+      "area": "Append-only records",
+      "issue": "Which records may be corrected by supersession rather than in-place mutation.",
+      "risk": "High",
+      "related_refs": [
+        "KDO-0029",
+        "AuditEvent",
+        "EvidenceRecord"
+      ],
+      "required_review_classes": [
+        "Privacy",
+        "Security",
+        "Implementation"
+      ],
+      "status": "Open"
+    },
+    {
+      "id": "KOLA-0036",
+      "area": "Machine applicability",
+      "issue": "How domain Profiles constrain allowed states and transitions without redefining core semantics.",
+      "risk": "High",
+      "related_refs": [
+        "KERNEL-0003",
+        "PROF-*"
+      ],
+      "required_review_classes": [
+        "Domain",
+        "Architecture",
+        "Jurisdiction"
+      ],
+      "status": "Open"
     }
   ],
   "review": {
     "state": "PreparedNotExecuted",
     "real_reviewer_assignments": 0,
-    "human_use_approvals": 0,
     "affected_person_sessions": 0,
     "implementation_assessments": 0
   },
   "conformance": {
     "current_claim": "NoCurrentKernelConformanceClaim",
     "conformance_requirements_document_exists": false,
-    "test_specification_exists": false,
-    "product_assessment_count": 0
+    "test_specification_exists": false
   },
   "integrity": {
     "object_requirement_count": 36,
     "object_type_count": 35,
     "access_class_count": 6,
     "lifecycle_requirement_count": 34,
-    "lifecycle_count": 9,
-    "transition_count": 129,
-    "ambiguity_count": 32,
+    "state_machine_count": 17,
+    "object_transition_count": 203,
+    "process_flow_count": 9,
+    "process_transition_count": 50,
+    "ambiguity_count": 36,
     "created_kernel_document_count": 4,
     "reserved_not_created_count": 2,
     "implementation_conformance_claim": false

@@ -1,8 +1,8 @@
 ---
 id: KERNEL-0003
-title: MingOS Kernel Lifecycle and State Machines
+title: MingOS Kernel Object State Machines and Process Coordination
 status: Draft
-version: 0.1.0-draft.1
+version: 0.2.0-draft.2
 layer: Layer 2 — Standards
 owner: Ming Foundation Kernel Architecture
 created: 2026-07-15
@@ -10,100 +10,75 @@ updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
-decision_base_commit: a0b8234567c211896085f0e1259b96bcb53effd1
+decision_base_commit: f3905710db2304ab926c4ab31e10264931539f98
 related:
   - ADR-0026
   - MOS-0000
   - KERNEL-0000
   - KERNEL-0001
   - KERNEL-0002
-  - RFC-0001
-  - RFC-0002
-  - RFC-0003
-  - PROF-0001
-  - PROF-0002
-  - PROF-0003
-  - PROF-0004
-  - REF-0035
-  - REF-0036
-  - REF-0037
-  - REF-0038
-  - REF-0039
+  - REF-0041
+  - REF-0042
+  - REF-0043
+  - REF-0044
 depends_on:
   - KERNEL-0000
   - KERNEL-0001
   - KERNEL-0002
 ---
 
-# KERNEL-0003 — MingOS Kernel Lifecycle and State Machines
+# KERNEL-0003 — MingOS Kernel Object State Machines and Process Coordination
 
-> **Draft lifecycle model.** States are governance semantics, not identity
-> labels, diagnoses, or proof of safety or conformance.
+> Object state and cross-object process stage are separate. Neither is an identity label, diagnosis or conformance proof.
 
-## 1. Purpose
+## 1. Purpose, scope and definitions
 
-Propose state and transition semantics for authority, participation, knowledge,
-decision/action, data/memory rights, safety/handoff, incident/appeal/remediation
-and resource availability.
+Define object-local states and transitions plus non-state-bearing cross-object coordination. A transition changes one state-bearing object. A process event creates or links multiple objects. An ExceptionRecord never legalizes an undefined transition.
 
-## 2. Scope and non-goals
+## 2. Normative lifecycle requirements
 
-Defines allowed distinctions, transition envelopes and cross-lifecycle
-invariants. It does not prescribe workflow software, UI, response times, legal
-conclusions, automatic decisions, final conformance tests or reference
-implementation.
+| ID | Domain | Level | Requirement | Exact collection-local source | Source treatment | Proposed verification | Expected evidence |
+|---|---|---|---|---|---|---|---|
+| KLS-0001 | TransitionEnvelope | `MUST` | Every transition MUST record lifecycle/version, object, previous/new state, actor/component, role, authority, purpose, reason, evidence, uncertainty, affected people, time, review/expiry and audit. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0002, KCR-0013, KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0002 | NoSilentTransition | `MUST NOT` | A material object MUST NOT change state without an append-oriented transition record. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0003 | CurrentHistorySeparation | `MUST` | Current state and transition history MUST remain separately inspectable. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0015, KCR-0034, KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0004 | AllowedTransitions | `MUST` | An implementation MUST reject an undefined or disallowed object-state transition. An ExceptionRecord may authorize alternate valid behavior but MUST NOT legalize a structurally invalid transition. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0003, KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0005 | ActorAuthority | `MUST` | A material transition MUST identify responsible actor, role and authority scope. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0001, KCR-0005, KCR-0032 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0006 | AIBoundary | `MUST NOT` | An AI component MUST NOT be the final accountable authorizer of a high-impact transition. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0031, KCR-0032 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0007 | ReviewExpiry | `MUST` | Active authority, participation, knowledge, resource, exception and safety states MUST support review or expiry. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0006, KCR-0008, KCR-0023, KCR-0028 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0008 | StateNotIdentity | `MUST NOT` | A lifecycle state MUST NOT become a permanent identity, maturity score, diagnosis or worth judgment. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0029 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0009 | ReasonEvidence | `MUST` | Restrictive, emergency, disputed or irreversible transitions MUST preserve reason, evidence, uncertainty, alternatives and safeguards. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0014, KCR-0020, KCR-0026 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0010 | AffectedPersonNotice | `SHOULD` | A materially affected person SHOULD receive usable notice unless a specific temporary safety/legal reason is recorded. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0020, KCR-0033 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0011 | CorrectionAppeal | `MUST` | Material lifecycles MUST provide applicable correction, contestation, appeal or independent-review transitions. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0010, KCR-0025 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0012 | RollbackRemediation | `MUST` | Where reversal is impossible, the transition MUST record remaining exposure and remediation. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0019, KCR-0025 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0013 | CrossLifecycleFreeze | `MUST` | Expired, revoked, disputed or unsafe authority MUST freeze expansion, optional reuse and high-impact action unless narrowly excepted. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0008, KCR-0009, KCR-0020, KCR-0030 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0014 | ContestedKnowledgeUse | `SHOULD NOT` | Contested high-impact knowledge SHOULD NOT drive irreversible, punitive, rights-restricting or identity-shaping action during review. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0010, KCR-0015 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0015 | AuthorityPropagation | `MUST` | Revocation, expiry or supersession of authority MUST propagate to dependent optional permissions and actions. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0008, KCR-0028, KCR-0030 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0016 | RepresentativeConflict | `MUST` | Disputed or conflicted representative authority MUST route high-impact action to conflict-free review. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0006, KCR-0033 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0017 | ParticipationSupportFirst | `MUST` | Before reducing direct participation, the system MUST consider communication and decision support. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0033 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0018 | ParticipationRefusal | `MUST NOT` | Declined, withdrawn, silent or inaccessible participation MUST NOT be treated as agreement or proof. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0009, KCR-0033 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0019 | KnowledgeContestation | `MUST` | A contested knowledge item MUST expose dispute and dependent uses and support restrict, correct, contextualize or supersede. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0010, KCR-0015 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0020 | KnowledgeSupersession | `MUST` | Supersession MUST update active uses while preserving prior provenance. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0015, KCR-0034 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0021 | DecisionImpactGate | `MUST` | A high-impact decision MUST pass impact, affected-person, authority, evidence, uncertainty, reversibility and review gates. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0020, KCR-0032 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0022 | ActionOutcomeFeedback | `MUST` | Executed action MUST support outcome, feedback and revision transitions. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0034 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0023 | DeletionCompletion | `MUST NOT` | Deletion/restriction MUST NOT become Complete while prohibited active use remains possible. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0028 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0024 | BackupRestoration | `MUST` | Backup completion MUST define restoration-time suppression and reconciliation. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0028 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0025 | ExceptionExpiry | `MUST` | An open exception MUST carry owner, scope, safeguards and mandatory review or expiry. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0026, KCR-0028 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0026 | RiskAssessment | `MUST` | A safety signal MUST be assessed with current/historical evidence, uncertainty, immediacy and responsible reviewer. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0022 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0027 | HandoffNotMessage | `MUST NOT` | Initiated or acknowledged handoff MUST NOT be represented as accepted or closed without evidence. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0024 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0028 | FailedHandoff | `MUST` | Failed handoff MUST identify next action, owner and transparent limitation. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0023, KCR-0024 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0029 | ProtectiveActionReview | `MUST` | Temporary protective action MUST be minimum necessary, time-bounded where possible, independently reviewable and correctable. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0026 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0030 | IncidentClosure | `MUST` | An incident MUST NOT close before containment, investigation, remediation, verification, affected-person impact and closure authority are addressed or bounded. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0025, KCR-0034 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0031 | AppealDifferentReviewer | `MUST` | A material appeal MUST use a different or conflict-free reviewer where the original role is conflicted. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0010, KCR-0025, KCR-0032 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0032 | ResourceExpiry | `MUST` | A stale, disputed or expired resource MUST stop being presented as current. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0023 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0033 | StateMachineVersion | `MUST` | Every transition MUST identify the state-machine version used. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0002, KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
+| KLS-0034 | Migration | `MUST` | A breaking lifecycle revision MUST define state mapping, in-flight handling, rollback, audit continuity and affected-person notice. | KERNEL-0001 / Draft / 0.2.2-draft.4 / `standards/kernel/KERNEL-0001-core-operational-contract.md` / §KCR-0002, KCR-0003, KCR-0035 / CollectionLocalDraft | `OperationalizationOfDraftCore` | StructuralInspection; NegativeOrBoundaryScenario | GovernedRecord; ReviewFinding |
 
-## 3. Definitions
-
-A lifecycle is governed states and transitions. A transition is append-oriented.
-A guard is required before transition. A freeze prohibits expansion/high-impact
-use. Completion means active, derived, shared and backup effects are addressed
-or narrowly excepted.
-
-## 4. Normative lifecycle requirements
-
-| ID | Domain | Level | Requirement |
-|---|---|---|---|
-| KLS-0001 | TransitionEnvelope | `MUST` | Every transition MUST record lifecycle/version, object, previous/new state, actor/component, role, authority, purpose, reason, evidence, uncertainty, affected people, time, review/expiry and audit. |
-| KLS-0002 | NoSilentTransition | `MUST NOT` | A material object MUST NOT change state without an append-oriented transition record. |
-| KLS-0003 | CurrentHistorySeparation | `MUST` | Current state and transition history MUST remain separately inspectable. |
-| KLS-0004 | AllowedTransitions | `MUST` | An implementation MUST reject or explicitly exception-record a transition not allowed by the applicable lifecycle. |
-| KLS-0005 | ActorAuthority | `MUST` | A material transition MUST identify responsible actor, role and authority scope. |
-| KLS-0006 | AIBoundary | `MUST NOT` | An AI component MUST NOT be the final accountable authorizer of a high-impact transition. |
-| KLS-0007 | ReviewExpiry | `MUST` | Active authority, participation, knowledge, resource, exception and safety states MUST support review or expiry. |
-| KLS-0008 | StateNotIdentity | `MUST NOT` | A lifecycle state MUST NOT become a permanent identity, maturity score, diagnosis or worth judgment. |
-| KLS-0009 | ReasonEvidence | `MUST` | Restrictive, emergency, disputed or irreversible transitions MUST preserve reason, evidence, uncertainty, alternatives and safeguards. |
-| KLS-0010 | AffectedPersonNotice | `SHOULD` | A materially affected person SHOULD receive usable notice unless a specific temporary safety/legal reason is recorded. |
-| KLS-0011 | CorrectionAppeal | `MUST` | Material lifecycles MUST provide applicable correction, contestation, appeal or independent-review transitions. |
-| KLS-0012 | RollbackRemediation | `MUST` | Where reversal is impossible, the transition MUST record remaining exposure and remediation. |
-| KLS-0013 | CrossLifecycleFreeze | `MUST` | Expired, revoked, disputed or unsafe authority MUST freeze expansion, optional reuse and high-impact action unless narrowly excepted. |
-| KLS-0014 | ContestedKnowledgeUse | `SHOULD NOT` | Contested high-impact knowledge SHOULD NOT drive irreversible, punitive, rights-restricting or identity-shaping action during review. |
-| KLS-0015 | AuthorityPropagation | `MUST` | Revocation, expiry or supersession of authority MUST propagate to dependent optional permissions and actions. |
-| KLS-0016 | RepresentativeConflict | `MUST` | Disputed or conflicted representative authority MUST route high-impact action to conflict-free review. |
-| KLS-0017 | ParticipationSupportFirst | `MUST` | Before reducing direct participation, the system MUST consider communication and decision support. |
-| KLS-0018 | ParticipationRefusal | `MUST NOT` | Declined, withdrawn, silent or inaccessible participation MUST NOT be treated as agreement or proof. |
-| KLS-0019 | KnowledgeContestation | `MUST` | A contested knowledge item MUST expose dispute and dependent uses and support restrict, correct, contextualize or supersede. |
-| KLS-0020 | KnowledgeSupersession | `MUST` | Supersession MUST update active uses while preserving prior provenance. |
-| KLS-0021 | DecisionImpactGate | `MUST` | A high-impact decision MUST pass impact, affected-person, authority, evidence, uncertainty, reversibility and review gates. |
-| KLS-0022 | ActionOutcomeFeedback | `MUST` | Executed action MUST support outcome, feedback and revision transitions. |
-| KLS-0023 | DeletionCompletion | `MUST NOT` | Deletion/restriction MUST NOT become Complete while prohibited active use remains possible. |
-| KLS-0024 | BackupRestoration | `MUST` | Backup completion MUST define restoration-time suppression and reconciliation. |
-| KLS-0025 | ExceptionExpiry | `MUST` | An open exception MUST carry owner, scope, safeguards and mandatory review or expiry. |
-| KLS-0026 | RiskAssessment | `MUST` | A safety signal MUST be assessed with current/historical evidence, uncertainty, immediacy and responsible reviewer. |
-| KLS-0027 | HandoffNotMessage | `MUST NOT` | Initiated or acknowledged handoff MUST NOT be represented as accepted or closed without evidence. |
-| KLS-0028 | FailedHandoff | `MUST` | Failed handoff MUST identify next action, owner and transparent limitation. |
-| KLS-0029 | ProtectiveActionReview | `MUST` | Temporary protective action MUST be minimum necessary, time-bounded where possible, independently reviewable and correctable. |
-| KLS-0030 | IncidentClosure | `MUST` | An incident MUST NOT close before containment, investigation, remediation, verification, affected-person impact and closure authority are addressed or bounded. |
-| KLS-0031 | AppealDifferentReviewer | `MUST` | A material appeal MUST use a different or conflict-free reviewer where the original role is conflicted. |
-| KLS-0032 | ResourceExpiry | `MUST` | A stale, disputed or expired resource MUST stop being presented as current. |
-| KLS-0033 | StateMachineVersion | `MUST` | Every transition MUST identify the state-machine version used. |
-| KLS-0034 | Migration | `MUST` | A breaking lifecycle revision MUST define state mapping, in-flight handling, rollback, audit continuity and affected-person notice. |
-
-## 5. Transition envelope
+## 3. Transition envelope
 
 ```text
 transition_id
-lifecycle_id
+state_machine_id
 state_machine_version
 object_ref
 previous_state
@@ -123,25 +98,47 @@ exception_ref
 audit_ref
 ```
 
-## 6. Lifecycle summary
+## 4. Object-local state-machine summary
 
-| ID | Lifecycle | Governed objects | States | Transition count |
+| ID | State machine | State-bearing object | States | Transition count |
 |---|---|---|---|---:|
-| KLC-0001 | AuthorityBasisLifecycle | AuthorityBasisRecord, PurposeRecord | Proposed, NoticePending, Active, Restricted, Disputed, Revoked, Expired, Superseded, Closed | 15 |
-| KLC-0002 | RepresentativeAuthorityLifecycle | RepresentativeAuthority, RoleAssignment | Unverified, VerificationPending, ActiveWithinScope, Restricted, Disputed, Revoked, Expired, Superseded | 13 |
-| KLC-0003 | ParticipationLifecycle | ParticipationRecord | NotIdentified, Identified, SupportAssessment, Invited, Participating, Declined, RepresentativeOnly, ParticipationUnsafe, Withdrew, ReviewDue, Closed | 15 |
-| KLC-0004 | KnowledgeLifecycle | KnowledgeItem, EvidenceRecord, UncertaintyRecord | Recorded, SourceLinked, MaterialityReviewed, ActiveWithinScope, Contested, Restricted, Superseded, Expired, RemovedFromActiveUse | 14 |
-| KLC-0005 | DecisionActionLifecycle | DecisionRecord, ActionRecord, FeedbackRecord, OutcomeRecord | Proposed, ImpactReview, AwaitingAuthority, Authorized, Declined, Executing, OutcomePending, FeedbackReceived, RevisionRequired, Reversed, Closed | 13 |
-| KLC-0006 | DataMemoryRightsLifecycle | DataAssetRecord, MemoryRecord, RightsRequest, RetentionProfile | Active, Restricted, RequestReceived, CorrectionPending, DeletionPending, PrimaryAddressed, DerivedPropagationPending, BackupPending, ExceptionOpen, CompletionReview, Complete, Appealed, Reopened | 17 |
-| KLC-0007 | SafetyHandoffLifecycle | RiskSignal, RiskAssessment, SafetyAction, HandoffRecord | SignalOpen, AssessmentPending, Classified, ActionReview, TemporaryAction, HandoffInitiated, HandoffAcknowledged, HandoffAccepted, HandoffFailed, Redirected, Monitoring, Closed, Appealed | 16 |
-| KLC-0008 | IncidentAppealRemediationLifecycle | IncidentRecord, AppealRecord, ExceptionRecord | Reported, Triaged, Contained, Investigating, AppealOpen, DecisionPending, RemediationPlanned, RemediationInProgress, VerificationPending, Closed, Reopened | 13 |
-| KLC-0009 | ResourceAvailabilityLifecycle | ResourceAvailabilityRecord | Unverified, VerificationPending, Current, Disputed, Stale, Unavailable, ReverificationPending, Retired | 13 |
+| KSM-0001 | PurposeRecordLifecycle | PurposeRecord | Proposed, Active, Suspended, Superseded, Retired | 7 |
+| KSM-0002 | AuthorityBasisLifecycle | AuthorityBasisRecord | Proposed, NoticePending, Active, Restricted, Disputed, Revoked, Expired, Superseded, Closed | 15 |
+| KSM-0003 | RoleAssignmentLifecycle | RoleAssignment | Proposed, Active, Restricted, Conflicted, Revoked, Expired, Closed | 12 |
+| KSM-0004 | RepresentativeAuthorityLifecycle | RepresentativeAuthority | Unverified, VerificationPending, ActiveWithinScope, Restricted, Disputed, Revoked, Expired, Superseded, Closed | 16 |
+| KSM-0005 | ParticipationRecordLifecycle | ParticipationRecord | NotIdentified, SupportAssessment, Invited, Participating, Declined, RepresentativeOnly, ParticipationUnsafe, Withdrew, ReviewDue, Closed | 14 |
+| KSM-0006 | KnowledgeItemLifecycle | KnowledgeItem | Recorded, SourceLinked, MaterialityReviewed, ActiveWithinScope, Contested, Restricted, Superseded, Expired, RemovedFromActiveUse | 14 |
+| KSM-0007 | DecisionRecordLifecycle | DecisionRecord | Proposed, ImpactReview, AwaitingAuthority, Authorized, Declined, ActionCreated, RevisionRequired, Reversed, Closed | 12 |
+| KSM-0008 | ActionRecordLifecycle | ActionRecord | Planned, AwaitingAuthority, Authorized, Executing, Paused, Completed, Failed, Reversed, Closed | 13 |
+| KSM-0009 | RightsRequestLifecycle | RightsRequest | Received, AuthorityReview, LocatingRecords, ActionPending, ExceptionOpen, CompletionReview, Complete, Appealed, Reopened, Closed | 14 |
+| KSM-0010 | DataAssetMemoryLifecycle | DataAssetRecord|MemoryRecord | Active, Restricted, CorrectionPending, DeletionPending, PrimaryAddressed, DerivedPropagationPending, BackupPending, ExceptionOpen, CompletionReview, Complete, Superseded | 16 |
+| KSM-0011 | RiskAssessmentLifecycle | RiskAssessment | Pending, InReview, Classified, ReviewDue, Superseded, Closed | 7 |
+| KSM-0012 | SafetyActionLifecycle | SafetyAction | Proposed, ReviewPending, Authorized, Active, Monitoring, Ended, Appealed, Revoked, Closed | 12 |
+| KSM-0013 | HandoffRecordLifecycle | HandoffRecord | Initiated, Acknowledged, Accepted, Failed, Redirected, Closed | 8 |
+| KSM-0014 | IncidentRecordLifecycle | IncidentRecord | Reported, Triaged, Contained, Investigating, RemediationPlanned, RemediationInProgress, VerificationPending, Closed, Reopened | 10 |
+| KSM-0015 | AppealRecordLifecycle | AppealRecord | Open, EligibilityReview, ReviewPending, DecisionIssued, RemediationPending, Closed, Reopened | 9 |
+| KSM-0016 | ExceptionRecordLifecycle | ExceptionRecord | Proposed, ReviewPending, Active, Restricted, Revoked, Expired, Closed | 11 |
+| KSM-0017 | ResourceAvailabilityLifecycle | ResourceAvailabilityRecord | Unverified, VerificationPending, Current, Disputed, Stale, Unavailable, ReverificationPending, Retired | 13 |
 
-## 7. Allowed transitions
+## 5. Allowed object-state transitions
 
-### KLC-0001 — AuthorityBasisLifecycle
+### KSM-0001 — PurposeRecordLifecycle
 
-Objects: AuthorityBasisRecord, PurposeRecord
+State-bearing object: `PurposeRecord`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Proposed` | `Active` |
+| 2 | `Active` | `Suspended` |
+| 3 | `Suspended` | `Active` |
+| 4 | `Active` | `Superseded` |
+| 5 | `Suspended` | `Superseded` |
+| 6 | `Superseded` | `Retired` |
+| 7 | `Active` | `Retired` |
+
+### KSM-0002 — AuthorityBasisLifecycle
+
+State-bearing object: `AuthorityBasisRecord`
 
 | # | From | To |
 |---:|---|---|
@@ -161,9 +158,28 @@ Objects: AuthorityBasisRecord, PurposeRecord
 | 14 | `Expired` | `Closed` |
 | 15 | `Superseded` | `Closed` |
 
-### KLC-0002 — RepresentativeAuthorityLifecycle
+### KSM-0003 — RoleAssignmentLifecycle
 
-Objects: RepresentativeAuthority, RoleAssignment
+State-bearing object: `RoleAssignment`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Proposed` | `Active` |
+| 2 | `Active` | `Restricted` |
+| 3 | `Active` | `Conflicted` |
+| 4 | `Active` | `Revoked` |
+| 5 | `Active` | `Expired` |
+| 6 | `Restricted` | `Active` |
+| 7 | `Restricted` | `Revoked` |
+| 8 | `Conflicted` | `Restricted` |
+| 9 | `Conflicted` | `Revoked` |
+| 10 | `Conflicted` | `Active` |
+| 11 | `Revoked` | `Closed` |
+| 12 | `Expired` | `Closed` |
+
+### KSM-0004 — RepresentativeAuthorityLifecycle
+
+State-bearing object: `RepresentativeAuthority`
 
 | # | From | To |
 |---:|---|---|
@@ -180,32 +196,34 @@ Objects: RepresentativeAuthority, RoleAssignment
 | 11 | `Disputed` | `Revoked` |
 | 12 | `Disputed` | `ActiveWithinScope` |
 | 13 | `ActiveWithinScope` | `Superseded` |
+| 14 | `Revoked` | `Closed` |
+| 15 | `Expired` | `Closed` |
+| 16 | `Superseded` | `Closed` |
 
-### KLC-0003 — ParticipationLifecycle
+### KSM-0005 — ParticipationRecordLifecycle
 
-Objects: ParticipationRecord
+State-bearing object: `ParticipationRecord`
 
 | # | From | To |
 |---:|---|---|
-| 1 | `NotIdentified` | `Identified` |
-| 2 | `Identified` | `SupportAssessment` |
-| 3 | `SupportAssessment` | `Invited` |
-| 4 | `SupportAssessment` | `RepresentativeOnly` |
-| 5 | `SupportAssessment` | `ParticipationUnsafe` |
-| 6 | `Invited` | `Participating` |
-| 7 | `Invited` | `Declined` |
-| 8 | `Participating` | `Withdrew` |
-| 9 | `Participating` | `ReviewDue` |
-| 10 | `RepresentativeOnly` | `ReviewDue` |
-| 11 | `ParticipationUnsafe` | `ReviewDue` |
-| 12 | `ReviewDue` | `SupportAssessment` |
-| 13 | `Declined` | `Closed` |
-| 14 | `Withdrew` | `Closed` |
-| 15 | `Participating` | `Closed` |
+| 1 | `NotIdentified` | `SupportAssessment` |
+| 2 | `SupportAssessment` | `Invited` |
+| 3 | `SupportAssessment` | `RepresentativeOnly` |
+| 4 | `SupportAssessment` | `ParticipationUnsafe` |
+| 5 | `Invited` | `Participating` |
+| 6 | `Invited` | `Declined` |
+| 7 | `Participating` | `Withdrew` |
+| 8 | `Participating` | `ReviewDue` |
+| 9 | `RepresentativeOnly` | `ReviewDue` |
+| 10 | `ParticipationUnsafe` | `ReviewDue` |
+| 11 | `ReviewDue` | `SupportAssessment` |
+| 12 | `Declined` | `Closed` |
+| 13 | `Withdrew` | `Closed` |
+| 14 | `Participating` | `Closed` |
 
-### KLC-0004 — KnowledgeLifecycle
+### KSM-0006 — KnowledgeItemLifecycle
 
-Objects: KnowledgeItem, EvidenceRecord, UncertaintyRecord
+State-bearing object: `KnowledgeItem`
 
 | # | From | To |
 |---:|---|---|
@@ -224,9 +242,9 @@ Objects: KnowledgeItem, EvidenceRecord, UncertaintyRecord
 | 13 | `Superseded` | `RemovedFromActiveUse` |
 | 14 | `Expired` | `RemovedFromActiveUse` |
 
-### KLC-0005 — DecisionActionLifecycle
+### KSM-0007 — DecisionRecordLifecycle
 
-Objects: DecisionRecord, ActionRecord, FeedbackRecord, OutcomeRecord
+State-bearing object: `DecisionRecord`
 
 | # | From | To |
 |---:|---|---|
@@ -235,65 +253,129 @@ Objects: DecisionRecord, ActionRecord, FeedbackRecord, OutcomeRecord
 | 3 | `ImpactReview` | `Declined` |
 | 4 | `AwaitingAuthority` | `Authorized` |
 | 5 | `AwaitingAuthority` | `Declined` |
-| 6 | `Authorized` | `Executing` |
-| 7 | `Executing` | `OutcomePending` |
-| 8 | `OutcomePending` | `FeedbackReceived` |
-| 9 | `FeedbackReceived` | `RevisionRequired` |
-| 10 | `FeedbackReceived` | `Closed` |
-| 11 | `RevisionRequired` | `ImpactReview` |
-| 12 | `RevisionRequired` | `Reversed` |
+| 6 | `Authorized` | `ActionCreated` |
+| 7 | `Authorized` | `RevisionRequired` |
+| 8 | `ActionCreated` | `RevisionRequired` |
+| 9 | `ActionCreated` | `Closed` |
+| 10 | `RevisionRequired` | `ImpactReview` |
+| 11 | `RevisionRequired` | `Reversed` |
+| 12 | `Reversed` | `Closed` |
+
+### KSM-0008 — ActionRecordLifecycle
+
+State-bearing object: `ActionRecord`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Planned` | `AwaitingAuthority` |
+| 2 | `AwaitingAuthority` | `Authorized` |
+| 3 | `Authorized` | `Executing` |
+| 4 | `Executing` | `Paused` |
+| 5 | `Paused` | `Executing` |
+| 6 | `Executing` | `Completed` |
+| 7 | `Executing` | `Failed` |
+| 8 | `Paused` | `Failed` |
+| 9 | `Completed` | `Reversed` |
+| 10 | `Failed` | `Reversed` |
+| 11 | `Completed` | `Closed` |
+| 12 | `Failed` | `Closed` |
 | 13 | `Reversed` | `Closed` |
 
-### KLC-0006 — DataMemoryRightsLifecycle
+### KSM-0009 — RightsRequestLifecycle
 
-Objects: DataAssetRecord, MemoryRecord, RightsRequest, RetentionProfile
+State-bearing object: `RightsRequest`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Received` | `AuthorityReview` |
+| 2 | `AuthorityReview` | `LocatingRecords` |
+| 3 | `AuthorityReview` | `ExceptionOpen` |
+| 4 | `LocatingRecords` | `ActionPending` |
+| 5 | `ActionPending` | `CompletionReview` |
+| 6 | `ActionPending` | `ExceptionOpen` |
+| 7 | `ExceptionOpen` | `CompletionReview` |
+| 8 | `CompletionReview` | `Complete` |
+| 9 | `CompletionReview` | `Appealed` |
+| 10 | `Complete` | `Appealed` |
+| 11 | `Appealed` | `Reopened` |
+| 12 | `Reopened` | `AuthorityReview` |
+| 13 | `Complete` | `Closed` |
+| 14 | `Appealed` | `Closed` |
+
+### KSM-0010 — DataAssetMemoryLifecycle
+
+State-bearing object: `DataAssetRecord|MemoryRecord`
 
 | # | From | To |
 |---:|---|---|
 | 1 | `Active` | `Restricted` |
-| 2 | `Active` | `RequestReceived` |
-| 3 | `Restricted` | `RequestReceived` |
-| 4 | `RequestReceived` | `CorrectionPending` |
-| 5 | `RequestReceived` | `DeletionPending` |
-| 6 | `RequestReceived` | `ExceptionOpen` |
-| 7 | `CorrectionPending` | `DerivedPropagationPending` |
-| 8 | `DeletionPending` | `PrimaryAddressed` |
-| 9 | `PrimaryAddressed` | `DerivedPropagationPending` |
-| 10 | `DerivedPropagationPending` | `BackupPending` |
-| 11 | `BackupPending` | `CompletionReview` |
+| 2 | `Active` | `CorrectionPending` |
+| 3 | `Active` | `DeletionPending` |
+| 4 | `Restricted` | `CorrectionPending` |
+| 5 | `Restricted` | `DeletionPending` |
+| 6 | `CorrectionPending` | `DerivedPropagationPending` |
+| 7 | `DeletionPending` | `PrimaryAddressed` |
+| 8 | `PrimaryAddressed` | `DerivedPropagationPending` |
+| 9 | `DerivedPropagationPending` | `BackupPending` |
+| 10 | `BackupPending` | `CompletionReview` |
+| 11 | `DeletionPending` | `ExceptionOpen` |
 | 12 | `ExceptionOpen` | `CompletionReview` |
 | 13 | `CompletionReview` | `Complete` |
-| 14 | `CompletionReview` | `Appealed` |
-| 15 | `Complete` | `Appealed` |
-| 16 | `Appealed` | `Reopened` |
-| 17 | `Reopened` | `RequestReceived` |
+| 14 | `Active` | `Superseded` |
+| 15 | `Restricted` | `Superseded` |
+| 16 | `Superseded` | `Complete` |
 
-### KLC-0007 — SafetyHandoffLifecycle
+### KSM-0011 — RiskAssessmentLifecycle
 
-Objects: RiskSignal, RiskAssessment, SafetyAction, HandoffRecord
+State-bearing object: `RiskAssessment`
 
 | # | From | To |
 |---:|---|---|
-| 1 | `SignalOpen` | `AssessmentPending` |
-| 2 | `AssessmentPending` | `Classified` |
-| 3 | `Classified` | `ActionReview` |
-| 4 | `ActionReview` | `TemporaryAction` |
-| 5 | `ActionReview` | `HandoffInitiated` |
-| 6 | `ActionReview` | `Monitoring` |
-| 7 | `HandoffInitiated` | `HandoffAcknowledged` |
-| 8 | `HandoffAcknowledged` | `HandoffAccepted` |
-| 9 | `HandoffInitiated` | `HandoffFailed` |
-| 10 | `HandoffAcknowledged` | `HandoffFailed` |
-| 11 | `HandoffFailed` | `Redirected` |
-| 12 | `HandoffAccepted` | `Monitoring` |
-| 13 | `TemporaryAction` | `Monitoring` |
-| 14 | `Monitoring` | `Closed` |
-| 15 | `Classified` | `Closed` |
-| 16 | `Closed` | `Appealed` |
+| 1 | `Pending` | `InReview` |
+| 2 | `InReview` | `Classified` |
+| 3 | `Classified` | `ReviewDue` |
+| 4 | `ReviewDue` | `InReview` |
+| 5 | `Classified` | `Superseded` |
+| 6 | `Superseded` | `Closed` |
+| 7 | `Classified` | `Closed` |
 
-### KLC-0008 — IncidentAppealRemediationLifecycle
+### KSM-0012 — SafetyActionLifecycle
 
-Objects: IncidentRecord, AppealRecord, ExceptionRecord
+State-bearing object: `SafetyAction`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Proposed` | `ReviewPending` |
+| 2 | `ReviewPending` | `Authorized` |
+| 3 | `Authorized` | `Active` |
+| 4 | `Active` | `Monitoring` |
+| 5 | `Monitoring` | `Ended` |
+| 6 | `Active` | `Revoked` |
+| 7 | `Monitoring` | `Revoked` |
+| 8 | `Ended` | `Appealed` |
+| 9 | `Revoked` | `Appealed` |
+| 10 | `Ended` | `Closed` |
+| 11 | `Revoked` | `Closed` |
+| 12 | `Appealed` | `ReviewPending` |
+
+### KSM-0013 — HandoffRecordLifecycle
+
+State-bearing object: `HandoffRecord`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Initiated` | `Acknowledged` |
+| 2 | `Acknowledged` | `Accepted` |
+| 3 | `Initiated` | `Failed` |
+| 4 | `Acknowledged` | `Failed` |
+| 5 | `Failed` | `Redirected` |
+| 6 | `Accepted` | `Closed` |
+| 7 | `Redirected` | `Closed` |
+| 8 | `Failed` | `Closed` |
+
+### KSM-0014 — IncidentRecordLifecycle
+
+State-bearing object: `IncidentRecord`
 
 | # | From | To |
 |---:|---|---|
@@ -301,19 +383,50 @@ Objects: IncidentRecord, AppealRecord, ExceptionRecord
 | 2 | `Triaged` | `Contained` |
 | 3 | `Triaged` | `Investigating` |
 | 4 | `Contained` | `Investigating` |
-| 5 | `Investigating` | `AppealOpen` |
-| 6 | `Investigating` | `DecisionPending` |
-| 7 | `AppealOpen` | `DecisionPending` |
-| 8 | `DecisionPending` | `RemediationPlanned` |
-| 9 | `RemediationPlanned` | `RemediationInProgress` |
-| 10 | `RemediationInProgress` | `VerificationPending` |
-| 11 | `VerificationPending` | `Closed` |
-| 12 | `Closed` | `Reopened` |
-| 13 | `Reopened` | `Investigating` |
+| 5 | `Investigating` | `RemediationPlanned` |
+| 6 | `RemediationPlanned` | `RemediationInProgress` |
+| 7 | `RemediationInProgress` | `VerificationPending` |
+| 8 | `VerificationPending` | `Closed` |
+| 9 | `Closed` | `Reopened` |
+| 10 | `Reopened` | `Investigating` |
 
-### KLC-0009 — ResourceAvailabilityLifecycle
+### KSM-0015 — AppealRecordLifecycle
 
-Objects: ResourceAvailabilityRecord
+State-bearing object: `AppealRecord`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Open` | `EligibilityReview` |
+| 2 | `EligibilityReview` | `ReviewPending` |
+| 3 | `EligibilityReview` | `Closed` |
+| 4 | `ReviewPending` | `DecisionIssued` |
+| 5 | `DecisionIssued` | `RemediationPending` |
+| 6 | `DecisionIssued` | `Closed` |
+| 7 | `RemediationPending` | `Closed` |
+| 8 | `Closed` | `Reopened` |
+| 9 | `Reopened` | `ReviewPending` |
+
+### KSM-0016 — ExceptionRecordLifecycle
+
+State-bearing object: `ExceptionRecord`
+
+| # | From | To |
+|---:|---|---|
+| 1 | `Proposed` | `ReviewPending` |
+| 2 | `ReviewPending` | `Active` |
+| 3 | `ReviewPending` | `Closed` |
+| 4 | `Active` | `Restricted` |
+| 5 | `Restricted` | `Active` |
+| 6 | `Active` | `Revoked` |
+| 7 | `Active` | `Expired` |
+| 8 | `Restricted` | `Revoked` |
+| 9 | `Restricted` | `Expired` |
+| 10 | `Revoked` | `Closed` |
+| 11 | `Expired` | `Closed` |
+
+### KSM-0017 — ResourceAvailabilityLifecycle
+
+State-bearing object: `ResourceAvailabilityRecord`
 
 | # | From | To |
 |---:|---|---|
@@ -332,57 +445,40 @@ Objects: ResourceAvailabilityRecord
 | 13 | `Stale` | `Retired` |
 
 
-## 8. Cross-lifecycle invariants
+## 6. Cross-object process coordination
 
-Revoked/expired/disputed authority freezes optional and high-impact use.
-Contested knowledge cannot silently drive irreversible action. Corrections
-update active decisions/memory while preserving history. Stale resources stop
-current claims. Failed handoff identifies next action. Deletion completion
-requires active, derived, shared and backup handling or bounded exception.
-AI may propose but not finally authorize high-impact transitions.
+A KPF stage means required objects or reviews become available. It MUST NOT be stored as the state of every participating object.
 
-## 9. Privacy, consent and access
+| ID | Process flow | Stages | Stage transition count |
+|---|---|---|---:|
+| KPF-0001 | PurposeAndAuthorityEstablishment | PurposeProposed, ImpactReviewed, NoticePrepared, AuthorityRecorded, ActiveOrRestricted | 4 |
+| KPF-0002 | RepresentativeAndParticipation | RepresentativeClaimed, AuthorityVerified, ConflictChecked, ParticipationSupported, DecisionRecorded | 4 |
+| KPF-0003 | KnowledgeFormation | SourceCaptured, KnowledgeTyped, EvidenceLinked, UncertaintyRecorded, MaterialityReviewed, ActiveOrRestricted | 5 |
+| KPF-0004 | ConsequentialDecisionAndAction | Proposal, ImpactReview, AuthorityReview, HumanAccountability, Action, Outcome, Feedback, Revision | 7 |
+| KPF-0005 | DataMemoryRights | Request, AuthorityReview, Locate, PrimaryAction, DerivedPropagation, BackupHandling, CompletionReview, Appeal | 7 |
+| KPF-0006 | SafetyAndHandoff | Signal, Assessment, Proportionality, ProtectiveActionOrHandoff, AcceptanceOrFailure, Monitoring, IncidentOrAppeal | 6 |
+| KPF-0007 | IncidentRemediation | Report, Triage, Contain, Investigate, Decide, Remediate, Verify, CloseOrReopen | 7 |
+| KPF-0008 | ResourceFreshness | Unverified, Verify, Current, DisputeOrStale, Reverify, Retire | 5 |
+| KPF-0009 | CorrectionPropagation | CorrectionReceived, DependenciesLocated, CurrentStateRevised, DerivedRecordsUpdated, AffectedNotice, AuditPreserved | 5 |
 
-Transition records carry minimum detail; sensitive reasons/evidence may remain
-restricted. Revocation/deletion does not require public disclosure. Audit
-preservation must not recreate an unrestricted profile.
+## 7. Invariants, review and limitations
 
-## 10. Human agency and ethics
+Revoked or disputed authority freezes optional/high-impact action; contested knowledge does not silently drive irreversible action; corrections preserve history; stale resources stop current claims; failed handoff names next action; deletion completion addresses active, derived, shared and backup use; AI may propose but not finally authorize high-impact transitions.
 
-Declined, Disputed, Restricted, Risk and ParticipationUnsafe states do not
-reduce dignity, credibility, service eligibility or worth. Explanation,
-correction, refusal and appeal must remain usable.
+Review includes invalid transitions, state/process confusion, concurrency, expiry, restoration, appeal, unavailable service and operator-as-risk.
 
-## 11. Safety and escalation
-
-Safety transitions require current evidence, uncertainty, proportionality,
-named responsibility, availability, independent review and time bounds. A safety
-classification must not silently persist after expiry or correction.
-
-## 12. Review criteria and examples
-
-Review includes invalid transitions, race conditions, expiry, restoration,
-appeal, unavailable service, operator-as-risk and affected-person usability.
-Examples: initiated handoff cannot jump to closed; revoked authority freezes new
-optional action; completed rights requests may reopen on appeal.
-
-## 13. Limitations and open questions
-
-Automated authority, concurrent updates, emergency law, service targets,
-immutable backup completion and universal notice requirements remain open.
-
-## 14. Version and change history
+## 8. Version history and current boundary
 
 | Version | Date | Change | Status |
 |---|---|---|---|
-| 0.1.0-draft.1 | 2026-07-15 | Initial 9-lifecycle, 129-transition model | Draft |
-
-## 15. Current boundary
+| 0.1.0-draft.1 | 2026-07-15 | Initial mixed lifecycle family | Draft |
+| 0.2.0-draft.2 | 2026-07-15 | Separate 17 object state machines from 9 process flows | Draft |
 
 ```text
-Lifecycle families: 9
+Object state machines: 17
+Object-state transitions: 203
+Process flows: 9
+Process transitions: 50
 Lifecycle requirements: 34
-External/implementation review: not executed
-Current conforming products: 0
 Overall: NoCurrentKernelConformanceClaim
 ```

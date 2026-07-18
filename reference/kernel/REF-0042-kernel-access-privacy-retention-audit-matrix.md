@@ -1,8 +1,8 @@
 ---
-id: REF-0037
+id: REF-0042
 title: Kernel Access Privacy Retention and Audit Boundary Matrix
 status: Draft
-version: 0.1.0-draft.1
+version: 0.2.0-draft.2
 layer: Reference
 owner: Ming Foundation Kernel Privacy
 created: 2026-07-15
@@ -10,21 +10,15 @@ updated: 2026-07-15
 language: en
 canonical_language: en
 translation_status: original
-decision_base_commit: a0b8234567c211896085f0e1259b96bcb53effd1
+decision_base_commit: f3905710db2304ab926c4ab31e10264931539f98
 related:
   - KERNEL-0002
   - KERNEL-0003
-  - RFC-0002
-  - RFC-0004
-  - PROF-0003
-  - REF-0038
-  - REF-0039
 depends_on:
   - KERNEL-0002
-  - KERNEL-0003
 ---
 
-# REF-0037 — Kernel Access Privacy Retention and Audit Boundary Matrix
+# REF-0042 — Kernel Access Privacy Retention and Audit Boundary Matrix
 
 | ID | Class | Scope | Access rule | Prohibited default |
 |---|---|---|---|---|
@@ -35,7 +29,4 @@ depends_on:
 | KAC-40 | RestrictedEvidence | Review, validation, qualification and identity evidence | Approved evidence environment and custodian | No public repository, sales, personalization or unrelated reuse |
 | KAC-50 | SecretCredential | Secrets, tokens, private keys and authentication material | Dedicated secret-management systems | Never ordinary Kernel object content |
 
-A sensitive field may require a stricter class than its object. Safe references
-may be exposed while restricted content remains governed. Retention requires
-current purpose/authority/necessity; audit requires minimum accountability, not
-full-content duplication. Restoration reapplies current rights and restrictions.
+Field-level classification may be stricter than its object. Audit does not authorize full-content duplication.
